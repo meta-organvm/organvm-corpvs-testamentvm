@@ -2,7 +2,7 @@
 
 **Goal:** 10 applications across 3 tracks within 30 days (Days 15-45 of 90-day plan)
 **Target:** 5 job apps + 3 grant apps/LOIs + 2 residency apps
-**Updated:** 2026-02-11 (deadline correction + materials update)
+**Updated:** 2026-02-11 (role research complete, cover letters drafted, URLs populated)
 
 ---
 
@@ -10,44 +10,107 @@
 
 | Track | Target | Submitted | In Progress | Remaining |
 |-------|--------|-----------|-------------|-----------|
-| AI Engineering | 5 | 0 | 0 | 5 |
+| AI Engineering | 5 | 0 | 7 | 0 |
 | Grants | 3 | 0 | 0 | 3 |
 | Residencies | 2 | 0 | 1 | 1 |
-| **Total** | **10** | **0** | **1** | **9** |
+| **Total** | **10** | **0** | **8** | **2** |
 
 ---
 
 ## Week 3-4: AI Engineering Roles + First Grant
 
-### 2.1 — Anthropic: AI Systems Engineer
+### 2.1 — Anthropic: Forward Deployed Engineer, Custom Agents
 - **Track:** Job
-- **Status:** NOT STARTED
+- **Status:** IN PROGRESS — Cover letter drafted
 - **Deadline:** Rolling
-- **Framing:** ORGAN-IV orchestration, registry design, governance trade-offs
-- **Lead projects:** orchestration-start-here, organ-audit.py, governance-rules.json
-- **Application URL:** [TBD — check careers page]
-- **Materials needed:** Resume, cover letter (see 01-track-ai-engineering.md), project links
-- **Notes:** Strongest match. Governance-as-safety framing. Dependency validation = constraint enforcement.
+- **Salary:** $280,000–$400,000
+- **Framing:** Governance-as-safety, agent deployment patterns, MCP servers + sub-agents
+- **Lead projects:** orchestration-start-here, agentic-titan, governance-rules.json
+- **Application URL:** https://job-boards.greenhouse.io/anthropic/jobs/5074695008
+- **Cover letter:** docs/applications/cover-letters/anthropic-fde-custom-agents.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
+- **Fit score:** 9/10
+- **Notes:** Strongest overall match. FDE model values autonomy, communication, agent development — all profile strengths. 4+ years technical required. SF or NYC, 25% in-office + 25-50% travel.
 
-### 2.2 — OpenAI: Applied AI Engineer
+### 2.1b — Anthropic: Software Engineer, Claude Code
 - **Track:** Job
-- **Status:** NOT STARTED
+- **Status:** IN PROGRESS — Cover letter drafted
 - **Deadline:** Rolling
-- **Framing:** agentic-titan (1,095 tests, 18 phases), multi-agent orchestration
-- **Lead projects:** agentic-titan, recursive-engine
-- **Application URL:** [TBD — check careers page]
-- **Materials needed:** Resume, cover letter, project links
-- **Notes:** Lead with shipping complex AI systems at scale. Test coverage as evidence.
+- **Salary:** $320,000–$560,000
+- **Framing:** Developer tools, LLM orchestration patterns, full-stack with safety instincts
+- **Lead projects:** orchestration-start-here, organ-audit.py, agentic-titan
+- **Application URL:** https://job-boards.greenhouse.io/anthropic/jobs/4816198008
+- **Cover letter:** docs/applications/cover-letters/anthropic-se-claude-code.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
+- **Fit score:** 8/10
+- **Notes:** Strong developer tools match. Requires 5+ years, expert React, LLM experience. NYC/SF/Seattle, 25% in-office.
 
-### 2.3 — Runway / Together AI / Hugging Face: ML Infra or Dev Advocate
+### 2.2 — OpenAI: Software Engineer, Applied Evals
 - **Track:** Job
-- **Status:** NOT STARTED
+- **Status:** IN PROGRESS — Cover letter drafted
 - **Deadline:** Rolling
-- **Framing:** Meta-system as documentation + systems evidence, developer advocacy capacity
-- **Lead projects:** Full eight-organ system, ORGAN-V essays
-- **Application URL:** [TBD — check all three]
-- **Materials needed:** Resume, cover letter, writing samples (essays)
-- **Notes:** Developer advocacy angle strongest for HuggingFace. ML infra for Together AI. Creative tools for Runway.
+- **Salary:** ~$230,000–$385,000
+- **Framing:** Evaluation frameworks, agent harness design, validation infrastructure
+- **Lead projects:** agentic-titan, recursive-engine, platinum-validation.py
+- **Application URL:** https://openai.com/careers/software-engineer-applied-evals-san-francisco/
+- **Cover letter:** docs/applications/cover-letters/openai-se-applied-evals.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
+- **Fit score:** 8/10
+- **Notes:** Agent harness + eval framework maps well. 4+ years engineering required. SF, 3 days in-office.
+
+### 2.3 — Together AI: Lead DX Engineer, Documentation
+- **Track:** Job
+- **Status:** IN PROGRESS — Cover letter drafted
+- **Deadline:** Rolling
+- **Salary:** $160,000–$240,000 + equity
+- **Framing:** Documentation-first infrastructure, LLM API experience, founding role
+- **Lead projects:** orchestration-start-here, implementation-package-v2.md, ORGAN-V essays
+- **Application URL:** https://job-boards.greenhouse.io/togetherai/jobs/4903661007
+- **Cover letter:** docs/applications/cover-letters/together-ai-lead-dx-documentation.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
+- **Fit score:** 9/10
+- **Notes:** Single strongest documentation match. Founding team member. SF or NYC.
+
+### 2.3b — HuggingFace: Developer Advocate Engineer, Hub/Enterprise
+- **Track:** Job
+- **Status:** IN PROGRESS — Cover letter drafted
+- **Deadline:** Rolling
+- **Salary:** $120,000–$160,000 (US)
+- **Framing:** Open-source conviction, documentation-first development, developer-first content
+- **Lead projects:** organvm-corpvs-testamentvm, my-knowledge-base, metasystem-master, .github (org profiles)
+- **Application URL (US):** https://apply.workable.com/huggingface/j/4C12FB7880
+- **Application URL (EMEA):** https://apply.workable.com/huggingface/j/E732F4B8FC
+- **Alt roles:** Data/Infrastructure Advocate (https://apply.workable.com/huggingface/j/5CA82A9A98/), Hub Success Engineer (https://apply.workable.com/huggingface/j/01710FD21C), Open-Source ML Engineer (https://apply.workable.com/huggingface/j/56232F23CB)
+- **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
+- **Fit score:** 8/10
+- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 289K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
+
+### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
+- **Track:** Job
+- **Status:** IN PROGRESS — Cover letter drafted
+- **Deadline:** Rolling
+- **Salary:** Not disclosed
+- **Framing:** Enterprise governance, multi-agent deliberation, evaluation infrastructure
+- **Lead projects:** agentic-titan, a-i-council--coliseum, recursive-engine--generative-entity, organvm-corpvs-testamentvm
+- **Application URL:** https://jobs.ashbyhq.com/cohere/1fa01a03-9253-4f62-8f10-0fe368b38cb9
+- **Cover letter:** docs/applications/cover-letters/cohere-applied-ai-agentic-workflows.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
+- **Fit score:** 7/10
+- **Notes:** SF/NYC/Toronto/Montreal/London — broadest geographic flexibility. Multi-agent experience required.
+
+### 2.3d — Runway: MTS, Research Tooling & Data Platform
+- **Track:** Job
+- **Status:** IN PROGRESS — Cover letter drafted
+- **Deadline:** Rolling
+- **Salary:** $240,000–$290,000
+- **Framing:** Artist-engineer identity, platform engineering with creative empathy, product across domains
+- **Lead projects:** metasystem-master, recursive-engine--generative-entity, classroom-rpg-aetheria, your-fit-tailored
+- **Application URL:** https://job-boards.greenhouse.io/runwayml/jobs/4650196005
+- **Cover letter:** docs/applications/cover-letters/runway-mts-research-tooling.md
+- **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
+- **Fit score:** 7/10
+- **Notes:** Remote NA/EU. "Merging art and science" mission aligns with artist-engineer identity.
 
 ### 2.4 — Knight Foundation: Art+Tech Expansion Fund
 - **Track:** Grant
@@ -107,12 +170,11 @@
 - **Details:** $10,000 stipend, mentorship, workshops, public programming. Both remote and in-person tracks.
 - **Notes:** Infrastructure contribution angle. Governance toolkit as deliverable. Watch for 2026 theme announcement.
 
-### 2.9 — TBD AI/ML Roles (2 more)
+### 2.9 — Additional AI/ML Roles (Cohere + Runway selected)
 - **Track:** Job
-- **Status:** NOT STARTED
+- **Status:** RESEARCH COMPLETE — See 2.3c (Cohere) and 2.3d (Runway) above
 - **Deadline:** Rolling
-- **Framing:** Based on what's open when we reach Week 5
-- **Notes:** Research current openings at: Google DeepMind, Meta FAIR, Cohere, Stability AI, Mistral, xAI, Adept, Character.ai. Pick 2 best-fit roles.
+- **Notes:** Researched Cohere, Mistral, and Together AI. Selected Cohere (Applied AI, Agentic Workflows) and Runway (MTS, Research Tooling) as the 2 additional targets. Mistral roles are Paris-based — deprioritized due to location. Full research in docs/applications/06-ai-engineering-role-research.md.
 
 ### 2.10 — Google Creative Fellowship / Google Creative Lab Five
 - **Track:** Residency/Fellowship
@@ -159,6 +221,8 @@ For each application:
 | Residency framing | DONE | docs/applications/03-track-residencies.md |
 | Resume/CV | DONE | https://4444j99.github.io/portfolio/resume/ |
 | Artist statement | TEMPLATE READY | 03-track-residencies.md |
+| Cover letters (7 drafted) | DONE (7/7) | docs/applications/cover-letters/*.md |
+| Role research | DONE | docs/applications/06-ai-engineering-role-research.md |
 | Cover letter template | TEMPLATE READY | 01-track-ai-engineering.md |
 | LOI template | TEMPLATE READY | 02-track-grants.md |
 | Work samples portfolio | DONE | https://4444j99.github.io/portfolio/ |
@@ -170,16 +234,21 @@ For each application:
 
 ### Urgency-Ordered Action Plan
 
-| Priority | Target | Deadline | Action |
-|----------|--------|----------|--------|
-| 1 | Google Creative Lab Five | Open (no stated close) | **READY TO SUBMIT** — portfolio + resume + short answers drafted |
-| 2 | Google Creative Fellowship | **March 18, 2026** | Submit by March 18 5pm PST — materials ready |
-| 3 | Anthropic / OpenAI / HF | Rolling | Submit by end of Feb |
-| 4 | Eyebeam | Spring 2026 (TBA) | Prepare materials, monitor for open call |
-| 5 | Processing Foundation | ~April-May 2026 | Prepare materials, watch for announcement |
-| 6 | Knight Foundation | June 20, 2026 | Verify geographic eligibility first |
-| 7 | NEA GAP 2 | July 9, 2026 | Find fiscal sponsor if pursuing |
-| 8 | Mellon Foundation | Invitation-only | Build visibility, monitor for open calls |
+| Priority | Target | Deadline | Action | Materials |
+|----------|--------|----------|--------|-----------|
+| 1 | Google Creative Lab Five | Open (no stated close) | **READY TO SUBMIT** — user submits at creativelab5.com | ALL READY |
+| 2 | Google Creative Fellowship | **March 18, 2026** | User submits at creativefellowship.google | ALL READY |
+| 3 | Anthropic FDE, Custom Agents | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 4 | Anthropic SE, Claude Code | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 5 | OpenAI SE, Applied Evals | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 6 | Together AI Lead DX, Docs | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 7 | HuggingFace Dev Advocate | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 8 | Cohere Applied AI, Agentic | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 9 | Runway MTS, Research Tooling | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
+| 10 | Eyebeam | Spring 2026 (TBA) | Prepare materials, monitor for open call | Artist statement ready |
+| 11 | Processing Foundation | ~April-May 2026 | Prepare materials, watch for announcement | — |
+| 12 | Knight Foundation | June 20, 2026 | Verify geographic eligibility first | — |
+| 13 | NEA GAP 2 | July 9, 2026 | Find fiscal sponsor if pursuing | — |
 
 ### Key Findings from Research
 - **Knight Foundation** Art+Tech is geographically restricted to Akron/Detroit/Miami — may need substitute
@@ -188,6 +257,17 @@ For each application:
 - **Google Creative Fellowship** deadline confirmed as **March 18, 2026** (not Feb 22 — that was stale 2025 data)
 - **Eyebeam** and **Processing Foundation** both open in Spring 2026 — good targets for Week 5-6
 - **AI roles** are rolling — can submit anytime but sooner is better
+
+### Key Findings from AI Engineering Role Research (2026-02-11)
+- **Anthropic** has 414 open positions; FDE Custom Agents ($280K-$400K) and SE Claude Code ($320K-$560K) are top fits
+- **OpenAI** uses Ashby for hiring; Applied Evals role maps directly to validation/eval infrastructure experience
+- **Together AI** has a rare founding documentation role (Lead DX Engineer) — 9/10 fit for documentation-strong profile
+- **HuggingFace** hires 30-40% from open-source community; fully remote; values self-directed operators
+- **Cohere** offers broadest geographic flexibility (SF/NYC/Toronto/Montreal/London); agentic workflows role strong
+- **Runway** is fully remote NA/EU; "merging art and science" mission directly matches artist-engineer identity
+- **Mistral** roles are Paris-based — deprioritized unless willing to relocate
+- **Profile gap:** Most ML research roles require PyTorch/model training experience; strongest fit is systems/orchestration/docs roles
+- Full research: docs/applications/06-ai-engineering-role-research.md
 
 ### Substitute Targets (if primary targets are ineligible)
 - **Creative Capital** — supports individual artists, no geographic restriction
