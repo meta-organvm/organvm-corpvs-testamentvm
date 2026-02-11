@@ -1,0 +1,20 @@
+{
+  "v5_constitution_gates": {
+    "registry_gate": true,
+    "portfolio_gate": true,
+    "dependency_gate": true,
+    "completeness_gate": true,
+    "missing_fields": [],
+    "empty_descriptions": []
+  },
+  "v6_organ_checks": {
+    "I": true,
+    "II": false,
+    "III": true,
+    "IV": true,
+    "V": false,
+    "VI": true,
+    "VII": true,
+    "VIII": true
+  }
+}

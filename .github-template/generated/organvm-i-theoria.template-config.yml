@@ -1,0 +1,74 @@
+# Template Configuration for ORGAN I: Theoria
+# Generated from organvm.config.json — do not edit manually
+# Re-generate with: python scripts/generate-github-configs.py --organ ORGAN-I
+
+# Organization Settings
+org:
+  name: 'organvm-i-theoria'
+  display_name: 'ORGAN I: Theoria'
+  website: 'https://github.com/organvm-i-theoria'
+  email_domain: 'organvm.org'
+
+# Repository Settings
+repo:
+  name: '.github'
+  npm_scope: 'organvm-i-theoria'
+
+# Social/Community
+social:
+  discord_invite: ''
+
+# Contact Emails
+emails:
+  support: support@organvm.org
+  security: security@organvm.org
+  conduct: conduct@organvm.org
+
+# Team Names (used in CODEOWNERS)
+teams:
+  leadership: 'organvm-leads'
+  engineering: 'organvm-engineering'
+  devops: 'organvm-devops'
+  security: 'organvm-security'
+
+# Product/Application Settings
+product:
+  name: 'ORGAN I: Theoria'
+  api_endpoint: ''
+
+# Default Tool Versions
+defaults:
+  python_version: '3.12'
+  node_version: '20'
+  go_version: '1.22'
+  rust_version: stable
+
+# Template Metadata
+template:
+  version: 1.0.0
+  source: https://github.com/organvm-i-theoria/.github
+  description: 'ORGAN I: Theoria — organization-wide GitHub configuration'
+
+# Feature Flags
+features:
+  ai_agents: true
+  advanced_ci: true
+  security_scanning: true
+  automated_releases: false
+  demo_sandbox: false
+  documentation_site: true
+  slack_notifications: false
+  ml_workflows: true
+
+# Cross-Org References (resolved from shared.cross_refs)
+cross_refs:
+  taxis_org: 'organvm-iv-taxis'
+
+# Organ-Specific Metadata (not consumed by setup_template.py, for reference)
+organ:
+  key: 'ORGAN-I'
+  domain: 'Theory'
+  etymology: 'θεωρία — contemplation, theory'
+  license: 'MIT'
+  tagline: 'Epistemological frameworks and recursive systems'
+  description: 'Epistemological frameworks, recursive engines, ontological systems, conceptual research'

@@ -1,0 +1,786 @@
+{
+  "version": "1.0",
+  "generated": "2026-02-03T02:17:00Z",
+  "source": "Audit of 4 GitHub orgs + personal account 4444J99",
+  "summary": {
+    "total_repos": 46,
+    "operational_organs": 2,
+    "incomplete_organs": 2,
+    "missing_organs": 3,
+    "total_organizations": 4
+  },
+  "organs": {
+    "ORGAN-I": {
+      "name": "Theory",
+      "description": "Epistemological frameworks, recursive engines, ontological systems",
+      "owner_org": "ivviiviivvi",
+      "operational_status": "OPERATIONAL",
+      "completion": "100%",
+      "repository_count": 10,
+      "repositories": [
+        {
+          "name": "recursive-engine--generative-entity",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/recursive-engine--generative-entity",
+          "status": "ACTIVE",
+          "updated": "2026-01-30",
+          "description": "Generative entity system with recursive capabilities",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-II", "ORGAN-III"],
+            "public": true
+          }
+        },
+        {
+          "name": "organon-noumenon--ontogenetic-morphe",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/organon-noumenon--ontogenetic-morphe",
+          "status": "ACTIVE",
+          "updated": "2026-01-28",
+          "description": "Ontological morphogenesis framework",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-II"],
+            "public": true
+          }
+        },
+        {
+          "name": "auto-revision-epistemic-engine",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/auto-revision-epistemic-engine",
+          "status": "ACTIVE",
+          "updated": "2026-01-25",
+          "description": "Self-revising epistemic system",
+          "relationships": {
+            "depends_on": ["recursive-engine--generative-entity"],
+            "consumed_by": ["ORGAN-IV"],
+            "public": true
+          }
+        },
+        {
+          "name": "narratological-algorithmic-lenses",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/narratological-algorithmic-lenses",
+          "status": "ACTIVE",
+          "updated": "2026-01-22",
+          "description": "Narrative principles formalized as algorithmic operations",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-II", "ORGAN-V"],
+            "public": true
+          }
+        },
+        {
+          "name": "call-function--ontological",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/call-function--ontological",
+          "status": "ACTIVE",
+          "updated": "2026-01-20",
+          "description": "Ontologically-grounded function calling systems",
+          "relationships": {
+            "depends_on": ["organon-noumenon--ontogenetic-morphe"],
+            "consumed_by": ["ORGAN-III"],
+            "public": true
+          }
+        },
+        {
+          "name": "sema-metra--alchemica-mundi",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/sema-metra--alchemica-mundi",
+          "status": "ACTIVE",
+          "updated": "2026-01-18",
+          "description": "Semantic measurement and alchemical transformation",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-II", "ORGAN-IV"],
+            "public": true
+          }
+        },
+        {
+          "name": "system-governance-framework",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/system-governance-framework",
+          "status": "ACTIVE",
+          "updated": "2026-01-15",
+          "description": "Multi-organ governance rules and promotion criteria",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-IV"],
+            "public": false,
+            "note": "Multi-organ candidate for ORGAN-IV"
+          }
+        },
+        {
+          "name": "cognitive-archaelogy-tribunal",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/cognitive-archaelogy-tribunal",
+          "status": "ACTIVE",
+          "updated": "2026-01-12",
+          "description": "Audit tool for cognitive systems and organizational coherence",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-IV"],
+            "public": false,
+            "note": "Multi-organ candidate for ORGAN-IV"
+          }
+        },
+        {
+          "name": "a-recursive-root",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/a-recursive-root",
+          "status": "ACTIVE",
+          "updated": "2026-01-10",
+          "description": "Foundational recursive principles",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": ["ORGAN-I"],
+            "public": true
+          }
+        },
+        {
+          "name": "radix-recursiva-solve-coagula-redi",
+          "org": "ivviiviivvi",
+          "url": "https://github.com/ivviiviivvi/radix-recursiva-solve-coagula-redi",
+          "status": "ACTIVE",
+          "updated": "2026-01-08",
+          "description": "Recursive root solving and alchemical cycles",
+          "relationships": {
+            "depends_on": ["a-recursive-root"],
+            "consumed_by": ["ORGAN-I"],
+            "public": true
+          }
+        }
+      ]
+    },
+    "ORGAN-II": {
+      "name": "Art",
+      "description": "Generative art, interactive systems, performance frameworks",
+      "owner_org": "omni-dromenon-machina",
+      "operational_status": "SEMI-OPERATIONAL",
+      "completion": "40%",
+      "repository_count": 13,
+      "repositories": [
+        {
+          "name": "core-engine",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/core-engine",
+          "status": "ACTIVE",
+          "updated": "2026-01-28",
+          "description": "Central generative art engine",
+          "relationships": {
+            "depends_on": ["ORGAN-I:recursive-engine--generative-entity"],
+            "consumed_by": ["ORGAN-III"],
+            "public": true
+          }
+        },
+        {
+          "name": "performance-sdk",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/performance-sdk",
+          "status": "ACTIVE",
+          "updated": "2026-01-25",
+          "description": "SDK for real-time performance systems",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "example-generative-music",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/example-generative-music",
+          "status": "SKELETON",
+          "updated": "2026-01-20",
+          "description": "Generative music example (content needed)",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": [],
+            "public": true,
+            "note": "Scaffold exists, awaiting populated examples"
+          }
+        },
+        {
+          "name": "metasystem-master",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/metasystem-master",
+          "status": "ACTIVE",
+          "updated": "2026-01-22",
+          "description": "Meta-level system for coordinating multiple art systems",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": ["ORGAN-IV"],
+            "public": true
+          }
+        },
+        {
+          "name": "example-choreographic-interface",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/example-choreographic-interface",
+          "status": "SKELETON",
+          "updated": "2026-01-18",
+          "description": "Choreographic UI example (content needed)",
+          "relationships": {
+            "depends_on": ["performance-sdk"],
+            "consumed_by": [],
+            "public": true,
+            "note": "Scaffold exists, awaiting populated examples"
+          }
+        },
+        {
+          "name": "example-generative-visual",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/example-generative-visual",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Placeholder for visual generative example",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": [],
+            "public": true,
+            "note": "Archive or populate"
+          }
+        },
+        {
+          "name": "example-interactive-installation",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/example-interactive-installation",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Placeholder for interactive art installation",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": [],
+            "public": true,
+            "note": "Archive or populate"
+          }
+        },
+        {
+          "name": "example-ai-collaboration",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/example-ai-collaboration",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Placeholder for AI-human collaborative art",
+          "relationships": {
+            "depends_on": ["core-engine"],
+            "consumed_by": [],
+            "public": true,
+            "note": "Archive or populate"
+          }
+        },
+        {
+          "name": "docs-core-system",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/docs-core-system",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Documentation scaffold",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false,
+            "note": "Merge with core-engine README"
+          }
+        },
+        {
+          "name": "showcase-portfolio",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/showcase-portfolio",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Portfolio infrastructure missing",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true,
+            "note": "HIGH PRIORITY: Create portfolio"
+          }
+        },
+        {
+          "name": "archive-past-works",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/archive-past-works",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Archive of completed artworks",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true,
+            "note": "HIGH PRIORITY: Populate with work history"
+          }
+        },
+        {
+          "name": "case-studies-methodology",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/case-studies-methodology",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Case studies of artistic methodology",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true,
+            "note": "HIGH PRIORITY: Document process"
+          }
+        },
+        {
+          "name": "learning-resources",
+          "org": "omni-dromenon-machina",
+          "url": "https://github.com/omni-dromenon-machina/learning-resources",
+          "status": "EMPTY",
+          "updated": "2026-01-01",
+          "description": "Tutorials and educational materials",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true,
+            "note": "Educational pathway"
+          }
+        }
+      ]
+    },
+    "ORGAN-III": {
+      "name": "Commerce",
+      "description": "Revenue-generating products, deployed systems, customer-facing tools",
+      "owner_org": "labores-profani-crux",
+      "operational_status": "OPERATIONAL",
+      "completion": "100%",
+      "repository_count": 12,
+      "repositories": [
+        {
+          "name": "classroom-rpg-aetheria",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/classroom-rpg-aetheria",
+          "status": "DEPLOYED",
+          "updated": "2026-01-29",
+          "description": "Educational RPG system for classroom engagement",
+          "type": "SaaS",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": ["ORGAN-I", "ORGAN-II"],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "gamified-coach-interface",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/gamified-coach-interface",
+          "status": "DEPLOYED",
+          "updated": "2026-01-27",
+          "description": "Gamified coaching system with progress tracking",
+          "type": "SaaS",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": ["ORGAN-I"],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "trade-perpetual-future",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/trade-perpetual-future",
+          "status": "DEPLOYED",
+          "updated": "2026-01-26",
+          "description": "Perpetual futures trading system",
+          "type": "B2B",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false
+          }
+        },
+        {
+          "name": "fetch-familiar-friends",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/fetch-familiar-friends",
+          "status": "DEPLOYED",
+          "updated": "2026-01-25",
+          "description": "Social matching and community platform",
+          "type": "B2C",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "sovereign-ecosystem--real-estate-luxury",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/sovereign-ecosystem--real-estate-luxury",
+          "status": "DEPLOYED",
+          "updated": "2026-01-24",
+          "description": "Luxury real estate marketplace with blockchain verification",
+          "type": "B2B2C",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false
+          }
+        },
+        {
+          "name": "public-record-data-scrapper",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/public-record-data-scrapper",
+          "status": "DEPLOYED",
+          "updated": "2026-01-23",
+          "description": "Public records aggregation and analysis tool",
+          "type": "B2B",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false
+          }
+        },
+        {
+          "name": "search-local--happy-hour",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/search-local--happy-hour",
+          "status": "DEPLOYED",
+          "updated": "2026-01-22",
+          "description": "Location-based social discovery for local events",
+          "type": "B2C",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "multi-camera--livestream--framework",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/multi-camera--livestream--framework",
+          "status": "DEPLOYED",
+          "updated": "2026-01-21",
+          "description": "Multi-camera livestream production platform",
+          "type": "B2B2C",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": ["ORGAN-II"],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "universal-mail--automation",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/universal-mail--automation",
+          "status": "DEPLOYED",
+          "updated": "2026-01-20",
+          "description": "Email workflow automation and scheduling",
+          "type": "B2B",
+          "revenue": "active",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": true
+          }
+        },
+        {
+          "name": "mirror-mirror",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/mirror-mirror",
+          "status": "DEPLOYED",
+          "updated": "2026-01-19",
+          "description": "Private analytics and customer insights platform",
+          "type": "internal",
+          "revenue": "n/a",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false,
+            "note": "Private repo, governance required"
+          }
+        },
+        {
+          "name": "the-invisible-ledger",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/the-invisible-ledger",
+          "status": "DEPLOYED",
+          "updated": "2026-01-18",
+          "description": "Private financial tracking and accounting system",
+          "type": "internal",
+          "revenue": "n/a",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false,
+            "note": "Private repo, governance required"
+          }
+        },
+        {
+          "name": "enterprise-plugin",
+          "org": "labores-profani-crux",
+          "url": "https://github.com/labores-profani-crux/enterprise-plugin",
+          "status": "DEPLOYED",
+          "updated": "2026-01-17",
+          "description": "Enterprise integration layer (confidential)",
+          "type": "internal",
+          "revenue": "n/a",
+          "relationships": {
+            "depends_on": [],
+            "consumed_by": [],
+            "public": false,
+            "note": "Private repo, governance required"
+          }
+        }
+      ]
+    },
+    "ORGAN-IV": {
+      "name": "Orchestration",
+      "description": "Cross-organ routing, governance, promotion automation, system coordination",
+      "owner_org": "NEW",
+      "operational_status": "MISSING",
+      "completion": "0%",
+      "repository_count": 0,
+      "candidates": [
+        {
+          "name": "system-governance-framework",
+          "source_org": "ivviiviivvi",
+          "rationale": "Already contains multi-organ governance rules"
+        },
+        {
+          "name": "cognitive-archaelogy-tribunal",
+          "source_org": "ivviiviivvi",
+          "rationale": "Audit and coherence validation system"
+        },
+        {
+          "name": "domus-semper-palingenesis",
+          "source_location": "local_dotfiles",
+          "rationale": "Dotfiles and system configuration"
+        }
+      ],
+      "repositories": []
+    },
+    "ORGAN-V": {
+      "name": "Public Process",
+      "description": "Essays, marginalia, process documentation, building in public, RSS/newsletter automation",
+      "owner_org": "NEW",
+      "operational_status": "MISSING",
+      "completion": "0%",
+      "repository_count": 0,
+      "candidates": [
+        {
+          "name": "for-the-record",
+          "status": "EMPTY",
+          "rationale": "Archive of process documents"
+        },
+        {
+          "name": "intake",
+          "status": "EMPTY",
+          "rationale": "Public writing intake system"
+        },
+        {
+          "name": "my-knowledge-base",
+          "status": "POPULATED",
+          "size_mb": 1.5,
+          "rationale": "TypeScript knowledge system, could serve as foundation"
+        },
+        {
+          "name": "life-my--midst--in",
+          "status": "POPULATED",
+          "size_mb": 2.7,
+          "rationale": "Personal process documentation"
+        }
+      ],
+      "repositories": []
+    },
+    "ORGAN-VI": {
+      "name": "Community",
+      "description": "Community infrastructure, member management, governance, forums, shared resources",
+      "owner_org": "NEW",
+      "operational_status": "MISSING",
+      "completion": "0%",
+      "repository_count": 0,
+      "candidates": [],
+      "repositories": []
+    },
+    "ORGAN-VII": {
+      "name": "Marketing",
+      "description": "Content distribution, social amplification, audience building, POSSE automation, release coordination",
+      "owner_org": "NEW",
+      "operational_status": "MISSING",
+      "completion": "0%",
+      "repository_count": 0,
+      "candidates": [
+        {
+          "name": "a-i-chat--exporter",
+          "source_org": "ivviiviivvi",
+          "rationale": "AI content export and distribution"
+        },
+        {
+          "name": "tab-bookmark-manager",
+          "source_org": "ivviiviivvi",
+          "rationale": "Content curation and sharing"
+        }
+      ],
+      "repositories": []
+    }
+  },
+  "cross_organ_relationships": [
+    {
+      "type": "depends_on",
+      "from_organ": "ORGAN-II",
+      "to_organ": "ORGAN-I",
+      "description": "All Art systems depend on Theory foundations"
+    },
+    {
+      "type": "depends_on",
+      "from_organ": "ORGAN-III",
+      "to_organ": ["ORGAN-I", "ORGAN-II"],
+      "description": "Commerce products consume both Theory and Art systems"
+    },
+    {
+      "type": "governs",
+      "from_organ": "ORGAN-IV",
+      "to_organ": ["ORGAN-I", "ORGAN-II", "ORGAN-III", "ORGAN-V", "ORGAN-VI", "ORGAN-VII"],
+      "description": "Orchestration coordinates all organs"
+    },
+    {
+      "type": "amplifies",
+      "from_organ": "ORGAN-V",
+      "to_organ": "ORGAN-VII",
+      "description": "Public Process feeds into Marketing distribution"
+    },
+    {
+      "type": "enables",
+      "from_organ": "ORGAN-VI",
+      "to_organ": ["ORGAN-I", "ORGAN-II", "ORGAN-V"],
+      "description": "Community facilitates collaboration across organs"
+    }
+  ],
+  "duplicates_and_mirrors": {
+    "note": "Several repos appear in multiple locations (personal account vs. orgs). Recommendation: consolidate to single source.",
+    "identified": [
+      {
+        "name": "recursive-engine--generative-entity",
+        "locations": ["4444J99 personal", "ivviiviivvi"],
+        "resolution": "Consolidate to ivviiviivvi org, archive personal copy"
+      },
+      {
+        "name": "narratological-algorithmic-lenses",
+        "locations": ["4444J99 personal", "ivviiviivvi"],
+        "resolution": "Consolidate to ivviiviivvi org, archive personal copy"
+      },
+      {
+        "name": "call-function--ontological",
+        "locations": ["4444J99 personal", "ivviiviivvi"],
+        "resolution": "Consolidate to ivviiviivvi org, archive personal copy"
+      },
+      {
+        "name": "sema-metra--alchemica-mundi",
+        "locations": ["4444J99 personal", "ivviiviivvi"],
+        "resolution": "Consolidate to ivviiviivvi org, archive personal copy"
+      }
+    ]
+  },
+  "decision_matrices": {
+    "empty_repos": {
+      "action_required": true,
+      "options": [
+        {
+          "repos": ["for-the-record", "intake"],
+          "action": "ARCHIVE",
+          "rationale": "Superseded by my-knowledge-base; migrate content if needed"
+        },
+        {
+          "repos": ["example-generative-visual", "example-interactive-installation", "example-ai-collaboration"],
+          "action": "ARCHIVE or POPULATE (pick 1-2)",
+          "rationale": "Decide which single flagship example to fully develop"
+        },
+        {
+          "repos": ["docs-core-system"],
+          "action": "MERGE into core-engine README",
+          "rationale": "No separate docs repo needed"
+        },
+        {
+          "repos": ["showcase-portfolio", "archive-past-works", "case-studies-methodology", "learning-resources"],
+          "action": "POPULATE (HIGH PRIORITY)",
+          "rationale": "These are critical for audience development"
+        }
+      ]
+    },
+    "private_governance": {
+      "action_required": true,
+      "recommendation": "Create commerce--meta private repo",
+      "contains": [
+        "Contracts and IP documentation",
+        "Revenue tracking spreadsheet",
+        "Customer agreements (anonymized)",
+        "Financial reports",
+        "Private product roadmaps"
+      ]
+    },
+    "consolidation": {
+      "personal_account_4444J99": {
+        "action_required": true,
+        "current_state": "20 mixed-purpose repos, 8 duplicates with org repos",
+        "recommendation": "Archive personal account as read-only, migrate all working repos to orgs",
+        "rationale": "Single source of truth enables automation and cleaner dependency tracking"
+      }
+    }
+  },
+  "automation_prerequisites": {
+    "required_before_github_actions": [
+      {
+        "step": 1,
+        "task": "Central registry JSON complete and committed",
+        "why": "Automation reads from registry to determine routing and promotion logic"
+      },
+      {
+        "step": 2,
+        "task": "Orchestration system documented (governance rules + promotion criteria)",
+        "why": "Workflows need clear rules for what can promote where"
+      },
+      {
+        "step": 3,
+        "task": "Empty repos archived or clearly labeled",
+        "why": "Avoid cluttering automation workflows with placeholder repos"
+      },
+      {
+        "step": 4,
+        "task": "Personal account consolidated",
+        "why": "Single source of truth for all automations"
+      }
+    ]
+  },
+  "implementation_timeline": {
+    "immediate_4_hours": [
+      "Commit this registry.json to orchestration--start-here repo (create if needed)",
+      "Create README documenting organ model",
+      "Tag all repos with organ labels in GitHub topics"
+    ],
+    "week_1_16_hours": [
+      "Complete orchestration system documentation",
+      "Design promotion criteria and cross-organ dependencies",
+      "Document private repo governance (commerce--meta)",
+      "Resolve 8 duplicates (consolidate or archive)"
+    ],
+    "week_2_24_hours": [
+      "Build GitHub Actions workflows (5-6 main workflows)",
+      "Set up cross-org dispatch and routing",
+      "Test promotion pipeline with test repo",
+      "Deploy health checks and monitoring"
+    ],
+    "week_3_20_hours": [
+      "Create public-process repo with essay/changelog structure",
+      "Build RSS/newsletter automation",
+      "Set up POSSE distribution",
+      "Create marketing skeleton and templates"
+    ],
+    "week_4_16_hours": [
+      "End-to-end system testing",
+      "Documentation and runbooks",
+      "Community infrastructure setup",
+      "Full system operational"
+    ]
+  }
+}

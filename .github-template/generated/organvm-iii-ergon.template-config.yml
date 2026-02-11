@@ -1,0 +1,74 @@
+# Template Configuration for ORGAN III: Ergon
+# Generated from organvm.config.json — do not edit manually
+# Re-generate with: python scripts/generate-github-configs.py --organ ORGAN-III
+
+# Organization Settings
+org:
+  name: 'organvm-iii-ergon'
+  display_name: 'ORGAN III: Ergon'
+  website: 'https://github.com/organvm-iii-ergon'
+  email_domain: 'organvm.org'
+
+# Repository Settings
+repo:
+  name: '.github'
+  npm_scope: 'organvm-iii-ergon'
+
+# Social/Community
+social:
+  discord_invite: ''
+
+# Contact Emails
+emails:
+  support: support@organvm.org
+  security: security@organvm.org
+  conduct: conduct@organvm.org
+
+# Team Names (used in CODEOWNERS)
+teams:
+  leadership: 'organvm-leads'
+  engineering: 'organvm-engineering'
+  devops: 'organvm-devops'
+  security: 'organvm-security'
+
+# Product/Application Settings
+product:
+  name: 'ORGAN III: Ergon'
+  api_endpoint: ''
+
+# Default Tool Versions
+defaults:
+  python_version: '3.12'
+  node_version: '20'
+  go_version: '1.22'
+  rust_version: stable
+
+# Template Metadata
+template:
+  version: 1.0.0
+  source: https://github.com/organvm-iii-ergon/.github
+  description: 'ORGAN III: Ergon — organization-wide GitHub configuration'
+
+# Feature Flags
+features:
+  ai_agents: true
+  advanced_ci: true
+  security_scanning: true
+  automated_releases: true
+  demo_sandbox: true
+  documentation_site: true
+  slack_notifications: false
+  ml_workflows: false
+
+# Cross-Org References (resolved from shared.cross_refs)
+cross_refs:
+  taxis_org: 'organvm-iv-taxis'
+
+# Organ-Specific Metadata (not consumed by setup_template.py, for reference)
+organ:
+  key: 'ORGAN-III'
+  domain: 'Commerce'
+  etymology: 'ἔργον — work, deed, product'
+  license: 'MIT'
+  tagline: 'Products and deployed systems for real-world impact'
+  description: 'Revenue-generating products, deployed systems, customer-facing tools, B2B/B2C applications'

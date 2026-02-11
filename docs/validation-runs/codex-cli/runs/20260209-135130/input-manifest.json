@@ -1,0 +1,102 @@
+{
+  "run_id": "20260209-135130",
+  "generated_at": "2026-02-09",
+  "prompts": {
+    "codex": [
+      {
+        "path": "organvm.env",
+        "size_bytes": 1946,
+        "sha256": "470f2fa9ba5ab694334494659590fc1fe84651c92dd6ae76262ebadb98fa4f32"
+      },
+      {
+        "path": "organvm.config.json",
+        "size_bytes": 1506,
+        "sha256": "6b87f58babd82315d44caec9ea9c248757580fb41c0d2e638ca237de1f8e14ff"
+      },
+      {
+        "path": "registry-v2.json",
+        "size_bytes": 28540,
+        "sha256": "40793be2f415adec6d12718a0d29e4fc9d16f2acf2ca158092211e8637f710ff"
+      },
+      {
+        "path": "orchestration-system-v2.md",
+        "size_bytes": 19004,
+        "sha256": "21856fbc10def52d7e891151dd553cfc56fc8bc531976119c2cc96a34564eb64"
+      },
+      {
+        "path": "github-actions-spec.md",
+        "size_bytes": 26028,
+        "sha256": "b764c52f42a256094ff661bc1b2ff053256a9a18dd1658a11d683a8f3f681d40"
+      },
+      {
+        "path": "06-EVALUATION-TO-GROWTH-ANALYSIS.md",
+        "size_bytes": 37766,
+        "sha256": "dd959751e2d67fbe3e14c89ca32ee36e5f1ed3c2af6720e5c1c48a438d5e01d2"
+      }
+    ],
+    "gemini": [
+      {
+        "path": "00-c-MASTER-SUMMARY.md",
+        "size_bytes": 17942,
+        "sha256": "6e73fb05015f98e484a8ab6e72c351e89c78ad09d253c8b6c9d082bb3f110c5d"
+      },
+      {
+        "path": "PARALLEL-LAUNCH-STRATEGY.md",
+        "size_bytes": 15421,
+        "sha256": "feb2e56620cea289c759cf08d0321e5c9a1c80ff2da9fdee0a43c9de5834a0f0"
+      },
+      {
+        "path": "IMPLEMENTATION-PACKAGE-v2.md",
+        "size_bytes": 23815,
+        "sha256": "2aebbd7c26808d7b8cf6633f270b94559e5874e25011b580fc987dca5ca0b3b5"
+      },
+      {
+        "path": "orchestration-system-v2.md",
+        "size_bytes": 19004,
+        "sha256": "21856fbc10def52d7e891151dd553cfc56fc8bc531976119c2cc96a34564eb64"
+      },
+      {
+        "path": "public-process-map-v2.md",
+        "size_bytes": 21331,
+        "sha256": "ec63bcbc98bc6e4a80c7daba9203fac26fce8c1cd7778384c9d9bee88e1a28f6"
+      },
+      {
+        "path": "06-EVALUATION-TO-GROWTH-ANALYSIS.md",
+        "size_bytes": 37766,
+        "sha256": "dd959751e2d67fbe3e14c89ca32ee36e5f1ed3c2af6720e5c1c48a438d5e01d2"
+      }
+    ],
+    "copilot": [
+      {
+        "path": "01-README-AUDIT-FRAMEWORK.md",
+        "size_bytes": 7431,
+        "sha256": "f7ac945aceeb8837d21780bad0635f3d90391c526bc27523dcb6b5e9bf934353"
+      },
+      {
+        "path": "02-REPO-INVENTORY-AUDIT.md",
+        "size_bytes": 8490,
+        "sha256": "2a12fa2aeb9e875f19747ec373e8a7a88f65bbd929ec2c0988cbf4095dd8a680"
+      },
+      {
+        "path": "03-PER-ORGAN-README-TEMPLATES.md",
+        "size_bytes": 9401,
+        "sha256": "04e4a3ca9c95747051c69b98277882061b3529f30affe133b0a4d78cede8a0a4"
+      },
+      {
+        "path": "05-RISK-MAP-AND-SEQUENCING.md",
+        "size_bytes": 12811,
+        "sha256": "d541e61090425b05a1961da4b492e9068b9127378657e40a2cd03cd095256437"
+      },
+      {
+        "path": "registry-v2.json",
+        "size_bytes": 28540,
+        "sha256": "40793be2f415adec6d12718a0d29e4fc9d16f2acf2ca158092211e8637f710ff"
+      },
+      {
+        "path": "06-EVALUATION-TO-GROWTH-ANALYSIS.md",
+        "size_bytes": 37766,
+        "sha256": "dd959751e2d67fbe3e14c89ca32ee36e5f1ed3c2af6720e5c1c48a438d5e01d2"
+      }
+    ]
+  }
+}

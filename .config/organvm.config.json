@@ -1,0 +1,186 @@
+{
+  "organ_prefix": "${ORGAN_PREFIX}",
+  "shared": {
+    "email_domain": "organvm.org",
+    "default_branch": "main",
+    "license_default": "MIT",
+    "personal_account": "${PERSONAL_ACCOUNT}",
+    "owner_display_name": "organvm contributors",
+    "discord_invite": "",
+    "teams": {
+      "leadership": "${ORGAN_PREFIX}-leads",
+      "engineering": "${ORGAN_PREFIX}-engineering",
+      "devops": "${ORGAN_PREFIX}-devops",
+      "security": "${ORGAN_PREFIX}-security"
+    },
+    "cross_refs": {
+      "taxis_org": "${ORGAN_PREFIX}-iv-taxis",
+      "meta_org": "meta-${ORGAN_PREFIX}"
+    }
+  },
+  "orgs": {
+    "ORGAN-I": {
+      "suffix": "i-theoria",
+      "env_var": "ORGAN_I_ORG",
+      "domain": "Theory",
+      "etymology": "θεωρία — contemplation, theory",
+      "display_name": "ORGAN I: Theoria",
+      "description": "Epistemological frameworks, recursive engines, ontological systems, conceptual research",
+      "license": "MIT",
+      "profile_tagline": "Epistemological frameworks and recursive systems",
+      "portfolio_angle": "Demonstrates intellectual depth and foundational thinking. Evidences systemic theory applied to autonomous creative systems.",
+      "features": {
+        "ai_agents": true,
+        "advanced_ci": true,
+        "security_scanning": true,
+        "automated_releases": false,
+        "demo_sandbox": false,
+        "documentation_site": true,
+        "ml_workflows": true
+      }
+    },
+    "ORGAN-II": {
+      "suffix": "ii-poiesis",
+      "env_var": "ORGAN_II_ORG",
+      "domain": "Art",
+      "etymology": "ποίησις — making, artistic creation",
+      "display_name": "ORGAN II: Poiesis",
+      "description": "Generative art, interactive systems, performance frameworks, experiential work",
+      "license": "MIT",
+      "profile_tagline": "Generative art and interactive creative systems",
+      "portfolio_angle": "Demonstrates creative systems design and artistic infrastructure. Evidence of producing work using autonomous systems.",
+      "features": {
+        "ai_agents": true,
+        "advanced_ci": true,
+        "security_scanning": true,
+        "automated_releases": false,
+        "demo_sandbox": true,
+        "documentation_site": true,
+        "ml_workflows": true
+      }
+    },
+    "ORGAN-III": {
+      "suffix": "iii-ergon",
+      "env_var": "ORGAN_III_ORG",
+      "domain": "Commerce",
+      "etymology": "ἔργον — work, deed, product",
+      "display_name": "ORGAN III: Ergon",
+      "description": "Revenue-generating products, deployed systems, customer-facing tools, B2B/B2C applications",
+      "license": "MIT",
+      "profile_tagline": "Products and deployed systems for real-world impact",
+      "portfolio_angle": "Demonstrates product-market thinking, sustained revenue generation, and ability to package systems for external users. Evidence of real-world impact.",
+      "features": {
+        "ai_agents": true,
+        "advanced_ci": true,
+        "security_scanning": true,
+        "automated_releases": true,
+        "demo_sandbox": true,
+        "documentation_site": true,
+        "ml_workflows": false
+      }
+    },
+    "ORGAN-IV": {
+      "suffix": "iv-taxis",
+      "env_var": "ORGAN_IV_ORG",
+      "domain": "Orchestration",
+      "etymology": "τάξις — arrangement, order, governance",
+      "display_name": "ORGAN IV: Taxis",
+      "description": "Cross-organ routing, governance, promotion automation, system coordination, dependency management",
+      "license": "MIT",
+      "profile_tagline": "Governance and orchestration across the eight-organ system",
+      "portfolio_angle": "CRITICAL DIFFERENTIATOR. Demonstrates systems architecture, governance design, and organizational capacity to coordinate complex multi-system infrastructure.",
+      "features": {
+        "ai_agents": true,
+        "advanced_ci": true,
+        "security_scanning": true,
+        "automated_releases": false,
+        "demo_sandbox": false,
+        "documentation_site": true,
+        "ml_workflows": false
+      }
+    },
+    "ORGAN-V": {
+      "suffix": "v-logos",
+      "env_var": "ORGAN_V_ORG",
+      "domain": "Public Process",
+      "etymology": "λόγος — word, speech, reason",
+      "display_name": "ORGAN V: Logos",
+      "description": "Essays, marginalia, process documentation, building in public, RSS/newsletter, audience engagement",
+      "license": "CC-BY-4.0",
+      "profile_tagline": "Building in public — essays, process, and thought leadership",
+      "portfolio_angle": "PRIMARY AMPLIFICATION LAYER. Converts meta-system documentation into thought leadership and audience engagement.",
+      "features": {
+        "ai_agents": false,
+        "advanced_ci": false,
+        "security_scanning": false,
+        "automated_releases": false,
+        "demo_sandbox": false,
+        "documentation_site": true,
+        "ml_workflows": false
+      }
+    },
+    "ORGAN-VI": {
+      "suffix": "vi-koinonia",
+      "env_var": "ORGAN_VI_ORG",
+      "domain": "Community",
+      "etymology": "κοινωνία — communion, fellowship",
+      "display_name": "ORGAN VI: Koinonia",
+      "description": "Community infrastructure, member management, governance, forums, shared resources, collaborative spaces",
+      "license": "MIT",
+      "profile_tagline": "Community infrastructure and collaborative spaces",
+      "portfolio_angle": "Evidence of building collaborative infrastructure. Demonstrates community contribution model.",
+      "features": {
+        "ai_agents": false,
+        "advanced_ci": false,
+        "security_scanning": true,
+        "automated_releases": false,
+        "demo_sandbox": false,
+        "documentation_site": true,
+        "ml_workflows": false
+      }
+    },
+    "ORGAN-VII": {
+      "suffix": "vii-kerygma",
+      "env_var": "ORGAN_VII_ORG",
+      "domain": "Marketing",
+      "etymology": "κήρυγμα — proclamation, announcement",
+      "display_name": "ORGAN VII: Kerygma",
+      "description": "Content distribution, social amplification, audience building, POSSE automation, release coordination",
+      "license": "MIT",
+      "profile_tagline": "Content distribution and audience building via POSSE",
+      "portfolio_angle": "Demonstrates audience building and content strategy. Evidence of thought leadership positioning.",
+      "features": {
+        "ai_agents": false,
+        "advanced_ci": false,
+        "security_scanning": false,
+        "automated_releases": true,
+        "demo_sandbox": false,
+        "documentation_site": false,
+        "ml_workflows": false
+      }
+    }
+  },
+  "meta_org": {
+    "name": "meta-${ORGAN_PREFIX}",
+    "env_var": "META_ORG",
+    "display_name": "meta-${ORGAN_PREFIX}",
+    "description": "The eight-organ creative-institutional system — theory, art, commerce, orchestration, public process, community, marketing, and meta coordinated as a single portfolio.",
+    "profile_tagline": "Eight organs. One system. Creative infrastructure at institutional scale.",
+    "etymology": "μετά (meta) — beyond, about, self-referential",
+    "license": "MIT",
+    "features": {
+      "ai_agents": false,
+      "advanced_ci": false,
+      "security_scanning": false,
+      "automated_releases": false,
+      "demo_sandbox": false,
+      "documentation_site": true,
+      "ml_workflows": false
+    }
+  },
+  "naming_convention": {
+    "org_pattern": "${ORGAN_PREFIX}-${suffix}",
+    "repo_pattern": "[organ]-[type]--[specific-name]",
+    "note": "Double-dash separates type from name in repo naming"
+  }
+}

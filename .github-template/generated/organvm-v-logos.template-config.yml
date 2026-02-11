@@ -1,0 +1,74 @@
+# Template Configuration for ORGAN V: Logos
+# Generated from organvm.config.json — do not edit manually
+# Re-generate with: python scripts/generate-github-configs.py --organ ORGAN-V
+
+# Organization Settings
+org:
+  name: 'organvm-v-logos'
+  display_name: 'ORGAN V: Logos'
+  website: 'https://github.com/organvm-v-logos'
+  email_domain: 'organvm.org'
+
+# Repository Settings
+repo:
+  name: '.github'
+  npm_scope: 'organvm-v-logos'
+
+# Social/Community
+social:
+  discord_invite: ''
+
+# Contact Emails
+emails:
+  support: support@organvm.org
+  security: security@organvm.org
+  conduct: conduct@organvm.org
+
+# Team Names (used in CODEOWNERS)
+teams:
+  leadership: 'organvm-leads'
+  engineering: 'organvm-engineering'
+  devops: 'organvm-devops'
+  security: 'organvm-security'
+
+# Product/Application Settings
+product:
+  name: 'ORGAN V: Logos'
+  api_endpoint: ''
+
+# Default Tool Versions
+defaults:
+  python_version: '3.12'
+  node_version: '20'
+  go_version: '1.22'
+  rust_version: stable
+
+# Template Metadata
+template:
+  version: 1.0.0
+  source: https://github.com/organvm-v-logos/.github
+  description: 'ORGAN V: Logos — organization-wide GitHub configuration'
+
+# Feature Flags
+features:
+  ai_agents: false
+  advanced_ci: false
+  security_scanning: false
+  automated_releases: false
+  demo_sandbox: false
+  documentation_site: true
+  slack_notifications: false
+  ml_workflows: false
+
+# Cross-Org References (resolved from shared.cross_refs)
+cross_refs:
+  taxis_org: 'organvm-iv-taxis'
+
+# Organ-Specific Metadata (not consumed by setup_template.py, for reference)
+organ:
+  key: 'ORGAN-V'
+  domain: 'Public Process'
+  etymology: 'λόγος — word, speech, reason'
+  license: 'CC-BY-4.0'
+  tagline: 'Building in public — essays, process, and thought leadership'
+  description: 'Essays, marginalia, process documentation, building in public, RSS/newsletter, audience engagement'

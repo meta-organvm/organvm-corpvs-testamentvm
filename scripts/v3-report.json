@@ -1,0 +1,10 @@
+{
+  "registry_count": 80,
+  "github_count": 67,
+  "deployed_ok": 67,
+  "deployed_missing": [],
+  "deployed_no_readme": [],
+  "github_not_in_registry": [],
+  "description_mismatches": [],
+  "pass": true
+}

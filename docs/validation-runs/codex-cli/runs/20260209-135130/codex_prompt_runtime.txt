@@ -1,0 +1,93 @@
+All referenced documents are local files in the current repository root.
+Read them from disk in the specified order before answering.
+
+You are reviewing the technical architecture of a seven-organ creative-institutional system
+that coordinates ~44 GitHub repositories across 7 GitHub organizations. An independent
+evaluation has already been performed, and a subsequent budget reconciliation pass has been
+completed. Your job is to validate or challenge the evaluation's technical findings, from
+the perspective of someone who would actually implement this system.
+
+READ THE ATTACHED FILES IN THIS ORDER:
+1. organvm.env — the naming architecture (env-var template)
+2. organvm.config.json — machine-readable org mapping
+3. registry-v2.json — the central registry (source of truth for all repos)
+4. orchestration-system-v2.md — governance rules and dependency model
+5. github-actions-spec.md — the 5 workflows that consume the registry
+6. 06-EVALUATION-TO-GROWTH-ANALYSIS.md — the independent evaluation you're validating
+
+CONTEXT: One person is building this. The system uses env-var-based org naming
+(organvm.env), a central JSON registry (registry-v2.json), governance rules
+(orchestration-system-v2.md), and 5 GitHub Actions workflows (github-actions-spec.md).
+
+COMPLETED SO FAR:
+- Phase -1 (org naming architecture) is complete: organvm.env, organvm.config.json,
+  organvm.env.local created.
+- TE conversion: 278 edits across 15 active documents by 4 parallel AI agents.
+- Budget reconciliation: all documents now agree on ~4.4M TE for Phase 1 and ~6.5M TE
+  grand total.
+
+THE EVALUATION FOUND:
+1. The registry schema is underpowered — missing dependency, promotion_status, tier, and
+   last_validated fields that the workflows need
+2. Budget reconciliation revealed a systematic ~13% underestimate (C7): top-down estimates
+   from 00-c consistently undercount compared to 02's bottom-up sums. The gap was ~500K TE
+   for Phase 1 alone. This has been reconciled — all docs now use the 02 numbers — but
+   the same optimism likely affects Phases 2-3.
+3. The env-var architecture (organvm.env → organvm.env.local → organvm.config.json) is
+   sound
+4. The registry claims 60 repos but only contains 44
+5. A Bronze/Silver/Gold tiered launch was proposed to replace the binary all-or-nothing gate
+6. Coordination overhead between parallel AI streams is ~5-10% of total TE (B7): 4 agents
+   working from different source documents produced divergent totals requiring human
+   reconciliation. This pattern will recur during README writing.
+
+YOUR TASK — answer each question with AGREE / DISAGREE / ADD:
+
+1. REGISTRY SCHEMA
+   a. Does the current registry-v2.json schema support the 5 workflows in
+      github-actions-spec.md? If not, what specific fields are missing?
+   b. The evaluation proposes adding: dependencies[], promotion_status enum, tier enum,
+      documentation_status enum, last_validated timestamp. Is this the right set of fields?
+      What would you add or remove?
+   c. Can the registry realistically serve as the single source of truth for both human
+      readers and automated workflows? Or should there be separate human-facing and
+      machine-facing registries?
+
+2. GITHUB ACTIONS VIABILITY
+   a. Are the 5 specified workflows (validate-dependencies, monthly-organ-audit,
+      promote-repo, publish-process, distribute-content) architecturally sound?
+   b. Which workflows should be implemented first for maximum value with minimum effort?
+   c. The evaluation says managing 4 parallel AI streams (Claude/Gemini/Codex/Copilot) for
+      README writing is harder than doing it yourself. Agree or disagree? What's the
+      realistic coordination model?
+
+3. ENV-VAR ARCHITECTURE
+   a. Is the organvm.env → organvm.env.local → organvm.config.json layering correct?
+   b. Should the JSON config be generated FROM the env file, or should they be independent?
+   c. Are there edge cases in the ${ORGAN_PREFIX}-${SUFFIX} naming scheme that could break
+      GitHub org name constraints?
+
+4. TIERED LAUNCH (Bronze/Silver/Gold)
+   a. The evaluation proposes: Bronze = 5 flagship repos + registry (~1.5M TE), Silver = 15
+      repos + essay (~3.0M TE), Gold = all 44 + workflows (~6.5M TE). Are these TE estimates
+      realistic for a solo developer with AI assistance?
+   b. From a technical standpoint, what's the minimum infrastructure needed for Bronze to
+      be credible? (e.g., does it need working CI? A live registry endpoint? Working
+      cross-references?)
+
+5. BUDGET RECONCILIATION VALIDATION
+   a. The reconciled Phase 1 budget is ~4.4M TE (from 02's bottom-up sums). The revised
+      grand total is ~7.2M TE when applying the 13% correction to Phases 2-3 plus
+      coordination overhead. Does this total seem realistic for the scope described?
+   b. Should the ~13% correction from C7 be formally propagated to Phase 2 and Phase 3
+      budgets in the planning documents? Or is it sufficient to note the risk?
+   c. The coordination overhead (B7) of ~5-10% (~220-440K TE) is currently unbudgeted.
+      Should it be added as an explicit line item, or absorbed into per-task estimates?
+
+6. WHAT DID THE EVALUATION MISS?
+   a. Are there technical risks not identified in the evaluation?
+   b. What's the single most important technical decision to make before starting Phase 0?
+
+FORMAT: Use the AGREE/DISAGREE/ADD structure for each sub-question. Keep responses
+concrete and implementation-focused. No motivational language. If something won't work,
+say so directly and explain why.

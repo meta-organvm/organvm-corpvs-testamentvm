@@ -1,0 +1,197 @@
+{
+  "v1_link_audit": {
+    "total_links": 1267,
+    "system_github_ok": 78,
+    "system_github_broken": [
+      {
+        "org": "organvm-i-theoria",
+        "repo": "organon-noumenon--ontogenetic-morphe",
+        "text": "recursive-engine",
+        "url": "https://github.com/organvm-i-theoria/recursive-engine"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "auto-revision-epistemic-engine",
+        "text": "ontological-commit-engine",
+        "url": "https://github.com/organvm-i-theoria/ontological-commit-engine"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "cognitive-archaelogy-tribunal",
+        "text": "ingesting-organ-document-structure",
+        "url": "https://github.com/organvm-i-theoria/ingesting-organ-document-structure"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "a-recursive-root",
+        "text": "`recursive-ontology`",
+        "url": "https://github.com/organvm-i-theoria/recursive-ontology"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "4-ivi374-F0Rivi4",
+        "text": "ontology-of-creative-systems",
+        "url": "https://github.com/organvm-i-theoria/ontology-of-creative-systems"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "4-ivi374-F0Rivi4",
+        "text": "epistemic-artefact-schema",
+        "url": "https://github.com/organvm-i-theoria/epistemic-artefact-schema"
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "collective-persona-operations",
+        "text": "`organon-noumenon`",
+        "url": "https://github.com/organvm-i-theoria/organon-noumenon"
+      }
+    ],
+    "external_ok": 96,
+    "external_broken": [
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "a-i-chat--exporter",
+        "text": "vite-plugin-monkey",
+        "url": "https://github.com/nicepkg/vite-plugin-monkey"
+      },
+      {
+        "org": "organvm-ii-poiesis",
+        "repo": "a-mavs-olevm",
+        "text": "etceter4.com",
+        "url": "https://etceter4.com"
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "virgil-training-overlay",
+        "text": "ActivityWatch",
+        "url": "https://activitywatch.net/"
+      },
+      {
+        "org": "organvm-ii-poiesis",
+        "repo": "example-generative-visual",
+        "text": "Shadertoy",
+        "url": "https://www.shadertoy.com/"
+      }
+    ],
+    "external_unknown": 0,
+    "relative_links": 200,
+    "pass": false
+  },
+  "v2_tbd_scan": {
+    "total_markers": 12,
+    "findings": [
+      {
+        "org": "organvm-i-theoria",
+        "repo": "a-recursive-root",
+        "line_num": 175,
+        "line": "A parallel, more elaborate implementation exists under `workspace/projects/ai-council-system/` with additional modules for streaming (avatar generation, TTS, background compositing), blockchain integr",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "a-recursive-root",
+        "line_num": 223,
+        "line": "The repository's outer structure follows a \"Z Cartridge\" directory-template framework with placeholders for governance, containers, environment configuration, observability, and workspace organization",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "a-recursive-root",
+        "line_num": 468,
+        "line": "- Clean up or explicitly document placeholder directories",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "reverse-engine-recursive-run",
+        "line_num": 464,
+        "line": "| `make hotspots` | Generate churn data from git, create placeholder complexity, merge into hotspot report |",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-i-theoria",
+        "repo": "4-ivi374-F0Rivi4",
+        "line_num": 75,
+        "line": "The activity layer. Workspaces are where active development, experimentation, and iteration happen. They are inherently mutable, often messy, and governed by different rules than archived artifacts. T",
+        "markers": [
+          "work in progress"
+        ]
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "gamified-coach-interface",
+        "line_num": 392,
+        "line": "\u2502   \u251c\u2500\u2500 operational/            # Status, TODO, merge history",
+        "markers": [
+          "TODO"
+        ]
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "public-record-data-scrapper",
+        "line_num": 638,
+        "line": "- **State agent implementations:** Many state agents have placeholder implementations. Priority states for live implementation: NY, IL, OH, GA, PA.",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "search-local--happy-hour",
+        "line_num": 226,
+        "line": "Content is generated via GPT-4o through the Spark LLM service and cached by date to avoid redundant API calls. A complete fallback library covers all five themes with hand-curated content, ensuring th",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "a-i-chat--exporter",
+        "line_num": 92,
+        "line": "| `markdown.ts` | `.md` | YAML front matter, LaTeX preservation via placeholder substitution, footnote transformation, AST-based markdown normalization |",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-iii-ergon",
+        "repo": "a-i-chat--exporter",
+        "line_num": 98,
+        "line": "The Markdown exporter deserves special attention for its LaTeX handling: it uses a placeholder system to protect LaTeX expressions from being corrupted by the markdown AST roundtrip, then restores the",
+        "markers": [
+          "placeholder"
+        ]
+      },
+      {
+        "org": "organvm-v-logos",
+        "repo": "public-process",
+        "line_num": 156,
+        "line": "- **Two-pass cross-reference strategy (SC-7):** Copilot recommended writing READMEs with `[TBD:org/repo#section]` placeholders and resolving all cross-references in a dedicated final pass \u2014 preventing",
+        "markers": [
+          "TBD"
+        ]
+      },
+      {
+        "org": "organvm-v-logos",
+        "repo": "public-process",
+        "line_num": 315,
+        "line": "*Status: Draft complete. All TBD markers resolved from flagship material.*",
+        "markers": [
+          "TBD"
+        ]
+      }
+    ],
+    "pass": false
+  },
+  "fetch_errors": [],
+  "readmes_fetched": 66,
+  "readmes_expected": 66
+}

@@ -1,0 +1,98 @@
+# task-manifest.yaml
+# Machine-readable Bronze Sprint work breakdown
+# Source: docs/specs/bronze-sprint/spec.md + 08-canonical-action-plan.md
+# Generated: 2026-02-10
+
+version: "1.0"
+sprint: bronze
+source: docs/specs/bronze-sprint/spec.md
+te_budget_band: "1.1M-1.6M TE"
+status: READY
+
+deliverables:
+  P1_flagships:
+    title: "Flagship READMEs"
+    priority: P1
+    te_budget: "535K-750K TE"
+    status: pending
+    description: >
+      One flagship README per organ (7 total). Flagship selection deferred
+      to exploration phase per D-02. ORGAN-VI and ORGAN-VII launch as stubs
+      (minimal viable documentation). Each flagship README targets 3,000+ words,
+      portfolio-quality, grant-reviewer-ready.
+    tasks:
+      - { organ: ORGAN-I,   flagship: TBD, status: pending }
+      - { organ: ORGAN-II,  flagship: TBD, status: pending }
+      - { organ: ORGAN-III, flagship: TBD, status: pending }
+      - { organ: ORGAN-IV,  flagship: TBD, status: pending }
+      - { organ: ORGAN-V,   flagship: TBD, status: pending }
+      - { organ: ORGAN-VI,  flagship: TBD, status: pending, tier: stub }
+      - { organ: ORGAN-VII, flagship: TBD, status: pending, tier: stub }
+
+  P2_registry:
+    title: "Registry Schema Hardening"
+    priority: P2
+    te_budget: "70K-88K TE"
+    status: done
+    completed: "2026-02-10"
+    description: >
+      Added 4 fields to all 44 repo entries in registry-v2.json:
+      dependencies, promotion_status, tier, last_validated.
+      Schema version bumped to 0.2.
+
+  P3_essay:
+    title: "Process Essay"
+    priority: P3
+    te_budget: "100K-120K TE"
+    status: pending
+    depends_on: [P1_flagships]
+    description: >
+      One flagship essay for ORGAN-V (public-process). Topic selected from
+      the 5 essay outlines in registry-v2.json. 4,000-5,000 words,
+      publishable quality. Requires flagship READMEs to exist as source material.
+
+  P4_xrefs:
+    title: "Cross-Reference Resolution"
+    priority: P4
+    te_budget: "80K-100K TE"
+    status: pending
+    depends_on: [P1_flagships]
+    description: >
+      Resolve all inter-document cross-references across planning docs,
+      READMEs, and registry. Validate link integrity. Ensure no broken
+      references to old org names or superseded documents.
+
+github_operations:
+  org_renames:
+    owner: human
+    status: pending
+    description: "Rename 3 existing GitHub orgs via web UI (Settings → Rename)"
+    items:
+      - { from: ivviiviivvi,           to: organvm-i-theoria,  status: pending }
+      - { from: omni-dromenon-machina, to: organvm-ii-poiesis, status: pending }
+      - { from: labores-profani-crux,  to: organvm-iii-ergon,  status: pending }
+
+  org_creates:
+    owner: human
+    status: pending
+    description: "Create 5 new GitHub orgs via web UI (4 organs + meta-organvm) (github.com/organizations/plan → Free)"
+    items:
+      - organvm-iv-taxis
+      - organvm-v-logos
+      - organvm-vi-koinonia
+      - organvm-vii-kerygma
+      - meta-organvm
+
+  post_org_automation:
+    owner: ai
+    status: blocked_on_orgs
+    description: "Fully automatable via gh CLI + MCP after all 8 orgs exist"
+    items:
+      - Create .github repos in all 8 orgs (8 organs + meta-organvm)
+      - Push profile READMEs from .github-template/generated/ (8 total)
+      - Push template configs to each organ org's .github repo (7 total)
+      - Set org descriptions via gh API using organvm.config.json taglines
+      - Push meta-organvm profile README to meta-organvm/.github
+      - Validate org access via gh api /orgs/{org} for all 8 orgs
+      - Reconcile repo counts (gh repo list vs registry entries)
+      - Classify 8 unregistered ORGAN-I repos on 4444J99 account

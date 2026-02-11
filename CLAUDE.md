@@ -1,0 +1,159 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What This Repository Is
+
+This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation strategy for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates ~44 GitHub repositories (42 unique; 14 local repos pending migration) across 8 GitHub organizations (7 organ orgs + 1 meta-org).
+
+**Owner:** @4444j99 / @4444J99
+**Launch:** Criteria-driven (per D-08 in `08-canonical-action-plan.md`)
+**Total TE budget:** ~6.5M TE across 4 sprints (see TE methodology below; see `docs/strategy/roadmap-there-and-back-again.md` for canonical timeline)
+
+There is no build system, test suite, or runtime code here. The only executable artifacts are YAML/Python workflow specifications in `docs/implementation/github-actions-spec.md`.
+
+## The Eight-Organ Model
+
+| Organ | Domain | GitHub Org | Repos |
+|-------|--------|-----------|-------|
+| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 10 |
+| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 13 |
+| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 12 |
+| IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 3 |
+| V | Public Process (essays, building in public) | `organvm-v-logos` | 1 |
+| VI | Community (salons, reading groups) | `organvm-vi-koinonia` | 2 |
+| VII | Marketing (POSSE distribution, announcements) | `organvm-vii-kerygma` | 3 |
+| VIII | Meta (umbrella org) | `meta-organvm` | 0 (hub only) |
+
+## Key Invariants (Enforced Across All Documents)
+
+1. **`registry-v2.json` is the single source of truth** — all repo state lives there
+2. **No back-edges in dependency graph** — flow is I→II→III only; ORGAN-III cannot depend on ORGAN-II
+3. **All 8 organs are represented at launch** — each organ has at least one flagship repo fully documented; remaining repos may launch as stubs or in-progress (compatible with Bronze/Silver/Gold tiered approach)
+4. **Documentation precedes deployment** — no Phase 2 until Phase 1 is complete
+5. **Every README is a portfolio piece** — written for grant reviewers and hiring managers, not just developers
+6. **Promotion is a state machine** — LOCAL → CANDIDATE → PUBLIC_PROCESS → GRADUATED → ARCHIVED (governs cross-organ promotion; repo documentation status uses a separate vocabulary: ACTIVE/DEPLOYED/SKELETON/EMPTY)
+
+## Document Architecture
+
+### Reading Order
+
+1. `docs/genesis/00-c-master-summary.md` — Executive summary, start here (30 min)
+2. `docs/strategy/parallel-launch-strategy.md` — Strategic rationale for simultaneous launch
+3. `docs/genesis/00-d-organ-system-audit.md` — Current-state repo inventory per organ
+4. `registry-v2.json` — Machine-readable source of truth (skim)
+5. `docs/implementation/implementation-package-v2.md` — Master execution plan with subtask TE budgets
+6. `docs/implementation/orchestration-system-v2.md` — Governance rules and dependency model
+7. `docs/planning/01` through `05` — Phase 1 planning details (audit framework, templates, checklists, risk map)
+8. `docs/implementation/public-process-map-v2.md` — ORGAN-V content strategy and essay outlines
+9. `docs/implementation/github-actions-spec.md` — 5 CI/CD workflow specifications (YAML + Python)
+10. `docs/standards/10-repository-standards.md` — Repository standards for all 44+ repos (naming, licensing, community health)
+11. `docs/standards/11-specification-driven-development.md` — SDD methodology adapted for documentation deliverables
+12. `docs/genesis/00-a` and `00-b` — Deep genesis transcripts (optional, 60+ min each)
+
+### Document Layers
+
+- **Layer 0 (Genesis):** `docs/genesis/00-a`, `00-b`, `00-c`, `00-d` — conversational source material and audit
+- **Layer 1 (Phase 1 Planning):** `docs/planning/01` through `05`, `docs/standards/10-repository-standards.md`, `docs/standards/11-specification-driven-development.md` — sequential planning toolkit (scoring rubric, inventory, templates, checklists, risk map, repository standards, SDD methodology)
+- **Layer 2 (Execution):** `docs/strategy/phase-1-execution-index.md`, `docs/strategy/parallel-launch-strategy.md`
+- **Layer 3 (v2 Active):** `docs/implementation/implementation-package-v2.md`, `docs/implementation/orchestration-system-v2.md`, `docs/implementation/public-process-map-v2.md`, `registry-v2.json`, `docs/implementation/github-actions-spec.md`
+- **Archive:** `docs/archive/` contains v1 predecessors (superseded by v2 documents)
+
+### Cross-Document Dependency Map
+
+```
+docs/genesis/00-a (Genesis Q&A)
+  ├─→ 00-b (Local/Remote Structure)
+  ├─→ 00-d (System Audit)
+  │     ├─→ registry-v2.json
+  │     └─→ docs/implementation/orchestration-system-v2.md
+  └─→ 00-c (Master Summary)
+        ├─→ docs/planning/01–05 (Phase 1 Planning)
+        └─→ docs/strategy/phase-1-execution-index
+
+docs/strategy/parallel-launch-strategy
+  ├─→ docs/implementation/implementation-package-v2
+  ├─→ docs/implementation/orchestration-system-v2
+  ├─→ docs/implementation/public-process-map-v2
+  ├─→ docs/implementation/github-actions-spec
+  └─→ registry-v2.json
+```
+
+## Three-Phase Implementation
+
+- **Phase 1 (Sprints 1–2, ~4.4M TE):** Documentation audit — comprehensive READMEs for all 44 repos + 14 local repo migrations
+- **Phase 2 (Sprint 3, ~1.0M TE):** Micro-validation per organ — per-organ lockdown and cross-organ dependency checks
+- **Phase 3 (Sprint 4, ~1.1M TE):** Integration — GitHub Actions deployment, flagship essays, launch coordination
+
+## TE (Tokens-Expended) Budget Model
+
+Effort is measured in LLM API tokens, not human-hours. The AI-conductor model means: AI generates volume, human reviews and refines.
+
+### Token Arithmetic
+- 1 token ≈ 4 characters ≈ 0.75 words
+- 3,000-word README ≈ 4,500 output tokens
+- One generation pass (system + template + context + output) ≈ 15,000–20,000 tokens
+- With 2–3 revision iterations + validation ≈ 50,000–90,000 tokens per README
+
+### Per-Task TE Estimates
+| Task Type | TE Budget |
+|-----------|-----------|
+| README REWRITE | ~72K TE |
+| README REVISE | ~50K TE |
+| README POPULATE | ~88K TE |
+| README EVALUATE | ~24K TE |
+| README ARCHIVE | ~12K TE |
+| Essay (4,000–5,000 words) | ~120K TE |
+| Validation Pass (per repo) | ~15K TE |
+| GitHub Actions Workflow | ~55K TE |
+
+### Phase Budgets
+| Phase | TE Budget | Calendar |
+|-------|-----------|----------|
+| Phase 1 (Documentation) | ~4.4M TE | Sprints 1–2 |
+| Phase 2 (Validation) | ~1.0M TE | Sprint 3 |
+| Phase 3 (Integration) | ~1.1M TE | Sprint 4 |
+| **Total** | **~6.5M TE** | **Criteria-driven (D-08)** |
+
+## Org Naming Architecture
+
+Org names are **env-var-driven** for templating. The system uses a prefix + Greek ontological suffix scheme:
+
+- **Template config:** `.config/organvm.env` (committed, provides defaults)
+- **Instance config:** `.config/organvm.env.local` (gitignored, contains `ORGAN_PREFIX=organvm`)
+- **Machine-readable:** `.config/organvm.config.json` (maps organ numbers to suffixes, env vars, domains)
+
+All org references in docs, registry, and workflows use the resolved instance names (e.g., `organvm-i-theoria`). The template defaults use `${ORGAN_PREFIX}-i-theoria` etc.
+
+## Working With This Corpus
+
+- When editing `registry-v2.json`, maintain the existing JSON schema. Every repo entry has: `name`, `org`, `status`, `public`, `description`, `documentation_status`, `portfolio_relevance`.
+- ORGAN-III repos additionally carry `type` (SaaS/B2B/B2C/internal) and `revenue` fields.
+- The `docs/archive/` directory is frozen — do not modify v1 files; create v2+ variants in `docs/implementation/` instead.
+- Documents `01`–`05` are sequentially numbered outputs of the master summary (`00-c`). They form a cohesive planning toolkit and cross-reference each other. They live in `docs/planning/`.
+- The `docs/ANNOTATED-MANIFEST.md` provides an exhaustive per-file annotation of the entire directory and is the best starting point for understanding what each document contains.
+- The execution plan is in `docs/strategy/roadmap-there-and-back-again.md` — the phased implementation roadmap from Phase -1 (org architecture) through Phase 3 (launch).
+- The project constitution is at `docs/memory/constitution.md` — immutable principles (Articles I-VI) and post-cross-validation amendments (A-D) that govern all specifications and quality gates.
+- Feature specifications live in `docs/specs/` — each deliverable (e.g., `docs/specs/bronze-sprint/`) contains a `spec.md` (requirements and success criteria) and `checklists/requirements.md` (validation checklist). The SDD methodology is defined in `docs/standards/11-specification-driven-development.md`.
+
+## AI-Conductor Workflow Model
+
+This corpus operates on an **AI-conductor model**: human directs, AI generates volume, human reviews and refines. Key implications for working with these documents:
+
+- **Word count targets** (3,000+ words, 2,500+ words, etc.) are quality specifications, not labor estimates. AI generates the volume; human ensures accuracy and voice.
+- **Time estimates** reflect human review time for AI-generated drafts, not writing time.
+- **Quality assurance** is AI validation (template compliance, link checking, cross-references) + human strategic review (accuracy, positioning, portfolio language).
+- **AI-specific risks** to watch for: hallucinated code examples, generic boilerplate phrasing, incorrect cross-references, missing project-specific context.
+
+## Naming and Path Conventions
+
+The canonical path formula from the ontology layers is:
+```
+$WORLD_ROOT/realm/<realm_id>/org/<org_unit_id>/repo/<repo_unit_id>/
+```
+
+Repo naming pattern: `[organ]-[type]--[specific-name]` (double-dash separates type from name).
+
+## Parent Directory Context
+
+This directory sits within `~/Workspace/organvm-pactvm/`, which contains sibling planning documents (PDFs, CSVs, manifesto documents) that predate this structured corpus. The parent is the broader project planning workspace; this subdirectory is the authoritative implementation plan.

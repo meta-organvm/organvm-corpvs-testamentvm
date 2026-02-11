@@ -1,0 +1,74 @@
+# Template Configuration for ORGAN VII: Kerygma
+# Generated from organvm.config.json — do not edit manually
+# Re-generate with: python scripts/generate-github-configs.py --organ ORGAN-VII
+
+# Organization Settings
+org:
+  name: 'organvm-vii-kerygma'
+  display_name: 'ORGAN VII: Kerygma'
+  website: 'https://github.com/organvm-vii-kerygma'
+  email_domain: 'organvm.org'
+
+# Repository Settings
+repo:
+  name: '.github'
+  npm_scope: 'organvm-vii-kerygma'
+
+# Social/Community
+social:
+  discord_invite: ''
+
+# Contact Emails
+emails:
+  support: support@organvm.org
+  security: security@organvm.org
+  conduct: conduct@organvm.org
+
+# Team Names (used in CODEOWNERS)
+teams:
+  leadership: 'organvm-leads'
+  engineering: 'organvm-engineering'
+  devops: 'organvm-devops'
+  security: 'organvm-security'
+
+# Product/Application Settings
+product:
+  name: 'ORGAN VII: Kerygma'
+  api_endpoint: ''
+
+# Default Tool Versions
+defaults:
+  python_version: '3.12'
+  node_version: '20'
+  go_version: '1.22'
+  rust_version: stable
+
+# Template Metadata
+template:
+  version: 1.0.0
+  source: https://github.com/organvm-vii-kerygma/.github
+  description: 'ORGAN VII: Kerygma — organization-wide GitHub configuration'
+
+# Feature Flags
+features:
+  ai_agents: false
+  advanced_ci: false
+  security_scanning: false
+  automated_releases: true
+  demo_sandbox: false
+  documentation_site: false
+  slack_notifications: false
+  ml_workflows: false
+
+# Cross-Org References (resolved from shared.cross_refs)
+cross_refs:
+  taxis_org: 'organvm-iv-taxis'
+
+# Organ-Specific Metadata (not consumed by setup_template.py, for reference)
+organ:
+  key: 'ORGAN-VII'
+  domain: 'Marketing'
+  etymology: 'κήρυγμα — proclamation, announcement'
+  license: 'MIT'
+  tagline: 'Content distribution and audience building via POSSE'
+  description: 'Content distribution, social amplification, audience building, POSSE automation, release coordination'

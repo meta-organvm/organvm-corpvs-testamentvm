@@ -1,0 +1,8 @@
+# Instance-specific config (contains personal org names)
+.config/organvm.env.local
+
+# macOS
+.DS_Store
+
+# Scratch/working files
+.scratch/
