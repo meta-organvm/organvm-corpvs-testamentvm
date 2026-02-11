@@ -4,26 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation strategy for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates ~44 GitHub repositories (42 unique; 14 local repos pending migration) across 8 GitHub organizations (7 organ orgs + 1 meta-org).
+This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation record for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates 78 GitHub repositories across 8 GitHub organizations (7 organ orgs + 1 meta-org).
 
 **Owner:** @4444j99 / @4444J99
-**Launch:** Criteria-driven (per D-08 in `08-canonical-action-plan.md`)
-**Total TE budget:** ~6.5M TE across 4 sprints (see TE methodology below; see `docs/strategy/roadmap-there-and-back-again.md` for canonical timeline)
+**Status:** LAUNCHED (2026-02-11) — all 8 organs OPERATIONAL
+**Repository:** `meta-organvm/organvm-corpvs-testamentvm`
+**Documentation deployed:** ~270K words across 73 documented repos + 8 org profiles + 5 meta-system essays
 
-There is no build system, test suite, or runtime code here. The only executable artifacts are YAML/Python workflow specifications in `docs/implementation/github-actions-spec.md`.
+There is no build system, test suite, or runtime code here. Executable artifacts include 5 validation scripts in `scripts/` and YAML/Python workflow specifications in `docs/implementation/github-actions-spec.md`.
 
 ## The Eight-Organ Model
 
-| Organ | Domain | GitHub Org | Repos |
-|-------|--------|-----------|-------|
-| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 10 |
-| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 13 |
-| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 12 |
-| IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 3 |
-| V | Public Process (essays, building in public) | `organvm-v-logos` | 1 |
-| VI | Community (salons, reading groups) | `organvm-vi-koinonia` | 2 |
-| VII | Marketing (POSSE distribution, announcements) | `organvm-vii-kerygma` | 3 |
-| VIII | Meta (umbrella org) | `meta-organvm` | 0 (hub only) |
+| Organ | Domain | GitHub Org | Repos | Flagships |
+|-------|--------|-----------|-------|-----------|
+| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 18 | recursive-engine |
+| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 27 | metasystem-master, a-mavs-olevm |
+| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 21 | public-record-data-scrapper |
+| IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 9 | orchestration-start-here, agentic-titan |
+| V | Public Process (essays, building in public) | `organvm-v-logos` | 2 | public-process |
+| VI | Community (salons, reading groups) | `organvm-vi-koinonia` | 3 | — |
+| VII | Marketing (POSSE distribution, announcements) | `organvm-vii-kerygma` | 4 | — |
+| VIII | Meta (umbrella org) | `meta-organvm` | 2 | organvm-corpvs-testamentvm |
 
 ## Key Invariants (Enforced Across All Documents)
 
@@ -47,7 +48,7 @@ There is no build system, test suite, or runtime code here. The only executable 
 7. `docs/planning/01` through `05` — Phase 1 planning details (audit framework, templates, checklists, risk map)
 8. `docs/implementation/public-process-map-v2.md` — ORGAN-V content strategy and essay outlines
 9. `docs/implementation/github-actions-spec.md` — 5 CI/CD workflow specifications (YAML + Python)
-10. `docs/standards/10-repository-standards.md` — Repository standards for all 44+ repos (naming, licensing, community health)
+10. `docs/standards/10-repository-standards.md` — Repository standards for all repos (naming, licensing, community health)
 11. `docs/standards/11-specification-driven-development.md` — SDD methodology adapted for documentation deliverables
 12. `docs/genesis/00-a` and `00-b` — Deep genesis transcripts (optional, 60+ min each)
 
@@ -79,11 +80,15 @@ docs/strategy/parallel-launch-strategy
   └─→ registry-v2.json
 ```
 
-## Three-Phase Implementation
+## Implementation History (All Complete)
 
-- **Phase 1 (Sprints 1–2, ~4.4M TE):** Documentation audit — comprehensive READMEs for all 44 repos + 14 local repo migrations
-- **Phase 2 (Sprint 3, ~1.0M TE):** Micro-validation per organ — per-organ lockdown and cross-organ dependency checks
-- **Phase 3 (Sprint 4, ~1.1M TE):** Integration — GitHub Actions deployment, flagship essays, launch coordination
+- **Phase -1 (2026-02-09):** Org architecture — 8 GitHub orgs created, env-var config, naming scheme
+- **Phase 0 (2026-02-10):** Corpus refinement — repo transfers, cross-AI validation, task manifest
+- **Phase 1 (2026-02-10):** Documentation audit — Bronze Sprint (7 flagships), Silver Sprint (58 READMEs, ~202K words), Gold Sprint (essays, health files, workflows)
+- **Phase 2 (2026-02-10):** Micro-validation — all 8 organs locked, 1,267 links audited, 31 dependency edges validated
+- **Phase 3 (2026-02-10):** Integration — 5 GitHub Actions workflows, POSSE distribution, branch protection
+- **Launch (2026-02-11):** 9/9 criteria met, all 8 organs OPERATIONAL
+- **Gap-Fill Sprint (2026-02-11):** 11 repos created, 14 READMEs deployed, 14 tier promotions, ~270K total words
 
 ## TE (Tokens-Expended) Budget Model
 

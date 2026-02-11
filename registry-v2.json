@@ -9,8 +9,8 @@
   "source": "Audit of 8 GitHub orgs (organvm-i-theoria through organvm-vii-kerygma + meta-organvm) + personal account 4444J99 + local repos",
   "project_status": "GAP-FILL SPRINT COMPLETE 2026-02-11. All 8 organs OPERATIONAL. 79 repos on GitHub (13 created, 1 deleted, 4 archived). 72 repo READMEs at 2,000+ words (14 new/upgraded), 8 org profiles, 5 meta-system essays (21.6K words), 6 flagship repos, 5 GitHub Actions workflows, POSSE distribution verified. ~270K total words deployed across the eight-organ system.",
   "summary": {
-    "total_repos": 79,
-    "total_repos_note": "79 registry entries: 77 on GitHub + 2 ORGAN-IV cross-references (planned). 67 original + 11 created - 1 deleted (artist-toolkits-templates). 4 explicitly archived (ORGAN-II monorepo fragments). Gap-Fill Sprint completed 2026-02-11.",
+    "total_repos": 80,
+    "total_repos_note": "80 registry entries: 78 on GitHub + 2 ORGAN-IV cross-references (planned). 67 original + 12 created - 1 deleted (artist-toolkits-templates). 4 explicitly archived (ORGAN-II monorepo fragments). organvm-corpvs-testamentvm added to meta-organvm 2026-02-11.",
     "operational_organs": 8,
     "completion_at_launch": "Gap-Fill Sprint COMPLETE 2026-02-11 — 72 non-infrastructure repo READMEs at 2,000+ words, 6 flagship repos, all 8 org profiles, 5 meta-system essays (21.6K words), orchestration-start-here flagship (4,496w), community health files in all 8 orgs. 0 planned repos remaining.",
     "total_organizations": 8,
@@ -1307,7 +1307,7 @@
       "completion": "100% — org profile expanded to 1,213 words",
       "public_visibility": "FULLY PUBLIC",
       "portfolio_angle": "The meta-system itself is the primary portfolio asset. Demonstrates orchestration capacity, architectural reasoning, and systemic sustainability.",
-      "repository_count": 1,
+      "repository_count": 2,
       "repositories": [
         {
           "name": ".github",
@@ -1322,6 +1322,20 @@
           "tier": "infrastructure",
           "last_validated": "2026-02-10",
           "note": "Silver Sprint: org profile README expanded to 1,213 words (2026-02-10)."
+        },
+        {
+          "name": "organvm-corpvs-testamentvm",
+          "org": "meta-organvm",
+          "status": "ACTIVE",
+          "public": true,
+          "description": "The authoritative planning and governance corpus for the eight-organ creative-institutional system. 77 repos, ~270K words, 8 organizations.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution",
+          "dependencies": [],
+          "promotion_status": "PUBLIC_PROCESS",
+          "tier": "flagship",
+          "last_validated": "2026-02-11",
+          "note": "Initial commit 2026-02-11. 131 files, ~45K lines. Contains genesis transcripts, planning toolkit, governance specs, validation scripts, registry, cross-AI validation runs, and full execution history."
         }
       ]
     }
@@ -1394,8 +1408,8 @@
   "launch_metrics": {
     "launch_date": "2026-02-11",
     "launch_criteria_met": "9/9",
-    "total_repos_on_github": 77,
-    "documented_repos": 72,
+    "total_repos_on_github": 78,
+    "documented_repos": 73,
     "org_profiles": 8,
     "meta_system_essays": 5,
     "total_essay_words": 21625,
