@@ -2,7 +2,7 @@
 
 **Goal:** 10 applications across 3 tracks within 30 days (Days 15-45 of 90-day plan)
 **Target:** 5 job apps + 3 grant apps/LOIs + 2 residency apps
-**Updated:** 2026-02-11
+**Updated:** 2026-02-11 (deadline correction + materials update)
 
 ---
 
@@ -12,8 +12,8 @@
 |-------|--------|-----------|-------------|-----------|
 | AI Engineering | 5 | 0 | 0 | 5 |
 | Grants | 3 | 0 | 0 | 3 |
-| Residencies | 2 | 0 | 0 | 2 |
-| **Total** | **10** | **0** | **0** | **10** |
+| Residencies | 2 | 0 | 1 | 1 |
+| **Total** | **10** | **0** | **1** | **9** |
 
 ---
 
@@ -116,18 +116,22 @@
 
 ### 2.10 — Google Creative Fellowship / Google Creative Lab Five
 - **Track:** Residency/Fellowship
-- **Status:** URGENT — Google Creative Fellowship portfolio review deadline Feb 22, 2026
+- **Status:** IN PROGRESS — Resume page deployed, short-answer drafts written
 - **Deadlines:**
-  - **Google Creative Fellowship:** Portfolio review by Feb 22, 2026 (11 days). Virtual review event March 12.
-  - **Google Creative Lab Five:** Open, no stated deadline (17th class starts July 20, 2026). NYC/London only.
+  - **Google Creative Fellowship:** Application deadline **March 18, 2026, 5pm PST** (35 days). Shortlist notification mid-April. Program runs June–December 2026. Locations: NYC, SF, Portland.
+  - **Google Creative Lab Five:** Open, no stated close date (17th class runs July 20, 2026 – July 2, 2027). NYC/London only.
 - **Framing:** Practice-led research, all 8 organs as evidence, artist-engineer hybrid
 - **Lead evidence:** Full system, recursive-engine, generative art repos
 - **Application URLs:**
   - Creative Fellowship: https://creativefellowship.google/
   - Creative Lab Five: https://www.creativelab5.com/
-- **Materials needed:** Portfolio, CV, artist statement
+- **Materials needed:** Portfolio (DONE), Resume page (DONE), artist statement (DONE on about page)
+- **Materials ready:**
+  - Portfolio: https://4444j99.github.io/portfolio/
+  - Resume: https://4444j99.github.io/portfolio/resume/
+  - Short-answer drafts: docs/applications/05-google-creative-lab-five-responses.md
 - **Eligibility:** 0-5 years creative experience (Fellowship); 0+ years (Lab Five). US work authorization required.
-- **Notes:** Somerset House recent calls closed. Google Creative Fellowship is the most time-sensitive opportunity. **Prioritize this if eligible.**
+- **Notes:** Feb 22 date was stale (2025 cycle). Confirmed March 18, 2026 deadline from website. **Submit Creative Lab Five first (no deadline, materials ready). Creative Fellowship by March 18.**
 
 ---
 
@@ -153,11 +157,11 @@ For each application:
 | AI engineering framing | DONE | docs/applications/01-track-ai-engineering.md |
 | Grant framing | DONE | docs/applications/02-track-grants.md |
 | Residency framing | DONE | docs/applications/03-track-residencies.md |
-| Resume/CV | NEEDED | [TBD] |
+| Resume/CV | DONE | https://4444j99.github.io/portfolio/resume/ |
 | Artist statement | TEMPLATE READY | 03-track-residencies.md |
 | Cover letter template | TEMPLATE READY | 01-track-ai-engineering.md |
 | LOI template | TEMPLATE READY | 02-track-grants.md |
-| Work samples portfolio | NEEDED | [compile from repos] |
+| Work samples portfolio | DONE | https://4444j99.github.io/portfolio/ |
 | Writing samples | AVAILABLE | ORGAN-V essays |
 
 ---
@@ -168,8 +172,8 @@ For each application:
 
 | Priority | Target | Deadline | Action |
 |----------|--------|----------|--------|
-| 1 | Google Creative Fellowship | **Feb 22, 2026** | Submit portfolio review NOW |
-| 2 | Google Creative Lab Five | Open (no stated close) | Apply within 2 weeks |
+| 1 | Google Creative Lab Five | Open (no stated close) | **READY TO SUBMIT** — portfolio + resume + short answers drafted |
+| 2 | Google Creative Fellowship | **March 18, 2026** | Submit by March 18 5pm PST — materials ready |
 | 3 | Anthropic / OpenAI / HF | Rolling | Submit by end of Feb |
 | 4 | Eyebeam | Spring 2026 (TBA) | Prepare materials, monitor for open call |
 | 5 | Processing Foundation | ~April-May 2026 | Prepare materials, watch for announcement |
@@ -181,7 +185,7 @@ For each application:
 - **Knight Foundation** Art+Tech is geographically restricted to Akron/Detroit/Miami — may need substitute
 - **Mellon Foundation** is invitation-only — not a viable near-term target
 - **NEA** requires 501(c)(3) — needs fiscal sponsor; federal arts funding currently unstable
-- **Google Creative Fellowship** is the most time-sensitive (11 days)
+- **Google Creative Fellowship** deadline confirmed as **March 18, 2026** (not Feb 22 — that was stale 2025 data)
 - **Eyebeam** and **Processing Foundation** both open in Spring 2026 — good targets for Week 5-6
 - **AI roles** are rolling — can submit anytime but sooner is better
 
