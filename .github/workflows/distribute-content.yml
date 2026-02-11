@@ -1,0 +1,242 @@
+name: Distribute Content (POSSE)
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number containing the essay to distribute'
+        required: true
+        type: number
+
+permissions:
+  issues: write
+
+jobs:
+  distribute:
+    if: |
+      (github.event_name == 'workflow_dispatch') ||
+      contains(github.event.label.name, 'ready-to-distribute')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: pip install pyyaml
+
+      - name: Determine Issue Number
+        id: issue
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "number=${{ github.event.inputs.issue_number }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "number=${{ github.event.issue.number }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Extract Essay Metadata
+        id: metadata
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          import os
+          import re
+          import subprocess
+          import sys
+
+          issue_number = "${{ steps.issue.outputs.number }}"
+
+          # Get issue details via gh CLI
+          result = subprocess.run(
+              ["gh", "api", f"/repos/${{ github.repository }}/issues/{issue_number}"],
+              capture_output=True, text=True
+          )
+          if result.returncode != 0:
+              print(f"::error::Could not fetch issue #{issue_number}")
+              sys.exit(1)
+
+          issue = json.loads(result.stdout)
+          title = issue.get("title", "New Essay")
+          body = issue.get("body", "")
+
+          # Try to extract YAML frontmatter from issue body
+          excerpt = f"New essay: {title}"
+          essay_url = ""
+
+          # Look for a link to the essay file in the issue body
+          url_match = re.search(r'https://github\.com/[^\s)]+\.md', body)
+          if url_match:
+              essay_url = url_match.group(0)
+
+          # Look for excerpt in body
+          excerpt_match = re.search(r'[Ee]xcerpt:\s*(.+)', body)
+          if excerpt_match:
+              excerpt = excerpt_match.group(1).strip()
+
+          # Write outputs
+          with open(os.environ.get("GITHUB_OUTPUT", "/dev/null"), "a") as f:
+              f.write(f"title={title}\n")
+              f.write(f"excerpt={excerpt}\n")
+              f.write(f"essay_url={essay_url}\n")
+              f.write(f"issue_url={issue.get('html_url', '')}\n")
+          PYEOF
+
+      - name: Post to Mastodon
+        if: env.MASTODON_TOKEN != ''
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          MASTODON_INSTANCE: ${{ vars.MASTODON_INSTANCE || 'https://mastodon.social' }}
+        run: |
+          TITLE="${{ steps.metadata.outputs.title }}"
+          EXCERPT="${{ steps.metadata.outputs.excerpt }}"
+          ISSUE_URL="${{ steps.metadata.outputs.issue_url }}"
+
+          STATUS="${EXCERPT}
+
+          ${ISSUE_URL}
+
+          #organvm #buildinginpublic #artistengineer"
+
+          curl -s "${MASTODON_INSTANCE}/api/v1/statuses" \
+            -H "Authorization: Bearer ${MASTODON_TOKEN}" \
+            -F "status=${STATUS}" \
+            -F "visibility=public" \
+            -o /tmp/mastodon-response.json
+
+          if jq -e '.id' /tmp/mastodon-response.json > /dev/null 2>&1; then
+            TOOT_URL=$(jq -r '.url' /tmp/mastodon-response.json)
+            echo "Posted to Mastodon: ${TOOT_URL}"
+            echo "mastodon_url=${TOOT_URL}" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Mastodon post may have failed"
+          fi
+
+      - name: Post to Discord
+        if: env.DISCORD_WEBHOOK != ''
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          TITLE="${{ steps.metadata.outputs.title }}"
+          ISSUE_URL="${{ steps.metadata.outputs.issue_url }}"
+
+          curl -s "${DISCORD_WEBHOOK}" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -d "{\"content\": \"New essay published: **${TITLE}**\n${ISSUE_URL}\"}" \
+            -o /dev/null -w "%{http_code}" | {
+              read -r code
+              if [ "$code" = "204" ] || [ "$code" = "200" ]; then
+                echo "Posted to Discord"
+              else
+                echo "::warning::Discord post returned HTTP ${code}"
+              fi
+            }
+
+      - name: Add to Newsletter Queue
+        run: |
+          TITLE="${{ steps.metadata.outputs.title }}"
+          ISSUE_URL="${{ steps.metadata.outputs.issue_url }}"
+          DATE=$(date +%Y-%m-%d)
+
+          mkdir -p newsletter
+
+          if [ ! -f newsletter/queue.md ]; then
+            echo "# Newsletter Queue" > newsletter/queue.md
+            echo "" >> newsletter/queue.md
+          fi
+
+          echo "- [${DATE}] [${TITLE}](${ISSUE_URL})" >> newsletter/queue.md
+
+          git config user.name "ORGAN-IV Distribution Bot"
+          git config user.email "distribute@organvm.org"
+          git add newsletter/queue.md
+          if git diff --cached --quiet; then
+            echo "No newsletter changes"
+          else
+            git commit -m "newsletter: queue ${TITLE}"
+            git push
+          fi
+
+      - name: Log Distribution Event
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          analytics_path = Path("analytics.json")
+          if analytics_path.exists():
+              analytics = json.loads(analytics_path.read_text())
+          else:
+              analytics = []
+
+          channels = []
+          # Check which channels were available
+          import os
+          if os.environ.get("MASTODON_TOKEN"):
+              channels.append("mastodon")
+          if os.environ.get("DISCORD_WEBHOOK"):
+              channels.append("discord")
+          channels.append("newsletter")
+
+          analytics.append({
+              "date": datetime.now(timezone.utc).isoformat(),
+              "essay_issue": "${{ steps.issue.outputs.number }}",
+              "title": "${{ steps.metadata.outputs.title }}",
+              "distributed": True,
+              "channels": channels
+          })
+
+          # Keep last 100 entries
+          analytics = analytics[-100:]
+
+          analytics_path.write_text(json.dumps(analytics, indent=2) + "\n")
+          PYEOF
+
+          git config user.name "ORGAN-IV Distribution Bot"
+          git config user.email "distribute@organvm.org"
+          git add analytics.json
+          if git diff --cached --quiet; then
+            echo "No analytics changes"
+          else
+            git commit -m "analytics: distribution event $(date +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Comment Distribution Summary
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const channels = ['Newsletter queue'];
+
+            // Check for secrets presence via env
+            if (process.env.MASTODON_TOKEN) channels.push('Mastodon');
+            if (process.env.DISCORD_WEBHOOK) channels.push('Discord');
+
+            await github.rest.issues.createComment({
+              issue_number: Number('${{ steps.issue.outputs.number }}'),
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                '## Content Distributed (POSSE)',
+                '',
+                `**Title:** ${{ steps.metadata.outputs.title }}`,
+                '',
+                '**Channels:**',
+                ...channels.map(c => `- ${c}`),
+                '',
+                '---',
+                '*Automated by ORGAN-IV distribute-content workflow*'
+              ].join('\n')
+            });
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}

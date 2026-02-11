@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "schema_note": "Governance rules for the eight-organ system. Read by organ-audit.py, validate-dependencies, promote-repo workflows.",
+  "dependency_rules": {
+    "max_transitive_depth": 4,
+    "no_circular_dependencies": true,
+    "no_back_edges": true,
+    "back_edge_definition": "Within the I-II-III chain, data flows I->II->III. A back-edge is any dependency where a lower-numbered organ depends on a higher-numbered organ (e.g., I depends on II, or II depends on III). ORGAN-IV through Meta may reference any organ.",
+    "restricted_organs": ["ORGAN-I", "ORGAN-II", "ORGAN-III"],
+    "restricted_orgs": ["organvm-i-theoria", "organvm-ii-poiesis", "organvm-iii-ergon"]
+  },
+  "promotion_rules": {
+    "promote-to-art": {
+      "source_organ": "ORGAN-I",
+      "destination_organ": "ORGAN-II",
+      "destination_org": "organvm-ii-poiesis",
+      "conditions": [
+        "Source repo has documentation_status != EMPTY",
+        "Source repo has at least 1 documented use case in README",
+        "Source repo has implementation_status in [PROTOTYPE, PRODUCTION]",
+        "No unresolved critical alerts for source repo"
+      ],
+      "naming": "art-from--{source_repo_name}"
+    },
+    "promote-to-commerce": {
+      "source_organ": "ORGAN-II",
+      "destination_organ": "ORGAN-III",
+      "destination_org": "organvm-iii-ergon",
+      "conditions": [
+        "Source repo has documentation_status != EMPTY",
+        "Source repo has at least 3 documented use cases",
+        "Pricing model defined in source docs or issue",
+        "Support model documented"
+      ],
+      "naming": "{source_repo_name}"
+    },
+    "promote-to-public-process": {
+      "source_organ": "ANY",
+      "destination_organ": "ORGAN-V",
+      "destination_org": "organvm-v-logos",
+      "conditions": [
+        "Source repo has documentation_status != EMPTY",
+        "Essay outline provided in promotion issue"
+      ],
+      "naming": "essay-from--{source_repo_name}"
+    }
+  },
+  "state_machine": {
+    "states": ["LOCAL", "CANDIDATE", "PUBLIC_PROCESS", "GRADUATED", "ARCHIVED"],
+    "transitions": {
+      "LOCAL": ["CANDIDATE", "ARCHIVED"],
+      "CANDIDATE": ["PUBLIC_PROCESS", "LOCAL", "ARCHIVED"],
+      "PUBLIC_PROCESS": ["GRADUATED", "CANDIDATE", "ARCHIVED"],
+      "GRADUATED": ["ARCHIVED"],
+      "ARCHIVED": []
+    }
+  },
+  "audit_thresholds": {
+    "critical": {
+      "missing_readme": true,
+      "circular_dependency": true,
+      "back_edge_violation": true,
+      "organ_has_zero_repos": true
+    },
+    "warning": {
+      "stale_repo_days": 90,
+      "missing_changelog": true,
+      "missing_ci_workflow": true,
+      "missing_badges": true,
+      "essay_count_below": 10
+    }
+  },
+  "organ_requirements": {
+    "ORGAN-I": {
+      "min_repos": 1,
+      "requires_readme": true,
+      "requires_tests": false
+    },
+    "ORGAN-II": {
+      "min_repos": 1,
+      "requires_readme": true,
+      "requires_tests": false
+    },
+    "ORGAN-III": {
+      "min_repos": 1,
+      "requires_readme": true,
+      "requires_tests": false,
+      "requires_revenue_fields": true
+    },
+    "ORGAN-IV": {
+      "min_repos": 1,
+      "requires_readme": true,
+      "requires_registry": true
+    },
+    "ORGAN-V": {
+      "min_repos": 1,
+      "requires_readme": true,
+      "min_essays": 10
+    },
+    "ORGAN-VI": {
+      "min_repos": 1,
+      "requires_readme": true
+    },
+    "ORGAN-VII": {
+      "min_repos": 1,
+      "requires_readme": true
+    }
+  }
+}

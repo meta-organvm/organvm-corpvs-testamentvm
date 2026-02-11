@@ -1,0 +1,224 @@
+name: Publish Process
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  publish:
+    if: |
+      contains(github.event.comment.body, '@orchestration create essay') &&
+      contains(join(github.event.issue.labels.*.name), 'publish-process')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract Source Content
+        id: extract
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT }}
+        run: |
+          SOURCE_REPO="${{ github.repository }}"
+          SOURCE_ORG="${{ github.event.repository.owner.login }}"
+          SOURCE_NAME="${{ github.event.repository.name }}"
+          ISSUE_TITLE="${{ github.event.issue.title }}"
+
+          echo "source_repo=${SOURCE_REPO}" >> "$GITHUB_OUTPUT"
+          echo "source_name=${SOURCE_NAME}" >> "$GITHUB_OUTPUT"
+
+          mkdir -p /tmp/source-content
+
+          # Fetch README
+          gh api "/repos/${SOURCE_REPO}/contents/README.md" \
+            -H "Accept: application/vnd.github.raw+json" \
+            > /tmp/source-content/readme.md 2>/dev/null || echo "No README found" > /tmp/source-content/readme.md
+
+          # Fetch CHANGELOG if exists
+          gh api "/repos/${SOURCE_REPO}/contents/CHANGELOG.md" \
+            -H "Accept: application/vnd.github.raw+json" \
+            > /tmp/source-content/changelog.md 2>/dev/null || echo "" > /tmp/source-content/changelog.md
+
+          # Get recent commit messages for decision history
+          gh api "/repos/${SOURCE_REPO}/commits?per_page=20" \
+            --jq '.[].commit.message' \
+            > /tmp/source-content/commits.txt 2>/dev/null || echo "" > /tmp/source-content/commits.txt
+
+          echo "Content extracted from ${SOURCE_REPO}"
+
+      - name: Generate Essay Outline
+        run: |
+          python3 - <<'PYEOF'
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          source_repo = "${{ steps.extract.outputs.source_repo }}"
+          source_name = "${{ steps.extract.outputs.source_name }}"
+          issue_title = "${{ github.event.issue.title }}"
+
+          # Read extracted content
+          readme = Path("/tmp/source-content/readme.md").read_text()
+          changelog = Path("/tmp/source-content/changelog.md").read_text()
+          commits = Path("/tmp/source-content/commits.txt").read_text()
+
+          # Extract essay title from issue title (strip "Publish process: " prefix)
+          essay_title = issue_title
+          for prefix in ("Publish process: ", "Publish Process: ", "publish process: "):
+              if essay_title.startswith(prefix):
+                  essay_title = essay_title[len(prefix):]
+                  break
+
+          date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+          # Generate essay outline with frontmatter
+          outline = f"""---
+          title: "{essay_title}"
+          date: {date_str}
+          source_repo: {source_repo}
+          organ: ORGAN-V
+          status: draft
+          excerpt: "Process essay documenting {source_name}"
+          ---
+
+          # {essay_title}
+
+          > Auto-generated essay outline from [{source_repo}](https://github.com/{source_repo}).
+          > This is a draft — review and refine before publishing.
+
+          ## 1. Context and Motivation
+
+          What problem does {source_name} address? Why does it exist within the eight-organ system?
+
+          <!-- Source README excerpt -->
+          {readme[:500]}{'...' if len(readme) > 500 else ''}
+
+          ## 2. Design Decisions
+
+          Key architectural and design choices made during development.
+
+          <!-- From commit history -->
+          Recent decisions:
+          """
+
+          # Add commit highlights
+          for line in commits.strip().split("\n")[:10]:
+              line = line.strip()
+              if line and len(line) > 10:
+                  outline += f"- {line}\n"
+
+          outline += f"""
+          ## 3. Implementation Journey
+
+          How the project evolved from concept to its current state.
+
+          ## 4. What We Learned
+
+          Insights, surprises, and lessons from building {source_name}.
+
+          ## 5. Connection to the Eight-Organ System
+
+          How this work relates to the broader creative-institutional infrastructure.
+
+          ---
+
+          *This essay was auto-generated from [{source_repo}](https://github.com/{source_repo}) via the ORGAN-IV publish-process workflow. It requires human review, expansion, and refinement before publication.*
+          """
+
+          # Clean up indentation from heredoc
+          import textwrap
+          outline = textwrap.dedent(outline)
+
+          slug = source_name.lower().replace(" ", "-")
+          filename = f"{date_str}--from-{slug}.md"
+
+          Path("/tmp/essay-outline.md").write_text(outline)
+          Path("/tmp/essay-filename.txt").write_text(filename)
+
+          print(f"Generated essay outline: {filename}")
+          PYEOF
+
+      - name: Create Draft in ORGAN-V
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT }}
+        run: |
+          ESSAY_FILENAME=$(cat /tmp/essay-filename.txt)
+          SOURCE_REPO="${{ steps.extract.outputs.source_repo }}"
+
+          # Clone ORGAN-V public-process repo
+          gh repo clone organvm-v-logos/public-process /tmp/public-process || {
+            echo "::error::Could not clone organvm-v-logos/public-process"
+            exit 1
+          }
+
+          cd /tmp/public-process
+
+          # Create essay directory if needed
+          mkdir -p essays/from-repos
+
+          # Copy essay draft
+          cp /tmp/essay-outline.md "essays/from-repos/${ESSAY_FILENAME}"
+
+          # Create branch and PR
+          BRANCH="essay/from-$(echo "${{ steps.extract.outputs.source_name }}" | tr '[:upper:]' '[:lower:]')"
+          git checkout -b "${BRANCH}"
+          git config user.name "ORGAN-IV Process Bot"
+          git config user.email "process@organvm.org"
+          git add "essays/from-repos/${ESSAY_FILENAME}"
+          git commit -m "draft: essay from ${SOURCE_REPO}
+
+          Auto-generated by publish-process workflow.
+          Source: https://github.com/${SOURCE_REPO}
+          Issue: ${{ github.event.issue.html_url }}"
+
+          git push origin "${BRANCH}"
+
+          gh pr create \
+            --title "Draft Essay: from ${SOURCE_REPO}" \
+            --body "## Auto-Generated Essay Draft
+
+          **Source:** [${SOURCE_REPO}](https://github.com/${SOURCE_REPO})
+          **Triggered by:** ${{ github.event.issue.html_url }}
+
+          This is a machine-generated outline. Next steps:
+          - [ ] Expand each section with substantive content
+          - [ ] Add specific examples and code snippets
+          - [ ] Review voice and tone for ORGAN-V standards
+          - [ ] Add to public-process-map-v2.md index
+
+          ---
+          *Automated by ORGAN-IV publish-process workflow*" \
+            --label "auto-draft"
+
+      - name: Comment on Source Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                '## Essay Draft Created',
+                '',
+                'A draft essay outline has been generated in ORGAN-V.',
+                '',
+                '**Review at:** [organvm-v-logos/public-process](https://github.com/organvm-v-logos/public-process/pulls)',
+                '',
+                'The outline includes:',
+                '- Context and motivation (from README)',
+                '- Design decisions (from commit history)',
+                '- Placeholder sections for implementation journey and lessons',
+                '',
+                'Next: Review the PR, expand the outline, and refine for publication.',
+                '',
+                '---',
+                '*Automated by ORGAN-IV publish-process workflow*'
+              ].join('\n')
+            });

@@ -1,0 +1,272 @@
+name: Promote Repo
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  promote:
+    if: |
+      contains(github.event.comment.body, '@orchestration promote') && (
+        contains(join(github.event.issue.labels.*.name), 'promote-to-art') ||
+        contains(join(github.event.issue.labels.*.name), 'promote-to-commerce') ||
+        contains(join(github.event.issue.labels.*.name), 'promote-to-public-process')
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ORCHESTRATION_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Parse Promotion Request
+        id: parse
+        run: |
+          LABELS="${{ join(github.event.issue.labels.*.name, ',') }}"
+
+          if [[ "$LABELS" == *"promote-to-art"* ]]; then
+            echo "promotion_type=promote-to-art" >> "$GITHUB_OUTPUT"
+            echo "target_org=organvm-ii-poiesis" >> "$GITHUB_OUTPUT"
+            echo "target_organ=ORGAN-II" >> "$GITHUB_OUTPUT"
+          elif [[ "$LABELS" == *"promote-to-commerce"* ]]; then
+            echo "promotion_type=promote-to-commerce" >> "$GITHUB_OUTPUT"
+            echo "target_org=organvm-iii-ergon" >> "$GITHUB_OUTPUT"
+            echo "target_organ=ORGAN-III" >> "$GITHUB_OUTPUT"
+          elif [[ "$LABELS" == *"promote-to-public-process"* ]]; then
+            echo "promotion_type=promote-to-public-process" >> "$GITHUB_OUTPUT"
+            echo "target_org=organvm-v-logos" >> "$GITHUB_OUTPUT"
+            echo "target_organ=ORGAN-V" >> "$GITHUB_OUTPUT"
+          else
+            echo "::error::No recognized promotion label found"
+            exit 1
+          fi
+
+      - name: Validate Promotion Criteria
+        id: validate
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT }}
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          import sys
+
+          PROMOTION_TYPE = "${{ steps.parse.outputs.promotion_type }}"
+          SOURCE_REPO = "${{ github.repository }}"
+
+          with open("registry-v2.json") as f:
+              registry = json.load(f)
+          with open("governance-rules.json") as f:
+              governance = json.load(f)
+
+          # Find source repo in registry
+          source_data = None
+          for organ_key, organ_data in registry.get("organs", {}).items():
+              for repo in organ_data.get("repositories", []):
+                  if f"{repo['org']}/{repo['name']}" == SOURCE_REPO:
+                      source_data = repo
+                      break
+              if source_data:
+                  break
+
+          if not source_data:
+              print(f"::warning::Repo {SOURCE_REPO} not in registry — proceeding with limited validation")
+              sys.exit(0)
+
+          # Check state machine: must be LOCAL or CANDIDATE
+          current_state = source_data.get("promotion_status", "LOCAL")
+          valid_transitions = governance.get("state_machine", {}).get("transitions", {})
+          allowed_from = valid_transitions.get(current_state, [])
+
+          if "CANDIDATE" not in allowed_from and current_state != "CANDIDATE":
+              print(f"::error::Cannot promote from state {current_state}")
+              sys.exit(1)
+
+          # Check documentation exists
+          doc_status = source_data.get("documentation_status", "EMPTY")
+          if doc_status in ("EMPTY", ""):
+              print(f"::error::Source repo has no documentation (status: {doc_status})")
+              sys.exit(1)
+
+          # Check implementation status
+          impl_status = source_data.get("implementation_status", "DESIGN_ONLY")
+          promo_rules = governance.get("promotion_rules", {}).get(PROMOTION_TYPE, {})
+          conditions = promo_rules.get("conditions", [])
+
+          passed = []
+          failed = []
+          for condition in conditions:
+              if "implementation_status" in condition:
+                  if impl_status in ("PROTOTYPE", "PRODUCTION"):
+                      passed.append(condition)
+                  else:
+                      failed.append(f"{condition} (actual: {impl_status})")
+              elif "documentation_status" in condition:
+                  if doc_status not in ("EMPTY", ""):
+                      passed.append(condition)
+                  else:
+                      failed.append(f"{condition} (actual: {doc_status})")
+              else:
+                  # Non-automatable conditions — pass with warning
+                  passed.append(f"{condition} (manual verification needed)")
+
+          print(f"Promotion validation for {PROMOTION_TYPE}:")
+          print(f"  Passed: {len(passed)}")
+          for p in passed:
+              print(f"    + {p}")
+
+          if failed:
+              print(f"  Failed: {len(failed)}")
+              for f_item in failed:
+                  print(f"    - {f_item}")
+              sys.exit(1)
+          else:
+              print("All automated criteria met.")
+              sys.exit(0)
+          PYEOF
+
+      - name: Derive New Repo Name
+        id: naming
+        run: |
+          SOURCE_NAME="${{ github.event.repository.name }}"
+          PROMO_TYPE="${{ steps.parse.outputs.promotion_type }}"
+
+          if [[ "$PROMO_TYPE" == "promote-to-art" ]]; then
+            NEW_REPO="art-from--${SOURCE_NAME}"
+          elif [[ "$PROMO_TYPE" == "promote-to-public-process" ]]; then
+            NEW_REPO="essay-from--${SOURCE_NAME}"
+          else
+            NEW_REPO="${SOURCE_NAME}"
+          fi
+
+          echo "new_repo=${NEW_REPO}" >> "$GITHUB_OUTPUT"
+          echo "Derived repo name: ${NEW_REPO}"
+
+      - name: Create Destination Repo
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT }}
+        run: |
+          TARGET_ORG="${{ steps.parse.outputs.target_org }}"
+          NEW_REPO="${{ steps.naming.outputs.new_repo }}"
+
+          # Check if repo already exists
+          if gh repo view "${TARGET_ORG}/${NEW_REPO}" &>/dev/null; then
+            echo "::warning::Repo ${TARGET_ORG}/${NEW_REPO} already exists, skipping creation"
+          else
+            gh repo create "${TARGET_ORG}/${NEW_REPO}" \
+              --public \
+              --description "Promoted from ${{ github.repository }} via ORGAN-IV orchestration" \
+              --clone=false
+            echo "Created ${TARGET_ORG}/${NEW_REPO}"
+          fi
+
+      - name: Update Registry with Promotion Link
+        run: |
+          python3 - <<'PYEOF'
+          import json
+          from datetime import datetime, timezone
+
+          with open("registry-v2.json") as f:
+              registry = json.load(f)
+
+          source_repo = "${{ github.repository }}"
+          dest_repo = "${{ steps.naming.outputs.new_repo }}"
+          target_org = "${{ steps.parse.outputs.target_org }}"
+          promotion_type = "${{ steps.parse.outputs.promotion_type }}"
+
+          for organ_key, organ_data in registry.get("organs", {}).items():
+              for repo in organ_data.get("repositories", []):
+                  if f"{repo['org']}/{repo['name']}" == source_repo:
+                      repo["promoted_to"] = {
+                          "repo": dest_repo,
+                          "org": target_org,
+                          "type": promotion_type,
+                          "date": datetime.now(timezone.utc).isoformat()
+                      }
+                      repo["promotion_status"] = "CANDIDATE"
+                      break
+
+          with open("registry-v2.json", "w") as f:
+              json.dump(registry, f, indent=2)
+              f.write("\n")
+          PYEOF
+
+      - name: Commit Registry Update
+        run: |
+          git config user.name "ORGAN-IV Promotion Bot"
+          git config user.email "promote@organvm.org"
+          git add registry-v2.json
+          if git diff --cached --quiet; then
+            echo "No registry changes"
+          else
+            git commit -m "promote: ${{ github.event.repository.name }} -> ${{ steps.parse.outputs.target_org }}/${{ steps.naming.outputs.new_repo }}"
+            git push
+          fi
+
+      - name: Open Issue in Destination Repo
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT }}
+        run: |
+          TARGET_ORG="${{ steps.parse.outputs.target_org }}"
+          NEW_REPO="${{ steps.naming.outputs.new_repo }}"
+          SOURCE_REPO="${{ github.repository }}"
+
+          BODY=$(cat <<'ISSUEEOF'
+          This repo was promoted via ORGAN-IV orchestration.
+
+          ## Next Steps
+
+          - [ ] Set up initial README with context from source repo
+          - [ ] Link back to source in registry
+          - [ ] Update dependency graph
+          - [ ] Review and refine for destination organ standards
+
+          ---
+          *Automated by ORGAN-IV promote-repo workflow*
+          ISSUEEOF
+          )
+          # Prepend source link
+          BODY="Promoted from [${SOURCE_REPO}](https://github.com/${SOURCE_REPO}).
+
+          ${BODY}"
+
+          gh issue create \
+            --repo "${TARGET_ORG}/${NEW_REPO}" \
+            --title "Promoted from ${SOURCE_REPO}" \
+            --body "${BODY}" \
+            --label "promoted"
+
+      - name: Comment on Source Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const targetOrg = '${{ steps.parse.outputs.target_org }}';
+            const newRepo = '${{ steps.naming.outputs.new_repo }}';
+            const targetOrgan = '${{ steps.parse.outputs.target_organ }}';
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: [
+                '## Promotion Successful',
+                '',
+                `**Target repo:** [${targetOrg}/${newRepo}](https://github.com/${targetOrg}/${newRepo})`,
+                `**Target organ:** ${targetOrgan}`,
+                `**Status:** Linked in central registry`,
+                '',
+                'Next steps:',
+                '- Set up initial content in destination repo',
+                '- Update dependency links',
+                '- Notify destination organ maintainers',
+                '',
+                '---',
+                '*Automated by ORGAN-IV promote-repo workflow*'
+              ].join('\n')
+            });
