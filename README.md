@@ -1,5 +1,13 @@
 # Eight-Organ System: Planning & Governance Corpus
 
+[![CI](https://github.com/meta-organvm/organvm-corpvs-testamentvm/actions/workflows/ci.yml/badge.svg)](https://github.com/meta-organvm/organvm-corpvs-testamentvm/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-pending-lightgrey)](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/meta-organvm/organvm-corpvs-testamentvm/blob/main/LICENSE)
+[![Organ VIII](https://img.shields.io/badge/Organ-VIII%20Meta-6B7280)](https://github.com/meta-organvm)
+[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
+[![Python](https://img.shields.io/badge/lang-Python-informational)](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
+
+
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey?style=flat-square)](LICENSE)
 [![Status: LAUNCHED](https://img.shields.io/badge/Status-LAUNCHED-2e7d32?style=flat-square)](#current-status)
 [![Organs: 8](https://img.shields.io/badge/Organs-8-1a237e?style=flat-square)](#the-eight-organ-model)
