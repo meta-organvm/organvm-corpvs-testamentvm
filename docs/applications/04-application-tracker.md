@@ -52,12 +52,13 @@
 ### 2.4 — Knight Foundation: Art+Tech Expansion Fund
 - **Track:** Grant
 - **Status:** NOT STARTED
-- **Deadline:** [TBD — check current cycle]
+- **Deadline:** June 20, 2026 (next cycle)
 - **Framing:** Long-term digital capacity, infrastructure not project
 - **Lead evidence:** ORGAN-V essays + registry + all 8 organs operational
-- **Application URL:** [TBD — check knightfoundation.org]
+- **Application URL:** https://knightfoundation.org/challenges/knight-art-tech-expansion-fund/
 - **Materials needed:** LOI (see 02-track-grants.md), project narrative, budget
-- **Notes:** Strongest grant match. They fund infrastructure and organizational capacity.
+- **Eligibility note:** Geographically restricted to Akron, Detroit, Miami. Individual artists up to $25K, orgs up to $100K. **Verify eligibility before investing time.**
+- **Notes:** Strong conceptual match but geographic restriction may be disqualifying. If ineligible, substitute with Creative Capital or MAP Fund.
 
 ---
 
@@ -65,43 +66,46 @@
 
 ### 2.5 — Mellon Foundation: Arts & Culture
 - **Track:** Grant
-- **Status:** NOT STARTED
-- **Deadline:** [TBD — check current cycle]
+- **Status:** NOT STARTED — INVITATION ONLY
+- **Deadline:** N/A (invitation-only; no open application)
 - **Framing:** Holistic organizational model, 8 organs as institutional functions
 - **Lead evidence:** All 8 organs, state machine, dependency model
-- **Application URL:** [TBD — check mellon.org]
+- **Application URL:** https://www.mellon.org/grant-programs/arts-and-culture
 - **Materials needed:** LOI, organizational narrative, budget
-- **Notes:** Emphasis on holistic approach and sustainability.
+- **Notes:** Mellon does NOT accept unsolicited proposals for Arts & Culture. Staff seek out organizations before inviting. **Strategy: Build visibility through ORGAN-V essays and public presence. Monitor for occasional open calls.** Consider substituting with Ford Foundation or Creative Capital.
 
-### 2.6 — NEA: Grants for Arts Projects
+### 2.6 — NEA: Grants for Arts Projects (FY2026)
 - **Track:** Grant
 - **Status:** NOT STARTED
-- **Deadline:** [TBD — check arts.gov]
+- **Deadline:** GAP 2 Part 1: July 9, 2026; Part 2: July 21, 2026 (GAP 1 Feb 12 deadline just passed)
 - **Framing:** Specific ORGAN-II art project with eight-organ system as organizational context
 - **Lead evidence:** example-interactive-installation, recursive-engine, ORGAN-V documentation
-- **Application URL:** [TBD — check nea.gov]
+- **Application URL:** https://www.arts.gov/grants/grants-for-arts-projects
 - **Materials needed:** Project proposal, budget ($10K-$50K), work samples
-- **Notes:** Smaller scope. Focus on a specific deliverable, not the whole system.
+- **Eligibility note:** Requires 501(c)(3) nonprofit org, state/local govt, or tribal community. **Individuals cannot apply directly.** Would need a fiscal sponsor or organizational partner.
+- **Notes:** Challenge America canceled for FY2026. Federal arts funding landscape unstable. Monitor arts.gov for status updates. Target GAP 2 (July 9) cycle.
 
-### 2.7 — Eyebeam
+### 2.7 — Eyebeam: Speculating on Plurality
 - **Track:** Residency
-- **Status:** NOT STARTED
-- **Deadline:** [TBD — check eyebeam.org]
+- **Status:** NOT STARTED — OPENS SPRING 2026
+- **Deadline:** TBA, Spring 2026 (open call announced but date not yet set)
 - **Framing:** Governance model as equitable system, ORGAN-VI community, ORGAN-V transparency
 - **Lead evidence:** Public governance, community infrastructure, building in public
-- **Application URL:** [TBD — check eyebeam.org/residency]
+- **Application URL:** https://eyebeam.org/program/speculating-plurality/ | https://eyebeam.submittable.com/submit
 - **Materials needed:** Artist statement (see 03-track-residencies.md), proposal, CV, work samples
-- **Notes:** "Equitable systems in support of creativity" — direct match.
+- **Eligibility note:** Emerging artists based in NYC (5 boroughs), first decade of professional career, not full-time student or faculty. 12-week residency, $4,000 stipend.
+- **Notes:** "Speculating on Plurality" theme — imagining new frameworks. Direct match with governance-as-artistic-practice. Monitor for open call announcement.
 
 ### 2.8 — Processing Foundation Fellowship
 - **Track:** Residency
-- **Status:** NOT STARTED
-- **Deadline:** [TBD — check processingfoundation.org]
+- **Status:** NOT STARTED — EXPECTED APRIL 2026
+- **Deadline:** Expected ~April-May 2026 (historically opens April 1, closes early May)
 - **Framing:** Documentation-first infrastructure that enables others
 - **Lead evidence:** Templates, reusable governance patterns, public documentation
-- **Application URL:** [TBD — check processingfoundation.org/fellowship]
+- **Application URL:** https://processingfoundation.org/fellowships | fellowship@processingfoundation.org
 - **Materials needed:** Fellowship proposal, CV, evidence of community contribution
-- **Notes:** Infrastructure contribution angle. Governance toolkit as deliverable.
+- **Details:** $10,000 stipend, mentorship, workshops, public programming. Both remote and in-person tracks.
+- **Notes:** Infrastructure contribution angle. Governance toolkit as deliverable. Watch for 2026 theme announcement.
 
 ### 2.9 — TBD AI/ML Roles (2 more)
 - **Track:** Job
@@ -110,15 +114,20 @@
 - **Framing:** Based on what's open when we reach Week 5
 - **Notes:** Research current openings at: Google DeepMind, Meta FAIR, Cohere, Stability AI, Mistral, xAI, Adept, Character.ai. Pick 2 best-fit roles.
 
-### 2.10 — Somerset House or Google Creative Lab
-- **Track:** Residency
-- **Status:** NOT STARTED
-- **Deadline:** [TBD — check both]
-- **Framing:** Practice-led research, all 8 organs as evidence
+### 2.10 — Google Creative Fellowship / Google Creative Lab Five
+- **Track:** Residency/Fellowship
+- **Status:** URGENT — Google Creative Fellowship portfolio review deadline Feb 22, 2026
+- **Deadlines:**
+  - **Google Creative Fellowship:** Portfolio review by Feb 22, 2026 (11 days). Virtual review event March 12.
+  - **Google Creative Lab Five:** Open, no stated deadline (17th class starts July 20, 2026). NYC/London only.
+- **Framing:** Practice-led research, all 8 organs as evidence, artist-engineer hybrid
 - **Lead evidence:** Full system, recursive-engine, generative art repos
-- **Application URL:** [TBD]
-- **Materials needed:** Proposal, CV, portfolio, artist statement
-- **Notes:** If neither has open calls, substitute with: NEW INC (New Museum), Rhizome, or IRCAM.
+- **Application URLs:**
+  - Creative Fellowship: https://creativefellowship.google/
+  - Creative Lab Five: https://www.creativelab5.com/
+- **Materials needed:** Portfolio, CV, artist statement
+- **Eligibility:** 0-5 years creative experience (Fellowship); 0+ years (Lab Five). US work authorization required.
+- **Notes:** Somerset House recent calls closed. Google Creative Fellowship is the most time-sensitive opportunity. **Prioritize this if eligible.**
 
 ---
 
@@ -153,13 +162,32 @@ For each application:
 
 ---
 
-## Deadline Research Queue
+## Deadline Research: COMPLETED 2026-02-11
 
-Research and fill in deadlines for all 10 targets. Priority order:
-1. Knight Foundation (likely has annual cycle)
-2. Eyebeam (likely has annual open call)
-3. Processing Foundation (likely has annual fellowship cycle)
-4. NEA (has defined application periods)
-5. Mellon Foundation (invitation or LOI-first)
-6. Somerset House / Google Creative Lab (varies)
-7. AI roles (rolling — can submit anytime)
+### Urgency-Ordered Action Plan
+
+| Priority | Target | Deadline | Action |
+|----------|--------|----------|--------|
+| 1 | Google Creative Fellowship | **Feb 22, 2026** | Submit portfolio review NOW |
+| 2 | Google Creative Lab Five | Open (no stated close) | Apply within 2 weeks |
+| 3 | Anthropic / OpenAI / HF | Rolling | Submit by end of Feb |
+| 4 | Eyebeam | Spring 2026 (TBA) | Prepare materials, monitor for open call |
+| 5 | Processing Foundation | ~April-May 2026 | Prepare materials, watch for announcement |
+| 6 | Knight Foundation | June 20, 2026 | Verify geographic eligibility first |
+| 7 | NEA GAP 2 | July 9, 2026 | Find fiscal sponsor if pursuing |
+| 8 | Mellon Foundation | Invitation-only | Build visibility, monitor for open calls |
+
+### Key Findings from Research
+- **Knight Foundation** Art+Tech is geographically restricted to Akron/Detroit/Miami — may need substitute
+- **Mellon Foundation** is invitation-only — not a viable near-term target
+- **NEA** requires 501(c)(3) — needs fiscal sponsor; federal arts funding currently unstable
+- **Google Creative Fellowship** is the most time-sensitive (11 days)
+- **Eyebeam** and **Processing Foundation** both open in Spring 2026 — good targets for Week 5-6
+- **AI roles** are rolling — can submit anytime but sooner is better
+
+### Substitute Targets (if primary targets are ineligible)
+- **Creative Capital** — supports individual artists, no geographic restriction
+- **MAP Fund** — live performance and interdisciplinary work
+- **NEW INC** (New Museum) — technology-focused incubator
+- **Rhizome** — digital art commissions
+- **Ford Foundation Creativity and Free Expression** — larger grants, more competitive
