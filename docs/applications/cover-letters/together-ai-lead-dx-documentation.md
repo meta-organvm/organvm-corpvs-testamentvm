@@ -18,7 +18,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 - 73 documented repositories, each with a README written for external evaluators
 - A reading order and cross-document dependency map so newcomers know where to start
 - An annotated manifest providing per-file descriptions of every document in the corpus
-- 17 meta-system essays explaining architectural decisions to non-technical audiences
+- 20 meta-system essays explaining architectural decisions to non-technical audiences
 
 This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
