@@ -11,12 +11,12 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey?style=flat-square)](LICENSE)
 [![Status: LAUNCHED](https://img.shields.io/badge/Status-LAUNCHED-2e7d32?style=flat-square)](#current-status)
 [![Organs: 8](https://img.shields.io/badge/Organs-8-1a237e?style=flat-square)](#the-eight-organ-model)
-[![Repos: 77](https://img.shields.io/badge/Repos-77-2e7d32?style=flat-square)](#the-eight-organ-model)
-[![Docs: ~270K words](https://img.shields.io/badge/Docs-~270K%20words-6a1b9a?style=flat-square)](#current-status)
+[![Repos: 81](https://img.shields.io/badge/Repos-81-2e7d32?style=flat-square)](#the-eight-organ-model)
+[![Docs: ~339K words](https://img.shields.io/badge/Docs-~339K%20words-6a1b9a?style=flat-square)](#current-status)
 
-> Complete planning, audit, and implementation corpus for an eight-organ creative-institutional system coordinating 77 GitHub repositories across 8 organizations (7 organs + 1 meta). The system is **live** — all organs are operational.
+> Complete planning, audit, and implementation corpus for an eight-organ creative-institutional system coordinating 81 GitHub repositories across 8 organizations (7 organs + 1 meta). The system is **live** — all organs are operational.
 
-This is **not a source code repository**. It is the authoritative planning and governance corpus for the organvm system — a framework that protects distinct modes of work (theory, art, commerce, community) from collapsing into each other, while presenting the meta-system itself as a portfolio asset. The system launched on 2026-02-11 with 72 documented repositories (~270K words), 5 meta-system essays, and automated governance via GitHub Actions.
+This is **not a source code repository**. It is the authoritative planning and governance corpus for the organvm system — a framework that protects distinct modes of work (theory, art, commerce, community) from collapsing into each other, while presenting the meta-system itself as a portfolio asset. The system launched on 2026-02-11 with all 8 organs operational, 81 repositories, ~339K words of documentation, 21 meta-system essays, and automated governance via GitHub Actions.
 
 ---
 
@@ -83,21 +83,28 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 | Phase 3: GitHub Actions, POSSE, branch protection | **DONE** (2026-02-10) |
 | Launch: 9/9 criteria met | **DONE** (2026-02-11) |
 | Gap-Fill Sprint: Uniform quality across all repos | **DONE** (2026-02-11) |
+| Platinum Sprint: CI + CHANGELOG + ADR for every repo | **DONE** (2026-02-11) |
+| Ignition Sprint: Essays 19-21, dependabot, evidence audit | **DONE** (2026-02-12) |
+| Propulsion Sprint: 17 PROTOTYPE→PRODUCTION promotions | **DONE** (2026-02-12) |
+| Ascension Sprint: 12 promotions, 2 new repos, CI fixes | **DONE** (2026-02-12) |
+| Exodus Sprint: Final promotions, app materials updated | **DONE** (2026-02-12) |
+| Perfection Sprint: Portfolio site full-spectrum coverage | **DONE** (2026-02-12) |
 
 ### Launch Metrics
 
-| Metric | Value |
-|--------|-------|
-| Repos on GitHub | 77 |
-| Documented repos (2,000+ word READMEs) | 72 |
-| Total documentation | ~270,000 words |
-| Flagship repos | 7 |
-| Standard repos | 57 |
-| Meta-system essays | 5 (21,625 words) |
-| GitHub Actions workflows | 5 |
-| Dependency edges validated | 31 (0 violations) |
-| POSSE channels | Mastodon + Discord |
-| GitHub Pages | [public-process](https://organvm-v-logos.github.io/public-process/) |
+| Metric | At Launch (02-11) | Current (02-12) |
+|--------|-------------------|-----------------|
+| Repos on GitHub | 77 | 81 |
+| Documented repos (2,000+ word READMEs) | 72 | 73+ |
+| Total documentation | ~270,000 words | ~339,000 words |
+| Flagship repos | 7 | 7 |
+| Standard repos | 57 | 57 |
+| PRODUCTION status repos | — | 66 (81.5%) |
+| Meta-system essays | 5 (21,625 words) | 21 (~88,000 words) |
+| CI/CD workflows (across all repos) | 5 (meta-level) | 70+ |
+| Dependency edges validated | 31 (0 violations) | 31 (0 violations) |
+| POSSE channels | Mastodon + Discord | Mastodon + Discord |
+| GitHub Pages | [public-process](https://organvm-v-logos.github.io/public-process/) | [public-process](https://organvm-v-logos.github.io/public-process/) |
 
 ---
 
@@ -105,18 +112,103 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 
 | Organ | Domain | GitHub Org | Repos | Flagships | Portfolio Angle |
 |-------|--------|-----------|-------|-----------|-----------------|
-| I | Theory (epistemology, recursion, ontology) | [`organvm-i-theoria`](https://github.com/organvm-i-theoria) | 18 | recursive-engine | Intellectual foundations |
-| II | Art (generative, performance, experiential) | [`organvm-ii-poiesis`](https://github.com/organvm-ii-poiesis) | 27 | metasystem-master, a-mavs-olevm | Creative practice |
-| III | Commerce (SaaS, B2B, B2C products) | [`organvm-iii-ergon`](https://github.com/organvm-iii-ergon) | 21 | public-record-data-scrapper | Deployed products |
-| IV | Orchestration (governance, routing) | [`organvm-iv-taxis`](https://github.com/organvm-iv-taxis) | 9 | orchestration-start-here, agentic-titan | System architecture |
+| I | Theory (epistemology, recursion, ontology) | [`organvm-i-theoria`](https://github.com/organvm-i-theoria) | 18 | recursive-engine--generative-entity | Intellectual foundations |
+| II | Art (generative, performance, experiential) | [`organvm-ii-poiesis`](https://github.com/organvm-ii-poiesis) | 23 | metasystem-master, a-mavs-olevm | Creative practice |
+| III | Commerce (SaaS, B2B, B2C products) | [`organvm-iii-ergon`](https://github.com/organvm-iii-ergon) | 22 | public-record-data-scrapper | Deployed products |
+| IV | Orchestration (governance, routing) | [`organvm-iv-taxis`](https://github.com/organvm-iv-taxis) | 7 | orchestration-start-here, agentic-titan | System architecture |
 | V | Public Process (essays, building in public) | [`organvm-v-logos`](https://github.com/organvm-v-logos) | 2 | public-process | Transparent methodology |
 | VI | Community (salons, reading groups) | [`organvm-vi-koinonia`](https://github.com/organvm-vi-koinonia) | 3 | — | Relational infrastructure |
 | VII | Marketing (POSSE distribution, announcements) | [`organvm-vii-kerygma`](https://github.com/organvm-vii-kerygma) | 4 | — | External communication |
-| VIII | Meta (umbrella org) | [`meta-organvm`](https://github.com/meta-organvm) | 1 | — | System-level coordination |
+| VIII | Meta (umbrella org) | [`meta-organvm`](https://github.com/meta-organvm) | 2 | organvm-corpvs-testamentvm | System-level coordination |
 
-The organ model prevents three pathologies: art corrupted by commerce, theory compromised by scale, and community colonized by metrics. Each organ has its own GitHub organization, governance rules, and documentation standards.
+The organ model prevents three pathologies that commonly destroy creative systems: art corrupted by commercial pressure (when every project needs revenue justification), theory compromised by the need to scale (when ideas must be production-ready before they're explored), and community colonized by engagement metrics (when relationships are valued only for their conversion rates). Each organ has its own GitHub organization, its own governance rules, its own documentation standards, and its own definition of success. What counts as excellent work in ORGAN I (intellectual depth, novel frameworks) is deliberately different from what counts in ORGAN III (revenue potential, user experience).
 
-Dependencies flow unidirectionally: **I → II → III**. ORGAN-III cannot depend on ORGAN-II. All organs are documented by V and amplified by VII.
+Dependencies flow unidirectionally: **I → II → III**. Theory feeds art, art feeds commerce — but ORGAN-III cannot depend on ORGAN-II for ongoing maintenance, and ORGAN-II cannot demand that ORGAN-I produce "commercially viable" theory. This constraint, enforced by automated validation across all 31 declared dependency edges, is the system's most important design decision. It creates genuine creative tension: theory must commit to artistic expression without knowing if it will become a product, and products must stand on their own without leaning on the prestige of the theoretical work that inspired them. All organs are documented by V (Logos, the public process organ) and amplified by VII (Kerygma, the distribution organ).
+
+---
+
+## Implementation History
+
+The eight-organ system was designed, documented, and deployed in a concentrated sequence of sprints — each with defined success criteria and measurable outputs. This velocity is itself evidence of the AI-conductor methodology's effectiveness.
+
+**Phase -1 (2026-02-09):** Org architecture. Eight GitHub organizations created with Greek ontological suffixes (Theoria, Poiesis, Ergon, Taxis, Logos, Koinonia, Kerygma, plus meta-organvm). Environment variable configuration established via `.config/organvm.env` so that naming is templatable rather than hardcoded. Org-level profile READMEs deployed. The architectural decision to use separate GitHub organizations (rather than a monorepo or topic-based organization within a single org) was the system's foundational choice — it enforces organ boundaries at the platform level, preventing accidental coupling between theory, art, and commerce.
+
+**Phase 0 (2026-02-10):** Corpus refinement. Repositories transferred to correct organizations, resolving naming conflicts and ensuring every repo lived under the org matching its organ assignment. Cross-AI validation of planning documents — Claude, Gemini, and GPT-4 each reviewed the corpus independently, producing the evaluation documents in `docs/evaluation/`. This triangulation caught inconsistencies that no single model would have found. The resulting task manifest drove all subsequent work.
+
+**Phase 1 (2026-02-10):** Documentation audit across three sub-sprints. The **Bronze Sprint** produced 7 flagship READMEs (3,000+ words each) for the system's most important repositories — including recursive-engine--generative-entity, metasystem-master, agentic-titan, and orchestration-start-here. The **Silver Sprint** then generated 58 standard READMEs (2,000+ words each), totaling ~202K words of project documentation. Every README was written for a dual audience: grant reviewers evaluating creative practice, and hiring managers evaluating technical skill. The **Gold Sprint** completed the surrounding infrastructure — community health files (CONTRIBUTING, CODE_OF_CONDUCT, SECURITY), five GitHub Actions workflow specifications, org descriptions, topic tags, and the first 5 meta-system essays published via ORGAN V.
+
+**Phase 2 (2026-02-10):** Micro-validation. All 8 organs locked and audited. 1,267 links checked for integrity across the entire corpus. 31 dependency edges validated with zero violations — confirming the no-back-edges constraint holds across every declared relationship. Constitutional compliance verified against Articles I-VI.
+
+**Phase 3 (2026-02-10):** Integration. Five GitHub Actions workflow specifications deployed (dependency validation, monthly audit, promotion, publish-process, content distribution). POSSE distribution channels configured for Mastodon and Discord. Branch protection rules established where org-level plans permitted.
+
+**Launch (2026-02-11):** All 9/9 launch criteria met. Every organ had at least one flagship repository fully documented, the registry was complete and validated, dependency graph was acyclic, documentation exceeded quality gates, and POSSE channels were live. All 8 organs declared OPERATIONAL.
+
+---
+
+## Post-Launch Sprint History
+
+After launch, a series of targeted sprints drove the system from launch-ready to portfolio-standard:
+
+**Gap-Fill Sprint (2026-02-11):** Uniform quality across all repos. 11 new repos created to fill architectural gaps, 14 READMEs deployed, 14 tier promotions executed. Total documentation reached ~270K words across 77 repos.
+
+**Platinum Sprint (2026-02-11):** CI/CD and health file standardization. Every repo received a CI workflow, CHANGELOG, and architectural decision record (ADR). 228 validation checks passed across the Platinum validation suite.
+
+**Ignition Sprint (2026-02-12):** Three new essays (19-21) published, bringing the total to 21 essays (~88K words). The `nexus--babel-alexandria-` repo promoted to PRODUCTION. Portfolio site fixed and live. Dependabot deployed across all orgs. Evidence URL audit passed.
+
+**Propulsion Sprint (2026-02-12):** The largest batch promotion — 17 repos moved from PROTOTYPE to PRODUCTION status. Stale CI configurations cleaned up. All application materials updated with current metrics.
+
+**Ascension Sprint (2026-02-12):** 12 additional repo promotions. Three CI workflow fixes. Two new art-from repos (`art-from--recursive-engine` and `art-from--lingua-franca`) created in ORGAN II and deployed to PRODUCTION. Dependabot alerts triaged across all organizations.
+
+**Exodus Sprint (2026-02-12):** Final promotions including `commerce--meta` to PRODUCTION, bringing the total to 66 PRODUCTION repos (81.5%). All application materials updated to reflect current numbers (339K words, 70+ CI workflows, 21 essays). Nine application bundles finalized as submission-ready — each tailored for a specific role or organization, with cover letters, project selections, and evidence URLs verified against the live system.
+
+**Perfection Sprint (2026-02-12):** Portfolio site expanded from 14 to 20 curated projects across all 8 organs. Organs V (Logos), VI (Koinonia), and VII (Kerygma) — previously absent from the portfolio — received dedicated project pages. Orphan pages (Generative Music, AI-Conductor Model) integrated into the organ group structure. All stale statistics updated across the portfolio site, resume, and about page. The meta-README (this document) expanded from ~1,049 words to 3,000+ words to meet the portfolio standard.
+
+---
+
+## The AI-Conductor Model
+
+This corpus was produced using an **AI-conductor model** of human-AI collaboration: the human acts as conductor — setting direction, making structural decisions, maintaining quality standards, and approving every output — while AI acts as the orchestra, generating volume at speed.
+
+This is not "AI wrote my portfolio." It is a designed production methodology with explicit roles:
+
+- **Human provides:** Strategic direction, structural decisions, quality criteria, voice and tone, factual accuracy review, and final approval for every document.
+- **AI provides:** Draft generation at speed, consistent formatting, template compliance, volume production, and initial cross-reference checking.
+
+The methodology is measured in LLM API tokens, not human-hours. A typical 3,000-word README consumes ~50-90K tokens across 2-3 revision iterations (system prompt + template + project context + generation + revision). An essay (4,000-5,000 words) costs ~120K tokens. A validation pass costs ~15K tokens per repository. The total system budget across all phases was ~6.5 million tokens, producing ~339K words of reviewed, deployed documentation. The bottleneck is never generation speed — it's review quality. Every document passes through human accuracy review before deployment.
+
+The most important aspect of the AI-conductor model is its quality infrastructure. Every AI-generated document passes through the same promotion state machine as everything else in the system — specifications, quality gates, validation checklists. This prevents the most common AI failure mode: plausible text that doesn't say anything useful. The risks we actively monitor include hallucinated code examples (all samples tested or sourced from actual repos), generic boilerplate (project-specific briefs and human review for voice), and incorrect cross-references (automated link checking across 1,267+ links).
+
+The AI-conductor model is documented extensively in the ORGAN V essays, particularly in the methodology and token economics essays. Every document in the system is transparent about its production method. The 21 essays at [public-process](https://organvm-v-logos.github.io/public-process/) provide the most detailed account, including honest post-mortems on what the model gets wrong and where human oversight is non-negotiable.
+
+---
+
+## Repository Standards
+
+Every repository in the eight-organ system meets a defined quality floor:
+
+- **README:** 2,000+ words minimum (flagships: 3,000+), written for grant reviewers and hiring managers. Each README includes a badge row, project description, architecture overview, and honest assessment of tradeoffs.
+- **CI/CD:** 70+ repos carry GitHub Actions workflows — linting, testing, or build validation depending on the repo's tech stack. CI status is tracked in `registry-v2.json`.
+- **CHANGELOG:** Present in every repo, following Keep a Changelog format. Documents the progression from initial creation through documentation sprints to current status.
+- **Community health files:** CONTRIBUTING.md, CODE_OF_CONDUCT.md, and SECURITY.md inherited from org-level `.github` repositories where possible, with repo-specific overrides where needed.
+- **Architectural Decision Records:** 130+ ADRs across the system documenting key design choices — technology selections, dependency declarations, naming decisions, and tradeoff analyses.
+
+The complete standards specification is in [`docs/standards/10-repository-standards.md`](docs/standards/10-repository-standards.md). The Specification-Driven Development methodology used to produce deliverables is in [`docs/standards/11-specification-driven-development.md`](docs/standards/11-specification-driven-development.md).
+
+---
+
+## Validation Infrastructure
+
+Five validation scripts in [`scripts/`](scripts/) enforce system integrity:
+
+1. **Registry validation** — verifies `registry-v2.json` schema compliance: every repo entry has required fields (name, org, status, public, description, documentation_status, portfolio_relevance), ORGAN-III entries carry additional `type` and `revenue` fields.
+2. **Dependency graph validation** — checks all 31 dependency edges for acyclicity and enforces the no-back-edges constraint (I→II→III only). Detects circular dependencies and cross-organ violations.
+3. **Documentation completeness** — audits every repo for README presence, minimum word count, badge row, and required sections.
+4. **Link integrity** — checks all cross-references across the corpus (1,267+ links audited at launch).
+5. **Constitutional compliance** — verifies adherence to the system constitution ([`docs/memory/constitution.md`](docs/memory/constitution.md)), including Articles I-VI and post-cross-validation amendments A-D.
+
+These scripts are designed to run both locally and in CI. The GitHub Actions workflow `validate-dependencies` triggers on every registry change, preventing merges that would violate system invariants. The `monthly-organ-audit` workflow performs a full system health check — examining every repo's documentation status, CI presence, dependency declarations, and constitutional compliance — and generates a Markdown report with JSON metrics suitable for automated dashboards.
+
+The Platinum validation suite adds additional checks: CI workflow presence, CHANGELOG files, architectural decision records, badge rows, and implementation status fields. 228 checks pass across the full suite, giving high confidence that the system's quality claims are backed by automated verification rather than manual assertion.
 
 ---
 
@@ -125,7 +217,7 @@ Dependencies flow unidirectionally: **I → II → III**. ORGAN-III cannot depen
 ### For Human Readers
 
 1. **Start with** [`00-c-master-summary.md`](docs/genesis/00-c-master-summary.md) for a 30-minute overview of the system's design
-2. **Browse** [`registry-v2.json`](registry-v2.json) to see all 77 repos with their status, tiers, and documentation state
+2. **Browse** [`registry-v2.json`](registry-v2.json) to see all 81 repos with their status, tiers, and documentation state
 3. **Read the essays** at [public-process](https://organvm-v-logos.github.io/public-process/) for the meta-system narrative
 4. **Reference** the numbered documents (`01`–`05`) in [`docs/planning/`](docs/planning/) for the original planning methodology
 
@@ -144,6 +236,20 @@ Dependencies flow unidirectionally: **I → II → III**. ORGAN-III cannot depen
 4. Documentation precedes deployment
 5. Every README is a portfolio piece
 6. Promotion is a state machine: LOCAL → CANDIDATE → PUBLIC_PROCESS → GRADUATED → ARCHIVED
+
+---
+
+## Why This System Exists
+
+The eight-organ system began with a question: what happens when you apply the same rigor to organizing creative work that engineers apply to organizing code? Most creative portfolios are flat — a list of projects with screenshots and descriptions. The relationships between projects are implicit, the governance is invisible, and the organizational logic is whatever the creator happened to do most recently.
+
+This system takes a different approach. The relationships between projects are explicit (declared dependencies in the registry), the governance is visible (promotion state machines, validation scripts, constitutional articles), and the organizational logic is itself a designed artifact (eight organs with distinct responsibilities and no back-edges). The meta-system isn't overhead on top of the creative work — it *is* the creative work, or at least the most interesting part of it.
+
+The practical consequence is that this portfolio can answer questions that flat portfolios cannot: How do theory projects relate to commercial products? (Through declared dependency edges.) How do you maintain quality across 81 repos? (Through automated validation and documented standards.) How do you prevent different types of work from corrupting each other? (Through organ-level separation with GitHub organizations as the enforcement boundary.) How was 339K words of documentation produced in a week? (Through the AI-conductor model, documented transparently.)
+
+For grant reviewers, the system demonstrates sustained creative practice with institutional ambition — not just individual projects but the infrastructure that connects them. For hiring managers, it demonstrates systems architecture, governance design, and the ability to ship at scale with quality. For fellow practitioners, it offers a reusable model for organizing creative work that goes beyond "put it all in one repo and hope for the best."
+
+The system is open. The documentation is public. The methodology is documented. The mistakes are visible. That's the point.
 
 ---
 
