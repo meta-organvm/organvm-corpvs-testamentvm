@@ -17,10 +17,10 @@ There is no build system, test suite, or runtime code here. Executable artifacts
 
 | Organ | Domain | GitHub Org | Repos | Flagships |
 |-------|--------|-----------|-------|-----------|
-| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 18 | recursive-engine |
-| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 27 | metasystem-master, a-mavs-olevm |
-| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 21 | public-record-data-scrapper |
-| IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 9 | orchestration-start-here, agentic-titan |
+| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 18 | recursive-engine--generative-entity |
+| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 23 | metasystem-master, a-mavs-olevm |
+| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 22 | public-record-data-scrapper |
+| IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 7 | orchestration-start-here, agentic-titan |
 | V | Public Process (essays, building in public) | `organvm-v-logos` | 2 | public-process |
 | VI | Community (salons, reading groups) | `organvm-vi-koinonia` | 3 | — |
 | VII | Marketing (POSSE distribution, announcements) | `organvm-vii-kerygma` | 4 | — |
