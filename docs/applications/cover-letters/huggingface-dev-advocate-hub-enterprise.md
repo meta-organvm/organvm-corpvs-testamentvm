@@ -7,11 +7,11 @@
 
 ---
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 289,000 words across 78 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 320,000 words across 81 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
 
 ## Why Hugging Face
 
-I want to work in open source because I've already been doing it. The eight-organ system is 78 public repositories across 8 GitHub organizations, every one of them documented for external evaluators — not internal notes cleaned up for public consumption, but documentation-first development where the writing shaped what the system became. The .github org profile for each organ is its own piece of technical communication, designed so someone landing on the org page understands the architecture in 60 seconds.
+I want to work in open source because I've already been doing it. The eight-organ system is 81 public repositories across 8 GitHub organizations, every one of them documented for external evaluators — not internal notes cleaned up for public consumption, but documentation-first development where the writing shaped what the system became. The .github org profile for each organ is its own piece of technical communication, designed so someone landing on the org page understands the architecture in 60 seconds.
 
 Hugging Face hires people who tell it where to go. I'm the person who sees a gap in documentation and fills it before anyone asks — because I've learned that the distance between "powerful tool" and "tool people actually use" is almost always a documentation problem.
 
@@ -21,8 +21,8 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 - 73 repository READMEs, each written for grant reviewers and hiring managers
 - A cross-document dependency map and reading order so newcomers never feel lost
 - An annotated manifest with per-file descriptions of the entire corpus
-- 10 meta-system essays explaining architectural decisions to non-technical audiences
-- organvm-corpvs-testamentvm as the meta-governance document — 270K words of structured technical writing that IS the product
+- 17 meta-system essays explaining architectural decisions to non-technical audiences
+- organvm-corpvs-testamentvm as the meta-governance document — 320K words of structured technical writing that IS the product
 
 This is the kind of content your role creates: docs, blog posts, tutorials, demos with code repos. I've done all of it at once.
 
@@ -34,7 +34,7 @@ This is the kind of content your role creates: docs, blog posts, tutorials, demo
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** 270K-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** 320K-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
 - **my-knowledge-base:** Developer-oriented knowledge management design (organvm-i-theoria/my-knowledge-base)
 - **metasystem-master:** Meta-level systems documentation that teaches by composition (organvm-ii-poiesis/metasystem-master)
 - **.github org profiles:** Community health files and org-level technical communication across 8 orgs (organvm-i-theoria/.github)
