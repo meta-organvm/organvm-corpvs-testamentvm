@@ -1,12 +1,12 @@
 {
-  "total_deps": 31,
+  "total_deps": 33,
   "missing_targets": 0,
   "self_deps": 0,
   "back_edges": 0,
   "cycles": 0,
   "violations": [],
   "cross_organ_summary": {
-    "organvm-ii-poiesis -> organvm-i-theoria": 1,
+    "organvm-ii-poiesis -> organvm-i-theoria": 3,
     "organvm-iii-ergon -> organvm-i-theoria": 2,
     "organvm-iv-taxis -> organvm-i-theoria": 2,
     "organvm-v-logos -> organvm-i-theoria": 1,
