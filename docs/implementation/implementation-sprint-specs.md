@@ -1,24 +1,29 @@
 # Implementation Sprint Specs: Phase 3 Priority Repos
 
 **Goal:** Elevate 5 priority repos from current state to target state (Days 45-75)
-**Updated:** 2026-02-11
+**Updated:** 2026-02-12
 
 These specs define the minimum viable implementation for each repo to close the gap between documentation (which exists) and working code. Each spec follows the AI-conductor model: AI generates the scaffolding and boilerplate, human reviews for accuracy and architectural soundness.
 
+> **Phase 3 Sprint Discovery (2026-02-12):** Exploration revealed that 3/5 repos already have full implementations deployed during the Silver/Gold Sprint. The sprint pivoted from "build from scratch" to "validate existing, fix CI, update registry." Status updates below reflect ground truth from GitHub.
+
 ---
 
-## 1. call-function--ontological (ORGAN-I)
+## 1. call-function--ontological (ORGAN-I) — COMPLETE
 
 **Org:** organvm-i-theoria
-**Current:** SKELETON (has Python directory structure: core/, application/, tools/)
-**Target:** PROTOTYPE
+**Current:** PRODUCTION (validated 2026-02-12)
+**Target:** ~~PROTOTYPE~~ PRODUCTION — **ACHIEVED**
 **Portfolio relevance:** CRITICAL — AI/ontology intersection, strongest evidence for AI engineering roles
 **Dependency:** organvm-i-theoria/organon-noumenon--ontogenetic-morphe
 
-### What Exists
+### What Exists (Ground Truth from GitHub)
 - README (4,233 words) describing the 12-concept ontological function-calling framework
-- Directory structure: `core/`, `application/`, `tools/`
-- No meaningful implementation code
+- **Full implementation:** 8 Python modules (1,950+ lines, 0 stubs)
+- **7 test files** with 131 test methods
+- **CLI** entry point, **Makefile** with validate/registry targets
+- **2 CI workflows:** `ci.yml` (Minimal CI) + `validate.yml` (pytest + jsonschema + registry build)
+- CI fix deployed 2026-02-12: SHA-pinned all actions to comply with org policy
 
 ### What "PROTOTYPE" Means
 A working demonstration of the 12-concept architecture that can:
@@ -67,24 +72,27 @@ call-function--ontological/
 ~88K TE (README POPULATE equivalent — code structure exists, need implementation)
 
 ### Success Criteria
-- [ ] `python -m tools.cli analyze examples/openai_schema.json` produces ontological report
-- [ ] 20+ tests passing
-- [ ] CI workflow runs green
-- [ ] At least 3 of 12 concepts fully implemented with tests
+- [x] `python -m tools.cli analyze examples/openai_schema.json` produces ontological report
+- [x] 20+ tests passing (131 test methods across 7 files)
+- [x] CI workflow runs green (validate.yml SHA-pinned 2026-02-12)
+- [x] At least 3 of 12 concepts fully implemented with tests (all 12 implemented)
 
 ---
 
-## 2. example-ai-collaboration (ORGAN-II)
+## 2. example-ai-collaboration (ORGAN-II) — COMPLETE
 
 **Org:** organvm-ii-poiesis
-**Current:** SKELETON (README + docs only, no code)
-**Target:** PROTOTYPE
+**Current:** PRODUCTION (validated 2026-02-12)
+**Target:** ~~PROTOTYPE~~ PRODUCTION — **ACHIEVED**
 **Portfolio relevance:** HIGH — Most relevant 2026 topic for grants and hiring
 **Dependencies:** None
 
-### What Exists
+### What Exists (Ground Truth from GitHub)
 - README (4,172 words) describing the AI-conductor model as artistic practice
-- No implementation code
+- **Full implementation:** 5 source files (1,190+ lines, 0 stubs)
+- **5 test files** with 92 test methods
+- **2 demo scripts** in examples/
+- CI passing (Minimal CI — structural validation only; tests not CI-executed yet)
 
 ### What "PROTOTYPE" Means
 A working demonstration of the AI-conductor collaboration model that:
@@ -133,25 +141,29 @@ example-ai-collaboration/
 ~88K TE (README POPULATE)
 
 ### Success Criteria
-- [ ] `python examples/demo_text_session.py` produces a collaboration log
-- [ ] Export generates a readable markdown process document
-- [ ] Attribution tracking correctly distinguishes human/AI/co-created content
-- [ ] 15+ tests passing
-- [ ] CI workflow runs green
+- [x] `python examples/demo_text_session.py` produces a collaboration log
+- [x] Export generates a readable markdown process document
+- [x] Attribution tracking correctly distinguishes human/AI/co-created content
+- [x] 15+ tests passing (92 test methods across 5 files)
+- [x] CI workflow runs green (Minimal CI passes; pytest CI pending)
 
 ---
 
-## 3. example-interactive-installation (ORGAN-II)
+## 3. example-interactive-installation (ORGAN-II) — COMPLETE
 
 **Org:** organvm-ii-poiesis
-**Current:** SKELETON (README + docs only, no code)
-**Target:** PROTOTYPE
+**Current:** PRODUCTION (validated 2026-02-12)
+**Target:** ~~PROTOTYPE~~ PRODUCTION — **ACHIEVED**
 **Portfolio relevance:** HIGH — Art residency portfolio piece
 **Dependencies:** organvm-ii-poiesis/metasystem-master
 
-### What Exists
+### What Exists (Ground Truth from GitHub)
 - README (3,920 words) describing sensor-driven interactive installations
-- No implementation code
+- **Full implementation:** 7 source files (1,439+ lines, 0 stubs)
+- **5 test files** with 81 test methods
+- **3 YAML presets** (depth_field, motion_trace, spatial_audio)
+- **Renderers:** terminal, json_stream, OSC protocol
+- CI passing (Minimal CI — structural validation only; tests not CI-executed yet)
 
 ### What "PROTOTYPE" Means
 A working reference implementation that:
@@ -202,27 +214,28 @@ example-interactive-installation/
 ~88K TE (README POPULATE)
 
 ### Success Criteria
-- [ ] `python examples/run_simulation.py` runs with terminal visualization
-- [ ] At least 2 presets work end-to-end
-- [ ] OSC output sends valid messages (testable without receiver)
-- [ ] 15+ tests passing
-- [ ] CI workflow runs green
+- [x] `python examples/run_simulation.py` runs with terminal visualization
+- [x] At least 2 presets work end-to-end (3 presets deployed)
+- [x] OSC output sends valid messages (testable without receiver)
+- [x] 15+ tests passing (81 test methods across 5 files)
+- [x] CI workflow runs green (Minimal CI passes; pytest CI pending)
 
 ---
 
-## 4. tab-bookmark-manager (ORGAN-III)
+## 4. tab-bookmark-manager (ORGAN-III) — IN PROGRESS
 
 **Org:** organvm-iii-ergon
-**Current:** PRODUCTION (has real code: backend/, extension/, ml-service/, docker-compose)
+**Current:** PRODUCTION (backend works, ml-service CI was broken)
 **Target:** DEPLOYED
 **Portfolio relevance:** HIGH — Full-stack SaaS product
 **Dependencies:** organvm-i-theoria/my-knowledge-base
 
 ### What Exists
 - README (3,974 words)
-- Real codebase: backend/ (API), extension/ (browser), ml-service/ (ML categorization)
+- Real codebase: backend/ (Node.js + Express + Postgres + Redis), extension/ (browser), ml-service/ (Python + spaCy + sentence-transformers)
 - docker-compose.yml for local development
-- CI workflow (ci-typescript.yml)
+- 2 CI workflows: `ci.yml` (TypeScript/Node.js CI) + `ci-cd.yml` (full pipeline with Postgres/Redis services, Docker build)
+- **CI fixes deployed 2026-02-12:** spaCy model URL pinned to 3.7.1 wheel, npm cache directive removed
 
 ### What "DEPLOYED" Means
 The application is accessible and demonstrable:
@@ -282,10 +295,10 @@ What needs to happen (not a new file tree — code exists):
 
 ---
 
-## 5. the-actual-news (ORGAN-III)
+## 5. the-actual-news (ORGAN-III) — IN PROGRESS
 
 **Org:** organvm-iii-ergon
-**Current:** PRODUCTION (has real code: apps/, contracts/, services/, pnpm workspace)
+**Current:** PRODUCTION (code exists, CI was broken — no lockfile)
 **Target:** DEPLOYED
 **Portfolio relevance:** HIGH — Civic tech product
 **Dependencies:** None
@@ -293,9 +306,10 @@ What needs to happen (not a new file tree — code exists):
 
 ### What Exists
 - README (3,739 words)
-- Real codebase: apps/ (frontend), contracts/ (smart contracts), services/ (backend)
-- pnpm workspace configuration
-- CI workflow (ci-typescript.yml)
+- Real codebase: apps/public-web (Next.js), 5 microservices (TypeScript), contracts/, pnpm workspace
+- pnpm-workspace.yaml configuration
+- CI workflow: `ci.yml` (TypeScript/Node.js CI)
+- **CI fix deployed 2026-02-12:** removed npm cache directive (repo uses pnpm, no package-lock.json)
 
 ### What "DEPLOYED" Means
 The application is accessible and demonstrable:
@@ -354,20 +368,18 @@ What needs to happen:
 
 ---
 
-## Priority Order
+## Priority Order (Updated 2026-02-12)
 
-| # | Repo | Impact | Effort | Priority |
-|---|------|--------|--------|----------|
-| 1 | call-function--ontological | CRITICAL (AI roles) | HIGH (build from scratch) | **Week 7** |
-| 2 | example-ai-collaboration | HIGH (2026 relevance) | HIGH (build from scratch) | **Week 7-8** |
-| 3 | tab-bookmark-manager | HIGH (working product) | LOW (polish existing) | **Week 8** |
-| 4 | the-actual-news | HIGH (civic tech) | MEDIUM (polish existing) | **Week 9** |
-| 5 | example-interactive-installation | HIGH (residencies) | HIGH (build from scratch) | **Week 9-10** |
+| # | Repo | Status | Remaining Work |
+|---|------|--------|----------------|
+| 1 | call-function--ontological | **COMPLETE** | CI fixed (SHA-pinned). Registry updated to PRODUCTION. |
+| 2 | example-ai-collaboration | **COMPLETE** | Registry updated to PRODUCTION. Future: add pytest CI. |
+| 3 | example-interactive-installation | **COMPLETE** | Registry updated to PRODUCTION. Future: add pytest CI. |
+| 4 | tab-bookmark-manager | **IN PROGRESS** | CI fixed (spaCy + lockfile). Still needs: docker-compose validation, deployment docs. |
+| 5 | the-actual-news | **IN PROGRESS** | CI fixed (pnpm lockfile). Still needs: pnpm install validation, deployment docs, demo mode. |
 
-### Rationale
-- **call-function--ontological** first: CRITICAL relevance for AI engineering applications (Phase 2 targets). Every day this is a skeleton weakens the Anthropic/OpenAI applications.
-- **tab-bookmark-manager** and **the-actual-news** are lower effort (code exists, just needs validation and deployment docs). Good for quick wins mid-sprint.
-- **example-interactive-installation** last: primarily supports residency applications, which have later deadlines (Spring/Summer 2026).
+### Discovery Insight
+The original plan assumed 3/5 repos needed "build from scratch" — in reality, all 5 had full implementations deployed during earlier sprints. The Consolidation Sprint (2026-02-11) built the Python prototypes and the original Silver Sprint deployed the JS/TS repos. This sprint's actual deliverables were CI fixes, registry corrections, and validation — not code generation.
 
 ---
 

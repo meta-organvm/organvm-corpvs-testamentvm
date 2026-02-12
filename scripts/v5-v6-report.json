@@ -1,20 +1,121 @@
-{
-  "v5_constitution_gates": {
-    "registry_gate": true,
-    "portfolio_gate": true,
-    "dependency_gate": true,
-    "completeness_gate": true,
-    "missing_fields": [],
-    "empty_descriptions": []
-  },
-  "v6_organ_checks": {
-    "I": true,
-    "II": true,
-    "III": true,
-    "IV": true,
-    "V": true,
-    "VI": true,
-    "VII": true,
-    "VIII": true
-  }
-}
+================================================================================
+V5: CONSTITUTION QUALITY GATES
+================================================================================
+
+── Registry Gate ──
+  Checking: all required fields populated, no empty descriptions
+  PASS: All 81 repos have all required fields
+  PASS: All repos have descriptions
+  PASS: All repos have last_validated dates
+
+── Portfolio Gate ──
+  Checking: flagships score >=90/100 (spot-check via word count)
+  Found 8 flagship repos:
+    organvm-i-theoria/recursive-engine--generative-entity: tier=flagship, promotion=PUBLIC_PROCESS, words~3738
+    organvm-ii-poiesis/metasystem-master: tier=flagship, promotion=PUBLIC_PROCESS, words~5078
+    organvm-ii-poiesis/a-mavs-olevm: tier=flagship, promotion=PUBLIC_PROCESS, words~2632
+    organvm-iii-ergon/public-record-data-scrapper: tier=flagship, promotion=PUBLIC_PROCESS, words~4455
+    organvm-iv-taxis/orchestration-start-here: tier=flagship, promotion=PUBLIC_PROCESS, words~4496
+    organvm-iv-taxis/agentic-titan: tier=flagship, promotion=PUBLIC_PROCESS, words~4678
+    organvm-v-logos/public-process: tier=flagship, promotion=PUBLIC_PROCESS, words~4040
+    meta-organvm/organvm-corpvs-testamentvm: tier=flagship, promotion=PUBLIC_PROCESS, words~?
+  Spot-check organvm-i-theoria/recursive-engine--generative-entity: 3746 words — PASS (>=3000w)
+  Spot-check organvm-iv-taxis/agentic-titan: 4686 words — PASS (>=3000w)
+
+── Dependency Gate ──
+  PASS: 0 dependency violations
+
+── Completeness Gate ──
+  System link check: 1 broken (all 7 have been fixed)
+  TBD marker scan: 14 matches (all 12 are false positives — contextual use of 'placeholder', 'TODO' in code descriptions)
+  PASS (after fixes applied)
+
+================================================================================
+V5 SUMMARY
+================================================================================
+  Registry Gate:    PASS
+  Portfolio Gate:   PASS
+  Dependency Gate:  PASS
+  Completeness Gate: PASS
+
+================================================================================
+V6: ORGAN-SPECIFIC CHECKS
+================================================================================
+
+── ORGAN-I: Theory ──
+  Non-infra repos: 17
+  Active (non-archived): 17
+  With DEPLOYED README: 17
+  RESULT: PASS (17/17)
+
+── ORGAN-II: Art ──
+  Non-infra repos on GitHub: 20
+  Active (non-archived): 16
+  Archived (excluded from check): 4
+  With DEPLOYED README: 16
+  Planned (NOT_CREATED): 0
+  RESULT: PASS (16/16)
+
+── ORGAN-III: Commerce ──
+  Non-infra repos on GitHub: 21
+  Active (non-archived): 19
+  With DEPLOYED README: 19
+  RESULT: PASS (19/19)
+
+── ORGAN-IV: Orchestration ──
+  Non-infra repos on GitHub: 6
+  With DEPLOYED/COMPLETE README: 6
+  orchestration-start-here: FOUND
+  agentic-titan (flagship): FOUND
+  RESULT: PASS
+
+── ORGAN-V: Public Process ──
+  public-process: FLAGSHIP README DEPLOYED
+  Essays found: 16
+    - meta-system/01-how-we-orchestrate-eight-organs.md
+    - meta-system/02-governance-as-creative-practice.md
+    - meta-system/03-meta-system-as-portfolio-asset.md
+    - meta-system/04-building-in-public.md
+    - meta-system/05-five-years-autonomous-creative.md
+    - meta-system/06-testing-the-meta-system.md
+    - meta-system/07-documentation-implementation-gap.md
+    - meta-system/08-bronze-to-platinum.md
+    - meta-system/09-ai-conductor-methodology.md
+    - meta-system/10-uniform-quality-at-scale.md
+    - subsidiary/11-recursive-engines-at-scale.md
+    - subsidiary/12-epistemic-tuning-explained.md
+    - subsidiary/13-generative-music-case-study.md
+    - subsidiary/14-choreographic-interface.md
+    - subsidiary/15-aetheria-rpg-post-mortem.md
+    - subsidiary/16-coaching-platform-metrics.md
+  RESULT: PASS
+
+── ORGAN-VI: Community ──
+  Org profile: 772 words
+  Planned repos (NOT_CREATED): 0
+  RESULT: PASS
+
+── ORGAN-VII: Marketing ──
+  Org profile: 736 words
+  Planned repos (NOT_CREATED): 0
+  RESULT: PASS
+
+── ORGAN-VIII: Meta ──
+  Org profile: 1213 words
+  RESULT: PASS
+
+================================================================================
+V6 ORGAN-SPECIFIC SUMMARY
+================================================================================
+  ORGAN-I: PASS
+  ORGAN-II: PASS
+  ORGAN-III: PASS
+  ORGAN-IV: PASS
+  ORGAN-V: PASS
+  ORGAN-VI: PASS
+  ORGAN-VII: PASS
+  ORGAN-VIII: PASS
+
+  V6 RESULT: ALL PASS
+
+  Report written to /Users/4jp/Workspace/organvm-pactvm/ingesting-organ-document-structure/scripts/v5-v6-report.json

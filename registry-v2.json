@@ -137,8 +137,8 @@
           "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-11",
-          "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (4,233 words). Consolidation Sprint: Python prototype deployed — core/ (ontology, grounding, four_causes, dasein, semiotics), application/ (analyzer, report), tools/ (cli), 20+ tests, pyproject.toml.",
-          "implementation_status": "PROTOTYPE",
+          "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (4,233 words). Consolidation Sprint: Python prototype deployed — core/ (ontology, grounding, four_causes, dasein, semiotics), application/ (analyzer, report), tools/ (cli), 20+ tests, pyproject.toml. Phase 3 Sprint: validated 1,950+ lines, 131 test methods, CLI, Makefile, 2 CI workflows.",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true,
           "promotion_obligations": [
@@ -600,8 +600,8 @@
           "promotion_status": "LOCAL",
           "tier": "standard",
           "last_validated": "2026-02-11",
-          "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,920 words). Consolidation Sprint: Python prototype deployed — src/ (sensor_sim, mapping, output, engine, config), renderers/ (terminal, json_stream, osc), 3 YAML presets, 15+ tests.",
-          "implementation_status": "PROTOTYPE",
+          "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,920 words). Consolidation Sprint: Python prototype deployed — src/ (sensor_sim, mapping, output, engine, config), renderers/ (terminal, json_stream, osc), 3 YAML presets, 15+ tests. Phase 3 Sprint: validated 1,439+ lines, 81 tests, 3 presets, terminal+OSC renderers, CI passing.",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -617,8 +617,8 @@
           "promotion_status": "LOCAL",
           "tier": "standard",
           "last_validated": "2026-02-11",
-          "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (4,172 words). Consolidation Sprint: Python prototype deployed — src/ (session, attribution, conductor, export, metrics), workflows/ (text_generation, code_generation), examples/, 15+ tests.",
-          "implementation_status": "PROTOTYPE",
+          "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (4,172 words). Consolidation Sprint: Python prototype deployed — src/ (session, attribution, conductor, export, metrics), workflows/ (text_generation, code_generation), examples/, 15+ tests. Phase 3 Sprint: validated 1,190+ lines, 92 test methods, 2 demo scripts, CI passing.",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -995,7 +995,8 @@
           "note": "Silver Sprint README deployed 2026-02-10 (3,731 words). Promoted stub→standard 2026-02-11.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "none"
         },
         {
           "name": "the-invisible-ledger",
@@ -1013,7 +1014,8 @@
           "note": "Silver Sprint README deployed 2026-02-10 (4,108 words). Promoted stub→standard 2026-02-11.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "none"
         },
         {
           "name": "enterprise-plugin",
@@ -1031,7 +1033,8 @@
           "note": "Silver Sprint README deployed 2026-02-10 (2,809 words). Archived 2026-02-11. Skeleton with no implementation plan.",
           "implementation_status": "SKELETON",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "none"
         },
         {
           "name": "virgil-training-overlay",
@@ -1048,7 +1051,9 @@
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,003 words). Promoted stub→standard 2026-02-11. Archived 2026-02-11. Low relevance, no standalone product path.",
           "implementation_status": "PROTOTYPE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "type": "internal",
+          "revenue": "none"
         },
         {
           "name": "tab-bookmark-manager",
@@ -1067,7 +1072,9 @@
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,974 words). Consolidation Sprint: validated Docker Compose stack, added demo-mode.md, root .env.example, fixed deployment docs.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "type": "SaaS",
+          "revenue": "freemium"
         },
         {
           "name": "a-i-chat--exporter",
@@ -1084,7 +1091,9 @@
           "note": "Fork of pionxzh/chatgpt-exporter. Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (2,863 words).",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "type": "B2C",
+          "revenue": "none"
         },
         {
           "name": ".github",
@@ -1101,7 +1110,9 @@
           "note": "Silver Sprint: org profile README expanded to 563 words (2026-02-10).",
           "implementation_status": "DESIGN_ONLY",
           "ci_workflow": null,
-          "platinum_status": false
+          "platinum_status": false,
+          "type": "internal",
+          "revenue": "none"
         },
         {
           "name": "the-actual-news",
@@ -1119,7 +1130,8 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,739 words). Consolidation Sprint: validated Makefile, Docker Compose, Prism mocks, conformance tests; added local-development.md.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "subscription"
         },
         {
           "name": "your-fit-tailored",
@@ -1137,7 +1149,8 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,191 words). Promoted stub→standard 2026-02-11.",
           "implementation_status": "SKELETON",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "subscription"
         },
         {
           "name": "my-block-warfare",
@@ -1155,7 +1168,8 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,511 words).",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "freemium"
         },
         {
           "name": "life-my--midst--in",
@@ -1173,7 +1187,8 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,609 words).",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "freemium"
         },
         {
           "name": "my--father-mother",
@@ -1193,7 +1208,8 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,299 words).",
           "implementation_status": "PROTOTYPE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "revenue": "one-time"
         },
         {
           "name": "commerce--meta",
@@ -1211,7 +1227,8 @@
           "note": "Created 2026-02-11 Consolidation Sprint. README + directory scaffold deployed.",
           "implementation_status": "SKELETON",
           "ci_workflow": null,
-          "platinum_status": false
+          "platinum_status": false,
+          "revenue": "none"
         }
       ]
     },
@@ -1738,8 +1755,8 @@
       "estimated_total_words": 289000
     },
     "implementation_status_distribution": {
-      "PRODUCTION": 29,
-      "PROTOTYPE": 13,
+      "PRODUCTION": 32,
+      "PROTOTYPE": 10,
       "SKELETON": 19,
       "DESIGN_ONLY": 20
     }
