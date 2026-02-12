@@ -1,6 +1,6 @@
 # Quarterly Sustainability Checklist
 
-**Purpose:** Minimal viable audit for solo operator maintenance of 79 repos across 8 orgs
+**Purpose:** Minimal viable audit for solo operator maintenance of 81 repos across 8 orgs
 **Cadence:** Quarterly (Q2 2026 is first execution)
 **Estimated effort:** 1-2 hours per quarter
 **Source:** Doc 11 Priority 4 recommendation; simplified from `orchestration-system-v2.md` monthly spec
@@ -37,9 +37,21 @@
 
 ## 5. CI Workflow Health
 
-- [ ] Check GitHub Actions status for flagship repos (8 repos): any failed runs?
+- [ ] Run the system-wide CI health query across all 8 orgs:
+  ```bash
+  for ORG in organvm-i-theoria organvm-ii-poiesis organvm-iii-ergon organvm-iv-taxis organvm-v-logos organvm-vi-koinonia organvm-vii-kerygma meta-organvm; do
+    echo "=== $ORG ==="
+    gh repo list "$ORG" --json name --jq '.[].name' | while read REPO; do
+      RESULT=$(gh run list --repo "$ORG/$REPO" --limit 1 --json conclusion --jq '.[0].conclusion' 2>/dev/null)
+      [ -n "$RESULT" ] && echo "  $REPO: $RESULT"
+    done
+  done
+  ```
+- [ ] Calculate CI pass rate: `passing / (passing + failing)` — target ≥ 95%
+- [ ] For any failing repos: check if failure is a real code issue vs. stale workflow
 - [ ] Verify `monthly-organ-audit.yml` has run at least once since last quarter
 - [ ] Check for GitHub Actions deprecation warnings (Node.js version, action versions)
+- [ ] ORGAN-I repos: verify all actions remain SHA-pinned (org policy requirement)
 
 ## 6. Content Freshness
 
@@ -57,7 +69,28 @@
 
 ## 8. Implementation Status Drift
 
-- [ ] Count SKELETON + DESIGN_ONLY repos: has the number decreased since last quarter?
+- [ ] Run the implementation status distribution comparison:
+  ```bash
+  python3 -c "
+  import json
+  reg = json.load(open('registry-v2.json'))
+  dist = reg.get('implementation_status_distribution', {})
+  print('Current distribution:')
+  for status, count in sorted(dist.items()):
+      print(f'  {status}: {count}')
+  print(f'  Total: {sum(dist.values())}')
+  # Compare with previous quarter (update these baselines each quarter)
+  baseline = {'PRODUCTION': 32, 'PROTOTYPE': 15, 'SKELETON': 16, 'DESIGN_ONLY': 20}
+  print('\\nDrift from baseline:')
+  for status in sorted(set(list(dist.keys()) + list(baseline.keys()))):
+      curr = dist.get(status, 0)
+      prev = baseline.get(status, 0)
+      delta = curr - prev
+      arrow = '↑' if delta > 0 else '↓' if delta < 0 else '='
+      print(f'  {status}: {prev} → {curr} ({arrow}{abs(delta)})')
+  "
+  ```
+- [ ] Verify SKELETON + DESIGN_ONLY count has decreased since last quarter
 - [ ] Have any PRODUCTION repos degraded (dependencies outdated, tests failing)?
 - [ ] Are the 5 highest-portfolio-relevance SKELETON repos making progress?
 
