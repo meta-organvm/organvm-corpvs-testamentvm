@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation record for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates 78 GitHub repositories across 8 GitHub organizations (7 organ orgs + 1 meta-org).
+This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation record for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates 81 GitHub repositories across 8 GitHub organizations (7 organ orgs + 1 meta-org).
 
 **Owner:** @4444j99 / @4444J99
 **Status:** LAUNCHED (2026-02-11) — all 8 organs OPERATIONAL
 **Repository:** `meta-organvm/organvm-corpvs-testamentvm`
-**Documentation deployed:** ~270K words across 73 documented repos + 8 org profiles + 5 meta-system essays
+**Documentation deployed:** ~320K words across 81 repos + 8 org profiles + 17 meta-system essays
 
 There is no build system, test suite, or runtime code here. Executable artifacts include 5 validation scripts in `scripts/` and YAML/Python workflow specifications in `docs/implementation/github-actions-spec.md`.
 
