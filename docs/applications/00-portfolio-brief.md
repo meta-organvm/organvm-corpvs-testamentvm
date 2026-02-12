@@ -1,14 +1,14 @@
 # Portfolio Brief: The Eight-Organ System
 
 **For:** All application tracks (AI roles, grants, residencies)
-**Updated:** 2026-02-11
+**Updated:** 2026-02-12
 **Status:** LAUNCHED — all 8 organs OPERATIONAL
 
 ---
 
 ## One-Paragraph Summary
 
-I designed and implemented an eight-organ orchestration system that coordinates 78 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 5 GitHub Actions workflows for autonomous governance. It is fully documented at ~289K words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
+I designed and implemented an eight-organ orchestration system that coordinates 81 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 5 GitHub Actions workflows for autonomous governance. It is fully documented at ~320K words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
 
 ---
 
@@ -16,16 +16,16 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 | Dimension | Value |
 |-----------|-------|
-| Total repositories | 78 (+ 2 planned) |
+| Total repositories | 81 |
 | GitHub organizations | 8 |
-| Documentation | ~289,000 words |
-| CI/CD coverage | 65 repos with workflows |
+| Documentation | ~320,000 words |
+| CI/CD coverage | 65+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
-| Meta-system essays | 10 published (~40K words) |
+| Meta-system essays | 17 published (~70K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
-| Implementation status | 29 PRODUCTION, 10 PROTOTYPE, 21 SKELETON, 20 DESIGN_ONLY |
+| Implementation status | 64 PRODUCTION, 1 PROTOTYPE, 3 SKELETON, 13 DESIGN_ONLY |
 
 ---
 
@@ -34,9 +34,9 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 | # | Organ | Domain | Repos | What It Demonstrates |
 |---|-------|--------|-------|----------------------|
 | I | Theoria | Theory & epistemology | 18 | Intellectual depth, foundational thinking, recursive systems |
-| II | Poiesis | Generative art & performance | 21 | Creative systems design, artistic infrastructure |
-| III | Ergon | Commerce & products | 21 | Product-market thinking, revenue generation, deployment |
-| IV | Taxis | Orchestration & governance | 9 | Systems architecture, governance design, organizational capacity |
+| II | Poiesis | Generative art & performance | 23 | Creative systems design, artistic infrastructure |
+| III | Ergon | Commerce & products | 22 | Product-market thinking, revenue generation, deployment |
+| IV | Taxis | Orchestration & governance | 7 | Systems architecture, governance design, organizational capacity |
 | V | Logos | Public process & essays | 2 | Transparency, thought leadership, building in public |
 | VI | Koinonia | Community | 3 | Collaborative infrastructure, community contribution |
 | VII | Kerygma | Marketing & distribution | 4 | Audience building, POSSE automation, content strategy |
@@ -47,7 +47,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 ## Key Technical Achievements
 
 ### Orchestration Architecture
-- **Central registry** (`registry-v2.json`): Single source of truth for all 78 repos — status, dependencies, documentation, tier, promotion state
+- **Central registry** (`registry-v2.json`): Single source of truth for all 81 repos — status, dependencies, documentation, tier, promotion state
 - **Dependency validation**: Automated checks enforce no back-edges in I->II->III chain, no circular dependencies, transitive depth <= 4
 - **Promotion state machine**: Formal governance pipeline (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED) with automated workflows
 
