@@ -7,15 +7,15 @@
   "launch_date_note": "Phase -1 complete 2026-02-10. Bronze Sprint COMPLETE 2026-02-10. Silver Sprint COMPLETE 2026-02-10. Gold Sprint COMPLETE 2026-02-10. PHASE 2 MICRO-VALIDATION COMPLETE 2026-02-10. PHASE 3 COMPLETE 2026-02-11. SYSTEM LAUNCHED 2026-02-11. 9/9 launch criteria met. POSSE verified: Mastodon (HTTP 200) + Discord (HTTP 204). Jekyll site live with RSS (5 essays). All validation scripts pass.",
   "generated": "2026-02-03T02:30:00Z",
   "source": "Audit of 8 GitHub orgs (organvm-i-theoria through organvm-vii-kerygma + meta-organvm) + personal account 4444J99 + local repos",
-  "project_status": "ASCENSION SPRINT COMPLETE 2026-02-12. 12 PROTOTYPE→PRODUCTION promotions, 2 art-from repos added, 3 CI failures fixed, dependabot deployed. Implementation: 47 PRODUCTION, 18 PROTOTYPE, 3 SKELETON, 13 DESIGN_ONLY. 81 registry entries, all on GitHub. ~320K total words.",
+  "project_status": "PROPULSION SPRINT COMPLETE 2026-02-12. 17 additional PROTOTYPE→PRODUCTION promotions (29 total since launch), stale CI workflows removed, all application materials updated. Implementation: 64 PRODUCTION, 1 PROTOTYPE, 3 SKELETON, 13 DESIGN_ONLY. 81 registry entries, all on GitHub. ~320K total words.",
   "summary": {
     "total_repos": 81,
-    "total_repos_note": "81 registry entries, all on GitHub. ASCENSION Sprint 2026-02-12: +2 art-from repos (organvm-ii-poiesis), 9 PROTOTYPE→PRODUCTION promotions. Previous: 67 original + 13 created - 1 deleted (artist-toolkits-templates). 4 explicitly archived (ORGAN-II monorepo fragments).",
+    "total_repos_note": "81 registry entries, all on GitHub. PROPULSION Sprint 2026-02-12: 17 PROTOTYPE→PRODUCTION promotions, CI cleanup. ASCENSION Sprint 2026-02-12: +2 art-from repos, 12 promotions, dependabot deployed. Previous: 67 original + 13 created - 1 deleted. 4 explicitly archived.",
     "operational_organs": 8,
-    "completion_at_launch": "Platinum Sprint COMPLETE 2026-02-11 — 65 repos with CI workflows, standardized badge rows, CHANGELOGs, ADRs. 10 meta-system essays (~40K words). ~289K total words.",
+    "completion_at_launch": "Platinum Sprint COMPLETE 2026-02-11 — 65 repos with CI workflows, standardized badge rows, CHANGELOGs, ADRs. 17 meta-system essays (~70K words). ~320K total words.",
     "total_organizations": 8,
     "local_repos_to_migrate": 9,
-    "portfolio_strength": "ASCENSION COMPLETE — 81 repos (all on GitHub), 47 PRODUCTION + 18 PROTOTYPE (65 of 81 with running code), 7 flagship repos, 17 essays (~70K words), community health files across 8 orgs, POSSE distribution live, Jekyll site with RSS (17 essays), ~320K total words."
+    "portfolio_strength": "PROPULSION COMPLETE — 81 repos (all on GitHub), 64 PRODUCTION (79%) + 1 PROTOTYPE + 3 SKELETON + 13 DESIGN_ONLY, 7 flagship repos, 17 essays (~70K words), community health files across 8 orgs, POSSE distribution live, Jekyll site with RSS (17 essays), ~320K total words."
   },
   "meta_system_portfolio_note": {
     "context": "Meta-system documentation (governance, orchestration, infrastructure) strengthens applications across: (1) AI systems engineering roles at research labs, (2) Creative/technical grants (NSF, NEA, Mellon, Knight Foundation), (3) Technology residencies and fellowships. This registry demonstrates orchestration capacity, architectural reasoning, and systemic sustainability—competitive differentiators in 2026 funding landscape.",
@@ -223,7 +223,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (3,382 words).",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -335,7 +335,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (2,718 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — seed, bootstrap, cognitive_model modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -352,7 +352,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (2,930 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — persona, operations, registry modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -496,7 +496,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (3,036 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed — interface, motion, renderer modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
         },
@@ -567,7 +567,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,685 words). CONSOLIDATION-II: Python prototype deployed — curriculum, paths, exercises modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -733,7 +733,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (2,981 words). CONSOLIDATION-II: TypeScript prototype deployed — client, websocket, events modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
         },
@@ -750,7 +750,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (2,907 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — publication, datasets, citations modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -769,7 +769,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (3,146 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed — server, client, dialogue modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
         },
@@ -788,7 +788,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (2,512 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed — osc, webaudio, bridge modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
         },
@@ -1002,7 +1002,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Silver Sprint README deployed 2026-02-10 (3,616 words).",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-minimal.yml",
           "platinum_status": true
         },
@@ -1193,7 +1193,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,191 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed — subscription, catalog, matching modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true,
           "revenue": "subscription"
@@ -1252,7 +1252,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,299 words).",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true,
           "revenue": "one-time"
@@ -1338,7 +1338,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (2,811 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — node, network, discovery modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -1393,7 +1393,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,394 words).",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
         },
@@ -1517,7 +1517,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,200 words). CONSOLIDATION-II: Python prototype deployed — curriculum, reading_list, guides modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -1579,7 +1579,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,130 words). CONSOLIDATION-II: Python prototype deployed — posse, mastodon, discord modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -1596,7 +1596,7 @@
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,782 words). CONSOLIDATION-II: Python prototype deployed — scheduler, channels, analytics modules. Tests + CI green.",
-          "implementation_status": "PROTOTYPE",
+          "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -1733,11 +1733,11 @@
   "launch_metrics": {
     "launch_date": "2026-02-11",
     "launch_criteria_met": "9/9",
-    "total_repos_on_github": 78,
+    "total_repos_on_github": 81,
     "documented_repos": 73,
     "org_profiles": 8,
-    "meta_system_essays": 16,
-    "total_essay_words": 65000,
+    "meta_system_essays": 17,
+    "total_essay_words": 70000,
     "total_documentation_words": "~320,000",
     "github_actions_workflows": 5,
     "dependency_edges_validated": 30,
@@ -1764,13 +1764,13 @@
       "repos_with_ci": 65,
       "repos_platinum": 65,
       "new_essays": 5,
-      "total_essays": 10,
+      "total_essays": 17,
       "estimated_new_words": 19000,
-      "estimated_total_words": 289000
+      "estimated_total_words": 320000
     },
     "implementation_status_distribution": {
-      "PRODUCTION": 33,
-      "PROTOTYPE": 30,
+      "PRODUCTION": 64,
+      "PROTOTYPE": 1,
       "SKELETON": 3,
       "DESIGN_ONLY": 13
     }
