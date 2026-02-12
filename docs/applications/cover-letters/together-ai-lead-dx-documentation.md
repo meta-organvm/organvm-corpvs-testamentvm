@@ -6,7 +6,7 @@
 
 ---
 
-I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 320,000 words of portfolio-quality documentation for a system coordinating 81 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
+I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 335,000 words of portfolio-quality documentation for a system coordinating 81 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
 
 ## Why Together AI
 
@@ -36,7 +36,7 @@ I write code that teaches. Every script is documented with the "why," not just t
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** The documentation corpus itself — 320K words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** The documentation corpus itself — 335K words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
 - **metasystem-master:** Meta-level architecture documentation showing system composition (organvm-ii-poiesis/metasystem-master)
 - **my-knowledge-base:** Knowledge management system design (organvm-i-theoria/my-knowledge-base)
 - **narratological-algorithmic-lenses:** Analytical writing applied to computational systems (organvm-i-theoria/narratological-algorithmic-lenses)

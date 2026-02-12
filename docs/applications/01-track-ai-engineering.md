@@ -12,10 +12,10 @@
 
 This positions you as someone who:
 1. **Thinks in systems**, not fragments — orchestrating 81 repos is an architectural challenge
-2. **Ships production-quality infrastructure** — 65+ CI/CD workflows, 5 governance automations, automated health checks
+2. **Ships production-quality infrastructure** — 70+ CI/CD workflows, 5 governance automations, automated health checks
 3. **Designs governance from first principles** — promotion state machine, dependency rules, constitutional constraints
 4. **Tests rigorously** — agentic-titan: 1,095 tests; recursive-engine: 1,254 tests
-5. **Documents thoroughly** — 320K words of documentation is evidence of communication capacity
+5. **Documents thoroughly** — 335K words of documentation is evidence of communication capacity
 
 ---
 
@@ -41,14 +41,14 @@ This positions you as someone who:
 **Lead with:**
 - agentic-titan: 1,095 tests, 18 development phases, multi-agent orchestration
 - The eight-organ system as meta-evidence: you orchestrate agents *and* the infrastructure they run on
-- Production deployment patterns: CI/CD across 65+ repos, automated validation
+- Production deployment patterns: CI/CD across 70+ repos, automated validation
 
 **Talking points:**
 - "agentic-titan went through 18 development phases with 1,095 tests — that's the kind of rigor I bring to production AI systems"
 - "I don't just build AI agents; I build the governance and infrastructure that makes them reliable"
 
 ### Runway / Together AI / Hugging Face — ML Infra or Developer Advocate
-**Why you fit:** These companies need people who can bridge technical depth with clear communication. Your 320K words of documentation + working systems = evidence of both.
+**Why you fit:** These companies need people who can bridge technical depth with clear communication. Your 335K words of documentation + working systems = evidence of both.
 
 **Lead with:**
 - The meta-system itself: 81 repos documented, organized, and automated
@@ -70,8 +70,8 @@ This positions you as someone who:
 > - A machine-readable registry serving as single source of truth for all repos
 > - Automated dependency validation enforcing no circular dependencies and no back-edges
 > - A formal promotion state machine with 5 GitHub Actions workflows for autonomous governance
-> - 65+ CI/CD pipelines and automated monthly health audits
-> - ~320,000 words of documentation across the entire system
+> - 70+ CI/CD pipelines and automated monthly health audits
+> - ~335,000 words of documentation across the entire system
 >
 > Two projects demonstrate particular depth:
 >
@@ -125,7 +125,7 @@ Q: "How do you handle system failures?"
 A: The organ-audit.py script runs monthly health checks. The governance-rules.json defines critical vs. warning thresholds. The validate-dependencies workflow blocks merges that would violate constraints.
 
 Q: "How do you test at scale?"
-A: 65+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
+A: 70+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
 
 Q: "How do you communicate technical decisions?"
 A: 335K words of documentation. 20 meta-system essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.

@@ -15,7 +15,7 @@ Grant reviewers evaluate:
 2. **Long-term sustainability** — Will this outlast the grant period? (Automated governance = yes)
 3. **Community contribution** — Does this benefit others? (Public documentation + ORGAN-VI = yes)
 4. **Innovation** — Is this genuinely new? (Governance-as-artistic-medium = yes)
-5. **Demonstrated track record** — Have you shipped before? (320K words deployed, 65+ CI/CD = yes)
+5. **Demonstrated track record** — Have you shipped before? (335K words deployed, 70+ CI/CD = yes)
 
 ---
 
@@ -85,7 +85,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 81 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~320,000 words of public documentation. All eight organs are currently operational.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 81 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~335,000 words of public documentation. All eight organs are currently operational.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -95,10 +95,10 @@ Grant reviewers evaluate:
 >
 > **Evidence of Capacity:**
 > - 81 repositories across 8 organizations, all operational
-> - 65+ CI/CD pipelines, 5 governance workflows, automated monthly audits
+> - 70+ CI/CD pipelines, 5 governance workflows, automated monthly audits
 > - 20 published meta-system essays (~84K words)
 > - Flagship projects with >1,000 tests each
-> - Complete documentation at portfolio quality (~320K words)
+> - Complete documentation at portfolio quality (~335K words)
 >
 > **Budget:** [AMOUNT]
 > **Timeline:** [DURATION]

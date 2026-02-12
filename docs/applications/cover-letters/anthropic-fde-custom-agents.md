@@ -20,7 +20,7 @@ That's the same discipline Anthropic brings to AI safety: constraints that scale
 
 **Deployment patterns I've already codified.** Your FDE team identifies repeatable deployment patterns and feeds them back to Product and Engineering. I've done this systematically: governance-rules.json encodes rules the system enforces automatically; orchestration-system-v2.md documents the rationale behind every architectural decision; 5 GitHub Actions workflows automate health checks, dependency validation, and promotion across the entire system. These are the kind of artifacts — MCP servers, sub-agents, agent skills — your job description calls for.
 
-**Communication capacity for enterprise environments.** The system includes 320,000 words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
+**Communication capacity for enterprise environments.** The system includes 335,000 words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
 
 **Autonomy under ambiguity.** The eight-organ system didn't start with a spec — it started with a question about how to organize 81 repositories into a coherent creative-institutional system. I defined the architecture, built the tooling, documented the decisions, and shipped it. That's the FDE operating model.
 
@@ -28,7 +28,7 @@ That's the same discipline Anthropic brings to AI safety: constraints that scale
 
 - **agentic-titan:** 1,095 tests, 18 phases, multi-agent orchestration (organvm-iv-taxis/agentic-titan)
 - **a-i-council--coliseum:** Multi-agent deliberation system — AI agents debating and synthesizing (organvm-ii-poiesis/a-i-council--coliseum)
-- **organvm-corpvs-testamentvm:** The governance corpus itself — 320K words of constitutional architecture (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** The governance corpus itself — 335K words of constitutional architecture (meta-organvm/organvm-corpvs-testamentvm)
 - **narratological-algorithmic-lenses:** Analytical frameworks applied to narrative systems (organvm-i-theoria/narratological-algorithmic-lenses)
 - **Portfolio:** https://4444j99.github.io/portfolio/
 

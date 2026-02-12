@@ -84,7 +84,7 @@
 - **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
 - **Fit score:** 8/10
-- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 320K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
+- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 335K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
 
 ### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
 - **Track:** Job

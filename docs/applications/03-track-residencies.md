@@ -102,7 +102,7 @@ Residency evaluators assess:
 >
 > **Medium:** Software infrastructure, governance protocols, public documentation, generative systems
 >
-> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 81 repositories across 8 GitHub organizations with automated governance, public documentation (~320K words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
+> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 81 repositories across 8 GitHub organizations with automated governance, public documentation (~335K words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
 >
 > **Duration:** 5+ years of sustained practice
 >

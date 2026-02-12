@@ -8,7 +8,7 @@
 
 ## One-Paragraph Summary
 
-I designed and implemented an eight-organ orchestration system that coordinates 81 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 5 GitHub Actions workflows for autonomous governance. It is fully documented at ~320K words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
+I designed and implemented an eight-organ orchestration system that coordinates 81 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 5 GitHub Actions workflows for autonomous governance. It is fully documented at ~335K words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
 
 ---
 
@@ -18,14 +18,14 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 |-----------|-------|
 | Total repositories | 81 |
 | GitHub organizations | 8 |
-| Documentation | ~320,000 words |
-| CI/CD coverage | 65+ repos with workflows |
+| Documentation | ~335,000 words |
+| CI/CD coverage | 70+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
 | Meta-system essays | 20 published (~84K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
-| Implementation status | 65 PRODUCTION, 1 PROTOTYPE, 3 SKELETON, 12 DESIGN_ONLY |
+| Implementation status | 66 PRODUCTION, 1 PROTOTYPE, 2 SKELETON, 12 DESIGN_ONLY |
 
 ---
 
