@@ -9,10 +9,10 @@
   },
   "v6_organ_checks": {
     "I": true,
-    "II": false,
+    "II": true,
     "III": true,
     "IV": true,
-    "V": false,
+    "V": true,
     "VI": true,
     "VII": true,
     "VIII": true

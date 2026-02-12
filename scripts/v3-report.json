@@ -1,7 +1,7 @@
 {
-  "registry_count": 80,
-  "github_count": 67,
-  "deployed_ok": 67,
+  "registry_count": 81,
+  "github_count": 79,
+  "deployed_ok": 75,
   "deployed_missing": [],
   "deployed_no_readme": [],
   "github_not_in_registry": [],

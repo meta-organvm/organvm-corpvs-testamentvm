@@ -51,16 +51,40 @@ def gh_readme_word_count(org, repo):
 
 
 def gh_check_essays(org, repo):
-    """Check if public-process repo has essay files."""
+    """Check if public-process repo has essay files, recursing into subdirectories."""
     try:
         result = subprocess.run(
             ["gh", "api", f"repos/{org}/{repo}/contents/essays",
-             "--jq", '.[].name'],
+             "--jq", '.[] | .name + "|" + .type'],
             capture_output=True, text=True, timeout=30
         )
         if result.returncode != 0:
             return []
-        return [n.strip() for n in result.stdout.strip().split('\n') if n.strip()]
+
+        essays = []
+        for line in result.stdout.strip().split('\n'):
+            if not line.strip():
+                continue
+            parts = line.strip().split('|')
+            name = parts[0]
+            entry_type = parts[1] if len(parts) > 1 else 'file'
+
+            if entry_type == 'dir':
+                # Recurse into subdirectory to find .md files
+                sub_result = subprocess.run(
+                    ["gh", "api", f"repos/{org}/{repo}/contents/essays/{name}",
+                     "--jq", '.[].name'],
+                    capture_output=True, text=True, timeout=30
+                )
+                if sub_result.returncode == 0:
+                    for sub_name in sub_result.stdout.strip().split('\n'):
+                        sub_name = sub_name.strip()
+                        if sub_name and sub_name.endswith('.md'):
+                            essays.append(f"{name}/{sub_name}")
+            elif name.endswith('.md'):
+                essays.append(name)
+
+        return essays
     except Exception:
         return []
 
@@ -230,35 +254,43 @@ def main():
     print("\n── ORGAN-I: Theory ──")
     org1 = registry['organs']['ORGAN-I']
     repos_i = [r for r in org1['repositories'] if r['name'] != '.github']
-    deployed_i = [r for r in repos_i if 'DEPLOYED' in r.get('documentation_status', '')]
+    active_i = [r for r in repos_i if r.get('status') != 'ARCHIVED']
+    deployed_i = [r for r in active_i if 'DEPLOYED' in r.get('documentation_status', '')]
     print(f"  Non-infra repos: {len(repos_i)}")
+    print(f"  Active (non-archived): {len(active_i)}")
     print(f"  With DEPLOYED README: {len(deployed_i)}")
-    organ_results['I'] = len(deployed_i) == len(repos_i)
-    print(f"  RESULT: {'PASS' if organ_results['I'] else 'FAIL'} ({len(deployed_i)}/{len(repos_i)})")
+    organ_results['I'] = len(deployed_i) == len(active_i)
+    print(f"  RESULT: {'PASS' if organ_results['I'] else 'FAIL'} ({len(deployed_i)}/{len(active_i)})")
 
     # ── ORGAN-II ──
     print("\n── ORGAN-II: Art ──")
     org2 = registry['organs']['ORGAN-II']
     repos_ii = [r for r in org2['repositories']
                 if r['name'] != '.github' and 'NOT_CREATED' not in r.get('note', '')]
-    deployed_ii = [r for r in repos_ii if 'DEPLOYED' in r.get('documentation_status', '')]
+    archived_ii = [r for r in repos_ii if r.get('status') == 'ARCHIVED']
+    active_ii = [r for r in repos_ii if r.get('status') != 'ARCHIVED']
+    deployed_ii = [r for r in active_ii if 'DEPLOYED' in r.get('documentation_status', '')]
     print(f"  Non-infra repos on GitHub: {len(repos_ii)}")
+    print(f"  Active (non-archived): {len(active_ii)}")
+    print(f"  Archived (excluded from check): {len(archived_ii)}")
     print(f"  With DEPLOYED README: {len(deployed_ii)}")
     not_created_ii = [r for r in org2['repositories'] if 'NOT_CREATED' in r.get('note', '')]
     print(f"  Planned (NOT_CREATED): {len(not_created_ii)}")
-    organ_results['II'] = len(deployed_ii) == len(repos_ii)
-    print(f"  RESULT: {'PASS' if organ_results['II'] else 'FAIL'} ({len(deployed_ii)}/{len(repos_ii)})")
+    organ_results['II'] = len(deployed_ii) == len(active_ii)
+    print(f"  RESULT: {'PASS' if organ_results['II'] else 'FAIL'} ({len(deployed_ii)}/{len(active_ii)})")
 
     # ── ORGAN-III ──
     print("\n── ORGAN-III: Commerce ──")
     org3 = registry['organs']['ORGAN-III']
     repos_iii = [r for r in org3['repositories']
                  if r['name'] != '.github' and 'NOT_CREATED' not in r.get('note', '')]
-    deployed_iii = [r for r in repos_iii if 'DEPLOYED' in r.get('documentation_status', '')]
+    active_iii = [r for r in repos_iii if r.get('status') != 'ARCHIVED']
+    deployed_iii = [r for r in active_iii if 'DEPLOYED' in r.get('documentation_status', '')]
     print(f"  Non-infra repos on GitHub: {len(repos_iii)}")
+    print(f"  Active (non-archived): {len(active_iii)}")
     print(f"  With DEPLOYED README: {len(deployed_iii)}")
-    organ_results['III'] = len(deployed_iii) == len(repos_iii)
-    print(f"  RESULT: {'PASS' if organ_results['III'] else 'FAIL'} ({len(deployed_iii)}/{len(repos_iii)})")
+    organ_results['III'] = len(deployed_iii) == len(active_iii)
+    print(f"  RESULT: {'PASS' if organ_results['III'] else 'FAIL'} ({len(deployed_iii)}/{len(active_iii)})")
 
     # ── ORGAN-IV ──
     print("\n── ORGAN-IV: Orchestration ──")

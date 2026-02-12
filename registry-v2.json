@@ -84,7 +84,16 @@
           "note": "Silver Sprint README deployed 2026-02-10 (2,392 words). Promoted to CANDIDATE for Art 2026-02-11. Governance visualization as interactive art installation.",
           "implementation_status": "PROTOTYPE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "promotion_obligations": [
+            {
+              "type": "repo_creation",
+              "target_org": "organvm-ii-poiesis",
+              "target_name": "art-from--auto-revision-epistemic-engine",
+              "description": "Interactive visualization of self-governing orchestration — governance as performance art",
+              "status": "PENDING"
+            }
+          ]
         },
         {
           "name": "narratological-algorithmic-lenses",
@@ -102,7 +111,16 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (3,728 words). Promoted to CANDIDATE for Art 2026-02-11. Destination: art-from--narratological-algorithmic-lenses.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "promotion_obligations": [
+            {
+              "type": "repo_creation",
+              "target_org": "organvm-ii-poiesis",
+              "target_name": "art-from--narratological-algorithmic-lenses",
+              "description": "Interactive web experience for exploring narrative structures via visual algorithmic lenses",
+              "status": "PENDING"
+            }
+          ]
         },
         {
           "name": "call-function--ontological",
@@ -122,7 +140,16 @@
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (4,233 words). Consolidation Sprint: Python prototype deployed — core/ (ontology, grounding, four_causes, dasein, semiotics), application/ (analyzer, report), tools/ (cli), 20+ tests, pyproject.toml.",
           "implementation_status": "PROTOTYPE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "promotion_obligations": [
+            {
+              "type": "essay",
+              "target_org": "organvm-v-logos",
+              "target_name": "Why AI Function Calling Needs Ontological Grounding",
+              "description": "ORGAN-V essay exploring Heideggerian, Aristotelian, and Peircean frameworks for AI function calling",
+              "status": "PENDING"
+            }
+          ]
         },
         {
           "name": "sema-metra--alchemica-mundi",
@@ -789,6 +816,15 @@
           "note": "Silver Sprint README deployed 2026-02-10 (3,576 words). Promoted to PUBLIC_PROCESS 2026-02-11. Essay: '13-aetheria-rpg-post-mortem.md'.",
           "implementation_status": "PRODUCTION",
           "ci_workflow": "ci-typescript.yml",
+          "promotion_obligations": [
+            {
+              "type": "essay",
+              "target_org": "organvm-v-logos",
+              "target_name": "15-aetheria-rpg-post-mortem.md",
+              "description": "Post-mortem essay on classroom RPG design and deployment",
+              "status": "COMPLETE"
+            }
+          ],
           "platinum_status": true
         },
         {
