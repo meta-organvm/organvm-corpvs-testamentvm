@@ -1,7 +1,6 @@
 # seed.yaml — Automation Contract for meta-organvm/organvm-corpvs-testamentvm
 # Schema: seed/v1.0
-# Generated: 2026-02-12 (AUTONOMY Sprint)
-# Category: standard
+# Updated: AUTONOMY Sprint Phase E (orphan resolution)
 
 schema_version: "1.0"
 organ: Meta
@@ -13,15 +12,25 @@ metadata:
   implementation_status: PRODUCTION
   tier: flagship
   promotion_status: PUBLIC_PROCESS
-  last_validated: "2026-02-11"
-  generated: "2026-02-12"
-  sprint: "AUTONOMY"
+  last_validated: 2026-02-11
+  generated: 2026-02-12
+  sprint: AUTONOMY
 
 agents:
   - name: ci
     trigger: on_push
     workflow: .github/workflows/ci-python.yml
     description: "Continuous integration pipeline"
+
+produces:
+  - type: meta-documentation
+    description: System-wide governance documentation and planning corpus
+    consumers: [ORGAN-IV]
+
+consumes:
+  - type: orchestration-artifact
+    source: ORGAN-IV
+    description: Orchestration decisions inform meta-documentation
 
 subscriptions:
   - event: governance.updated
