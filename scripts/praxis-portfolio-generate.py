@@ -46,8 +46,9 @@ SPRINT_HISTORY = [
     {"name": "AUTONOMY", "date": "2026-02-12", "summary": "seed.yaml contracts, agents, workflows"},
     {"name": "GENESIS", "date": "2026-02-12", "summary": "7 new repos from local materials"},
     {"name": "ALCHEMIA", "date": "2026-02-12", "summary": "2,012 files inventoried, taste.yaml cascading"},
-    {"name": "CONVERGENCE", "date": "2026-02-13", "summary": "82 PRODUCTION, 7 ARCHIVED, zero gaps"},
+    {"name": "CONVERGENCE", "date": "2026-02-13", "summary": "82 ACTIVE, 7 ARCHIVED, zero gaps"},
     {"name": "PRAXIS", "date": "2026-02-13", "summary": "External impact — portfolio, distribution, revenue"},
+    {"name": "VERITAS", "date": "2026-02-13", "summary": "Credibility hardening — PRODUCTION→ACTIVE, revenue split, essay dates"},
 ]
 
 
@@ -86,7 +87,7 @@ def generate_landing(registry):
         "tagline": "A living system of 8 organs coordinating theory, art, commerce, orchestration, public process, community, marketing, and governance.",
         "metrics": {
             "total_repos": len(all_repos),
-            "production_repos": status_counts.get("PRODUCTION", 0),
+            "active_repos": status_counts.get("ACTIVE", 0),
             "archived_repos": status_counts.get("ARCHIVED", 0),
             "dependency_edges": dep_count,
             "ci_workflows": ci_count,

@@ -26,11 +26,11 @@ def check_registry():
             counts[s] = counts.get(s, 0) + 1
 
     total = sum(counts.values())
-    production = counts.get("PRODUCTION", 0)
+    active = counts.get("ACTIVE", 0)
     archived = counts.get("ARCHIVED", 0)
-    other = total - production - archived
+    other = total - active - archived
 
-    print(f"  Registry: {total} repos, {production} PRODUCTION, {archived} ARCHIVED, {other} other")
+    print(f"  Registry: {total} repos, {active} ACTIVE, {archived} ARCHIVED, {other} other")
     return other == 0 and total == 89
 
 

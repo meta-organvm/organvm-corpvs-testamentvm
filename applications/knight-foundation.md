@@ -9,17 +9,17 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates 89 repositories across 8 GitHub organizations with 33 registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 89 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
 
 This application highlights the system's relevance to Knight Foundation Art+Tech through:
 
-- Systemic creative infrastructure
-- Documentation as artistic output
-- Multi-organ coordination as institutional design
+- Systemic creative infrastructure as artistic practice
+- 28+ published essays documenting the build process in real time
+- Multi-organ coordination as a model for sustainable institutional design
 
 ## Why Knight Foundation Art+Tech
 
-Infrastructure as creative practice. The eight-organ architecture demonstrates that creative infrastructure — the protocols, governance structures, and coordination systems underlying artistic production — is itself a form of creative practice. Artists like Julian Oliver, Nicky Case, and Hundred Rabbits treat protocols and governance as primary artistic output. ORGANVM extends this tradition to institutional scale.
+The Knight Foundation champions projects where technology enables civic and cultural infrastructure. ORGANVM treats the infrastructure itself — the registries, governance protocols, dependency graphs, and coordination systems — as primary creative output. This follows the tradition of artists like Julian Oliver (critical engineering), Nicky Case (explorable explanations), and Hundred Rabbits (off-grid creative tools) who treat protocols and systems as artistic material. What distinguishes ORGANVM is scale: eight interconnected organs with automated orchestration, a public essay corpus documenting every decision, and a governance model designed for long-term sustainability — exactly the kind of infrastructure thinking the Art+Tech program supports.
 
 ## Portfolio URL
 
@@ -33,7 +33,7 @@ https://4444j99.github.io/portfolio/
 
 Essays, case studies, methodology documentation, RSS feed, newsletter integration
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Primary narrative layer describing all 8 organs + meta-system
 - **CI**: ci-minimal.yml
@@ -42,7 +42,7 @@ Essays, case studies, methodology documentation, RSS feed, newsletter integratio
 
 Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scripts. The central nervous system of the eight-organ system.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Core system documentation for all funding applications
 - **CI**: ci-python.yml
@@ -51,7 +51,7 @@ Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scr
 
 The authoritative planning and governance corpus for the eight-organ creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution
 - **CI**: ci-python.yml
@@ -60,7 +60,7 @@ The authoritative planning and governance corpus for the eight-organ creative-in
 
 RE:GE — A symbolic operating system for myth, identity, ritual, and recursive systems. 21 organ handlers, ritual syntax DSL, workflow orchestration, external bridges (Obsidian/Git/Max-MSP).
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-I expression; 1,254 tests, 85% coverage, pure Python
 - **CI**: ci-python.yml

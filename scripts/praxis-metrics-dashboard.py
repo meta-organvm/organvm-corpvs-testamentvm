@@ -36,8 +36,9 @@ SPRINT_HISTORY = [
     {"name": "AUTONOMY", "date": "2026-02-12", "focus": "Automation", "deliverables": "seed.yaml, 5 agents, 11 workflows"},
     {"name": "GENESIS", "date": "2026-02-12", "focus": "Creation", "deliverables": "7 new repos from local materials"},
     {"name": "ALCHEMIA", "date": "2026-02-12", "focus": "Aesthetics", "deliverables": "2,012 files, taste.yaml cascading"},
-    {"name": "CONVERGENCE", "date": "2026-02-13", "focus": "Coherence", "deliverables": "82 PRODUCTION, zero gaps"},
+    {"name": "CONVERGENCE", "date": "2026-02-13", "focus": "Coherence", "deliverables": "82 ACTIVE, zero gaps"},
     {"name": "PRAXIS", "date": "2026-02-13", "focus": "Impact", "deliverables": "Portfolio, distribution, revenue"},
+    {"name": "VERITAS", "date": "2026-02-13", "focus": "Credibility", "deliverables": "PRODUCTION→ACTIVE, revenue split, essay dates, honesty essay"},
 ]
 
 

@@ -21,11 +21,11 @@
   - Files: `applications/knight-foundation.md:26`, `applications/eyebeam-residency.md:26`, `applications/google-creative.md:26`, `applications/processing-foundation.md:26`, `applications/ai-systems-role.md:27`
   - Finding: W5
 
-- [ ] **Q2.** Change `revenue: active` to `revenue_model: [subscription|freemium|one-time]` for all ORGAN-III repos with zero actual revenue
+- [x] **Q2.** Change `revenue: active` to `revenue_model: [subscription|freemium|one-time]` for all ORGAN-III repos with zero actual revenue — **RESOLVED (VERITAS Sprint):** Split into `revenue_model` + `revenue_status: pre-launch` across all 24 ORGAN-III repos
   - File: `registry-v2.json` (9 entries with `"revenue": "active"`)
   - Finding: W3, LC4, SP3
 
-- [ ] **Q3.** Redate 9 future-dated essays (2026-02-14 through 2026-02-22) to their actual creation date (2026-02-13)
+- [x] **Q3.** Redate 9 future-dated essays (2026-02-14 through 2026-02-22) to their actual creation date (2026-02-13) — **RESOLVED (VERITAS Sprint):** All 9 essays redated in system-metrics.json and public-process _posts/
   - Files: `system-metrics.json` essay timeline, public-process `_posts/` frontmatter
   - Finding: W4, SP2
 
@@ -35,23 +35,23 @@
   - Files: All 5 `applications/*.md`
   - Finding: W5
 
-- [ ] **Q5.** Translate project-internal vocabulary in applications for external audiences
+- [x] **Q5.** Translate project-internal vocabulary in applications for external audiences — **RESOLVED (VERITAS Sprint):** All 5 applications de-jargoned, AI-conductor defined on first use, "Why [Target]" sections differentiated per audience
   - Replace "115 seed.yaml contract edges" with human-readable description
   - Replace "PRAXIS Sprint" references with accessible language
   - Define "AI-conductor methodology" on first use
   - Files: All 5 `applications/*.md`
   - Finding: PA4
 
-- [ ] **M5.** Write an honest "How This Was Built" essay acknowledging AI role, compressed timeline, and current limitations
+- [x] **M5.** Write an honest "How This Was Built" essay acknowledging AI role, compressed timeline, and current limitations — **RESOLVED (VERITAS Sprint):** Essay deployed to public-process
   - Target: `_posts/` in public-process
   - Finding: BS3, BS4, PA3
 
 ## P2 — MEDIUM (Fix Within 1–2 Weeks)
 
-- [ ] **M1.** Rename `implementation_status: PRODUCTION` → `DOCUMENTED` across the entire system
+- [x] **M1.** Rename `implementation_status: PRODUCTION` → `ACTIVE` across the entire system — **RESOLVED (VERITAS Sprint):** 82 repos renamed in registry-v2.json, system-metrics.json, validation scripts, CLAUDE.md, and all 5 application materials
   - Files: `registry-v2.json` (82 entries), `system-metrics.json`, all validation scripts, CLAUDE.md, application materials
   - Finding: LC3, SP1, ET2
-  - Note: This is the single highest-impact vocabulary change. Discuss naming alternatives: `DOCUMENTED`, `MAINTAINED`, `ACTIVE`
+  - Note: Chose `ACTIVE` over `DOCUMENTED` or `MAINTAINED` — it says "this repo is maintained" without implying production deployment
 
 - [ ] **M2.** Vivify top 4 non-SUBSTANTIAL flagships with real code and tests
   - `agentic-titan` (2 code files → working orchestration agent)
@@ -60,7 +60,7 @@
   - `example-generative-music` (7 code files, 2 tests → working Web Audio demo)
   - Finding: W1, LC2
 
-- [ ] **M3.** Add `revenue_status` field to ORGAN-III repo schema
+- [x] **M3.** Add `revenue_status` field to ORGAN-III repo schema — **RESOLVED (VERITAS Sprint):** Split `revenue` into `revenue_model` + `revenue_status` across all 24 ORGAN-III repos
   - Values: `pre-launch` | `beta` | `live`
   - Separates business model (what you plan to charge) from business state (whether anyone is paying)
   - File: `registry-v2.json`

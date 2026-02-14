@@ -44,11 +44,11 @@ def check_registry():
             counts[s] = counts.get(s, 0) + 1
 
     total = sum(counts.values())
-    production = counts.get("PRODUCTION", 0)
+    active = counts.get("ACTIVE", 0)
     archived = counts.get("ARCHIVED", 0)
-    other = total - production - archived
+    other = total - active - archived
 
-    print(f"  Registry: {total} repos, {production} PRODUCTION, {archived} ARCHIVED, {other} other")
+    print(f"  Registry: {total} repos, {active} ACTIVE, {archived} ARCHIVED, {other} other")
     return other == 0 and total >= 89
 
 
@@ -239,7 +239,7 @@ def check_dashboard():
 
     # Check for stale data
     project_status = metrics.get("system", {}).get("project_status", "")
-    is_stale = "PRAXIS" not in project_status and "CONVERGENCE" in project_status
+    is_stale = "VERITAS" not in project_status and "PRAXIS" not in project_status and "CONVERGENCE" in project_status
 
     if is_stale:
         print(f"  Dashboard: {sections}/4 sections — STALE (still references CONVERGENCE)")

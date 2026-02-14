@@ -1,17 +1,17 @@
 {
   "generated": "2026-02-13T23:14:19.928235+00:00",
-  "sprint": "PRAXIS",
+  "sprint": "VERITAS",
   "system": {
     "name": "ORGANVM",
     "launch_date": "2026-02-11",
-    "project_status": "PRAXIS SPRINT IN PROGRESS 2026-02-13. Portfolio site scaffolded (Astro), 6 PRAXIS scripts deployed, 5 application packages generated, system-metrics.json dashboard live, flagship audit complete (4 SUBSTANTIAL, 2 PARTIAL, 2 need vivification). All CONVERGENCE invariants maintained: 82 PRODUCTION, 7 ARCHIVED, 89 registry entries, 28 essays (~111K words), ~386K+ total words. Previous sprints: IGNITION, PROPULSION, ASCENSION, EXODUS, PERFECTION, AUTONOMY, GENESIS, ALCHEMIA, CONVERGENCE."
+    "project_status": "VERITAS SPRINT COMPLETE 2026-02-13. Credibility hardening: PRODUCTION→ACTIVE rename, revenue field split (revenue_model + revenue_status), 9 future-dated essays corrected, application materials de-jargoned, honesty essay deployed. 82 ACTIVE, 7 ARCHIVED, 89 registry entries, 28+ essays, ~386K+ total words. Previous sprints: IGNITION, PROPULSION, ASCENSION, EXODUS, PERFECTION, AUTONOMY, GENESIS, ALCHEMIA, CONVERGENCE, PRAXIS."
   },
   "registry": {
     "total_repos": 89,
     "total_organs": 8,
     "operational_organs": 8,
     "implementation_status": {
-      "PRODUCTION": 82,
+      "ACTIVE": 82,
       "ARCHIVED": 7
     },
     "tier_distribution": {
@@ -34,7 +34,7 @@
         "status": "OPERATIONAL",
         "total_repos": 19,
         "implementation_status": {
-          "PRODUCTION": 19
+          "ACTIVE": 19
         },
         "tier_distribution": {
           "flagship": 1,
@@ -49,7 +49,7 @@
         "total_repos": 26,
         "implementation_status": {
           "ARCHIVED": 4,
-          "PRODUCTION": 22
+          "ACTIVE": 22
         },
         "tier_distribution": {
           "archive": 4,
@@ -64,8 +64,8 @@
         "status": "OPERATIONAL",
         "total_repos": 24,
         "implementation_status": {
-          "PRODUCTION": 22,
-          "ARCHIVED": 2
+          "ARCHIVED": 2,
+          "ACTIVE": 22
         },
         "tier_distribution": {
           "standard": 20,
@@ -80,7 +80,7 @@
         "status": "OPERATIONAL",
         "total_repos": 7,
         "implementation_status": {
-          "PRODUCTION": 7
+          "ACTIVE": 7
         },
         "tier_distribution": {
           "flagship": 2,
@@ -94,7 +94,7 @@
         "status": "OPERATIONAL",
         "total_repos": 2,
         "implementation_status": {
-          "PRODUCTION": 2
+          "ACTIVE": 2
         },
         "tier_distribution": {
           "flagship": 1,
@@ -107,7 +107,7 @@
         "status": "OPERATIONAL",
         "total_repos": 4,
         "implementation_status": {
-          "PRODUCTION": 4
+          "ACTIVE": 4
         },
         "tier_distribution": {
           "standard": 3,
@@ -121,7 +121,7 @@
         "total_repos": 4,
         "implementation_status": {
           "ARCHIVED": 1,
-          "PRODUCTION": 3
+          "ACTIVE": 3
         },
         "tier_distribution": {
           "archive": 1,
@@ -135,7 +135,7 @@
         "status": "OPERATIONAL",
         "total_repos": 3,
         "implementation_status": {
-          "PRODUCTION": 3
+          "ACTIVE": 3
         },
         "tier_distribution": {
           "infrastructure": 1,
@@ -151,7 +151,7 @@
     "note": "CI status check skipped (--skip-ci)"
   },
   "essays": {
-    "total": 28,
+    "total": 29,
     "timeline": [
       {
         "date": "2026-02-10",
@@ -230,40 +230,44 @@
         "slug": "why-ai-function-calling-needs-ontological-grounding"
       },
       {
-        "date": "2026-02-14",
+        "date": "2026-02-13",
         "slug": "the-promotion-pipeline"
       },
       {
-        "date": "2026-02-15",
+        "date": "2026-02-13",
         "slug": "deploying-the-portfolio"
       },
       {
-        "date": "2026-02-16",
+        "date": "2026-02-13",
         "slug": "bootstrap-to-scale"
       },
       {
-        "date": "2026-02-17",
+        "date": "2026-02-13",
         "slug": "aesthetic-nervous-system"
       },
       {
-        "date": "2026-02-18",
+        "date": "2026-02-13",
         "slug": "seed-contracts"
       },
       {
-        "date": "2026-02-19",
+        "date": "2026-02-13",
         "slug": "provenance-as-practice"
       },
       {
-        "date": "2026-02-20",
+        "date": "2026-02-13",
         "slug": "archive-paradox"
       },
       {
-        "date": "2026-02-21",
+        "date": "2026-02-13",
         "slug": "dependency-graph"
       },
       {
-        "date": "2026-02-22",
+        "date": "2026-02-13",
         "slug": "the-convergence"
+      },
+      {
+        "date": "2026-02-13",
+        "slug": "how-this-was-built"
       }
     ]
   },
@@ -389,13 +393,19 @@
       "name": "CONVERGENCE",
       "date": "2026-02-13",
       "focus": "Coherence",
-      "deliverables": "82 PRODUCTION, zero gaps"
+      "deliverables": "82 ACTIVE, zero gaps"
     },
     {
       "name": "PRAXIS",
       "date": "2026-02-13",
       "focus": "Impact",
       "deliverables": "Portfolio, distribution, revenue"
+    },
+    {
+      "name": "VERITAS",
+      "date": "2026-02-13",
+      "focus": "Credibility",
+      "deliverables": "PRODUCTION→ACTIVE, revenue split, essay dates, honesty essay"
     }
   ],
   "praxis_targets": {
