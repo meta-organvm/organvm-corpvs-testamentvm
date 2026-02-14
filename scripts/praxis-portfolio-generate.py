@@ -49,6 +49,8 @@ SPRINT_HISTORY = [
     {"name": "CONVERGENCE", "date": "2026-02-13", "summary": "82 ACTIVE, 7 ARCHIVED, zero gaps"},
     {"name": "PRAXIS", "date": "2026-02-13", "summary": "External impact — portfolio, distribution, revenue"},
     {"name": "VERITAS", "date": "2026-02-13", "summary": "Credibility hardening — PRODUCTION→ACTIVE, revenue split, essay dates"},
+    {"name": "MANIFESTATIO", "date": "2026-02-14", "summary": "Re-audit (7x more code), 3 CI fixes, engagement baseline"},
+    {"name": "ILLUSTRATIO", "date": "2026-02-14", "summary": "Portfolio polish — CMYK design, p5.js animations, LLM consultation"},
 ]
 
 

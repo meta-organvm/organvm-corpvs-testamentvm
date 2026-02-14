@@ -1,6 +1,6 @@
 {
-  "generated": "2026-02-14T19:00:00.000000+00:00",
-  "sprint": "MANIFESTATIO",
+  "generated": "2026-02-14T21:00:00.000000+00:00",
+  "sprint": "ILLUSTRATIO",
   "system": {
     "name": "ORGANVM",
     "launch_date": "2026-02-11",
@@ -433,12 +433,19 @@
       "date": "2026-02-14",
       "focus": "Outward-facing",
       "deliverables": "Re-audit (3,586 code files, 38 repos with 10+ code), 3 CI fixes, E2G items closed, workflow validation, application prep, engagement baseline"
+    },
+    {
+      "name": "ILLUSTRATIO",
+      "date": "2026-02-14",
+      "focus": "Portfolio polish",
+      "deliverables": "Billing fix (14 cron workflows disabled), portfolio data regeneration, CMYK design system, p5.js on every page, LLM consultation page"
     }
   ],
   "praxis_targets": {
     "portfolio_site": {
       "target": "Live",
-      "current": "In development"
+      "current": "Live at 4444j99.github.io/portfolio/ — Jost+CMYK redesign, p5.js on all pages, LLM consult page",
+      "met": true
     },
     "flagship_repos_with_code": {
       "target": "30+",
@@ -451,7 +458,9 @@
     },
     "applications_submitted": {
       "target": "3-5",
-      "current": "0"
+      "current": "0",
+      "next_deadline": "Knight Foundation — 2026-06-20",
+      "note": "Processing Foundation cycle closed. Next target: Knight Foundation Arts + Technology (deadline June 20, 2026)"
     },
     "community_events": {
       "target": "Salon launched",
@@ -525,7 +534,7 @@
       "salon-archive": true
     },
     "analytics": {
-      "public_process_jekyll": "GoatCounter recommended — privacy-respecting, no cookie banner"
+      "public_process_jekyll": "GoatCounter config in _config.yml but commented out. Account organvm.goatcounter.com returns 400 — needs signup at goatcounter.com/signup first. Then uncomment goatcounter_url in _config.yml."
     }
   }
 }
