@@ -1,0 +1,92 @@
+{
+  "audit_date": "2026-02-13T23:53:19.439450+00:00",
+  "sprint": "PRAXIS",
+  "phase": "C",
+  "channels_ready": 2,
+  "channels_total": 5,
+  "target": 4,
+  "channels": [
+    {
+      "channel": "RSS/Atom Feed",
+      "checks": [
+        {
+          "name": "feed.xml exists",
+          "passed": false,
+          "detail": "Not found in repo"
+        },
+        {
+          "name": "Jekyll feed plugin configured",
+          "passed": true,
+          "detail": "jekyll-feed found in _config.yml"
+        },
+        {
+          "name": "Live feed URL accessible",
+          "passed": true,
+          "detail": "HTTP 200"
+        }
+      ],
+      "ready": true
+    },
+    {
+      "channel": "Newsletter",
+      "checks": [
+        {
+          "name": "Ghost credentials configured",
+          "passed": false,
+          "detail": "Set GHOST_URL and GHOST_ADMIN_KEY env vars. Alternative: use Substack (manual setup)."
+        },
+        {
+          "name": "Essay archive ready for import",
+          "passed": true,
+          "detail": "28 essays available"
+        }
+      ],
+      "ready": false
+    },
+    {
+      "channel": "Mastodon",
+      "checks": [
+        {
+          "name": "Mastodon credentials configured",
+          "passed": false,
+          "detail": "Set MASTODON_INSTANCE and MASTODON_TOKEN env vars"
+        }
+      ],
+      "ready": false
+    },
+    {
+      "channel": "LinkedIn",
+      "checks": [
+        {
+          "name": "LinkedIn article drafts",
+          "passed": false,
+          "detail": "5 long-form articles need to be drafted from essays (manual step)"
+        },
+        {
+          "name": "Distribution agent workflow exists",
+          "passed": true,
+          "detail": "1 distribution workflow(s) found"
+        }
+      ],
+      "ready": false
+    },
+    {
+      "channel": "Distribution Agent (Orchestration)",
+      "checks": [
+        {
+          "name": "distribution-agent.yml exists",
+          "passed": true,
+          "detail": "Size: 7368 bytes"
+        }
+      ],
+      "ready": true
+    }
+  ],
+  "next_steps": [
+    "Set up Mastodon account and configure MASTODON_INSTANCE + MASTODON_TOKEN",
+    "Set up Ghost or Substack newsletter publication",
+    "Draft 5 LinkedIn articles from essay corpus",
+    "Update distribution-agent workflow with real API endpoints",
+    "Submit RSS feed to aggregators"
+  ]
+}

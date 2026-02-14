@@ -1,0 +1,244 @@
+---
+import Base from '../layouts/Base.astro';
+import graph from '../data/graph.json';
+---
+<Base title="Architecture" description="System architecture and dependency graph of the ORGANVM eight-organ system">
+  <h1>System Architecture</h1>
+  <p class="intro">
+    {graph.total_nodes} active repositories connected by {graph.total_edges} dependency edges,
+    organized across 8 organs with zero back-edge violations.
+  </p>
+
+  <section>
+    <h2>Dependency Graph</h2>
+    <p>The dependency graph enforces a strict DAG (directed acyclic graph) — flow moves from Theory (I) through Art (II) to Commerce (III). No organ can depend on a lower-numbered organ's output without explicit promotion.</p>
+    <div id="graph-container" class="graph-container">
+      <noscript>
+        <p>Enable JavaScript to view the interactive dependency graph.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <section>
+    <h2>Organ Flow</h2>
+    <div class="flow-diagram">
+      <div class="flow-row">
+        <div class="flow-node" style="border-color: var(--organ-i)">
+          <strong>I. Theoria</strong>
+          <span>Theory</span>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-node" style="border-color: var(--organ-ii)">
+          <strong>II. Poiesis</strong>
+          <span>Art</span>
+        </div>
+        <div class="flow-arrow">&rarr;</div>
+        <div class="flow-node" style="border-color: var(--organ-iii)">
+          <strong>III. Ergon</strong>
+          <span>Commerce</span>
+        </div>
+      </div>
+      <div class="flow-row support">
+        <div class="flow-node" style="border-color: var(--organ-iv)">
+          <strong>IV. Taxis</strong>
+          <span>Orchestration</span>
+        </div>
+        <div class="flow-node" style="border-color: var(--organ-v)">
+          <strong>V. Logos</strong>
+          <span>Public Process</span>
+        </div>
+        <div class="flow-node" style="border-color: var(--organ-vi)">
+          <strong>VI. Koinonia</strong>
+          <span>Community</span>
+        </div>
+        <div class="flow-node" style="border-color: var(--organ-vii)">
+          <strong>VII. Kerygma</strong>
+          <span>Marketing</span>
+        </div>
+      </div>
+      <div class="flow-row">
+        <div class="flow-node meta" style="border-color: var(--organ-meta)">
+          <strong>META</strong>
+          <span>Governance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Invariants</h2>
+    <ul class="invariant-list">
+      <li><strong>No back-edges</strong> — dependency flow is I → II → III only</li>
+      <li><strong>Single source of truth</strong> — registry-v2.json governs all repo state</li>
+      <li><strong>All 8 organs represented</strong> — each has at least one flagship</li>
+      <li><strong>Documentation precedes deployment</strong> — no code without docs</li>
+      <li><strong>Promotion is a state machine</strong> — LOCAL → CANDIDATE → PUBLIC_PROCESS → GRADUATED → ARCHIVED</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Nodes by Organ</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Organ</th>
+          <th>Repos</th>
+        </tr>
+      </thead>
+      <tbody>
+        {(() => {
+          const organCounts: Record<string, number> = {};
+          graph.nodes.forEach((n: any) => {
+            organCounts[n.organ_name] = (organCounts[n.organ_name] || 0) + 1;
+          });
+          return Object.entries(organCounts).map(([name, count]) => (
+            <tr>
+              <td>{name}</td>
+              <td>{count}</td>
+            </tr>
+          ));
+        })()}
+      </tbody>
+    </table>
+  </section>
+</Base>
+
+<script define:vars={{ nodes: graph.nodes, edges: graph.edges }}>
+  // D3.js dependency graph visualization
+  // Will be loaded via CDN when site is built
+  const container = document.getElementById('graph-container');
+  if (container && typeof window !== 'undefined') {
+    const script = document.createElement('script');
+    script.src = 'https://d3js.org/d3.v7.min.js';
+    script.onload = () => {
+      const width = container.clientWidth || 800;
+      const height = 500;
+
+      const organColors = {
+        'Theory': '#4a6fa5',
+        'Art': '#b85c38',
+        'Commerce': '#2d6a4f',
+        'Orchestration': '#7b68ae',
+        'Public Process': '#c17f59',
+        'Community': '#5b8c5a',
+        'Marketing': '#d4a03c',
+        'Meta': '#555555',
+      };
+
+      const svg = d3.select(container).append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .attr('viewBox', [0, 0, width, height]);
+
+      const simulation = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(edges).id(d => d.id).distance(80))
+        .force('charge', d3.forceManyBody().strength(-120))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(12));
+
+      const link = svg.append('g')
+        .selectAll('line')
+        .data(edges)
+        .join('line')
+        .attr('stroke', '#d4cec6')
+        .attr('stroke-width', 1);
+
+      const node = svg.append('g')
+        .selectAll('circle')
+        .data(nodes)
+        .join('circle')
+        .attr('r', d => d.tier === 'flagship' ? 8 : 5)
+        .attr('fill', d => organColors[d.organ_name] || '#999')
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 1)
+        .call(d3.drag()
+          .on('start', (event, d) => {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x; d.fy = d.y;
+          })
+          .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+          .on('end', (event, d) => {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null; d.fy = null;
+          }));
+
+      node.append('title').text(d => `${d.name} (${d.organ_name})`);
+
+      simulation.on('tick', () => {
+        link
+          .attr('x1', d => d.source.x)
+          .attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x)
+          .attr('y2', d => d.target.y);
+        node
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y);
+      });
+    };
+    document.head.appendChild(script);
+  }
+</script>
+
+<style>
+  .intro {
+    color: var(--color-text-muted);
+    max-width: 48rem;
+  }
+  .graph-container {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    min-height: 500px;
+    margin: var(--space-md) 0;
+    overflow: hidden;
+  }
+  .flow-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    margin: var(--space-lg) 0;
+  }
+  .flow-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flow-node {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: var(--space-sm) var(--space-md);
+    text-align: center;
+    min-width: 8rem;
+  }
+  .flow-node strong { display: block; font-size: 0.9rem; }
+  .flow-node span { font-size: 0.8rem; color: var(--color-text-muted); }
+  .flow-arrow { font-size: 1.5rem; color: var(--color-text-muted); }
+  .invariant-list {
+    list-style: none;
+    padding: 0;
+  }
+  .invariant-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 30rem;
+    margin: var(--space-md) 0;
+  }
+  .data-table th, .data-table td {
+    padding: var(--space-sm) var(--space-md);
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .data-table th {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+</style>

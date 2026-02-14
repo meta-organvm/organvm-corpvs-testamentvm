@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import about from '../data/about.json';
+---
+<Base title="About" description="About the ORGANVM system and its creator">
+  <div class="content">
+    <h1>About ORGANVM</h1>
+
+    <section>
+      <h2>{about.system_name} — {about.subtitle}</h2>
+      <p class="meta">Owner: {about.owner} · Launched: {about.launch_date}</p>
+      <p>{about.system_summary}</p>
+    </section>
+
+    <section>
+      <h2>Strategic Context</h2>
+      <p>{about.strategic_context}</p>
+    </section>
+
+    <section>
+      <h2>Supporting Evidence</h2>
+      <p>{about.supporting_evidence}</p>
+    </section>
+
+    <section>
+      <h2>Opportunity</h2>
+      <p>{about.strategic_opportunity}</p>
+    </section>
+
+    <section>
+      <h2>Application Targets</h2>
+      <div class="target-grid">
+        {about.application_targets.map((target: any) => (
+          <div class="target-card">
+            <h3>{target.category}</h3>
+            <p>{target.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><a href="https://github.com/4444j99">GitHub: @4444j99</a></li>
+        <li><a href="https://github.com/meta-organvm">Organization: meta-organvm</a></li>
+        <li><a href="https://organvm-v-logos.github.io/public-process/">Public Process (Essays)</a></li>
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .meta {
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+  .target-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+  .target-card {
+    border: 1px solid var(--color-border-light);
+    border-radius: 6px;
+    padding: var(--space-md);
+  }
+  .target-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--color-accent);
+  }
+  .target-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-list li {
+    padding: var(--space-sm) 0;
+  }
+</style>

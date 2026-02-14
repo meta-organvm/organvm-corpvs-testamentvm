@@ -1,0 +1,239 @@
+/* ORGANVM Portfolio — Design Tokens from taste.yaml
+   Aesthetic pillars: density, structure, reference, precision, warmth */
+
+:root {
+  /* Colors — warm neutrals with structural accents */
+  --color-bg: #faf8f5;
+  --color-bg-alt: #f0ece6;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6560;
+  --color-accent: #8b5e3c;
+  --color-accent-light: #c49a6c;
+  --color-border: #d4cec6;
+  --color-border-light: #e8e2da;
+
+  /* Organ colors */
+  --organ-i: #4a6fa5;    /* Theory — contemplative blue */
+  --organ-ii: #b85c38;   /* Art — creative terracotta */
+  --organ-iii: #2d6a4f;  /* Commerce — growth green */
+  --organ-iv: #7b68ae;   /* Orchestration — governance purple */
+  --organ-v: #c17f59;    /* Public Process — warm amber */
+  --organ-vi: #5b8c5a;   /* Community — gathering green */
+  --organ-vii: #d4a03c;  /* Marketing — signal gold */
+  --organ-meta: #555555;  /* Meta — structural gray */
+
+  /* Typography — precision + warmth */
+  --font-body: 'Charter', 'Georgia', serif;
+  --font-heading: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', monospace;
+
+  /* Spacing — dense but breathable */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --max-width: 72rem;
+  --content-width: 48rem;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.65;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+h1 { font-size: 2.5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.75rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.25rem; }
+
+p { margin-bottom: var(--space-md); }
+
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--color-accent-light); }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-bg-alt);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+/* Layout utilities */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.content {
+  max-width: var(--content-width);
+}
+
+/* Metric cards */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.metric-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-light);
+  border-radius: 6px;
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.metric-card .value {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.metric-card .label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Organ badges */
+.organ-badge {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: white;
+}
+
+.organ-badge[data-organ="I"] { background: var(--organ-i); }
+.organ-badge[data-organ="II"] { background: var(--organ-ii); }
+.organ-badge[data-organ="III"] { background: var(--organ-iii); }
+.organ-badge[data-organ="IV"] { background: var(--organ-iv); }
+.organ-badge[data-organ="V"] { background: var(--organ-v); }
+.organ-badge[data-organ="VI"] { background: var(--organ-vi); }
+.organ-badge[data-organ="VII"] { background: var(--organ-vii); }
+.organ-badge[data-organ="Meta"] { background: var(--organ-meta); }
+
+/* Project cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+
+.project-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  transition: border-color 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--color-accent);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.project-card .description {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Sprint timeline */
+.timeline {
+  position: relative;
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--color-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-md);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-lg) - 5px);
+  top: 0.5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-bg);
+}
+
+.timeline-item .date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Navigation */
+nav {
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+}
+
+nav a {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+
+nav a:hover, nav a[aria-current] {
+  color: var(--color-text);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-lg) 0;
+  margin-top: var(--space-xl);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}

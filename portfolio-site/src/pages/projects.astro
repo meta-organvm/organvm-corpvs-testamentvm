@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import projects from '../data/projects.json';
+---
+<Base title="Projects" description="Curated project gallery from the ORGANVM eight-organ system">
+  <h1>Projects</h1>
+  <p class="intro">{projects.total_curated} curated projects across 8 organs — selected for portfolio impact, technical depth, and creative significance.</p>
+
+  <div class="project-grid">
+    {projects.projects.map((project: any) => (
+      <article class="project-card">
+        <div class="card-header">
+          <span class="organ-badge" data-organ={project.organ.replace('ORGAN-', '').replace('META', 'Meta')}>
+            {project.organ_name}
+          </span>
+          {project.tier === 'flagship' && <span class="flagship-badge">Flagship</span>}
+        </div>
+        <h3><a href={project.url}>{project.name}</a></h3>
+        <p class="description">{project.description}</p>
+        <div class="meta">
+          <span class="status">{project.implementation_status}</span>
+          {project.ci_workflow && <span class="ci">CI: {project.ci_workflow}</span>}
+        </div>
+        <p class="relevance">{project.portfolio_relevance}</p>
+      </article>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .intro {
+    color: var(--color-text-muted);
+    max-width: 40rem;
+    margin-bottom: var(--space-lg);
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+  }
+  .flagship-badge {
+    font-size: 0.7rem;
+    padding: 0.1em 0.4em;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    display: flex;
+    gap: var(--space-md);
+    margin: var(--space-sm) 0;
+  }
+  .relevance {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+</style>
