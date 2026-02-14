@@ -1,0 +1,1543 @@
+{
+  "audit_date": "2026-02-14T18:39:58.092848+00:00",
+  "sprint": "MANIFESTATIO",
+  "total_audited": 76,
+  "summary": {
+    "classifications": {
+      "SUBSTANTIAL": 19,
+      "PARTIAL": 28,
+      "MINIMAL": 25,
+      "SKELETON": 4,
+      "ERROR": 0
+    },
+    "repos_with_10_plus_code_files": 38,
+    "repos_with_test_directories": 56,
+    "total_code_files": 3586,
+    "total_test_files": 736,
+    "ci_passing": 58,
+    "ci_failing": 13,
+    "ci_none": 0
+  },
+  "repos": [
+    {
+      "org": "organvm-i-theoria",
+      "repo": "recursive-engine--generative-entity",
+      "audited": "2026-02-14T18:39:17.445075+00:00",
+      "language": "Python",
+      "total_files": 256,
+      "code_files": 60,
+      "test_files": 34,
+      "doc_files": 128,
+      "config_files": 9,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T03:51:06Z",
+        "name": "CodeQL",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "organon-noumenon--ontogenetic-morphe",
+      "audited": "2026-02-14T18:39:18.114221+00:00",
+      "language": "Python",
+      "total_files": 122,
+      "code_files": 52,
+      "test_files": 13,
+      "doc_files": 28,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:00Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "auto-revision-epistemic-engine",
+      "audited": "2026-02-14T18:39:18.590557+00:00",
+      "language": "Python",
+      "total_files": 92,
+      "code_files": 23,
+      "test_files": 3,
+      "doc_files": 43,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T03:33:54Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "narratological-algorithmic-lenses",
+      "audited": "2026-02-14T18:39:19.083922+00:00",
+      "language": "Python",
+      "total_files": 245,
+      "code_files": 47,
+      "test_files": 15,
+      "doc_files": 100,
+      "config_files": 28,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T01:13:56Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "call-function--ontological",
+      "audited": "2026-02-14T18:39:19.574647+00:00",
+      "language": "Python",
+      "total_files": 114,
+      "code_files": 17,
+      "test_files": 10,
+      "doc_files": 21,
+      "config_files": 35,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:13:45Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "sema-metra--alchemica-mundi",
+      "audited": "2026-02-14T18:39:20.097223+00:00",
+      "language": "TypeScript",
+      "total_files": 83,
+      "code_files": 38,
+      "test_files": 8,
+      "doc_files": 10,
+      "config_files": 12,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:07Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "system-governance-framework",
+      "audited": "2026-02-14T18:39:20.582887+00:00",
+      "language": "Python",
+      "total_files": 86,
+      "code_files": 4,
+      "test_files": 4,
+      "doc_files": 26,
+      "config_files": 32,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-14T03:21:21Z",
+        "name": "Stale Issue & PR Management",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "cognitive-archaelogy-tribunal",
+      "audited": "2026-02-14T18:39:21.135365+00:00",
+      "language": "Python",
+      "total_files": 243,
+      "code_files": 20,
+      "test_files": 3,
+      "doc_files": 59,
+      "config_files": 127,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:13:49Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "a-recursive-root",
+      "audited": "2026-02-14T18:39:21.735573+00:00",
+      "language": "Python",
+      "total_files": 638,
+      "code_files": 100,
+      "test_files": 9,
+      "doc_files": 248,
+      "config_files": 79,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T01:13:41Z",
+        "name": "Automatic Dependency Submission (Python)",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "radix-recursiva-solve-coagula-redi",
+      "audited": "2026-02-14T18:39:22.281551+00:00",
+      "language": "Jekyll",
+      "total_files": 1048,
+      "code_files": 33,
+      "test_files": 0,
+      "doc_files": 546,
+      "config_files": 185,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T01:32:11Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "nexus--babel-alexandria-",
+      "audited": "2026-02-14T18:39:22.866431+00:00",
+      "language": "Python",
+      "total_files": 9,
+      "code_files": 0,
+      "test_files": 0,
+      "doc_files": 3,
+      "config_files": 3,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:13:59Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "SKELETON",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "reverse-engine-recursive-run",
+      "audited": "2026-02-14T18:39:23.394699+00:00",
+      "language": "Python",
+      "total_files": 40,
+      "code_files": 7,
+      "test_files": 2,
+      "doc_files": 11,
+      "config_files": 8,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:03Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "4-ivi374-F0Rivi4",
+      "audited": "2026-02-14T18:39:23.896955+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:07Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "cog-init-1-0-",
+      "audited": "2026-02-14T18:39:24.347115+00:00",
+      "language": "Python",
+      "total_files": 25,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:08Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "collective-persona-operations",
+      "audited": "2026-02-14T18:39:24.789318+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:09Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "linguistic-atomization-framework",
+      "audited": "2026-02-14T18:39:26.467449+00:00",
+      "language": "Python",
+      "total_files": 413,
+      "code_files": 66,
+      "test_files": 8,
+      "doc_files": 153,
+      "config_files": 57,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:13:52Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "my-knowledge-base",
+      "audited": "2026-02-14T18:39:27.080489+00:00",
+      "language": "TypeScript",
+      "total_files": 462,
+      "code_files": 197,
+      "test_files": 80,
+      "doc_files": 76,
+      "config_files": 48,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-14T13:07:31Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-i-theoria",
+      "repo": "scalable-lore-expert",
+      "audited": "2026-02-14T18:39:27.585863+00:00",
+      "language": "TypeScript",
+      "total_files": 57,
+      "code_files": 4,
+      "test_files": 0,
+      "doc_files": 39,
+      "config_files": 3,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T19:03:36Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "I"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "example-generative-music",
+      "audited": "2026-02-14T18:39:28.137104+00:00",
+      "language": "Jekyll",
+      "total_files": 31,
+      "code_files": 10,
+      "test_files": 2,
+      "doc_files": 6,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:34Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "metasystem-master",
+      "audited": "2026-02-14T18:39:28.581934+00:00",
+      "language": "TypeScript",
+      "total_files": 577,
+      "code_files": 74,
+      "test_files": 5,
+      "doc_files": 239,
+      "config_files": 54,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T03:33:57Z",
+        "name": "Monorepo CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "example-choreographic-interface",
+      "audited": "2026-02-14T18:39:29.108177+00:00",
+      "language": "TypeScript",
+      "total_files": 30,
+      "code_files": 7,
+      "test_files": 2,
+      "doc_files": 5,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:32Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "showcase-portfolio",
+      "audited": "2026-02-14T18:39:29.547942+00:00",
+      "language": "TypeScript",
+      "total_files": 309,
+      "code_files": 70,
+      "test_files": 14,
+      "doc_files": 198,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T03:51:12Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "archive-past-works",
+      "audited": "2026-02-14T18:39:30.192661+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:17Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "case-studies-methodology",
+      "audited": "2026-02-14T18:39:30.700333+00:00",
+      "language": "Python",
+      "total_files": 29,
+      "code_files": 5,
+      "test_files": 4,
+      "doc_files": 8,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:20Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "learning-resources",
+      "audited": "2026-02-14T18:39:31.399147+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:24Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "example-interactive-installation",
+      "audited": "2026-02-14T18:39:31.864109+00:00",
+      "language": "Python",
+      "total_files": 39,
+      "code_files": 11,
+      "test_files": 6,
+      "doc_files": 5,
+      "config_files": 8,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:36Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "example-ai-collaboration",
+      "audited": "2026-02-14T18:39:32.401136+00:00",
+      "language": "Python",
+      "total_files": 36,
+      "code_files": 11,
+      "test_files": 6,
+      "doc_files": 6,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:22Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "a-mavs-olevm",
+      "audited": "2026-02-14T18:39:32.884732+00:00",
+      "language": "Jekyll",
+      "total_files": 2094,
+      "code_files": 304,
+      "test_files": 37,
+      "doc_files": 64,
+      "config_files": 93,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T02:29:19Z",
+        "name": "Stale Issue Detection",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "a-i-council--coliseum",
+      "audited": "2026-02-14T18:39:33.557379+00:00",
+      "language": "Python",
+      "total_files": 106,
+      "code_files": 41,
+      "test_files": 9,
+      "doc_files": 22,
+      "config_files": 9,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:12Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "artist-toolkit-and-templates",
+      "audited": "2026-02-14T18:39:34.013282+00:00",
+      "language": "Python",
+      "total_files": 39,
+      "code_files": 3,
+      "test_files": 2,
+      "doc_files": 16,
+      "config_files": 7,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:19Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "client-sdk",
+      "audited": "2026-02-14T18:39:34.512582+00:00",
+      "language": "TypeScript",
+      "total_files": 23,
+      "code_files": 3,
+      "test_files": 2,
+      "doc_files": 5,
+      "config_files": 7,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:28Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "academic-publication",
+      "audited": "2026-02-14T18:39:34.975930+00:00",
+      "language": "Python",
+      "total_files": 39,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 6,
+      "config_files": 12,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:16Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "example-theatre-dialogue",
+      "audited": "2026-02-14T18:39:35.440609+00:00",
+      "language": "TypeScript",
+      "total_files": 30,
+      "code_files": 7,
+      "test_files": 2,
+      "doc_files": 5,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:38Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "audio-synthesis-bridge",
+      "audited": "2026-02-14T18:39:35.972466+00:00",
+      "language": "TypeScript",
+      "total_files": 32,
+      "code_files": 9,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:24Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "art-from--auto-revision-epistemic-engine",
+      "audited": "2026-02-14T18:39:36.476840+00:00",
+      "language": "Python",
+      "total_files": 15,
+      "code_files": 3,
+      "test_files": 1,
+      "doc_files": 1,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:19Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "art-from--narratological-algorithmic-lenses",
+      "audited": "2026-02-14T18:39:36.971195+00:00",
+      "language": "Python",
+      "total_files": 15,
+      "code_files": 3,
+      "test_files": 1,
+      "doc_files": 1,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:21Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "life-betterment-simulation",
+      "audited": "2026-02-14T18:39:37.464783+00:00",
+      "language": "Jekyll",
+      "total_files": 46,
+      "code_files": 5,
+      "test_files": 0,
+      "doc_files": 27,
+      "config_files": 3,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T19:03:12Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "universal-waveform-explorer",
+      "audited": "2026-02-14T18:39:37.892215+00:00",
+      "language": "TypeScript",
+      "total_files": 79,
+      "code_files": 2,
+      "test_files": 1,
+      "doc_files": 66,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T19:03:54Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "shared-remembrance-gateway",
+      "audited": "2026-02-14T18:39:38.440388+00:00",
+      "language": "TypeScript",
+      "total_files": 26,
+      "code_files": 2,
+      "test_files": 1,
+      "doc_files": 13,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T19:04:28Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "chthon-oneiros",
+      "audited": "2026-02-14T18:39:38.928139+00:00",
+      "language": "Python",
+      "total_files": 20,
+      "code_files": 0,
+      "test_files": 0,
+      "doc_files": 19,
+      "config_files": 1,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": null,
+        "created_at": null,
+        "name": null,
+        "status": null
+      },
+      "classification": "SKELETON",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-ii-poiesis",
+      "repo": "krypto-velamen",
+      "audited": "2026-02-14T18:39:39.392893+00:00",
+      "language": "Python",
+      "total_files": 19,
+      "code_files": 0,
+      "test_files": 0,
+      "doc_files": 18,
+      "config_files": 1,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": null,
+        "created_at": null,
+        "name": null,
+        "status": null
+      },
+      "classification": "SKELETON",
+      "organ": "II"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "classroom-rpg-aetheria",
+      "audited": "2026-02-14T18:39:39.796345+00:00",
+      "language": "TypeScript",
+      "total_files": 328,
+      "code_files": 192,
+      "test_files": 16,
+      "doc_files": 50,
+      "config_files": 27,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T13:03:26Z",
+        "name": "Dependency Review",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "gamified-coach-interface",
+      "audited": "2026-02-14T18:39:40.297528+00:00",
+      "language": "Jekyll",
+      "total_files": 183,
+      "code_files": 45,
+      "test_files": 6,
+      "doc_files": 55,
+      "config_files": 37,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T00:16:16Z",
+        "name": "Deploy to GitHub Pages",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "trade-perpetual-future",
+      "audited": "2026-02-14T18:39:40.906788+00:00",
+      "language": "TypeScript",
+      "total_files": 169,
+      "code_files": 49,
+      "test_files": 0,
+      "doc_files": 63,
+      "config_files": 23,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-14T18:05:40Z",
+        "name": "Enhanced PR Quality Checks",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "fetch-familiar-friends",
+      "audited": "2026-02-14T18:39:41.525910+00:00",
+      "language": "TypeScript",
+      "total_files": 376,
+      "code_files": 145,
+      "test_files": 22,
+      "doc_files": 95,
+      "config_files": 49,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T05:32:09Z",
+        "name": "CodeQL",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "sovereign-ecosystem--real-estate-luxury",
+      "audited": "2026-02-14T18:39:42.024266+00:00",
+      "language": "TypeScript",
+      "total_files": 203,
+      "code_files": 144,
+      "test_files": 0,
+      "doc_files": 27,
+      "config_files": 13,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T07:56:49Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "public-record-data-scrapper",
+      "audited": "2026-02-14T18:39:42.520036+00:00",
+      "language": "TypeScript",
+      "total_files": 1048,
+      "code_files": 352,
+      "test_files": 126,
+      "doc_files": 240,
+      "config_files": 89,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-14T13:04:29Z",
+        "name": "npm_and_yarn in /. for @isaacs/brace-expansion, axios, qs, undici - Update #1244218752",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "search-local--happy-hour",
+      "audited": "2026-02-14T18:39:43.037199+00:00",
+      "language": "TypeScript",
+      "total_files": 122,
+      "code_files": 78,
+      "test_files": 0,
+      "doc_files": 18,
+      "config_files": 12,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T13:09:25Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "multi-camera--livestream--framework",
+      "audited": "2026-02-14T18:39:43.543799+00:00",
+      "language": "Shell",
+      "total_files": 78,
+      "code_files": 9,
+      "test_files": 1,
+      "doc_files": 34,
+      "config_files": 11,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:38Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "universal-mail--automation",
+      "audited": "2026-02-14T18:39:44.097714+00:00",
+      "language": "Python",
+      "total_files": 61,
+      "code_files": 29,
+      "test_files": 0,
+      "doc_files": 11,
+      "config_files": 4,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:50Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "mirror-mirror",
+      "audited": "2026-02-14T18:39:44.567948+00:00",
+      "language": "TypeScript",
+      "total_files": 167,
+      "code_files": 125,
+      "test_files": 0,
+      "doc_files": 16,
+      "config_files": 12,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": null,
+        "created_at": "2026-02-14T12:37:46Z",
+        "name": "npm_and_yarn in /. for lodash, qs, qs - Update #1244147553",
+        "status": "queued"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "the-invisible-ledger",
+      "audited": "2026-02-14T18:39:45.032104+00:00",
+      "language": "TypeScript",
+      "total_files": 210,
+      "code_files": 174,
+      "test_files": 0,
+      "doc_files": 10,
+      "config_files": 12,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": null,
+        "created_at": "2026-02-14T12:37:50Z",
+        "name": "npm_and_yarn in /. for lodash, qs, qs - Update #1244147593",
+        "status": "queued"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "tab-bookmark-manager",
+      "audited": "2026-02-14T18:39:45.491890+00:00",
+      "language": "Jekyll",
+      "total_files": 102,
+      "code_files": 33,
+      "test_files": 3,
+      "doc_files": 17,
+      "config_files": 13,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:17Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "a-i-chat--exporter",
+      "audited": "2026-02-14T18:39:46.050580+00:00",
+      "language": "TypeScript",
+      "total_files": 93,
+      "code_files": 37,
+      "test_files": 0,
+      "doc_files": 10,
+      "config_files": 28,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T01:32:31Z",
+        "name": "release-please",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "the-actual-news",
+      "audited": "2026-02-14T18:39:46.644826+00:00",
+      "language": "TypeScript",
+      "total_files": 130,
+      "code_files": 15,
+      "test_files": 0,
+      "doc_files": 21,
+      "config_files": 44,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:47Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "your-fit-tailored",
+      "audited": "2026-02-14T18:39:47.144440+00:00",
+      "language": "TypeScript",
+      "total_files": 117,
+      "code_files": 9,
+      "test_files": 2,
+      "doc_files": 50,
+      "config_files": 6,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:51Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "my-block-warfare",
+      "audited": "2026-02-14T18:39:47.716957+00:00",
+      "language": "TypeScript",
+      "total_files": 148,
+      "code_files": 54,
+      "test_files": 4,
+      "doc_files": 30,
+      "config_files": 16,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:41Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "life-my--midst--in",
+      "audited": "2026-02-14T18:39:48.311636+00:00",
+      "language": "TypeScript",
+      "total_files": 1026,
+      "code_files": 410,
+      "test_files": 116,
+      "doc_files": 184,
+      "config_files": 91,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T13:05:44Z",
+        "name": "npm_and_yarn in /. for cookie, qs, tmp - Update #1244221284",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "my--father-mother",
+      "audited": "2026-02-14T18:39:48.814584+00:00",
+      "language": "Shell",
+      "total_files": 37,
+      "code_files": 8,
+      "test_files": 0,
+      "doc_files": 9,
+      "config_files": 6,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:40Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "commerce--meta",
+      "audited": "2026-02-14T18:39:49.317217+00:00",
+      "language": "Python",
+      "total_files": 35,
+      "code_files": 0,
+      "test_files": 0,
+      "doc_files": 2,
+      "config_files": 14,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:14:58Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "SKELETON",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "card-trade-social",
+      "audited": "2026-02-14T18:39:49.819014+00:00",
+      "language": "TypeScript",
+      "total_files": 29,
+      "code_files": 2,
+      "test_files": 1,
+      "doc_files": 16,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T19:04:13Z",
+        "name": "Documentation CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iii-ergon",
+      "repo": "hokage-chess",
+      "audited": "2026-02-14T18:39:50.370767+00:00",
+      "language": "TypeScript",
+      "total_files": 36,
+      "code_files": 2,
+      "test_files": 1,
+      "doc_files": 23,
+      "config_files": 4,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "failure",
+        "created_at": "2026-02-13T19:04:06Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "III"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "orchestration-start-here",
+      "audited": "2026-02-14T18:39:50.916423+00:00",
+      "language": "TypeScript",
+      "total_files": 56,
+      "code_files": 4,
+      "test_files": 0,
+      "doc_files": 22,
+      "config_files": 19,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:39:45Z",
+        "name": "CodeQL",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "petasum-super-petasum",
+      "audited": "2026-02-14T18:39:51.419903+00:00",
+      "language": "Python",
+      "total_files": 63,
+      "code_files": 5,
+      "test_files": 4,
+      "doc_files": 24,
+      "config_files": 19,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:33Z",
+        "name": "Python CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "universal-node-network",
+      "audited": "2026-02-14T18:39:51.906557+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T02:25:07Z",
+        "name": "pip in /. - Update #1242690711",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "agentic-titan",
+      "audited": "2026-02-14T18:39:52.450827+00:00",
+      "language": "Python",
+      "total_files": 543,
+      "code_files": 219,
+      "test_files": 93,
+      "doc_files": 55,
+      "config_files": 70,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T03:34:00Z",
+        "name": "CodeQL",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "agent--claude-smith",
+      "audited": "2026-02-14T18:39:52.955197+00:00",
+      "language": "TypeScript",
+      "total_files": 76,
+      "code_files": 23,
+      "test_files": 12,
+      "doc_files": 6,
+      "config_files": 8,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:28Z",
+        "name": "TypeScript/Node.js CI",
+        "status": "completed"
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-iv-taxis",
+      "repo": "a-i--skills",
+      "audited": "2026-02-14T18:39:53.440566+00:00",
+      "language": "Python",
+      "total_files": 5118,
+      "code_files": 86,
+      "test_files": 1,
+      "doc_files": 547,
+      "config_files": 4032,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:27Z",
+        "name": "Validate",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "IV"
+    },
+    {
+      "org": "organvm-v-logos",
+      "repo": "public-process",
+      "audited": "2026-02-14T18:39:54.035034+00:00",
+      "language": "Jekyll",
+      "total_files": 83,
+      "code_files": 6,
+      "test_files": 0,
+      "doc_files": 54,
+      "config_files": 9,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T01:06:38Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "V"
+    },
+    {
+      "org": "organvm-vi-koinonia",
+      "repo": "salon-archive",
+      "audited": "2026-02-14T18:39:54.631851+00:00",
+      "language": "Python",
+      "total_files": 27,
+      "code_files": 5,
+      "test_files": 4,
+      "doc_files": 7,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:44Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "VI"
+    },
+    {
+      "org": "organvm-vi-koinonia",
+      "repo": "reading-group-curriculum",
+      "audited": "2026-02-14T18:39:55.119005+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:42Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "VI"
+    },
+    {
+      "org": "organvm-vi-koinonia",
+      "repo": "adaptive-personal-syllabus",
+      "audited": "2026-02-14T18:39:55.638103+00:00",
+      "language": "Python",
+      "total_files": 101,
+      "code_files": 2,
+      "test_files": 2,
+      "doc_files": 87,
+      "config_files": 3,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T19:03:02Z",
+        "name": "Documentation CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "VI"
+    },
+    {
+      "org": "organvm-vii-kerygma",
+      "repo": "social-automation",
+      "audited": "2026-02-14T18:39:56.225975+00:00",
+      "language": "Python",
+      "total_files": 23,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 5,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:15:50Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "VII"
+    },
+    {
+      "org": "organvm-vii-kerygma",
+      "repo": "distribution-strategy",
+      "audited": "2026-02-14T18:39:56.791524+00:00",
+      "language": "Python",
+      "total_files": 25,
+      "code_files": 4,
+      "test_files": 3,
+      "doc_files": 7,
+      "config_files": 5,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-13T01:32:55Z",
+        "name": "CI",
+        "status": "completed"
+      },
+      "classification": "MINIMAL",
+      "organ": "VII"
+    },
+    {
+      "org": "meta-organvm",
+      "repo": "organvm-corpvs-testamentvm",
+      "audited": "2026-02-14T18:39:57.227637+00:00",
+      "language": "Python",
+      "total_files": 318,
+      "code_files": 22,
+      "test_files": 0,
+      "doc_files": 184,
+      "config_files": 81,
+      "has_tests_dir": false,
+      "ci_latest": {
+        "conclusion": "success",
+        "created_at": "2026-02-14T01:07:35Z",
+        "name": "Minimal CI",
+        "status": "completed"
+      },
+      "classification": "PARTIAL",
+      "organ": "Meta"
+    },
+    {
+      "org": "meta-organvm",
+      "repo": "alchemia-ingestvm",
+      "audited": "2026-02-14T18:39:57.744230+00:00",
+      "language": "Python",
+      "total_files": 65,
+      "code_files": 24,
+      "test_files": 5,
+      "doc_files": 8,
+      "config_files": 12,
+      "has_tests_dir": true,
+      "ci_latest": {
+        "conclusion": null,
+        "created_at": null,
+        "name": null,
+        "status": null
+      },
+      "classification": "SUBSTANTIAL",
+      "organ": "Meta"
+    }
+  ]
+}

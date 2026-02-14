@@ -7,15 +7,15 @@
   "launch_date_note": "Phase -1 complete 2026-02-10. Bronze Sprint COMPLETE 2026-02-10. Silver Sprint COMPLETE 2026-02-10. Gold Sprint COMPLETE 2026-02-10. PHASE 2 MICRO-VALIDATION COMPLETE 2026-02-10. PHASE 3 COMPLETE 2026-02-11. SYSTEM LAUNCHED 2026-02-11. 9/9 launch criteria met. POSSE verified: Mastodon (HTTP 200) + Discord (HTTP 204). Jekyll site live with RSS (5 essays). All validation scripts pass.",
   "generated": "2026-02-03T02:30:00Z",
   "source": "Audit of 8 GitHub orgs (organvm-i-theoria through organvm-vii-kerygma + meta-organvm) + personal account 4444J99 + local repos",
-  "project_status": "VERITAS SPRINT COMPLETE 2026-02-13. Credibility hardening: PRODUCTION→ACTIVE rename, revenue field split (revenue_model + revenue_status), 9 future-dated essays corrected, application materials de-jargoned, honesty essay deployed. 82 ACTIVE, 7 ARCHIVED, 89 registry entries, 28+ essays, ~386K+ total words. Previous sprints: IGNITION, PROPULSION, ASCENSION, EXODUS, PERFECTION, AUTONOMY, GENESIS, ALCHEMIA, CONVERGENCE, PRAXIS.",
+  "project_status": "VERITAS SPRINT COMPLETE 2026-02-13. 2026-02-14: +2 ORGAN-II repos (chthon-oneiros, krypto-velamen). Credibility hardening: PRODUCTION→ACTIVE rename, revenue field split (revenue_model + revenue_status), 9 future-dated essays corrected, application materials de-jargoned, honesty essay deployed. 84 ACTIVE, 7 ARCHIVED, 91 registry entries, 28+ essays, ~386K+ total words. Previous sprints: IGNITION, PROPULSION, ASCENSION, EXODUS, PERFECTION, AUTONOMY, GENESIS, ALCHEMIA, CONVERGENCE, PRAXIS.",
   "summary": {
-    "total_repos": 89,
-    "total_repos_note": "89 registry entries, all on GitHub. VERITAS Sprint 2026-02-13: credibility hardening (PRODUCTION→ACTIVE rename, revenue field split, essay date corrections). Previous: PRAXIS (portfolio, applications), CONVERGENCE (82 ACTIVE, zero gaps), ALCHEMIA, GENESIS, AUTONOMY, PERFECTION, EXODUS, ASCENSION, PROPULSION, IGNITION. 7 explicitly archived.",
+    "total_repos": 91,
+    "total_repos_note": "91 registry entries, all on GitHub. 2026-02-14: +2 ORGAN-II repos (chthon-oneiros, krypto-velamen). VERITAS Sprint 2026-02-13: credibility hardening (PRODUCTION→ACTIVE rename, revenue field split, essay date corrections). Previous: PRAXIS (portfolio, applications), CONVERGENCE (82 ACTIVE, zero gaps), ALCHEMIA, GENESIS, AUTONOMY, PERFECTION, EXODUS, ASCENSION, PROPULSION, IGNITION. 7 explicitly archived.",
     "operational_organs": 8,
     "completion_at_launch": "Platinum Sprint COMPLETE 2026-02-11 — 65 repos with CI workflows, standardized badge rows, CHANGELOGs, ADRs. 17 meta-system essays (~70K words). ~339K total words.",
     "total_organizations": 8,
     "local_repos_to_migrate": 9,
-    "portfolio_strength": "VERITAS COMPLETE — 89 repos (all on GitHub), 82 ACTIVE (100% of non-archived) + 7 ARCHIVED, 8 flagship repos (4 SUBSTANTIAL, 2 PARTIAL), 28+ essays, community health files across 8 orgs, POSSE distribution live, Jekyll site with RSS, 82+ CI/CD workflows, Astro portfolio site scaffolded, 19 curated projects in gallery, 5 application packages, system-metrics.json dashboard, ~386K+ total words, aesthetic nervous system propagating taste.yaml across all organs, full provenance tracking (1,901 files classified). Credibility-hardened: honest status labels, split revenue fields, corrected essay dates."
+    "portfolio_strength": "VERITAS COMPLETE — 91 repos (all on GitHub), 84 ACTIVE (100% of non-archived) + 7 ARCHIVED, 8 flagship repos (4 SUBSTANTIAL, 2 PARTIAL), 28+ essays, community health files across 8 orgs, POSSE distribution live, Jekyll site with RSS, 82+ CI/CD workflows, Astro portfolio site scaffolded, 19 curated projects in gallery, 5 application packages, system-metrics.json dashboard, ~386K+ total words, aesthetic nervous system propagating taste.yaml across all organs, full provenance tracking (1,901 files classified). Credibility-hardened: honest status labels, split revenue fields, corrected essay dates."
   },
   "meta_system_portfolio_note": {
     "context": "Meta-system documentation (governance, orchestration, infrastructure) strengthens applications across: (1) AI systems engineering roles at research labs, (2) Creative/technical grants (NSF, NEA, Mellon, Knight Foundation), (3) Technology residencies and fellowships. This registry demonstrates orchestration capacity, architectural reasoning, and systemic sustainability—competitive differentiators in 2026 funding landscape.",
@@ -420,7 +420,7 @@
       "completion": "100% — 20/20 active non-infrastructure repos documented at 2,000+ words (~67K total). 4 archived, 1 deleted.",
       "public_visibility": "MOSTLY PUBLIC",
       "portfolio_angle": "Demonstrates creative systems design and artistic infrastructure. Evidence of producing work using autonomous systems.",
-      "repository_count": 26,
+      "repository_count": 28,
       "repositories": [
         {
           "name": "core-engine",
@@ -903,6 +903,40 @@
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true
+        },
+        {
+          "name": "chthon-oneiros",
+          "org": "organvm-ii-poiesis",
+          "status": "ACTIVE",
+          "updated": "2026-02-14",
+          "public": true,
+          "description": "CHTHON-ONEIROS — Underworld-dream: psychological horror theory corpus. Field II (Present Dreaming). Surrealism, found footage, digital paranoia, the unconscious as compositional engine.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "HIGH - Demonstrates creative systems design for multimedia horror and reality-blurring narrative",
+          "dependencies": [],
+          "promotion_status": "LOCAL",
+          "tier": "standard",
+          "last_validated": "2026-02-14",
+          "implementation_status": "DESIGN_ONLY",
+          "ci_workflow": null,
+          "platinum_status": false
+        },
+        {
+          "name": "krypto-velamen",
+          "org": "organvm-ii-poiesis",
+          "status": "ACTIVE",
+          "updated": "2026-02-14",
+          "public": true,
+          "description": "KRYPTO-VELAMEN — The hidden veil: queer theory and literary technique corpus. Field I (Present Waking). Double-channel text, concealment as compositional engine, archival of lived interiority.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "HIGH - Demonstrates literary craft research and queer aesthetic theory",
+          "dependencies": [],
+          "promotion_status": "LOCAL",
+          "tier": "standard",
+          "last_validated": "2026-02-14",
+          "implementation_status": "DESIGN_ONLY",
+          "ci_workflow": null,
+          "platinum_status": false
         }
       ]
     },
@@ -1194,9 +1228,7 @@
           "description": "AI-powered tab and bookmark management SaaS with ML services and browser extension",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Full-stack SaaS product",
-          "dependencies": [
-            "organvm-i-theoria/my-knowledge-base"
-          ],
+          "dependencies": [],
           "promotion_status": "LOCAL",
           "tier": "standard",
           "last_validated": "2026-02-11",
@@ -1337,9 +1369,7 @@
           "description": "Local-only clipboard long-term memory for macOS with FTS5 search, semantic embeddings, federation, and browser integration",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - macOS utility tool",
-          "dependencies": [
-            "organvm-i-theoria/my-knowledge-base"
-          ],
+          "dependencies": [],
           "promotion_status": "LOCAL",
           "tier": "standard",
           "last_validated": "2026-02-11",

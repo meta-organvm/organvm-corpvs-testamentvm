@@ -4,7 +4,7 @@
 
 Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance system consolidating 12 repos: core-engine, performance-sdk, client-sdk, audio-synthesis-bridge, orchestrate CLI, 4 examples, extensive docs.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-II expression; canonical monorepo, performance system architecture
 - **CI**: ci-mixed.yml
@@ -13,7 +13,7 @@ Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance 
 
 Gamified coaching system with progress tracking
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Revenue proof point
 - **CI**: ci-typescript.yml
@@ -22,7 +22,7 @@ Gamified coaching system with progress tracking
 
 Generative music example
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: standard
 - **Portfolio relevance**: HIGH - Concrete instantiation of theory
 - **CI**: ci-typescript.yml
@@ -31,7 +31,7 @@ Generative music example
 
 Educational RPG system for classroom engagement
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Revenue proof point
 - **CI**: ci-typescript.yml

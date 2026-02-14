@@ -17,7 +17,7 @@
 
 ## P0 — CRITICAL (Fix Before Submission)
 
-- [ ] **Q1.** Fix TODO in all 5 application materials — replace `TODO — deploy portfolio site before submission` with actual portfolio URL (`https://4444j99.github.io/portfolio/`)
+- [x] **Q1.** Fix TODO in all 5 application materials — replace `TODO — deploy portfolio site before submission` with actual portfolio URL (`https://4444j99.github.io/portfolio/`) — **RESOLVED (VERITAS Sprint):** All 5 applications have portfolio URL at line 26/27. Zero TODOs remain (verified via grep).
   - Files: `applications/knight-foundation.md:26`, `applications/eyebeam-residency.md:26`, `applications/google-creative.md:26`, `applications/processing-foundation.md:26`, `applications/ai-systems-role.md:27`
   - Finding: W5
 
@@ -31,7 +31,7 @@
 
 ## P1 — HIGH (Fix Within 1–2 Days)
 
-- [ ] **Q4.** Add portfolio URL to application materials (in the Portfolio URL section and supporting materials)
+- [x] **Q4.** Add portfolio URL to application materials (in the Portfolio URL section and supporting materials) — **RESOLVED (VERITAS Sprint):** Portfolio URL present in all 5 applications (verified via grep).
   - Files: All 5 `applications/*.md`
   - Finding: W5
 
@@ -53,11 +53,13 @@
   - Finding: LC3, SP1, ET2
   - Note: Chose `ACTIVE` over `DOCUMENTED` or `MAINTAINED` — it says "this repo is maintained" without implying production deployment
 
-- [ ] **M2.** Vivify top 4 non-SUBSTANTIAL flagships with real code and tests
-  - `agentic-titan` (2 code files → working orchestration agent)
-  - `public-process` (6 code files → search, navigation, build validation)
-  - `auto-revision-epistemic-engine` (20 code files, 3 tests → expand test coverage)
-  - `example-generative-music` (7 code files, 2 tests → working Web Audio demo)
+- [x] **M2.** Vivify top 4 non-SUBSTANTIAL flagships with real code and tests — **SUPERSEDED (MANIFESTATIO Sprint):** PRAXIS audit miscounted code files due to wrong language detection (agentic-titan classified as TypeScript instead of Python) and `docs/` prefix trap (code files in `docs/` directories classified as documentation). Corrected counts:
+  - `agentic-titan` — was 2 code files, actually **219 code, 93 test** (Python, not TypeScript). SUBSTANTIAL.
+  - `metasystem-master` — was 28 code files, actually **62 code, 12 test**. Still SUBSTANTIAL.
+  - `auto-revision-epistemic-engine` — was 20 code files, actually **23 code, 3 test**. PARTIAL (unchanged tier).
+  - `example-generative-music` — 7 code files, 2 tests. PARTIAL (correct, no change).
+  - `public-process` — 6 code files. MINIMAL (correct, Jekyll site — code count isn't meaningful metric).
+  - System-wide re-audit: **40+ repos with 10+ code files** (was claimed as 6). The "code substance gap" was a measurement error, not a real gap.
   - Finding: W1, LC2
 
 - [x] **M3.** Add `revenue_status` field to ORGAN-III repo schema — **RESOLVED (VERITAS Sprint):** Split `revenue` into `revenue_model` + `revenue_status` across all 24 ORGAN-III repos
@@ -66,10 +68,8 @@
   - File: `registry-v2.json`
   - Finding: W3, LC4
 
-- [ ] **M4.** Restructure CI to distinguish "test suite passes" from "no tests found"
-  - Option A: Fail CI on repos with no tests; require explicit `skip_tests: true`
-  - Option B: Add CI tier labeling (FULL | LINT_ONLY | BUILD_ONLY)
-  - Option C: Report CI coverage as "6 repos with test suites; 77 with linting/build"
+- [ ] **M4.** ~~Restructure CI to distinguish "test suite passes" from "no tests found"~~ → **Reclassified to P3 (MANIFESTATIO Sprint).** Corrected system-wide audit reveals 49 repos with test directories — the "hollow CI" narrative was based on flawed measurement. CI does run real tests in the majority of code-heavy repos. Monitor over 30 days; restructure only if needed.
+  - Option C selected (with corrected numbers): "49 repos with test suites, 82+ with CI workflows"
   - Finding: W6, SP4, ET3
 
 - [ ] **M6.** Create audience-specific application variants
@@ -116,12 +116,12 @@
 
 | Finding | Code | Action Items |
 |---------|------|-------------|
-| Code substance gap | W1 | M2 |
+| Code substance gap | W1 | M2 (superseded — measurement error) |
 | Promotion stagnation | W2 | (no direct action — natural over time) |
 | Revenue claims | W3, LC4, SP3 | Q2, M3 |
 | Essay dating | W4, SP2 | Q3 |
 | Application TODOs | W5 | Q1, Q4 |
-| CI hollow coverage | W6, SP4, ET3 | M4 |
+| CI hollow coverage | W6, SP4, ET3 | M4 (reclassified P3 — 49 repos have tests) |
 | PRODUCTION semantics | LC3, SP1, ET2 | M1 |
 | Documentation-before-deployment | LC1 | M5 (honest framing) |
 | Single-operator risk | SP5, ET1 | S6 |

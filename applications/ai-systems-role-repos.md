@@ -4,7 +4,7 @@
 
 Polymorphic Agent Swarm Architecture: model-agnostic, self-organizing multi-agent system with 6 topologies, 1,095+ tests (adversarial, chaos, e2e, integration, performance, MCP, Ray), 18 completed phases.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-IV expression; demonstrates production-grade multi-agent orchestration
 - **CI**: ci-python.yml
@@ -13,7 +13,7 @@ Polymorphic Agent Swarm Architecture: model-agnostic, self-organizing multi-agen
 
 Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scripts. The central nervous system of the eight-organ system.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Core system documentation for all funding applications
 - **CI**: ci-python.yml
@@ -22,7 +22,7 @@ Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scr
 
 Self-governing orchestration framework with 8 phases, 4 human review gates, BLAKE3 audit chain, and ethical axiom enforcement
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Evidence of autonomous system design
 - **CI**: ci-python.yml
@@ -31,7 +31,7 @@ Self-governing orchestration framework with 8 phases, 4 human review gates, BLAK
 
 The authoritative planning and governance corpus for the eight-organ creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution
 - **CI**: ci-python.yml
@@ -40,7 +40,7 @@ The authoritative planning and governance corpus for the eight-organ creative-in
 
 RE:GE — A symbolic operating system for myth, identity, ritual, and recursive systems. 21 organ handlers, ritual syntax DSL, workflow orchestration, external bridges (Obsidian/Git/Max-MSP).
 
-- **Status**: PRODUCTION
+- **Status**: Active
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-I expression; 1,254 tests, 85% coverage, pure Python
 - **CI**: ci-python.yml

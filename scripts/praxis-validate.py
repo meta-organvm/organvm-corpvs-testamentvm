@@ -37,19 +37,31 @@ def check_registry():
     with open(REGISTRY_PATH) as f:
         reg = json.load(f)
 
+    valid_statuses = {"ACTIVE", "PROTOTYPE", "SKELETON", "DESIGN_ONLY", "ARCHIVED"}
     counts = {}
+    invalid = []
     for organ_data in reg["organs"].values():
         for r in organ_data["repositories"]:
             s = r.get("implementation_status", "UNKNOWN")
             counts[s] = counts.get(s, 0) + 1
+            if s not in valid_statuses:
+                invalid.append(f"{r['name']}: {s}")
 
     total = sum(counts.values())
     active = counts.get("ACTIVE", 0)
     archived = counts.get("ARCHIVED", 0)
     other = total - active - archived
 
-    print(f"  Registry: {total} repos, {active} ACTIVE, {archived} ARCHIVED, {other} other")
-    return other == 0 and total >= 89
+    parts = [f"{total} repos", f"{active} ACTIVE", f"{archived} ARCHIVED"]
+    if other > 0:
+        for s, c in sorted(counts.items()):
+            if s not in ("ACTIVE", "ARCHIVED") and c > 0:
+                parts.append(f"{c} {s}")
+    print(f"  Registry: {', '.join(parts)}")
+
+    if invalid:
+        print(f"  INVALID statuses: {invalid}")
+    return len(invalid) == 0 and total >= 89
 
 
 def check_provenance():

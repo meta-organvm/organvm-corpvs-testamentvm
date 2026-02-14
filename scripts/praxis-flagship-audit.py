@@ -69,7 +69,7 @@ FLAGSHIP_TARGETS = [
         "org": "organvm-iv-taxis",
         "repo": "agentic-titan",
         "organ": "IV",
-        "language": "TypeScript",
+        "language": "Python",
         "plan": "Working orchestration agent with real dispatch",
     },
     {
@@ -145,27 +145,42 @@ def audit_repo(org, repo, language):
     demo_files = []
     total_files = len(paths)
 
+    # Collect all code extensions across all languages for multi-language detection
+    all_code_exts = set()
+    for exts in CODE_EXTENSIONS.values():
+        all_code_exts.update(exts)
+
     for p in paths:
         lower = p.lower()
         ext = "." + p.rsplit(".", 1)[-1] if "." in p else ""
 
-        # Skip dotfiles and common non-code
-        if any(seg.startswith(".") for seg in p.split("/") if seg not in [".github"]):
+        # Skip truly hidden directories (not .github or .ci which contain real code)
+        code_dotdirs = {".github", ".ci"}
+        if any(seg.startswith(".") for seg in p.split("/") if seg not in code_dotdirs):
             config_files.append(p)
             continue
 
-        # Demo/example detection
+        # Demo/example detection (tag only, doesn't skip)
         if any(d in lower for d in ["demo/", "examples/", "example/", "notebooks/", "demo."]):
             demo_files.append(p)
 
-        # Test detection
+        # Test detection — code extension + test pattern
         is_test = any(pat in lower for pat in test_pats)
         if is_test and ext in code_exts:
             test_files.append(p)
             continue
 
-        # Doc detection
-        if ext in {".md", ".txt", ".rst", ".adoc"} or lower.startswith("docs/"):
+        # Code detection — check BEFORE docs/config to avoid misclassifying
+        # .py files in docs/ directories or .ci/ scripts as non-code
+        if ext in code_exts:
+            code_files.append(p)
+            continue
+
+        # Doc detection — only for doc-specific extensions or docs/ with non-code files
+        if ext in {".md", ".txt", ".rst", ".adoc"}:
+            doc_files.append(p)
+            continue
+        if lower.startswith("docs/") and ext not in all_code_exts:
             doc_files.append(p)
             continue
 
@@ -173,10 +188,6 @@ def audit_repo(org, repo, language):
         if ext in {".yml", ".yaml", ".toml", ".json", ".cfg", ".ini", ".lock"}:
             config_files.append(p)
             continue
-
-        # Code detection
-        if ext in code_exts:
-            code_files.append(p)
 
     # 3. Check for src/ directory
     has_src = any(p.startswith("src/") for p in paths)
@@ -254,22 +265,24 @@ def main():
         with open(REGISTRY_PATH) as f:
             reg = json.load(f)
         targets = []
-        for organ_data in reg["organs"].values():
+        for organ_key, organ_data in reg["organs"].items():
             for repo in organ_data.get("repositories", []):
                 if repo.get("implementation_status") == "ARCHIVED":
                     continue
                 if repo["name"] == ".github":
                     continue
                 lang = "Python"
-                ci = repo.get("ci_workflow", "")
-                if ci and "typescript" in ci:
+                ci = repo.get("ci_workflow") or ""
+                if "typescript" in ci:
                     lang = "TypeScript"
-                elif ci and "python" in ci:
+                elif "python" in ci:
                     lang = "Python"
+                elif "mixed" in ci:
+                    lang = "Python"  # mixed repos get Python detection + TS counted separately
                 targets.append({
                     "org": repo.get("org", ""),
                     "repo": repo["name"],
-                    "organ": "",
+                    "organ": organ_key.replace("ORGAN-", "").replace("META-ORGANVM", "Meta"),
                     "language": lang,
                     "plan": "",
                 })
