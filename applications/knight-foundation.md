@@ -23,7 +23,7 @@ Infrastructure as creative practice. The eight-organ architecture demonstrates t
 
 ## Portfolio URL
 
-TODO — deploy portfolio site before submission
+https://4444j99.github.io/portfolio/
 
 ## Selected Work
 

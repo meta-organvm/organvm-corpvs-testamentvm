@@ -23,7 +23,7 @@ Infrastructure contribution + generative systems. The eight-organ architecture d
 
 ## Portfolio URL
 
-TODO — deploy portfolio site before submission
+https://4444j99.github.io/portfolio/
 
 ## Selected Work
 
