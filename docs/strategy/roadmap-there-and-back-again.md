@@ -277,8 +277,8 @@ PHASE 3: Integration + Launch (~1.1M TE)
 | # | Decision | Recommended | Status |
 |---|----------|-------------|--------|
 | 1 | Personal account consolidation | 15 repos transferred to organ orgs 2026-02-10 | DONE |
-| 2 | Local repos public/private | Per-organ matrix (Theory/Art=public, Commerce=private, etc.) | OPEN |
-| 3 | Empty/skeleton repos | Populate 4, archive 4, merge 1 | OPEN |
+| 2 | Local repos public/private | Per-organ matrix applied: Theory/Art=public, Commerce=mixed (4 private). All 15 migrated repos are on GitHub. | DONE |
+| 3 | Empty/skeleton repos | All resolved: 7 archived, remainder promoted to ACTIVE. 0 empty/skeleton repos remain. | DONE |
 
 ### README Writing: AI Parallel Streams
 
