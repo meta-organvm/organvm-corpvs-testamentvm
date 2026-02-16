@@ -16,7 +16,7 @@
 
 > Complete planning, audit, and implementation corpus for an eight-organ creative-institutional system coordinating 97 GitHub repositories across 8 organizations (7 organs + 1 meta). The system is **live** — all organs are operational.
 
-This is **not a source code repository**. It is the authoritative planning and governance corpus for the organvm system — a framework that protects distinct modes of work (theory, art, commerce, community) from collapsing into each other, while presenting the meta-system itself as a portfolio asset. The system launched on 2026-02-11 with all 8 organs operational, 97 repositories, ~386K+ words of documentation, 33 meta-system essays, and automated governance via GitHub Actions.
+This is **not a source code repository**. It is the authoritative planning and governance corpus for the organvm system — a framework that protects distinct modes of work (theory, art, commerce, community) from collapsing into each other, while presenting the meta-system itself as a portfolio asset. The system launched on 2026-02-11 with all 8 organs operational, 97 repositories, ~386K+ words of documentation, 35 meta-system essays, and automated governance via GitHub Actions.
 
 ---
 
@@ -107,6 +107,8 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 | Publicatio Sprint: 4 essays deployed (29→33), 3 new essays written | **DONE** (2026-02-16) |
 | Canon Sprint: Catalog reconciliation, 4 numbering fixes, 4 historical headers | **DONE** (2026-02-16) |
 | Inspectio Sprint: ORGAN-III beta assessment, life-my--midst--in selected | **DONE** (2026-02-16) |
+| Propagatio Sprint: Findings propagation, fit scores reconciled, roadmap extended | **DONE** (2026-02-16) |
+| Beta-Vitae Sprint: life-my--midst--in DB provisioned (44 tables), 3 migration bugs fixed, 2 essays deployed | **DONE** (2026-02-16) |
 
 ### Launch Metrics
 
@@ -118,7 +120,7 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 | Flagship repos | 7 | 7 |
 | Standard repos | 57 | 57 |
 | ACTIVE status repos | — | 90 (92.8%) |
-| Meta-system essays | 5 (21,625 words) | 33 (~123,000 words) |
+| Meta-system essays | 5 (21,625 words) | 35 (~129,000 words) |
 | CI/CD workflows (across all repos) | 5 (meta-level) | 82+ (17 crons disabled for billing) |
 | Dependency edges validated | 31 (0 violations) | 31 (0 violations) |
 | POSSE channels | Mastodon + Discord | Mastodon + Discord |
@@ -232,7 +234,7 @@ The methodology is measured in LLM API tokens, not human-hours. A typical 3,000-
 
 The most important aspect of the AI-conductor model is its quality infrastructure. Every AI-generated document passes through the same promotion state machine as everything else in the system — specifications, quality gates, validation checklists. This prevents the most common AI failure mode: plausible text that doesn't say anything useful. The risks we actively monitor include hallucinated code examples (all samples tested or sourced from actual repos), generic boilerplate (project-specific briefs and human review for voice), and incorrect cross-references (automated link checking across 1,267+ links).
 
-The AI-conductor model is documented extensively in the ORGAN V essays, particularly in the methodology and token economics essays. Every document in the system is transparent about its production method. The 29 essays at [public-process](https://organvm-v-logos.github.io/public-process/) provide the most detailed account, including honest post-mortems on what the model gets wrong and where human oversight is non-negotiable.
+The AI-conductor model is documented extensively in the ORGAN V essays, particularly in the methodology and token economics essays. Every document in the system is transparent about its production method. The 35 essays at [public-process](https://organvm-v-logos.github.io/public-process/) provide the most detailed account, including honest post-mortems on what the model gets wrong and where human oversight is non-negotiable.
 
 ---
 

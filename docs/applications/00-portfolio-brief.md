@@ -21,7 +21,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 | Documentation | ~386,000+ words |
 | CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
-| Meta-system essays | 33 published (~123K words) |
+| Meta-system essays | 35 published (~129K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |

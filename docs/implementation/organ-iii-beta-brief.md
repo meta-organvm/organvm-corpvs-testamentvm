@@ -111,7 +111,7 @@
 
 1. **Personal network** (3–5 users) — Fellow creative technologists, developers, and designers who are actively job-seeking or portfolio-building. Direct outreach via existing contacts.
 
-2. **Public-process readers** (2–3 users) — The 33 essays on public-process describe the system in detail. Readers who've engaged with the building-in-public content are natural early adopters. Announce via ORGAN-VII distribution (Mastodon thread, LinkedIn post).
+2. **Public-process readers** (2–3 users) — The 35 essays on public-process describe the system in detail. Readers who've engaged with the building-in-public content are natural early adopters. Announce via ORGAN-VII distribution (Mastodon thread, LinkedIn post).
 
 3. **Mastodon/Fediverse tech community** (2–3 users) — Post the beta announcement on Mastodon with the "Inverted Interview" hook. The fediverse tech community values novel approaches to professional identity and is disproportionately composed of creative technologists (the target persona).
 

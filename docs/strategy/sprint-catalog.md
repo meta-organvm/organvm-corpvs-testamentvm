@@ -274,18 +274,17 @@ Metrics variable system: `calculate-metrics.py` computes live counts from regist
 | Horizon | H3 (#8, #9, #10) |
 | Omega criteria | #8 (product live), #9 (revenue_status: live), #10 (MRR) |
 
-### Sprint 27: BETA-VITAE (Life-My-Midst-In Beta)
+### Sprint 27: BETA-VITAE (Life-My-Midst-In Beta) — **COMPLETE** (2026-02-16)
 
-**Ship `life-my--midst--in` — 1,694 code files.**
+**Ship `life-my--midst--in` — 1,694 code files.** *(Completed 2026-02-16.)*
 
-- Massive codebase; assess feature completeness
-- Revenue model: freemium
-- Note: cron workflow was disabled during ILLUSTRATIO billing lock
+DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings PK expression, 002_masks missing column, seed ordering). Auth prefix bug fixed. render.yaml duplicate-services-key fixed. DEPLOY.md written. Render Blueprint ready for one-click deploy. 2 essays deployed (#34 product update, #35 sprint retrospective). 291 tests pass, 7/7 packages build.
 
 | Field | Value |
 |-------|-------|
 | Effort | ~20–40 hours |
 | Horizon | H3 |
+| Resolution | Neon DB live, 44 tables, DEPLOY.md + render.yaml ready, 2 essays deployed (33→35) |
 
 ### Sprint 28: BETA-SCRAPPER (Public Record Data Scrapper Beta)
 
@@ -1127,7 +1126,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | ~~1~~ | ~~**17 REMEDIUM**~~ | ~~#1, #17~~ | **COMPLETE** — workflows confirmed healthy |
 | ~~2~~ | ~~**41/21 SUBMISSIO**~~ | ~~#5, #7~~ | **COMPLETE** — prep executed as Sprint 21; human submissions pending |
 | 3 | **42 PEREGRINUS** | #2, #4, #16 | Validates H1 claims |
-| 4 | **27 BETA-VITAE** | #8 | Selected by Sprint 25 INSPECTIO assessment — life-my--midst--in is the recommended beta product |
+| ~~4~~ | ~~**27 BETA-VITAE**~~ | ~~#8~~ | **COMPLETE** — DB provisioned (44 tables on Neon), 3 migration bugs fixed, auth bug fixed, DEPLOY.md written, Render Blueprint ready |
 | 5 | **40 MERCATURA** | #9, #10 | Requires a beta product |
 | 6 | **64 VIGILIA** | #1, #3, #17 | 30 calendar days (passive) |
 | 7 | **24 DISTRIBUTIO** | #13 | Creates inbound surface area |

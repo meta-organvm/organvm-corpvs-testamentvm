@@ -74,7 +74,7 @@ RE:GE — A symbolic operating system for myth, identity, ritual, and recursive 
 - System metrics snapshot: `system-metrics.json` (machine-readable dashboard)
 - Full code substance audit: `code-substance-report.json` (per-repo breakdown)
 - Dependency graph visualization: see portfolio site
-- 33 published essays documenting the build process
+- 35 published essays documenting the build process
 - AI-conductor methodology essay: "How This Was Built" (honest accounting of AI role)
 
 ## Fellowship Proposal
