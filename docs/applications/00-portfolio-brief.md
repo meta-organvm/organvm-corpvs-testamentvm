@@ -21,7 +21,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 | Documentation | ~386,000+ words |
 | CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
-| Meta-system essays | 29 published (~111K words) |
+| Meta-system essays | 33 published (~123K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
@@ -60,7 +60,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 - **recursive-engine--generative-entity** (ORGAN-I): Symbolic operating system — 1,254 tests, 85% coverage, 21 organ handlers
 - **agentic-titan** (ORGAN-IV): Multi-agent orchestration framework — 1,095 tests, 18 development phases
 - **metasystem-master** (ORGAN-II): Generative art meta-system, the creative engine connecting theory to practice
-- **public-record-data-scrapper** (ORGAN-III): Civic tech data pipeline, deployed and serving users
+- **life-my--midst--in** (ORGAN-III): Interactive identity/CV platform with Inverted Interview paradigm, feature-complete, selected for beta (Sprint 25 INSPECTIO assessment)
 
 ---
 

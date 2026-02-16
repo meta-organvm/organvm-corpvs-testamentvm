@@ -101,6 +101,12 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 | Operatio Sprint: Soak test, runbooks, stranger test protocol, AI-conductor essay | **DONE** (2026-02-16) |
 | Synchronium Sprint: Clone missing repos, sync workspace | **DONE** (2026-02-16) |
 | Concordia Sprint: Registry reconciliation, 6 orphan repos registered (91→97) | **DONE** (2026-02-16) |
+| Tripartitum Sprint: Combined metrics correction + 19 sprint specs + doc alignment | **DONE** (2026-02-16) |
+| Submissio Sprint: Application verification, 9 bundles verified, checklist created | **DONE** (2026-02-16) |
+| Metricum Sprint: Metrics variable system (calculate→store→propagate pipeline) | **DONE** (2026-02-16) |
+| Publicatio Sprint: 4 essays deployed (29→33), 3 new essays written | **DONE** (2026-02-16) |
+| Canon Sprint: Catalog reconciliation, 4 numbering fixes, 4 historical headers | **DONE** (2026-02-16) |
+| Inspectio Sprint: ORGAN-III beta assessment, life-my--midst--in selected | **DONE** (2026-02-16) |
 
 ### Launch Metrics
 
@@ -112,7 +118,7 @@ For a concise directory map, see [`DIRECTORY.md`](DIRECTORY.md).
 | Flagship repos | 7 | 7 |
 | Standard repos | 57 | 57 |
 | ACTIVE status repos | — | 90 (92.8%) |
-| Meta-system essays | 5 (21,625 words) | 29 (~111,000 words) |
+| Meta-system essays | 5 (21,625 words) | 33 (~123,000 words) |
 | CI/CD workflows (across all repos) | 5 (meta-level) | 82+ (17 crons disabled for billing) |
 | Dependency edges validated | 31 (0 violations) | 31 (0 violations) |
 | POSSE channels | Mastodon + Discord | Mastodon + Discord |
@@ -192,6 +198,24 @@ After launch, a series of targeted sprints drove the system from launch-ready to
 **Manifestatio Sprint (2026-02-14):** System-wide re-audit revealing 7× more code than previously measured (3,586 code files vs ~500 estimated). Language detection fixed (agentic-titan: TypeScript→Python). 3 CI workflow fixes deployed. 2 back-edge dependency violations corrected. Application materials and engagement baseline prepared.
 
 **Operatio Sprint (2026-02-16):** Operational readiness. 30-day soak test monitor built (`scripts/soak-test-monitor.py`) and started. 3 operational runbooks written (minimum viable operations, emergency procedures, key workflows). Stranger test protocol drafted. AI-conductor methodology essay drafted (4,000+ words). The system transitions from construction sprints to sustained operation.
+
+**Remedium Sprint (2026-02-16):** Workflow health investigation. All orchestration workflows diagnosed — no actual failures found. "Failing" signals were phantom failures caused by push events triggering schedule-only workflows. CI already replaced by Minimal CI. Validate-dependencies already fixed in Convergence. The system is healthier than monitoring suggested.
+
+**Synchronium Sprint (2026-02-16):** Full workspace synchronization. All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos cloned, 8 `.github` org profiles retrieved, 68 repos migrated from legacy 7-level hierarchy, 39 symlinks removed, git remotes converted SSH→HTTPS. 29 GB freed from disk.
+
+**Concordia Sprint (2026-02-16):** Registry reconciliation with actual GitHub state. 6 orphan repos discovered and registered (91→97 total). `render-second-amendment` deleted locally (14 GB freed). 2 LFS checkout failures fixed. Seed.yaml coverage audited (38/86 = 44%).
+
+**Tripartitum Sprint (2026-02-16):** Three-part combined sprint — metrics correction, sprint spec writing, and document alignment. 13 files updated with ~70 edits correcting stale metrics. 19 retrospective sprint specs written in `docs/specs/sprints/`. All active documents aligned with `registry-v2.json`.
+
+**Submissio Sprint (2026-02-16):** Application verification and submission preparation. All 9 submission bundles verified against current metrics (97 repos, ~398K+ words, 33 essays). Step-by-step submission checklist created (`docs/applications/08-submission-checklist.md`). Human form-filling is the remaining step.
+
+**Metricum Sprint (2026-02-16):** Metrics variable system. Three scripts deployed: `calculate-metrics.py` (compute live counts from registry + GitHub API), `metrics-variables.json` (persistent store), and `propagate-metrics.py` (find-and-replace stale values across documents). Ensures metrics consistency without manual cross-referencing.
+
+**Publicatio Sprint (2026-02-16):** Essay deployment push. 4 essays deployed to public-process (29→33 total, ~123K essay words). 3 new essays written: autonomous systems guide, commerce-vs-theory philosophical piece, governance frameworks for artists. 1 existing draft deployed (promotions-in-practice). Metrics propagated across 18 files.
+
+**Canon Sprint (2026-02-16):** Catalog reconciliation. The sprint catalog had 4 numbering collisions between hypothetical catalog assignments and actually-executed sprints (19-22). Collisions resolved: canonical numbers established in `docs/specs/sprints/`, displaced catalog items marked as unscheduled. 4 historical document headers added to implementation-era files pointing readers to current authoritative documents.
+
+**Inspectio Sprint (2026-02-16):** First product assessment sprint. The top 5 ORGAN-III repos evaluated across 10 dimensions (tech stack, feature completeness, deployment readiness, test coverage, revenue model fit). `life-my--midst--in` selected as the recommended beta product — feature-complete with 1,694 code files, Docker/Railway/Vercel deployment infrastructure, and a clear freemium revenue model. Product brief written. Operational cadence updated with staleness note.
 
 ---
 

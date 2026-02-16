@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 25 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–25, no gaps). Sprints 17–25 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 26 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–26, no gaps). Sprints 17–26 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Catalog vs. execution numbering (17–23):** This catalog was written as a hypothetical inventory. When sprints 19–23 were actually executed, some took different names than what the catalog had assigned. The canonical sprint numbers and names are in `docs/specs/sprints/` — those are what actually happened. Catalog items that were displaced (never executed at their catalog number) are marked as unscheduled future work below. For sprints ≥24, catalog numbers are hypothetical references until executed.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
@@ -256,6 +256,8 @@ Metrics variable system: `calculate-metrics.py` computes live counts from regist
 ## CATEGORY 4: PRODUCT & REVENUE (ORGAN-III)
 
 *Each ORGAN-III pre-launch product is a potential beta sprint. Sorted by code substance (descending).*
+
+> **Note (Sprint 25):** The INSPECTIO assessment (`docs/implementation/organ-iii-beta-assessment.md`) evaluated the top 5 repos and recommends life-my--midst--in as the first beta product. See the product brief at `docs/implementation/organ-iii-beta-brief.md`.
 
 ### Sprint 26: BETA-UNIVERSALIS (Universal Mail Automation Beta)
 
@@ -1069,7 +1071,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 | 16 | Design & UX | 2 | 72–73 |
 | 17 | Data & Analytics | 2 | 74–75 |
 | 18 | Backup & Resilience | 1 | 76 |
-| | **TOTAL** | **~60** | Completed: 17–24 (8 sprints). Remaining: hypothetical catalog items. |
+| | **TOTAL** | **~60** | Completed: 17–25 (9 sprints) + Sprint 26 PROPAGATIO. Remaining: hypothetical catalog items. |
 
 ---
 
@@ -1086,7 +1088,7 @@ Every omega criterion maps to at least one sprint. The 17 criteria are from [`th
 | 5 | ≥1 application submitted | 41 (SUBMISSIO) | Materials ready now |
 | 6 | AI-conductor essay published | **ALREADY MET** | Deployed 2026-02-11 |
 | 7 | ≥3 external feedback | 41 (SUBMISSIO), 44 (TESTIMONIUM) | Applications produce feedback |
-| 8 | ≥1 ORGAN-III product live | Any of 26–39 (BETA sprints) | Pick highest-readiness product |
+| 8 | ≥1 ORGAN-III product live | 27 BETA-VITAE (life-my--midst--in) | Selected by Sprint 25 INSPECTIO assessment |
 | 9 | `revenue_status: live` for ≥1 entry | 40 (MERCATURA) | Requires a beta product first |
 | 10 | MRR ≥ system operating costs | 40 (MERCATURA) | Requires payment integration |
 | 11 | ≥2 salons with external participants | 45 (CONVIVIUM), 46 (CONVIVIUM-II) | Two separate events |
@@ -1125,7 +1127,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | ~~1~~ | ~~**17 REMEDIUM**~~ | ~~#1, #17~~ | **COMPLETE** — workflows confirmed healthy |
 | ~~2~~ | ~~**41/21 SUBMISSIO**~~ | ~~#5, #7~~ | **COMPLETE** — prep executed as Sprint 21; human submissions pending |
 | 3 | **42 PEREGRINUS** | #2, #4, #16 | Validates H1 claims |
-| 4 | **28 BETA-SCRAPPER** | #8 | Or 26/27 based on readiness |
+| 4 | **27 BETA-VITAE** | #8 | Selected by Sprint 25 INSPECTIO assessment — life-my--midst--in is the recommended beta product |
 | 5 | **40 MERCATURA** | #9, #10 | Requires a beta product |
 | 6 | **64 VIGILIA** | #1, #3, #17 | 30 calendar days (passive) |
 | 7 | **24 DISTRIBUTIO** | #13 | Creates inbound surface area |
@@ -1137,7 +1139,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 
 **Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy), #5/#7 prerequisites (SUBMISSIO — prep complete, human submissions pending)
 
-**Remaining critical path:** 10 sprints (42→28→40→64→24→45→46→47→52→43)
+**Remaining critical path:** 10 sprints (42→27→40→64→24→45→46→47→52→43)
 
 **Note on critical path vs. cadence:** The critical path identifies the minimum set. The operational cadence (`operational-cadence.md`) determines how these are sequenced into weekly rhythm. They are pulled from this catalog as individual tasks, not executed as named sprints — per AP-1.
 

@@ -3,6 +3,22 @@
 **Created:** 2026-02-16 (SUBMISSIO Sprint 21)
 **Purpose:** Step-by-step human-executable instructions for submitting all 9 prepared applications
 **Status:** READY TO EXECUTE
+**Updated:** 2026-02-16 (Sprint 26 PROPAGATIO — fit scores reconciled with [qualification assessment](./09-qualification-assessment.md))
+
+---
+
+> **Submission priority (recalibrated):**
+> 1. Google Creative Lab Five (8/10) — #1 below
+> 2. Google Creative Fellowship (7/10) — #2 below
+> 3. Together AI (6/10) — #5 below
+> 4. HuggingFace (5/10) — #7 below
+> 5. Anthropic FDE (4/10) — #3 below
+> 6. OpenAI (4/10) — #6 below
+> 7. Anthropic SE (3/10) — #4 below
+> 8. Cohere (3/10) — #8 below
+> 9. Runway (3/10) — #9 below
+>
+> Submission numbering is preserved for cross-references with `07-submission-bundles.md`. Execute in priority order, not section order.
 
 ---
 
@@ -61,7 +77,7 @@
 
 ## Submission 3: Anthropic — Forward Deployed Engineer, Custom Agents
 
-**Priority:** HIGH (strongest overall match, 9/10 fit)
+**Priority:** MEDIUM (4/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://job-boards.greenhouse.io/anthropic/jobs/5074695008
 **Salary:** $280,000–$400,000
 **Time estimate:** 20–30 minutes
@@ -91,7 +107,7 @@
 
 ## Submission 4: Anthropic — Software Engineer, Claude Code
 
-**Priority:** HIGH ($320K–$560K, strong fit)
+**Priority:** LOW (3/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://job-boards.greenhouse.io/anthropic/jobs/4816198008
 **Salary:** $320,000–$560,000
 **Time estimate:** 20–30 minutes
@@ -118,7 +134,7 @@
 
 ## Submission 5: Together AI — Lead DX Engineer, Documentation
 
-**Priority:** HIGH (9/10 fit, strongest documentation match)
+**Priority:** MEDIUM-HIGH (6/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://job-boards.greenhouse.io/togetherai/jobs/4903661007
 **Salary:** $160,000–$240,000 + equity
 **Time estimate:** 20–30 minutes
@@ -147,7 +163,7 @@
 
 ## Submission 6: OpenAI — Software Engineer, Applied Evals
 
-**Priority:** MEDIUM
+**Priority:** MEDIUM (4/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://openai.com/careers/software-engineer-applied-evals-san-francisco/
 **Salary:** ~$230,000–$385,000
 **Time estimate:** 20–30 minutes
@@ -175,7 +191,7 @@
 
 ## Submission 7: HuggingFace — Developer Advocate Engineer, Hub/Enterprise
 
-**Priority:** MEDIUM (fully remote, good fit)
+**Priority:** MEDIUM (5/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL (US):** https://apply.workable.com/huggingface/j/4C12FB7880
 **URL (EMEA):** https://apply.workable.com/huggingface/j/E732F4B8FC
 **Salary:** $120,000–$160,000 (US)
@@ -206,7 +222,7 @@
 
 ## Submission 8: Cohere — Applied AI Engineer, Agentic Workflows
 
-**Priority:** MEDIUM
+**Priority:** LOW (3/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://jobs.ashbyhq.com/cohere/1fa01a03-9253-4f62-8f10-0fe368b38cb9
 **Salary:** Not disclosed
 **Time estimate:** 20–30 minutes
@@ -233,7 +249,7 @@
 
 ## Submission 9: Runway — MTS, Research Tooling & Data Platform
 
-**Priority:** MEDIUM
+**Priority:** LOW (3/10 fit — revised per [qualification assessment](./09-qualification-assessment.md))
 **URL:** https://job-boards.greenhouse.io/runwayml/jobs/4650196005
 **Salary:** $240,000–$290,000
 **Time estimate:** 20–30 minutes
