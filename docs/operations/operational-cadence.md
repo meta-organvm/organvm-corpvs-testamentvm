@@ -308,6 +308,8 @@ Concrete next-essay targets, updated at each monthly review. Deploy on Wednesday
 
 ## PART IV: IMMEDIATE PRIORITIES
 
+> **Staleness note (2026-02-16):** The concrete actions below were written at Checkpoint Alpha before any post-construction work was executed. Some items are already complete (e.g., the AI-conductor essay was deployed 2026-02-11 during the Gold Sprint, not pending as listed). Fit scores and priority rankings should be read alongside the current application tracker (`docs/applications/04-application-tracker.md`) and the ORGAN-III beta assessment (`docs/implementation/organ-iii-beta-assessment.md`), which supersede the estimates here. The durable templates in Parts I–III remain current; this section should be refreshed at the first monthly review (Week 4, March 2026).
+
 This section contains time-bound actions that expire. It should be updated at each monthly review.
 
 **Current as of:** 2026-02-16 (Checkpoint Alpha)
