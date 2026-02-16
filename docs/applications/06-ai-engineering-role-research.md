@@ -5,6 +5,8 @@
 **Roles assessed:** 35+
 **Top recommendations:** 7 roles across 5 companies
 
+> **Note (2026-02-16):** Fit scores in this document reflect the original research assessment. These scores were significantly revised downward in [09-qualification-assessment.md](./09-qualification-assessment.md) after honest gap analysis. Use the qualification assessment for current scores.
+
 ---
 
 ## Fit Assessment Criteria
@@ -15,7 +17,7 @@ Profile strengths mapped against role requirements:
 |----------|----------|
 | Systems architecture | 97 repos, 8 orgs, dependency validation, promotion state machine |
 | Agent orchestration | agentic-titan (1,095 tests, 18 phases), multi-agent coordination |
-| Production infrastructure | 70+ CI/CD pipelines, 5 governance automations, automated health audits |
+| Production infrastructure | 82+ CI/CD pipelines, 5 governance automations, automated health audits |
 | Testing rigor | 1,095 tests (agentic-titan) + 1,254 tests (recursive-engine) |
 | Documentation at scale | ~386K+ words, every README portfolio-quality |
 | Governance-as-safety | Constitutional constraints, no-back-edge rules, transitive depth limits |

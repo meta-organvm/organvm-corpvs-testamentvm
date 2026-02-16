@@ -12,7 +12,7 @@
 
 This positions you as someone who:
 1. **Thinks in systems**, not fragments — orchestrating 97 repos is an architectural challenge
-2. **Ships production-quality infrastructure** — 70+ CI/CD workflows, 5 governance automations, automated health checks
+2. **Ships production-quality infrastructure** — 82+ CI/CD workflows, 5 governance automations, automated health checks
 3. **Designs governance from first principles** — promotion state machine, dependency rules, constitutional constraints
 4. **Tests rigorously** — agentic-titan: 1,095 tests; recursive-engine: 1,254 tests
 5. **Documents thoroughly** — ~386K+ words of documentation is evidence of communication capacity
@@ -70,7 +70,7 @@ This positions you as someone who:
 > - A machine-readable registry serving as single source of truth for all repos
 > - Automated dependency validation enforcing no circular dependencies and no back-edges
 > - A formal promotion state machine with 5 GitHub Actions workflows for autonomous governance
-> - 77+ CI/CD pipelines and automated monthly health audits
+> - 82+ CI/CD pipelines and automated monthly health audits
 > - ~386,000+ words of documentation across the entire system
 >
 > Two projects demonstrate particular depth:
@@ -125,7 +125,7 @@ Q: "How do you handle system failures?"
 A: The organ-audit.py script runs monthly health checks. The governance-rules.json defines critical vs. warning thresholds. The validate-dependencies workflow blocks merges that would violate constraints.
 
 Q: "How do you test at scale?"
-A: 77+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
+A: 82+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
 
 Q: "How do you communicate technical decisions?"
 A: ~386K+ words of documentation. 33 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.

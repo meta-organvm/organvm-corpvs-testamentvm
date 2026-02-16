@@ -85,7 +85,7 @@
 - **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
 - **Fit score:** 5/10 (revised from 4/10 — see [assessment](./09-qualification-assessment.md))
-- **Notes:** No years requirement — purely skills-based. Content creation proven at scale (~386K+ words, 29 essays). HF hires 30-40% from community. Gap: no HF library contributions, no published ML tutorials. Skills-based evaluation favors non-traditional backgrounds. Remote-first.
+- **Notes:** No years requirement — purely skills-based. Content creation proven at scale (~386K+ words, 33 essays). HF hires 30-40% from community. Gap: no HF library contributions, no published ML tutorials. Skills-based evaluation favors non-traditional backgrounds. Remote-first.
 
 ### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
 - **Track:** Job

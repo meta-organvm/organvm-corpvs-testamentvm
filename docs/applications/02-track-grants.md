@@ -15,7 +15,7 @@ Grant reviewers evaluate:
 2. **Long-term sustainability** — Will this outlast the grant period? (Automated governance = yes)
 3. **Community contribution** — Does this benefit others? (Public documentation + ORGAN-VI = yes)
 4. **Innovation** — Is this genuinely new? (Governance-as-artistic-medium = yes)
-5. **Demonstrated track record** — Have you shipped before? (~386K+ words deployed, 70+ CI/CD = yes)
+5. **Demonstrated track record** — Have you shipped before? (~386K+ words deployed, 82+ CI/CD = yes)
 
 ---
 
@@ -95,8 +95,8 @@ Grant reviewers evaluate:
 >
 > **Evidence of Capacity:**
 > - 97 repositories across 8 organizations, all operational
-> - 70+ CI/CD pipelines, 5 governance workflows, automated monthly audits
-> - 29 published essays (~84K words)
+> - 82+ CI/CD pipelines, 5 governance workflows, automated monthly audits
+> - 33 published essays (~123K words)
 > - Flagship projects with >1,000 tests each
 > - Complete documentation at portfolio quality (~386K+ words)
 >
