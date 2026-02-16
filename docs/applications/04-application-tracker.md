@@ -2,7 +2,8 @@
 
 **Goal:** 10 applications across 3 tracks within 30 days (Days 15-45 of 90-day plan)
 **Target:** 5 job apps + 3 grant apps/LOIs + 2 residency apps
-**Updated:** 2026-02-16 (SUBMISSIO Sprint 21 — metrics verified, checklist created, all 9 READY)
+**Updated:** 2026-02-16 (qualification assessment revised — corrected framing, scores adjusted)
+**Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 
 ---
 
@@ -29,8 +30,8 @@
 - **Application URL:** https://job-boards.greenhouse.io/anthropic/jobs/5074695008
 - **Cover letter:** docs/applications/cover-letters/anthropic-fde-custom-agents.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
-- **Fit score:** 9/10
-- **Notes:** Strongest overall match. FDE model values autonomy, communication, agent development — all profile strengths. 4+ years technical required. SF or NYC, 25% in-office + 25-50% travel.
+- **Fit score:** 4/10 (revised from 2/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** 11yr teaching IS technical customer-facing. Agent development demonstrated (agentic-titan, orchestration). Gap: not traditional SE→FDE pipeline, no enterprise LLM deployments. FDE values autonomy + communication. Competitive reach. SF or NYC, 25% in-office + 25-50% travel.
 
 ### 2.1b — Anthropic: Software Engineer, Claude Code
 - **Track:** Job
@@ -42,8 +43,8 @@
 - **Application URL:** https://job-boards.greenhouse.io/anthropic/jobs/4816198008
 - **Cover letter:** docs/applications/cover-letters/anthropic-se-claude-code.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
-- **Fit score:** 8/10
-- **Notes:** Strong developer tools match. Requires 5+ years, expert React, LLM experience. NYC/SF/Seattle, 25% in-office.
+- **Fit score:** 3/10 (revised from 1/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** 5yr independent SWE exists. Safety-as-governance maps to compliance. Gap: $320K–$560K is staff/senior-staff level, "expert React" means apps used by millions. Hardest engineering target — apply but lowest expected return. NYC/SF/Seattle, 25% in-office.
 
 ### 2.2 — OpenAI: Software Engineer, Applied Evals
 - **Track:** Job
@@ -55,8 +56,8 @@
 - **Application URL:** https://openai.com/careers/software-engineer-applied-evals-san-francisco/
 - **Cover letter:** docs/applications/cover-letters/openai-se-applied-evals.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
-- **Fit score:** 8/10
-- **Notes:** Agent harness + eval framework maps well. 4+ years engineering required. SF, 3 days in-office.
+- **Fit score:** 4/10 (revised from 2/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** "4+ years software engineering" doesn't say "at a company." 5yr independent SWE with eval infrastructure, multi-agent workflows, 2,349 tests. Gap: "shipping production systems" means real users at scale. Competitive reach — posting language is capability-based. SF, 3 days in-office.
 
 ### 2.3 — Together AI: Lead DX Engineer, Documentation
 - **Track:** Job
@@ -68,8 +69,8 @@
 - **Application URL:** https://job-boards.greenhouse.io/togetherai/jobs/4903661007
 - **Cover letter:** docs/applications/cover-letters/together-ai-lead-dx-documentation.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
-- **Fit score:** 9/10
-- **Notes:** Single strongest documentation match. Founding team member. SF or NYC.
+- **Fit score:** 6/10 (revised from 4/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** "Developer education" explicitly qualifies — 11yr teaching + 386K words. Founding-team means culture-shaping, favors unconventional backgrounds. Gap: "Lead" title, no tech-company doc leadership. Teaching + writing is a legitimate angle. SF or NYC.
 
 ### 2.3b — HuggingFace: Developer Advocate Engineer, Hub/Enterprise
 - **Track:** Job
@@ -83,8 +84,8 @@
 - **Alt roles:** Data/Infrastructure Advocate (https://apply.workable.com/huggingface/j/5CA82A9A98/), Hub Success Engineer (https://apply.workable.com/huggingface/j/01710FD21C), Open-Source ML Engineer (https://apply.workable.com/huggingface/j/56232F23CB)
 - **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
-- **Fit score:** 8/10
-- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 386K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
+- **Fit score:** 5/10 (revised from 4/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** No years requirement — purely skills-based. Content creation proven at scale (386K words, 29 essays). HF hires 30-40% from community. Gap: no HF library contributions, no published ML tutorials. Skills-based evaluation favors non-traditional backgrounds. Remote-first.
 
 ### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
 - **Track:** Job
@@ -96,8 +97,8 @@
 - **Application URL:** https://jobs.ashbyhq.com/cohere/1fa01a03-9253-4f62-8f10-0fe368b38cb9
 - **Cover letter:** docs/applications/cover-letters/cohere-applied-ai-agentic-workflows.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
-- **Fit score:** 7/10
-- **Notes:** SF/NYC/Toronto/Montreal/London — broadest geographic flexibility. Multi-agent experience required.
+- **Fit score:** 3/10 (revised from 2/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** Multi-agent reasoning demonstrated (agentic-titan, council deliberation). Eval frameworks built. Gap: "enterprise customer experience" is explicit — 0 enterprise tech customers. "Production engineering" means deployed systems. Long shot. SF/NYC/Toronto/Montreal/London.
 
 ### 2.3d — Runway: MTS, Research Tooling & Data Platform
 - **Track:** Job
@@ -109,8 +110,8 @@
 - **Application URL:** https://job-boards.greenhouse.io/runwayml/jobs/4650196005
 - **Cover letter:** docs/applications/cover-letters/runway-mts-research-tooling.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), project links (DONE)
-- **Fit score:** 7/10
-- **Notes:** Remote NA/EU. "Merging art and science" mission aligns with artist-engineer identity.
+- **Fit score:** 3/10 (revised from 2/10 — see [assessment](./09-qualification-assessment.md))
+- **Notes:** Platform/infrastructure partially demonstrated (CI/CD, Docker, PostgreSQL). Artist-engineer identity matches Runway mission. Gap: ML domain knowledge limited, no product engineering for real users. Weakest engineering reach. Remote NA/EU.
 
 ### 2.4 — Knight Foundation: Art+Tech Expansion Fund
 - **Track:** Grant
@@ -121,7 +122,8 @@
 - **Application URL:** https://knightfoundation.org/challenges/knight-art-tech-expansion-fund/
 - **Materials needed:** LOI (see 02-track-grants.md), project narrative, budget
 - **Eligibility note:** Geographically restricted to Akron, Detroit, Miami. Individual artists up to $25K, orgs up to $100K. **Verify eligibility before investing time.**
-- **Notes:** Strong conceptual match but geographic restriction may be disqualifying. If ineligible, substitute with Creative Capital or MAP Fund.
+- **Fit score:** 1/10 (see [assessment](./09-qualification-assessment.md))
+- **Notes:** Geographically restricted to Akron/Detroit/Miami — you are in NYC, likely ineligible. **DROP unless you relocate.** If ineligible, substitute with Creative Capital or MAP Fund.
 
 ---
 
@@ -135,7 +137,8 @@
 - **Lead evidence:** All 8 organs, state machine, dependency model
 - **Application URL:** https://www.mellon.org/grant-programs/arts-and-culture
 - **Materials needed:** LOI, organizational narrative, budget
-- **Notes:** Mellon does NOT accept unsolicited proposals for Arts & Culture. Staff seek out organizations before inviting. **Strategy: Build visibility through ORGAN-V essays and public presence. Monitor for occasional open calls.** Consider substituting with Ford Foundation or Creative Capital.
+- **Fit score:** 0/10 (see [assessment](./09-qualification-assessment.md))
+- **Notes:** Invitation-only. Cannot apply. **DROP.** Mellon does NOT accept unsolicited proposals for Arts & Culture. Consider substituting with Ford Foundation or Creative Capital.
 
 ### 2.6 — NEA: Grants for Arts Projects (FY2026)
 - **Track:** Grant
@@ -146,7 +149,8 @@
 - **Application URL:** https://www.arts.gov/grants/grants-for-arts-projects
 - **Materials needed:** Project proposal, budget ($10K-$50K), work samples
 - **Eligibility note:** Requires 501(c)(3) nonprofit org, state/local govt, or tribal community. **Individuals cannot apply directly.** Would need a fiscal sponsor or organizational partner.
-- **Notes:** Challenge America canceled for FY2026. Federal arts funding landscape unstable. Monitor arts.gov for status updates. Target GAP 2 (July 9) cycle.
+- **Fit score:** 1/10 (see [assessment](./09-qualification-assessment.md))
+- **Notes:** Requires 501(c)(3) — individuals cannot apply. Would need fiscal sponsor. Federal arts funding currently unstable. **DROP unless fiscal sponsor secured.**
 
 ### 2.7 — Eyebeam: Speculating on Plurality
 - **Track:** Residency
@@ -157,7 +161,8 @@
 - **Application URL:** https://eyebeam.org/program/speculating-plurality/ | https://eyebeam.submittable.com/submit
 - **Materials needed:** Artist statement (see 03-track-residencies.md), proposal, CV, work samples
 - **Eligibility note:** Emerging artists based in NYC (5 boroughs), first decade of professional career, not full-time student or faculty. 12-week residency, $4,000 stipend.
-- **Notes:** "Speculating on Plurality" theme — imagining new frameworks. Direct match with governance-as-artistic-practice. Monitor for open call announcement.
+- **Fit score:** 7/10 (see [assessment](./09-qualification-assessment.md))
+- **Notes:** "Speculating on Plurality" theme — imagining new frameworks. Direct match with governance-as-artistic-practice. NYC-based, MFA credible. Monitor for open call announcement.
 
 ### 2.8 — Processing Foundation Fellowship
 - **Track:** Residency
@@ -168,7 +173,8 @@
 - **Application URL:** https://processingfoundation.org/fellowships | fellowship@processingfoundation.org
 - **Materials needed:** Fellowship proposal, CV, evidence of community contribution
 - **Details:** $10,000 stipend, mentorship, workshops, public programming. Both remote and in-person tracks.
-- **Notes:** Infrastructure contribution angle. Governance toolkit as deliverable. Watch for 2026 theme announcement.
+- **Fit score:** 6/10 (see [assessment](./09-qualification-assessment.md))
+- **Notes:** Infrastructure contribution angle. Governance toolkit as deliverable. Work is adjacent to p5.js community, not central. Watch for 2026 theme announcement.
 
 ### 2.9 — Additional AI/ML Roles (Cohere + Runway selected)
 - **Track:** Job
@@ -193,7 +199,8 @@
   - Resume: https://4444j99.github.io/portfolio/resume/
   - Short-answer drafts: docs/applications/05-google-creative-lab-five-responses.md
 - **Eligibility:** 0-5 years creative experience (Fellowship); 0+ years (Lab Five). US work authorization required.
-- **Notes:** Feb 22 date was stale (2025 cycle). Confirmed March 18, 2026 deadline from website. **Submit Creative Lab Five first (no deadline, materials ready). Creative Fellowship by March 18.**
+- **Fit score:** 8/10 Lab Five, 7/10 Fellowship (see [assessment](./09-qualification-assessment.md))
+- **Notes:** **HIGHEST-ROI TARGETS.** Profile is exactly what these programs seek — creative technologists with systematic practice. Feb 22 date was stale (2025 cycle). Confirmed March 18, 2026 deadline from website. **Submit Creative Lab Five first (no deadline, materials ready). Creative Fellowship by March 18.**
 
 ---
 
@@ -232,23 +239,26 @@ For each application:
 
 ## Deadline Research: COMPLETED 2026-02-11
 
-### Urgency-Ordered Action Plan
+### Recalibrated Priority Queue (2026-02-16)
 
-| Priority | Target | Deadline | Action | Materials |
-|----------|--------|----------|--------|-----------|
-| 1 | Google Creative Lab Five | Open (no stated close) | **READY TO SUBMIT** — user submits at creativelab5.com | ALL READY |
-| 2 | Google Creative Fellowship | **March 18, 2026** | User submits at creativefellowship.google | ALL READY |
-| 3 | Anthropic FDE, Custom Agents | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 4 | Anthropic SE, Claude Code | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 5 | OpenAI SE, Applied Evals | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 6 | Together AI Lead DX, Docs | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 7 | HuggingFace Dev Advocate | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 8 | Cohere Applied AI, Agentic | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 9 | Runway MTS, Research Tooling | Rolling | **COVER LETTER DONE** — submit this week | ALL READY |
-| 10 | Eyebeam | Spring 2026 (TBA) | Prepare materials, monitor for open call | Artist statement ready |
-| 11 | Processing Foundation | ~April-May 2026 | Prepare materials, watch for announcement | — |
-| 12 | Knight Foundation | June 20, 2026 | Verify geographic eligibility first | — |
-| 13 | NEA GAP 2 | July 9, 2026 | Find fiscal sponsor if pursuing | — |
+Priorities reordered by realistic fit score. See [09-qualification-assessment.md](./09-qualification-assessment.md) for full rationale.
+
+| Priority | Target | Fit | Deadline | Action |
+|----------|--------|-----|----------|--------|
+| 1 | Google Creative Lab Five | **8/10** | Open (no close date) | **SUBMIT NOW** — highest-ROI target |
+| 2 | Google Creative Fellowship | **7/10** | **March 18, 2026** | Submit by deadline |
+| 3 | Eyebeam | **7/10** | Spring 2026 (TBA) | Monitor for open call |
+| 4 | Together AI Lead DX | **6/10** | Rolling | Apply — documentation + teaching angle is real |
+| 5 | Processing Foundation | **6/10** | ~April-May 2026 | Apply when opens |
+| 6 | HuggingFace Dev Advocate | **5/10** | Rolling | Apply — skills-based, no years requirement |
+| 7 | Anthropic FDE | **4/10** | Rolling | Apply — teaching-as-customer-facing, agent skills |
+| 8 | OpenAI SE Evals | **4/10** | Rolling | Apply — independent SWE + eval infrastructure |
+| 9 | Runway MTS | 3/10 | Rolling | Apply if time permits |
+| 10 | Cohere Applied AI | 3/10 | Rolling | Apply if time permits |
+| 11 | Anthropic SE Claude Code | 3/10 | Rolling | Apply if time permits |
+| — | Knight Foundation | 1/10 | June 2026 | **DROP** (NYC, not Akron/Detroit/Miami) |
+| — | Mellon Foundation | 0/10 | N/A | **DROP** (invitation-only) |
+| — | NEA GAP 2 | 1/10 | July 2026 | **DROP** (requires 501(c)(3)) |
 
 ### Key Findings from Research
 - **Knight Foundation** Art+Tech is geographically restricted to Akron/Detroit/Miami — may need substitute
@@ -259,15 +269,24 @@ For each application:
 - **AI roles** are rolling — can submit anytime but sooner is better
 
 ### Key Findings from AI Engineering Role Research (2026-02-11)
-- **Anthropic** has 414 open positions; FDE Custom Agents ($280K-$400K) and SE Claude Code ($320K-$560K) are top fits
+- **Anthropic** has 414 open positions; FDE Custom Agents ($280K-$400K) and SE Claude Code ($320K-$560K) are top fits on paper
 - **OpenAI** uses Ashby for hiring; Applied Evals role maps directly to validation/eval infrastructure experience
-- **Together AI** has a rare founding documentation role (Lead DX Engineer) — 9/10 fit for documentation-strong profile
+- **Together AI** has a rare founding documentation role (Lead DX Engineer) — strongest documentation match
 - **HuggingFace** hires 30-40% from open-source community; fully remote; values self-directed operators
-- **Cohere** offers broadest geographic flexibility (SF/NYC/Toronto/Montreal/London); agentic workflows role strong
-- **Runway** is fully remote NA/EU; "merging art and science" mission directly matches artist-engineer identity
+- **Cohere** offers broadest geographic flexibility (SF/NYC/Toronto/Montreal/London)
+- **Runway** is fully remote NA/EU; "merging art and science" mission aligns with artist-engineer identity
 - **Mistral** roles are Paris-based — deprioritized unless willing to relocate
 - **Profile gap:** Most ML research roles require PyTorch/model training experience; strongest fit is systems/orchestration/docs roles
 - Full research: docs/applications/06-ai-engineering-role-research.md
+
+### Qualification Assessment (2026-02-16, revised)
+- **Profile:** 5 years independent software engineering (2021–present), 18 years total professional experience across 4 domains
+- **Real gaps:** No collaborative team engineering, no production deployment to real users, no enterprise customer-facing tech experience, limited ML domain knowledge
+- **What counts:** Job postings say "4+ years software engineering" not "at a company." 11yr teaching IS customer-facing. 15yr running own business IS professional experience.
+- **Highest-ROI targets:** Google Creative Lab Five (8/10) and Google Creative Fellowship (7/10) — designed for creative technologists
+- **Best stretch plays:** Together AI (6/10, documentation + teaching), HuggingFace (5/10, skills-based), Anthropic FDE (4/10, teaching-as-customer-facing)
+- **Engineering roles are competitive reaches** from a non-traditional background — worth applying, calibrate expectations
+- Full assessment: [09-qualification-assessment.md](./09-qualification-assessment.md)
 
 ### Substitute Targets (if primary targets are ineligible)
 - **Creative Capital** — supports individual artists, no geographic restriction
