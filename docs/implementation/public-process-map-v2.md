@@ -1,5 +1,7 @@
 # ORGAN-V: Public Process Infrastructure (v2.0)
 
+> **⚠ HISTORICAL DOCUMENT (2026-02-03).** The directory structure and 12-week content calendar below are aspirational designs from the planning era. The actual essay corpus has 33 deployed essays in public-process `_posts/`. The current content cadence is defined in [`operational-cadence.md`](../operations/operational-cadence.md) Part III. Essay topics and outlines below remain useful as references. Repo count is now 97 (not 44).
+
 **Status:** Design Document (Ready to Implement)
 **Version:** 2.0 (Meta-System Documentation Focus)
 **Owner:** ORGAN-V (Public Process Organ)

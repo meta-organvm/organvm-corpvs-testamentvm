@@ -31,7 +31,8 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 23 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–23, no gaps). Sprints 17–23 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 24 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–24, no gaps). Sprints 17–24 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Catalog vs. execution numbering (17–23):** This catalog was written as a hypothetical inventory. When sprints 19–23 were actually executed, some took different names than what the catalog had assigned. The canonical sprint numbers and names are in `docs/specs/sprints/` — those are what actually happened. Catalog items that were displaced (never executed at their catalog number) are marked as unscheduled future work below. For sprints ≥24, catalog numbers are hypothetical references until executed.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
   - **H1** — Prove It Works (Days 1–30)
@@ -103,9 +104,22 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 | Omega criteria | #17 (full local workspace) |
 | Resolution | All repos cloned and workspace restructured to flat 2-level layout |
 
-### Sprint 19: MEMORIA (Memory Correction) — COMPLETE
+### Sprint 19: CONCORDIA (Registry Reconciliation) — COMPLETE
 
-**Fix stale data across corpus documents.** *(Completed 2026-02-16 as part of TRIPARTITUM Sprint 20.)*
+**Reconcile registry with actual GitHub state.** *(Executed as Sprint 19, 2026-02-16.)*
+
+Registry reconciliation: 6 orphan repos registered (91→97), render-second-amendment deleted locally (14 GB freed), 2 LFS checkout failures fixed, seed.yaml audit (38/86 = 44% coverage).
+
+| Field | Value |
+|-------|-------|
+| Effort | ~2 hours |
+| Horizon | H1 (registry integrity) |
+| Omega criteria | Constitution Article I (registry is never wrong) |
+| Resolution | Registry reconciled with GitHub — 97 entries, all verified |
+
+### MEMORIA (Memory Correction) — COMPLETE *(unscheduled)*
+
+**Fix stale data across corpus documents.** *(Completed 2026-02-16 as part of Sprint 20 TRIPARTITUM. Originally catalog item 19, displaced by CONCORDIA.)*
 
 13 files updated with ~70 edits: all active documents now reflect 97 repos, 90 ACTIVE, 7 ARCHIVED, correct org counts, and ACTIVE terminology (not PRODUCTION). Includes CLAUDE.md, README.md, application materials, omega roadmap, operational docs, and evaluation docs.
 
@@ -122,9 +136,22 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 *Fill the gaps in the historical and architectural record.*
 
-### Sprint 20: ANNOTATIO (Annotation) — COMPLETE
+### Sprint 20: TRIPARTITUM (Three-Part Sprint) — COMPLETE
 
-**Write sprint specs for all completed sprints.** *(Completed 2026-02-16 as part of TRIPARTITUM Sprint 20.)*
+**Combined REMEDIUM + MEMORIA + ANNOTATIO into a single execution sprint.** *(Executed as Sprint 20, 2026-02-16.)*
+
+Three work streams in one sprint: (1) stale metrics corrected across 13 files (~70 edits), (2) 19 retrospective sprint specs written in `docs/specs/sprints/`, (3) all active docs aligned with registry-v2.json. Each spec follows a consistent template: Objective, Delivered, Key Decisions, Metrics Delta, Lessons.
+
+| Field | Value |
+|-------|-------|
+| Effort | ~3 hours |
+| Horizon | H1 (data integrity), H2 (evidence for applications), H5 (methodological authority) |
+| Omega criteria | #6, #14, Constitution Article I |
+| Resolution | 19 specs written, 13 documents updated, all docs aligned with registry |
+
+### ANNOTATIO (Annotation) — COMPLETE *(unscheduled)*
+
+**Write sprint specs for all completed sprints.** *(Completed 2026-02-16 as part of Sprint 20 TRIPARTITUM. Originally catalog item 20, displaced by TRIPARTITUM.)*
 
 19 retrospective specs written in `docs/specs/sprints/`: Gap-Fill, Platinum, Sprints 1–14 (IGNITION through OPERATIO), and Sprints 17–19 (REMEDIUM, SYNCHRONIUM, CONCORDIA). Each spec follows a consistent template: Objective, Delivered, Key Decisions, Metrics Delta, Lessons.
 
@@ -135,7 +162,7 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 | Omega criteria | #6, #14 (methodology documentation) |
 | Resolution | 19 specs in `docs/specs/sprints/`, plus 20-tripartitum.md for this sprint itself |
 
-### Sprint 21: DECISIO (Decision Records)
+### DECISIO (Decision Records) *(unscheduled)*
 
 **Write ADRs for all major architectural decisions.**
 
@@ -148,21 +175,18 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 | Horizon | H1 (operational maturity), H5 (shows rigorous engineering) |
 | Omega criteria | #16 (bus factor — ADRs help second operators understand decisions) |
 
-### Sprint 22: CANON (Canon Cleanup)
+### CANON (Canon Cleanup) — COMPLETE *(unscheduled)*
 
-**Reconcile stale documentation with current reality.**
+**Reconcile stale documentation with current reality.** *(Executed as Sprint 24, 2026-02-16. Originally catalog item 22, displaced by METRICUM.)*
 
-- `public-process-map-v2.md` — stale 12-week calendar with fictional dates
-- `implementation-package-v2.md` — references completed work as pending
-- `roadmap-there-and-back-again.md` — should be clearly archived
-- `implementation-sprint-specs.md` — uses "PRODUCTION" (old term), references completed sprints as pending
-- Cross-reference all planned-but-never-created essays from content map
+Catalog numbering reconciliation (this file), historical document headers added to 4 implementation-era documents. See Sprint 24 spec for details.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~4–6 hours |
+| Effort | ~1 hour |
 | Horizon | H1 (documentation integrity) |
 | Omega criteria | #2 (stranger test — stale docs confuse strangers) |
+| Resolution | Catalog reconciled, 4 historical headers added, sprint spec written |
 
 ---
 
@@ -170,19 +194,31 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 *Deploy essays, activate distribution, build the audience.*
 
-### Sprint 23: PUBLICATIO (Publication)
+### Sprint 22: METRICUM (Metrics) — COMPLETE
 
-**Deploy remaining essay drafts and write new essays.**
+**Build metrics variable system for the corpus.** *(Executed as Sprint 22, 2026-02-16.)*
 
-- Undeployed drafts in `docs/essays/`: 14-promotions-in-practice.md, 21-promotion-pipeline.md (may overlap with deployed "the-promotion-pipeline")
-- Planned essays from `public-process-map-v2.md` never written: "how-to-think-about-autonomous-systems", "constraint-alchemy-workshop", "governance-frameworks-for-artists", "performance-platform-methodology"
-- New essays aligned with omega horizons: 30-day soak test report (H1), first application experience retrospective (H2), ORGAN-III product development journal (H3), why the organ model separates commerce from theory (philosophical)
+Metrics variable system: `calculate-metrics.py` computes live counts from registry + GitHub API, `metrics-variables.json` stores them, `propagate-metrics.py` finds and replaces stale values across all active documents. Ensures metrics consistency without manual updates.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~4–6 hours per essay × number of essays |
+| Effort | ~2 hours |
+| Horizon | H1 (data integrity), H2 (accurate application materials) |
+| Omega criteria | Constitution Article I (registry is never wrong) |
+| Resolution | 3 scripts + JSON store deployed, metrics propagated across 20+ files |
+
+### Sprint 23: PUBLICATIO (Publication) — COMPLETE
+
+**Deploy remaining essay drafts and write new essays.** *(Completed 2026-02-16.)*
+
+4 essays deployed (29→33): 1 existing draft (promotions-in-practice) + 3 new essays (how-to-think-about-autonomous-systems, why-the-organ-model-separates-commerce-from-theory, governance-frameworks-for-artists). Metrics propagated across 18 files.
+
+| Field | Value |
+|-------|-------|
+| Effort | ~3 hours |
 | Horizon | H2 (#6, #7), H5 (#14) |
 | Omega criteria | #6 (AI-conductor essay — already deployed), feeds #14 |
+| Resolution | 33 essays deployed, ~398K+ total words |
 
 ### Sprint 24: DISTRIBUTIO (Distribution Infrastructure)
 
@@ -412,9 +448,11 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 *Submit the system to external audiences.*
 
-### Sprint 41: SUBMISSIO (Application Blitz) — IN PROGRESS
+### Sprint 41 → Sprint 21: SUBMISSIO (Application Blitz) — COMPLETE
 
-**Submit all prepared applications.** *(Prep completed 2026-02-16: All 9 bundles verified with current metrics — 97 repos, 386K+ words, 29 essays. Submission checklist created at `docs/applications/08-submission-checklist.md`. Human form-filling is the remaining step.)*
+**Verify application metrics and create submission checklist.** *(Prep executed as Sprint 21, 2026-02-16. Actual submissions are human work tracked in `docs/applications/08-submission-checklist.md`.)*
+
+All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays. Submission checklist created. Human form-filling is the remaining step (not AI-conductor work).
 
 - 7 job applications with verified cover letters (Anthropic ×2, OpenAI, Together AI, HuggingFace, Cohere, Runway)
 - Google Creative Lab Five (no deadline, ready now)
@@ -422,10 +460,10 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 | Field | Value |
 |-------|-------|
-| Effort | ~6–10 hours (form filling, uploading, final review) |
+| Effort | ~1 hour (verification + checklist) |
 | Horizon | H2 (#5, #7) |
 | Omega criteria | #5 (≥1 application submitted), feeds #7 (external feedback) |
-| Prep completed | 2026-02-16 — metrics verified, stale data fixed across 20+ files, checklist created |
+| Resolution | Prep complete 2026-02-16 — metrics verified, checklist created. Human submissions pending. |
 
 ### Sprint 42: PEREGRINUS (Stranger Test Execution)
 
@@ -1011,13 +1049,13 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 ## APPENDIX A: Sprint Count by Category
 
-| # | Category | Sprints | Sprint Numbers |
-|---|----------|---------|---------------|
-| 1 | Infrastructure Repair | 3 | 17–19 |
-| 2 | Documentation Completion | 3 | 20–22 |
-| 3 | Content & Publishing | 3 | 23–25 |
+| # | Category | Sprints | Notes |
+|---|----------|---------|-------|
+| 1 | Infrastructure Repair | 4 | 17 REMEDIUM, 18 SYNCHRONIUM, 19 CONCORDIA + MEMORIA (unscheduled) |
+| 2 | Documentation Completion | 3 | 20 TRIPARTITUM + ANNOTATIO (unscheduled), DECISIO (unscheduled), CANON (unscheduled, executed as Sprint 24) |
+| 3 | Content & Publishing | 4 | 22 METRICUM, 23 PUBLICATIO, 24–25 (DISTRIBUTIO, RSS-AUTOMATIO) |
 | 4 | Product & Revenue (ORGAN-III) | 15 | 26–40 |
-| 5 | External Validation | 4 | 41–44 |
+| 5 | External Validation | 4 | 41/21 SUBMISSIO, 42–44 |
 | 6 | Community (ORGAN-VI) | 4 | 45–48 |
 | 7 | Creative Work (ORGAN-I/II) | 3 | 49–51 |
 | 8 | Portfolio & Presentation | 3 | 52–54 |
@@ -1031,7 +1069,7 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 | 16 | Design & UX | 2 | 72–73 |
 | 17 | Data & Analytics | 2 | 74–75 |
 | 18 | Backup & Resilience | 1 | 76 |
-| | **TOTAL** | **60** | **17–76** |
+| | **TOTAL** | **~60** | Completed: 17–24 (8 sprints). Remaining: hypothetical catalog items. |
 
 ---
 
@@ -1074,7 +1112,7 @@ Every organ is addressed by at least one sprint.
 | V (Logos) | 23 (PUBLICATIO), 24–25 (distribution) | Essays + POSSE |
 | VI (Koinonia) | 45–48 (community sprints) | Salons + contributors |
 | VII (Kerygma) | 24 (DISTRIBUTIO), 66–67 (conferences) | Distribution + talks |
-| Meta | 19–22 (documentation), 61–63 (governance) | Corpus + registry |
+| Meta | 19–20, 22, 24 (documentation + metrics), 61–63 (governance) | Corpus + registry |
 
 ---
 
@@ -1085,7 +1123,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | Order | Sprint | Covers Criteria | Calendar Dependency |
 |-------|--------|----------------|---------------------|
 | ~~1~~ | ~~**17 REMEDIUM**~~ | ~~#1, #17~~ | **COMPLETE** — workflows confirmed healthy |
-| 2 | **41 SUBMISSIO** | #5, #7 | Materials ready now |
+| ~~2~~ | ~~**41/21 SUBMISSIO**~~ | ~~#5, #7~~ | **COMPLETE** — prep executed as Sprint 21; human submissions pending |
 | 3 | **42 PEREGRINUS** | #2, #4, #16 | Validates H1 claims |
 | 4 | **28 BETA-SCRAPPER** | #8 | Or 26/27 based on readiness |
 | 5 | **40 MERCATURA** | #9, #10 | Requires a beta product |
@@ -1097,9 +1135,9 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | 11 | **52 RENOVATIO** | #15 | Quick portfolio update |
 | 12 | **43 PETITIO** | #14 | Grant application for recognition |
 
-**Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy)
+**Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy), #5/#7 prerequisites (SUBMISSIO — prep complete, human submissions pending)
 
-**Remaining critical path:** 11 sprints (41→42→28→40→64→24→45→46→47→52→43)
+**Remaining critical path:** 10 sprints (42→28→40→64→24→45→46→47→52→43)
 
 **Note on critical path vs. cadence:** The critical path identifies the minimum set. The operational cadence (`operational-cadence.md`) determines how these are sequenced into weekly rhythm. They are pulled from this catalog as individual tasks, not executed as named sprints — per AP-1.
 

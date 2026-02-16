@@ -1,5 +1,7 @@
 # Implementation Sprint Specs: Phase 3 Priority Repos
 
+> **⚠ HISTORICAL DOCUMENT (2026-02-12).** All 5 repos below were validated during Phase 3. "PRODUCTION" references below should read "ACTIVE" (renamed in VERITAS Sprint). Current implementation status lives in [`registry-v2.json`](../../registry-v2.json).
+
 **Goal:** Elevate 5 priority repos from current state to target state (Days 45-75)
 **Updated:** 2026-02-12
 

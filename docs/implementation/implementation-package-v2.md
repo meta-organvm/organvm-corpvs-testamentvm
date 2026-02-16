@@ -1,5 +1,7 @@
 # IMPLEMENTATION PACKAGE: Eight-Organ Parallel Launch (v2.0)
 
+> **⚠ HISTORICAL DOCUMENT (2026-02-03).** All phases described below are COMPLETE as of 2026-02-11 (launch). Repo count has grown from 44 to 97. The current authoritative documents are: [`sprint-catalog.md`](../strategy/sprint-catalog.md) (work inventory), [`operational-cadence.md`](../operations/operational-cadence.md) (rhythm), [`registry-v2.json`](../../registry-v2.json) (source of truth). This document is retained for its strategic framing and TE budget methodology.
+
 > **Note:** Effort estimates in this document use TE (tokens-expended) as the unit of work, reflecting the AI-conductor workflow model. Timeline references use sprints (not weeks). The canonical execution plan is `roadmap-there-and-back-again.md` (revised Feb 9, 2026). This document is retained for its detailed strategic framing, subtask descriptions, and portfolio positioning guidance.
 
 > **Post-Cross-Validation (2026-02-09):** Phase 1 scope is now Bronze (see `08-canonical-action-plan.md` §3), not all 44 repos. NSF Convergence Accelerator deprioritized (§6). Repo counts corrected. Per-task TE estimates remain valid as reference points but are now expressed as scenario bands (D-01).
