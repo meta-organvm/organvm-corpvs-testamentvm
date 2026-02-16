@@ -152,10 +152,11 @@ This corpus operates on an **AI-conductor model**: human directs, AI generates v
 
 ## Naming and Path Conventions
 
-The canonical path formula from the ontology layers is:
+The workspace uses a flat 2-level structure that mirrors GitHub exactly:
 ```
-$WORLD_ROOT/realm/<realm_id>/org/<org_unit_id>/repo/<repo_unit_id>/
+~/Workspace/<github-org>/<repo>/
 ```
+e.g. `~/Workspace/organvm-i-theoria/recursive-engine--generative-entity/`
 
 Repo naming pattern: `[organ]-[type]--[specific-name]` (double-dash separates type from name).
 
@@ -168,7 +169,7 @@ When completing tasks across the organ system, use this decision tree to determi
   e.g. `~/Workspace/organvm-i-theoria/recursive-engine--generative-entity/`
 
 **Q2: Governance/planning/architecture doc for the organ system?**
-→ This corpus (`~/Workspace/organvm-pactvm/ingesting-organ-document-structure/`), routed by document layer:
+→ This corpus (`~/Workspace/meta-organvm/organvm-corpvs-testamentvm/`), routed by document layer:
 
 | Artifact type | Destination |
 |---|---|
@@ -186,8 +187,8 @@ When completing tasks across the organ system, use this decision tree to determi
 **Q3: Unsorted / temporary / exploratory?**
 → `~/Workspace/intake/` (universal catch-all; triage later)
 
-**NEVER** land files in: `~/` (home) or `~/Workspace/organvm-pactvm/` (parent dir — only `ingesting-organ-document-structure/` and `portfolio-merge-workspace/` belong there).
+**NEVER** land files in: `~/` (home) or directly in `~/Workspace/` (only org directories and non-organ projects belong at the top level).
 
 ## Parent Directory Context
 
-This directory sits within `~/Workspace/organvm-pactvm/`, which contains only `ingesting-organ-document-structure/` (this corpus) and `portfolio-merge-workspace/`. No loose files belong in the parent.
+This corpus lives at `~/Workspace/meta-organvm/organvm-corpvs-testamentvm/`, alongside `~/Workspace/meta-organvm/alchemia-ingestvm/` in the meta-organvm org directory. The old path `~/Workspace/organvm-pactvm/ingesting-organ-document-structure/` is deprecated (restructured 2026-02-16).
