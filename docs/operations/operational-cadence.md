@@ -210,7 +210,7 @@ These are **floors, not ceilings.** If you're shipping more, great. If you're co
 
 ### Essay Publishing Rhythm
 
-The construction sprints produced 29 essays in 3 days. That pace is unsustainable and unnecessary. Steady-state essay cadence:
+The construction sprints produced 29 essays in 3 days. A second batch of 4 essays was mass-pushed on 2026-02-16 (Sprint 23: PUBLICATIO). Both batches violated the designed cadence below. Going forward, the bi-weekly rhythm is enforced. Steady-state essay cadence:
 
 | Frequency | Type | Effort | Source |
 |-----------|------|--------|--------|
@@ -285,6 +285,24 @@ social + distribution-agent
 ```
 
 The pipeline is designed so that creative work is **upstream** and content is a **natural byproduct.** You should never be "looking for things to write about." The writing comes from the doing.
+
+### Publication Schedule
+
+Concrete next-essay targets, updated at each monthly review. Deploy on Wednesdays to align with the distribution-agent (10:00 UTC).
+
+**Current as of:** 2026-02-16
+
+| Target Date | Essay | Source | Status |
+|-------------|-------|--------|--------|
+| Wed, Mar 4, 2026 | constraint-alchemy-workshop | Planned (from `public-process-map-v2.md`) | Not yet written |
+| Wed, Mar 18, 2026 | performance-platform-methodology | Planned (from `public-process-map-v2.md`) | Not yet written |
+| Wed, Apr 1, 2026 | (from weekly creative work) | ORGAN-I/III pipeline | TBD |
+
+**Rules:**
+- 1 essay every 2 weeks, no exceptions for batch pushes
+- If an essay isn't ready by its target Wednesday, it slips to the next cycle — do not rush-deploy
+- Titles are provisional; the creative work that week may produce a different essay
+- Update this table during the Friday planning session (Part I) and the Week 4 monthly review (Part II)
 
 ---
 

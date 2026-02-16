@@ -75,6 +75,20 @@ These items from the PUBLICATIO catalog description were deferred:
 - First application experience retrospective (omega H2 — no submissions yet)
 - ORGAN-III product development journal (omega H3 — future sprint)
 
+## Publication Rhythm Note
+
+The 4 essays deployed in this sprint were batch-pushed on 2026-02-16, repeating the pattern from the construction era (29 essays in 3 days). This violates the designed bi-weekly cadence established in `operational-cadence.md` Part III. Accepted as a one-time exception to clear the draft backlog.
+
+**Going forward, the cadence from `operational-cadence.md` Part III applies:**
+- 1 meta-system essay every 2 weeks, deployed on Wednesdays
+- Annual target: 24–30 essays (2/month)
+- Deploy day aligns with distribution-agent (Wednesday 10:00 UTC)
+
+**Next scheduled publications:**
+- **Wed, Mar 4, 2026**: constraint-alchemy-workshop (planned, not yet written)
+- **Wed, Mar 18, 2026**: performance-platform-methodology (planned, not yet written)
+- Future essays flow from weekly creative work per the content pipeline (operational-cadence.md Part III)
+
 ## Verification
 
 - `gh api repos/organvm-v-logos/public-process/contents/_posts --jq 'length'` returns 33

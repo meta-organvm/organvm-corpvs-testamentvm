@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (Gap-Fill through Operatio), starting at 17. Sprints 17–23 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 23 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–23, no gaps). Sprints 17–23 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
   - **H1** — Prove It Works (Days 1–30)
