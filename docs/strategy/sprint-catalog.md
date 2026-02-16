@@ -58,7 +58,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 | ORGAN-VI zero-code repos | 3/3 local repos have 0 code |
 | ORGAN-VII zero-code repos | 3/3 local repos have 0 code |
 | Failing workflows | None (phantom failures diagnosed; all workflows healthy) |
-| Applications submitted | 0 of 13 tracked |
+| Applications submitted | 0 of 13 tracked (9 READY, checklist created) |
 | Stranger test | Protocol ready, not executed |
 | Soak test | Day 1 of 30 |
 | Revenue | $0 |
@@ -412,19 +412,20 @@ All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos
 
 *Submit the system to external audiences.*
 
-### Sprint 41: SUBMISSIO (Application Blitz)
+### Sprint 41: SUBMISSIO (Application Blitz) — IN PROGRESS
 
-**Submit all prepared applications.**
+**Submit all prepared applications.** *(Prep completed 2026-02-16: All 9 bundles verified with current metrics — 97 repos, 386K+ words, 29 essays. Submission checklist created at `docs/applications/08-submission-checklist.md`. Human form-filling is the remaining step.)*
 
-- 7 job applications with drafted cover letters (Anthropic ×2, OpenAI, Together AI, HuggingFace, Cohere, Runway)
+- 7 job applications with verified cover letters (Anthropic ×2, OpenAI, Together AI, HuggingFace, Cohere, Runway)
 - Google Creative Lab Five (no deadline, ready now)
-- Google Creative Fellowship (March 18, 2026 deadline)
+- Google Creative Fellowship (March 18, 2026 deadline — page shows "Coming soon!" as of Feb 16)
 
 | Field | Value |
 |-------|-------|
 | Effort | ~6–10 hours (form filling, uploading, final review) |
 | Horizon | H2 (#5, #7) |
 | Omega criteria | #5 (≥1 application submitted), feeds #7 (external feedback) |
+| Prep completed | 2026-02-16 — metrics verified, stale data fixed across 20+ files, checklist created |
 
 ### Sprint 42: PEREGRINUS (Stranger Test Execution)
 

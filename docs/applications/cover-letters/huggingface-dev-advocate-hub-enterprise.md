@@ -7,7 +7,7 @@
 
 ---
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 335,000 words across 81 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 386,000 words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
 
 ## Why Hugging Face
 
@@ -18,11 +18,11 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 ## What I'd Bring
 
 **Technical content at scale, from scratch.** The eight-organ documentation corpus includes:
-- 73 repository READMEs, each written for grant reviewers and hiring managers
+- 97 repository READMEs, each written for grant reviewers and hiring managers
 - A cross-document dependency map and reading order so newcomers never feel lost
 - An annotated manifest with per-file descriptions of the entire corpus
-- 20 meta-system essays explaining architectural decisions to non-technical audiences
-- organvm-corpvs-testamentvm as the meta-governance document — 335K words of structured technical writing that IS the product
+- 29 published essays explaining architectural decisions to non-technical audiences
+- organvm-corpvs-testamentvm as the meta-governance document — 386K words of structured technical writing that IS the product
 
 This is the kind of content your role creates: docs, blog posts, tutorials, demos with code repos. I've done all of it at once.
 
@@ -34,7 +34,7 @@ This is the kind of content your role creates: docs, blog posts, tutorials, demo
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** 335K-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** 386K-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
 - **my-knowledge-base:** Developer-oriented knowledge management design (organvm-i-theoria/my-knowledge-base)
 - **metasystem-master:** Meta-level systems documentation that teaches by composition (organvm-ii-poiesis/metasystem-master)
 - **.github org profiles:** Community health files and org-level technical communication across 8 orgs (organvm-i-theoria/.github)

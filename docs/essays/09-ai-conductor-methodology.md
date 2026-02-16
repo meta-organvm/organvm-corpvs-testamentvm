@@ -5,9 +5,9 @@
 
 ---
 
-When I built an eight-organ creative system spanning 91 repositories in eight days, the natural question was: did you actually build it, or did the AI build it?
+When I built an eight-organ creative system spanning 97 repositories in eight days, the natural question was: did you actually build it, or did the AI build it?
 
-The answer is more interesting than either extreme. I didn't write 386,000 words by hand. The AI didn't architect an eight-organ governance model on its own. What happened was something I've come to call the AI-conductor methodology — a pattern of human-AI collaboration where the human directs, the AI generates volume, and the human reviews and refines. It's neither "AI-generated content" nor traditional software engineering. It's a third thing, and I think it's the most honest framing available for how a growing number of creative and technical projects actually get built.
+The answer is more interesting than either extreme. I didn't write 386,000+ words by hand. The AI didn't architect an eight-organ governance model on its own. What happened was something I've come to call the AI-conductor methodology — a pattern of human-AI collaboration where the human directs, the AI generates volume, and the human reviews and refines. It's neither "AI-generated content" nor traditional software engineering. It's a third thing, and I think it's the most honest framing available for how a growing number of creative and technical projects actually get built.
 
 This essay describes what the AI-conductor methodology is, how it differs from common alternatives, when it works and when it fails, and how to apply it. I'll use the ORGANVM system as a case study throughout, but the methodology generalizes to any project where a single person or small team needs to produce work at a scale that would traditionally require a larger organization.
 
@@ -29,7 +29,7 @@ This is distinct from three other models that people commonly conflate with it:
 
 The AI-conductor model sits between models 1 and 2, but it's qualitatively different from both. The human does less line-by-line writing than in model 2, but exercises far more architectural control than in model 1. The human's contribution is primarily structural and evaluative rather than generative — but that structural contribution is what makes the output coherent rather than generic.
 
-Here's the key insight: **the conductor's contribution is invisible in the output but essential to its quality.** You can't point to a specific paragraph and say "the human wrote this one." But you can point to the overall architecture — the fact that 91 repositories follow consistent governance rules, that dependency edges flow in one direction, that every README speaks to the same audience in the same voice — and say "no AI would produce this without sustained human direction."
+Here's the key insight: **the conductor's contribution is invisible in the output but essential to its quality.** You can't point to a specific paragraph and say "the human wrote this one." But you can point to the overall architecture — the fact that 97 repositories follow consistent governance rules, that dependency edges flow in one direction, that every README speaks to the same audience in the same voice — and say "no AI would produce this without sustained human direction."
 
 ---
 
@@ -103,7 +103,7 @@ The methodology has failure modes that I've encountered directly. Honesty about 
 
 **3. Strategic positioning.** The AI can write a cover letter for a specific job posting. It cannot decide which jobs to apply for, which framing will resonate with which reviewer, or whether a particular application is strategically worth the effort. In the ORGANVM system, the decision to target Google Creative Lab, Anthropic, and the Knight Foundation — and the specific framing for each — was entirely human-directed.
 
-**4. Sustained context.** AI context windows are finite. A project with 91 repositories, 386,000 words of documentation, and 31 dependency edges exceeds any single context window. The human serves as the persistent memory layer — carrying context across sessions, noticing when the AI contradicts earlier decisions, and maintaining the system's invariants over time. The MEMORY.md file in this project is literally a human-maintained memory prosthesis for the AI.
+**4. Sustained context.** AI context windows are finite. A project with 97 repositories, 386,000+ words of documentation, and 31 dependency edges exceeds any single context window. The human serves as the persistent memory layer — carrying context across sessions, noticing when the AI contradicts earlier decisions, and maintaining the system's invariants over time. The MEMORY.md file in this project is literally a human-maintained memory prosthesis for the AI.
 
 **5. Social and ethical judgment.** Should you claim that 82 repositories have "active" code when many are primarily documentation? Is it honest to list "revenue_model: subscription" for a product with zero customers? These questions require human judgment about what constitutes honest representation. The VERITAS sprint — where we renamed "PRODUCTION" to "ACTIVE," split the revenue field into model and status, and wrote an honesty essay — was entirely human-initiated in response to credibility concerns that the AI would never have flagged on its own.
 

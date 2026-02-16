@@ -29,7 +29,7 @@ Self-governing orchestration framework with 8 phases, 4 human review gates, BLAK
 
 ## [organvm-corpvs-testamentvm](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
 
-The authoritative planning and governance corpus for the eight-organ creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
+The authoritative planning and governance corpus for the eight-organ creative-institutional system. 97 repos, ~386K words, 8 organizations, 29 essays.
 
 - **Status**: Active
 - **Tier**: flagship

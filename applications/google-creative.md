@@ -9,7 +9,7 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 91 repositories across 8 GitHub organizations with 31 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 97 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
 
 This application highlights the system's relevance to Google Creative Fellowship through:
 
@@ -72,6 +72,6 @@ Educational RPG system for classroom engagement
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 28 published essays documenting the build process
+- 29 published essays documenting the build process
 
 ---

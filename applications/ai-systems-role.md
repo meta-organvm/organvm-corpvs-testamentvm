@@ -9,7 +9,7 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 91 repositories across 8 GitHub organizations with 31 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 97 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
 
 This application highlights the system's relevance to AI Systems Engineering Role through:
 
@@ -59,7 +59,7 @@ Self-governing orchestration framework with 8 phases, 4 human review gates, BLAK
 
 ## [organvm-corpvs-testamentvm](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
 
-The authoritative planning and governance corpus for the eight-organ creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
+The authoritative planning and governance corpus for the eight-organ creative-institutional system. 97 repos, ~386K words, 8 organizations, 29 essays.
 
 - **Status**: Active
 - **Tier**: flagship

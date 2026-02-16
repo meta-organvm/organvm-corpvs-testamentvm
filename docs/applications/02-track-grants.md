@@ -11,11 +11,11 @@
 "This demonstrates long-term digital capacity. The eight-organ model isn't a project — it's infrastructure that enables ongoing creative work."
 
 Grant reviewers evaluate:
-1. **Organizational capacity** — Can you execute sustained work? (Registry + 81 repos = yes)
+1. **Organizational capacity** — Can you execute sustained work? (Registry + 97 repos = yes)
 2. **Long-term sustainability** — Will this outlast the grant period? (Automated governance = yes)
 3. **Community contribution** — Does this benefit others? (Public documentation + ORGAN-VI = yes)
 4. **Innovation** — Is this genuinely new? (Governance-as-artistic-medium = yes)
-5. **Demonstrated track record** — Have you shipped before? (335K words deployed, 70+ CI/CD = yes)
+5. **Demonstrated track record** — Have you shipped before? (386K words deployed, 70+ CI/CD = yes)
 
 ---
 
@@ -28,7 +28,7 @@ Grant reviewers evaluate:
 **Why you fit:** The eight-organ system IS long-term infrastructure. It's not a single artwork or product — it's a documented, automated system for producing creative work indefinitely.
 
 **Key evidence:**
-- Registry-v2.json: Machine-readable infrastructure for 81 repos
+- Registry-v2.json: Machine-readable infrastructure for 97 repos
 - 5 GitHub Actions workflows: Autonomous governance that runs without human intervention
 - Monthly audit: Automated health checks ensure system remains coherent
 - ORGAN-V essays: Public documentation of the entire model
@@ -85,7 +85,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 81 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~335,000 words of public documentation. All eight organs are currently operational.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~386,000 words of public documentation. All eight organs are currently operational.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -94,11 +94,11 @@ Grant reviewers evaluate:
 > The eight-organ model demonstrates that sustainable creative practice requires institutional infrastructure — not just talent. By treating governance as an artistic medium and documenting the entire system publicly, this work contributes reusable patterns for other artist-engineers, small arts organizations, and creative technologists operating at the intersection of art and systems design.
 >
 > **Evidence of Capacity:**
-> - 81 repositories across 8 organizations, all operational
+> - 97 repositories across 8 organizations, all operational
 > - 70+ CI/CD pipelines, 5 governance workflows, automated monthly audits
-> - 20 published meta-system essays (~84K words)
+> - 29 published essays (~84K words)
 > - Flagship projects with >1,000 tests each
-> - Complete documentation at portfolio quality (~335K words)
+> - Complete documentation at portfolio quality (~386K words)
 >
 > **Budget:** [AMOUNT]
 > **Timeline:** [DURATION]
@@ -128,7 +128,7 @@ For grants that require dollar budgets, translate the TE model:
 
 1. **The infrastructure already exists.** You're not proposing to build something — you're showing what you've built and requesting support to sustain and expand it.
 
-2. **Automated governance at solo-practitioner scale.** Monthly audits run automatically. Dependency validation happens on every PR. Health checks monitor all 81 repos.
+2. **Automated governance at solo-practitioner scale.** Monthly audits run automatically. Dependency validation happens on every PR. Health checks monitor all 97 repos.
 
 3. **Public documentation as evidence.** Grant reviewers can verify every claim by visiting the public repos. The registry, governance rules, and audit reports are all visible.
 

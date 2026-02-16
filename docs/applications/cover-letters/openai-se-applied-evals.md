@@ -10,14 +10,14 @@ I'm applying for the Software Engineer, Applied Evals role at OpenAI. I build ev
 
 ## Why Applied Evals
 
-Evaluation is governance. When you're evaluating multi-turn and tool-using systems, you're deciding what "good" means for an agent operating autonomously. I've made exactly these decisions for a system coordinating 81 repositories across 8 organizations: What does a healthy repo look like? What dependency patterns indicate architectural risk? When should a promotion be blocked? The answers became automated validation — organ-audit.py, platinum-validation.py, 5 GitHub Actions workflows — that runs continuously without human intervention.
+Evaluation is governance. When you're evaluating multi-turn and tool-using systems, you're deciding what "good" means for an agent operating autonomously. I've made exactly these decisions for a system coordinating 97 repositories across 8 organizations: What does a healthy repo look like? What dependency patterns indicate architectural risk? When should a promotion be blocked? The answers became automated validation — organ-audit.py, platinum-validation.py, 5 GitHub Actions workflows — that runs continuously without human intervention.
 
 That's eval infrastructure. I want to build it for the systems that matter most.
 
 ## What I'd Bring
 
 **Evaluation frameworks, battle-tested.** I built a multi-layered validation system for the eight-organ system:
-- **organ-audit.py:** Monthly health monitoring across all 81 repos — checks documentation status, link integrity, cross-reference accuracy
+- **organ-audit.py:** Monthly health monitoring across all 97 repos — checks documentation status, link integrity, cross-reference accuracy
 - **platinum-validation.py:** Full system sweep verifying every repo against 1,267 audited links and 31 dependency edges
 - **validate-dependencies workflow:** Blocks merges that would violate constitutional constraints (no circular dependencies, no back-edges, transitive depth <= 4)
 

@@ -11,11 +11,11 @@
 "As an artist-engineer building autonomous creative systems, I've developed a fully documented eight-organ infrastructure for coordinating theory, art, and community work."
 
 Residency evaluators assess:
-1. **Artistic practice** — Is there a coherent body of work? (8 organs, 81 repos, 5+ years)
+1. **Artistic practice** — Is there a coherent body of work? (8 organs, 97 repos, 5+ years)
 2. **Systemic thinking** — Does the artist think beyond individual pieces? (Governance model, dependency graph, state machine)
 3. **Community contribution** — Will this benefit the residency community? (ORGAN-VI, public documentation, reusable patterns)
 4. **Innovation** — Is this genuinely pushing boundaries? (Governance-as-artistic-medium is uncommon)
-5. **Communication** — Can the artist articulate their practice? (335K words, 20 essays, clear system narrative)
+5. **Communication** — Can the artist articulate their practice? (386K words, 29 essays, clear system narrative)
 
 ---
 
@@ -23,7 +23,7 @@ Residency evaluators assess:
 
 > I build autonomous creative systems and treat their governance as an artistic medium.
 >
-> My practice centers on the eight-organ system — a documented infrastructure coordinating theory, generative art, commercial products, governance, public process, community, and marketing across 81 repositories. Rather than producing individual artworks, I produce the *systems* that generate, coordinate, and sustain creative work over time.
+> My practice centers on the eight-organ system — a documented infrastructure coordinating theory, generative art, commercial products, governance, public process, community, and marketing across 97 repositories. Rather than producing individual artworks, I produce the *systems* that generate, coordinate, and sustain creative work over time.
 >
 > This isn't project-based art. It's infrastructure-as-practice: registry design, dependency validation, promotion state machines, automated health checks, and public documentation are all artistic decisions. The choice of how work moves between organs (Theory -> Art -> Commerce) is as important as any individual output.
 >
@@ -54,7 +54,7 @@ Residency evaluators assess:
 - The entire system is open-source and documented
 
 **Talking points:**
-- "I treat governance as an artistic medium — the rules that coordinate 81 repos are as carefully designed as any artwork"
+- "I treat governance as an artistic medium — the rules that coordinate 97 repos are as carefully designed as any artwork"
 - "The public documentation isn't just transparency; it's a contribution to the community of practice"
 - "The eight-organ model demonstrates that a single practitioner can operate at institutional scale through documented governance"
 
@@ -102,7 +102,7 @@ Residency evaluators assess:
 >
 > **Medium:** Software infrastructure, governance protocols, public documentation, generative systems
 >
-> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 81 repositories across 8 GitHub organizations with automated governance, public documentation (~335K words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
+> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations with automated governance, public documentation (~386K words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
 >
 > **Duration:** 5+ years of sustained practice
 >
@@ -116,7 +116,7 @@ Residency evaluators assess:
 
 > **Title:** [RESIDENCY-SPECIFIC TITLE]
 >
-> **Summary:** During this residency, I will [SPECIFIC DELIVERABLES] within the context of my ongoing eight-organ creative-institutional system — a documented infrastructure coordinating 81 repositories across theory, art, commerce, governance, and community.
+> **Summary:** During this residency, I will [SPECIFIC DELIVERABLES] within the context of my ongoing eight-organ creative-institutional system — a documented infrastructure coordinating 97 repositories across theory, art, commerce, governance, and community.
 >
 > **Why here:** [RESIDENCY NAME]'s commitment to [THEIR VALUES] aligns with my practice of treating governance and systems design as primary artistic output. The eight-organ model demonstrates that [SPECIFIC CONNECTION TO THEIR MISSION].
 >
@@ -131,7 +131,7 @@ Residency evaluators assess:
 > - github.com/organvm-v-logos/public-process — essays and public documentation
 > - [RELEVANT ORGAN-I/II/III repos]
 >
-> **Bio:** [NAME] is an artist-engineer who builds autonomous creative systems with production-grade governance. Their eight-organ system coordinates 81 repositories across theory, generative art, commercial products, and community — treating infrastructure and governance as primary artistic media.
+> **Bio:** [NAME] is an artist-engineer who builds autonomous creative systems with production-grade governance. Their eight-organ system coordinates 97 repositories across theory, generative art, commercial products, and community — treating infrastructure and governance as primary artistic media.
 
 ---
 

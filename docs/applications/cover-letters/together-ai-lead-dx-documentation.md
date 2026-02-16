@@ -6,7 +6,7 @@
 
 ---
 
-I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 335,000 words of portfolio-quality documentation for a system coordinating 81 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
+I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 386,000 words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
 
 ## Why Together AI
 
@@ -15,10 +15,10 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 ## What I'd Bring
 
 **Documentation at scale, built from scratch.** The eight-organ system has:
-- 73 documented repositories, each with a README written for external evaluators
+- 97 documented repositories, each with a README written for external evaluators
 - A reading order and cross-document dependency map so newcomers know where to start
 - An annotated manifest providing per-file descriptions of every document in the corpus
-- 20 meta-system essays explaining architectural decisions to non-technical audiences
+- 29 published essays explaining architectural decisions to non-technical audiences
 
 This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
@@ -36,7 +36,7 @@ I write code that teaches. Every script is documented with the "why," not just t
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** The documentation corpus itself — 335K words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** The documentation corpus itself — 386K words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
 - **metasystem-master:** Meta-level architecture documentation showing system composition (organvm-ii-poiesis/metasystem-master)
 - **my-knowledge-base:** Knowledge management system design (organvm-i-theoria/my-knowledge-base)
 - **narratological-algorithmic-lenses:** Analytical writing applied to computational systems (organvm-i-theoria/narratological-algorithmic-lenses)

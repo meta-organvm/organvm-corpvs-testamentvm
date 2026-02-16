@@ -10,7 +10,7 @@ I'm applying for the MTS, Research Tooling & Data Platform role at Runway. I'm a
 
 ## Why Runway
 
-The eight-organ system I designed is a creative-institutional architecture: 81 repositories across 8 GitHub organizations, half of which are generative art, interactive narrative, and experiential design projects. The other half is the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. I didn't build art tools OR infrastructure — I built both, because I believe creative systems deserve the same engineering rigor as production platforms.
+The eight-organ system I designed is a creative-institutional architecture: 97 repositories across 8 GitHub organizations, half of which are generative art, interactive narrative, and experiential design projects. The other half is the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. I didn't build art tools OR infrastructure — I built both, because I believe creative systems deserve the same engineering rigor as production platforms.
 
 Runway is doing the same thing at a much larger scale. Your research teams need internal tooling built by someone who understands both what researchers need and how to build platforms that don't get in their way. That's the intersection I work at.
 
@@ -22,7 +22,7 @@ Runway is doing the same thing at a much larger scale. Your research teams need 
 
 **Product engineering across domains.** classroom-rpg-aetheria is an educational RPG system — game mechanics, narrative branching, state management — built as a complete product. your-fit-tailored is a personalization and recommendation system. These aren't side projects; they're full-stack products that demonstrate the TypeScript/React product engineering and UX design your job description values alongside infrastructure work.
 
-**Self-directed, pragmatic execution.** I shipped the entire eight-organ system — 335K words of documentation, 70+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint. I don't need a roadmap to know what to build next. I look at what researchers are struggling with, and I build the tool that fixes it.
+**Self-directed, pragmatic execution.** I shipped the entire eight-organ system — 386K words of documentation, 70+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint. I don't need a roadmap to know what to build next. I look at what researchers are struggling with, and I build the tool that fixes it.
 
 ## Evidence
 

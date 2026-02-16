@@ -2,18 +2,18 @@
 
 **Goal:** 10 applications across 3 tracks within 30 days (Days 15-45 of 90-day plan)
 **Target:** 5 job apps + 3 grant apps/LOIs + 2 residency apps
-**Updated:** 2026-02-16 (OPERATIO Sprint — all P0/P1 prereqs complete, submission ready)
+**Updated:** 2026-02-16 (SUBMISSIO Sprint 21 — metrics verified, checklist created, all 9 READY)
 
 ---
 
 ## Status Summary
 
-| Track | Target | Submitted | In Progress | Remaining |
-|-------|--------|-----------|-------------|-----------|
-| AI Engineering | 5 | 0 | 7 | 0 |
-| Grants | 3 | 0 | 0 | 3 |
-| Residencies | 2 | 0 | 1 | 1 |
-| **Total** | **10** | **0** | **8** | **2** |
+| Track | Target | Submitted | Ready | In Progress | Remaining |
+|-------|--------|-----------|-------|-------------|-----------|
+| AI Engineering | 5 | 0 | 7 | 0 | 0 |
+| Grants | 3 | 0 | 0 | 0 | 3 |
+| Residencies | 2 | 0 | 2 | 0 | 0 |
+| **Total** | **10** | **0** | **9** | **0** | **3** |
 
 ---
 
@@ -21,7 +21,7 @@
 
 ### 2.1 — Anthropic: Forward Deployed Engineer, Custom Agents
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** $280,000–$400,000
 - **Framing:** Governance-as-safety, agent deployment patterns, MCP servers + sub-agents
@@ -34,7 +34,7 @@
 
 ### 2.1b — Anthropic: Software Engineer, Claude Code
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** $320,000–$560,000
 - **Framing:** Developer tools, LLM orchestration patterns, full-stack with safety instincts
@@ -47,7 +47,7 @@
 
 ### 2.2 — OpenAI: Software Engineer, Applied Evals
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** ~$230,000–$385,000
 - **Framing:** Evaluation frameworks, agent harness design, validation infrastructure
@@ -60,7 +60,7 @@
 
 ### 2.3 — Together AI: Lead DX Engineer, Documentation
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** $160,000–$240,000 + equity
 - **Framing:** Documentation-first infrastructure, LLM API experience, founding role
@@ -73,7 +73,7 @@
 
 ### 2.3b — HuggingFace: Developer Advocate Engineer, Hub/Enterprise
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** $120,000–$160,000 (US)
 - **Framing:** Open-source conviction, documentation-first development, developer-first content
@@ -84,11 +84,11 @@
 - **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
 - **Fit score:** 8/10
-- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 335K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
+- **Notes:** Remote-first. "Deeply technical, not a marketing position." 30-40% of hires from community. HF values self-directed operators who "tell us where to go." 386K-word documentation corpus is the portfolio for this role. Cover letter addresses open-source motivation requirement.
 
 ### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** Not disclosed
 - **Framing:** Enterprise governance, multi-agent deliberation, evaluation infrastructure
@@ -101,7 +101,7 @@
 
 ### 2.3d — Runway: MTS, Research Tooling & Data Platform
 - **Track:** Job
-- **Status:** IN PROGRESS — Cover letter drafted
+- **Status:** READY — Metrics verified, checklist created (2026-02-16)
 - **Deadline:** Rolling
 - **Salary:** $240,000–$290,000
 - **Framing:** Artist-engineer identity, platform engineering with creative empathy, product across domains

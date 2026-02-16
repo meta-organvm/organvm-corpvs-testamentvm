@@ -12,7 +12,7 @@
 
 The most interesting creative work I've made came from imposing more constraints, not fewer. My eight-organ system enforces a strict no-back-edges rule: theory feeds art, art feeds commerce — never the reverse. That constraint should limit what's possible. Instead, it forces each organ to be genuinely self-sufficient, which produces work that's stranger and more honest than anything I made when everything could depend on everything else.
 
-The governance model — dependency validation, promotion state machines, automated audits — sounds like the opposite of creative freedom. But designing those rules is where the real creative decisions happen. Choosing *how work flows* between 81 repositories is as much an artistic act as any individual piece the system produces.
+The governance model — dependency validation, promotion state machines, automated audits — sounds like the opposite of creative freedom. But designing those rules is where the real creative decisions happen. Choosing *how work flows* between 97 repositories is as much an artistic act as any individual piece the system produces.
 
 I don't break the rule that creativity needs freedom. I break the rule that constraints aren't creative.
 
@@ -24,7 +24,7 @@ Build the system that reveals the system.
 
 For five years I worked across theory, generative art, commercial products, and community projects without seeing how they related. The relationships were there — code reused between projects, ideas flowing from research to art to products — but they were invisible. When I formalized those relationships into the eight-organ model with explicit dependency rules and a machine-readable registry, patterns I'd never noticed became obvious. Theory *was* feeding art feeding commerce, but only some of the time, and the failures were as revealing as the successes.
 
-Building in public (ORGAN-V) compounds this. Writing 335K words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
+Building in public (ORGAN-V) compounds this. Writing 386K words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
 
 The best way to gain perspective: make the invisible structure explicit, then be honest about what you see.
 
@@ -32,7 +32,7 @@ The best way to gain perspective: make the invisible structure explicit, then be
 
 ## Q3: "In 1-3 sentences, tell us about the project you are most proud of and why."
 
-I built an eight-organ system that coordinates 81 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~335K words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
+I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~386K words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
 
 ---
 
