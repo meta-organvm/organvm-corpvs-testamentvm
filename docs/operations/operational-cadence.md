@@ -3,7 +3,7 @@
 **Created:** 2026-02-16
 **Author:** @4444j99 (AI-conductor model: human directs, AI generates, human reviews)
 **Status:** ACTIVE — Living document, updated as cadence evolves
-**Companions:** [`minimum-viable-operations.md`](./minimum-viable-operations.md) (maintenance), [`key-workflows.md`](./key-workflows.md) (procedures)
+**Companions:** [`minimum-viable-operations.md`](./minimum-viable-operations.md) (maintenance), [`key-workflows.md`](./key-workflows.md) (procedures), [`there+back-again.md`](../strategy/there+back-again.md) (omega roadmap), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (work inventory)
 **Governs:** Daily/weekly/monthly creative work rhythm (not maintenance — see MVO for that)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -26,6 +26,8 @@ This is a **playbook, not a philosophy paper.** It has six parts:
 - **Appendix** — Quick reference card
 
 Parts I–III are **durable templates** — they survive beyond the first month and define steady-state rhythm. Part IV is **concrete NOW** — specific actions with URLs, commands, and deadlines that expire. Part V is **therapy** — the uncomfortable truths that prevent construction addiction from consuming the creative work the system was built to protect.
+
+> **Governance triangle:** This document is one of three that govern the post-construction era. The omega roadmap ([`there+back-again.md`](../strategy/there+back-again.md)) defines *where we're going* (17 criteria across 5 horizons). The sprint catalog ([`sprint-catalog.md`](../strategy/sprint-catalog.md)) inventories *everything we could work on* (60 work packages). This document defines *the daily and weekly rhythm* for pulling tasks from the catalog toward the criteria. See AP-1 for why the rhythm matters more than the inventory.
 
 ---
 

@@ -27,6 +27,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 - A reference for weekly planning sessions (operational cadence Part I, Friday retrospective)
 - Evidence that the system's scope is understood and bounded
 - A menu from which individual tasks are pulled into the weekly rhythm
+- One leg of a governance triangle: roadmap (destination) + cadence (rhythm) + catalog (menu)
 
 ### Conventions
 

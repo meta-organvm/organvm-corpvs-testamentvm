@@ -4,6 +4,7 @@
 **Author:** @4444j99 (AI-conductor model: human directs, AI generates, human reviews)
 **Status:** ACTIVE — Living document, updated as horizons advance
 **Supersedes:** `roadmap-there-and-back-again.md` (historical; covers Phase -1 through Launch + Gap-Fill)
+**Companions:** [`sprint-catalog.md`](./sprint-catalog.md) (exhaustive work inventory), [`operational-cadence.md`](../operations/operational-cadence.md) (daily/weekly rhythm)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
 ---
@@ -379,6 +380,18 @@ H5: ACHIEVE RECOGNITION
 The critical path runs: **H1 → H2 → H3/H4 → H5**. If H1 fails (the system doesn't actually work autonomously), everything downstream is compromised — applications make claims that can't be substantiated, products are built on unstable infrastructure, and community is invited into a system that can't support them. This is why H1 starts first and has the shortest timeline. It is the foundation.
 
 The most dangerous failure mode is not that a single horizon stalls — it is that the operator continues infrastructure sprints instead of advancing any horizon. The omega criteria exist to prevent exactly this: they define "what is enough" so that construction can end and occupation can begin. If you find yourself naming Sprint 17, stop and ask: am I building, or am I hiding in the building?
+
+### The Governance Triangle
+
+This roadmap is one of three documents that govern the post-construction era. Each answers a different question:
+
+| Document | Question | Type |
+|----------|----------|------|
+| **This document** (`there+back-again.md`) | *Where are we going?* | Destination — 5 horizons, 17 criteria |
+| [`operational-cadence.md`](../operations/operational-cadence.md) | *What do we do each day/week/month?* | Rhythm — weekly template, anti-patterns |
+| [`sprint-catalog.md`](./sprint-catalog.md) | *What could we work on?* | Menu — 60 work packages, effort estimates |
+
+The roadmap defines success criteria. The cadence defines the rhythm for pursuing them. The catalog inventories every addressable task without committing to any. Tasks are pulled from the catalog into the weekly cadence; the roadmap determines whether they matter.
 
 ---
 
