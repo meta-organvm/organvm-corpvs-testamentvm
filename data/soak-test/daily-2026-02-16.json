@@ -1,0 +1,25 @@
+{
+  "date": "2026-02-16",
+  "collected_at": "2026-02-16T10:58:53.030978+00:00",
+  "validation": {
+    "registry_pass": true,
+    "registry_issues": [],
+    "dependency_pass": true,
+    "dependency_violations": 0,
+    "stale_repos": []
+  },
+  "ci": {
+    "total_checked": 0,
+    "passing": 0,
+    "failing": 0,
+    "unknown": 0,
+    "failures": []
+  },
+  "engagement": {
+    "total_stars": 0,
+    "total_forks": 0,
+    "top_repos": {},
+    "dry_run": true
+  },
+  "dry_run": true
+}
