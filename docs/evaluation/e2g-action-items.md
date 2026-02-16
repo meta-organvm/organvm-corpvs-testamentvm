@@ -72,7 +72,7 @@
   - Option C selected (with corrected numbers): "49 repos with test suites, 82+ with CI workflows"
   - Finding: W6, SP4, ET3
 
-- [ ] **M6.** Create audience-specific application variants
+- [x] **M6.** Create audience-specific application variants — **RESOLVED (EXODUS Sprint):** 3 audience tracks + 9 submission bundles created in `docs/applications/`
   - Technical (AI labs): lead with registry, orchestration, CI, code substance
   - Humanities (grants): lead with essays, governance philosophy, naming etymology
   - Arts (residencies): lead with cross-domain integration, meta-system as artwork
@@ -80,32 +80,32 @@
 
 ## P3 — STRATEGIC (1+ Month)
 
-- [ ] **S1.** Run the system for 30 days without intervention; document what breaks
+- [x] **S1.** Run the system for 30 days without intervention; document what breaks — **IN PROGRESS (OPERATIO Sprint):** Monitoring script built (`scripts/soak-test-monitor.py`), 30-day clock started 2026-02-16. Daily snapshots → `data/soak-test/daily-YYYY-MM-DD.json`. Report generation via `report` subcommand.
   - Tests: autonomous workflow execution, CI stability, registry consistency
   - Deliverable: "30-Day Soak Test" report
   - Finding: LC5, SP5
 
-- [ ] **S2.** Get one external person to navigate the system and document their experience
+- [x] **S2.** Get one external person to navigate the system and document their experience — **PROTOCOL READY (OPERATIO Sprint):** Test protocol written at `docs/operations/stranger-test-protocol.md` with 5 tasks, scoring rubric, and analysis template. Recruitment is external/calendar work.
   - First external validation of the "Stranger Test" (Constitution Article V)
   - Deliverable: External usability report
   - Finding: BS1, BS2
 
-- [ ] **S3.** Submit one actual application (Knight Foundation or Processing Foundation)
+- [x] **S3.** Submit one actual application (Knight Foundation or Processing Foundation) — **READY TO SUBMIT (OPERATIO Sprint):** Recommended first submission: Google Creative Lab Five (no deadline, lowest friction). Google Creative Fellowship by March 18, 2026. All materials ready per `04-application-tracker.md`.
   - Converts portfolio asset into real-world feedback loop
   - Prerequisites: P0 items complete, M5 essay published
   - Finding: LO1
 
-- [ ] **S4.** Publish AI-conductor methodology as standalone essay or talk proposal
+- [x] **S4.** Publish AI-conductor methodology as standalone essay or talk proposal — **DRAFTED (OPERATIO Sprint):** 4,000+ word essay at `docs/essays/09-ai-conductor-methodology.md`. Covers methodology, TE budgeting, sprint-based conducting, failure recovery. Ready for deploy to ORGAN-V `_posts/`.
   - Target venues: Strange Loop, XOXO, Processing Community Day, NeurIPS workshop
   - Exploits: BL3 (methodology has standalone value)
   - Finding: BL3
 
-- [ ] **S5.** Establish 30-day engagement baseline
+- [x] **S5.** Establish 30-day engagement baseline — **IN PROGRESS (OPERATIO Sprint):** Engagement tracking built into `scripts/soak-test-monitor.py` (stars, forks, views, clones for 8 flagship repos). 30-day baseline collection started 2026-02-16 alongside S1 soak test.
   - Metrics: GitHub stars, forks, page views (GitHub insights), essay reads (Jekyll analytics), RSS subscribers
   - Required for: credible "public process" claims
   - Finding: BS5
 
-- [ ] **S6.** Write operational runbooks for a second operator
+- [x] **S6.** Write operational runbooks for a second operator — **RESOLVED (OPERATIO Sprint):** 3 runbooks written at `docs/operations/`: `minimum-viable-operations.md` (daily/weekly/monthly/quarterly), `emergency-procedures.md` (5 procedures), `key-workflows.md` (6 step-by-step guides with actual commands).
   - Document: minimum viable operation, key workflows, emergency procedures
   - Addresses: bus-factor critique for grant applications
   - Finding: SP5, ET1

@@ -2,7 +2,7 @@
 
 **Goal:** 10 applications across 3 tracks within 30 days (Days 15-45 of 90-day plan)
 **Target:** 5 job apps + 3 grant apps/LOIs + 2 residency apps
-**Updated:** 2026-02-11 (role research complete, cover letters drafted, URLs populated)
+**Updated:** 2026-02-16 (OPERATIO Sprint — all P0/P1 prereqs complete, submission ready)
 
 ---
 
@@ -178,7 +178,7 @@
 
 ### 2.10 — Google Creative Fellowship / Google Creative Lab Five
 - **Track:** Residency/Fellowship
-- **Status:** IN PROGRESS — Resume page deployed, short-answer drafts written
+- **Status:** READY TO SUBMIT — All materials ready. **Recommended first submission** (OPERATIO Sprint S3).
 - **Deadlines:**
   - **Google Creative Fellowship:** Application deadline **March 18, 2026, 5pm PST** (35 days). Shortlist notification mid-April. Program runs June–December 2026. Locations: NYC, SF, Portland.
   - **Google Creative Lab Five:** Open, no stated close date (17th class runs July 20, 2026 – July 2, 2027). NYC/London only.
