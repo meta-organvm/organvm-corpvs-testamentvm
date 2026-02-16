@@ -21,7 +21,7 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 - 97 repository READMEs, each written for grant reviewers and hiring managers
 - A cross-document dependency map and reading order so newcomers never feel lost
 - An annotated manifest with per-file descriptions of the entire corpus
-- 29 published essays explaining architectural decisions to non-technical audiences
+- 33 published essays explaining architectural decisions to non-technical audiences
 - organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product
 
 This is the kind of content your role creates: docs, blog posts, tutorials, demos with code repos. I've done all of it at once.

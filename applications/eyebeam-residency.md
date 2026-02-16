@@ -72,6 +72,6 @@ Essays, case studies, methodology documentation, RSS feed, newsletter integratio
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 29 published essays documenting the build process
+- 33 published essays documenting the build process
 
 ---

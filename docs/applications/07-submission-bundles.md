@@ -93,7 +93,7 @@ The eight-organ system is simultaneously: (a) working infrastructure that produc
 
 ### Project Description
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~386K+ words of public documentation including 29 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~386K+ words of public documentation including 33 published essays.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -192,7 +192,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 
 **What I'd Bring**
 
-*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 29 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
+*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 33 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
 *LLM and AI application experience.* agentic-titan is a multi-agent orchestration framework with 1,095 tests. recursive-engine implements a symbolic operating system with a custom DSL, 21 organ handlers, and 1,254 tests. metasystem-master coordinates these subsystems at the meta-level — the kind of architecture documentation that teaches by showing how pieces compose. I understand LLM APIs — tool-use, chaining, structured outputs, function calling — because I've built production systems that depend on them.
 
@@ -272,7 +272,7 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 
 **What I'd Bring**
 
-*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 29 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product.
+*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 33 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product.
 
 *Developer-first instinct.* my-knowledge-base is a knowledge management system designed around how developers actually retrieve information. metasystem-master coordinates subsystems at the meta-level, and its documentation teaches by showing how pieces compose rather than listing features.
 

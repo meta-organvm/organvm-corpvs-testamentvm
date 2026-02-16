@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-16T19:11:03.267800+00:00",
+  "generated": "2026-02-16T20:38:03.290525+00:00",
   "computed": {
     "total_repos": 97,
     "active_repos": 90,
@@ -47,8 +47,8 @@
       "ACTIVE": 90,
       "ARCHIVED": 7
     },
-    "published_essays": 29,
-    "sprints_completed": 21,
+    "published_essays": 33,
+    "sprints_completed": 23,
     "sprint_names": [
       "01-ignition",
       "02-propulsion",
@@ -69,6 +69,8 @@
       "19-concordia",
       "20-tripartitum",
       "21-submissio",
+      "22-metricum",
+      "23-publicatio",
       "gap-fill",
       "platinum"
     ]

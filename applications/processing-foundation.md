@@ -72,6 +72,6 @@ RE:GE — A symbolic operating system for myth, identity, ritual, and recursive 
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 29 published essays documenting the build process
+- 33 published essays documenting the build process
 
 ---

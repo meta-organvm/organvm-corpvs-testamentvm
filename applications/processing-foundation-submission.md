@@ -38,7 +38,7 @@ The Processing Foundation supports projects that expand access to creative codin
 | Repos with test directories | 56 |
 | Total code files | 3,586 |
 | Total test files | 736 |
-| Published essays | 29 |
+| Published essays | 33 |
 | GitHub organizations | 8 |
 | Dependency relationships | 31 (zero circular) |
 | CI workflows | 76 |
@@ -74,7 +74,7 @@ RE:GE — A symbolic operating system for myth, identity, ritual, and recursive 
 - System metrics snapshot: `system-metrics.json` (machine-readable dashboard)
 - Full code substance audit: `code-substance-report.json` (per-repo breakdown)
 - Dependency graph visualization: see portfolio site
-- 29 published essays documenting the build process
+- 33 published essays documenting the build process
 - AI-conductor methodology essay: "How This Was Built" (honest accounting of AI role)
 
 ## Fellowship Proposal

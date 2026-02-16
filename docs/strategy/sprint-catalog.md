@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (Gap-Fill through Operatio), starting at 17. Sprints 17–20 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (Gap-Fill through Operatio), starting at 17. Sprints 17–23 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
   - **H1** — Prove It Works (Days 1–30)
@@ -51,8 +51,8 @@ This catalog was generated against the following state. Numbers will drift; the 
 |--------|-------|
 | Registry entries | 97 (90 ACTIVE, 7 ARCHIVED) |
 | Repos not cloned locally | 0 (all 97 cloned; SYNCHRONIUM Sprint 18) |
-| Deployed essays | 29 on remote |
-| Undeployed essay drafts | 2–4 in `docs/essays/` |
+| Deployed essays | 33 on remote (updated Sprint 23: PUBLICATIO) |
+| Undeployed essay drafts | 0 ready to deploy (5 already-deployed drafts remain in `docs/essays/` as source copies) |
 | ORGAN-III pre-launch | 15 repos with `revenue_status: pre-launch` |
 | ORGAN-II zero-code repos | 10 repos with 0 code files |
 | ORGAN-VI zero-code repos | 3/3 local repos have 0 code |

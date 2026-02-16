@@ -4,7 +4,7 @@ date: 2026-02-11
 author: 4444j99
 category: governance-practice
 organ: ORGAN-IV
-status: draft
+status: deployed
 excerpt: >
   What actually happens when you run formal promotions and archives
   through a governance state machine — the friction, the surprises,

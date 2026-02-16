@@ -128,4 +128,4 @@ Q: "How do you test at scale?"
 A: 77+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
 
 Q: "How do you communicate technical decisions?"
-A: ~386K+ words of documentation. 29 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.
+A: ~386K+ words of documentation. 33 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.
