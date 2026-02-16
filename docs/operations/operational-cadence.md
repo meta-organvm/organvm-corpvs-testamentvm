@@ -374,7 +374,7 @@ The AI-conductor essay is now published (from Day 1). Distribute it.
 **Mastodon thread (3-5 posts):**
 - Post 1: Hook — what the AI-conductor model is and why it matters
 - Post 2: The key insight — human directs, AI generates volume, human reviews
-- Post 3: Evidence — 386K words in 7 days across 97 repositories
+- Post 3: Evidence — ~386K+ words in 7 days across 97 repositories
 - Post 4: The honest part — what AI-conductor can't do (community, revenue, validation)
 - Post 5: Link to the full essay on public-process
 
@@ -575,7 +575,7 @@ The registry should only be updated when empirical state changes — a repo is p
 
 ### AP-3: Don't Write More Documentation About Writing Documentation
 
-This corpus has ~386K words. It has a CLAUDE.md, a constitution, an annotated manifest, governance rules, an implementation package, a public process map, an orchestration system spec, a repository standards doc, an SDD methodology, 5 planning documents, and this operational cadence document. If you find yourself creating a new document to describe how existing documents relate to each other, the documentation has reached self-referential saturation.
+This corpus has ~386K+ words. It has a CLAUDE.md, a constitution, an annotated manifest, governance rules, an implementation package, a public process map, an orchestration system spec, a repository standards doc, an SDD methodology, 5 planning documents, and this operational cadence document. If you find yourself creating a new document to describe how existing documents relate to each other, the documentation has reached self-referential saturation.
 
 **Test:** "Is this document for an external audience, or am I explaining the system to myself?" If the latter, you don't need a document — you need to go do the thing.
 

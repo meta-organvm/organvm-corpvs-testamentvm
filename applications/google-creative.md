@@ -9,17 +9,17 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 97 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates 97 repositories across 8 GitHub organizations with 31 registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
 
 This application highlights the system's relevance to Google Creative Fellowship through:
 
-- Artist-engineer hybrid practice spanning generative art, real-time performance, and educational games
-- Bridging creative systems (ORGAN-II) with commercial products (ORGAN-III) through shared infrastructure
-- AI-augmented creative workflow with documented methodology
+- Artist-engineer hybrid practice
+- Generative systems with commercial viability
+- AI-augmented creative workflow
 
 ## Why Google Creative Fellowship
 
-Google Creative Lab values practitioners who work fluidly between art and engineering. ORGANVM embodies this hybrid practice: ORGAN-II houses a real-time performance engine (Omni-Dromenon) with audio synthesis, generative music, and choreographic notation systems, while ORGAN-III builds commercial products (educational RPG, coaching platform, real estate tools) on the same infrastructure. The bridge between these organs — where generative art techniques become product features and commercial constraints sharpen artistic tools — is the core creative thesis. The AI-conductor methodology itself is a contribution to creative technology practice, demonstrating how a single operator can build and coordinate systems at institutional scale.
+Artist-engineer hybrid + ORGAN-II/III bridge. The eight-organ architecture demonstrates that creative infrastructure — the protocols, governance structures, and coordination systems underlying artistic production — is itself a form of creative practice. Artists like Julian Oliver, Nicky Case, and Hundred Rabbits treat protocols and governance as primary artistic output. ORGANVM extends this tradition to institutional scale.
 
 ## Portfolio URL
 
@@ -33,7 +33,7 @@ https://4444j99.github.io/portfolio/
 
 Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance system consolidating 12 repos: core-engine, performance-sdk, client-sdk, audio-synthesis-bridge, orchestrate CLI, 4 examples, extensive docs.
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-II expression; canonical monorepo, performance system architecture
 - **CI**: ci-mixed.yml
@@ -42,7 +42,7 @@ Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance 
 
 Gamified coaching system with progress tracking
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Revenue proof point
 - **CI**: ci-typescript.yml
@@ -51,7 +51,7 @@ Gamified coaching system with progress tracking
 
 Generative music example
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: HIGH - Concrete instantiation of theory
 - **CI**: ci-typescript.yml
@@ -60,7 +60,7 @@ Generative music example
 
 Educational RPG system for classroom engagement
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Revenue proof point
 - **CI**: ci-typescript.yml

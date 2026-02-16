@@ -8,12 +8,12 @@
 | Active status | 90 |
 | Archived | 7 |
 | Organs operational | 8/8 |
-| CI/CD workflows | 82+ |
-| Dependency edges | 33 |
+| CI/CD workflows | 77+ |
+| Dependency edges | 31 |
 | Back-edge violations | 0 |
 | Published essays | 29 |
-| Total documentation | ~386,000+ words |
-| Sprints completed | 19 |
+| Total documentation | ~386,000+ |
+| Sprints completed | 21 |
 
 ### Per-Organ Distribution
 

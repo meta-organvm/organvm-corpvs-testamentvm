@@ -15,7 +15,7 @@ Grant reviewers evaluate:
 2. **Long-term sustainability** — Will this outlast the grant period? (Automated governance = yes)
 3. **Community contribution** — Does this benefit others? (Public documentation + ORGAN-VI = yes)
 4. **Innovation** — Is this genuinely new? (Governance-as-artistic-medium = yes)
-5. **Demonstrated track record** — Have you shipped before? (386K words deployed, 70+ CI/CD = yes)
+5. **Demonstrated track record** — Have you shipped before? (~386K+ words deployed, 70+ CI/CD = yes)
 
 ---
 
@@ -85,7 +85,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~386,000 words of public documentation. All eight organs are currently operational.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~386,000+ words of public documentation. All eight organs are currently operational.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -98,7 +98,7 @@ Grant reviewers evaluate:
 > - 70+ CI/CD pipelines, 5 governance workflows, automated monthly audits
 > - 29 published essays (~84K words)
 > - Flagship projects with >1,000 tests each
-> - Complete documentation at portfolio quality (~386K words)
+> - Complete documentation at portfolio quality (~386K+ words)
 >
 > **Budget:** [AMOUNT]
 > **Timeline:** [DURATION]

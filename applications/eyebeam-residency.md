@@ -9,17 +9,17 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 97 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates 97 repositories across 8 GitHub organizations with 31 registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
 
 This application highlights the system's relevance to Eyebeam Residency through:
 
-- Equitable creative infrastructure designed for community participation
-- Governance model with transparent promotion criteria and public decision records
-- Technology as institutional practice — the system is both the artwork and the institution
+- Equitable creative infrastructure
+- Community governance model
+- Technology as institutional practice
 
 ## Why Eyebeam Residency
 
-Eyebeam's mission centers on artists who use technology to challenge power structures and create equitable systems. ORGANVM is an experiment in building creative infrastructure that is transparent by default — every governance decision is documented, every promotion criterion is public, and the entire build process is narrated through 28+ essays. The community organ (ORGAN-VI) provides salon infrastructure and reading group coordination, while the public process organ (ORGAN-V) ensures that the system's evolution is legible to outsiders. A residency at Eyebeam would focus on opening this infrastructure to external participants — testing whether a system designed by one operator can become genuinely communal.
+Equitable systems + community infrastructure. The eight-organ architecture demonstrates that creative infrastructure — the protocols, governance structures, and coordination systems underlying artistic production — is itself a form of creative practice. Artists like Julian Oliver, Nicky Case, and Hundred Rabbits treat protocols and governance as primary artistic output. ORGANVM extends this tradition to institutional scale.
 
 ## Portfolio URL
 
@@ -33,7 +33,7 @@ https://4444j99.github.io/portfolio/
 
 Archive infrastructure for intellectual salons: transcription pipeline, topic taxonomy, and session metadata aligned with the eight-organ model
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: HIGH - Community participation and facilitation
 - **CI**: ci-python.yml
@@ -42,7 +42,7 @@ Archive infrastructure for intellectual salons: transcription pipeline, topic ta
 
 Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scripts. The central nervous system of the eight-organ system.
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Core system documentation for all funding applications
 - **CI**: ci-python.yml
@@ -51,7 +51,7 @@ Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scr
 
 Multi-organ governance rules and promotion criteria
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: CRITICAL - Orchestration foundation
 - **CI**: ci-python.yml
@@ -60,7 +60,7 @@ Multi-organ governance rules and promotion criteria
 
 Essays, case studies, methodology documentation, RSS feed, newsletter integration
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Primary narrative layer describing all 8 organs + meta-system
 - **CI**: ci-minimal.yml
@@ -72,6 +72,6 @@ Essays, case studies, methodology documentation, RSS feed, newsletter integratio
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 28 published essays documenting the build process
+- 29 published essays documenting the build process
 
 ---

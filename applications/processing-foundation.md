@@ -9,17 +9,17 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 97 repositories across 8 GitHub organizations with 33 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates 97 repositories across 8 GitHub organizations with 31 registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
 
 This application highlights the system's relevance to Processing Foundation Fellowship through:
 
-- Generative art and music systems built on recursive symbolic engines
-- Open-source creative tools with documented architecture and test coverage
-- A replicable methodology for solo artists building systems at institutional scale
+- Generative art and music systems
+- Open-source creative tools
+- Artist-engineer methodology
 
 ## Why Processing Foundation Fellowship
 
-The Processing Foundation supports projects that expand access to creative coding and contribute reusable infrastructure to the community. ORGANVM's generative systems — a real-time performance engine with audio synthesis bridges, a generative music framework, and a recursive symbolic operating system with 1,254 tests — are built to be legible and extensible. The public essay corpus (28+ essays) documents not just what was built but how and why, making the methodology itself a teaching resource. A fellowship would focus on extracting the most reusable components (the generative music framework, the recursive engine's symbolic DSL) into standalone Processing-compatible libraries with tutorials.
+Infrastructure contribution + generative systems. The eight-organ architecture demonstrates that creative infrastructure — the protocols, governance structures, and coordination systems underlying artistic production — is itself a form of creative practice. Artists like Julian Oliver, Nicky Case, and Hundred Rabbits treat protocols and governance as primary artistic output. ORGANVM extends this tradition to institutional scale.
 
 ## Portfolio URL
 
@@ -33,7 +33,7 @@ https://4444j99.github.io/portfolio/
 
 Generative music example
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: standard
 - **Portfolio relevance**: HIGH - Concrete instantiation of theory
 - **CI**: ci-typescript.yml
@@ -42,7 +42,7 @@ Generative music example
 
 Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance system consolidating 12 repos: core-engine, performance-sdk, client-sdk, audio-synthesis-bridge, orchestrate CLI, 4 examples, extensive docs.
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-II expression; canonical monorepo, performance system architecture
 - **CI**: ci-mixed.yml
@@ -51,7 +51,7 @@ Omni-Dromenon Engine — canonical monorepo for ORGAN-II. Real-time performance 
 
 RE:GE — A symbolic operating system for myth, identity, ritual, and recursive systems. 21 organ handlers, ritual syntax DSL, workflow orchestration, external bridges (Obsidian/Git/Max-MSP).
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-I expression; 1,254 tests, 85% coverage, pure Python
 - **CI**: ci-python.yml
@@ -72,6 +72,6 @@ RE:GE — A symbolic operating system for myth, identity, ritual, and recursive 
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 28 published essays documenting the build process
+- 29 published essays documenting the build process
 
 ---

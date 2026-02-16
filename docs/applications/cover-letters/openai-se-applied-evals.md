@@ -25,7 +25,7 @@ These aren't toy scripts. They enforce quality at a scale where eyeballing it do
 
 **Agent harness design.** agentic-titan is a multi-agent orchestration framework with 1,095 tests across 18 development phases. The test framework itself IS an agent harness — it evaluates agent coordination, message passing, fault tolerance, and graceful degradation. a-i-council--coliseum takes this further: multi-agent deliberation where AI agents debate positions and synthesize conclusions — evaluating the quality of that synthesis requires exactly the kind of multi-turn eval infrastructure this role builds.
 
-**Production systems end-to-end.** I shipped the eight-organ system from architecture through deployment: 70+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle — from prototyping with real workflows to building reliable pipelines and integrating signals.
+**Production systems end-to-end.** I shipped the eight-organ system from architecture through deployment: 77+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle — from prototyping with real workflows to building reliable pipelines and integrating signals.
 
 **Feedback loops that strengthen systems.** The system uses a tiered documentation approach (Bronze/Silver/Gold) where validation results feed directly into the next sprint. Regression monitoring, golden datasets (the registry-v2.json as source of truth), and drift detection (monthly audits comparing current state to expected state) — these are eval patterns applied to infrastructure.
 
@@ -34,7 +34,7 @@ These aren't toy scripts. They enforce quality at a scale where eyeballing it do
 - **agentic-titan:** 1,095 tests, 18 phases, agent evaluation harness (organvm-iv-taxis/agentic-titan)
 - **recursive-engine:** 1,254 tests, 85% coverage (organvm-i-theoria/recursive-engine--generative-entity)
 - **a-i-council--coliseum:** Multi-agent deliberation requiring synthesis evaluation (organvm-ii-poiesis/a-i-council--coliseum)
-- **organvm-corpvs-testamentvm:** Validation infrastructure for 81-repo system (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** Validation infrastructure for 97-repo system (meta-organvm/organvm-corpvs-testamentvm)
 - **Portfolio:** https://4444j99.github.io/portfolio/
 
 I don't just build AI agents; I build the evaluation infrastructure that makes them reliable.

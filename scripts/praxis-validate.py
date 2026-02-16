@@ -242,23 +242,27 @@ def check_dashboard():
     with open(METRICS_FILE) as f:
         metrics = json.load(f)
 
-    has_registry = "registry" in metrics
-    has_essays = "essays" in metrics
-    has_sprints = "sprint_history" in metrics
-    has_targets = "praxis_targets" in metrics
+    # Support both old schema (registry/essays/sprint_history/praxis_targets)
+    # and new METRICUM schema (computed/manual with schema_version)
+    if metrics.get("schema_version") == "1.0":
+        # New schema: check computed section has required keys
+        computed = metrics.get("computed", {})
+        required = ["total_repos", "active_repos", "published_essays", "sprints_completed"]
+        present = sum(1 for k in required if k in computed)
+        has_manual = "manual" in metrics
 
-    sections = sum([has_registry, has_essays, has_sprints, has_targets])
-
-    # Check for stale data
-    project_status = metrics.get("system", {}).get("project_status", "")
-    is_stale = "VERITAS" not in project_status and "PRAXIS" not in project_status and "CONVERGENCE" in project_status
-
-    if is_stale:
-        print(f"  Dashboard: {sections}/4 sections — STALE (still references CONVERGENCE)")
-        return False
-
-    print(f"  Dashboard: {sections}/4 sections present")
-    return sections == 4
+        print(f"  Dashboard: schema v1.0, {present}/{len(required)} computed keys, "
+              f"manual={'yes' if has_manual else 'no'}")
+        return present == len(required) and has_manual
+    else:
+        # Legacy schema
+        has_registry = "registry" in metrics
+        has_essays = "essays" in metrics
+        has_sprints = "sprint_history" in metrics
+        has_targets = "praxis_targets" in metrics
+        sections = sum([has_registry, has_essays, has_sprints, has_targets])
+        print(f"  Dashboard: legacy schema, {sections}/4 sections present")
+        return sections == 4
 
 
 def check_revenue():

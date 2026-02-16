@@ -4,7 +4,7 @@
 
 Essays, case studies, methodology documentation, RSS feed, newsletter integration
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Primary narrative layer describing all 8 organs + meta-system
 - **CI**: ci-minimal.yml
@@ -13,16 +13,16 @@ Essays, case studies, methodology documentation, RSS feed, newsletter integratio
 
 Central orchestration hub: registry, governance rules, 5 workflows, 3 Python scripts. The central nervous system of the eight-organ system.
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Core system documentation for all funding applications
 - **CI**: ci-python.yml
 
 ## [organvm-corpvs-testamentvm](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
 
-The authoritative planning and governance corpus for the eight-organ creative-institutional system. 97 repos, ~386K words, 8 organizations, 29 essays.
+The authoritative planning and governance corpus for the eight-organ creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution
 - **CI**: ci-python.yml
@@ -31,7 +31,7 @@ The authoritative planning and governance corpus for the eight-organ creative-in
 
 RE:GE — A symbolic operating system for myth, identity, ritual, and recursive systems. 21 organ handlers, ritual syntax DSL, workflow orchestration, external bridges (Obsidian/Git/Max-MSP).
 
-- **Status**: Active
+- **Status**: ACTIVE
 - **Tier**: flagship
 - **Portfolio relevance**: CRITICAL - Definitive ORGAN-I expression; 1,254 tests, 85% coverage, pure Python
 - **CI**: ci-python.yml

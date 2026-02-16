@@ -57,13 +57,13 @@ Build the system that reveals the system.
 
 For five years I worked across theory, generative art, commercial products, and community projects without seeing how they related. The relationships were there — code reused between projects, ideas flowing from research to art to products — but they were invisible. When I formalized those relationships into the eight-organ model with explicit dependency rules and a machine-readable registry, patterns I'd never noticed became obvious. Theory *was* feeding art feeding commerce, but only some of the time, and the failures were as revealing as the successes.
 
-Building in public (ORGAN-V) compounds this. Writing 386K words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
+Building in public (ORGAN-V) compounds this. Writing ~386K+ words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
 
 The best way to gain perspective: make the invisible structure explicit, then be honest about what you see.
 
 ### Q3: "In 1-3 sentences, tell us about the project you are most proud of and why."
 
-I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~386K words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
+I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~386K+ words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -93,7 +93,7 @@ The eight-organ system is simultaneously: (a) working infrastructure that produc
 
 ### Project Description
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 70+ CI/CD pipelines, and ~386K words of public documentation including 29 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~386K+ words of public documentation including 29 published essays.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -126,7 +126,7 @@ That's the same discipline Anthropic brings to AI safety: constraints that scale
 
 *Deployment patterns I've already codified.* Your FDE team identifies repeatable deployment patterns and feeds them back to Product and Engineering. I've done this systematically: governance-rules.json encodes rules the system enforces automatically; orchestration-system-v2.md documents the rationale behind every architectural decision; 5 GitHub Actions workflows automate health checks, dependency validation, and promotion across the entire system. These are the kind of artifacts — MCP servers, sub-agents, agent skills — your job description calls for.
 
-*Communication capacity for enterprise environments.* The system includes 386,000 words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
+*Communication capacity for enterprise environments.* The system includes 386,000+ words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
 
 *Autonomy under ambiguity.* The eight-organ system didn't start with a spec — it started with a question about how to organize 97 repositories into a coherent creative-institutional system. I defined the architecture, built the tooling, documented the decisions, and shipped it. That's the FDE operating model.
 
@@ -184,7 +184,7 @@ The eight-organ system exists because I believe autonomous creative systems need
 
 ### Cover Letter
 
-I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 386,000 words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
+I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 386,000+ words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
 
 **Why Together AI**
 
@@ -234,11 +234,11 @@ That's eval infrastructure. I want to build it for the systems that matter most.
 
 **What I'd Bring**
 
-*Evaluation frameworks, battle-tested.* I built a multi-layered validation system: organ-audit.py (monthly health monitoring across all 97 repos), platinum-validation.py (full system sweep verifying every repo against 1,267 audited links and 33 dependency edges), validate-dependencies workflow (blocks merges that would violate constitutional constraints). These aren't toy scripts. They enforce quality at a scale where eyeballing it doesn't work.
+*Evaluation frameworks, battle-tested.* I built a multi-layered validation system: organ-audit.py (monthly health monitoring across all 97 repos), platinum-validation.py (full system sweep verifying every repo against 1,267 audited links and 31 dependency edges), validate-dependencies workflow (blocks merges that would violate constitutional constraints). These aren't toy scripts. They enforce quality at a scale where eyeballing it doesn't work.
 
 *Agent harness design.* agentic-titan is a multi-agent orchestration framework with 1,095 tests across 18 development phases. The test framework itself IS an agent harness. a-i-council--coliseum takes this further: multi-agent deliberation where AI agents debate positions and synthesize conclusions — evaluating the quality of that synthesis requires exactly the kind of multi-turn eval infrastructure this role builds.
 
-*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 70+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
+*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 77+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
 
 *Feedback loops that strengthen systems.* The system uses a tiered documentation approach (Bronze/Silver/Gold) where validation results feed directly into the next sprint. Regression monitoring, golden datasets, and drift detection — these are eval patterns applied to infrastructure.
 
@@ -262,7 +262,7 @@ I don't just build AI agents; I build the evaluation infrastructure that makes t
 
 ### Cover Letter
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 386,000 words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 386,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
 
 **Why Hugging Face**
 
@@ -272,7 +272,7 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 
 **What I'd Bring**
 
-*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 29 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — 386K words of structured technical writing that IS the product.
+*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 29 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product.
 
 *Developer-first instinct.* my-knowledge-base is a knowledge management system designed around how developers actually retrieve information. metasystem-master coordinates subsystems at the meta-level, and its documentation teaches by showing how pieces compose rather than listing features.
 
@@ -319,7 +319,7 @@ Cohere is building the enterprise layer for agentic AI. Enterprise means governa
 
 *Evaluation infrastructure as a first-class concern.* organ-audit.py, platinum-validation.py, and 5 GitHub Actions workflows enforce governance continuously.
 
-*Documentation that scales enterprise adoption.* 386,000 words of portfolio-quality documentation.
+*Documentation that scales enterprise adoption.* 386,000+ words of portfolio-quality documentation.
 
 I build agentic systems that are governed, tested, and documented — because that's what enterprise deployment requires.
 

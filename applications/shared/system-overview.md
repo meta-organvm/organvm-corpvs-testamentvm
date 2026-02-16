@@ -7,11 +7,11 @@ ORGANVM is an eight-organ creative-institutional system coordinating 97 reposito
 ## Key Metrics
 
 - **97 repositories** across 8 organizations
-- **90 actively maintained repos** (100% of non-archived)
+- **90 ACTIVE repos** (100% of non-archived)
 - **29 published essays** (~111,000 words) documenting the build process
-- **33 registry dependency edges** (28 active graph) with zero back-edge violations
-- **82+ CI/CD workflows** with automated validation
-- **19 sprints completed** from initial architecture to operational readiness
+- **31 registry dependency edges** with zero back-edge violations
+- **77+ CI/CD workflows** with automated validation
+- **21 sprints completed** from initial architecture to operational readiness
 
 ## Methodology
 

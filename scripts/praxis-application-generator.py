@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """PRAXIS Sprint Phase D: Application material generator.
 
-Generates customized application materials from registry data, essay corpus,
+Generates customized application materials from registry data, system metrics,
 and strategy documents for grants, residencies, fellowships, and jobs.
+
+Reads system-metrics.json for all numeric values instead of hardcoding them.
+Run calculate-metrics.py first to ensure metrics are current.
 
 Outputs:
   - applications/knight-foundation.md
@@ -20,11 +23,37 @@ Usage:
 
 import argparse
 import json
-import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-REGISTRY_PATH = Path(__file__).parent.parent / "registry-v2.json"
+ROOT = Path(__file__).resolve().parent.parent
+REGISTRY_PATH = ROOT / "registry-v2.json"
+METRICS_PATH = ROOT / "system-metrics.json"
+
+
+def load_registry():
+    with open(REGISTRY_PATH) as f:
+        return json.load(f)
+
+
+def load_system_metrics():
+    """Load system-metrics.json. Exits if missing or wrong schema."""
+    if not METRICS_PATH.exists():
+        print(f"ERROR: {METRICS_PATH} not found. Run calculate-metrics.py first.",
+              file=sys.stderr)
+        sys.exit(1)
+
+    with open(METRICS_PATH) as f:
+        metrics = json.load(f)
+
+    if "computed" not in metrics:
+        print(f"ERROR: {METRICS_PATH} missing 'computed' section. Run calculate-metrics.py.",
+              file=sys.stderr)
+        sys.exit(1)
+
+    return metrics
+
 
 APPLICATION_TARGETS = [
     {
@@ -110,9 +139,10 @@ APPLICATION_TARGETS = [
         "framing": "Production-grade multi-agent orchestration",
         "lead_organs": ["ORGAN-IV", "ORGAN-I", "META"],
         "lead_material": "Orchestration design + registry walkthrough",
-        "emphasis": [
+        # emphasis uses metrics — built dynamically in generate_application
+        "emphasis_template": [
             "Multi-agent system architecture",
-            "Production orchestration at scale (82 repos, 33 registry dependencies)",
+            "Production orchestration at scale ({active_repos} repos, {dependency_edges} registry dependencies)",
             "AI-conductor workflow methodology",
             "Dependency graph management and validation",
         ],
@@ -127,11 +157,6 @@ APPLICATION_TARGETS = [
 ]
 
 
-def load_registry():
-    with open(REGISTRY_PATH) as f:
-        return json.load(f)
-
-
 def get_repo_info(registry, org_repo):
     """Look up a repo from org/name string."""
     org, name = org_repo.split("/", 1)
@@ -142,29 +167,30 @@ def get_repo_info(registry, org_repo):
     return None
 
 
-def generate_system_overview(registry):
+def generate_system_overview(registry, metrics):
     """Generate shared system overview used in all applications."""
-    summary = registry.get("summary", {})
+    c = metrics["computed"]
+    m = metrics["manual"]
     meta_note = registry.get("meta_system_portfolio_note", {})
 
     return f"""# ORGANVM — System Overview
 
 ## What It Is
 
-ORGANVM is an eight-organ creative-institutional system coordinating {summary.get('total_repos', 89)} repositories across 8 GitHub organizations. Each organ governs a domain — from epistemological theory (ORGAN-I) through generative art (ORGAN-II), commercial products (ORGAN-III), orchestration governance (ORGAN-IV), public documentation (ORGAN-V), community infrastructure (ORGAN-VI), marketing distribution (ORGAN-VII), to meta-system governance (META).
+ORGANVM is an eight-organ creative-institutional system coordinating {c['total_repos']} repositories across 8 GitHub organizations. Each organ governs a domain — from epistemological theory (ORGAN-I) through generative art (ORGAN-II), commercial products (ORGAN-III), orchestration governance (ORGAN-IV), public documentation (ORGAN-V), community infrastructure (ORGAN-VI), marketing distribution (ORGAN-VII), to meta-system governance (META).
 
 ## Key Metrics
 
-- **{summary.get('total_repos', 89)} repositories** across 8 organizations
-- **82 production-grade repos** (100% of non-archived)
-- **28 published essays** (~111,000 words) documenting the build process
-- **33 registry dependency edges** (28 active graph) with zero back-edge violations
-- **82+ CI/CD workflows** with automated validation
-- **10 sprints completed** from initial architecture to external launch
+- **{c['total_repos']} repositories** across 8 organizations
+- **{c['active_repos']} ACTIVE repos** (100% of non-archived)
+- **{c['published_essays']} published essays** (~111,000 words) documenting the build process
+- **{c['dependency_edges']} registry dependency edges** with zero back-edge violations
+- **{c['ci_workflows']}+ CI/CD workflows** with automated validation
+- **{c['sprints_completed']} sprints completed** from initial architecture to operational readiness
 
 ## Methodology
 
-The system operates on an **AI-conductor model**: AI generates volume, human directs architecture and reviews output. This methodology enabled a single operator to build, document, and validate 89 repositories in under a week — demonstrating production-grade systems thinking at scale.
+The system operates on an **AI-conductor model**: AI generates volume, human directs architecture and reviews output. This methodology enabled a single operator to build, document, and validate {c['total_repos']} repositories in under a week — demonstrating production-grade systems thinking at scale.
 
 ## Strategic Context
 
@@ -180,41 +206,34 @@ The system operates on an **AI-conductor model**: AI generates volume, human dir
 """
 
 
-def generate_metrics_snapshot(registry):
-    """Generate shared metrics snapshot."""
-    all_repos = []
-    organ_counts = {}
-    for organ_key, organ_data in registry["organs"].items():
-        repos = organ_data.get("repositories", [])
-        all_repos.extend(repos)
-        organ_counts[organ_key] = len(repos)
-
-    ci_count = sum(1 for r in all_repos if r.get("ci_workflow"))
-    dep_count = sum(len(r.get("dependencies", [])) for r in all_repos)
+def generate_metrics_snapshot(metrics):
+    """Generate shared metrics snapshot from system-metrics.json."""
+    c = metrics["computed"]
+    m = metrics["manual"]
 
     lines = [
         "# System Metrics Snapshot",
-        f"",
+        "",
         f"*Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d')}*",
-        f"",
-        f"| Metric | Value |",
-        f"|--------|-------|",
-        f"| Total repositories | {len(all_repos)} |",
-        f"| Production status | 82 |",
-        f"| Archived | 7 |",
-        f"| Organs operational | 8/8 |",
-        f"| CI/CD workflows | {ci_count} |",
-        f"| Dependency edges | {dep_count} |",
-        f"| Back-edge violations | 0 |",
-        f"| Published essays | 28 |",
-        f"| Total documentation | ~386,000+ words |",
-        f"| Sprints completed | 10 |",
-        f"",
-        f"### Per-Organ Distribution",
-        f"",
+        "",
+        "| Metric | Value |",
+        "|--------|-------|",
+        f"| Total repositories | {c['total_repos']} |",
+        f"| Active status | {c['active_repos']} |",
+        f"| Archived | {c['archived_repos']} |",
+        f"| Organs operational | {c['operational_organs']}/{c['total_organs']} |",
+        f"| CI/CD workflows | {c['ci_workflows']}+ |",
+        f"| Dependency edges | {c['dependency_edges']} |",
+        "| Back-edge violations | 0 |",
+        f"| Published essays | {c['published_essays']} |",
+        f"| Total documentation | {m.get('total_words', '~386,000+')} |",
+        f"| Sprints completed | {c['sprints_completed']} |",
+        "",
+        "### Per-Organ Distribution",
+        "",
     ]
-    for organ_key, count in organ_counts.items():
-        lines.append(f"- **{organ_key}**: {count} repos")
+    for organ_key, organ_info in c.get("per_organ", {}).items():
+        lines.append(f"- **{organ_key}**: {organ_info['repos']} repos")
 
     return "\n".join(lines) + "\n"
 
@@ -227,27 +246,33 @@ def generate_selected_repos(registry, repo_refs):
         if info:
             lines.extend([
                 f"## [{info['name']}](https://github.com/{ref})",
-                f"",
+                "",
                 f"{info.get('description', 'No description')}",
-                f"",
+                "",
                 f"- **Status**: {info.get('implementation_status', 'UNKNOWN')}",
                 f"- **Tier**: {info.get('tier', 'standard')}",
                 f"- **Portfolio relevance**: {info.get('portfolio_relevance', 'N/A')}",
                 f"- **CI**: {info.get('ci_workflow', 'None')}",
-                f"",
+                "",
             ])
         else:
             lines.append(f"## [{ref}](https://github.com/{ref})")
-            lines.append(f"*(Not found in registry)*\n")
+            lines.append("*(Not found in registry)*\n")
 
     return "\n".join(lines) + "\n"
 
 
-def generate_application(target, registry):
+def generate_application(target, registry, metrics):
     """Generate a customized application material."""
+    c = metrics["computed"]
     repos_section = generate_selected_repos(registry, target["repos_to_highlight"])
 
-    emphasis_bullets = "\n".join(f"- {e}" for e in target["emphasis"])
+    # Build emphasis bullets — support template interpolation for metrics
+    if "emphasis_template" in target:
+        emphasis_items = [e.format(**c) for e in target["emphasis_template"]]
+    else:
+        emphasis_items = target["emphasis"]
+    emphasis_bullets = "\n".join(f"- {e}" for e in emphasis_items)
 
     return f"""# Application: {target['name']}
 
@@ -260,7 +285,7 @@ def generate_application(target, registry):
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates 89 repositories across 8 GitHub organizations with 33 registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology, the system coordinates {c['total_repos']} repositories across 8 GitHub organizations with {c['dependency_edges']} registry dependency edges, 115 seed.yaml contract edges, and zero back-edge violations.
 
 This application highlights the system's relevance to {target['name']} through:
 
@@ -272,7 +297,7 @@ This application highlights the system's relevance to {target['name']} through:
 
 ## Portfolio URL
 
-TODO — deploy portfolio site before submission
+https://4444j99.github.io/portfolio/
 
 ## Selected Work
 
@@ -283,7 +308,7 @@ TODO — deploy portfolio site before submission
 - System metrics snapshot (see `metrics-snapshot.md`)
 - Full system overview (see `system-overview.md`)
 - Dependency graph visualization (see portfolio site)
-- 28 published essays documenting the build process
+- {c['published_essays']} published essays documenting the build process
 
 ---
 """
@@ -305,16 +330,21 @@ def main():
     print("=" * 60)
 
     registry = load_registry()
+    metrics = load_system_metrics()
+
+    c = metrics["computed"]
+    print(f"\n  Metrics: {c['total_repos']} repos, {c['active_repos']} ACTIVE, "
+          f"{c['published_essays']} essays, {c['sprints_completed']} sprints")
 
     # Generate shared materials
     print("\n[GEN] Shared: system-overview.md")
-    overview = generate_system_overview(registry)
+    overview = generate_system_overview(registry, metrics)
     (shared / "system-overview.md").write_text(overview)
     print("  OK")
 
     print("[GEN] Shared: metrics-snapshot.md")
-    metrics = generate_metrics_snapshot(registry)
-    (shared / "metrics-snapshot.md").write_text(metrics)
+    snapshot = generate_metrics_snapshot(metrics)
+    (shared / "metrics-snapshot.md").write_text(snapshot)
     print("  OK")
 
     # Generate per-target applications
@@ -322,7 +352,7 @@ def main():
         filename = f"{target['id']}.md"
         print(f"\n[GEN] {target['name']} → {output / filename}")
 
-        application = generate_application(target, registry)
+        application = generate_application(target, registry, metrics)
         (output / filename).write_text(application)
 
         repos_filename = f"{target['id']}-repos.md"
@@ -330,7 +360,7 @@ def main():
         (output / repos_filename).write_text(repos)
 
         print(f"  Repos highlighted: {len(target['repos_to_highlight'])}")
-        print(f"  OK")
+        print("  OK")
 
     print(f"\n{'=' * 60}")
     print(f"Generated {len(APPLICATION_TARGETS)} applications + shared materials")
