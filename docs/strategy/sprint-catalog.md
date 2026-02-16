@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (Gap-Fill through Operatio), starting at 17. These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (Gap-Fill through Operatio), starting at 17. Sprints 17–20 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
   - **H1** — Prove It Works (Days 1–30)
@@ -50,7 +50,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 | Metric | Value |
 |--------|-------|
 | Registry entries | 97 (90 ACTIVE, 7 ARCHIVED) |
-| Repos not cloned locally | 22 (8 `.github` org profiles + 14 actual repos) |
+| Repos not cloned locally | 0 (all 97 cloned; SYNCHRONIUM Sprint 18) |
 | Deployed essays | 29 on remote |
 | Undeployed essay drafts | 2–4 in `docs/essays/` |
 | ORGAN-III pre-launch | 15 repos with `revenue_status: pre-launch` |
@@ -90,35 +90,31 @@ No workflow code changes were needed. The "failing" signal was misleading — ca
 | Omega criteria | #1, #17 |
 | Resolution | Diagnosed as phantom failures; no code changes required |
 
-### Sprint 18: SYNCHRONIUM (Sync)
+### Sprint 18: SYNCHRONIUM (Sync) — COMPLETE
 
-**Clone all missing repos locally and sync workspace.**
+**Clone all missing repos locally and sync workspace.** *(Completed 2026-02-16 as part of workspace restructure.)*
 
-- 14 actual repos not cloned: auto-revision-epistemic-engine, showcase-portfolio, archive-past-works, case-studies-methodology, learning-resources, example-interactive-installation, example-ai-collaboration, art-from--auto-revision-epistemic-engine, art-from--narratological-algorithmic-lenses, tab-bookmark-manager, a-i-chat--exporter, commerce--meta, hokage-chess, plus 1 ORGAN-V `.github`
-- 8 `.github` org profile repos not cloned (one per org)
-- Sync `public-process` local clone (missing `_posts/` — 29 essays only on remote)
+All 97 repos cloned to flat `~/Workspace/<org>/<repo>/` layout. 14 missing repos cloned, 8 `.github` org profiles cloned, public-process synced, 68 repos moved from legacy ~/world/ hierarchy, 39 symlinks removed, git remotes converted SSH→HTTPS. 29 GB freed.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~1–2 hours |
+| Effort | ~2 hours |
 | Horizon | H1 (operational completeness) |
 | Omega criteria | #17 (full local workspace) |
+| Resolution | All repos cloned and workspace restructured to flat 2-level layout |
 
-### Sprint 19: MEMORIA (Memory Correction)
+### Sprint 19: MEMORIA (Memory Correction) — COMPLETE
 
-**Fix stale data across corpus documents.**
+**Fix stale data across corpus documents.** *(Completed 2026-02-16 as part of TRIPARTITUM Sprint 20.)*
 
-- Multiple documents reference 91/89/88/81 repos — registry shows 97
-- Multiple documents reference 84/82 ACTIVE — registry shows 90 ACTIVE
-- operational-cadence.md references "5 ORGAN-II SKELETON repos" — registry shows 0 SKELETON
-- Omega roadmap referenced "Design-only repos: 2" — now 0
-- Reconcile all documents to match current registry truth
+13 files updated with ~70 edits: all active documents now reflect 97 repos, 90 ACTIVE, 7 ARCHIVED, correct org counts, and ACTIVE terminology (not PRODUCTION). Includes CLAUDE.md, README.md, application materials, omega roadmap, operational docs, and evaluation docs.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~1–2 hours |
+| Effort | ~1.5 hours |
 | Horizon | H1 (data integrity) |
 | Omega criteria | Constitution Article I (registry is never wrong) |
+| Resolution | All 13 active documents reconciled with registry-v2.json |
 
 ---
 
@@ -126,19 +122,18 @@ No workflow code changes were needed. The "failing" signal was misleading — ca
 
 *Fill the gaps in the historical and architectural record.*
 
-### Sprint 20: ANNOTATIO (Annotation)
+### Sprint 20: ANNOTATIO (Annotation) — COMPLETE
 
-**Write sprint specs for all 16 completed sprints.**
+**Write sprint specs for all completed sprints.** *(Completed 2026-02-16 as part of TRIPARTITUM Sprint 20.)*
 
-- Only `bronze-sprint/` has a spec in `docs/specs/`
-- Create specs for: Gap-Fill, Platinum, Ignition, Propulsion, Ascension, Exodus, Perfection, Autonomy, Genesis, Alchemia, Convergence, Praxis, Veritas, Illustratio, Manifestatio, Operatio
-- Value: historical record, methodology documentation, evidence for AI-conductor essay
+19 retrospective specs written in `docs/specs/sprints/`: Gap-Fill, Platinum, Sprints 1–14 (IGNITION through OPERATIO), and Sprints 17–19 (REMEDIUM, SYNCHRONIUM, CONCORDIA). Each spec follows a consistent template: Objective, Delivered, Key Decisions, Metrics Delta, Lessons.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~8–12 hours (template + 16 specs) |
+| Effort | ~1.5 hours (template + 19 specs) |
 | Horizon | H2 (evidence for applications), H5 (methodological authority) |
 | Omega criteria | #6, #14 (methodology documentation) |
+| Resolution | 19 specs in `docs/specs/sprints/`, plus 20-tripartitum.md for this sprint itself |
 
 ### Sprint 21: DECISIO (Decision Records)
 
@@ -1045,7 +1040,7 @@ Every omega criterion maps to at least one sprint. The 17 criteria are from [`th
 
 | # | Criterion | Required Sprints | Notes |
 |---|-----------|-----------------|-------|
-| 1 | 30-day soak test passes | 17 (REMEDIUM), 64 (VIGILIA) | Fix workflows first, then validate |
+| 1 | 30-day soak test passes | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | Workflows confirmed healthy; soak test in progress |
 | 2 | Stranger test ≥80% | 42 (PEREGRINUS), 73 (NAVIGATIO) | Test first, fix second |
 | 3 | Engagement baseline established | 64 (VIGILIA), 74 (ANALYTICA) | Passive collection + analytics |
 | 4 | Runbooks validated | 42 (PEREGRINUS) | Stranger test validates runbooks |
@@ -1061,7 +1056,7 @@ Every omega criterion maps to at least one sprint. The 17 criteria are from [`th
 | 14 | ≥1 recognition event | 43 (PETITIO), 66 (ORATIO), 68 (FOEDUS) | Multiple vectors |
 | 15 | Portfolio updated with validation | 52 (RENOVATIO) | Quick update |
 | 16 | Bus factor >1 | 42 (PEREGRINUS), 58 (INSTRUMENTUM) | Test + tools |
-| 17 | 30+ days autonomous operation | 17 (REMEDIUM), 64 (VIGILIA) | Soak test proves this |
+| 17 | 30+ days autonomous operation | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | Workflows healthy; soak test clock running |
 
 ---
 
@@ -1088,7 +1083,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 
 | Order | Sprint | Covers Criteria | Calendar Dependency |
 |-------|--------|----------------|---------------------|
-| 1 | **17 REMEDIUM** | #1, #17 | Prerequisite for everything |
+| ~~1~~ | ~~**17 REMEDIUM**~~ | ~~#1, #17~~ | **COMPLETE** — workflows confirmed healthy |
 | 2 | **41 SUBMISSIO** | #5, #7 | Materials ready now |
 | 3 | **42 PEREGRINUS** | #2, #4, #16 | Validates H1 claims |
 | 4 | **28 BETA-SCRAPPER** | #8 | Or 26/27 based on readiness |
@@ -1101,7 +1096,9 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | 11 | **52 RENOVATIO** | #15 | Quick portfolio update |
 | 12 | **43 PETITIO** | #14 | Grant application for recognition |
 
-**Already met:** #6 (AI-conductor essay published 2026-02-11)
+**Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy)
+
+**Remaining critical path:** 11 sprints (41→42→28→40→64→24→45→46→47→52→43)
 
 **Note on critical path vs. cadence:** The critical path identifies the minimum set. The operational cadence (`operational-cadence.md`) determines how these are sequenced into weekly rhythm. They are pulled from this catalog as individual tasks, not executed as named sprints — per AP-1.
 
