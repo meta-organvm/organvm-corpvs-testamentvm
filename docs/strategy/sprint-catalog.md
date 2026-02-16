@@ -49,7 +49,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 
 | Metric | Value |
 |--------|-------|
-| Registry entries | 91 (84 ACTIVE, 7 ARCHIVED) |
+| Registry entries | 97 (90 ACTIVE, 7 ARCHIVED) |
 | Repos not cloned locally | 22 (8 `.github` org profiles + 14 actual repos) |
 | Deployed essays | 29 on remote |
 | Undeployed essay drafts | 2–4 in `docs/essays/` |
@@ -57,7 +57,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 | ORGAN-II zero-code repos | 10 repos with 0 code files |
 | ORGAN-VI zero-code repos | 3/3 local repos have 0 code |
 | ORGAN-VII zero-code repos | 3/3 local repos have 0 code |
-| Failing workflows | validate-dependencies, essay-monitor |
+| Failing workflows | None (phantom failures diagnosed; all workflows healthy) |
 | Applications submitted | 0 of 13 tracked |
 | Stranger test | Protocol ready, not executed |
 | Soak test | Day 1 of 30 |
@@ -71,20 +71,24 @@ This catalog was generated against the following state. Numbers will drift; the 
 
 *Fix what's broken before building anything new.*
 
-### Sprint 17: REMEDIUM (Remedy)
+### Sprint 17: REMEDIUM (Remedy) — RESOLVED
 
-**Fix failing orchestration workflows.**
+**Fix failing orchestration workflows.** *(Resolved 2026-02-16: All workflows confirmed healthy.)*
 
-- `validate-dependencies` has been FAILING since at least 2026-02-13
-- `essay-monitor` has been FAILING since at least 2026-02-13
-- Diagnose root causes, fix, verify green runs
+Investigation revealed no actual failures:
+- `essay-monitor` and `publish-process`: **Phantom failures** — push events triggering schedule-only workflows; latest real scheduled runs succeeded
+- `ci.yml` (Python CI): **Already replaced** by Minimal CI; all 31 Minimal CI runs pass
+- `validate-dependencies`: **Already fixed** — back-edges removed in CONVERGENCE; latest run passed
+- `distribute-content`: 29/29 SKIPPED is **correct behavior** — waiting for `ready-to-distribute` label
+
+No workflow code changes were needed. The "failing" signal was misleading — caused by push triggers on schedule-only workflows, which produce expected failures in GitHub's run history.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~2–4 hours |
-| Horizon | H1 (Prove It Works — failing workflows undermine soak test) |
-| Omega criteria | #1 (soak test requires healthy infrastructure), #17 (autonomous operation) |
-| Priority | URGENT — broken workflows are a credibility problem for every application |
+| Effort | ~1 hour (diagnosis only) |
+| Horizon | H1 (Prove It Works) |
+| Omega criteria | #1, #17 |
+| Resolution | Diagnosed as phantom failures; no code changes required |
 
 ### Sprint 18: SYNCHRONIUM (Sync)
 
@@ -104,9 +108,10 @@ This catalog was generated against the following state. Numbers will drift; the 
 
 **Fix stale data across corpus documents.**
 
-- MEMORY.md says "82 ACTIVE, 2 DESIGN_ONLY" — registry shows 84 ACTIVE, 0 DESIGN_ONLY
+- Multiple documents reference 91/89/88/81 repos — registry shows 97
+- Multiple documents reference 84/82 ACTIVE — registry shows 90 ACTIVE
 - operational-cadence.md references "5 ORGAN-II SKELETON repos" — registry shows 0 SKELETON
-- Omega roadmap says "Design-only repos: 2" — now 0
+- Omega roadmap referenced "Design-only repos: 2" — now 0
 - Reconcile all documents to match current registry truth
 
 | Field | Value |

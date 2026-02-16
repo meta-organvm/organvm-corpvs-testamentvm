@@ -61,7 +61,7 @@ Greek ontological suffixes (theoria, poiesis, ergon, taxis, logos, koinonia, ker
 #### Weaknesses (with evidence)
 
 **W1. Code substance gap is severe.**
-Only 4 of 8 flagship repos are classified SUBSTANTIAL; 2 are MINIMAL. `agentic-titan` (ORGAN-IV flagship) has 2 code files and 0 test files despite being labeled `implementation_status: PRODUCTION`. `public-process` (ORGAN-V flagship) has 6 code files (HTML/CSS templates) and 0 tests. The system has 82 repos at "PRODUCTION" but only 6 repos with code that a reviewer would recognize as functional software.
+Only 4 of 8 flagship repos are classified SUBSTANTIAL; 2 are MINIMAL. `agentic-titan` (ORGAN-IV flagship) has 2 code files and 0 test files despite being labeled `implementation_status: ACTIVE`. `public-process` (ORGAN-V flagship) has 6 code files (HTML/CSS templates) and 0 tests. The system has 82 repos at "ACTIVE" (then-current count) but only 6 repos with code that a reviewer would recognize as functional software.
 
 *Evidence:* `praxis-flagship-report.json:342–371` (agentic-titan: 2 code, 0 tests), `system-metrics.json:406–409` (flagship_repos_with_code: 6 vs target 30+), `system-metrics.json:426–429` (real_test_suites: 4 vs target 30+)
 
@@ -106,10 +106,10 @@ Constitution Article V states: *"Every README is a portfolio piece, written for 
 
 *Evidence:* `docs/memory/constitution.md:20–21` (Article V), `praxis-flagship-report.json:342–371` (agentic-titan: 2 code, 0 tests, MINIMAL)
 
-**LC3. "PRODUCTION" status vs. production-readiness.**
-82 repos carry `implementation_status: PRODUCTION`. In conventional software engineering, "production" means deployed, tested, monitored, and serving users. In this system, "PRODUCTION" means "documentation is deployed and repository is maintained" — a documentation status, not a software status. This semantic overloading is the single largest credibility risk. A reviewer searching GitHub for `implementation_status: PRODUCTION` will expect running software.
+**LC3. "PRODUCTION" status vs. production-readiness.** *(RESOLVED: VERITAS Sprint renamed PRODUCTION→ACTIVE across all 82 repos; current count is 90 ACTIVE, 7 ARCHIVED.)*
+82 repos carried `implementation_status: PRODUCTION` at time of this review. In conventional software engineering, "production" means deployed, tested, monitored, and serving users. In this system, "PRODUCTION" meant "documentation is deployed and repository is maintained" — a documentation status, not a software status. This semantic overloading was the single largest credibility risk. The VERITAS Sprint (2026-02-13) renamed the status to `ACTIVE`, resolving this finding.
 
-*Evidence:* `registry-v2.json:4` (schema note: `implementation_status enum: PRODUCTION|PROTOTYPE|SKELETON|DESIGN_ONLY|ARCHIVED`), `system-metrics.json:13–16` (82 PRODUCTION, 7 ARCHIVED)
+*Evidence:* `registry-v2.json:4` (schema note: `implementation_status enum: ACTIVE|PROTOTYPE|SKELETON|DESIGN_ONLY|ARCHIVED`), current state: 90 ACTIVE, 7 ARCHIVED
 
 **LC4. Revenue "active" vs. zero revenue.**
 9 repos are tagged `revenue: active` in the registry. Zero revenue products are deployed (`praxis_targets.revenue_products.current = "0"`). The word "active" does not modify the registry's definition of revenue state — it implies ongoing commercial activity where none exists.
@@ -128,8 +128,8 @@ Constitution Article V states: *"Every README is a portfolio piece, written for 
 
 *Evidence:* `scripts/praxis-validate.py:105–308` (all check functions inspect file existence, URL status, or JSON field presence — none evaluate content quality)
 
-**LG2. "PRODUCTION" as a status category conflates documentation maturity with software maturity.**
-The five-tier enum (PRODUCTION|PROTOTYPE|SKELETON|DESIGN_ONLY|ARCHIVED) was designed for a documentation corpus, not a software deployment pipeline. Applying the word "PRODUCTION" to repos that are primarily documentation creates a category error when the system is presented to software engineering audiences.
+**LG2. "PRODUCTION" as a status category conflates documentation maturity with software maturity.** *(RESOLVED: renamed to ACTIVE.)*
+The five-tier enum (ACTIVE|PROTOTYPE|SKELETON|DESIGN_ONLY|ARCHIVED) was designed for a documentation corpus. The original use of "PRODUCTION" for repos that were primarily documentation created a category error when presented to software engineering audiences. The VERITAS Sprint resolved this by renaming to ACTIVE.
 
 ---
 
@@ -294,7 +294,7 @@ The system spans theory (philosophy), art (generative), commerce (SaaS), governa
 
 | # | Action | Impact | Files |
 |---|--------|--------|-------|
-| M1 | Rename `implementation_status: PRODUCTION` → `DOCUMENTED` system-wide | Resolves the #1 credibility risk | `registry-v2.json`, `system-metrics.json`, all validation scripts, CLAUDE.md |
+| M1 | Rename `implementation_status: ACTIVE` → `DOCUMENTED` system-wide | Resolves the #1 credibility risk | `registry-v2.json`, `system-metrics.json`, all validation scripts, CLAUDE.md |
 | M2 | Vivify top 4 non-SUBSTANTIAL flagships (agentic-titan, public-process, auto-revision-epistemic-engine, example-generative-music) | Closes the code substance gap for visible repos | Target repos |
 | M3 | Add `revenue_status` field (pre-launch/beta/live) to ORGAN-III repos | Separates business model from business state | `registry-v2.json` |
 | M4 | Restructure CI to distinguish "test suite passes" from "no tests found" | Makes CI signal honest | `.github/workflows/ci.yml` templates |
@@ -318,7 +318,7 @@ The system spans theory (philosophy), art (generative), commerce (SaaS), governa
 
 | Evidence Source | Path / Location | Key Data Points |
 |---|---|---|
-| Registry | `registry-v2.json` | 89 repos, 82 PRODUCTION, 7 ARCHIVED, 33 dependency edges |
+| Registry | `registry-v2.json` | 97 repos, 90 ACTIVE, 7 ARCHIVED, 33 dependency edges |
 | System Metrics | `system-metrics.json` | 10 sprints, 28 essays, PRAXIS targets vs actuals |
 | Flagship Report | `praxis-flagship-report.json` | 8 audited: 4 SUBSTANTIAL, 2 PARTIAL, 2 MINIMAL |
 | Constitution | `docs/memory/constitution.md` | 6 articles, 4 amendments, 4 quality gates |

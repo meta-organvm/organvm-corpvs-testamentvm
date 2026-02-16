@@ -2,20 +2,20 @@
 
 ## What It Is
 
-ORGANVM is an eight-organ creative-institutional system coordinating 89 repositories across 8 GitHub organizations. Each organ governs a domain — from epistemological theory (ORGAN-I) through generative art (ORGAN-II), commercial products (ORGAN-III), orchestration governance (ORGAN-IV), public documentation (ORGAN-V), community infrastructure (ORGAN-VI), marketing distribution (ORGAN-VII), to meta-system governance (META).
+ORGANVM is an eight-organ creative-institutional system coordinating 97 repositories across 8 GitHub organizations. Each organ governs a domain — from epistemological theory (ORGAN-I) through generative art (ORGAN-II), commercial products (ORGAN-III), orchestration governance (ORGAN-IV), public documentation (ORGAN-V), community infrastructure (ORGAN-VI), marketing distribution (ORGAN-VII), to meta-system governance (META).
 
 ## Key Metrics
 
-- **89 repositories** across 8 organizations
-- **82 production-grade repos** (100% of non-archived)
-- **28 published essays** (~111,000 words) documenting the build process
+- **97 repositories** across 8 organizations
+- **90 actively maintained repos** (100% of non-archived)
+- **29 published essays** (~111,000 words) documenting the build process
 - **33 registry dependency edges** (28 active graph) with zero back-edge violations
 - **82+ CI/CD workflows** with automated validation
-- **10 sprints completed** from initial architecture to external launch
+- **19 sprints completed** from initial architecture to operational readiness
 
 ## Methodology
 
-The system operates on an **AI-conductor model**: AI generates volume, human directs architecture and reviews output. This methodology enabled a single operator to build, document, and validate 89 repositories in under a week — demonstrating production-grade systems thinking at scale.
+The system operates on an **AI-conductor model**: AI generates volume, human directs architecture and reviews output. This methodology enabled a single operator to build, document, and validate 97 repositories in under a week — demonstrating production-grade systems thinking at scale.
 
 ## Strategic Context
 

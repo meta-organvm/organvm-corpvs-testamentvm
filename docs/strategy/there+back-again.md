@@ -89,19 +89,19 @@ This is the philosophical stake: the scaffolding must come down. The organ model
 
 ### Checkpoint Alpha: Current State (2026-02-16)
 
-Sixteen sprints have executed since launch. The system's current state:
+Nineteen sprints have executed since launch. The system's current state:
 
 | Metric | Value |
 |--------|-------|
-| Repos on GitHub | 91 |
-| Active repos | 84 (92.3%) |
+| Repos on GitHub | 97 |
+| Active repos | 90 (92.8%) |
 | Archived repos | 7 |
-| Design-only repos | 2 |
+| Design-only repos | 0 |
 | Total documentation | ~386K+ words |
 | Meta-system essays | 29 (~111K words) |
 | CI/CD workflows | 82+ (17 crons disabled for billing) |
 | Dependency edges | 31 validated, 0 violations |
-| Seed.yaml contracts | 115 edges across 91 repos |
+| Seed.yaml contracts | 115 edges across 97 repos |
 | Code files (system-wide) | 3,586 |
 | Test files (system-wide) | 736 |
 | Repos with 10+ code files | 38 |
@@ -413,7 +413,7 @@ But infrastructure is not the point. The theory that ORGAN-I protects is the poi
 
 This means omega has a paradoxical quality: the system succeeds when it becomes invisible. The best possible outcome is that a stranger navigating the eight organs focuses on the *work* — the recursive engine framework, the generative music compositions, the data scraping tool, the salon conversations — and experiences the organizational infrastructure as unremarkable. "Oh, it's organized by topic into different GitHub orgs. Makes sense." The meta-system disappears into the system.
 
-The sixteen sprints from launch through OPERATIO have been entirely about the meta-system. Every sprint name — Ignition, Propulsion, Ascension, Exodus, Perfection, Autonomy, Genesis, Alchemia, Convergence, Praxis, Veritas, Illustratio, Manifestatio, Operatio — describes work done *on* the system, not *in* it. No new theory was produced. No new art was created. No products were shipped. No community events were held. The entire energy of the project has gone into scaffolding.
+The nineteen sprints from launch through CONCORDIA have been entirely about the meta-system. Every sprint name — Ignition, Propulsion, Ascension, Exodus, Perfection, Autonomy, Genesis, Alchemia, Convergence, Praxis, Veritas, Illustratio, Manifestatio, Operatio, Remedium, Synchronium, Concordia — describes work done *on* the system, not *in* it. No new theory was produced. No new art was created. No products were shipped. No community events were held. The entire energy of the project has gone into scaffolding.
 
 This is not a criticism. The scaffolding was necessary. You cannot occupy a building before it is built. But the building is now built. The question is whether the builder can stop building and start living in it.
 
@@ -421,7 +421,7 @@ That is the philosophical stake of omega: *Can you let go?* Can the infrastructu
 
 ### The Arc of the Sprints
 
-The sixteen sprints from launch through OPERATIO tell a story when viewed as a sequence. They are not random — they trace an arc from deployment urgency through quality correction to operational readiness:
+The nineteen sprints from launch through CONCORDIA tell a story when viewed as a sequence. They are not random — they trace an arc from deployment urgency through quality correction to operational readiness:
 
 **Construction phase (Sprints 1-7: Gap-Fill through Perfection):** Focused on volume. The priority was coverage — every repo documented, every CI workflow deployed, every badge row complete, the portfolio site expanded. The metrics that matter here are counts: 81 repos, 339K words, 70+ CI workflows, 21 essays. This phase answers the question: *Is the system complete?*
 
@@ -437,7 +437,7 @@ One of the eight-organ model's design advantages is that the same evidence answe
 
 **For grant reviewers:** A creative system with institutional ambition, demonstrated operational capability (30-day soak test), community engagement (salons, external contributors), and honest methodology (AI-conductor essays, transparent limitations).
 
-**For hiring managers:** Systems architecture at scale (91 repos, 8 orgs, automated governance), demonstrated shipping capability (product with revenue), CI/CD expertise (82+ workflows), and documentation as deliverable (386K+ words of reviewed, deployed documentation).
+**For hiring managers:** Systems architecture at scale (97 repos, 8 orgs, automated governance), demonstrated shipping capability (product with revenue), CI/CD expertise (82+ workflows), and documentation as deliverable (386K+ words of reviewed, deployed documentation).
 
 **For fellow practitioners:** A reusable model for organizing creative work (the organ model, documented and open-source), a methodology for human-AI collaboration (the AI-conductor model, published as standalone essay), and an honest account of what works and what doesn't (ORGAN-V essays, including post-mortems).
 
@@ -447,7 +447,7 @@ This is not spin. It is the natural consequence of building a system that genuin
 
 ### "Back Again" — Returning to Creative Freedom
 
-The title of this roadmap references a return journey. "There" was launching the system — Phase -1 through OPERATIO, sixteen sprints, 386K+ words, 91 repos, 8 organizations. "Back again" is the return to the creative work the system was built to protect.
+The title of this roadmap references a return journey. "There" was launching the system — Phase -1 through OPERATIO, sixteen sprints, 386K+ words, 97 repos, 8 organizations. "Back again" is the return to the creative work the system was built to protect.
 
 After omega, the primary operator's attention shifts:
 
@@ -584,10 +584,13 @@ For reference, the complete sprint history that brought the system to Checkpoint
 | 14 | Illustratio | 2026-02-14 | Portfolio redesign | CMYK + Jost + p5.js, 17 crons disabled |
 | 15 | Manifestatio | 2026-02-14 | Re-audit | 3,586 code files (7× previous), 3 CI fixes |
 | 16 | Operatio | 2026-02-16 | Operational readiness | Soak test, 3 runbooks, stranger test protocol |
+| 17 | Remedium | 2026-02-16 | Workflow repair | Phantom failures diagnosed, CI already replaced |
+| 18 | Synchronium | 2026-02-16 | Workspace sync | Missing repos cloned, local workspace complete |
+| 19 | Concordia | 2026-02-16 | Registry reconciliation | 6 orphan repos registered (91→97), seed.yaml audit |
 
 **Total construction period:** 7 days (2026-02-09 through 2026-02-16)
-**Total sprints:** 16 post-launch + 7 pre-launch phases = 23 discrete work units
-**Total documentation:** ~386K+ words across 91 repositories
+**Total sprints:** 19 post-launch + 7 pre-launch phases = 26 discrete work units
+**Total documentation:** ~386K+ words across 97 repositories
 
 The construction velocity is itself evidence of the AI-conductor methodology's effectiveness — and its limitations. The methodology excels at volume production (386K words in 7 days) but cannot substitute for the external validation, community formation, and revenue generation that the omega criteria require. Those take calendar time, not token expenditure.
 

@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Repository Is
 
-This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation record for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates 88 GitHub repositories across 8 GitHub organizations (7 organ orgs + 1 meta-org).
+This is a **planning and governance documentation corpus** — not a source code repository. It contains the complete planning, audit, and implementation record for an eight-organ creative-institutional system ("ORGAN I–VII + Meta") that coordinates 97 GitHub repositories across 8 GitHub organizations (7 organ orgs + 1 meta-org).
 
 **Owner:** @4444j99 / @4444J99
 **Status:** LAUNCHED (2026-02-11) — all 8 organs OPERATIONAL
 **Repository:** `meta-organvm/organvm-corpvs-testamentvm`
-**Documentation deployed:** ~363K words across 88 repos + 8 org profiles + 21 meta-system essays
+**Documentation deployed:** ~386K+ words across 97 repos + 8 org profiles + 29 meta-system essays
 
 There is no build system, test suite, or runtime code here. Executable artifacts include 5 validation scripts in `scripts/` and YAML/Python workflow specifications in `docs/implementation/github-actions-spec.md`.
 
@@ -17,14 +17,14 @@ There is no build system, test suite, or runtime code here. Executable artifacts
 
 | Organ | Domain | GitHub Org | Repos | Flagships |
 |-------|--------|-----------|-------|-----------|
-| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 19 | recursive-engine--generative-entity |
-| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 26 | metasystem-master, a-mavs-olevm |
-| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 24 | public-record-data-scrapper |
+| I | Theory (epistemology, recursion, ontology) | `organvm-i-theoria` | 20 | recursive-engine--generative-entity |
+| II | Art (generative, performance, experiential) | `organvm-ii-poiesis` | 30 | metasystem-master, a-mavs-olevm |
+| III | Commerce (SaaS, B2B, B2C products) | `organvm-iii-ergon` | 27 | public-record-data-scrapper |
 | IV | Orchestration (governance, routing) | `organvm-iv-taxis` | 7 | orchestration-start-here, agentic-titan |
 | V | Public Process (essays, building in public) | `organvm-v-logos` | 2 | public-process |
 | VI | Community (salons, reading groups) | `organvm-vi-koinonia` | 4 | — |
 | VII | Marketing (POSSE distribution, announcements) | `organvm-vii-kerygma` | 4 | — |
-| VIII | Meta (umbrella org) | `meta-organvm` | 2 | organvm-corpvs-testamentvm |
+| VIII | Meta (umbrella org) | `meta-organvm` | 3 | organvm-corpvs-testamentvm |
 
 ## Key Invariants (Enforced Across All Documents)
 

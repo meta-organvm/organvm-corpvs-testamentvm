@@ -374,7 +374,7 @@ The AI-conductor essay is now published (from Day 1). Distribute it.
 **Mastodon thread (3-5 posts):**
 - Post 1: Hook — what the AI-conductor model is and why it matters
 - Post 2: The key insight — human directs, AI generates volume, human reviews
-- Post 3: Evidence — 386K words in 7 days across 91 repositories
+- Post 3: Evidence — 386K words in 7 days across 97 repositories
 - Post 4: The honest part — what AI-conductor can't do (community, revenue, validation)
 - Post 5: Link to the full essay on public-process
 
@@ -469,10 +469,10 @@ This is the durable priority stack. It answers "what should I work on?" when you
 - `organvm-vi-koinonia` repos — salon planning for H4
 
 **LOW / PARKED (month 3+):**
-- ORGAN-II SKELETON repos (5 repos: example-generative-music, example-choreographic-interface, client-sdk, example-theatre-dialogue, audio-synthesis-bridge) — these become relevant when you're making art, not during validation
+- ORGAN-II low-code repos (example-generative-music, example-choreographic-interface, client-sdk, example-theatre-dialogue, audio-synthesis-bridge) — these become relevant when you're making art, not during validation
 - ORGAN-VII workflow improvements — distribution-agent is running; optimize later
 - Registry schema evolution — schema v0.5 is sufficient
-- Any repo not listed above — 91 repos is enough; don't add more
+- Any repo not listed above — 97 repos is enough; don't add more
 
 **Hard deadlines integrated:**
 
@@ -522,18 +522,13 @@ Writing theory (ORGAN-I) and writing applications require completely different c
 
 Do not schedule theory writing and application submission on the same day. The context switch cost is enormous and the quality of both suffers. This is why the weekly template assigns organ domains to specific days. Respect the rotation even when it feels inefficient — the efficiency gain from sustained cognitive mode more than compensates.
 
-### 5. The ORGAN-II SKELETON Repos Are a Trap
+### 5. The ORGAN-II Low-Code Repos Are Not Urgent
 
-Five repos in ORGAN-II have `implementation_status: SKELETON`:
-- `example-generative-music`
-- `example-choreographic-interface`
-- `client-sdk`
-- `example-theatre-dialogue`
-- `audio-synthesis-bridge`
+Several ORGAN-II repos have minimal code substance despite their ACTIVE status — repos like `example-generative-music`, `example-choreographic-interface`, `client-sdk`, `example-theatre-dialogue`, and `audio-synthesis-bridge`. These feel urgent because they are "thin." The completionist impulse says: "they should have more code."
 
-These feel urgent because they are "incomplete." The completionist impulse says: "everything else is ACTIVE, these should be too." But they are ORGAN-II (art) repos — they become relevant when you are actually making art, not during the validation phase. Filling them with scaffold code to change their status to ACTIVE would be exactly the kind of dishonesty the VERITAS Sprint corrected.
+But they are ORGAN-II (art) repos — they become relevant when you are actually making art, not during the validation phase. Writing scaffold code just to bulk them up would be exactly the kind of dishonesty the VERITAS Sprint corrected.
 
-Park them. They will be there when ORGAN-II creative work produces something that belongs in them. Their current state (SKELETON) is *honest.* Honest is more important than complete.
+Park them. They will be there when ORGAN-II creative work produces something that belongs in them. Their current thinness is *honest.* Honest is more important than complete.
 
 ### 6. Portfolio Site Staleness
 
@@ -598,7 +593,7 @@ The portfolio is designed. It's deployed. It uses a coherent design system. Subm
 
 ### AP-6: Don't Add Repos to Fill Perceived Gaps
 
-91 repositories is enough. The temptation to create `organvm-iii-ergon/new-product-idea` or `organvm-i-theoria/another-framework` is real. Each new repo adds maintenance burden (CI, README, registry entry, seed.yaml, topics) and dilutes focus. Create new repos only when you have working code that doesn't fit an existing repo.
+97 repositories is enough. The temptation to create `organvm-iii-ergon/new-product-idea` or `organvm-i-theoria/another-framework` is real. Each new repo adds maintenance burden (CI, README, registry entry, seed.yaml, topics) and dilutes focus. Create new repos only when you have working code that doesn't fit an existing repo.
 
 **Test:** "Do I have code written that needs a home, or am I creating a home for code I haven't written?" If the latter, stop.
 

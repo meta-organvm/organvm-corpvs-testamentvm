@@ -1,6 +1,6 @@
 # Quarterly Sustainability Checklist
 
-**Purpose:** Minimal viable audit for solo operator maintenance of 81 repos across 8 orgs
+**Purpose:** Minimal viable audit for solo operator maintenance of 97 repos across 8 orgs
 **Cadence:** Quarterly (Q2 2026 is first execution)
 **Estimated effort:** 1-2 hours per quarter
 **Source:** Doc 11 Priority 4 recommendation; simplified from `orchestration-system-v2.md` monthly spec
@@ -80,7 +80,7 @@
       print(f'  {status}: {count}')
   print(f'  Total: {sum(dist.values())}')
   # Compare with previous quarter (update these baselines each quarter)
-  baseline = {'PRODUCTION': 32, 'PROTOTYPE': 15, 'SKELETON': 16, 'DESIGN_ONLY': 20}
+  baseline = {'ACTIVE': 90, 'ARCHIVED': 7}
   print('\\nDrift from baseline:')
   for status in sorted(set(list(dist.keys()) + list(baseline.keys()))):
       curr = dist.get(status, 0)
@@ -90,9 +90,9 @@
       print(f'  {status}: {prev} → {curr} ({arrow}{abs(delta)})')
   "
   ```
-- [ ] Verify SKELETON + DESIGN_ONLY count has decreased since last quarter
-- [ ] Have any PRODUCTION repos degraded (dependencies outdated, tests failing)?
-- [ ] Are the 5 highest-portfolio-relevance SKELETON repos making progress?
+- [ ] Verify implementation status distribution matches expectations (90 ACTIVE, 7 ARCHIVED baseline)
+- [ ] Have any ACTIVE repos degraded (dependencies outdated, tests failing)?
+- [ ] Are the highest-portfolio-relevance repos maintaining code substance?
 
 ## Post-Audit
 

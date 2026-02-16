@@ -131,7 +131,7 @@
 
 5. **Document which workflows were disabled** in this corpus (update MEMORY.md or create an ADR in `docs/adr/`).
 
-**Prevention:** Before enabling any cron workflow, estimate monthly minutes: `runs_per_month * avg_minutes_per_run * num_repos`. The ORGAN-I overrun was 14 crons * ~30 runs/month * ~2 min/run * 19 repos = ~16,000 min/month.
+**Prevention:** Before enabling any cron workflow, estimate monthly minutes: `runs_per_month * avg_minutes_per_run * num_repos`. The ORGAN-I overrun was 14 crons * ~30 runs/month * ~2 min/run * 20 repos = ~16,800 min/month.
 
 ---
 

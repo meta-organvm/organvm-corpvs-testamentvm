@@ -21,7 +21,7 @@
   - Files: `applications/knight-foundation.md:26`, `applications/eyebeam-residency.md:26`, `applications/google-creative.md:26`, `applications/processing-foundation.md:26`, `applications/ai-systems-role.md:27`
   - Finding: W5
 
-- [x] **Q2.** Change `revenue: active` to `revenue_model: [subscription|freemium|one-time]` for all ORGAN-III repos with zero actual revenue — **RESOLVED (VERITAS Sprint):** Split into `revenue_model` + `revenue_status: pre-launch` across all 24 ORGAN-III repos
+- [x] **Q2.** Change `revenue: active` to `revenue_model: [subscription|freemium|one-time]` for all ORGAN-III repos with zero actual revenue — **RESOLVED (VERITAS Sprint):** Split into `revenue_model` + `revenue_status: pre-launch` across all 27 ORGAN-III repos
   - File: `registry-v2.json` (9 entries with `"revenue": "active"`)
   - Finding: W3, LC4, SP3
 
@@ -62,7 +62,7 @@
   - System-wide re-audit: **40+ repos with 10+ code files** (was claimed as 6). The "code substance gap" was a measurement error, not a real gap.
   - Finding: W1, LC2
 
-- [x] **M3.** Add `revenue_status` field to ORGAN-III repo schema — **RESOLVED (VERITAS Sprint):** Split `revenue` into `revenue_model` + `revenue_status` across all 24 ORGAN-III repos
+- [x] **M3.** Add `revenue_status` field to ORGAN-III repo schema — **RESOLVED (VERITAS Sprint):** Split `revenue` into `revenue_model` + `revenue_status` across all 27 ORGAN-III repos
   - Values: `pre-launch` | `beta` | `live`
   - Separates business model (what you plan to charge) from business state (whether anyone is paying)
   - File: `registry-v2.json`

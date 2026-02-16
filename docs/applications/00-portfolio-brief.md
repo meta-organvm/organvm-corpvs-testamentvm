@@ -1,14 +1,14 @@
 # Portfolio Brief: The Eight-Organ System
 
 **For:** All application tracks (AI roles, grants, residencies)
-**Updated:** 2026-02-12
+**Updated:** 2026-02-16
 **Status:** LAUNCHED — all 8 organs OPERATIONAL
 
 ---
 
 ## One-Paragraph Summary
 
-I designed and implemented an eight-organ orchestration system that coordinates 81 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 5 GitHub Actions workflows for autonomous governance. It is fully documented at ~335K words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
+I designed and implemented an eight-organ orchestration system that coordinates 97 repositories across 8 GitHub organizations — spanning theory, generative art, commercial products, governance, public process, community, and marketing. The system includes a machine-readable registry, automated dependency validation, a formal promotion state machine (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED), and 11 GitHub Actions workflows for autonomous governance. It is fully documented at ~386K+ words and validated by automated scripts that check every repository for CI/CD, documentation, dependency integrity, and constitutional compliance.
 
 ---
 
@@ -16,16 +16,16 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 | Dimension | Value |
 |-----------|-------|
-| Total repositories | 81 |
+| Total repositories | 97 |
 | GitHub organizations | 8 |
-| Documentation | ~335,000 words |
-| CI/CD coverage | 70+ repos with workflows |
+| Documentation | ~386,000+ words |
+| CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
-| Meta-system essays | 20 published (~84K words) |
+| Meta-system essays | 29 published (~111K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
-| Implementation status | 66 PRODUCTION, 1 PROTOTYPE, 2 SKELETON, 12 DESIGN_ONLY |
+| Implementation status | 90 ACTIVE, 7 ARCHIVED |
 
 ---
 
@@ -33,21 +33,21 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 | # | Organ | Domain | Repos | What It Demonstrates |
 |---|-------|--------|-------|----------------------|
-| I | Theoria | Theory & epistemology | 18 | Intellectual depth, foundational thinking, recursive systems |
-| II | Poiesis | Generative art & performance | 23 | Creative systems design, artistic infrastructure |
-| III | Ergon | Commerce & products | 22 | Product-market thinking, revenue generation, deployment |
+| I | Theoria | Theory & epistemology | 20 | Intellectual depth, foundational thinking, recursive systems |
+| II | Poiesis | Generative art & performance | 30 | Creative systems design, artistic infrastructure |
+| III | Ergon | Commerce & products | 27 | Product-market thinking, revenue generation, deployment |
 | IV | Taxis | Orchestration & governance | 7 | Systems architecture, governance design, organizational capacity |
 | V | Logos | Public process & essays | 2 | Transparency, thought leadership, building in public |
-| VI | Koinonia | Community | 3 | Collaborative infrastructure, community contribution |
+| VI | Koinonia | Community | 4 | Collaborative infrastructure, community contribution |
 | VII | Kerygma | Marketing & distribution | 4 | Audience building, POSSE automation, content strategy |
-| VIII | Meta | Umbrella coordination | 2 | Cross-system integration, meta-documentation |
+| VIII | Meta | Umbrella coordination | 3 | Cross-system integration, meta-documentation |
 
 ---
 
 ## Key Technical Achievements
 
 ### Orchestration Architecture
-- **Central registry** (`registry-v2.json`): Single source of truth for all 81 repos — status, dependencies, documentation, tier, promotion state
+- **Central registry** (`registry-v2.json`): Single source of truth for all 97 repos — status, dependencies, documentation, tier, promotion state
 - **Dependency validation**: Automated checks enforce no back-edges in I->II->III chain, no circular dependencies, transitive depth <= 4
 - **Promotion state machine**: Formal governance pipeline (LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED) with automated workflows
 
