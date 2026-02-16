@@ -152,6 +152,47 @@ The system is designed to:
 
 ---
 
+#### `preparing-ai-handoff-autonomous-agent-scaffolding.md`
+- **Size:** ~5 KB
+- **Format:** Structured markdown
+- **Role:** PRE-LAUNCH DESIGN — agent scaffolding and handoff protocols drafted before the organ system was deployed
+- **Key annotations:**
+  - Predates the deployed GitHub Actions workflows in `orchestration-start-here`
+  - Captures early thinking about how autonomous agents should receive context and hand off work
+  - Ingested from parent directory during corpus consolidation
+
+---
+
+#### `universal-orchestrator-architecture.md`
+- **Size:** ~14 KB
+- **Format:** Structured markdown
+- **Role:** EARLY ARCHITECTURE — universal orchestrator design before the ORGAN-IV specialization
+- **Key annotations:**
+  - Predates the Governor-vs-Engine split in `organ-iv-taxis-architecture.md`
+  - Represents the "monolithic orchestrator" phase before decomposition into dispatch/engine/memory components
+  - Ingested from parent directory during corpus consolidation
+
+---
+
+#### `gemini-session-2026-02-15-organ-iv-architecture.md`
+- **Size:** ~8 KB
+- **Format:** Multi-turn session transcript (Gemini CLI export)
+- **Role:** SOURCE MATERIAL — reasoning chain for the ORGAN-IV automation engine architecture
+- **Content spans 7 turns:**
+  1. **Turn 1:** How to stop Jules task sprawl — transition from reactive tasking to architectural orchestration
+  2. **Turn 2:** Building for automation — control plane architecture, cascading via webhooks
+  3. **Turn 3:** Where to build it — Governor (`.github`) vs Engine (`orchestration-start-here`) pattern
+  4. **Turn 4:** Integration with existing `organvm-iv-taxis/.github` repo
+  5. **Turn 5:** Full architecture worksheet — API contracts, schemas, event flows, runbooks
+  6. **Turn 6–7:** Transcript export and file location confirmation
+- **Key annotations:**
+  - This is the conversational genesis of `docs/implementation/organ-iv-taxis-architecture.md`
+  - Same class as `00-a` and `00-b`: captures reasoning process, not just conclusions
+  - Key design decisions: why Governor vs Engine, why cascading, how the 100-task daily cap informs design
+  - The "Token Governor" concept (daily_tasks_used < 100) originates here
+
+---
+
 ### Layer 1: Phase 1 Planning Documents (01–05)
 
 These 5 documents form a sequential planning toolkit. Each is self-contained but references adjacent documents.
@@ -526,6 +567,26 @@ These 5 documents form a sequential planning toolkit. Each is self-contained but
   - The audit script includes cycle detection (`find_cycles` function referenced but not fully implemented)
   - The POSSE distribution workflow uses Mastodon API + Discord webhook
   - Total workflow deployment: 5 workflows across ~44 repos (+ 14 local repos pending migration)
+
+---
+
+#### `organ-iv-taxis-architecture.md`
+- **Size:** ~6 KB
+- **Format:** Structured architecture spec (RFC-style)
+- **Role:** ORGAN-IV ARCHITECTURE — defines the automation engine's API contracts, cascade flows, and operational runbooks
+- **Content (7 sections):**
+  1. **Executive summary:** ORGAN-IV as the "Automation Engine" — orchestrating Jules Agent tasks with resource constraints
+  2. **System architecture:** Governor (`.github`), Engine (`orchestration-start-here`), Memory (`petasum-super-petasum`), Network (`universal-node-network`)
+  3. **API contracts:** Dispatch Payload schema (intent, target, constraints) and Task Result schema (status, artifacts, cascade trigger)
+  4. **Event flows:** The "Dependency Cascade" — ingest → gatekeeping → execution → verification → cascade analysis → propagation
+  5. **Operational runbooks:** Handling "Jules Sprawl" (emergency stop, analyze, refine, purge, resume in RESTRICTED mode) + versioning strategy (SemVer)
+  6. **Security protocols:** Webhook signing, ephemeral scoped tokens, immutable audit trail, circuit breaker (3 consecutive failures → repo lock)
+  7. **Future roadmap:** Self-healing cascades, cost optimization, swarm intelligence via `agent--claude-smith`
+- **Key annotations:**
+  - Extends `orchestration-system-v2.md` with ORGAN-IV-specific automation details
+  - The "Token Governor" pattern (daily_tasks_used < 100) addresses the billing overrun documented in MEMORY.md
+  - Genesis reasoning chain is in `docs/genesis/gemini-session-2026-02-15-organ-iv-architecture.md`
+  - Status: Draft/RFC v0.1.0 — not yet deployed
 
 ---
 

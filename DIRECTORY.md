@@ -30,6 +30,9 @@ Concise map of the corpus. For detailed per-file annotations, see [`docs/ANNOTAT
 | `00-b-local-remote-structure-transcript.md` | Follow-up session on local/remote repo structure (~150KB) |
 | `00-c-master-summary.md` | Executive summary distilling genesis into actionable plan |
 | `00-d-organ-system-audit.md` | Current-state repo inventory per organ |
+| `preparing-ai-handoff-autonomous-agent-scaffolding.md` | Pre-launch agent scaffolding and handoff protocols |
+| `universal-orchestrator-architecture.md` | Early universal orchestrator design (pre-ORGAN-IV split) |
+| `gemini-session-2026-02-15-organ-iv-architecture.md` | Gemini CLI session: ORGAN-IV automation engine design reasoning |
 
 ### `docs/planning/` — Layer 1: Phase 1 Planning Toolkit
 
@@ -57,6 +60,7 @@ Concise map of the corpus. For detailed per-file annotations, see [`docs/ANNOTAT
 | `orchestration-system-v2.md` | Governance rules, promotion state machine, dependency model |
 | `public-process-map-v2.md` | ORGAN-V content strategy and essay outlines |
 | `github-actions-spec.md` | 5 CI/CD workflow specifications (YAML + Python) |
+| `organ-iv-taxis-architecture.md` | ORGAN-IV automation engine architecture: API contracts, cascade flows, runbooks |
 
 ### `docs/evaluation/` — Layer 4: Cross-AI Validation & Review
 
@@ -92,9 +96,13 @@ Point-in-time outputs from CLI agent validation sessions. Contents are frozen.
 | `gemini-cli/` | Google Gemini CLI validation runs |
 | `github-copilot-cli/` | GitHub Copilot CLI validation runs |
 
-### `docs/archive/` — Frozen v1 Predecessors
+### `docs/archive/` — Frozen v1 Predecessors & Pre-Launch Staging
 
 Superseded by v2 documents at `docs/implementation/`. Do not modify.
+
+| Directory | Contents |
+|-----------|----------|
+| `org-iv-orchestration-staging/` | Pre-launch ORGAN-IV staging (33 files): agent stubs, dreamcatcher prototype, coordination protocols, flow patterns |
 
 ### `docs/memory/` — Project Constitution
 

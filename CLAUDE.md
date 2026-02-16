@@ -159,6 +159,35 @@ $WORLD_ROOT/realm/<realm_id>/org/<org_unit_id>/repo/<repo_unit_id>/
 
 Repo naming pattern: `[organ]-[type]--[specific-name]` (double-dash separates type from name).
 
+## Artifact Routing
+
+When completing tasks across the organ system, use this decision tree to determine where files should land:
+
+**Q1: Working repo (code/application)?**
+→ `~/Workspace/<github-org>/<repo>/`
+  e.g. `~/Workspace/organvm-i-theoria/recursive-engine--generative-entity/`
+
+**Q2: Governance/planning/architecture doc for the organ system?**
+→ This corpus (`~/Workspace/organvm-pactvm/ingesting-organ-document-structure/`), routed by document layer:
+
+| Artifact type | Destination |
+|---|---|
+| Raw transcript / session log | `docs/genesis/` |
+| Planning toolkit / audit | `docs/planning/` |
+| Strategy / roadmap | `docs/strategy/` |
+| Implementation spec / workflow | `docs/implementation/` |
+| Evaluation / review | `docs/evaluation/` |
+| Standard / methodology | `docs/standards/` |
+| ADR (short decision record) | `docs/adr/` |
+| Sprint spec | `docs/specs/<sprint>/` |
+| Application / submission | `docs/applications/` |
+| Essay draft | `docs/essays/` |
+
+**Q3: Unsorted / temporary / exploratory?**
+→ `~/Workspace/intake/` (universal catch-all; triage later)
+
+**NEVER** land files in: `~/` (home) or `~/Workspace/organvm-pactvm/` (parent dir — only `ingesting-organ-document-structure/` and `portfolio-merge-workspace/` belong there).
+
 ## Parent Directory Context
 
-This directory sits within `~/Workspace/organvm-pactvm/`, which contains sibling planning documents (PDFs, CSVs, manifesto documents) that predate this structured corpus. The parent is the broader project planning workspace; this subdirectory is the authoritative implementation plan.
+This directory sits within `~/Workspace/organvm-pactvm/`, which contains only `ingesting-organ-document-structure/` (this corpus) and `portfolio-merge-workspace/`. No loose files belong in the parent.
