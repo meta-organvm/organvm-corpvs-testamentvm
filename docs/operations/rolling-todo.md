@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (HERMETICUM: X4 + E5 completed, social post live, essay #36 written)
+**Last reviewed:** 2026-02-17 (RENOVATIO: metrics propagated to all living documents, M7-II completed, E3 script ready)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -88,19 +88,17 @@
 
 - [ ] **M3-II.** Refresh portfolio with post-construction evidence — 33 sprints, omega scorecard, live product
   - Site: `4444j99.github.io/portfolio/`
+  - **Partial:** RENOVATIO updated all 5 data JSON files (97 repos, 87 ACTIVE, 33 sprints, 36 essays). Remaining: visual verification after deploy, add omega scorecard page.
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md) · Omega: #15
-  - Recommended sprint: 32 RENOVATIO
 
 - [ ] **M6-II.** CI restructure — make CI fail when no tests, require explicit `skip_tests: true`
   - 17 disabled cron workflows remain disabled (Sprint 12 ILLUSTRATIO)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md), carried from E2G-I M4
 
-- [ ] **M7-II.** Registry cleanup: 3 repos archived on GitHub but marked ACTIVE — nexus--babel-alexandria-, 4-ivi374-F0Rivi4, cog-init-1-0-
-  - Either archive in registry or restore on GitHub
+- [x] **M7-II.** Registry cleanup: 3 repos archived on GitHub but marked ACTIVE — nexus--babel-alexandria-, 4-ivi374-F0Rivi4, cog-init-1-0- — completed 2026-02-17 (RENOVATIO: all 3 archived in registry, ACTIVE 90→87, ARCHIVED 7→10)
   - Source: Sprint 32 SENSORIA findings
 
-- [ ] **M8-II.** Resolve 5 ghost repos: registry entries with no GitHub remote — scalable-lore-expert, life-betterment-simulation, universal-waveform-explorer, shared-remembrance-gateway, card-trade-social
-  - Either create repos on GitHub or remove from registry
+- [x] **M8-II.** Resolve 5 ghost repos — completed 2026-02-17 (RENOVATIO: all 5 exist on GitHub and are active; "ghost" was false alarm from missing local clones, not missing remotes)
   - Source: Sprint 32 SENSORIA findings
 
 - [ ] **S1-II.** Complete 30-day soak test and generate report — clock started 2026-02-16, completes ~March 18
@@ -167,6 +165,10 @@
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
 - [x] **M4-II.** Improve seed.yaml coverage from 44% to 100% — completed 2026-02-17 (Sprint 32 SENSORIA — 82/82 eligible repos)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md)
+- [x] **M7-II.** Registry cleanup: 3 archived-on-GitHub repos marked ACTIVE — completed 2026-02-17 (RENOVATIO: ACTIVE 90→87, ARCHIVED 7→10)
+  - Source: Sprint 32 SENSORIA findings
+- [x] **M8-II.** Resolve 5 ghost repos — completed 2026-02-17 (all 5 exist on GitHub; "ghost" was false alarm from missing local clones)
+  - Source: Sprint 32 SENSORIA findings
 
 ---
 
@@ -188,7 +190,7 @@
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 
-**Total items:** 26 (1 READY, 13 TIME, 3 INCOME, 3 EXTERNAL, 6 COMPLETED)
+**Total items:** 26 (1 READY, 11 TIME, 3 INCOME, 3 EXTERNAL, 8 COMPLETED)
 
 ---
 
