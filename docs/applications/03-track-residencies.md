@@ -15,7 +15,7 @@ Residency evaluators assess:
 2. **Systemic thinking** — Does the artist think beyond individual pieces? (Governance model, dependency graph, state machine)
 3. **Community contribution** — Will this benefit the residency community? (ORGAN-VI, public documentation, reusable patterns)
 4. **Innovation** — Is this genuinely pushing boundaries? (Governance-as-artistic-medium is uncommon)
-5. **Communication** — Can the artist articulate their practice? (~386K+ words, 35 essays, clear system narrative)
+5. **Communication** — Can the artist articulate their practice? (~404K+ words, 36 essays, clear system narrative)
 
 ---
 
@@ -102,7 +102,7 @@ Residency evaluators assess:
 >
 > **Medium:** Software infrastructure, governance protocols, public documentation, generative systems
 >
-> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations with automated governance, public documentation (~386K+ words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
+> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations with automated governance, public documentation (~404K+ words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
 >
 > **Duration:** 5+ years of sustained practice
 >

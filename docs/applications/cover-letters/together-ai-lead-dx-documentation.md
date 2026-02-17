@@ -18,7 +18,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 - 97 documented repositories, each with a README written for external evaluators
 - A reading order and cross-document dependency map so newcomers know where to start
 - An annotated manifest providing per-file descriptions of every document in the corpus
-- 35 published essays explaining architectural decisions to non-technical audiences
+- 36 published essays explaining architectural decisions to non-technical audiences
 
 This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
@@ -36,7 +36,7 @@ I write code that teaches. Every script is documented with the "why," not just t
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** The documentation corpus itself — ~386K+ words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** The documentation corpus itself — ~404K+ words of structured technical writing (meta-organvm/organvm-corpvs-testamentvm)
 - **metasystem-master:** Meta-level architecture documentation showing system composition (organvm-ii-poiesis/metasystem-master)
 - **my-knowledge-base:** Knowledge management system design (organvm-i-theoria/my-knowledge-base)
 - **narratological-algorithmic-lenses:** Analytical writing applied to computational systems (organvm-i-theoria/narratological-algorithmic-lenses)

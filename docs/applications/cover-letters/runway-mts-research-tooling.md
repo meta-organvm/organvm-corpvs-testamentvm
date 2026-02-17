@@ -22,7 +22,7 @@ Runway is doing the same thing at a much larger scale. Your research teams need 
 
 **Product engineering across domains.** classroom-rpg-aetheria is an educational RPG system — game mechanics, narrative branching, state management — built as a complete product. your-fit-tailored is a personalization and recommendation system. These aren't side projects; they're full-stack products that demonstrate the TypeScript/React product engineering and UX design your job description values alongside infrastructure work.
 
-**Self-directed, pragmatic execution.** I shipped the entire eight-organ system — 386K words of documentation, 82+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint. I don't need a roadmap to know what to build next. I look at what researchers are struggling with, and I build the tool that fixes it.
+**Self-directed, pragmatic execution.** I shipped the entire eight-organ system — 404K+ words of documentation, 82+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint. I don't need a roadmap to know what to build next. I look at what researchers are struggling with, and I build the tool that fixes it.
 
 ## Evidence
 

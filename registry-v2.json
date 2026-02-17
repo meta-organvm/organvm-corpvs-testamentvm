@@ -267,8 +267,8 @@
         {
           "name": "nexus--babel-alexandria-",
           "org": "organvm-i-theoria",
-          "status": "ACTIVE",
-          "updated": "2026-02-12",
+          "status": "ARCHIVED",
+          "updated": "2026-02-17",
           "public": true,
           "description": "Theoria Linguae Machina — 50,000-word design document for a nine-layer rhetorical-linguistic operating system grounded in category theory, Peircean semiotics, and Aristotelian rhetoric",
           "documentation_status": "DEPLOYED",
@@ -276,11 +276,11 @@
           "dependencies": [
             "organvm-i-theoria/linguistic-atomization-framework"
           ],
-          "promotion_status": "LOCAL",
-          "tier": "standard",
-          "last_validated": "2026-02-12",
-          "note": "Silver Sprint README deployed 2026-02-10 (4,394 words). IGNITION Sprint: CI deployed (ci-minimal.yml), promoted DESIGN_ONLY→PRODUCTION 2026-02-12. Documentation-only repo — the 50K-word design document IS the deliverable.",
-          "implementation_status": "ACTIVE",
+          "promotion_status": "ARCHIVED",
+          "tier": "archive",
+          "last_validated": "2026-02-17",
+          "note": "Silver Sprint README deployed 2026-02-10 (4,394 words). IGNITION Sprint: CI deployed (ci-minimal.yml), promoted DESIGN_ONLY→PRODUCTION 2026-02-12. Documentation-only repo — the 50K-word design document IS the deliverable. RENOVATIO: archived on GitHub, status corrected.",
+          "implementation_status": "ARCHIVED",
           "ci_workflow": "ci-minimal.yml",
           "platinum_status": true
         },
@@ -307,35 +307,36 @@
         {
           "name": "4-ivi374-F0Rivi4",
           "org": "organvm-i-theoria",
-          "status": "ACTIVE",
-          "updated": "2026-02-12",
+          "status": "ARCHIVED",
+          "updated": "2026-02-17",
           "public": true,
           "description": "OS Ecosystem Cartridge — meta-framework for holistic software ecosystem architecture with seven governance pillars",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Meta-ontological framework",
           "dependencies": [],
-          "promotion_status": "LOCAL",
-          "tier": "standard",
-          "last_validated": "2026-02-12",
-          "note": "Silver Sprint README deployed 2026-02-10 (3,431 words). CONSOLIDATION-II: Python prototype deployed — cartridge, governance_pillars, ecosystem modules. Tests + CI green.",
-          "implementation_status": "ACTIVE",
+          "promotion_status": "ARCHIVED",
+          "tier": "archive",
+          "last_validated": "2026-02-17",
+          "note": "Silver Sprint README deployed 2026-02-10 (3,431 words). CONSOLIDATION-II: Python prototype deployed — cartridge, governance_pillars, ecosystem modules. Tests + CI green. RENOVATIO: archived on GitHub, status corrected.",
+          "implementation_status": "ARCHIVED",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
         {
           "name": "cog-init-1-0-",
           "org": "organvm-i-theoria",
-          "status": "ACTIVE",
+          "status": "ARCHIVED",
+          "updated": "2026-02-17",
           "public": true,
           "description": "Foundational cognitive system seed artifact",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Conceptual seed",
           "dependencies": [],
-          "promotion_status": "LOCAL",
-          "tier": "standard",
-          "last_validated": "2026-02-11",
-          "note": "Silver Sprint README deployed 2026-02-10 (2,718 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — seed, bootstrap, cognitive_model modules. Tests + CI green.",
-          "implementation_status": "ACTIVE",
+          "promotion_status": "ARCHIVED",
+          "tier": "archive",
+          "last_validated": "2026-02-17",
+          "note": "Silver Sprint README deployed 2026-02-10 (2,718 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — seed, bootstrap, cognitive_model modules. Tests + CI green. RENOVATIO: archived on GitHub, status corrected.",
+          "implementation_status": "ARCHIVED",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
         },
@@ -2082,8 +2083,8 @@
       "estimated_total_words": 320000
     },
     "implementation_status_distribution": {
-      "ACTIVE": 90,
-      "ARCHIVED": 7
+      "ACTIVE": 87,
+      "ARCHIVED": 10
     }
   }
 }

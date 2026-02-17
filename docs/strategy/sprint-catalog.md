@@ -50,7 +50,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 
 | Metric | Value |
 |--------|-------|
-| Registry entries | 97 (90 ACTIVE, 7 ARCHIVED) |
+| Registry entries | 97 (87 ACTIVE, 7 ARCHIVED) |
 | Repos not cloned locally | 0 (all 97 cloned; SYNCHRONIUM Sprint 18) |
 | Deployed essays | 33 on remote (updated Sprint 23: PUBLICATIO) |
 | Undeployed essay drafts | 0 ready to deploy (5 already-deployed drafts remain in `docs/essays/` as source copies) |
@@ -121,7 +121,7 @@ Registry reconciliation: 6 orphan repos registered (91→97), render-second-amen
 
 **Fix stale data across corpus documents.** *(Completed 2026-02-16 as part of Sprint 20 TRIPARTITUM. Originally catalog item 19, displaced by CONCORDIA.)*
 
-13 files updated with ~70 edits: all active documents now reflect 97 repos, 90 ACTIVE, 7 ARCHIVED, correct org counts, and ACTIVE terminology (not PRODUCTION). Includes CLAUDE.md, README.md, application materials, omega roadmap, operational docs, and evaluation docs.
+13 files updated with ~70 edits: all active documents now reflect 97 repos, 87 ACTIVE, 7 ARCHIVED, correct org counts, and ACTIVE terminology (not PRODUCTION). Includes CLAUDE.md, README.md, application materials, omega roadmap, operational docs, and evaluation docs.
 
 | Field | Value |
 |-------|-------|

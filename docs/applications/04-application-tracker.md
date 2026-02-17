@@ -70,7 +70,7 @@
 - **Cover letter:** docs/applications/cover-letters/together-ai-lead-dx-documentation.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
 - **Fit score:** 6/10 (revised from 4/10 — see [assessment](./09-qualification-assessment.md))
-- **Notes:** "Developer education" explicitly qualifies — 11yr teaching + ~386K+ words. Founding-team means culture-shaping, favors unconventional backgrounds. Gap: "Lead" title, no tech-company doc leadership. Teaching + writing is a legitimate angle. SF or NYC.
+- **Notes:** "Developer education" explicitly qualifies — 11yr teaching + ~404K+ words. Founding-team means culture-shaping, favors unconventional backgrounds. Gap: "Lead" title, no tech-company doc leadership. Teaching + writing is a legitimate angle. SF or NYC.
 
 ### 2.3b — HuggingFace: Developer Advocate Engineer, Hub/Enterprise
 - **Track:** Job
@@ -85,7 +85,7 @@
 - **Cover letter:** docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md
 - **Materials needed:** Resume (DONE), cover letter (DONE), writing samples (DONE)
 - **Fit score:** 5/10 (revised from 4/10 — see [assessment](./09-qualification-assessment.md))
-- **Notes:** No years requirement — purely skills-based. Content creation proven at scale (~386K+ words, 35 essays). HF hires 30-40% from community. Gap: no HF library contributions, no published ML tutorials. Skills-based evaluation favors non-traditional backgrounds. Remote-first.
+- **Notes:** No years requirement — purely skills-based. Content creation proven at scale (~404K+ words, 36 essays). HF hires 30-40% from community. Gap: no HF library contributions, no published ML tutorials. Skills-based evaluation favors non-traditional backgrounds. Remote-first.
 
 ### 2.3c — Cohere: Applied AI Engineer, Agentic Workflows
 - **Track:** Job

@@ -28,7 +28,7 @@ That's the same discipline Anthropic brings to AI safety: constraints that scale
 
 - **agentic-titan:** 1,095 tests, 18 phases, multi-agent orchestration (organvm-iv-taxis/agentic-titan)
 - **a-i-council--coliseum:** Multi-agent deliberation system — AI agents debating and synthesizing (organvm-ii-poiesis/a-i-council--coliseum)
-- **organvm-corpvs-testamentvm:** The governance corpus itself — ~386K+ words of constitutional architecture (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** The governance corpus itself — ~404K+ words of constitutional architecture (meta-organvm/organvm-corpvs-testamentvm)
 - **narratological-algorithmic-lenses:** Analytical frameworks applied to narrative systems (organvm-i-theoria/narratological-algorithmic-lenses)
 - **Portfolio:** https://4444j99.github.io/portfolio/
 

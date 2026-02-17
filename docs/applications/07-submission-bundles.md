@@ -57,13 +57,13 @@ Build the system that reveals the system.
 
 For five years I worked across theory, generative art, commercial products, and community projects without seeing how they related. The relationships were there — code reused between projects, ideas flowing from research to art to products — but they were invisible. When I formalized those relationships into the eight-organ model with explicit dependency rules and a machine-readable registry, patterns I'd never noticed became obvious. Theory *was* feeding art feeding commerce, but only some of the time, and the failures were as revealing as the successes.
 
-Building in public (ORGAN-V) compounds this. Writing ~386K+ words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
+Building in public (ORGAN-V) compounds this. Writing ~404K+ words of documentation forced me to articulate decisions I'd made intuitively. The Aetheria post-mortem — honestly documenting a project that traveled the full Theory→Art→Commerce pipeline and partially failed — taught me more about my practice than any success.
 
 The best way to gain perspective: make the invisible structure explicit, then be honest about what you see.
 
 ### Q3: "In 1-3 sentences, tell us about the project you are most proud of and why."
 
-I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~386K+ words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
+I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~404K+ words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -93,7 +93,7 @@ The eight-organ system is simultaneously: (a) working infrastructure that produc
 
 ### Project Description
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~386K+ words of public documentation including 35 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~404K+ words of public documentation including 36 published essays.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -192,7 +192,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 
 **What I'd Bring**
 
-*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 35 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
+*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 36 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
 *LLM and AI application experience.* agentic-titan is a multi-agent orchestration framework with 1,095 tests. recursive-engine implements a symbolic operating system with a custom DSL, 21 organ handlers, and 1,254 tests. metasystem-master coordinates these subsystems at the meta-level — the kind of architecture documentation that teaches by showing how pieces compose. I understand LLM APIs — tool-use, chaining, structured outputs, function calling — because I've built production systems that depend on them.
 
@@ -272,7 +272,7 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 
 **What I'd Bring**
 
-*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 35 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product.
+*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 36 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~404K+ words of structured technical writing that IS the product.
 
 *Developer-first instinct.* my-knowledge-base is a knowledge management system designed around how developers actually retrieve information. metasystem-master coordinates subsystems at the meta-level, and its documentation teaches by showing how pieces compose rather than listing features.
 
@@ -356,7 +356,7 @@ Runway is doing the same thing at a much larger scale. Your research teams need 
 
 *Product engineering across domains.* classroom-rpg-aetheria (educational RPG) and your-fit-tailored (personalization system) — full-stack products demonstrating TypeScript/React product engineering.
 
-*Self-directed, pragmatic execution.* I shipped the entire eight-organ system — 386K words of documentation, 82+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint.
+*Self-directed, pragmatic execution.* I shipped the entire eight-organ system — 404K+ words of documentation, 82+ CI/CD pipelines, 5 governance workflows, a machine-readable registry — in a single concentrated sprint.
 
 I build infrastructure that creative people actually want to use. I'd like to do that for Runway's research teams.
 

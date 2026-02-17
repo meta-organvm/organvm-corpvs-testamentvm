@@ -15,7 +15,7 @@ This positions you as someone who:
 2. **Ships production-quality infrastructure** — 82+ CI/CD workflows, 5 governance automations, automated health checks
 3. **Designs governance from first principles** — promotion state machine, dependency rules, constitutional constraints
 4. **Tests rigorously** — agentic-titan: 1,095 tests; recursive-engine: 1,254 tests
-5. **Documents thoroughly** — ~386K+ words of documentation is evidence of communication capacity
+5. **Documents thoroughly** — ~404K+ words of documentation is evidence of communication capacity
 
 ---
 
@@ -48,7 +48,7 @@ This positions you as someone who:
 - "I don't just build AI agents; I build the governance and infrastructure that makes them reliable"
 
 ### Runway / Together AI / Hugging Face — ML Infra or Developer Advocate
-**Why you fit:** These companies need people who can bridge technical depth with clear communication. Your ~386K+ words of documentation + working systems = evidence of both.
+**Why you fit:** These companies need people who can bridge technical depth with clear communication. Your ~404K+ words of documentation + working systems = evidence of both.
 
 **Lead with:**
 - The meta-system itself: 97 repos documented, organized, and automated
@@ -128,4 +128,4 @@ Q: "How do you test at scale?"
 A: 77+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
 
 Q: "How do you communicate technical decisions?"
-A: ~386K+ words of documentation. 35 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.
+A: ~404K+ words of documentation. 36 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.

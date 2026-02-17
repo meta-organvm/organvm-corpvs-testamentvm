@@ -21,8 +21,8 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 - 97 repository READMEs, each written for grant reviewers and hiring managers
 - A cross-document dependency map and reading order so newcomers never feel lost
 - An annotated manifest with per-file descriptions of the entire corpus
-- 35 published essays explaining architectural decisions to non-technical audiences
-- organvm-corpvs-testamentvm as the meta-governance document — ~386K+ words of structured technical writing that IS the product
+- 36 published essays explaining architectural decisions to non-technical audiences
+- organvm-corpvs-testamentvm as the meta-governance document — ~404K+ words of structured technical writing that IS the product
 
 This is the kind of content your role creates: docs, blog posts, tutorials, demos with code repos. I've done all of it at once.
 
@@ -34,7 +34,7 @@ This is the kind of content your role creates: docs, blog posts, tutorials, demo
 
 ## Evidence
 
-- **organvm-corpvs-testamentvm:** 386K-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
+- **organvm-corpvs-testamentvm:** 404K+-word documentation corpus, the complete architecture (meta-organvm/organvm-corpvs-testamentvm)
 - **my-knowledge-base:** Developer-oriented knowledge management design (organvm-i-theoria/my-knowledge-base)
 - **metasystem-master:** Meta-level systems documentation that teaches by composition (organvm-ii-poiesis/metasystem-master)
 - **.github org profiles:** Community health files and org-level technical communication across 8 orgs (organvm-i-theoria/.github)
