@@ -39,8 +39,10 @@
 
 - [ ] **X4.** Make first social media post — link AI-conductor essay on Mastodon/LinkedIn with 2-3 sentence intro (~15 min)
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
-- [ ] **E4.** Deploy essay drafts #34 and #35 — verify alignment with public-process `_posts/`, execute standard essay workflow
-  - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
+- [ ] **G2.** Configure Render deploy hook for life-my--midst--in — deploy service first (depends on X2), then copy deploy hook URL to `RENDER_DEPLOY_HOOK` secret
+  - Render free tier costs $0, no credit card required
+  - Enables auto-deploy on push to master
+  - Source: [autonomous-setup-guide](./autonomous-setup-guide.md) §4
 
 ---
 
@@ -58,6 +60,7 @@
 - [ ] **X2.** Deploy life-my--midst--in to Render (~1-2 hrs)
   - Guide: `~/Workspace/organvm-iii-ergon/life-my--midst--in/DEPLOY.md`
   - Env vars: `DATABASE_URL` (Neon) + `JWT_SECRET`
+  - **Status:** `render.yaml` fixed for free tier (removed worker + Redis). Delete old Render blueprint, then fresh deploy from updated yaml.
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #8
 
 - [ ] **X3.** Submit 2 job applications (~2 hrs) — Together AI Lead DX (6/10), HuggingFace Dev Advocate (5/10)
@@ -116,10 +119,6 @@
 
 ## NEEDS INCOME — Requires Spending Money
 
-- [ ] **G2.** Render hosting for life-my--midst--in — deploy hook secret (`RENDER_DEPLOY_HOOK`)
-  - Enables auto-deploy on push to master
-  - Source: [autonomous-setup-guide](./autonomous-setup-guide.md) §4
-
 - [ ] **G3.** Ghost newsletter hosting (~$9/mo or self-host) — enables email distribution channel
   - Source: [autonomous-setup-guide](./autonomous-setup-guide.md) §6
 
@@ -157,6 +156,8 @@
 
 - [x] **E1.** Refresh operational cadence Part IV — completed 2026-02-16 (Sprint 28 RECOGNITIO)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md)
+- [x] **E4.** Deploy essay drafts #34 and #35 — completed 2026-02-16 (Sprint 27 BETA-VITAE)
+  - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
 
 ---
 
@@ -172,12 +173,12 @@
 
 | Source Document | Items Drawn | Coverage |
 |----------------|-------------|----------|
-| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1 completed) | 100% of open items |
+| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E4 completed) | 100% of open items |
 | [`autonomous-setup-guide.md`](./autonomous-setup-guide.md) | 3 of 3 PENDING/OPTIONAL | 100% |
 | [`operational-cadence.md`](./operational-cadence.md) Part IV | Subsumed by e2g-ii items | Cross-referenced |
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 
-**Total open items:** 23 (2 READY, 13 TIME, 4 INCOME, 3 EXTERNAL, 1 COMPLETED)
+**Total items:** 24 (2 READY, 14 TIME, 3 INCOME, 3 EXTERNAL, 2 COMPLETED)
 
 ---
 
