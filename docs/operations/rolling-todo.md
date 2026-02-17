@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (OPERATIO batch: M4-II + E2 completed, M7-II + M8-II added)
+**Last reviewed:** 2026-02-17 (HERMETICUM: X4 + E5 completed, social post live, essay #36 written)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -37,8 +37,7 @@
 
 ## READY — No Blockers, Just Needs Doing
 
-- [ ] **X4.** Make first social media post — link AI-conductor essay on Mastodon/LinkedIn with 2-3 sentence intro (~15 min)
-  - **DISTRIBUTIO (Sprint 30) progress:** Backfill pipeline active — will auto-post 3 essays/week starting next cron run. Manual first post still recommended for X4 credit (human touch).
+- [x] **X4.** Make first social media post — completed 2026-02-17 (HERMETICUM session: Mastodon + Discord via distribution pipeline, issue #45)
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
 - [ ] **G2.** Configure Render deploy hook for life-my--midst--in — deploy service first (depends on X2), then copy deploy hook URL to `RENDER_DEPLOY_HOOK` secret
   - Render free tier costs $0, no credit card required
@@ -74,7 +73,7 @@
   - URL: https://creativefellowship.google/ · Materials ready
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #14
 
-- [ ] **E5.** Write "Construction Addiction" essay (#36) — converts the SP2-II shatter point into a narrative strength
+- [x] **E5.** Write "Construction Addiction" essay (#36) — completed 2026-02-17 (HERMETICUM session: ~2600 words, auto-deploys via essay-deploy pipeline)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
 
 - [ ] **G1.** Set up LinkedIn developer token (~30 min, OAuth flow) — enables automated LinkedIn distribution
@@ -162,6 +161,10 @@
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #1, #3, #17
 - [x] **E4.** Deploy essay drafts #34 and #35 — completed 2026-02-16 (Sprint 27 BETA-VITAE)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
+- [x] **X4.** Make first social media post — completed 2026-02-17 (HERMETICUM: Mastodon + Discord, distribution issue #45)
+  - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
+- [x] **E5.** Write "Construction Addiction" essay (#36) — completed 2026-02-17 (HERMETICUM: ~2600 words, SP2-II→narrative)
+  - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
 - [x] **M4-II.** Improve seed.yaml coverage from 44% to 100% — completed 2026-02-17 (Sprint 32 SENSORIA — 82/82 eligible repos)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md)
 
@@ -185,7 +188,7 @@
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 
-**Total items:** 26 (2 READY, 14 TIME, 3 INCOME, 3 EXTERNAL, 4 COMPLETED)
+**Total items:** 26 (1 READY, 13 TIME, 3 INCOME, 3 EXTERNAL, 6 COMPLETED)
 
 ---
 

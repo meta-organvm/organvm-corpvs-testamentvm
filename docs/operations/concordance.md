@@ -55,17 +55,17 @@ Source: [`rolling-todo.md`](./rolling-todo.md), [`e2g-ii-action-items.md`](../ev
 | X1 | Submit Google Creative Lab Five application | TIME | #5, feeds #7 | OPEN |
 | X2 | Deploy life-my--midst--in to Render | TIME | #8 | OPEN |
 | X3 | Submit 2 job applications (Together AI, HuggingFace) | TIME | #5, feeds #7 | OPEN |
-| X4 | Make first social media post | READY | feeds #7, #13 | OPEN |
+| X4 | Make first social media post | READY | feeds #7, #13 | COMPLETED (2026-02-17) |
 
 ### P1 — Strengthen External Engagement
 
 | ID | Definition | Constraint | Omega | Status |
 |----|-----------|------------|-------|--------|
 | E1 | Refresh operational cadence Part IV | — | — | COMPLETED (2026-02-16) |
-| E2 | Enable non-dry-run soak test monitoring | TIME | #1, #3, #17 | OPEN |
+| E2 | Enable non-dry-run soak test monitoring | TIME | #1, #3, #17 | COMPLETED (2026-02-17) |
 | E3 | Submit Google Creative Fellowship (deadline Mar 18) | TIME | #5, feeds #14 | OPEN |
-| E4 | Deploy essay drafts #34 and #35 | READY | #6 | OPEN |
-| E5 | Write "Construction Addiction" essay (#36) | TIME | #6 | OPEN |
+| E4 | Deploy essay drafts #34 and #35 | READY | #6 | COMPLETED (2026-02-16) |
+| E5 | Write "Construction Addiction" essay (#36) | TIME | #6 | COMPLETED (2026-02-17) |
 
 ### P2 — System Quality
 
@@ -74,7 +74,7 @@ Source: [`rolling-todo.md`](./rolling-todo.md), [`e2g-ii-action-items.md`](../ev
 | M1-II | Recruit and run first stranger test | TIME | #2, #4, #16 | OPEN |
 | M2-II | Stripe payment integration for life-my--midst--in | INCOME | #9, #10 | OPEN |
 | M3-II | Refresh portfolio with post-construction evidence | TIME | #15 | OPEN |
-| M4-II | Improve seed.yaml coverage 44% → 60%+ | TIME | — | OPEN |
+| M4-II | Improve seed.yaml coverage 44% → 100% | TIME | — | COMPLETED (2026-02-17) |
 | M5-II | Set up monitoring/alerting for life-my--midst--in | INCOME | — | OPEN |
 | M6-II | CI restructure — fail on no tests | TIME | — | OPEN |
 
@@ -123,7 +123,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | NOT MET |
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | NOT MET |
 
-**Scorecard:** 1/17 met (as of 2026-02-17, Sprint 28 RECOGNITIO)
+**Scorecard:** 1/17 met (as of 2026-02-17, Sprint 33 OPERATIO). X4 completed (social post live), feeds #13.
 
 ---
 
@@ -254,6 +254,7 @@ Source: [`docs/specs/sprints/`](../specs/sprints/) (spec files), [`there+back-ag
 | 30 | DISTRIBUTIO | 2026-02-17 | Essay distribution pipeline (backfill, metadata) | COMPLETED |
 | 31 | FUNDAMEN | 2026-02-17 | Infrastructure hardening V/VI/VII/Meta (85+ tests) | COMPLETED |
 | 32 | SENSORIA | 2026-02-17 | Perception layer (100% seed.yaml, stale-detection) | COMPLETED |
+| 33 | OPERATIO | 2026-02-17 | Autonomous operations batch (CLI, dashboard, essay-deploy) | COMPLETED |
 
 ---
 
