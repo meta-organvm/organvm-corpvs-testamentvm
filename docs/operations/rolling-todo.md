@@ -95,6 +95,19 @@
   - 17 disabled cron workflows remain disabled (Sprint 12 ILLUSTRATIO)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md), carried from E2G-I M4
 
+- [ ] **M9-II.** Fix fetch-familiar-friends CI — `@types/react` v18 vs `@types/react-dom` v19 peer dependency conflict (~30 min) · [issue #200](https://github.com/organvm-iii-ergon/fetch-familiar-friends/issues/200)
+  - `package.json` has `@types/react@"^18.2.15"` but `@types/react-dom@"^19.2.3"` — peer requires `@types/react@"^19.2.0"`
+  - Fix: align `@types/react` to `^19.2.0`, or downgrade `@types/react-dom` to v18 line
+  - Affects: `code-quality.yml`, `deploy-pages.yml`, `performance.yml` (all fail at `npm ci`)
+  - `ci.yml` passes (may use different install flags)
+  - Source: AMPLIFICATIO CI investigation · Omega: #1, #17
+
+- [ ] **M10-II.** Fix life-my--midst--in CI — ESLint 10 incompatibility + design-system coverage gap (~1-2 hrs) · [issue #91](https://github.com/organvm-iii-ergon/life-my--midst--in/issues/91)
+  - **ESLint**: `eslint-plugin-react@7.37.5` uses removed `context.getFilename()` API from ESLint 10. Fix: downgrade to ESLint 9.x or upgrade plugin to v8+ with flat config support.
+  - **Coverage**: `design-system` package at 33% lines / 0% functions vs 75% threshold. Fix: add tests or lower thresholds in vitest config.
+  - Affects: `test.yml`, `ci-cd.yml`, `auto-deploy.yml` (all failing)
+  - Source: AMPLIFICATIO CI investigation · Omega: #1, #8, #17
+
 - [x] **M7-II.** Registry cleanup: 3 repos archived on GitHub but marked ACTIVE — nexus--babel-alexandria-, 4-ivi374-F0Rivi4, cog-init-1-0- — completed 2026-02-17 (RENOVATIO: all 3 archived in registry, ACTIVE 90→87, ARCHIVED 7→10)
   - Source: Sprint 32 SENSORIA findings
 
@@ -191,9 +204,10 @@
 | [`operational-cadence.md`](./operational-cadence.md) Part IV | Subsumed by e2g-ii items | Cross-referenced |
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
+| AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 26 (1 READY, 11 TIME, 3 INCOME, 3 EXTERNAL, 8 COMPLETED)
-**AMPLIFICATIO session (2026-02-17):** S4-II partial (essay #37 done), S3-II partial (CONTRIBUTING.md + 5 issues), S6-II partial (2 proposals drafted), essays 38→40
+**Total items:** 28 (1 READY, 13 TIME, 3 INCOME, 3 EXTERNAL, 8 COMPLETED)
+**AMPLIFICATIO session (2026-02-17):** S4-II partial (essay #37 done), S3-II partial (CONTRIBUTING.md + 5 issues), S6-II partial (2 proposals drafted), essays 38→40, M9-II+M10-II added (deferred CI fixes)
 **Last session:** AMPLIFICATIO (2026-02-17) — 12 ADRs, 2 essays (#39-40), CI fixes, CONTRIBUTING.md, 5 good-first-issues, soak report template, 2 conference proposals
 
 ---
