@@ -38,6 +38,7 @@
 ## READY — No Blockers, Just Needs Doing
 
 - [ ] **X4.** Make first social media post — link AI-conductor essay on Mastodon/LinkedIn with 2-3 sentence intro (~15 min)
+  - **DISTRIBUTIO (Sprint 30) progress:** Backfill pipeline active — will auto-post 3 essays/week starting next cron run. Manual first post still recommended for X4 credit (human touch).
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
 - [ ] **G2.** Configure Render deploy hook for life-my--midst--in — deploy service first (depends on X2), then copy deploy hook URL to `RENDER_DEPLOY_HOOK` secret
   - Render free tier costs $0, no credit card required
