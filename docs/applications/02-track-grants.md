@@ -85,7 +85,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~386,000+ words of public documentation. All eight organs are currently operational.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]

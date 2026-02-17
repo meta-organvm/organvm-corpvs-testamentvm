@@ -71,7 +71,7 @@ This positions you as someone who:
 > - Automated dependency validation enforcing no circular dependencies and no back-edges
 > - A formal promotion state machine with 5 GitHub Actions workflows for autonomous governance
 > - 77+ CI/CD pipelines and automated monthly health audits
-> - ~386,000+ words of documentation across the entire system
+> - ~404K+ words of documentation across the entire system
 >
 > Two projects demonstrate particular depth:
 >

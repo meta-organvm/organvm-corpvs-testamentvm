@@ -18,7 +18,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 |-----------|-------|
 | Total repositories | 97 |
 | GitHub organizations | 8 |
-| Documentation | ~386,000+ words |
+| Documentation | ~404K+ words |
 | CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
 | Meta-system essays | 36 published (~132K words) |

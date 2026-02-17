@@ -100,9 +100,9 @@ def load_manual_section(output_path: Path) -> dict:
     """Load the manual section from the existing metrics file, if any."""
     default_manual = {
         "_note": "Edit these by hand. calculate-metrics.py preserves this section.",
-        "total_words": "~386,000+",
-        "total_words_numeric": 386000,
-        "total_words_short": "386K+",
+        "total_words": "~404,000+",
+        "total_words_numeric": 404000,
+        "total_words_short": "404K+",
         "code_files": 3586,
         "test_files": 736,
         "repos_with_tests": 56,

@@ -226,7 +226,7 @@ def generate_metrics_snapshot(metrics):
         f"| Dependency edges | {c['dependency_edges']} |",
         "| Back-edge violations | 0 |",
         f"| Published essays | {c['published_essays']} |",
-        f"| Total documentation | {m.get('total_words', '~386,000+')} |",
+        f"| Total documentation | {m.get('total_words', '~404,000+')} |",
         f"| Sprints completed | {c['sprints_completed']} |",
         "",
         "### Per-Organ Distribution",
