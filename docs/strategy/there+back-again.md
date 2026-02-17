@@ -4,7 +4,7 @@
 **Author:** @4444j99 (AI-conductor model: human directs, AI generates, human reviews)
 **Status:** ACTIVE — Living document, updated as horizons advance
 **Supersedes:** `roadmap-there-and-back-again.md` (historical; covers Phase -1 through Launch + Gap-Fill)
-**Companions:** [`sprint-catalog.md`](./sprint-catalog.md) (exhaustive work inventory), [`operational-cadence.md`](../operations/operational-cadence.md) (daily/weekly rhythm)
+**Companions:** [`sprint-catalog.md`](./sprint-catalog.md) (exhaustive work inventory), [`operational-cadence.md`](../operations/operational-cadence.md) (daily/weekly rhythm), [`rolling-todo.md`](../operations/rolling-todo.md) (active queue)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
 ---
@@ -385,15 +385,16 @@ The most dangerous failure mode is not that a single horizon stalls — it is th
 
 ### The Governance Triangle
 
-This roadmap is one of three documents that govern the post-construction era. Each answers a different question:
+This roadmap is one of four documents that govern the post-construction era. Each answers a different question:
 
 | Document | Question | Type |
 |----------|----------|------|
 | **This document** (`there+back-again.md`) | *Where are we going?* | Destination — 5 horizons, 17 criteria |
 | [`operational-cadence.md`](../operations/operational-cadence.md) | *What do we do each day/week/month?* | Rhythm — weekly template, anti-patterns |
 | [`sprint-catalog.md`](./sprint-catalog.md) | *What could we work on?* | Menu — 60 work packages, effort estimates |
+| [`rolling-todo.md`](../operations/rolling-todo.md) | *What are we actually doing next?* | Queue — constraint-sorted deferred work |
 
-The roadmap defines success criteria. The cadence defines the rhythm for pursuing them. The catalog inventories every addressable task without committing to any. Tasks are pulled from the catalog into the weekly cadence; the roadmap determines whether they matter.
+The roadmap defines success criteria. The cadence defines the rhythm for pursuing them. The catalog inventories every addressable task without committing to any. The rolling TODO is the active work queue — items pulled from the catalog and e2g-ii audit, sorted by what's blocking them (time, income, external dependency). Tasks flow from the catalog into the TODO; the cadence determines when they get done; the roadmap determines whether they matter.
 
 ---
 

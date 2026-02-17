@@ -141,6 +141,25 @@ All org references in docs, registry, and workflows use the resolved instance na
 - The project constitution is at `docs/memory/constitution.md` — immutable principles (Articles I-VI) and post-cross-validation amendments (A-D) that govern all specifications and quality gates.
 - Feature specifications live in `docs/specs/` — each deliverable (e.g., `docs/specs/bronze-sprint/`) contains a `spec.md` (requirements and success criteria) and `checklists/requirements.md` (validation checklist). The SDD methodology is defined in `docs/standards/11-specification-driven-development.md`.
 
+## Invocation System
+
+The governance corpus uses short IDs across 6 namespaces. When the user references an ID (e.g., "what's X1?", "show me AP-3", "which items advance #8"), look up context in `docs/operations/concordance.md`.
+
+| Prefix | Namespace | Source | Example |
+|--------|-----------|--------|---------|
+| X1–X4 | TODO: P0 hermetic seal | rolling-todo.md / e2g-ii | X1 = Submit Creative Lab Five |
+| E1–E5 | TODO: P1 engagement | rolling-todo.md / e2g-ii | E3 = Google Creative Fellowship |
+| M1-II–M6-II | TODO: P2 quality | rolling-todo.md / e2g-ii | M2-II = Stripe integration |
+| S1-II–S6-II | TODO: P3 strategic | rolling-todo.md / e2g-ii | S2-II = Host first salon |
+| G1–G3 | TODO: setup guide | rolling-todo.md | G2 = Render hosting |
+| #1–#17 | Omega criteria | there+back-again.md | #8 = Product live |
+| H1–H5 | Horizons | there+back-again.md | H3 = Generate Revenue |
+| AP-1–AP-7 | Anti-patterns | operational-cadence.md | AP-1 = Don't start another sprint |
+| W/SP/BS/LC/BL/ET/LO-II | E2G-II findings | e2g-ii-action-items.md | W1-II = Zero external contact |
+| 01–29 | Completed sprints | docs/specs/sprints/ | 29 = AUTOMATA |
+
+CLI: `python3 scripts/invoke.py <ID>` for terminal lookup. See `docs/operations/concordance.md` for the full symbol table.
+
 ## AI-Conductor Workflow Model
 
 This corpus operates on an **AI-conductor model**: human directs, AI generates volume, human reviews and refines. Key implications for working with these documents:

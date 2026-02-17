@@ -16,79 +16,74 @@ Content Generation → Distribution → Social Presence → Health Monitoring
        └── System Pulse (metrics, soak test) ←─────────────────┘
 ```
 
-This pipeline requires one-time secret configuration to activate. Once configured, the system operates without human intervention.
+**Core secrets are configured.** The distribution pipeline (Mastodon, Discord, cross-org) has been active since launch day (2026-02-11). Only the Render deploy hook and optional LinkedIn/Ghost remain.
+
+### Secret Status Summary
+
+| Secret | Repo | Status | Date |
+|--------|------|--------|------|
+| `CROSS_ORG_TOKEN` | orchestration-start-here | CONFIGURED | 2026-02-13 |
+| `CROSS_ORG_TOKEN` | corpvs-testamentvm | CONFIGURED | 2026-02-17 |
+| `MASTODON_TOKEN` | orchestration-start-here | CONFIGURED | 2026-02-11 |
+| `DISCORD_WEBHOOK` | orchestration-start-here | CONFIGURED | 2026-02-11 |
+| `RENDER_DEPLOY_HOOK` | life-my--midst--in | PENDING | — |
+| `LINKEDIN_TOKEN` | orchestration-start-here | OPTIONAL | — |
+| `GHOST_ADMIN_KEY` | orchestration-start-here | OPTIONAL | — |
 
 ## Prerequisites
 
 - GitHub CLI (`gh`) authenticated with org admin access
 - Access to 1Password for org-wide tokens
 
-## 1. CROSS_ORG_TOKEN (Required — may already exist)
+## 1. CROSS_ORG_TOKEN (Required)
 
-**Where:** `organvm-iv-taxis/orchestration-start-here` repo secrets
+**Where:** `organvm-iv-taxis/orchestration-start-here` + `meta-organvm/organvm-corpvs-testamentvm` repo secrets
 **Used by:** essay-monitor, distribute-content, soak-test-daily, system-pulse-weekly, metrics-refresh
 
-This token enables cross-org GitHub API calls. It may already be configured from the SYNCHRONIUM sprint.
+This token enables cross-org GitHub API calls.
+
+| Repo | Status | Date |
+|------|--------|------|
+| `orchestration-start-here` | CONFIGURED | 2026-02-13 |
+| `corpvs-testamentvm` | CONFIGURED | 2026-02-17 |
 
 ```bash
-# Verify it exists
+# Verify both exist
 gh secret list --repo organvm-iv-taxis/orchestration-start-here | grep CROSS_ORG_TOKEN
+gh secret list --repo meta-organvm/organvm-corpvs-testamentvm | grep CROSS_ORG_TOKEN
 
-# If missing, set from your gh auth token
+# If either is missing, set from your gh auth token
 gh secret set CROSS_ORG_TOKEN \
-  --repo organvm-iv-taxis/orchestration-start-here \
+  --repo <REPO> \
   --body "$(gh auth token)"
 ```
 
-Also needed in corpvs-testamentvm for soak test and metrics workflows:
-
-```bash
-gh secret set CROSS_ORG_TOKEN \
-  --repo meta-organvm/organvm-corpvs-testamentvm \
-  --body "$(gh auth token)"
-```
-
-## 2. Mastodon (Social Distribution)
+## 2. Mastodon (Social Distribution) — CONFIGURED
 
 **Where:** `organvm-iv-taxis/orchestration-start-here` repo secrets
 **Used by:** distribute-content.yml
+**Status:** CONFIGURED on 2026-02-11. Verified HTTP 200 on launch day.
 
-### Steps
-
-1. Create a Mastodon account at [mastodon.social](https://mastodon.social) (or your preferred instance)
-2. Go to **Preferences → Development → New Application**
-3. Name: `organvm-distributor`
-4. Scopes: `write:statuses`
-5. Save and copy the **Access Token**
+No action needed. If the token ever needs rotation:
 
 ```bash
 gh secret set MASTODON_TOKEN \
   --repo organvm-iv-taxis/orchestration-start-here \
-  --body "YOUR_ACCESS_TOKEN"
-
-# Optional: set instance if not mastodon.social
-gh variable set MASTODON_INSTANCE \
-  --repo organvm-iv-taxis/orchestration-start-here \
-  --body "https://mastodon.social"
+  --body "YOUR_NEW_ACCESS_TOKEN"
 ```
 
-## 3. Discord (Notifications)
+## 3. Discord (Notifications) — CONFIGURED
 
 **Where:** `organvm-iv-taxis/orchestration-start-here` repo secrets
 **Used by:** distribute-content.yml
+**Status:** CONFIGURED on 2026-02-11. Verified HTTP 204 on launch day.
 
-### Steps
-
-1. Create a Discord server (or use existing)
-2. Go to **Server Settings → Integrations → Webhooks → New Webhook**
-3. Name: `organvm-updates`
-4. Choose the channel for updates
-5. Copy the **Webhook URL**
+No action needed. If the webhook ever needs rotation:
 
 ```bash
 gh secret set DISCORD_WEBHOOK \
   --repo organvm-iv-taxis/orchestration-start-here \
-  --body "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
+  --body "https://discord.com/api/webhooks/YOUR_NEW_WEBHOOK_URL"
 ```
 
 ## 4. Render Deploy Hook (Auto-Deploy)

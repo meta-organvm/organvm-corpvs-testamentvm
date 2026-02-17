@@ -3,7 +3,7 @@
 **Created:** 2026-02-16
 **Author:** @4444j99 (AI-conductor model: human directs, AI generates, human reviews)
 **Status:** REFERENCE — This document is a static inventory, not a living roadmap
-**Companions:** [`there+back-again.md`](./there+back-again.md) (omega roadmap), [`operational-cadence.md`](../operations/operational-cadence.md) (daily/weekly rhythm)
+**Companions:** [`there+back-again.md`](./there+back-again.md) (omega roadmap), [`operational-cadence.md`](../operations/operational-cadence.md) (daily/weekly rhythm), [`rolling-todo.md`](../operations/rolling-todo.md) (active queue)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
 ---
@@ -27,7 +27,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 - A reference for weekly planning sessions (operational cadence Part I, Friday retrospective)
 - Evidence that the system's scope is understood and bounded
 - A menu from which individual tasks are pulled into the weekly rhythm
-- One leg of a governance triangle: roadmap (destination) + cadence (rhythm) + catalog (menu)
+- One leg of a governance quadrilateral: roadmap (destination) + cadence (rhythm) + catalog (menu) + rolling TODO (queue)
 
 ### Conventions
 

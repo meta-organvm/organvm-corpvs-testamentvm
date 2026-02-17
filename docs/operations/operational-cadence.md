@@ -3,7 +3,7 @@
 **Created:** 2026-02-16
 **Author:** @4444j99 (AI-conductor model: human directs, AI generates, human reviews)
 **Status:** ACTIVE — Living document, updated as cadence evolves
-**Companions:** [`minimum-viable-operations.md`](./minimum-viable-operations.md) (maintenance), [`key-workflows.md`](./key-workflows.md) (procedures), [`there+back-again.md`](../strategy/there+back-again.md) (omega roadmap), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (work inventory)
+**Companions:** [`minimum-viable-operations.md`](./minimum-viable-operations.md) (maintenance), [`key-workflows.md`](./key-workflows.md) (procedures), [`there+back-again.md`](../strategy/there+back-again.md) (omega roadmap), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (work inventory), [`rolling-todo.md`](./rolling-todo.md) (active queue), [`concordance.md`](./concordance.md) (ID lookup)
 **Governs:** Daily/weekly/monthly creative work rhythm (not maintenance — see MVO for that)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -27,7 +27,7 @@ This is a **playbook, not a philosophy paper.** It has six parts:
 
 Parts I–III are **durable templates** — they survive beyond the first month and define steady-state rhythm. Part IV is **concrete NOW** — specific actions with URLs, commands, and deadlines that expire. Part V is **therapy** — the uncomfortable truths that prevent construction addiction from consuming the creative work the system was built to protect.
 
-> **Governance triangle:** This document is one of three that govern the post-construction era. The omega roadmap ([`there+back-again.md`](../strategy/there+back-again.md)) defines *where we're going* (17 criteria across 5 horizons). The sprint catalog ([`sprint-catalog.md`](../strategy/sprint-catalog.md)) inventories *everything we could work on* (60 work packages). This document defines *the daily and weekly rhythm* for pulling tasks from the catalog toward the criteria. See AP-1 for why the rhythm matters more than the inventory.
+> **Governance quadrilateral:** This document is one of four that govern the post-construction era. The omega roadmap ([`there+back-again.md`](../strategy/there+back-again.md)) defines *where we're going* (17 criteria across 5 horizons). The sprint catalog ([`sprint-catalog.md`](../strategy/sprint-catalog.md)) inventories *everything we could work on* (60 work packages). The rolling TODO ([`rolling-todo.md`](./rolling-todo.md)) is the *active work queue* — what we're actually doing next, sorted by constraint (time, income, external dependency). This document defines *the daily and weekly rhythm* for pulling tasks from the TODO toward the criteria. See AP-1 for why the rhythm matters more than the inventory.
 
 ---
 
@@ -103,10 +103,10 @@ The weekly template rotates organ focus by day. This prevents context-switching 
 |-------|------|----------|
 | Morning | 60 min | Weekly system review: check all workflow runs, merge Dependabot PRs, review soak test data |
 | Midday | 30 min | Omega checklist review: which of the 17 criteria advanced this week? |
-| Afternoon | 60 min | Plan next week: choose Monday's theory/art topic, Tuesday's product task, Wednesday's essay target |
+| Afternoon | 60 min | Review [`rolling-todo.md`](./rolling-todo.md): move completed items to archive, add new items discovered during the week. Plan next week: choose Monday's theory/art topic, Tuesday's product task, Wednesday's essay target |
 | Evening | 15 min | Weekly reflection: what worked, what didn't, what's blocked. Commit soak test data. |
 
-**Friday deliverables:** All workflow runs verified green. Next week planned. Weekly soak test data committed. One sentence per omega criterion on whether it advanced.
+**Friday deliverables:** All workflow runs verified green. Rolling TODO reviewed and updated. Next week planned. Weekly soak test data committed. One sentence per omega criterion on whether it advanced.
 
 **Why Friday:** Friday is natural review-and-plan territory. It prevents the "what should I work on Monday?" uncertainty that leads to doomscrolling or infrastructure tinkering. The omega checklist review keeps long-term goals visible without dominating the creative week.
 
