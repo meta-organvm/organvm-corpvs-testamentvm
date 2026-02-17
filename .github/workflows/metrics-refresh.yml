@@ -1,0 +1,48 @@
+name: Metrics Refresh
+
+# Weekly auto-refresh of system-metrics.json and propagation
+# into whitelisted documentation files.
+
+on:
+  schedule:
+    # Monday at 06:00 UTC (before orchestrator-agent at 07:00)
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Calculate metrics
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/calculate-metrics.py
+
+      - name: Propagate metrics
+        run: |
+          python3 scripts/propagate-metrics.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No metrics changes to commit"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "chore: auto-refresh metrics ${DATE}"
+            git push
+          fi

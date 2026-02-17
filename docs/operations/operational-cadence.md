@@ -308,202 +308,142 @@ Concrete next-essay targets, updated at each monthly review. Deploy on Wednesday
 
 ## PART IV: IMMEDIATE PRIORITIES
 
-> **Staleness note (2026-02-16):** The concrete actions below were written at Checkpoint Alpha before any post-construction work was executed. Some items are already complete (e.g., the AI-conductor essay was deployed 2026-02-11 during the Gold Sprint, not pending as listed). Fit scores and priority rankings should be read alongside the current application tracker (`docs/applications/04-application-tracker.md`) and the ORGAN-III beta assessment (`docs/implementation/organ-iii-beta-assessment.md`), which supersede the estimates here. The durable templates in Parts I–III remain current; this section should be refreshed at the first monthly review (Week 4, March 2026).
+> **Refreshed: 2026-02-16 (E2G-II, Sprint 28 RECOGNITIO).** Replaces Checkpoint Alpha content. All items below reflect post-construction state: 28 sprints complete, omega scorecard 1/17, zero external contact. The durable templates in Parts I–III remain current.
 
 This section contains time-bound actions that expire. It should be updated at each monthly review.
 
-**Current as of:** 2026-02-16 (Checkpoint Alpha)
+**Current as of:** 2026-02-16 (E2G-II refresh)
 
-### THIS WEEK (Feb 17-21, 2026)
+### ALREADY COMPLETE (since Checkpoint Alpha)
 
-These actions are ordered by ROI. Do them in this order. Do not rearrange to do the comfortable thing first.
+These items from the original Part IV are now done:
+- AI-conductor essay deployed (2026-02-11, criterion #6 MET)
+- ORGAN-III beta candidate selected: **life-my--midst--in** (Sprint 25 INSPECTIO)
+- Beta product provisioned: 44 tables on Neon, 291 tests pass, DEPLOY.md written (Sprint 27 BETA-VITAE)
+- Product brief written: `docs/implementation/organ-iii-beta-brief.md`
+- Application materials reconciled with current metrics (Sprint 27)
+- Qualification assessment revised with honest fit scores (Sprint 21 SUBMISSIO)
 
-#### Day 1 (Monday, Feb 17): Submit Google Creative Lab Five
+### THIS WEEK: BREAK THE HERMETIC SEAL
 
-This is the single highest-ROI action available right now. All materials are prepared. The application portal is open. Zero applications have been submitted. Every day of delay is a day of zero external feedback.
+**Non-negotiable rule:** No new named internal sprints until these are done.
 
-**Steps:**
-1. Open: https://www.creativelab5.com/
-2. Review your prepared responses: `docs/applications/05-google-creative-lab-five-responses.md`
-3. Confirm portfolio URL resolves: https://4444j99.github.io/portfolio/
-4. Submit the application form (browser — not automatable)
-5. Update the tracker:
-   ```bash
-   cd ~/Workspace/meta-organvm/organvm-corpvs-testamentvm
-   # Edit docs/applications/04-application-tracker.md — change status to SUBMITTED
-   git add docs/applications/04-application-tracker.md
-   git commit -m "chore: mark Google Creative Lab Five as submitted"
-   git push origin main
-   ```
+The E2G-II review (Sprint 28) found that the system is hermetically sealed: 28 sprints, ~386K+ words, 97 repos, and zero external contact. These actions break the seal. They are human actions, not sprint tasks.
 
-**Time:** ~1 hour
-**Omega criteria advanced:** #5 (application submitted), feeds H2
+#### Action 1: Submit Google Creative Lab Five (HIGHEST ROI)
 
-#### Day 1 (Monday, Feb 17): Deploy AI-conductor Essay
+- URL: https://www.creativelab5.com/
+- Prepared responses: `docs/applications/05-google-creative-lab-five-responses.md`
+- Portfolio: https://4444j99.github.io/portfolio/
+- Fit score: **8/10** (highest of all targets)
+- Time: ~1 hour
+- After submitting: update `04-application-tracker.md` status to SUBMITTED
 
-The essay is drafted at `docs/essays/09-ai-conductor-methodology.md`. It needs to be formatted as a Jekyll post and deployed to ORGAN-V.
+#### Action 2: Deploy life-my--midst--in to production
 
-**Steps:**
-1. Copy to public-process with Jekyll frontmatter:
-   ```bash
-   cd ~/Workspace/organvm-v-logos/public-process
-   # Create the post file with proper Jekyll frontmatter
-   # Date: 2026-02-17 (today's publish date)
-   # Slug: ai-conductor-methodology
-   ```
-2. Follow the "Publish an Essay" workflow in `key-workflows.md`
-3. Verify essay-monitor picks it up (or trigger manually):
-   ```bash
-   gh workflow run essay-monitor.yml --repo organvm-iv-taxis/orchestration-start-here
-   ```
+- Deployment guide: `~/Workspace/organvm-iii-ergon/life-my--midst--in/DEPLOY.md`
+- Method: Render Blueprint (button deploy) or manual Render setup
+- Required env vars: `DATABASE_URL` (Neon connection string), `JWT_SECRET`
+- Neon project: `in-midst-my-life` (damp-mouse-79328625, aws-us-east-1)
+- Time: ~1-2 hours
+- After deploying: verify API responds, update registry `revenue_status` if appropriate
 
-**Time:** ~30 min
-**Omega criteria advanced:** #6 (AI-conductor essay published), feeds H2 + H5
+#### Action 3: Submit 2 job applications
 
-#### Day 2 (Tuesday, Feb 18): Submit 3 Job Applications
-
-All cover letters are drafted. All materials are ready. The portal URLs are in the application tracker. This is form-filling and uploading, not creative work.
-
-**Highest fit-score targets:**
-1. **Anthropic FDE, Custom Agents** (fit: 9/10)
-   - URL: https://job-boards.greenhouse.io/anthropic/jobs/5074695008
-   - Cover letter: `docs/applications/cover-letters/anthropic-fde-custom-agents.md`
-2. **Together AI Lead DX** (fit: 9/10)
+Priority by fit score (revised from qualification assessment):
+1. **Together AI Lead DX** (fit: 6/10) — documentation + teaching angle
    - URL: https://job-boards.greenhouse.io/togetherai/jobs/4903661007
    - Cover letter: `docs/applications/cover-letters/together-ai-lead-dx-documentation.md`
-3. **HuggingFace Dev Advocate** (fit: 8/10)
+2. **HuggingFace Dev Advocate** (fit: 5/10) — skills-based, no years requirement
    - URL: https://apply.workable.com/huggingface/j/4C12FB7880
    - Cover letter: `docs/applications/cover-letters/huggingface-dev-advocate-hub-enterprise.md`
 
-**Steps per application:**
-1. Open the portal URL
-2. Fill required fields (name, email, location, work authorization)
-3. Upload resume (from portfolio: https://4444j99.github.io/portfolio/resume/)
-4. Paste or upload cover letter
-5. Add project links from the relevant cover letter's "Lead projects" section
-6. Submit
-7. Update `04-application-tracker.md` with submission date and confirmation
+Time: ~2 hours total
 
-**Time:** ~2-3 hours total
-**Omega criteria advanced:** #5 (application submitted), feeds H2
+#### Action 4: First social media post
 
-#### Day 3 (Wednesday, Feb 19): First Social Media Push
-
-The AI-conductor essay is now published (from Day 1). Distribute it.
-
-**Mastodon thread (3-5 posts):**
-- Post 1: Hook — what the AI-conductor model is and why it matters
-- Post 2: The key insight — human directs, AI generates volume, human reviews
-- Post 3: Evidence — ~386K+ words in 7 days across 97 repositories
-- Post 4: The honest part — what AI-conductor can't do (community, revenue, validation)
-- Post 5: Link to the full essay on public-process
-
-**LinkedIn (article post):**
-- Share the essay with a 2-3 paragraph intro framing it for a professional audience
-- Tag relevant topics: #AIMethodology #BuildingInPublic #DeveloperExperience
-
-**Discord:**
-- Post in relevant channels with a brief description + link
-
-**Time:** ~1 hour
-**Omega criteria advanced:** Feeds #7 (external feedback), H4 (distribution), H5 (methodological authority)
-
-#### Days 4-5 (Thursday-Friday, Feb 20-21): Select ORGAN-III Beta Product
-
-The omega roadmap identifies `public-record-data-scrapper` as the highest-readiness ORGAN-III product candidate. Assess it.
-
-**Steps:**
-1. Review the codebase:
-   ```bash
-   cd ~/Workspace/organvm-iii-ergon/public-record-data-scrapper
-   # Assess: directory structure, tech stack, existing features, test coverage
-   ```
-2. Answer these questions:
-   - What does it do today? (core feature)
-   - Who is the target user? (specific audience)
-   - What's the minimum to deploy a usable beta? (MVP scope)
-   - What infrastructure is needed? (domain, hosting, payment processor)
-   - How long to get to beta launch? (realistic, not optimistic)
-3. Write a 1-page product brief (store in this corpus: `docs/implementation/organ-iii-beta-brief.md`):
-   - Target user persona
-   - Core value proposition (one sentence)
-   - MVP feature set (3-5 features)
-   - Tech stack and deployment plan
-   - Revenue model and pricing hypothesis
-   - Timeline to beta (in weeks, not sprints)
-
-**Time:** ~4 hours across 2 days
-**Omega criteria advanced:** Feeds #8 (product live), #9 (revenue status), H3
+- Platform: Mastodon, LinkedIn, or Bluesky (whichever has an existing account)
+- Content: Link to AI-conductor essay + 2-3 sentence intro
+- Time: ~15 minutes
+- This converts "building in public" from infrastructure to practice
 
 ### THIS MONTH (Feb 17 - Mar 18, 2026)
 
-The month is anchored to the **Google Creative Fellowship deadline: March 18, 2026.** This is the only hard deadline in the system right now and it structures everything.
+Anchored to **Google Creative Fellowship deadline: March 18, 2026.**
 
-**Week 1 (Feb 17-21): Submissions Blitz**
-- Submit Google Creative Lab Five (Day 1)
-- Deploy AI-conductor essay (Day 1)
-- Submit 3 job applications (Day 2)
-- First social media distribution (Day 3)
-- Assess ORGAN-III beta product candidate (Days 4-5)
+**Week 1 (Feb 17-21): Seal-breaking actions**
+- Submit Google Creative Lab Five (Action 1)
+- Deploy life-my--midst--in (Action 2)
+- Submit 2 job applications (Action 3)
+- First social media post (Action 4)
+- Enable real (non-dry-run) soak test monitoring
 
-**Week 2 (Feb 24-28): Product Development Begins**
-- Begin ORGAN-III beta development (based on Week 1 assessment)
-- Submit 2 more job applications (Anthropic SE Claude Code, OpenAI Applied Evals)
-- Draft 1 essay (choose from: product development journal, theory deep-dive, or system retrospective)
+**Week 2 (Feb 24-28): Distribution + stranger test prep**
+- Content distribution: share AI-conductor essay across channels
+- Draft "Construction Addiction" essay (#36)
+- Recruit 1 stranger test participant
+- Submit 1-2 more job applications (Anthropic FDE, OpenAI Applied Evals)
 - Continue daily soak test snapshots
 
-**Week 3 (Mar 3-7): Product + Fellowship**
-- Continue ORGAN-III development
+**Week 3 (Mar 3-7): Stranger test + fellowship prep**
+- Run stranger test (protocol at `docs/operations/stranger-test-protocol.md`)
 - Finalize Google Creative Fellowship application materials
-- Publish Week 2's essay draft
-- Recruit 1 stranger test participant (reach out via social/community channels)
+- Publish essay #36
+- Payment integration research for life-my--midst--in
 
-**Week 4 (Mar 10-14): Fellowship Submission + First Review**
-- Submit Google Creative Fellowship (deadline: March 18, but submit by March 14 to avoid last-minute issues)
-- Continue ORGAN-III development
-- First 30-day omega checklist review (Checkpoint Alpha was Feb 16; first review March 16-18)
-- Generate first soak test report: `python3 scripts/soak-test-monitor.py report --days 30`
+**Week 4 (Mar 10-14): Fellowship submission + first review**
+- Submit Google Creative Fellowship (by March 14)
+- Portfolio refresh with post-construction evidence
+- First monthly review of operational cadence
+- Soak test approaching 30 days — prepare report
 
 **Post-Month (Mar 15-18): Buffer**
 - Final review of Google Creative Fellowship submission
 - Submit by March 18 at 5:00 PM PST absolute latest
-- Commit soak test 30-day report
+- Generate first soak test report
 
 ### REPO/ORGAN PRIORITY ORDER
 
 This is the durable priority stack. It answers "what should I work on?" when you have unscheduled time.
 
-**URGENT (this week, Feb 17-21):**
-- `organvm-v-logos/public-process` — deploy AI-conductor essay
-- Application submissions (not repo work — browser + email)
+**URGENT (this week):**
+- Application submissions (browser + email, not repo work)
+- `organvm-iii-ergon/life-my--midst--in` — deploy to production hosting
+- Social media presence — first post on any platform
 
 **HIGH (weeks 1-4, Feb 17 - Mar 18):**
-- `organvm-iii-ergon/public-record-data-scrapper` — beta product candidate
-- `organvm-v-logos/public-process` — 2 more essays this month
-- `4444J99/portfolio` — update with current state after submissions
+- `organvm-iii-ergon/life-my--midst--in` — payment integration (Stripe)
+- `organvm-v-logos/public-process` — 2 more essays (maintain bi-weekly cadence)
+- `4444J99/portfolio` — refresh with current evidence (28 sprints, omega scorecard, live product)
 - Google Creative Fellowship — deadline March 18
 
 **MEDIUM (month 2, Mar 18 - Apr 18):**
+- Stranger test execution and report
+- `organvm-vi-koinonia` repos — salon planning for criterion #11
 - `organvm-i-theoria/recursive-engine--generative-entity` — theory work feeds essays
 - `organvm-ii-poiesis/metasystem-master` — creative work feeds portfolio
-- `organvm-vi-koinonia` repos — salon planning for H4
 
 **LOW / PARKED (month 3+):**
-- ORGAN-II low-code repos (example-generative-music, example-choreographic-interface, client-sdk, example-theatre-dialogue, audio-synthesis-bridge) — these become relevant when you're making art, not during validation
+- ORGAN-II low-code repos — relevant when making art, not during validation
 - ORGAN-VII workflow improvements — distribution-agent is running; optimize later
 - Registry schema evolution — schema v0.5 is sufficient
 - Any repo not listed above — 97 repos is enough; don't add more
+- seed.yaml coverage improvement (44% → 60%+) — useful but not external-facing
 
-**Hard deadlines integrated:**
+**Hard deadlines:**
 
 | Deadline | Target | Action Required |
 |----------|--------|----------------|
-| **Open (NOW)** | Google Creative Lab Five | Submit immediately |
+| **OVERDUE** | Google Creative Lab Five | **Submit NOW** — no deadline but materials ready since Sprint 21 |
 | **March 18, 2026** | Google Creative Fellowship | Submit by March 14 |
-| **Spring 2026 (TBA)** | Eyebeam Residency | Monitor for open call |
-| **~April-May 2026** | Processing Foundation | Monitor for announcement |
-| **June 20, 2026** | Knight Foundation | Verify eligibility first |
-| **July 9, 2026** | NEA GAP 2 | Find fiscal sponsor if pursuing |
+| **~March 18, 2026** | 30-day soak test report | Generate report after 30 days of data |
+| **Spring 2026 (TBA)** | Eyebeam Residency | Monitor for open call (fit: 7/10) |
+| **~April-May 2026** | Processing Foundation | Monitor for announcement (fit: 6/10) |
+
+**Dropped targets (per qualification assessment):**
+- Knight Foundation — geographically restricted to Akron/Detroit/Miami (fit: 1/10)
+- Mellon Foundation — invitation-only (fit: 0/10)
+- NEA GAP 2 — requires 501(c)(3) (fit: 1/10)
 
 ---
 

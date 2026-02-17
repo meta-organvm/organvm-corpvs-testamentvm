@@ -1070,7 +1070,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 | 16 | Design & UX | 2 | 72–73 |
 | 17 | Data & Analytics | 2 | 74–75 |
 | 18 | Backup & Resilience | 1 | 76 |
-| | **TOTAL** | **~60** | Completed: 17–25 (9 sprints) + Sprint 26 PROPAGATIO. Remaining: hypothetical catalog items. |
+| | **TOTAL** | **~60** | Completed: 17–27 (11 sprints) + Sprint 28 RECOGNITIO. Remaining: hypothetical catalog items. |
 
 ---
 
@@ -1127,8 +1127,8 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | ~~2~~ | ~~**41/21 SUBMISSIO**~~ | ~~#5, #7~~ | **COMPLETE** — prep executed as Sprint 21; human submissions pending |
 | 3 | **42 PEREGRINUS** | #2, #4, #16 | Validates H1 claims |
 | ~~4~~ | ~~**27 BETA-VITAE**~~ | ~~#8~~ | **COMPLETE** — DB provisioned (44 tables on Neon), 3 migration bugs fixed, auth bug fixed, DEPLOY.md written, Render Blueprint ready |
-| 5 | **40 MERCATURA** | #9, #10 | Requires a beta product |
-| 6 | **64 VIGILIA** | #1, #3, #17 | 30 calendar days (passive) |
+| 5 | **40 MERCATURA** | #9, #10 | Requires deployed beta product (life-my--midst--in) |
+| 6 | **64 VIGILIA** | #1, #3, #17 | 30 calendar days (passive) — clock started 2026-02-16 |
 | 7 | **24 DISTRIBUTIO** | #13 | Creates inbound surface area |
 | 8 | **45 CONVIVIUM** | #11 (partial) | First salon |
 | 9 | **46 CONVIVIUM-II** | #11 (complete) | Second salon |
@@ -1136,9 +1136,21 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 | 11 | **52 RENOVATIO** | #15 | Quick portfolio update |
 | 12 | **43 PETITIO** | #14 | Grant application for recognition |
 
-**Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy), #5/#7 prerequisites (SUBMISSIO — prep complete, human submissions pending)
+**Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy), #5/#7 prerequisites (SUBMISSIO — prep complete, human submissions pending), #8 prerequisites (BETA-VITAE — DB provisioned, deployment ready)
 
-**Remaining critical path:** 10 sprints (42→27→40→64→24→45→46→47→52→43)
+**Omega scorecard (E2G-II, Sprint 28):** 1/17 MET, 2 IN PROGRESS, 14 NOT MET. The single met criterion (#6) was achievable entirely internally. All remaining criteria require external contact.
+
+**Remaining critical path:** 8 sprints (42→40→64→24→45→46→47→52→43), plus **immediate human actions** (submit applications, deploy product, first social post) that advance criteria #5, #8, #13 without requiring named sprints.
+
+**E2G-II priority reordering:** The critical path sequence should be reordered to front-load external contact:
+1. **IMMEDIATE (human actions):** Submit Creative Lab Five (#5), deploy life-my--midst--in (#8), first social media post (feeds #13)
+2. **Sprint 29 DISTRIBUTIO** — essay and content distribution (#13)
+3. **Sprint 30 PEREGRINUS** — stranger test + runbook validation (#2, #4, #16)
+4. **Sprint 31 MERCATURA** — payment integration (#9, #10)
+5. **Sprint 32 RENOVATIO** — portfolio refresh (#15)
+6. **Sprint 33 CONVIVIUM** — first salon (#11 partial)
+7. **VIGILIA** — passive, completes ~March 18 (#1, #3, #17)
+8. Remaining: CONVIVIUM-II (#11 complete), HOSPITIUM (#12), PETITIO (#14)
 
 **Note on critical path vs. cadence:** The critical path identifies the minimum set. The operational cadence (`operational-cadence.md`) determines how these are sequenced into weekly rhythm. They are pulled from this catalog as individual tasks, not executed as named sprints — per AP-1.
 

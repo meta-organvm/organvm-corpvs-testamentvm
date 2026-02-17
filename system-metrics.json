@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-16T20:38:03.290525+00:00",
+  "generated": "2026-02-17T08:38:53.738483+00:00",
   "computed": {
     "total_repos": 97,
     "active_repos": 90,
@@ -47,8 +47,8 @@
       "ACTIVE": 90,
       "ARCHIVED": 7
     },
-    "published_essays": 33,
-    "sprints_completed": 23,
+    "published_essays": 35,
+    "sprints_completed": 29,
     "sprint_names": [
       "01-ignition",
       "02-propulsion",
@@ -64,6 +64,8 @@
       "12-illustratio",
       "13-manifestatio",
       "14-operatio",
+      "15-gap-fill",
+      "16-platinum",
       "17-remedium",
       "18-synchronium",
       "19-concordia",
@@ -71,8 +73,12 @@
       "21-submissio",
       "22-metricum",
       "23-publicatio",
-      "gap-fill",
-      "platinum"
+      "24-canon",
+      "25-inspectio",
+      "26-propagatio",
+      "27-beta-vitae",
+      "28-recognitio",
+      "29-automata"
     ]
   },
   "manual": {

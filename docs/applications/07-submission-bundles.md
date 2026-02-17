@@ -93,7 +93,7 @@ The eight-organ system is simultaneously: (a) working infrastructure that produc
 
 ### Project Description
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 82+ CI/CD pipelines, and ~386K+ words of public documentation including 35 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~386K+ words of public documentation including 35 published essays.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -238,7 +238,7 @@ That's eval infrastructure. I want to build it for the systems that matter most.
 
 *Agent harness design.* agentic-titan is a multi-agent orchestration framework with 1,095 tests across 18 development phases. The test framework itself IS an agent harness. a-i-council--coliseum takes this further: multi-agent deliberation where AI agents debate positions and synthesize conclusions — evaluating the quality of that synthesis requires exactly the kind of multi-turn eval infrastructure this role builds.
 
-*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 82+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
+*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 77+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
 
 *Feedback loops that strengthen systems.* The system uses a tiered documentation approach (Bronze/Silver/Gold) where validation results feed directly into the next sprint. Regression monitoring, golden datasets, and drift detection — these are eval patterns applied to infrastructure.
 
