@@ -13,7 +13,7 @@
 | Back-edge violations | 0 |
 | Published essays | 35 |
 | Total documentation | ~386,000+ |
-| Sprints completed | 32 |
+| Sprints completed | 33 |
 
 ### Per-Organ Distribution
 

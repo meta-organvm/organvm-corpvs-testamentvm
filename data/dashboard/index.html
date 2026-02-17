@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORGANVM System Health Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #F5F5F5;
+    color: #231F20;
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  h1 span { color: #00AEEF; }
+  .subtitle {
+    font-size: 13px;
+    color: #95A5A6;
+    margin-bottom: 24px;
+  }
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  .card h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00AEEF;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 600px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat {
+    text-align: center;
+    padding: 12px 8px;
+    background: #F5F5F5;
+    border-radius: 6px;
+  }
+  .stat-num {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00AEEF;
+  }
+  .stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #95A5A6;
+    margin-top: 4px;
+  }
+  .status-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #95A5A6;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #E0E0E0;
+  }
+</style>
+</head>
+<body>
+
+<h1><span>ORGANVM</span> System Health</h1>
+<p class="subtitle">Generated 2026-02-17 12:23 UTC &middot;
+  1 snapshot(s), 0 real data point(s)</p>
+
+<!-- VIGILIA Timer -->
+<div class="card">
+  <h2>VIGILIA Timer</h2>
+  
+    <div style="margin: 12px 0;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+        <span style="font-size: 14px; color: #231F20;">VIGILIA (30-Day Soak Test)</span>
+        <span style="font-size: 14px; color: #231F20;">1/30 (3%)</span>
+      </div>
+      <div style="background: #E0E0E0; border-radius: 6px; height: 24px; overflow: hidden;">
+        <div style="background: #EC008C; width: 3%; height: 100%; border-radius: 6px;
+                    transition: width 0.5s;"></div>
+      </div>
+    </div>
+  <p style="font-size: 13px; color: #95A5A6; margin-top: 8px;">
+    Soak test started 2026-02-16. Completes ~2026-03-18. Day 1 of 30.
+  </p>
+</div>
+
+<!-- System Numbers -->
+<div class="card">
+  <h2>System Overview</h2>
+  
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-num">97</div><div class="stat-label">Total Repos</div></div>
+      <div class="stat"><div class="stat-num">90</div><div class="stat-label">Active</div></div>
+      <div class="stat"><div class="stat-num">35</div><div class="stat-label">Essays</div></div>
+      <div class="stat"><div class="stat-num">32</div><div class="stat-label">Sprints</div></div>
+      <div class="stat"><div class="stat-num">3586</div><div class="stat-label">Code Files</div></div>
+      <div class="stat"><div class="stat-num">736</div><div class="stat-label">Test Files</div></div>
+      <div class="stat"><div class="stat-num">386K+</div><div class="stat-label">Words</div></div>
+      <div class="stat"><div class="stat-num">8/8</div><div class="stat-label">Organs</div></div>
+    </div>
+</div>
+
+<!-- Health Status -->
+<div class="grid">
+  <div class="card">
+    <h2>Validation Status</h2>
+    <div class="status-row"><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #2ECC71; margin-right: 6px;"></span>PASS &nbsp; Registry Integrity</div>
+    <div class="status-row"><span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #2ECC71; margin-right: 6px;"></span>PASS &nbsp; Dependency Graph</div>
+    <div style="margin-top: 12px;">
+      <p>Trend available after 2+ snapshots</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Repository Distribution</h2>
+    <svg width="460" height="328" xmlns="http://www.w3.org/2000/svg">
+<text x="230" y="20" text-anchor="middle" font-family="Jost, sans-serif" font-size="14" fill="#231F20">Repositories per Organ</text>
+<text x="112" y="53" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">I</text>
+<rect x="120" y="35" width="226" height="28" fill="#00AEEF" rx="3"/>
+<text x="352" y="53" font-family="Jost, sans-serif" font-size="12" fill="#231F20">20</text>
+<text x="112" y="89" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">II</text>
+<rect x="120" y="71" width="340" height="28" fill="#EC008C" rx="3"/>
+<text x="466" y="89" font-family="Jost, sans-serif" font-size="12" fill="#231F20">30</text>
+<text x="112" y="125" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">III</text>
+<rect x="120" y="107" width="306" height="28" fill="#FFF200" rx="3"/>
+<text x="432" y="125" font-family="Jost, sans-serif" font-size="12" fill="#231F20">27</text>
+<text x="112" y="161" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">IV</text>
+<rect x="120" y="143" width="79" height="28" fill="#2ECC71" rx="3"/>
+<text x="205" y="161" font-family="Jost, sans-serif" font-size="12" fill="#231F20">7</text>
+<text x="112" y="197" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">V</text>
+<rect x="120" y="179" width="22" height="28" fill="#9B59B6" rx="3"/>
+<text x="148" y="197" font-family="Jost, sans-serif" font-size="12" fill="#231F20">2</text>
+<text x="112" y="233" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">VI</text>
+<rect x="120" y="215" width="45" height="28" fill="#E67E22" rx="3"/>
+<text x="171" y="233" font-family="Jost, sans-serif" font-size="12" fill="#231F20">4</text>
+<text x="112" y="269" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">VII</text>
+<rect x="120" y="251" width="45" height="28" fill="#1ABC9C" rx="3"/>
+<text x="171" y="269" font-family="Jost, sans-serif" font-size="12" fill="#231F20">4</text>
+<text x="112" y="305" text-anchor="end" font-family="Jost, sans-serif" font-size="12" fill="#231F20">Meta</text>
+<rect x="120" y="287" width="34" height="28" fill="#34495E" rx="3"/>
+<text x="160" y="305" font-family="Jost, sans-serif" font-size="12" fill="#231F20">3</text>
+</svg>
+  </div>
+</div>
+
+<!-- Trends -->
+<div class="grid">
+  <div class="card">
+    <h2>CI Stability</h2>
+    <p>CI trend available after 2+ real data points</p>
+  </div>
+
+  <div class="card">
+    <h2>Engagement</h2>
+    <p>Engagement trend available after 2+ real data points</p>
+  </div>
+</div>
+
+<div class="footer">
+  ORGANVM Health Dashboard &middot; Sprint 33 OPERATIO &middot;
+  Data from soak-test-daily.yml + system-metrics.json
+</div>
+
+</body>
+</html>

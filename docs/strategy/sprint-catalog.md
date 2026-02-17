@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 32 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–32, no gaps). Sprints 17–32 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO, FUNDAMEN, SENSORIA). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 33 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–33, no gaps). Sprints 17–33 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO, FUNDAMEN, SENSORIA, OPERATIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Catalog vs. execution numbering (17–23):** This catalog was written as a hypothetical inventory. When sprints 19–23 were actually executed, some took different names than what the catalog had assigned. The canonical sprint numbers and names are in `docs/specs/sprints/` — those are what actually happened. Catalog items that were displaced (never executed at their catalog number) are marked as unscheduled future work below. For sprints ≥24, catalog numbers are hypothetical references until executed.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
@@ -751,48 +751,43 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 
 *Build tools that reduce operator dependency.*
 
-### Sprint 58: INSTRUMENTUM (Developer Tooling)
+### Sprint 58: INSTRUMENTUM (Developer Tooling) — **COMPLETE** (2026-02-17)
 
-**Build CLI tools for common operations.**
+**Build CLI tools for common operations.** *(Executed as part of Sprint 33 OPERATIO batch, 2026-02-17.)*
 
-- Registry update CLI (validate on change, auto-increment counts)
-- Bulk repo operations tool (batch seed.yaml deploy, batch topic update)
-- Sprint tracking/planning tool (if sprints continue)
+Unified `scripts/organ-cli.py` with 8 subcommands: registry show/validate/update, metrics refresh, invoke, soak status, deploy essay, pulse. Registry validator checks required fields, status enums, ORGAN-III revenue fields, and dependency back-edges.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~8–16 hours |
+| Effort | ~30 min (AI-conductor) |
 | Horizon | H1 (operational maturity) |
 | Omega criteria | #16 (bus factor — tools reduce operator dependency) |
+| Resolution | organ-cli.py deployed with 8 subcommands, stdlib-only |
 
-### Sprint 59: AUTOMATIA (Pipeline Automation)
+### Sprint 59: AUTOMATIA (Pipeline Automation) — **COMPLETE** (2026-02-17)
 
-**Automate manual workflows.**
+**Automate manual workflows.** *(Essay auto-deploy executed as part of Sprint 33 OPERATIO batch, 2026-02-17.)*
 
-- Automated essay deployment pipeline (draft in corpus → formatted → deployed to public-process)
-- Automated social media posting (on essay publish → create threads)
-- Automated portfolio data refresh (pull metrics → update data files)
-- Automated engagement data collection (beyond soak-test-monitor)
+Essay auto-deploy pipeline: `scripts/essay-deploy.py` scans docs/essays/ for ready essays, compares against remote _posts/, pushes via gh API. `.github/workflows/essay-deploy.yml` triggers on push when essays change. Closes the last manual step in the essay lifecycle.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~12–24 hours |
+| Effort | ~30 min (AI-conductor) |
 | Horizon | H1 (#17 autonomous operation), H4 (distribution) |
 | Omega criteria | #17 (30+ days without intervention) |
+| Resolution | Essay lifecycle fully autonomous: author → detect → distribute |
 
-### Sprint 60: OBSERVATIO (Monitoring Dashboard)
+### Sprint 60: OBSERVATIO (Monitoring Dashboard) — **COMPLETE** (2026-02-17)
 
-**Build system health dashboard.**
+**Build system health dashboard.** *(Executed as part of Sprint 33 OPERATIO batch, 2026-02-17.)*
 
-- Visual dashboard for soak test data trends
-- Workflow health status page
-- Engagement metrics visualization
-- Revenue tracking (when applicable)
+Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshots and system-metrics.json, generates self-contained HTML with inline SVG charts. CMYK design, VIGILIA progress bar, organ distribution, validation/CI/engagement trends. Integrated into system-pulse-weekly.yml.
 
 | Field | Value |
 |-------|-------|
-| Effort | ~8–16 hours |
+| Effort | ~30 min (AI-conductor) |
 | Horizon | H1 (operational visibility) |
+| Resolution | data/dashboard/index.html generated weekly, committed alongside pulse report |
 
 ---
 
@@ -1092,7 +1087,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 | 16 | Design & UX | 2 | 72–73 |
 | 17 | Data & Analytics | 2 | 74–75 |
 | 18 | Backup & Resilience | 1 | 76 |
-| | **TOTAL** | **~60** | Completed: 17–27 (11 sprints) + Sprint 28 RECOGNITIO. Remaining: hypothetical catalog items. |
+| | **TOTAL** | **~60** | Completed: 17–33 (17 sprints). Remaining: hypothetical catalog items. |
 
 ---
 

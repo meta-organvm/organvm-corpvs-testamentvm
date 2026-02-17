@@ -1,0 +1,31 @@
+name: Essay Auto-Deploy
+
+# Automatically deploys essays from docs/essays/ to public-process _posts/
+# when they have complete frontmatter and haven't been deployed yet.
+# Closes the last manual step in the essay lifecycle pipeline.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/essays/*.md'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Deploy essays
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN }}
+        run: |
+          python3 scripts/essay-deploy.py --deploy --verbose

@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (initial population)
+**Last reviewed:** 2026-02-17 (OPERATIO batch: M4-II + E2 completed, M7-II + M8-II added)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -70,9 +70,6 @@
 
 ### This Month (Feb 17 – Mar 18)
 
-- [ ] **E2.** Enable non-dry-run soak test monitoring — configure soak-test-monitor.py for real data collection
-  - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #1, #3, #17
-
 - [ ] **E3.** Submit Google Creative Fellowship application — **deadline March 18, 2026**
   - URL: https://creativefellowship.google/ · Materials ready
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #14
@@ -90,18 +87,22 @@
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md) · Omega: #2, #4, #16
   - Recommended sprint: 30 PEREGRINUS
 
-- [ ] **M3-II.** Refresh portfolio with post-construction evidence — 29 sprints, omega scorecard, live product
+- [ ] **M3-II.** Refresh portfolio with post-construction evidence — 33 sprints, omega scorecard, live product
   - Site: `4444j99.github.io/portfolio/`
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md) · Omega: #15
   - Recommended sprint: 32 RENOVATIO
 
-- [ ] **M4-II.** Improve seed.yaml coverage from 44% to 60%+ — priority: Organs V/VI/VII (10 repos)
-  - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md)
-  - Recommended sprint: Catalog item 58 INSTRUMENTUM
-
 - [ ] **M6-II.** CI restructure — make CI fail when no tests, require explicit `skip_tests: true`
   - 17 disabled cron workflows remain disabled (Sprint 12 ILLUSTRATIO)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md), carried from E2G-I M4
+
+- [ ] **M7-II.** Registry cleanup: 3 repos archived on GitHub but marked ACTIVE — nexus--babel-alexandria-, 4-ivi374-F0Rivi4, cog-init-1-0-
+  - Either archive in registry or restore on GitHub
+  - Source: Sprint 32 SENSORIA findings
+
+- [ ] **M8-II.** Resolve 5 ghost repos: registry entries with no GitHub remote — scalable-lore-expert, life-betterment-simulation, universal-waveform-explorer, shared-remembrance-gateway, card-trade-social
+  - Either create repos on GitHub or remove from registry
+  - Source: Sprint 32 SENSORIA findings
 
 - [ ] **S1-II.** Complete 30-day soak test and generate report — clock started 2026-02-16, completes ~March 18
   - Command: `python3 scripts/soak-test-monitor.py report --days 30`
@@ -157,8 +158,12 @@
 
 - [x] **E1.** Refresh operational cadence Part IV — completed 2026-02-16 (Sprint 28 RECOGNITIO)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md)
+- [x] **E2.** Enable non-dry-run soak test monitoring — completed 2026-02-17 (workflow configured without --dry-run, first cron run 2026-02-18 08:00 UTC)
+  - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #1, #3, #17
 - [x] **E4.** Deploy essay drafts #34 and #35 — completed 2026-02-16 (Sprint 27 BETA-VITAE)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
+- [x] **M4-II.** Improve seed.yaml coverage from 44% to 100% — completed 2026-02-17 (Sprint 32 SENSORIA — 82/82 eligible repos)
+  - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md)
 
 ---
 
@@ -174,12 +179,13 @@
 
 | Source Document | Items Drawn | Coverage |
 |----------------|-------------|----------|
-| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E4 completed) | 100% of open items |
+| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E2, E4, M4-II completed) | 100% of open items |
 | [`autonomous-setup-guide.md`](./autonomous-setup-guide.md) | 3 of 3 PENDING/OPTIONAL | 100% |
 | [`operational-cadence.md`](./operational-cadence.md) Part IV | Subsumed by e2g-ii items | Cross-referenced |
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
+| Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 
-**Total items:** 24 (2 READY, 14 TIME, 3 INCOME, 3 EXTERNAL, 2 COMPLETED)
+**Total items:** 26 (2 READY, 14 TIME, 3 INCOME, 3 EXTERNAL, 4 COMPLETED)
 
 ---
 

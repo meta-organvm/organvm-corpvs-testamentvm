@@ -30,12 +30,16 @@ jobs:
         run: |
           python3 scripts/system-pulse-generator.py
 
-      - name: Commit pulse report
+      - name: Generate health dashboard
+        run: |
+          python3 scripts/generate-dashboard.py
+
+      - name: Commit pulse report and dashboard
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/pulse/
+          git add data/pulse/ data/dashboard/
           if git diff --staged --quiet; then
             echo "No changes to commit"
             echo "changed=false" >> $GITHUB_OUTPUT
