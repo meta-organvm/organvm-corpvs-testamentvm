@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 30 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–30, no gaps). Sprints 17–30 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 31 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–31, no gaps). Sprints 17–31 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO, FUNDAMEN). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Catalog vs. execution numbering (17–23):** This catalog was written as a hypothetical inventory. When sprints 19–23 were actually executed, some took different names than what the catalog had assigned. The canonical sprint numbers and names are in `docs/specs/sprints/` — those are what actually happened. Catalog items that were displaced (never executed at their catalog number) are marked as unscheduled future work below. For sprints ≥24, catalog numbers are hypothetical references until executed.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
@@ -129,6 +129,19 @@ Registry reconciliation: 6 orphan repos registered (91→97), render-second-amen
 | Horizon | H1 (data integrity) |
 | Omega criteria | Constitution Article I (registry is never wrong) |
 | Resolution | All 13 active documents reconciled with registry-v2.json |
+
+### Sprint 31: FUNDAMEN (Foundation) — **COMPLETE** (2026-02-17)
+
+**Infrastructure hardening for Organs V/VI/VII/Meta.** *(Executed as Sprint 31, 2026-02-17.)*
+
+Synced 6 stale local repos (ORGAN-VI/VII), added README/CI/seed.yaml to alchemia-ingestvm (last repo without README), added real HTTP POST logic to social-automation (Mastodon + Discord via urllib.request), enhanced test coverage across all 4 prototype repos (60→85+ tests).
+
+| Field | Value |
+|-------|-------|
+| Effort | ~2 hours |
+| Horizon | H1 (infrastructure integrity) |
+| Omega criteria | #1 (system stability), #17 (CI health) |
+| Resolution | All 97 repos have READMEs, 0 stale locals, ORGAN-VI/VII have real implementations |
 
 ---
 
@@ -1140,11 +1153,12 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 
 **E2G-II priority reordering:** The critical path sequence should be reordered to front-load external contact:
 1. **IMMEDIATE (human actions):** Submit Creative Lab Five (#5), deploy life-my--midst--in (#8), first social media post (feeds #13)
-2. **Sprint 29 DISTRIBUTIO** — essay and content distribution (#13)
-3. **Sprint 30 PEREGRINUS** — stranger test + runbook validation (#2, #4, #16)
-4. **Sprint 31 MERCATURA** — payment integration (#9, #10)
-5. **Sprint 32 RENOVATIO** — portfolio refresh (#15)
-6. **Sprint 33 CONVIVIUM** — first salon (#11 partial)
+2. **Sprint 29 DISTRIBUTIO** — essay and content distribution (#13) — **COMPLETE**
+3. **Sprint 31 FUNDAMEN** — infrastructure hardening for V/VI/VII/Meta (#1, #17) — **COMPLETE**
+4. **Sprint 32 PEREGRINUS** — stranger test + runbook validation (#2, #4, #16)
+5. **Sprint 33 MERCATURA** — payment integration (#9, #10)
+6. **Sprint 34 RENOVATIO** — portfolio refresh (#15)
+7. **Sprint 35 CONVIVIUM** — first salon (#11 partial)
 7. **VIGILIA** — passive, completes ~March 18 (#1, #3, #17)
 8. Remaining: CONVIVIUM-II (#11 complete), HOSPITIUM (#12), PETITIO (#14)
 
