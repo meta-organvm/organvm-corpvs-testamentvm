@@ -31,7 +31,7 @@ This document is an **exhaustive inventory** of every sprint-worthy work package
 
 ### Conventions
 
-- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 31 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–31, no gaps). Sprints 17–31 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO, FUNDAMEN). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
+- **Sprint numbers** continue from the 16 construction sprints (01-IGNITION through 16-PLATINUM), starting at 17. Sprint specs for all 32 completed sprints live in `docs/specs/sprints/` with continuous numbering (01–32, no gaps). Sprints 17–32 are now complete (REMEDIUM, SYNCHRONIUM, CONCORDIA, TRIPARTITUM, SUBMISSIO, METRICUM, PUBLICATIO, CANON, INSPECTIO, PROPAGATIO, BETA-VITAE, RECOGNITIO, AUTOMATA, DISTRIBUTIO, FUNDAMEN, SENSORIA). These numbers are for reference only — the operational cadence discourages named sprints in favor of weekly rhythm.
 - **Catalog vs. execution numbering (17–23):** This catalog was written as a hypothetical inventory. When sprints 19–23 were actually executed, some took different names than what the catalog had assigned. The canonical sprint numbers and names are in `docs/specs/sprints/` — those are what actually happened. Catalog items that were displaced (never executed at their catalog number) are marked as unscheduled future work below. For sprints ≥24, catalog numbers are hypothetical references until executed.
 - **Effort estimates** assume AI-conductor model (AI generates, human reviews). They are order-of-magnitude only.
 - **Horizon mapping** uses H1–H5 from [`there+back-again.md`](./there+back-again.md):
@@ -142,6 +142,19 @@ Synced 6 stale local repos (ORGAN-VI/VII), added README/CI/seed.yaml to alchemia
 | Horizon | H1 (infrastructure integrity) |
 | Omega criteria | #1 (system stability), #17 (CI health) |
 | Resolution | All 97 repos have READMEs, 0 stale locals, ORGAN-VI/VII have real implementations |
+
+### Sprint 32: SENSORIA (Perception) — **COMPLETE** (2026-02-17)
+
+**Autonomous perception layer — full seed.yaml coverage, stale-detection, metrics hardening.** *(Executed as Sprint 32, 2026-02-17.)*
+
+Gave the system a sensory layer: fixed stale system-metrics.json (29→32 sprints), deployed seed.yaml to all 41 missing repos (50%→100% coverage), wrote stale-detector.py + weekly workflow to autonomously detect metric drift, fixed propagation false-positives in concordance.md.
+
+| Field | Value |
+|-------|-------|
+| Effort | ~2 hours |
+| Horizon | H1 (autonomous infrastructure) |
+| Omega criteria | #1 (system stability), #6 (system architecture) |
+| Resolution | 100% seed.yaml coverage, stale-detection autonomous, metrics current |
 
 ---
 
@@ -1155,7 +1168,8 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 1. **IMMEDIATE (human actions):** Submit Creative Lab Five (#5), deploy life-my--midst--in (#8), first social media post (feeds #13)
 2. **Sprint 29 DISTRIBUTIO** — essay and content distribution (#13) — **COMPLETE**
 3. **Sprint 31 FUNDAMEN** — infrastructure hardening for V/VI/VII/Meta (#1, #17) — **COMPLETE**
-4. **Sprint 32 PEREGRINUS** — stranger test + runbook validation (#2, #4, #16)
+4. **Sprint 32 SENSORIA** — autonomous perception layer, 100% seed.yaml, stale-detection (#1, #6) — **COMPLETE**
+5. **Sprint 33 PEREGRINUS** — stranger test + runbook validation (#2, #4, #16)
 5. **Sprint 33 MERCATURA** — payment integration (#9, #10)
 6. **Sprint 34 RENOVATIO** — portfolio refresh (#15)
 7. **Sprint 35 CONVIVIUM** — first salon (#11 partial)

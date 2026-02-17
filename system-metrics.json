@@ -48,7 +48,7 @@
       "ARCHIVED": 7
     },
     "published_essays": 35,
-    "sprints_completed": 29,
+    "sprints_completed": 32,
     "sprint_names": [
       "01-ignition",
       "02-propulsion",
@@ -78,7 +78,10 @@
       "26-propagatio",
       "27-beta-vitae",
       "28-recognitio",
-      "29-automata"
+      "29-automata",
+      "30-distributio",
+      "31-fundamen",
+      "32-sensoria"
     ]
   },
   "manual": {

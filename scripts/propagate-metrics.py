@@ -388,6 +388,8 @@ SKIP_MARKERS = [
     "(~111,000 words)", # essay corpus word count (subset)
     "(~111K words)",    # essay corpus word count (subset)
     "(~84K words)",     # essay corpus word count (subset)
+    "(~129,000 words)", # essay corpus word count (subset, updated SENSORIA)
+    "published essays", # essay count lines often have subset word counts
     "~202,000 words",   # Silver Sprint historical count
     "~270,000 words",   # historical total before current
     "(~84K words)",     # historical essay word count
@@ -400,6 +402,8 @@ SKIP_MARKERS = [
     "num_repos",        # formula variable
     # ── ai-conductor essay (specific sprint word counts, not system totals) ──
     "~202,000 words of README",  # Silver Sprint output count
+    # ── Concordance sprint history table (point-in-time records) ──
+    "| COMPLETED |",    # Sprint history rows contain historical metric snapshots
 ]
 
 

@@ -1,0 +1,33 @@
+name: Stale Detector Weekly
+
+# Checks for stale metrics in documentation files.
+# Runs after metrics-refresh (Monday 06:00) has updated system-metrics.json,
+# so Tuesday is the right day to detect anything that didn't propagate.
+# No untrusted input is used in run commands (cron/dispatch only).
+
+on:
+  schedule:
+    # Tuesday at 06:00 UTC
+    - cron: '0 6 * * 2'
+  workflow_dispatch:
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run stale detector
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/stale-detector.py --issue

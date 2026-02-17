@@ -251,6 +251,9 @@ Source: [`docs/specs/sprints/`](../specs/sprints/) (spec files), [`there+back-ag
 | 27 | BETA-VITAE | 2026-02-16 | Beta deployment prep (44 tables, 3 migration fixes) | COMPLETED |
 | 28 | RECOGNITIO | 2026-02-17 | E2G-II review (omega scorecard 1/17) | COMPLETED |
 | 29 | AUTOMATA | 2026-02-17 | Autonomous systems activation (3 cron workflows) | COMPLETED |
+| 30 | DISTRIBUTIO | 2026-02-17 | Essay distribution pipeline (backfill, metadata) | COMPLETED |
+| 31 | FUNDAMEN | 2026-02-17 | Infrastructure hardening V/VI/VII/Meta (85+ tests) | COMPLETED |
+| 32 | SENSORIA | 2026-02-17 | Perception layer (100% seed.yaml, stale-detection) | COMPLETED |
 
 ---
 
