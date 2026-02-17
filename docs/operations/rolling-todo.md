@@ -106,12 +106,13 @@
   - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md) · Omega: #1, #17
 
 - [ ] **S4-II.** Write 2 planned essays (from Sprint 23 PUBLICATIO backlog)
-  - "constraint-alchemy-workshop" (target Wed Mar 4)
+  - ~~"constraint-alchemy-workshop"~~ — completed 2026-02-17 (essay #37, ~2400 words)
   - "performance-platform-methodology" (target Wed Mar 18)
   - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md)
 
 - [ ] **S6-II.** Pursue conference talk or workshop proposal — AI-conductor methodology talk
   - Venues: Strange Loop, XOXO, Processing Community Day
+  - **Partial:** 2 talk proposals drafted (AMPLIFICATIO) — `docs/applications/conference-proposals/ai-conductor-talk.md` and `constraint-alchemy-talk.md`. Remaining: submit when CFPs open.
   - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md) · Omega: #14
 
 ---
@@ -140,6 +141,7 @@
 
 - [ ] **S3-II.** Create contribution pathway for external contributors — need community activity first
   - CONTRIBUTING.md templates, good-first-issue labels, onboarding docs
+  - **Partial:** CONTRIBUTING.md written (corpvs-testamentvm root), 5 good-first-issues created across 5 repos (AMPLIFICATIO). Remaining: first external contribution, community onboarding docs.
   - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md) · Omega: #12
   - Recommended sprint: Catalog item 47 HOSPITIUM
 
@@ -191,7 +193,8 @@
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 
 **Total items:** 26 (1 READY, 11 TIME, 3 INCOME, 3 EXTERNAL, 8 COMPLETED)
-**Last session:** Pre-validation maturation (2026-02-17) — soak test fix (dry-run→real data), omega evidence map, essay #37, portfolio omega page, metrics reconciliation (90→87 ACTIVE)
+**AMPLIFICATIO session (2026-02-17):** S4-II partial (essay #37 done), S3-II partial (CONTRIBUTING.md + 5 issues), S6-II partial (2 proposals drafted), essays 38→40
+**Last session:** AMPLIFICATIO (2026-02-17) — 12 ADRs, 2 essays (#39-40), CI fixes, CONTRIBUTING.md, 5 good-first-issues, soak report template, 2 conference proposals
 
 ---
 

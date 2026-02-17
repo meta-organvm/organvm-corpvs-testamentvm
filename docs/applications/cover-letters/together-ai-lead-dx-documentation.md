@@ -6,7 +6,7 @@
 
 ---
 
-I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 386,000+ words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
+I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 404,000+ words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
 
 ## Why Together AI
 

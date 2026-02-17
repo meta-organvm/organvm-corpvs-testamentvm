@@ -7,7 +7,7 @@
 
 ---
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 386,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 404,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
 
 ## Why Hugging Face
 

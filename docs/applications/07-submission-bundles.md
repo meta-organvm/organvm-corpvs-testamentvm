@@ -126,7 +126,7 @@ That's the same discipline Anthropic brings to AI safety: constraints that scale
 
 *Deployment patterns I've already codified.* Your FDE team identifies repeatable deployment patterns and feeds them back to Product and Engineering. I've done this systematically: governance-rules.json encodes rules the system enforces automatically; orchestration-system-v2.md documents the rationale behind every architectural decision; 5 GitHub Actions workflows automate health checks, dependency validation, and promotion across the entire system. These are the kind of artifacts — MCP servers, sub-agents, agent skills — your job description calls for.
 
-*Communication capacity for enterprise environments.* The system includes 386,000+ words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
+*Communication capacity for enterprise environments.* The system includes 404,000+ words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
 
 *Autonomy under ambiguity.* The eight-organ system didn't start with a spec — it started with a question about how to organize 97 repositories into a coherent creative-institutional system. I defined the architecture, built the tooling, documented the decisions, and shipped it. That's the FDE operating model.
 
@@ -184,7 +184,7 @@ The eight-organ system exists because I believe autonomous creative systems need
 
 ### Cover Letter
 
-I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 386,000+ words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
+I'm applying for the Lead DX Engineer, Documentation role at Together AI. I've written 404,000+ words of portfolio-quality documentation for a system coordinating 97 repositories across 8 organizations — and I did it because I believe documentation is infrastructure, not decoration.
 
 **Why Together AI**
 
@@ -262,7 +262,7 @@ I don't just build AI agents; I build the evaluation infrastructure that makes t
 
 ### Cover Letter
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 386,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 404,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
 
 **Why Hugging Face**
 
@@ -319,7 +319,7 @@ Cohere is building the enterprise layer for agentic AI. Enterprise means governa
 
 *Evaluation infrastructure as a first-class concern.* organ-audit.py, platinum-validation.py, and 5 GitHub Actions workflows enforce governance continuously.
 
-*Documentation that scales enterprise adoption.* 386,000+ words of portfolio-quality documentation.
+*Documentation that scales enterprise adoption.* 404,000+ words of portfolio-quality documentation.
 
 I build agentic systems that are governed, tested, and documented — because that's what enterprise deployment requires.
 
