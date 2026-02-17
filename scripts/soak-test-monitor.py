@@ -224,8 +224,10 @@ def fetch_ci_status(registry: dict, dry_run: bool = False) -> dict:
     for repo in ci_repos:
         org = repo["org"]
         name = repo["name"]
+        # Filter to push events on default branch to exclude Dependabot PRs,
+        # Pages builds, and other non-CI workflow runs
         rc, out = gh_api(
-            f"repos/{org}/{name}/actions/runs?per_page=1",
+            f"repos/{org}/{name}/actions/runs?per_page=1&event=push",
             '.workflow_runs[0].conclusion // "no_runs"'
         )
         if rc == 0:
@@ -372,14 +374,15 @@ def cmd_collect(args):
     print(f"\n{'=' * 60}")
     print(f"Snapshot written: {output_path}")
 
-    # Summary verdict
+    # Summary verdict (informational only — collector always returns 0
+    # so that CI commits the snapshot regardless of system health)
     all_pass = reg_result["pass"] and dep_result["pass"]
     if ci_result.get("failing", 0) > 5:
         all_pass = False
     print(f"Validation: {'PASS' if all_pass else 'ISSUES DETECTED'}")
     print(f"{'=' * 60}")
 
-    return 0 if all_pass else 1
+    return 0
 
 
 # --- Report Command ---

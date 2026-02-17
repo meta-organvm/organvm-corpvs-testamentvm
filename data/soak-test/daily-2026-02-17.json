@@ -1,0 +1,91 @@
+{
+  "date": "2026-02-17",
+  "collected_at": "2026-02-17T19:57:53.800429+00:00",
+  "validation": {
+    "registry_pass": true,
+    "registry_issues": [],
+    "dependency_pass": true,
+    "dependency_violations": 0,
+    "stale_repos": []
+  },
+  "ci": {
+    "total_checked": 71,
+    "passing": 53,
+    "failing": 18,
+    "unknown": 0,
+    "failures": [
+      "organvm-i-theoria/recursive-engine--generative-entity: failure",
+      "organvm-i-theoria/organon-noumenon--ontogenetic-morphe: failure",
+      "organvm-i-theoria/narratological-algorithmic-lenses: failure",
+      "organvm-i-theoria/call-function--ontological: failure",
+      "organvm-i-theoria/sema-metra--alchemica-mundi: failure",
+      "organvm-i-theoria/system-governance-framework: failure",
+      "organvm-i-theoria/cognitive-archaelogy-tribunal: failure",
+      "organvm-i-theoria/radix-recursiva-solve-coagula-redi: failure",
+      "organvm-i-theoria/reverse-engine-recursive-run: failure",
+      "organvm-i-theoria/linguistic-atomization-framework: failure",
+      "organvm-i-theoria/my-knowledge-base: failure",
+      "organvm-i-theoria/scalable-lore-expert: failure",
+      "organvm-ii-poiesis/universal-waveform-explorer: failure",
+      "organvm-ii-poiesis/shared-remembrance-gateway: failure",
+      "organvm-iii-ergon/fetch-familiar-friends: failure",
+      "organvm-iii-ergon/a-i-chat--exporter: failure",
+      "organvm-iii-ergon/life-my--midst--in: failure",
+      "organvm-iii-ergon/hokage-chess: failure"
+    ]
+  },
+  "engagement": {
+    "total_stars": 5,
+    "total_forks": 3,
+    "top_repos": {
+      "organvm-i-theoria/recursive-engine--generative-entity": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 936
+      },
+      "organvm-ii-poiesis/metasystem-master": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 1534
+      },
+      "organvm-ii-poiesis/a-mavs-olevm": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 3,
+        "clones_14d": 503
+      },
+      "organvm-iii-ergon/public-record-data-scrapper": {
+        "stars": 2,
+        "forks": 3,
+        "views_14d": 93,
+        "clones_14d": 319
+      },
+      "organvm-iv-taxis/orchestration-start-here": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 0,
+        "clones_14d": 418
+      },
+      "organvm-iv-taxis/agentic-titan": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 13,
+        "clones_14d": 929
+      },
+      "organvm-v-logos/public-process": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 1,
+        "clones_14d": 804
+      },
+      "meta-organvm/organvm-corpvs-testamentvm": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 1516
+      }
+    }
+  }
+}

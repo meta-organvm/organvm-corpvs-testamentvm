@@ -25,7 +25,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
-| Implementation status | 87 ACTIVE, 7 ARCHIVED |
+| Implementation status | 87 ACTIVE, 10 ARCHIVED |
 
 ---
 

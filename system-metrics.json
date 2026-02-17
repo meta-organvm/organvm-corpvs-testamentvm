@@ -3,8 +3,8 @@
   "generated": "2026-02-17T08:38:53.738483+00:00",
   "computed": {
     "total_repos": 97,
-    "active_repos": 90,
-    "archived_repos": 7,
+    "active_repos": 87,
+    "archived_repos": 10,
     "total_organs": 8,
     "operational_organs": 8,
     "ci_workflows": 77,
@@ -44,8 +44,8 @@
       }
     },
     "implementation_status": {
-      "ACTIVE": 90,
-      "ARCHIVED": 7
+      "ACTIVE": 87,
+      "ARCHIVED": 10
     },
     "published_essays": 36,
     "sprints_completed": 33,

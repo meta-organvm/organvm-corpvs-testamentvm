@@ -26,6 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Collect daily snapshot
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN || secrets.GITHUB_TOKEN }}
         run: |

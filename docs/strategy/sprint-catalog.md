@@ -50,7 +50,7 @@ This catalog was generated against the following state. Numbers will drift; the 
 
 | Metric | Value |
 |--------|-------|
-| Registry entries | 97 (87 ACTIVE, 7 ARCHIVED) |
+| Registry entries | 97 (87 ACTIVE, 10 ARCHIVED) |
 | Repos not cloned locally | 0 (all 97 cloned; SYNCHRONIUM Sprint 18) |
 | Deployed essays | 33 on remote (updated Sprint 23: PUBLICATIO) |
 | Undeployed essay drafts | 0 ready to deploy (5 already-deployed drafts remain in `docs/essays/` as source copies) |

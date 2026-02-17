@@ -90,7 +90,7 @@
       print(f'  {status}: {prev} → {curr} ({arrow}{abs(delta)})')
   "
   ```
-- [ ] Verify implementation status distribution matches expectations (90 ACTIVE, 7 ARCHIVED baseline)
+- [ ] Verify implementation status distribution matches expectations (87 ACTIVE, 10 ARCHIVED baseline)
 - [ ] Have any ACTIVE repos degraded (dependencies outdated, tests failing)?
 - [ ] Are the highest-portfolio-relevance repos maintaining code substance?
 
