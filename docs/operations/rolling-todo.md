@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-18 (ERUPTIO: execution guide created, all submission materials staged, omega scorecard added to roadmap)
+**Last reviewed:** 2026-02-18 (ERUPTIO staged: 7 submission scripts ready, deploy guide ready, Sponsors setup guide ready. Materials awaiting execution.)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -45,7 +45,7 @@
 
 - [x] **X4.** Make first social media post — completed 2026-02-17 (HERMETICUM session: Mastodon + Discord via distribution pipeline, issue #45)
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
-- [ ] **F1.** Activate GitHub Sponsors (~15 min) — zero fee, monetizes 97 repos immediately
+- [ ] **F1.** Activate GitHub Sponsors — STAGED 2026-02-18 (ERUPTIO: setup guide ready, tiers $5/$25/$100)
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: feeds #9, #10
 - [ ] **F2.** Apply for Fractured Atlas fiscal sponsorship (~30 min) — $10/mo, unlocks org-only grants (NEA, state arts councils)
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: feeds #9
@@ -63,39 +63,29 @@
 > **Non-negotiable rule from E2G-II:** No new named internal sprints until X1-X4 are complete.
 > **Clarification:** Funding applications are external-facing (breaking the seal), not internal sprints.
 
-- [ ] **F24.** Submit Watermill Center Summer Program application — **deadline TOMORROW Feb 18, 11:59pm EST** (~1-2 hrs)
+- [ ] **F24.** Submit Watermill Center Summer Program application — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via SlideRoom)
   - URL: https://www.watermillcenter.org/summer/ (via SlideRoom) · Fit: 7/10
   - FREE: housing, food, materials, local transport, small travel stipend. 4 weeks on Long Island (Jul 5 - Aug 2, 2026).
-  - Interdisciplinary lab founded by Robert Wilson. New media, performance, literature all eligible.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) · Residency agent
 
-- [ ] **F3.** Submit Artadia NYC application ($15K unrestricted) — **deadline Mar 1** (~3-4 hrs)
+- [ ] **F3.** Submit Artadia NYC application ($15K unrestricted) — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via Submittable)
   - URL: https://artadia.org/award_schedule/new-york/ (Submittable) · Fit: 8/10
-  - Identity position: Multimedia Artist / Systems Artist
-  - Benefits cliff: SNAP-safe. Below Medicaid threshold with Schedule C deductions.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5, #9
 
-- [ ] **F22.** Submit Doris Duke / Mozilla "Artists Make Technology Lab" ($150K) — **deadline Mar 2, 12:00 ET** (~4-6 hrs)
+- [ ] **F22.** Submit Doris Duke / Mozilla "Artists Make Technology Lab" ($150K) — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via Giving Data portal)
   - URL: https://www.dorisduke.org/grants/projects/artists-make-technology-lab · Fit: 7/10
-  - Up to 20 grants of up to $150K each. "Bold ideas in performing arts that engage digital tools, innovative data practices, and emerging production methods."
-  - **Performing arts framing needed:** Governance-as-choreography, community salons as performance, AI orchestration as conducting.
-  - **HIGHEST SINGLE AMOUNT IN PIPELINE.** Even at 7/10 fit, the expected value justifies the 4-6 hour investment.
-  - Benefits cliff: $150K → well above all thresholds. Call NYLAG. Essential Plan bridge.
+  - **HIGHEST SINGLE AMOUNT IN PIPELINE.** Up to $150K. Governance-as-choreography framing.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #9
 
-- [ ] **F10.** Submit Prix Ars Electronica entry (EUR 10K + Golden Nica) — **deadline Mar 4** (~2-3 hrs)
+- [ ] **F10.** Submit Prix Ars Electronica entry (EUR 10K + Golden Nica) — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via calls.ars.electronica.art)
   - URL: https://ars.electronica.art/prix/en/opencall/ · Fit: 8/10
-  - Free to submit. Categories: Digital Music & Sound Art, AI-related. Governance-as-art narrative.
-  - Benefits cliff: International prize, lump-sum. SNAP-safe.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #14
 
-- [ ] **F11.** Submit S+T+ARTS Prize entry (EUR 20K) — **deadline Mar 4** (~2-3 hrs)
+- [ ] **F11.** Submit S+T+ARTS Prize entry (EUR 20K) — STAGED 2026-02-18 (ERUPTIO: auto-qualifies via Prix Ars submission, awaiting Prix Ars submission)
   - URL: https://starts-prize.aec.at/en/open-call/ · Fit: 8/10
-  - "Projects at nexus of science, technology, and the arts." Organ system = exact match.
-  - Benefits cliff: International prize, lump-sum. SNAP-safe.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #14
 
-- [ ] **X1.** Submit Google Creative Lab Five application (~1 hr)
+- [ ] **X1.** Submit Google Creative Lab Five application — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via creativelab5.com)
   - Materials: `docs/applications/05-google-creative-lab-five-responses.md`
   - URL: https://www.creativelab5.com/ · Fit: 8/10
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
@@ -104,10 +94,9 @@
   - Credential-building. Evaluate eligibility before investing time.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md)
 
-- [ ] **F12.** Apply PEN America Writers Aid (up to $3,500) — rolling, **apply NOW** (~1 hr)
+- [ ] **F12.** Apply PEN America Writers Aid (up to $3,500) — STAGED 2026-02-18 (ERUPTIO: submission script ready, awaiting submission via pen.org)
   - URL: https://pen.org/us-writers-aid-initiative/ · Fit: **9/10** — highest-fit emergency fund
-  - MFA + 41 essays = professional writer. Housing-precarious = eligible. PEN membership NOT required.
-  - Benefits cliff: SNAP-safe (lump-sum). Max 2 grants lifetime.
+  - Max 2 grants lifetime. Benefits cliff: SNAP-safe.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #9
 
 - [ ] **F13.** Submit Awesome Foundation NYC ($1K no strings) — monthly deadline (~30 min)
@@ -115,10 +104,8 @@
   - Zero restrictions, zero reporting. SNAP-safe.
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1
 
-- [ ] **X2.** Deploy life-my--midst--in to Render (~1-2 hrs)
+- [ ] **X2.** Deploy life-my--midst--in to Render — STAGED 2026-02-18 (ERUPTIO: deploy script + Neon DB ready, awaiting deployment)
   - Guide: `~/Workspace/organvm-iii-ergon/life-my--midst--in/DEPLOY.md`
-  - Env vars: `DATABASE_URL` (Neon) + `JWT_SECRET`
-  - **Status:** `render.yaml` fixed for free tier (removed worker + Redis). Delete old Render blueprint, then fresh deploy from updated yaml.
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #8
 
 ### This Month (Feb 17 – Mar 18)
@@ -345,11 +332,12 @@
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 | AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 54 (3 READY, 35 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
+**Total items:** 54 (2 READY, 34 TIME, 3 INCOME, 3 EXTERNAL, 12 COMPLETED) — 9 of the READY/TIME items are STAGED (materials ready, awaiting submission/execution)
 **Late agent integration (2026-02-17):** F22 (Doris Duke $150K, Mar 2) from creative tech agent. F24 (Watermill Center, **Feb 18 TOMORROW**) from residency agent — free housing/food, Long Island, 7/10 fit.
 **Research integration (2026-02-17):** 15 new items from exhaustive funding research — 12 funding (F10-F21) + 3 writing income (W1-W3). Key additions: Prix Ars Electronica (Mar 4), S+T+ARTS (Mar 4), PEN America (rolling), WFF Housing ($30K/3yr), Whiting ($40K), Headlands (9/10), Recurse Center (9/10), premium writing income (Noema, Logic, GLR).
 **Strategy rewrite (2026-02-17):** 9 funding items added (F1-F9). Benefits cliff note added. NEEDS TIME reordered by deadline urgency (F3 Artadia Mar 1 → F9 Processing ~Apr-May). Funding submissions classified as external-facing (compatible with P0 hermetic seal rule).
-**Last session:** Late agent integration + research integration (2026-02-17) — 200+ opportunities researched across 5 domains, top targets added to queue
+**ERUPTIO session (2026-02-18):** 9 items staged (materials prepared, not yet submitted) — X1 (CL5 script), X2 (deploy guide), F1 (Sponsors setup guide), F3 (Artadia script), F10 (Prix Ars script), F11 (S+T+ARTS script), F12 (PEN America script), F22 (Doris Duke script), F24 (Watermill script). Submission scripts clipboard-ready; execution awaiting human action.
+**Previous session:** Late agent integration + research integration (2026-02-17) — 200+ opportunities researched across 5 domains, top targets added to queue
 
 ---
 

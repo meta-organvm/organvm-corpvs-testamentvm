@@ -1,7 +1,7 @@
 # Application Tracker — Revised Strategy
 
 **Goal:** Multi-track application strategy balancing art-tech grants, selective employment, consulting, and emergency funds
-**Updated:** 2026-02-18 (ERUPTIO session — execution guide created, all materials staged for 7 submissions + deploy + Sponsors)
+**Updated:** 2026-02-18 (ERUPTIO staged — 7 submission scripts ready, deploy guide ready, Sponsors setup guide ready. Materials awaiting execution.)
 **ERUPTIO guide:** [eruptio-execution-guide.md](./eruptio-execution-guide.md) — master checklist for all actions
 **Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff mechanics, deadline sequencing, identity positions
@@ -10,15 +10,17 @@
 
 ## Status Summary
 
-| Track | Targets | Submitted | Ready | In Progress | Not Started |
-|-------|---------|-----------|-------|-------------|-------------|
-| Art-Tech Grants & Residencies | 18 | 0 | 18 | 0 | 0 |
-| Emergency & Rolling Funds | 7 | 0 | 7 | 0 | 0 |
+| Track | Targets | Staged | Ready | In Progress | Not Started |
+|-------|---------|--------|-------|-------------|-------------|
+| Art-Tech Grants & Residencies | 19 | 6 | 13 | 0 | 0 |
+| Emergency & Rolling Funds | 7 | 1 | 5 | 1 | 0 |
 | Selective Employment | 4 | 0 | 4 | 0 | 0 |
 | Consulting & Freelance | 3 | 0 | 0 | 0 | 3 |
 | Writing Income | 4 | 0 | 4 | 0 | 0 |
 | Career-Building (3-12 mo) | 5 | 0 | 5 | 0 | 0 |
-| **Total** | **41** | **0** | **38** | **0** | **3** |
+| **Total** | **42** | **7** | **31** | **1** | **3** |
+
+> **Note:** "Staged" means submission scripts and materials are prepared and clipboard-ready, but applications have not yet been submitted. Staged ≠ Submitted.
 
 ---
 
@@ -28,7 +30,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.1 — Artadia NYC Awards
 - **Track:** Grant
-- **Status:** READY — submission script generated — **DEADLINE IN 11 DAYS**
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script ready for Submittable)
 - **Deadline:** **March 1, 2026** (via Submittable)
 - **Amount:** $15,000 unrestricted (3 awardees per cycle)
 - **Framing:** Multimedia Artist — the eight-organ system as living creative work, governance-as-art
@@ -66,7 +68,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.4 — Google Creative Lab Five
 - **Track:** Residency
-- **Status:** READY — **Recommended first submission**
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script ready for creativelab5.com)
 - **Deadline:** Open (no stated close date). 17th class runs July 2026–July 2027.
 - **Amount:** Salaried position (1 year)
 - **Framing:** Creative technologist with systematic practice
@@ -112,7 +114,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.8 — Prix Ars Electronica 2026
 - **Track:** International Prize
-- **Status:** READY — submission script generated — **DEADLINE MAR 4**
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script ready for calls.ars.electronica.art)
 - **Deadline:** **March 4, 2026**
 - **Amount:** EUR 10,000 per category + Golden Nica
 - **Framing:** Systems Artist — governance-as-art, AI-conductor methodology
@@ -123,7 +125,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.9 — S+T+ARTS Prize 2026
 - **Track:** International Prize
-- **Status:** READY — submission script generated — **DEADLINE MAR 4**
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: auto-qualifies via Prix Ars submission, awaiting Prix Ars submission)
 - **Deadline:** **March 4, 2026**
 - **Amount:** EUR 20,000 per prize
 - **Framing:** Systems Artist — science + technology + arts nexus
@@ -199,7 +201,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.16 — Doris Duke / Mozilla "Artists Make Technology Lab"
 - **Track:** Grant
-- **Status:** READY — submission script generated — **DEADLINE MAR 2**
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script ready for Giving Data portal)
 - **Deadline:** **March 2, 2026, 12:00 ET**
 - **Amount:** **Up to $150,000** (up to 20 grants)
 - **Framing:** Systems Artist / Community Practitioner — "bold ideas in performing arts that engage digital tools, innovative data practices, and emerging production methods"
@@ -207,6 +209,17 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Eligibility:** Individuals, collaborations, partnerships, organizations
 - **Fit score:** 7/10
 - **Notes:** **HIGHEST SINGLE AMOUNT IN PIPELINE.** The performing arts framing is a stretch — organ system is systems art, not performance. However, "innovative data practices and emerging production methods" is a strong match. Frame ORGAN-VI salons as performative, governance-as-choreography, AI orchestration as conducting. **Benefits cliff: $150K → well above all thresholds. Call NYLAG.**
+
+### 1.19 — Watermill Center International Summer Program
+- **Track:** Residency
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script + proposal PDF ready for SlideRoom)
+- **Deadline:** ~~February 18, 2026, 11:59 PM EST~~
+- **Amount:** FREE (housing, food, studio, local transport, small travel stipend)
+- **Program dates:** July 5 – August 2, 2026 (4 weeks, Water Mill, NY)
+- **Framing:** Interdisciplinary — Governance as Performance, dependency rules as choreographic constraints
+- **Application URL:** https://watermillcenter.slideroom.com/
+- **Fit score:** 7/10
+- **Notes:** Interdisciplinary lab founded by Robert Wilson. Proposed project: "Governance as Performance: Conducting a Living System" — three works translating the organ system's governance rules into performance scores. No income impact (free residency). $12 SlideRoom fee.
 
 ### 1.17 — LACMA Art + Technology Lab
 - **Track:** Grant + Mentorship
@@ -237,7 +250,7 @@ These targets align most strongly with the actual profile — a systems artist b
 No deadlines — activate immediately for ongoing support.
 
 ### 2.1 — GitHub Sponsors
-- **Status:** READY — submission script generated — **Activate NOW** (~15 min)
+- **Status:** **STAGED** — setup guide ready 2026-02-18 (ERUPTIO: tiers $5/$25/$100 defined, awaiting activation)
 - **Amount:** Variable (ongoing)
 - **Notes:** Zero platform fee. Monetizes 100 repos immediately. No eligibility barrier.
 
@@ -260,7 +273,7 @@ No deadlines — activate immediately for ongoing support.
 - **Notes:** Quick application. **Benefits cliff: SNAP-safe.**
 
 ### 2.5 — PEN America Writers Aid
-- **Status:** READY — submission script generated — **APPLY NOW** (rolling)
+- **Status:** **STAGED** — materials ready 2026-02-18 (ERUPTIO: submission script ready for pen.org)
 - **Deadline:** Rolling
 - **Amount:** Up to $3,500
 - **Eligibility:** Professional writers, housing-precarious. PEN membership NOT required.
@@ -412,13 +425,13 @@ Priorities reordered by fit score and deadline urgency. See [09-qualification-as
 
 | Priority | Target | Fit | Deadline | Track | Action |
 |----------|--------|-----|----------|-------|--------|
-| 0 | **Watermill Center** | **7/10** | **FEB 18 TOMORROW** | Residency | **APPLY TONIGHT** — free, SlideRoom |
-| 1 | **Artadia NYC** | **8/10** | **Mar 1** | Grant | **BEGIN NOW** |
-| 2 | **Doris Duke / Mozilla AMT Lab** | **7/10** | **Mar 2** | Grant | **$150K — HIGHEST AMOUNT.** Performing arts framing needed. |
-| 3 | **Prix Ars Electronica** | **8/10** | **Mar 4** | Prize | **SUBMIT THIS WEEK** |
-| 4 | **S+T+ARTS Prize** | **8/10** | **Mar 4** | Prize | **SUBMIT THIS WEEK** |
-| 5 | Google Creative Lab Five | **8/10** | Open | Residency | **SUBMIT NOW** — no deadline |
-| 6 | **PEN America Writers Aid** | **9/10** | Rolling | Emergency | **APPLY NOW** — highest-fit emergency |
+| 0 | **Watermill Center** | **7/10** | **FEB 18** | Residency | **STAGED** — script ready |
+| 1 | **Artadia NYC** | **8/10** | **Mar 1** | Grant | **STAGED** — script ready |
+| 2 | **Doris Duke / Mozilla AMT Lab** | **7/10** | **Mar 2** | Grant | **STAGED** — script ready |
+| 3 | **Prix Ars Electronica** | **8/10** | **Mar 4** | Prize | **STAGED** — script ready |
+| 4 | **S+T+ARTS Prize** | **8/10** | **Mar 4** | Prize | **STAGED** — via Prix Ars |
+| 5 | Google Creative Lab Five | **8/10** | Open | Residency | **STAGED** — script ready |
+| 6 | **PEN America Writers Aid** | **9/10** | Rolling | Emergency | **STAGED** — script ready |
 | 7 | Google Creative Fellowship | **7/10** | **Mar 18** | Fellowship | Submit by deadline |
 | 8 | **Noema pitch** | — | Rolling | Writing | **PITCH THIS MONTH** — $3K/essay |
 | 9 | **Creative Capital 2027** | **9/10** | **Apr 2** | Grant | Portal opens Mar 2 — HIGHEST FIT |
@@ -429,7 +442,7 @@ Priorities reordered by fit score and deadline urgency. See [09-qualification-as
 | 14 | ZKM Rauschenberg | **8/10** | **Apr 12** | Residency | 3 months Germany |
 | 15 | **Whiting Nonfiction** | **8/10** | ~Apr | Grant | $40K — 404K-word corpus pitch |
 | 16 | Eyebeam | **7/10** | Spring TBA | Residency | Monitor for open call |
-| 17 | GitHub Sponsors | — | **ASAP** | Infrastructure | ~15 min setup |
+| 17 | GitHub Sponsors | — | **ASAP** | Infrastructure | **STAGED** — setup guide ready |
 | 18 | Fractured Atlas | — | **ASAP** | Infrastructure | ~30 min, unlocks grants |
 | 19 | **LACMA Art + Tech Lab** | **8/10** | Rolling RFP | Grant | $50K + SpaceX/MIT mentorship |
 | 20 | **Google AMI Grants** | **9/10** | Watch for cycle | Grant | $10K + Google research access |

@@ -1,8 +1,9 @@
 # ERUPTIO — Execution Guide
 
 **Date:** 2026-02-18
+**Status:** STAGED — all materials ready, awaiting execution
 **Purpose:** Break the hermetic seal. Deploy product, submit applications, open revenue channel.
-**Projected omega movement:** 1/17 → 3/17 MET (#1, #5, #8)
+**Planned omega movement:** 1/17 → 3/17 MET (#5, #8, #9). Requires human execution of each action below.
 
 ---
 
@@ -196,28 +197,29 @@ This is a **performing arts** grant. Lead with governance-as-choreography, commu
 
 ---
 
-## Post-Action Governance Updates
+## Post-Action Governance Updates — TO BE COMPLETED after execution
 
-After each action completes, update these files:
+After completing each action above, update governance docs:
 
 ### rolling-todo.md
-Mark completed items with `[x]` and date:
-- F24 → SUBMITTED [date]
-- X2 → COMPLETED [date] + deployed URL
-- X1 → SUBMITTED [date]
-- F3 → SUBMITTED [date]
-- F22 → SUBMITTED [date]
-- F10/F11 → SUBMITTED [date]
-- F12 → SUBMITTED [date]
-- F1 → COMPLETED [date]
+- [ ] F24 → mark SUBMITTED with date (Watermill)
+- [ ] X2 → mark COMPLETED with date (Render deploy)
+- [ ] X1 → mark SUBMITTED with date (Google CL5)
+- [ ] F3 → mark SUBMITTED with date (Artadia NYC)
+- [ ] F22 → mark SUBMITTED with date (Doris Duke AMT)
+- [ ] F10 → mark SUBMITTED with date (Prix Ars Electronica)
+- [ ] F11 → mark SUBMITTED with date (S+T+ARTS via Prix Ars)
+- [ ] F12 → mark SUBMITTED with date (PEN America)
+- [ ] F1 → mark ACTIVATED with date (GitHub Sponsors)
 
 ### 04-application-tracker.md
-Update status column: READY → SUBMITTED with date for each submitted application.
+Update each application status from STAGED → SUBMITTED with date. Update summary table counts.
 
 ### there+back-again.md (Omega Scorecard)
-- **#5** (≥1 application submitted) → **MET** [date] (first submission)
-- **#8** (≥1 ORGAN-III product live) → **MET** [date] (Render deploy URL)
-- **#9** → **IN PROGRESS** (GitHub Sponsors activated, $0 revenue)
+- **#5** → **MET** when ≥1 application actually submitted
+- **#8** → **MET** when life-my--midst--in is live on Render with health check 200
+- **#9** → **IN PROGRESS** when GitHub Sponsors is activated
+- Update score line accordingly
 
 ---
 

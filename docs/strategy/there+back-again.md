@@ -112,7 +112,7 @@ Thirty-three sprints have executed since launch. The system's current state:
 | Soak test | Started (30-day clock running) |
 | Runbooks | 3 written, not yet validated |
 | Stranger test | Protocol ready, not yet executed |
-| Applications | 41 targets tracked, 7 scripts ready for ERUPTIO session, 0 submitted |
+| Applications | 42 targets tracked, 7 submission scripts staged (ERUPTIO), 0 submitted |
 | Revenue | $0 MRR (all ORGAN-III repos pre-launch) |
 
 **What is strong:** Documentation depth, automated governance, dependency integrity, CI coverage, portfolio presentation, audit trail, provenance tracking.
@@ -347,7 +347,7 @@ Omega is achieved when all 17 criteria below are met. Each criterion is measurab
 
 ### Omega Scorecard — Live Status
 
-*Last updated: 2026-02-18 (ERUPTIO session)*
+*Last updated: 2026-02-18 (ERUPTIO session — materials staged, awaiting execution)*
 
 | # | Criterion | Status | Date | Evidence |
 |---|-----------|--------|------|----------|
@@ -355,11 +355,11 @@ Omega is achieved when all 17 criteria below are met. Each criterion is measurab
 | 2 | Stranger test score ≥80% | NOT MET | — | Protocol ready, no participant |
 | 3 | Engagement baseline (30 days) | IN PROGRESS | 2026-02-16 | Data collecting via soak-test-monitor.py |
 | 4 | Runbooks validated | NOT MET | — | 3 runbooks written, not validated |
-| 5 | ≥1 application submitted | NOT MET | — | 7 scripts ready, 0 submitted |
+| 5 | ≥1 application submitted | NOT MET | — | ERUPTIO: 7 submission scripts ready (Watermill, Google CL5, Artadia NYC, Doris Duke AMT, Prix Ars, S+T+ARTS, PEN America). Materials staged, awaiting submission. |
 | 6 | AI-conductor essay published | MET | 2026-02-12 | public-process essay #9 |
 | 7 | ≥3 external feedback collected | NOT MET | — | 0 feedback |
-| 8 | ≥1 ORGAN-III product live | NOT MET | — | Deploy script ready |
-| 9 | revenue_status: live for ≥1 | NOT MET | — | All pre-launch |
+| 8 | ≥1 ORGAN-III product live | NOT MET | — | ERUPTIO: deploy script + Neon DB ready. Awaiting Render deployment. |
+| 9 | revenue_status: live for ≥1 | NOT MET | — | ERUPTIO: GitHub Sponsors setup guide ready. $0 MRR, channel not yet activated. |
 | 10 | MRR ≥ operating costs | NOT MET | — | $0 MRR |
 | 11 | ≥2 salons/events held | NOT MET | — | Infrastructure only |
 | 12 | ≥3 external contributions | NOT MET | — | 5 good-first-issues created |
@@ -371,7 +371,7 @@ Omega is achieved when all 17 criteria below are met. Each criterion is measurab
 
 **Score: 1/17 MET, 3/17 IN PROGRESS, 13/17 NOT MET**
 
-> **ERUPTIO targets:** #5 → MET (submit applications), #8 → MET (deploy product). #9 → IN PROGRESS (GitHub Sponsors activated).
+> **ERUPTIO staged (2026-02-18):** 7 submission scripts prepared, deploy guide ready, Sponsors setup guide ready. Materials awaiting human execution. Score remains 1/17 MET. No external contact yet.
 
 ---
 
