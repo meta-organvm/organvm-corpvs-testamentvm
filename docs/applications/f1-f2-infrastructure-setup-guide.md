@@ -10,7 +10,7 @@
 
 ### Why This Matters
 
-GitHub Sponsors monetizes the 97-repo system immediately. It adds a "Sponsor" button to every repo, signals to grant reviewers that the project accepts financial support, and provides passive income infrastructure with zero upfront cost.
+GitHub Sponsors monetizes the 100-repo system immediately. It adds a "Sponsor" button to every repo, signals to grant reviewers that the project accepts financial support, and provides passive income infrastructure with zero upfront cost.
 
 ### Steps
 
@@ -28,7 +28,7 @@ Set up for your personal account (@4444J99) first — this covers all repos acro
 
 ---
 
-Building the eight-organ creative-institutional system — 97 repositories across 8 organizations, coordinating theory, generative art, commercial products, governance, public process, community, and marketing as a unified creative practice. 42 published essays, 404,000+ words, 82+ CI/CD pipelines, all built by a single practitioner using AI as a compositional instrument. Your sponsorship directly supports an independent systems artist maintaining open-source creative infrastructure.
+Building the eight-organ creative-institutional system — 100 repositories across 8 organizations, coordinating theory, generative art, commercial products, governance, public process, community, and marketing as a unified creative practice. 42 published essays, 404,000+ words, 82+ CI/CD pipelines, all built by a single practitioner using AI as a compositional instrument. Your sponsorship directly supports an independent systems artist maintaining open-source creative infrastructure.
 
 ---
 
@@ -114,7 +114,7 @@ The Eight-Organ Creative-Institutional System
 
 ---
 
-The Eight-Organ Creative-Institutional System is a documented creative infrastructure coordinating 97 open-source software repositories across 8 organizations, governing theory, generative art, commercial products, governance protocols, public documentation, community programming, and distribution as a unified artistic practice.
+The Eight-Organ Creative-Institutional System is a documented creative infrastructure coordinating 100 open-source software repositories across 8 organizations, governing theory, generative art, commercial products, governance protocols, public documentation, community programming, and distribution as a unified artistic practice.
 
 The project's mission is to demonstrate that governance structures, coordination protocols, and systems design are primary creative outputs — not supplementary to art, but constitutive of it. The system produces generative visual and sonic art, published nonfiction essays, community salon programming, and reusable creative technology tools, all coordinated through a machine-readable registry, automated dependency validation, and formal promotion state machines.
 

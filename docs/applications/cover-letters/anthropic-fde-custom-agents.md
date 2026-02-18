@@ -6,7 +6,7 @@
 
 ---
 
-The eight-organ system I built enforces governance rules as data: a machine-readable registry serves as single source of truth for 97 repositories, a dependency validator blocks merges that violate constitutional constraints, and automated audits have maintained 0 critical alerts since launch. That approach — constraints encoded in data, enforced by automation, not by human vigilance — is why I'm drawn to the Forward Deployed Engineer, Custom Agents role at Anthropic.
+The eight-organ system I built enforces governance rules as data: a machine-readable registry serves as single source of truth for 100 repositories, a dependency validator blocks merges that violate constitutional constraints, and automated audits have maintained 0 critical alerts since launch. That approach — constraints encoded in data, enforced by automation, not by human vigilance — is why I'm drawn to the Forward Deployed Engineer, Custom Agents role at Anthropic.
 
 ## Why Anthropic
 
@@ -20,7 +20,7 @@ Anthropic's approach to AI safety requires constraints that scale — not constr
 
 **Communication capacity for enterprise environments.** The system includes 404,000+ words of documentation written for grant reviewers and hiring managers, not just developers. I can explain complex orchestration systems to non-technical stakeholders and translate their needs into production implementations.
 
-**Autonomy under ambiguity.** The eight-organ system didn't start with a spec — it started with a question about how to organize 97 repositories into a coherent creative-institutional system. I defined the architecture, built the tooling, documented the decisions, and shipped it. That's the FDE operating model.
+**Autonomy under ambiguity.** The eight-organ system didn't start with a spec — it started with a question about how to organize 100 repositories into a coherent creative-institutional system. I defined the architecture, built the tooling, documented the decisions, and shipped it. That's the FDE operating model.
 
 ## Evidence
 

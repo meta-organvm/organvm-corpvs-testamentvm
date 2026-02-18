@@ -2,7 +2,7 @@
 
 **For:** Creative Lab Five application (creativelab5.com)
 **Status:** DRAFT
-**Updated:** 2026-02-11
+**Updated:** 2026-02-18
 
 ---
 
@@ -12,7 +12,7 @@
 
 The most interesting creative work I've made came from imposing more constraints, not fewer. My eight-organ system enforces a strict no-back-edges rule: theory feeds art, art feeds commerce — never the reverse. That constraint should limit what's possible. Instead, it forces each organ to be genuinely self-sufficient, which produces work that's stranger and more honest than anything I made when everything could depend on everything else.
 
-The governance model — dependency validation, promotion state machines, automated audits — sounds like the opposite of creative freedom. But designing those rules is where the real creative decisions happen. Choosing *how work flows* between 97 repositories is as much an artistic act as any individual piece the system produces.
+The governance model — dependency validation, promotion state machines, automated audits — sounds like the opposite of creative freedom. But designing those rules is where the real creative decisions happen. Choosing *how work flows* between 100 repositories is as much an artistic act as any individual piece the system produces.
 
 I don't break the rule that creativity needs freedom. I break the rule that constraints aren't creative.
 
@@ -32,7 +32,7 @@ The best way to gain perspective: make the invisible structure explicit, then be
 
 ## Q3: "In 1-3 sentences, tell us about the project you are most proud of and why."
 
-I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~404K+ words of public documentation. The governance rules that coordinate the system are as carefully designed as any artwork it produces — dependency constraints shape what each organ can become, and the documentation renders the entire decision history visible. It's infrastructure that makes its own logic legible.
+I built an eight-organ system that coordinates 100 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~404K+ words of public documentation. The governance rules that coordinate the system are as carefully designed as any artwork it produces — dependency constraints shape what each organ can become, and the documentation renders the entire decision history visible. It's infrastructure that makes its own logic legible.
 
 ---
 

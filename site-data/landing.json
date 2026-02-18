@@ -2,13 +2,13 @@
   "title": "ORGANVM \u2014 Eight-Organ Creative-Institutional System",
   "tagline": "A living system of 8 organs coordinating theory, art, commerce, orchestration, public process, community, marketing, and governance.",
   "metrics": {
-    "total_repos": 91,
-    "active_repos": 82,
-    "archived_repos": 7,
+    "total_repos": 100,
+    "active_repos": 90,
+    "archived_repos": 10,
     "dependency_edges": 31,
-    "ci_workflows": 77,
+    "ci_workflows": 82,
     "operational_organs": 8,
-    "sprints_completed": 13
+    "sprints_completed": 33
   },
   "organs": [
     {
@@ -16,7 +16,7 @@
       "name": "Theory",
       "greek": "Theoria",
       "org": "organvm-i-theoria",
-      "repo_count": 19,
+      "repo_count": 20,
       "status": "OPERATIONAL",
       "description": "Epistemological frameworks, recursive engines, ontological systems, conceptual research"
     },
@@ -25,7 +25,7 @@
       "name": "Art",
       "greek": "Poiesis",
       "org": "organvm-ii-poiesis",
-      "repo_count": 28,
+      "repo_count": 30,
       "status": "OPERATIONAL",
       "description": "Generative art, interactive systems, performance frameworks, experiential work"
     },
@@ -34,7 +34,7 @@
       "name": "Commerce",
       "greek": "Ergon",
       "org": "organvm-iii-ergon",
-      "repo_count": 24,
+      "repo_count": 27,
       "status": "OPERATIONAL",
       "description": "Revenue-generating products, deployed systems, customer-facing tools, B2B/B2C applications"
     },
@@ -79,7 +79,7 @@
       "name": "META-ORGANVM",
       "greek": "META-ORGANVM",
       "org": "",
-      "repo_count": 3,
+      "repo_count": 6,
       "status": "OPERATIONAL",
       "description": "Umbrella organization coordinating all 7 organ orgs. System-wide governance, cross-organ visibility, and institutional identity."
     }
@@ -149,7 +149,107 @@
       "name": "ILLUSTRATIO",
       "date": "2026-02-14",
       "summary": "Portfolio polish \u2014 CMYK design, p5.js animations, LLM consultation"
+    },
+    {
+      "name": "SUBMISSIO",
+      "date": "2026-02-15",
+      "summary": "Application materials \u2014 5 track guides, qualification assessment"
+    },
+    {
+      "name": "REMEDIUM",
+      "date": "2026-02-16",
+      "summary": "Stale metrics refresh across 13 living documents"
+    },
+    {
+      "name": "SYNCHRONIUM",
+      "date": "2026-02-16",
+      "summary": "Cross-document consistency pass"
+    },
+    {
+      "name": "CONCORDIA",
+      "date": "2026-02-16",
+      "summary": "Registry reconciliation \u2014 6 orphan repos registered (91\u219297)"
+    },
+    {
+      "name": "TRIPARTITUM",
+      "date": "2026-02-16",
+      "summary": "Combined REMEDIUM+MEMORIA+ANNOTATIO \u2014 docs aligned with registry"
+    },
+    {
+      "name": "METRICUM",
+      "date": "2026-02-16",
+      "summary": "System metrics measurement \u2014 code audit, test counts, CI coverage"
+    },
+    {
+      "name": "PUBLICATIO",
+      "date": "2026-02-16",
+      "summary": "4 essays deployed, 3 new essays written (29\u219233)"
+    },
+    {
+      "name": "CANON",
+      "date": "2026-02-16",
+      "summary": "Sprint catalog reconciliation \u2014 numbering collisions fixed"
+    },
+    {
+      "name": "INSPECTIO",
+      "date": "2026-02-16",
+      "summary": "Product assessment \u2014 life-my--midst--in selected for beta"
+    },
+    {
+      "name": "PROPAGATIO",
+      "date": "2026-02-16",
+      "summary": "Findings propagation across all living documents"
+    },
+    {
+      "name": "BETA-VITAE",
+      "date": "2026-02-16",
+      "summary": "Beta deployment prep \u2014 Neon DB, migrations, 291 tests passing"
+    },
+    {
+      "name": "RECOGNITIO",
+      "date": "2026-02-17",
+      "summary": "E2G-II post-construction review \u2014 omega scorecard"
+    },
+    {
+      "name": "AUTOMATA",
+      "date": "2026-02-17",
+      "summary": "Autonomous systems activation \u2014 cron workflows, auto-deploy"
+    },
+    {
+      "name": "DISTRIBUTIO",
+      "date": "2026-02-17",
+      "summary": "Autonomous essay distribution \u2014 backfill pipeline, POSSE channels"
+    },
+    {
+      "name": "FUNDAMEN",
+      "date": "2026-02-17",
+      "summary": "Infrastructure hardening \u2014 Organs V/VI/VII/Meta synced and tested"
+    },
+    {
+      "name": "SENSORIA",
+      "date": "2026-02-17",
+      "summary": "Perception layer \u2014 stale-detector, 100% seed.yaml coverage"
+    },
+    {
+      "name": "OPERATIO",
+      "date": "2026-02-17",
+      "summary": "Operations batch \u2014 essay-deploy, organ-cli, dashboard generator"
+    },
+    {
+      "name": "GAP-FILL",
+      "date": "2026-02-11",
+      "summary": "11 repos created, 14 tier promotions, documentation gaps closed"
+    },
+    {
+      "name": "PLATINUM",
+      "date": "2026-02-11",
+      "summary": "65 repos with CI workflows, standardized badges, CHANGELOGs, ADRs"
+    },
+    {
+      "name": "IGNIS PERPETUUS",
+      "date": "2026-02-18",
+      "summary": "ORGAN-VII activation \u2014 social automation, 85+ tests"
     }
   ],
-  "generated": "2026-02-14T20:12:00.706166+00:00"
+  "generated": "2026-02-18T12:00:00.000000+00:00"
 }

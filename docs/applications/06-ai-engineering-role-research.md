@@ -15,7 +15,7 @@ Profile strengths mapped against role requirements:
 
 | Strength | Evidence |
 |----------|----------|
-| Systems architecture | 97 repos, 8 orgs, dependency validation, promotion state machine |
+| Systems architecture | 100 repos, 8 orgs, dependency validation, promotion state machine |
 | Agent orchestration | agentic-titan (1,095 tests, 18 phases), multi-agent coordination |
 | Production infrastructure | 82+ CI/CD pipelines, 5 governance automations, automated health audits |
 | Testing rigor | 1,095 tests (agentic-titan) + 1,254 tests (recursive-engine) |
@@ -68,7 +68,7 @@ Profile strengths mapped against role requirements:
 **Requirements:** 5+ years experience, expert React (hooks, context, suspense), full-stack with UX specialization, LLM and prompt engineering experience, safety/compliance project experience. Nice-to-have: CLI tools, container orchestration, TypeScript at scale.
 
 **Why this fits:**
-- Passion for developer tools demonstrated by building orchestration-start-here as entry point to 97-repo system
+- Passion for developer tools demonstrated by building orchestration-start-here as entry point to 100-repo system
 - LLM orchestration patterns (chaining, tool-use) central to agentic-titan's architecture
 - Container orchestration and CLI experience from CI/CD workflows and validation scripts
 - "Contribute across the stack from front-end UI to back-end infrastructure" matches full-stack organ system
@@ -96,7 +96,7 @@ Profile strengths mapped against role requirements:
 - "Designing agent harnesses" is exactly what agentic-titan's 18-phase test framework does
 - Multi-turn and tool-using system evaluation maps to orchestration validation (dependency checks, health audits, cross-reference verification)
 - "Prototyping with users to building reliable pipelines" mirrors the progression from genesis docs to automated workflows
-- Evaluation framework building = what platinum-validation.py does across 97 repos
+- Evaluation framework building = what platinum-validation.py does across 100 repos
 
 **Spotlight repos:** agentic-titan, recursive-engine--generative-entity, a-i-council--coliseum, organvm-corpvs-testamentvm
 

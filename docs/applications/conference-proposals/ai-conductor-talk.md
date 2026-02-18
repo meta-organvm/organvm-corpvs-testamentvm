@@ -13,7 +13,7 @@
 
 ## Abstract (200 words)
 
-What happens when you treat an AI not as a replacement for a developer, but as an orchestra responding to a conductor? In nine days, I built a 97-repository system spanning 8 organizations — 404,000+ words of documentation, 41 essays, 33 sprints — as a solo operator directing AI generation with human strategic judgment.
+What happens when you treat an AI not as a replacement for a developer, but as an orchestra responding to a conductor? In nine days, I built a 100-repository system spanning 8 organizations — 404,000+ words of documentation, 42 essays, 33 sprints — as a solo operator directing AI generation with human strategic judgment.
 
 This talk introduces the AI-conductor methodology: a structured approach where the human sets direction, defines quality gates, and reviews output, while the AI generates volume at institutional scale. I'll cover the token-based effort model (measuring work in TE, not hours), the quality risks specific to AI-generated content (hallucinated code examples, generic phrasing, incorrect cross-references), and the governance structures that make it work (registries, state machines, dependency graphs).
 
@@ -34,7 +34,7 @@ This is not a talk about prompt engineering. It is a talk about organizational d
 
 ### 3. The Governance Layer (7 min)
 - Why volume without governance creates chaos
-- Registry-as-JSON: single source of truth for 97 repos
+- Registry-as-JSON: single source of truth for 100 repos
 - Unidirectional dependency flow (DAG enforcement)
 - Promotion state machine: when work becomes visible
 
@@ -45,14 +45,14 @@ This is not a talk about prompt engineering. It is a talk about organizational d
 - Billing overruns from automated workflows (48,880 minutes)
 
 ### 5. The Evidence (5 min)
-- 33 sprints completed, 97 repos documented
+- 33 sprints completed, 100 repos documented
 - 30-day soak test (autonomous operation verification)
 - Distribution pipeline: essays auto-deploy to social channels
 - What "done" looks like: omega criteria and exit conditions
 
 ## Speaker Bio
 
-@4444j99 designed the organvm eight-organ system — a 97-repository institutional system coordinated across 8 GitHub organizations, built solo using AI-conductor methodology. 33 sprints, 404K+ words, 82+ CI/CD workflows. MFA. Based in New York City.
+@4444j99 designed the organvm eight-organ system — a 100-repository institutional system coordinated across 8 GitHub organizations, built solo using AI-conductor methodology. 33 sprints, 404K+ words, 82+ CI/CD workflows. MFA. Based in New York City.
 
 ## Technical Requirements
 

@@ -41,7 +41,7 @@ Different funders respond to different framings. Same body of work, four lenses:
 - **Narrative:** "Teaching complex systems to diverse audiences IS my creative practice"
 
 ### 2. Multimedia Artist / Systems Artist
-- 97-repo eight-organ system as living creative work, 41 essays, MFA
+- 100-repo eight-organ system as living creative work, 42 essays, MFA
 - **Targets:** Creative Capital, Artadia, FCA, NYSCA/NYFA, residencies
 - **Narrative:** "I build creative systems — the governance IS the artwork"
 
@@ -77,7 +77,7 @@ All deadlines verified as of 2026-02-17. Ordered chronologically.
 
 | Opportunity | Type | Amount | Deadline | Fit | Action |
 |-------------|------|--------|----------|-----|--------|
-| **Bread Loaf Conference** | Writing scholarship | **$4,440** value | **Mar 15** | 7/10 | Nonfiction track, MFA + 41 essays |
+| **Bread Loaf Conference** | Writing scholarship | **$4,440** value | **Mar 15** | 7/10 | Nonfiction track, MFA + 42 essays |
 | **Google Creative Fellowship** | Paid fellowship (6 mo) | Stipend (~$50K+) | **Mar 18, 5pm PST** | 7/10 | Submit (materials ready) |
 | **Google Creative Lab Five** | Paid residency (1 yr) | Salary | Open (no close date) | 8/10 | Submit ASAP |
 | **Noema Magazine** | Writing income | **$1/word** (~$3K/essay) | Rolling | — | Pitch this month |
@@ -186,7 +186,7 @@ The $60/hr floor from early planning is **significantly below market** (FILE-058
 | AI Readiness Audit | $2,500–$5,000 | Entry point, 40-60% convert to paid work |
 | AI Integration Sprint | $5,000–$15,000 | Core offering |
 | Monthly AI Advisory | $3,000–$7,500 | Retainer model |
-| Custom AI System Build | $10,000–$50,000+ | The 97-repo system IS the credential |
+| Custom AI System Build | $10,000–$50,000+ | The 100-repo system IS the credential |
 | Workshop Facilitation | $500–$2,000/session | Teaching experience as differentiator |
 | Documentation Consulting | $2,500–$15,000/project | ~404K+ words proves capacity |
 

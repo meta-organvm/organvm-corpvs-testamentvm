@@ -3,27 +3,27 @@
   "subtitle": "Eight-Organ Creative-Institutional System",
   "owner": "@4444j99 / @4444J99",
   "launch_date": "2026-02-11",
-  "system_summary": "VERITAS II \u2014 97 repos (all on GitHub), 87 ACTIVE + 10 ARCHIVED, 9 flagship repos with full community health files, 41 essays (~150K words), CLAUDE.md across all active repos (100% AI-augmented workflow coverage), community health files inherited org-wide via 8 .github repos, POSSE distribution live, Jekyll site with RSS, 82+ CI/CD workflows, Astro portfolio site with 19 curated projects, 5 application packages, system-metrics.json dashboard, ~410K+ total words. Methodology: process-as-product, solo production at institutional scale, AI tools used as compositional instruments.",
-  "strategic_context": "The eight-organ system coordinates 97 repos across 8 orgs with automated governance, dependency validation, and a promotion state machine. 41 essays document the methodology in real-time. Evidence supports applications across: (1) AI systems engineering roles (production-grade governance, autonomous infrastructure), (2) Creative/technical grants (sustained organizational capacity, process-as-product), (3) Technology residencies and fellowships (documented creative methodology).",
-  "supporting_evidence": "Artists like Julian Oliver, Nicky Case, and Hundred Rabbits (Devine Lu Linvega & Rekka Bellum) treat protocols and governance structures as primary artistic output, demonstrating that small-scale sustainable creative infrastructure with extensive documentation receives institutional recognition (updated per 08-CANONICAL-ACTION-PLAN.md \u00a77). Programs like Knight Foundation Art+Tech Expansion Fund, Processing Foundation Fellowship, Google Creative Fellowship explicitly evaluate infrastructure contribution and organizational capacity.",
-  "strategic_opportunity": "Position the eight-organ system as evidence of: (a) production-ready thinking (hiring), (b) long-term digital capacity and sustainability (grants), (c) community contribution and reusable infrastructure (residencies). All organs launch simultaneously to demonstrate integrated systems thinking.",
+  "system_summary": "COVENANT-ARK \u2014 100 repos (all on GitHub), 90 ACTIVE + 10 ARCHIVED, 9 flagship repos with full community health files, 42 essays (~142K words), CLAUDE.md across all active repos (100% AI-augmented workflow coverage), community health files inherited org-wide via 8 .github repos, POSSE distribution live, Jekyll site with RSS, 82+ CI/CD workflows, Astro portfolio site with 19 curated projects, 33 named development sprints, system-metrics.json dashboard, ~410K+ total words. Methodology: process-as-product, solo production at institutional scale, AI tools used as compositional instruments.",
+  "strategic_context": "The eight-organ system coordinates 100 repos across 8 orgs with automated governance, dependency validation, and a promotion state machine. 42 essays document the methodology in real-time. Evidence supports applications across: (1) Art-tech grants and residencies (sustained organizational capacity, process-as-product, governance-as-art), (2) Creative fellowships (documented creative methodology, solo production at institutional scale), (3) Selective technology roles (production-grade governance, autonomous infrastructure, multi-agent orchestration).",
+  "supporting_evidence": "Artists like Julian Oliver, Nicky Case, and Hundred Rabbits (Devine Lu Linvega & Rekka Bellum) treat protocols and governance structures as primary artistic output, demonstrating that small-scale sustainable creative infrastructure with extensive documentation receives institutional recognition. Programs like Creative Capital, Artadia, Processing Foundation Fellowship, and Google Creative Lab explicitly evaluate infrastructure contribution, sustained practice, and organizational capacity.",
+  "strategic_opportunity": "Position the eight-organ system as evidence of: (a) a living creative work where governance is the medium (art grants, residencies), (b) long-term digital capacity and sustainability (fellowships), (c) production-grade systems thinking (selective tech roles), (d) community contribution and reusable infrastructure (community-focused funding).",
   "application_targets": [
     {
-      "category": "AI Systems Engineering",
-      "description": "Orchestration capacity, architectural reasoning, multi-agent systems"
+      "category": "Art-Tech Grants",
+      "description": "Creative Capital, Artadia NYC, Doris Duke AMT, Prix Ars Electronica \u2014 governance-as-art, process-as-product"
     },
     {
-      "category": "Creative/Technical Grants",
-      "description": "NSF, NEA, Mellon, Knight Foundation \u2014 infrastructure as art"
+      "category": "Residencies & Fellowships",
+      "description": "Fire Island, Eyebeam, Headlands, MacDowell, Google Creative Lab \u2014 documented creative methodology"
     },
     {
-      "category": "Technology Residencies",
-      "description": "Eyebeam, Recurse Center \u2014 equitable systems, community infrastructure"
+      "category": "Community & Identity",
+      "description": "Queer|Art, WFF Housing Stability, Lambda Literary \u2014 LGBTQ+, lived experience of precarity"
     },
     {
-      "category": "Fellowships",
-      "description": "Processing Foundation, Google Creative \u2014 creative-technical practice with documented methodology"
+      "category": "Selective Technology",
+      "description": "AI orchestration consulting, creative technologist roles \u2014 100-repo system as credential"
     }
   ],
-  "generated": "2026-02-18T01:20:00.000000+00:00"
+  "generated": "2026-02-18T12:00:00.000000+00:00"
 }

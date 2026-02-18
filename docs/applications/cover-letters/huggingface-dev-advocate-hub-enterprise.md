@@ -7,7 +7,7 @@
 
 ---
 
-The eight-organ system has 404,000+ words of documentation across 97 public repositories — each README written for external evaluators, a cross-document dependency map for navigation, and 41 published essays explaining architectural decisions to non-technical audiences. The documentation wasn't a pass on existing code; it was documentation-first development where the writing shaped what the system became. That practice is why I'm applying for the Developer Advocate Engineer role at Hugging Face.
+The eight-organ system has 404,000+ words of documentation across 97 public repositories — each README written for external evaluators, a cross-document dependency map for navigation, and 42 published essays explaining architectural decisions to non-technical audiences. The documentation wasn't a pass on existing code; it was documentation-first development where the writing shaped what the system became. That practice is why I'm applying for the Developer Advocate Engineer role at Hugging Face.
 
 ## Why Hugging Face
 
@@ -18,7 +18,7 @@ The distance between "powerful tool" and "tool people actually use" is almost al
 ## What I'd Bring
 
 **Technical content at scale, from scratch.** The eight-organ documentation corpus includes:
-- 97 repository READMEs, each written for grant reviewers and hiring managers
+- 100 repository READMEs, each written for grant reviewers and hiring managers
 - A cross-document dependency map and reading order so newcomers never feel lost
 - An annotated manifest with per-file descriptions of the entire corpus
 - 42 published essays explaining architectural decisions to non-technical audiences

@@ -39,7 +39,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** EUR 10,000 per category + Golden Nica trophy. Categories include Digital Music & Sound Art, Computer Animation, and new AI-related categories.
 - **Deadline:** March 4, 2026. Free to submit.
-- **Why it fits:** The 97-repo governance-as-art system is exactly what Ars Electronica celebrates — art that is formally innovative through technology. The organ system as a living creative work built with AI-conductor methodology is a strong Ars Electronica narrative.
+- **Why it fits:** The 100-repo governance-as-art system is exactly what Ars Electronica celebrates — art that is formally innovative through technology. The organ system as a living creative work built with AI-conductor methodology is a strong Ars Electronica narrative.
 - **URL:** https://ars.electronica.art/prix/en/opencall/
 - **Benefits cliff:** International prize, lump-sum. SNAP-safe.
 
@@ -54,7 +54,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 ### PEN America U.S. Writers Aid Initiative
 
 - **Amount:** Up to $3,500 (rolling)
-- **Why it fits:** **HIGHEST-FIT emergency fund.** MFA + 41 published essays = clearly professional writer. Nonfiction explicitly eligible. Housing-precarious situation is exactly what this fund targets. PEN membership NOT required. Max 2 grants lifetime.
+- **Why it fits:** **HIGHEST-FIT emergency fund.** MFA + 42 published essays = clearly professional writer. Nonfiction explicitly eligible. Housing-precarious situation is exactly what this fund targets. PEN membership NOT required. Max 2 grants lifetime.
 - **URL:** https://pen.org/us-writers-aid-initiative/
 - **Contact:** writersfund@pen.org
 - **Benefits cliff:** SNAP-safe (lump-sum).
@@ -62,7 +62,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 ### Awesome Foundation NYC Chapter
 
 - **Amount:** $1,000, no strings attached, monthly
-- **Why it fits:** Zero restrictions. The 97-repo organ system is exactly the kind of "awesome" project they fund. No reporting requirements.
+- **Why it fits:** Zero restrictions. The 100-repo organ system is exactly the kind of "awesome" project they fund. No reporting requirements.
 - **URL:** https://www.awesomefoundation.org/en/chapters/nyc
 - **Benefits cliff:** SNAP-safe.
 
@@ -70,7 +70,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** Up to $150,000 per project (up to 20 grants awarded)
 - **Deadline:** March 2, 2026 at 12:00 ET (application portal opened February 2)
-- **Why it fits:** "Bold ideas in the performing arts that engage digital tools, innovative data practices and emerging production methods." The organ system's AI-conductor methodology IS an emerging production method. Community salons (ORGAN-VI) have performative dimensions. The governance-as-choreography metaphor is genuine — coordinating 97 repos through documented governance rules IS choreography of creative production. **HIGHEST SINGLE AMOUNT IN THE PIPELINE.** Even at 7/10 fit, the expected value justifies the application investment.
+- **Why it fits:** "Bold ideas in the performing arts that engage digital tools, innovative data practices and emerging production methods." The organ system's AI-conductor methodology IS an emerging production method. Community salons (ORGAN-VI) have performative dimensions. The governance-as-choreography metaphor is genuine — coordinating 100 repos through documented governance rules IS choreography of creative production. **HIGHEST SINGLE AMOUNT IN THE PIPELINE.** Even at 7/10 fit, the expected value justifies the application investment.
 - **Performing arts framing challenge:** The primary criteria specify "performing arts" — the organ system is systems art, not performance per se. However, "innovative data practices and emerging production methods" is a strong secondary match. Frame ORGAN-VI community salons as performative, governance as choreography, and the public-process essays as performed documentation.
 - **URL:** https://www.dorisduke.org/grants/projects/artists-make-technology-lab
 - **Benefits cliff:** $150K → well above all thresholds. Essential Plan bridge. Call NYLAG.
@@ -95,7 +95,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** $3,000 (5 grants per year; pipeline reopened January 2026)
 - **Eligibility:** Neurodivergent and disabled creators. Formal diagnosis NOT required.
-- **Why it fits:** Broad creative fields. The 97-repo system + 41 essays is exactly what they support. Apply immediately — only 5 grants/year.
+- **Why it fits:** Broad creative fields. The 100-repo system + 42 essays is exactly what they support. Apply immediately — only 5 grants/year.
 - **URL:** https://stimpunks.org/creators/grant/
 - **Benefits cliff:** SNAP-safe.
 
@@ -115,7 +115,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** Participant Scholarship covers tuition, room, board ($4,440 value). 10 days, August 12-22, 2026.
 - **Deadline:** March 15, 2026 via Submittable.
-- **Why it fits:** Prestigious writing conference. MFA + 41 essays positions well for Participant Scholarship in Nonfiction track.
+- **Why it fits:** Prestigious writing conference. MFA + 42 essays positions well for Participant Scholarship in Nonfiction track.
 - **URL:** https://www.middlebury.edu/writers-conferences/writers-conference
 - **Benefits cliff:** Not income (scholarship covers program costs).
 
@@ -173,14 +173,14 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** $40,000 (up to 10 selected)
 - **Deadline:** Likely April 2026 (2025 deadline was April 23)
-- **Why it fits:** Writers completing book-length deeply researched nonfiction. The organ system documentation corpus (404K+ words) IS a book-in-progress about building creative infrastructure with AI. MFA + 41 essays + the extraordinary building-in-public record is a strong Whiting pitch.
+- **Why it fits:** Writers completing book-length deeply researched nonfiction. The organ system documentation corpus (404K+ words) IS a book-in-progress about building creative infrastructure with AI. MFA + 42 essays + the extraordinary building-in-public record is a strong Whiting pitch.
 - **URL:** https://www.whiting.org/writers/creative-nonfiction-grant
 
 ### Andy Warhol Foundation Arts Writers Grant
 
 - **Amount:** $15,000-$50,000
 - **Deadline:** Application opens May 1, 2026
-- **Why it fits:** Supports articles, books, short-form writing, and translation about contemporary visual art. The 41 essays about governance-as-medium, systems art, AI art criticism, and process-as-product are exactly this. The writing portfolio is strong.
+- **Why it fits:** Supports articles, books, short-form writing, and translation about contemporary visual art. The 42 essays about governance-as-medium, systems art, AI art criticism, and process-as-product are exactly this. The writing portfolio is strong.
 - **URL:** https://www.artswriters.org
 
 ---
@@ -265,7 +265,7 @@ This is the **exhaustive master list** — every opportunity discovered across 5
 
 - **Amount:** Up to $60,000 for books; variable for new media projects
 - **Deadline:** Rolling; submit one-page letter of inquiry to Program Director
-- **Why it fits:** The "building in public" essays and governance-as-medium concept could work as a book proposal about AI-augmented creative practice. 41 published essays demonstrate public communication capacity. Science/technology/humanities bridge.
+- **Why it fits:** The "building in public" essays and governance-as-medium concept could work as a book proposal about AI-augmented creative practice. 42 published essays demonstrate public communication capacity. Science/technology/humanities bridge.
 - **URL:** https://sloan.org/programs/public-understanding/new-media
 
 #### Humanity AI Initiative ($500M Fund)
@@ -294,11 +294,11 @@ Publications that pay professional rates for the exact kind of essays already be
 
 ### Pitch Strategy
 
-**Noema** (highest ROI): "I built a 97-repository creative system orchestrated by AI — here's what it reveals about the future of solo creative production." 3,000 words. $3,000.
+**Noema** (highest ROI): "I built a 100-repository creative system orchestrated by AI — here's what it reveals about the future of solo creative production." 3,000 words. $3,000.
 
 **MIT Tech Review**: "The AI-Conductor Model: How one person used Claude to coordinate 97 GitHub repos, 33 development sprints, and 404,000 words of documentation." Feature pitch. $2,500-$12,000.
 
-**Logic Magazine**: "Governance as Artistic Medium: When the rules that coordinate 97 repositories become the artwork." 2,000-4,000 words. $1,200-$2,000.
+**Logic Magazine**: "Governance as Artistic Medium: When the rules that coordinate 100 repositories become the artwork." 2,000-4,000 words. $1,200-$2,000.
 
 **Benefits cliff note:** Writing income is earned income (not lump-sum) — counts toward SNAP monthly threshold ($1,580/month net for 1 person). One Noema essay per quarter keeps income under threshold while adding $12K/year.
 

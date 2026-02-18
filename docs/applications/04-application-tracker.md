@@ -31,7 +31,7 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Deadline:** **March 1, 2026** (via Submittable)
 - **Amount:** $15,000 unrestricted (3 awardees per cycle)
 - **Framing:** Multimedia Artist — the eight-organ system as living creative work, governance-as-art
-- **Lead evidence:** 97-repo system, MFA, portfolio site, 41 essays
+- **Lead evidence:** 100-repo system, MFA, portfolio site, 42 essays
 - **Application URL:** https://artadia.org/award_schedule/new-york/
 - **Eligibility:** Contemporary visual artist, NYC-based, work presented in contemporary art context
 - **Fit score:** 8/10 (see [assessment](./09-qualification-assessment.md))
@@ -43,7 +43,7 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Deadline:** **April 2, 2026, 3pm ET**
 - **Amount:** Up to $50,000 + professional development + new State of the Art Prize
 - **Framing:** Systems Artist — "adventurous and imaginative" artists, interdisciplinary work
-- **Lead evidence:** Full 8-organ system as sustained creative practice, 5+ years, 41 essays
+- **Lead evidence:** Full 8-organ system as sustained creative practice, 5+ years, 42 essays
 - **Application URL:** https://creative-capital.org/creative-capital-award/award-application/
 - **Application format:** 6 short questions, 500-word project description, work samples, bio, resume
 - **Eligibility:** 5+ years professional artistic practice, US-based
@@ -162,7 +162,7 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Application URL:** https://www.whiting.org/writers/creative-nonfiction-grant
 - **Eligibility:** Writers completing book-length deeply researched nonfiction
 - **Fit score:** 8/10
-- **Notes:** MFA + 41 essays + the extraordinary building-in-public record is a strong Whiting pitch. The organ system documentation IS a book about building creative infrastructure with AI. **Benefits cliff: $40K → Essential Plan. Call NYLAG.**
+- **Notes:** MFA + 42 essays + the extraordinary building-in-public record is a strong Whiting pitch. The organ system documentation IS a book about building creative infrastructure with AI. **Benefits cliff: $40K → Essential Plan. Call NYLAG.**
 
 ### 1.13 — Warhol Arts Writers Grant
 - **Track:** Grant
@@ -173,7 +173,7 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Application URL:** https://www.artswriters.org
 - **Eligibility:** Articles, books, short-form writing about contemporary visual art
 - **Fit score:** 7/10
-- **Notes:** 41 essays about governance-as-medium, systems art, AI art criticism, process-as-product. Strong writing portfolio.
+- **Notes:** 42 essays about governance-as-medium, systems art, AI art criticism, process-as-product. Strong writing portfolio.
 
 ### 1.14 — Headlands Center for the Arts
 - **Track:** Residency
@@ -238,7 +238,7 @@ No deadlines — activate immediately for ongoing support.
 ### 2.1 — GitHub Sponsors
 - **Status:** NOT STARTED — **Activate NOW** (~15 min)
 - **Amount:** Variable (ongoing)
-- **Notes:** Zero platform fee. Monetizes 97 repos immediately. No eligibility barrier.
+- **Notes:** Zero platform fee. Monetizes 100 repos immediately. No eligibility barrier.
 
 ### 2.2 — Fractured Atlas Fiscal Sponsorship
 - **Status:** NOT STARTED — **Apply this week** (~30 min)
@@ -265,7 +265,7 @@ No deadlines — activate immediately for ongoing support.
 - **Eligibility:** Professional writers, housing-precarious. PEN membership NOT required.
 - **Fit score:** **9/10** — Highest-fit emergency fund
 - **Application URL:** https://pen.org/us-writers-aid-initiative/
-- **Notes:** MFA + 41 published essays = clearly professional writer. Housing-precarious (licensee in parent's home). Max 2 grants lifetime. **Benefits cliff: SNAP-safe (lump-sum).**
+- **Notes:** MFA + 42 published essays = clearly professional writer. Housing-precarious (licensee in parent's home). Max 2 grants lifetime. **Benefits cliff: SNAP-safe (lump-sum).**
 
 ### 2.6 — Awesome Foundation NYC
 - **Status:** NOT STARTED
@@ -342,7 +342,7 @@ No applications needed — build this pipeline through direct outreach and platf
 
 ### 4.1 — AI Systems Consulting
 - **Rate:** $100–125/hr minimum, project-based preferred ($2,500–$15,000)
-- **Credential:** The 97-repo system IS the credential
+- **Credential:** The 100-repo system IS the credential
 - **Market:** AI orchestration market $47–52B by 2030 (Gartner)
 - **Action:** Register on Toptal, Contra, Working Not Working. LinkedIn outreach (15-30 personalized messages/day when ready).
 
@@ -380,7 +380,7 @@ Premium publications that pay professional rates for exactly the kind of essays 
 - **Rate:** $1/word (~$3K per 3K-word essay)
 - **Contact:** pitches@noemamag.com
 - **Topic fit:** Technology, governance, AI, culture — direct match
-- **Pitch angle:** "I built a 97-repository creative system orchestrated by AI — here's what it reveals about the future of solo creative production."
+- **Pitch angle:** "I built a 100-repository creative system orchestrated by AI — here's what it reveals about the future of solo creative production."
 - **Benefits cliff:** Earned income (counts toward SNAP $1,580/mo threshold). One per quarter = safe.
 
 ### 6.2 — Gay & Lesbian Review
@@ -394,13 +394,13 @@ Premium publications that pay professional rates for exactly the kind of essays 
 - **Rate:** $1,200–$2,000/essay
 - **URL:** https://logicmag.io
 - **Topic fit:** Technology criticism — 8/10 fit
-- **Pitch angle:** "Governance as Artistic Medium: When the rules that coordinate 97 repositories become the artwork."
+- **Pitch angle:** "Governance as Artistic Medium: When the rules that coordinate 100 repositories become the artwork."
 - **Notes:** Themed issues — pitch must align with current call.
 
 ### 6.4 — MIT Technology Review / Wired / Aeon
 - **Rate:** MIT TR $1-3/word ($2.5K-12K), Wired $2,500+ starting, Aeon $500-1,500
 - **Topic fit:** AI, creative technology, LLMs. High prestige + high pay.
-- **Pitch angle:** "The AI-Conductor Model: How one person used Claude to coordinate 97 repos, 33 sprints, and 404K words."
+- **Pitch angle:** "The AI-Conductor Model: How one person used Claude to coordinate 100 repos, 33 sprints, and 404K words."
 - **Notes:** Highest-value outlets. Competitive but the story is genuinely unusual.
 
 ---

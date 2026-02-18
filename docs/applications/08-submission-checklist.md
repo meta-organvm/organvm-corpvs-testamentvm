@@ -3,7 +3,7 @@
 **Created:** 2026-02-16 (SUBMISSIO Sprint 21)
 **Purpose:** Step-by-step human-executable instructions for submitting all 9 prepared applications
 **Status:** READY TO EXECUTE
-**Updated:** 2026-02-16 (Sprint 26 PROPAGATIO — fit scores reconciled with [qualification assessment](./09-qualification-assessment.md))
+**Updated:** 2026-02-18 (Sprint 26 PROPAGATIO — fit scores reconciled with [qualification assessment](./09-qualification-assessment.md))
 
 ---
 
