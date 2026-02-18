@@ -1,8 +1,21 @@
 # Submission-Ready Application Bundles
 
-**Generated:** 2026-02-12 (EXODUS Sprint)
+**Generated:** 2026-02-12 (EXODUS Sprint), updated 2026-02-18 (Submission Blitz)
 **Status:** READY TO SUBMIT
-**Total applications:** 9
+**Total applications:** 9 (original) + 6 standalone submission scripts
+
+### Standalone Submission Scripts (2026-02-18)
+
+| Script | Target | Amount | Deadline | File |
+|--------|--------|--------|----------|------|
+| X1 | Google Creative Lab Five | Stipend | Open | [x1-submission-script.md](./x1-submission-script.md) |
+| E3 | Google Creative Fellowship | Stipend | Mar 18 | [e3-submission-script.md](./e3-submission-script.md) |
+| E4 | Artadia NYC Awards | $15,000 | Mar 1 | [e4-artadia-submission-script.md](./e4-artadia-submission-script.md) |
+| E5 | Prix Ars Electronica + S+T+ARTS | EUR 30,000 | Mar 4 | [e5-prix-ars-starts-submission-script.md](./e5-prix-ars-starts-submission-script.md) |
+| E6 | PEN America Writers Aid | $3,500 | Rolling | [e6-pen-america-submission-script.md](./e6-pen-america-submission-script.md) |
+| F22 | Doris Duke AMT Lab | $150,000 | Mar 2 | [f22-doris-duke-amt-submission-script.md](./f22-doris-duke-amt-submission-script.md) |
+| F24 | Watermill Center Summer | Free residency | Feb 18 | [f24-watermill-submission-script.md](./f24-watermill-submission-script.md) |
+| F1/F2 | GitHub Sponsors + Fractured Atlas | Infrastructure | ASAP | [f1-f2-infrastructure-setup-guide.md](./f1-f2-infrastructure-setup-guide.md) |
 
 ---
 

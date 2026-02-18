@@ -1,7 +1,7 @@
 # Application Tracker — Revised Strategy
 
 **Goal:** Multi-track application strategy balancing art-tech grants, selective employment, consulting, and emergency funds
-**Updated:** 2026-02-17 (research integration — 18+ new targets from exhaustive funding research; late agent: Doris Duke $150K, LACMA $50K, Google AMI $10K)
+**Updated:** 2026-02-18 (submission blitz — 9 submission scripts created, all tiers ready to fire)
 **Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff mechanics, deadline sequencing, identity positions
 
@@ -11,13 +11,13 @@
 
 | Track | Targets | Submitted | Ready | In Progress | Not Started |
 |-------|---------|-----------|-------|-------------|-------------|
-| Art-Tech Grants & Residencies | 18 | 0 | 2 | 0 | 16 |
-| Emergency & Rolling Funds | 7 | 0 | 2 | 0 | 5 |
+| Art-Tech Grants & Residencies | 18 | 0 | 7 | 0 | 11 |
+| Emergency & Rolling Funds | 7 | 0 | 3 | 0 | 4 |
 | Selective Employment | 4 | 0 | 4 | 0 | 0 |
 | Consulting & Freelance | 3 | 0 | 0 | 0 | 3 |
 | Writing Income | 4 | 0 | 0 | 0 | 4 |
 | Career-Building (3-12 mo) | 5 | 0 | 0 | 0 | 5 |
-| **Total** | **41** | **0** | **8** | **0** | **33** |
+| **Total** | **41** | **0** | **14** | **0** | **27** |
 
 ---
 
