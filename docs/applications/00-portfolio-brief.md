@@ -1,7 +1,7 @@
 # Portfolio Brief: The Eight-Organ System
 
 **For:** All application tracks (AI roles, grants, residencies)
-**Updated:** 2026-02-16
+**Updated:** 2026-02-18
 **Status:** LAUNCHED — all 8 organs OPERATIONAL
 
 ---
@@ -21,7 +21,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 | Documentation | ~404K+ words |
 | CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
-| Meta-system essays | 36 published (~132K words) |
+| Meta-system essays | 41 published (~150K words) |
 | Dependency edges | 31, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
@@ -73,7 +73,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 **Lead with:** ORGAN-V essays + registry as evidence of long-term organizational capacity. **Demonstrates:** Digital sustainability, infrastructure that enables ongoing work (not project-based), transparent governance, community contribution model.
 
 ### Residencies & Fellowships
-**Lead with:** Governance as creative practice, all 8 organs as unified artistic infrastructure. **Demonstrates:** Systemic artistic practice, artist-engineer hybrid identity, documentation as artistic output, equitable systems design.
+**Lead with:** The creative process itself as the product — 97 repos assembled into a coherent system through editorial vision, documented in real-time across 41 essays. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output.
 
 ---
 
@@ -89,6 +89,23 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 ---
 
-## Artist-Engineer Identity
+## Process as Product
 
-The eight-organ system is proof that "artist" and "engineer" are not separate roles. AI roles see the systems thinking. Grants see the organizational capacity. Residencies see the systemic artistic practice. Same evidence, different framings. The system *is* the portfolio.
+The eight-organ system makes the creative process itself visible, governable, and reproducible. The 41 essays aren't marketing — they're the creative process rendered into prose. The governance rules aren't bureaucracy — they're generative constraints that shape what the system can become. The registry isn't just metadata — it's the editorial arrangement that turns 97 individual repos into a coherent body of work.
+
+This is the thesis: **the process of creation IS the product.** Grant reviewers see sustained organizational capacity. Residency evaluators see a documented creative methodology. Engineering hiring managers see production-grade systems thinking. Same evidence, same system — the framing shifts, but the work is one thing.
+
+## The Method
+
+I build creative systems using AI tools the way Brian Eno uses generative systems — as compositional instruments, not labor-saving devices. The architectural vision, the governance design, the editorial judgment about what stays and what gets cut: that's the creative work. AI provides execution capacity. I provide the system design that makes 97 repos into a living organism instead of a pile of code.
+
+This is solo production at full intensity. Not isolation as limitation, but as the only way to maintain a singular vision across theory, art, commerce, governance, public process, community, and marketing. Five years of construction, 33 named sprints, 404,000+ words — built alone because the work required it.
+
+## Who This Is For
+
+| Audience | What They See |
+|----------|--------------|
+| AI engineering roles | Production-grade systems thinking: governance, orchestration, autonomous infrastructure |
+| Grant programs | Sustained organizational capacity: the infrastructure already exists and is operational |
+| Residencies & fellowships | A documented creative methodology: the process of creation as artistic practice |
+| Collaborators | A system that's designed to scale: community infrastructure, public documentation, reusable patterns |
