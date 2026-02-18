@@ -100,7 +100,7 @@ The engineering roles require experience that falls into four specific categorie
 
 #### HuggingFace Developer Advocate ($120K–$160K) — Realistic fit: 5/10 (was: 4/10)
 - **Requirement:** No years requirement — purely skills-based. "Deeply technical, not a marketing position." Create docs, blog posts, tutorials; build demos; contribute to Transformers/Datasets libraries.
-- **What works:** Documentation volume and quality are proven (~404K+ words, 38 essays). Self-directed operator. Writing quality. Remote-first. HuggingFace hires 30–40% from community — unconventional backgrounds are normal.
+- **What works:** Documentation volume and quality are proven (~404K+ words, 40 essays). Self-directed operator. Writing quality. Remote-first. HuggingFace hires 30–40% from community — unconventional backgrounds are normal.
 - **What doesn't:** No published ML tutorials or blog posts. No contributions to HF libraries. No professional ML experience. "Deeply technical" means debugging transformer training loops and model evaluation.
 - **Realistic angle:** Content creation is demonstrated at scale. The gap is ML-specific content, not content ability. Skills-based evaluation favors you more than credential-based roles.
 

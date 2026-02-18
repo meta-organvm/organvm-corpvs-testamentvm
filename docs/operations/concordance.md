@@ -123,7 +123,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | NOT MET |
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | NOT MET |
 
-**Scorecard:** 1/17 met (as of 2026-02-17, Sprint 33 OPERATIO). X4 completed (social post live), feeds #13.
+**Scorecard:** 1/17 MET, 8 IN PROGRESS, 8 NOT STARTED (as of 2026-02-17, post-AMPLIFICATIO). #12/#14/#16 advanced to IN PROGRESS (CONTRIBUTING.md, conference proposals, 14 ADRs). X4 completed (social post live). M9-II/M10-II CI fixes pushed.
 
 ---
 

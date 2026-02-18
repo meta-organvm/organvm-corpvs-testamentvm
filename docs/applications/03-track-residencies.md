@@ -15,7 +15,7 @@ Residency evaluators assess:
 2. **Systemic thinking** — Does the artist think beyond individual pieces? (Governance model, dependency graph, state machine)
 3. **Community contribution** — Will this benefit the residency community? (ORGAN-VI, public documentation, reusable patterns)
 4. **Innovation** — Is this genuinely pushing boundaries? (Governance-as-artistic-medium is uncommon)
-5. **Communication** — Can the artist articulate their practice? (~404K+ words, 38 essays, clear system narrative)
+5. **Communication** — Can the artist articulate their practice? (~404K+ words, 40 essays, clear system narrative)
 
 ---
 

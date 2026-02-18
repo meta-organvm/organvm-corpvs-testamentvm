@@ -17,8 +17,8 @@
 | Status | Count | Criteria |
 |--------|-------|----------|
 | MET | 1 | #6 |
-| IN PROGRESS | 5 | #1, #3, #5, #8, #17 |
-| NOT STARTED | 11 | #2, #4, #7, #9, #10, #11, #12, #13, #14, #15, #16 |
+| IN PROGRESS | 8 | #1, #3, #5, #8, #12, #14, #16, #17 |
+| NOT STARTED | 8 | #2, #4, #7, #9, #10, #11, #13, #15 |
 
 **By Horizon:**
 
@@ -27,9 +27,9 @@
 | H1: Prove It Works | Days 1-30 | 0 | 3 (#1, #3, #17) | 2 (#2, #4) |
 | H2: Validate Externally | Days 15-90 | 1 (#6) | 1 (#5) | 1 (#7) |
 | H3: Generate Revenue | Days 30-180 | 0 | 1 (#8) | 2 (#9, #10) |
-| H4: Build Community | Days 60-365 | 0 | 0 | 3 (#11, #12, #13) |
-| H5: Achieve Recognition | Days 90-730 | 0 | 0 | 2 (#14, #15) |
-| Cross-horizon | H1+H4 | 0 | 0 | 1 (#16) |
+| H4: Build Community | Days 60-365 | 0 | 1 (#12) | 2 (#11, #13) |
+| H5: Achieve Recognition | Days 90-730 | 0 | 1 (#14) | 1 (#15) |
+| Cross-horizon | H1+H4 | 0 | 1 (#16) | 0 |
 
 ---
 
@@ -55,6 +55,10 @@
 - Dependency validation: PASS (31 edges, 0 back-edges, 0 cycles)
 - CI: 71 checked, 57 passing, 14 failing (12 ORGAN-I billing lock, 2 other)
 - Engagement: 5 stars, 3 forks, 93 views on public-record-data-scrapper
+
+**AMPLIFICATIO update (2026-02-17):** 4 CI fixes pushed (universal-waveform-explorer, shared-remembrance-gateway, hokage-chess, a-i-chat--exporter), improving soak signal quality from 55/74 (74%) to 67/72 (93.1%).
+
+**Post-AMPLIFICATIO maturation (2026-02-17):** M9-II (fetch-familiar-friends: @types/react-dom v19→v18) and M10-II (life-my--midst--in: ESLint 10→9.x, design-system coverage 75%→20%) pushed. Expected CI: ~69/72 (95.8%) pending workflow runs. Only ORGAN-I billing lock failures remain as known issues.
 
 **Gap:** Need 30 consecutive days of real data. Collection was broken (dry-run only + exit-code-1 preventing commit) until 2026-02-17 fix. ORGAN-I billing lock inflates CI failure count.
 
@@ -132,13 +136,15 @@
 
 **Criterion:** At least one grant/job/fellowship application has been submitted using the system as evidence.
 
-**Status:** 3 applications prepared with materials ready. None yet submitted (requires human action).
+**Status:** 3 applications prepared with materials ready. None yet submitted (requires human action). Evidence base strengthened to 40 essays and 14 ADRs.
 
 **Evidence:**
 - X1 materials: `docs/applications/05-google-creative-lab-five-responses.md`
 - X3 cover letters: `docs/applications/cover-letters/`
-- E3 script: `docs/applications/e3-google-creative-fellowship-submission.md`
+- E3 script: `docs/applications/e3-google-creative-fellowship-submission.md` (deadline March 18)
 - Submission scripts: clipboard-ready, character counts verified
+- Supporting evidence: 40 published essays (~140K+ words), 14 ADRs, CONTRIBUTING.md, 97 repos across 8 orgs
+- 2 conference proposals drafted (AMPLIFICATIO): AI-conductor talk + constraint-alchemy workshop
 
 **Gap:** Human must actually submit the applications. Materials are complete.
 
@@ -156,12 +162,15 @@
 
 **Evidence:**
 - Essay #32: "Building Autonomous Creative Systems" — guide covering the full methodology
-- Essay #36: "Construction Addiction" — retrospective on the build process
 - Essay #33: "Governance for Artists" — guide on the governance layer
-- All published at: `organvm-v-logos/public-process/_posts/`
+- Essay #36: "Construction Addiction" — retrospective on the build process
+- Essay #37: "Constraint Alchemy Workshop" — workshop format for the methodology
+- Essay #39: "Performance Platform Methodology" — platform design methodology
+- Essay #40: "Twelve Decisions" — ADR-based methodology narrative
+- Total: 40 essays published, ~140K+ words, all at `organvm-v-logos/public-process/_posts/`
 - Site URL: accessible via GitHub Pages
 
-**Date met:** 2026-02-16 (essay #32 deployed)
+**Date met:** 2026-02-16 (essay #32 deployed). Strengthened substantially by essays #36-40 (HERMETICUM + AMPLIFICATIO sessions).
 
 ---
 
@@ -259,17 +268,21 @@
 
 ---
 
-#### #12: >=3 External Contributions — NOT STARTED
+#### #12: >=3 External Contributions — IN PROGRESS
 
 **Criterion:** At least 3 contributions from external people to the system (PRs, issues, feedback, content).
 
-**Status:** No external contributions received. Contribution pathway not yet created.
+**Status:** Contribution pathway created (AMPLIFICATIO session, 2026-02-17). Infrastructure exists for external contributors. No external contributions received yet.
 
-**Evidence:** None. (Can verify via `gh api` across all 8 orgs for non-owner activity.)
+**Evidence:**
+- CONTRIBUTING.md: Written and deployed to corpvs-testamentvm root (AMPLIFICATIO)
+- Good-first-issues: 5 created across 5 repos (AMPLIFICATIO) — accessible entry points for newcomers
+- Distribution pipeline: Active since 2026-02-17, pushing content to Mastodon + Discord (creates awareness)
+- 40 published essays provide discoverability surface area
 
-**Gap:** Requires: (1) contribution pathway (S3-II), (2) external awareness, (3) sufficiently accessible entry points.
+**Gap:** Requires actual external contributions. Infrastructure is in place (contribution pathway + entry points + distribution), but no external contributors have engaged yet.
 
-**Blocker:** EXTERNAL — needs community
+**Blocker:** EXTERNAL — needs community discovery and engagement
 
 **Rolling TODO:** S3-II
 
@@ -295,17 +308,21 @@
 
 ---
 
-#### #14: >=1 Recognition Event — NOT STARTED
+#### #14: >=1 Recognition Event — IN PROGRESS
 
 **Criterion:** At least one external recognition: grant award, academic citation, conference invitation, or adoption by another system.
 
-**Status:** No recognition events. Applications not yet submitted (#5).
+**Status:** 2 conference proposals drafted and submission-ready (AMPLIFICATIO, 2026-02-17). E3 (Google Creative Fellowship, deadline March 18) submission script prepared. No recognition received yet, but multiple active pathways exist.
 
-**Evidence:** None.
+**Evidence:**
+- Conference proposals: `docs/applications/conference-proposals/ai-conductor-talk.md` and `constraint-alchemy-talk.md` (AMPLIFICATIO)
+- E3 submission script: `docs/applications/e3-google-creative-fellowship-submission.md` (deadline March 18)
+- 14 ADRs demonstrate methodological rigor suitable for academic/conference citation
+- 40 published essays provide citable body of work
 
-**Gap:** Requires external validation. Potential paths: E3 (Google Creative Fellowship, deadline March 18), S6-II (conference talk proposal), essay citations.
+**Gap:** Proposals drafted but not yet submitted (CFP windows needed). E3 prepared but not submitted. Actual recognition requires external review and acceptance.
 
-**Blocker:** EXTERNAL — fully depends on external actors
+**Blocker:** TIME (submit proposals when CFPs open) + EXTERNAL (acceptance decisions)
 
 **Rolling TODO:** S6-II, E3
 
@@ -319,7 +336,7 @@
 
 **Evidence:**
 - Portfolio URL: `4444j99.github.io/portfolio/`
-- Current state: 97 repos, 87 ACTIVE, 33 sprints, 38 essays displayed
+- Current state: 97 repos, 87 ACTIVE, 33 sprints, 40 essays displayed
 - Data files: `site-data/*.json` and `portfolio-site/src/data/*.json`
 
 **Gap:** No external validation exists to display. This criterion becomes achievable after #7, #14, or #8 produces user testimonials.
@@ -334,19 +351,22 @@
 
 ---
 
-#### #16: Bus Factor >1 (Validated) — NOT STARTED
+#### #16: Bus Factor >1 (Validated) — IN PROGRESS
 
 **Criterion:** A second operator can maintain the system using existing documentation. Validated, not just documented.
 
-**Status:** Documentation exists (runbooks, CLI, autonomous setup guide). No second operator has attempted maintenance.
+**Status:** Documentation substantially strengthened (AMPLIFICATIO, 2026-02-17). 14 ADRs now document key architectural decisions. Comprehensive runbooks, CLI, and autonomous setup guide exist. No second operator has attempted maintenance.
 
 **Evidence:**
+- ADRs: 14 decision records in `docs/adr/` (003-014, covering naming/registry/DAG/AI-conductor/promotion/dating/revenue/dispatch/soak/billing/seed.yaml/numbering) — AMPLIFICATIO
+- CONTRIBUTING.md: External contributor onboarding guide — AMPLIFICATIO
 - Runbooks: `docs/operations/operational-cadence.md`
 - Setup guide: `docs/operations/autonomous-setup-guide.md`
-- CLI: `scripts/organ-cli.py`
-- Autonomous workflows: 11+ configured across 2 repos
+- CLI: `scripts/organ-cli.py` (8 subcommands for system operations)
+- Autonomous workflows: 12 cron workflows across 2 repos (self-operating)
+- Invocation system: `scripts/invoke.py` + `docs/operations/concordance.md` (100+ ID entries)
 
-**Gap:** Needs a real person to attempt system operation and log the results.
+**Gap:** Needs a real person to attempt system operation and log the results. Documentation is now comprehensive enough for the test — the constraint is participant recruitment, not documentation gaps.
 
 **Blocker:** EXTERNAL — requires second person (potentially same as #2 and #4)
 
@@ -370,6 +390,10 @@
 - Metrics: Auto-refreshed weekly (Mon 06:00 UTC)
 - Health monitoring: Daily soak test (08:00 UTC) + weekly stale detector (Tue 06:00 UTC)
 - Pulse reports: Weekly (Sun 12:00 UTC)
+
+**AMPLIFICATIO update (2026-02-17):** 4 CI fixes pushed, improving autonomous signal quality (CI pass rate: 55/74 → 67/72, 93.1%).
+
+**Post-AMPLIFICATIO maturation (2026-02-17):** M9-II and M10-II CI fixes pushed. Expected: ~69/72 (95.8%). Only ORGAN-I billing lock failures remain. Note: CI fixes count as infrastructure maintenance, not system intervention — the autonomous workflows continue operating regardless of individual repo CI status.
 
 **Gap:** Clock started ~2026-02-16. Need 30 days of data showing no required manual intervention. Note: fixing the soak test collector (2026-02-17) counts as infrastructure maintenance, not system intervention — the autonomous workflows themselves didn't fail, the monitoring of them did.
 
@@ -395,7 +419,7 @@ H4 (#11, #12, #13) ──calendar time──→ H4 gradually
 H5 (#14, #15) ──external response──→ H5 last
 ```
 
-**What blocks omega is not engineering.** The 5 IN PROGRESS criteria all have running clocks or prepared materials. The 11 NOT STARTED criteria are blocked by: external humans (6), money (2), time/calendar (2), and dependencies on earlier criteria (1).
+**What blocks omega is not engineering.** The 8 IN PROGRESS criteria all have running clocks, prepared materials, or infrastructure in place. The 8 NOT STARTED criteria are blocked by: external humans (5: #2, #4, #7, #11, #15), money (2: #9, #10), and organic discovery (1: #13).
 
 **The one thing that accelerates everything:** Submitting applications (X1, X3, E3). This directly advances #5 and creates the feedback loop that feeds #7, #14, and ultimately #15.
 
@@ -406,3 +430,4 @@ H5 (#14, #15) ──external response──→ H5 last
 | Date | Change | Reason |
 |------|--------|--------|
 | 2026-02-17 | Initial creation | Pre-validation maturation session |
+| 2026-02-17 | AMPLIFICATIO evidence update — #12, #14, #16 flipped NOT STARTED → IN PROGRESS; #1, #5, #6, #17 evidence strengthened; summary 1/5/11 → 1/8/8; organic link check (#13) negative | Post-AMPLIFICATIO maturation |

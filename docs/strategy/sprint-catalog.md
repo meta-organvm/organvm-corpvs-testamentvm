@@ -1155,7 +1155,7 @@ If the goal is reaching omega with minimum sprint count, these 12 sprints form t
 
 **Already met:** #6 (AI-conductor essay published 2026-02-11), #1/#17 prerequisites (REMEDIUM — workflows healthy), #5/#7 prerequisites (SUBMISSIO — prep complete, human submissions pending), #8 prerequisites (BETA-VITAE — DB provisioned, deployment ready)
 
-**Omega scorecard (E2G-II, Sprint 28):** 1/17 MET, 2 IN PROGRESS, 14 NOT MET. The single met criterion (#6) was achievable entirely internally. All remaining criteria require external contact.
+**Omega scorecard (post-AMPLIFICATIO, Sprint 33):** 1/17 MET (#6), 8 IN PROGRESS (#1, #3, #5, #8, #12, #14, #16, #17), 8 NOT STARTED (#2, #4, #7, #9, #10, #11, #13, #15). The 3 new IN PROGRESS criteria (#12, #14, #16) were advanced by AMPLIFICATIO artifacts (CONTRIBUTING.md, conference proposals, 14 ADRs). All 8 NOT STARTED criteria require external contact or money.
 
 **Remaining critical path:** 8 sprints (42→40→64→24→45→46→47→52→43), plus **immediate human actions** (submit applications, deploy product, first social post) that advance criteria #5, #8, #13 without requiring named sprints.
 

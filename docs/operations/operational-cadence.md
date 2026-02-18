@@ -308,11 +308,11 @@ Concrete next-essay targets, updated at each monthly review. Deploy on Wednesday
 
 ## PART IV: IMMEDIATE PRIORITIES
 
-> **Refreshed: 2026-02-16 (E2G-II, Sprint 28 RECOGNITIO).** Replaces Checkpoint Alpha content. All items below reflect post-construction state: 28 sprints complete, omega scorecard 1/17, zero external contact. The durable templates in Parts I–III remain current.
+> **Refreshed: 2026-02-17 (Post-AMPLIFICATIO maturation).** Replaces Sprint 28 content. All items below reflect post-construction state: 33 sprints complete, omega scorecard 1/17 MET (8 IN PROGRESS, 8 NOT STARTED), hermetic seal broken (X4: social posts live on Mastodon + Discord). The durable templates in Parts I–III remain current.
 
 This section contains time-bound actions that expire. It should be updated at each monthly review.
 
-**Current as of:** 2026-02-16 (E2G-II refresh)
+**Current as of:** 2026-02-17 (Post-AMPLIFICATIO maturation)
 
 ### ALREADY COMPLETE (since Checkpoint Alpha)
 
@@ -414,7 +414,7 @@ This is the durable priority stack. It answers "what should I work on?" when you
 **HIGH (weeks 1-4, Feb 17 - Mar 18):**
 - `organvm-iii-ergon/life-my--midst--in` — payment integration (Stripe)
 - `organvm-v-logos/public-process` — 2 more essays (maintain bi-weekly cadence)
-- `4444J99/portfolio` — refresh with current evidence (28 sprints, omega scorecard, live product)
+- `4444J99/portfolio` — refresh with current evidence (33 sprints, 40 essays, omega scorecard, live product)
 - Google Creative Fellowship — deadline March 18
 
 **MEDIUM (month 2, Mar 18 - Apr 18):**

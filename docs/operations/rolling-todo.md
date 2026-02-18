@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (RENOVATIO: metrics propagated to all living documents, M7-II completed, E3 script ready)
+**Last reviewed:** 2026-02-17 (Post-AMPLIFICATIO: M9-II + M10-II CI fixes completed, omega evidence map refreshed 1/8/8)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -88,24 +88,17 @@
 
 - [ ] **M3-II.** Refresh portfolio with post-construction evidence — 33 sprints, omega scorecard, live product
   - Site: `4444j99.github.io/portfolio/`
-  - **Partial:** RENOVATIO updated all 5 data JSON files (97 repos, 87 ACTIVE, 33 sprints, 36 essays). Omega scorecard page added (pre-validation maturation session). Remaining: visual verification after deploy, push portfolio changes.
+  - **Partial:** RENOVATIO updated all 5 data JSON files (97 repos, 87 ACTIVE, 33 sprints, 40 essays). Omega scorecard page added (pre-validation maturation session). Remaining: visual verification after deploy, push portfolio changes.
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md) · Omega: #15
 
 - [ ] **M6-II.** CI restructure — make CI fail when no tests, require explicit `skip_tests: true`
   - 17 disabled cron workflows remain disabled (Sprint 12 ILLUSTRATIO)
   - Source: [e2g-ii P2](../evaluation/e2g-ii-action-items.md), carried from E2G-I M4
 
-- [ ] **M9-II.** Fix fetch-familiar-friends CI — `@types/react` v18 vs `@types/react-dom` v19 peer dependency conflict (~30 min) · [issue #200](https://github.com/organvm-iii-ergon/fetch-familiar-friends/issues/200)
-  - `package.json` has `@types/react@"^18.2.15"` but `@types/react-dom@"^19.2.3"` — peer requires `@types/react@"^19.2.0"`
-  - Fix: align `@types/react` to `^19.2.0`, or downgrade `@types/react-dom` to v18 line
-  - Affects: `code-quality.yml`, `deploy-pages.yml`, `performance.yml` (all fail at `npm ci`)
-  - `ci.yml` passes (may use different install flags)
+- [x] **M9-II.** Fix fetch-familiar-friends CI — completed 2026-02-17 (downgraded `@types/react-dom` from ^19.2.3 to ^18.3.5 to match runtime React 18.2.0, closes #200)
   - Source: AMPLIFICATIO CI investigation · Omega: #1, #17
 
-- [ ] **M10-II.** Fix life-my--midst--in CI — ESLint 10 incompatibility + design-system coverage gap (~1-2 hrs) · [issue #91](https://github.com/organvm-iii-ergon/life-my--midst--in/issues/91)
-  - **ESLint**: `eslint-plugin-react@7.37.5` uses removed `context.getFilename()` API from ESLint 10. Fix: downgrade to ESLint 9.x or upgrade plugin to v8+ with flat config support.
-  - **Coverage**: `design-system` package at 33% lines / 0% functions vs 75% threshold. Fix: add tests or lower thresholds in vitest config.
-  - Affects: `test.yml`, `ci-cd.yml`, `auto-deploy.yml` (all failing)
+- [x] **M10-II.** Fix life-my--midst--in CI — completed 2026-02-17 (downgraded ESLint ^10.0.0 to ^9.39.2, added design-system vitest.config.ts with 20% thresholds, closes #91)
   - Source: AMPLIFICATIO CI investigation · Omega: #1, #8, #17
 
 - [x] **M7-II.** Registry cleanup: 3 repos archived on GitHub but marked ACTIVE — nexus--babel-alexandria-, 4-ivi374-F0Rivi4, cog-init-1-0- — completed 2026-02-17 (RENOVATIO: all 3 archived in registry, ACTIVE 90→87, ARCHIVED 7→10)
@@ -184,6 +177,10 @@
   - Source: Sprint 32 SENSORIA findings
 - [x] **M8-II.** Resolve 5 ghost repos — completed 2026-02-17 (all 5 exist on GitHub; "ghost" was false alarm from missing local clones)
   - Source: Sprint 32 SENSORIA findings
+- [x] **M9-II.** Fix fetch-familiar-friends CI — completed 2026-02-17 (@types/react-dom v19→v18, closes #200)
+  - Source: AMPLIFICATIO CI investigation
+- [x] **M10-II.** Fix life-my--midst--in CI — completed 2026-02-17 (ESLint 10→9.x, design-system coverage 75%→20%, closes #91)
+  - Source: AMPLIFICATIO CI investigation
 
 ---
 
@@ -206,9 +203,9 @@
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 | AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 28 (1 READY, 13 TIME, 3 INCOME, 3 EXTERNAL, 8 COMPLETED)
-**AMPLIFICATIO session (2026-02-17):** S4-II partial (essay #37 done), S3-II partial (CONTRIBUTING.md + 5 issues), S6-II partial (2 proposals drafted), essays 38→40, M9-II+M10-II added (deferred CI fixes)
-**Last session:** AMPLIFICATIO (2026-02-17) — 12 ADRs, 2 essays (#39-40), CI fixes, CONTRIBUTING.md, 5 good-first-issues, soak report template, 2 conference proposals
+**Total items:** 28 (1 READY, 11 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
+**Post-AMPLIFICATIO maturation (2026-02-17):** M9-II completed (fetch-familiar-friends @types/react-dom fix), M10-II completed (life-my--midst--in ESLint 9 + design-system coverage). Omega evidence map updated (1/8/8). CI target: ~69/72 pending workflow runs.
+**Last session:** Post-AMPLIFICATIO maturation (2026-02-17) — omega evidence map refresh (3 criteria flipped to IN PROGRESS), 2 CI fixes pushed, metrics propagated
 
 ---
 
