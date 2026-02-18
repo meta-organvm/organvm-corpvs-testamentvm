@@ -188,7 +188,7 @@
 - **Deadlines:**
   - **Google Creative Fellowship:** Application deadline **March 18, 2026, 5pm PST** (35 days). Shortlist notification mid-April. Program runs June–December 2026. Locations: NYC, SF, Portland.
   - **Google Creative Lab Five:** Open, no stated close date (17th class runs July 20, 2026 – July 2, 2027). NYC/London only.
-- **Framing:** Practice-led research, all 8 organs as evidence, artist-engineer hybrid
+- **Framing:** Practice-led research, all 8 organs as evidence, creative-technical practice
 - **Lead evidence:** Full system, recursive-engine, generative art repos
 - **Application URLs:**
   - Creative Fellowship: https://creativefellowship.google/
@@ -274,7 +274,7 @@ Priorities reordered by realistic fit score. See [09-qualification-assessment.md
 - **Together AI** has a rare founding documentation role (Lead DX Engineer) — strongest documentation match
 - **HuggingFace** hires 30-40% from open-source community; fully remote; values self-directed operators
 - **Cohere** offers broadest geographic flexibility (SF/NYC/Toronto/Montreal/London)
-- **Runway** is fully remote NA/EU; "merging art and science" mission aligns with artist-engineer identity
+- **Runway** is fully remote NA/EU; "merging art and science" mission aligns with creative-technical practice
 - **Mistral** roles are Paris-based — deprioritized unless willing to relocate
 - **Profile gap:** Most ML research roles require PyTorch/model training experience; strongest fit is systems/orchestration/docs roles
 - Full research: docs/applications/06-ai-engineering-role-research.md

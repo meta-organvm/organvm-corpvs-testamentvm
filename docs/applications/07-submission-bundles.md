@@ -89,7 +89,7 @@ This isn't project-based art. It's infrastructure-as-practice: registry design, 
 
 My reference points include Julian Oliver's critical engineering (treating infrastructure as political/artistic medium), Nicky Case's Explorable Explanations (making systems visible and interactive), and Hundred Rabbits' sustainable tools (building creative infrastructure with radical transparency). Like these practitioners, I believe that protocols, governance structures, and documentation are primary artistic outputs — not supplementary.
 
-The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other artist-engineers can learn from.
+The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other creative technologists can learn from.
 
 ### Project Description
 
@@ -112,11 +112,11 @@ The eight-organ system coordinates 97 repositories across 8 GitHub organizations
 
 ### Cover Letter
 
-I'm applying for the Forward Deployed Engineer, Custom Agents role at Anthropic. My background is in building autonomous systems with production-grade governance — I'm an artist-engineer who treats orchestration and constraint enforcement as primary outputs, not afterthoughts.
+The eight-organ system I built enforces governance rules as data: a machine-readable registry serves as single source of truth for 97 repositories, a dependency validator blocks merges that violate constitutional constraints, and automated audits have maintained 0 critical alerts since launch. That approach — constraints encoded in data, enforced by automation, not by human vigilance — is why I'm drawn to the Forward Deployed Engineer, Custom Agents role at Anthropic.
 
 **Why Anthropic**
 
-I care about governance-as-safety because I've built it. The eight-organ system I designed coordinates 97 repositories across 8 GitHub organizations, and its core innovation is that governance rules are data, not code. A machine-readable registry serves as single source of truth. A dependency validator enforces no circular dependencies and no back-edges. A constitutional document defines immutable principles that automated checks enforce on every merge. This isn't theoretical — it's deployed, audited monthly, and has maintained 0 critical alerts since launch.
+Anthropic's approach to AI safety requires constraints that scale — not constraints that erode under pressure. The system described above solves the same problem at infrastructure scale: governance-rules.json encodes constitutional principles, and automated checks enforce them on every merge without human vigilance. The dependency validator blocks violations before they reach production. Monthly audits confirm system health. The constraints hold because they're structural, not procedural.
 
 That's the same discipline Anthropic brings to AI safety: constraints that scale, not constraints that erode under pressure.
 
@@ -340,11 +340,11 @@ I build agentic systems that are governed, tested, and documented — because th
 
 ### Cover Letter
 
-I'm applying for the MTS, Research Tooling & Data Platform role at Runway. I'm an artist-engineer — someone who builds production infrastructure with the same care for user experience that you'd expect from a creative tool. Runway's mission of merging art and technology isn't aspirational for me; it's how I've been working.
+The eight-organ system coordinates 97 repositories across 8 organizations — half generative art, interactive narrative, and experiential design; half the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. metasystem-master serves as the internal tooling layer that makes the whole system navigable. I built both because creative systems need the same engineering rigor as production platforms. That's Runway's thesis, and why I'm applying for the MTS, Research Tooling & Data Platform role.
 
 **Why Runway**
 
-The eight-organ system I designed is a creative-institutional architecture: 97 repositories across 8 GitHub organizations, half of which are generative art, interactive narrative, and experiential design projects. The other half is the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. I didn't build art tools OR infrastructure — I built both, because I believe creative systems deserve the same engineering rigor as production platforms.
+Runway's research teams need internal tooling built by someone who understands what researchers need and how to build platforms that don't get in their way. The eight-organ system required solving that problem: generative art repos need different workflows than governance infrastructure, but they share a registry, a dependency model, and a promotion pipeline. Every design choice in the tooling layer came from watching creative work get blocked by bad infrastructure — and building something better.
 
 Runway is doing the same thing at a much larger scale. Your research teams need internal tooling built by someone who understands both what researchers need and how to build platforms that don't get in their way.
 

@@ -6,7 +6,7 @@
 
 ---
 
-I'm applying for the Applied AI Engineer, Agentic Workflows role at Cohere. I build multi-agent orchestration systems with production governance — and I've shipped one that coordinates 97 repositories across 8 organizations using exactly the kind of constraint enforcement and evaluation infrastructure your agentic platform needs.
+agentic-titan coordinates multiple AI agents through 18 development phases with 1,095 tests covering coordination, message passing, and fault tolerance. a-i-council--coliseum implements multi-agent deliberation — agents debating positions and synthesizing conclusions. Both systems enforce the same governance model: constitutional constraints, automated validation, and evaluation frameworks that assess output quality. That infrastructure maps directly to the Applied AI Engineer, Agentic Workflows role at Cohere.
 
 ## Why Agentic Workflows at Cohere
 

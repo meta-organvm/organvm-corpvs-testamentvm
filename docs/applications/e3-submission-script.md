@@ -60,7 +60,7 @@ This isn't project-based art. It's infrastructure-as-practice: registry design, 
 
 My reference points include Julian Oliver's critical engineering (treating infrastructure as political/artistic medium), Nicky Case's Explorable Explanations (making systems visible and interactive), and Hundred Rabbits' sustainable tools (building creative infrastructure with radical transparency). Like these practitioners, I believe that protocols, governance structures, and documentation are primary artistic outputs — not supplementary.
 
-The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other artist-engineers can learn from.
+The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other creative technologists can learn from.
 
 ---
 

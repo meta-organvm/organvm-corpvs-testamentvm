@@ -204,9 +204,9 @@ Profile strengths mapped against role requirements:
 
 **Why this fits:**
 - Building internal platform that ML researchers use — mirrors how registry-v2.json and orchestration tooling serve the eight-organ system
-- Product engineering + infrastructure sensibility = exactly the artist-engineer hybrid profile
+- Product engineering + infrastructure sensibility = exactly the creative-technical hybrid profile
 - "User empathy, clean UX" in infrastructure roles is unusual and matches the portfolio-quality-README philosophy
-- Runway's mission ("merging art and science") directly resonates with artist-engineer identity
+- Runway's mission ("merging art and science") directly resonates with creative-technical practice
 
 **Spotlight repos:** metasystem-master, recursive-engine--generative-entity, classroom-rpg-aetheria, your-fit-tailored
 

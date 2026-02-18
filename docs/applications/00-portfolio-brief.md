@@ -67,13 +67,13 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 ## Positioning by Track
 
 ### AI Engineering Roles
-**Lead with:** ORGAN-IV orchestration, registry design, governance trade-offs, agentic-titan (1,095 tests). **Demonstrates:** Production-ready systems thinking, architectural reasoning, autonomous system design, test-driven development at scale.
+**Evidence:** ORGAN-IV orchestration architecture, registry-as-truth design, governance trade-offs encoded in governance-rules.json, agentic-titan (1,095 tests across 18 phases). **Demonstrates:** Production-ready systems thinking, architectural reasoning, autonomous system design, test-driven development at scale.
 
 ### Grant Funding
-**Lead with:** ORGAN-V essays + registry as evidence of long-term organizational capacity. **Demonstrates:** Digital sustainability, infrastructure that enables ongoing work (not project-based), transparent governance, community contribution model.
+**Evidence:** ORGAN-V essays (41 published, ~150K words) + machine-readable registry documenting 5 years of sustained organizational capacity. **Demonstrates:** Digital sustainability, infrastructure that enables ongoing work (not project-based), transparent governance, community contribution model.
 
 ### Residencies & Fellowships
-**Lead with:** The creative process itself as the product — 97 repos assembled into a coherent system through editorial vision, documented in real-time across 41 essays. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output.
+**Evidence:** 97 repos assembled into a coherent system through editorial vision, documented in real-time across 41 essays — the creative process itself rendered as the product. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output.
 
 ---
 
@@ -97,9 +97,9 @@ This is the thesis: **the process of creation IS the product.** Grant reviewers 
 
 ## The Method
 
-I build creative systems using AI tools the way Brian Eno uses generative systems — as compositional instruments, not labor-saving devices. The architectural vision, the governance design, the editorial judgment about what stays and what gets cut: that's the creative work. AI provides execution capacity. I provide the system design that makes 97 repos into a living organism instead of a pile of code.
+The system was built using AI tools as compositional instruments — the architectural vision, governance design, and editorial judgment are the creative work; AI provides execution capacity. The system design that turns 97 repos into a coordinated organism instead of a pile of code is what distinguishes this from either pure engineering or pure art.
 
-This is solo production at full intensity. Not isolation as limitation, but as the only way to maintain a singular vision across theory, art, commerce, governance, public process, community, and marketing. Five years of construction, 33 named sprints, 404,000+ words — built alone because the work required it.
+Solo production at full intensity: not isolation as limitation, but as the only way to maintain a singular vision across theory, art, commerce, governance, public process, community, and marketing. Five years of construction, 33 named sprints, 404,000+ words — built alone because the work required it.
 
 ## Who This Is For
 

@@ -7,13 +7,13 @@
 
 ---
 
-I'm applying for the Developer Advocate Engineer role at Hugging Face. I've built a public documentation corpus of 404,000+ words across 97 repositories — not because someone assigned it, but because I believe open-source systems deserve documentation that treats every reader as someone worth teaching.
+The eight-organ system has 404,000+ words of documentation across 97 public repositories — each README written for external evaluators, a cross-document dependency map for navigation, and 41 published essays explaining architectural decisions to non-technical audiences. The documentation wasn't a pass on existing code; it was documentation-first development where the writing shaped what the system became. That practice is why I'm applying for the Developer Advocate Engineer role at Hugging Face.
 
 ## Why Hugging Face
 
-I want to work in open source because I've already been doing it. The eight-organ system is 81 public repositories across 8 GitHub organizations, every one of them documented for external evaluators — not internal notes cleaned up for public consumption, but documentation-first development where the writing shaped what the system became. The .github org profile for each organ is its own piece of technical communication, designed so someone landing on the org page understands the architecture in 60 seconds.
+81 of those repositories are public across 8 GitHub organizations. The .github org profile for each organ is its own piece of technical communication, designed so someone landing on the org page understands the architecture in 60 seconds. None of this was internal notes cleaned up for public consumption — it was built for external readers from the start.
 
-Hugging Face hires people who tell it where to go. I'm the person who sees a gap in documentation and fills it before anyone asks — because I've learned that the distance between "powerful tool" and "tool people actually use" is almost always a documentation problem.
+The distance between "powerful tool" and "tool people actually use" is almost always a documentation problem. The eight-organ system closed that gap by treating documentation as the primary deliverable, not a secondary artifact.
 
 ## What I'd Bring
 
@@ -40,4 +40,4 @@ This is the kind of content your role creates: docs, blog posts, tutorials, demo
 - **.github org profiles:** Community health files and org-level technical communication across 8 orgs (organvm-i-theoria/.github)
 - **Portfolio:** https://4444j99.github.io/portfolio/
 
-The eight-organ system is public because I believe building in the open makes the work better. I want to bring that conviction to Hugging Face.
+The eight-organ system is public — and the documentation improved because of it. That's the approach I'd bring to Hugging Face.

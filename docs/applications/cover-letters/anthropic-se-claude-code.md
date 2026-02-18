@@ -6,15 +6,15 @@
 
 ---
 
-I'm applying for the Software Engineer position on the Claude Code team. I build developer tools that make complex systems navigable — and I've been doing it at a scale that tests every architectural assumption.
+orchestration-start-here is the entry point to a 97-repo system — a reading order, cross-document dependency map, and annotated manifest that make a complex architecture navigable from a single starting point. I built it because a system that large becomes unusable without strong tooling. That's the problem the Claude Code team solves for everyone, and why I'm applying for the Software Engineer position.
 
 ## Why Claude Code
 
-I'm excited about AI-assisted coding as a tool to enhance developer productivity because I've experienced firsthand what happens when systems grow beyond what any single person can hold in their head. The eight-organ system I designed coordinates 97 repositories across 8 GitHub organizations. Without strong tooling — a machine-readable registry, automated health checks, dependency validation — that system would be unmanageable. I built those tools because I needed them. Claude Code is building them for everyone.
+Systems that grow beyond what any single person can hold in their head need strong tooling to remain navigable. The eight-organ system coordinates 97 repositories across 8 GitHub organizations with a machine-readable registry, automated health checks, and dependency validation. Without those tools, the system would be unmanageable. Claude Code is building that kind of tooling for everyone.
 
 ## What I'd Bring
 
-**Developer tools shaped by real need.** orchestration-start-here is the entry point to a 97-repo system. It exists because I discovered that without a clear "start here" experience, even well-documented systems are impenetrable. Every design choice — the reading order, the cross-document dependency map, the annotated manifest — came from watching people get lost and building something better. That's the developer experience instinct your team needs.
+**Developer tools shaped by real need.** Every design choice in orchestration-start-here — the reading order, the dependency map, the annotated manifest — came from watching people get lost in a complex system and building something that prevented it. That developer experience instinct is what your team needs.
 
 **LLM orchestration patterns in production.** agentic-titan implements multi-agent orchestration across 18 development phases with 1,095 tests. I've worked with chaining patterns, tool-use, and coordination across agent boundaries. linguistic-atomization-framework breaks language into composable units — the kind of DSL design thinking that matters when building tools that parse and transform code. The eight-organ system itself was built using an AI-conductor workflow model where AI generates volume and human reviews — I've been in the loop of LLM-assisted development for the entire project.
 
@@ -30,4 +30,4 @@ I'm excited about AI-assisted coding as a tool to enhance developer productivity
 - **organvm-corpvs-testamentvm:** Meta-system architecture and tooling documentation (meta-organvm/organvm-corpvs-testamentvm)
 - **Portfolio:** https://4444j99.github.io/portfolio/
 
-The eight-organ system exists because I believe autonomous creative systems need the same governance rigor as production AI tools — and that building infrastructure transparently makes it better.
+The eight-organ system applies production governance rigor to creative infrastructure — and the transparency of building it in public made it better.

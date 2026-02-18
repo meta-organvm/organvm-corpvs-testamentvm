@@ -1,7 +1,7 @@
 # Track: Grant Funding
 
 **Targets:** Knight Foundation Art+Tech, Mellon Foundation Arts & Culture, NEA Grants for Arts Projects
-**Identity:** Creative systems designer building autonomous infrastructure — the process of creation IS the product
+**Evidence:** 97-repo system with automated governance, 41 published essays (~150K words), 5+ years sustained practice, operational infrastructure
 **Core evidence:** ORGAN-V essays + registry + eight-organ organizational model
 
 ---
@@ -34,7 +34,7 @@ Grant reviewers evaluate:
 - ORGAN-V essays: Public documentation of the entire model
 
 **Narrative angle:**
-"The eight-organ system is creative infrastructure at institutional scale — operated by a single artist-engineer but designed with the governance rigor of an organization. This isn't a project request; it's evidence that the infrastructure already exists and is operational. The grant would fund sustained content production (ORGAN-V essays), community programming (ORGAN-VI), and implementation of the highest-priority SKELETON repos into working systems."
+"The eight-organ system is creative infrastructure at institutional scale — operated by a single practitioner but designed with the governance rigor of an organization. This isn't a project request; it's evidence that the infrastructure already exists and is operational. The grant would fund sustained content production (ORGAN-V essays), community programming (ORGAN-VI), and implementation of the highest-priority SKELETON repos into working systems."
 
 **Budget methodology:**
 - Content production: 5 essays/month x TE cost per essay (~120K TE each) = mapped to API costs
@@ -79,7 +79,7 @@ Grant reviewers evaluate:
 
 > **Project Title:** [SPECIFIC OR GENERAL]
 >
-> **Applicant:** [NAME] — artist-engineer building autonomous creative systems
+> **Applicant:** [NAME] — designer and builder of the eight-organ creative-institutional system
 >
 > **Summary:**
 > [1-2 sentences describing the specific request]
@@ -91,7 +91,7 @@ Grant reviewers evaluate:
 > [Specific deliverables — essays, implementations, community programming, installations]
 >
 > **Why This Matters:**
-> The eight-organ model demonstrates that sustainable creative practice requires institutional infrastructure — not just talent. By treating governance as an artistic medium and documenting the entire system publicly, this work contributes reusable patterns for other artist-engineers, small arts organizations, and creative technologists operating at the intersection of art and systems design.
+> The eight-organ model demonstrates that sustainable creative practice requires institutional infrastructure — not just talent. By treating governance as an artistic medium and documenting the entire system publicly, this work contributes reusable patterns for other creative technologists, small arts organizations, and practitioners operating at the intersection of art and systems design.
 >
 > **Evidence of Capacity:**
 > - 97 repositories across 8 organizations, all operational
@@ -132,6 +132,6 @@ For grants that require dollar budgets, translate the TE model:
 
 3. **Public documentation as evidence.** Grant reviewers can verify every claim by visiting the public repos. The registry, governance rules, and audit reports are all visible.
 
-4. **Artist-engineer hybrid practice.** This isn't purely technical infrastructure or purely artistic output — it's both simultaneously. The governance model IS the artwork.
+4. **Creative-technical integration.** The system is simultaneously infrastructure and artistic output. The governance model IS the artwork.
 
 5. **Sustained practice, not a one-time project.** The eight-organ system has been developing for 5+ years. The grant would fund the next phase of an ongoing practice, not a speculative new idea.

@@ -52,7 +52,7 @@ This is not a talk about prompt engineering. It is a talk about organizational d
 
 ## Speaker Bio
 
-@4444j99 is an artist-engineer who builds autonomous creative systems and treats their governance as an artistic medium. Creator of the organvm eight-organ system — a 97-repository institutional system built solo using AI-conductor methodology. MFA candidate. Based in New York City.
+@4444j99 designed the organvm eight-organ system — a 97-repository institutional system coordinated across 8 GitHub organizations, built solo using AI-conductor methodology. 33 sprints, 404K+ words, 82+ CI/CD workflows. MFA. Based in New York City.
 
 ## Technical Requirements
 

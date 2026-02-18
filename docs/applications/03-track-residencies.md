@@ -1,7 +1,7 @@
 # Track: Residencies & Fellowships
 
 **Targets:** Eyebeam, Processing Foundation Fellowship, Somerset House / Google Creative Lab
-**Identity:** Systems artist who builds creative infrastructure solo at institutional scale, using AI as instrument
+**Evidence:** 97-repo system built solo over 5+ years, 41 published essays, AI tools used as compositional instruments, all 8 organs operational
 **Core evidence:** All 8 organs as unified creative practice + ORGAN-V process-as-product + ORGAN-VI community
 
 ---
@@ -44,7 +44,7 @@ Residency evaluators assess:
 **Why you fit:** The eight-organ system IS a system in support of creativity. The public documentation (ORGAN-V), community infrastructure (ORGAN-VI), and transparent governance (ORGAN-IV) demonstrate equity-oriented design.
 
 **Proposed residency work:**
-1. Develop ORGAN-VI community programming: artist-engineer salons, governance workshops
+1. Develop ORGAN-VI community programming: creative-technical salons, governance workshops
 2. Write 5+ essays documenting the residency experience within the eight-organ model
 3. Create a "governance toolkit" other artists can adapt for their own practice
 4. Present the eight-organ system as a case study in institutional design
@@ -141,7 +141,7 @@ Residency evaluators assess:
 
 1. **The process IS the product.** The 41 essays, the governance specifications, the public documentation — these aren't supplements to the work. They ARE the work. The creative process, made visible and governable, is the primary output.
 
-2. **Solo production at institutional scale.** One person coordinating 97 repositories through documented governance — using AI as instrument, the way Eno uses generative systems. This is a new mode of creative production, and the system is evidence it works.
+2. **Solo production at institutional scale.** One person coordinating 97 repositories through documented governance, using AI tools as compositional instruments. 33 named sprints, 404K+ words, 82+ CI/CD workflows — the system is evidence this mode of production works.
 
 3. **5+ years of sustained practice.** This isn't a proposal — it's an ongoing body of work requesting a context (the residency) to deepen and share. 33 development sprints, 404K+ words, fully operational.
 

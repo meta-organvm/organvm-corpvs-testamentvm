@@ -64,7 +64,7 @@ I'll walk through the actual decisions — why a single JSON file beats a databa
 
 ## Speaker Bio
 
-@4444j99 is an artist-engineer who builds autonomous creative systems and treats their governance as an artistic medium. Creator of the organvm eight-organ system — 97 repositories built with zero budget, zero team members, and a methodology that transmutes constraints into architecture. Based in New York City.
+@4444j99 designed the organvm eight-organ system — 97 repositories coordinated across 8 GitHub organizations, built with zero budget, zero team members, and a methodology that transmutes constraints into architecture. The governance rules that coordinate the system are as carefully designed as any artwork it produces. Based in New York City.
 
 ## Technical Requirements
 

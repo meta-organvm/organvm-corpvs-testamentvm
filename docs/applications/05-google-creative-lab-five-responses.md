@@ -32,14 +32,14 @@ The best way to gain perspective: make the invisible structure explicit, then be
 
 ## Q3: "In 1-3 sentences, tell us about the project you are most proud of and why."
 
-I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~404K+ words of public documentation. I'm most proud of it because it demonstrates that governance and art aren't separate categories: the rules that coordinate the system are as carefully designed as any artwork it produces. It's infrastructure that makes its own logic visible.
+I built an eight-organ system that coordinates 97 repositories across 8 GitHub organizations — governing how theory, generative art, commercial products, and community work flow into each other through automated dependency validation, a promotion state machine, and ~404K+ words of public documentation. The governance rules that coordinate the system are as carefully designed as any artwork it produces — dependency constraints shape what each organ can become, and the documentation renders the entire decision history visible. It's infrastructure that makes its own logic legible.
 
 ---
 
 ## Notes for Final Submission
 
 - **Tone:** Direct, specific, honest. Avoid buzzwords. Let the numbers speak.
-- **Voice check:** Does this sound like an artist who happens to engineer, or an engineer who happens to make art? Aim for: someone who doesn't see a difference.
+- **Voice check:** Does every sentence describe something built, something the system does, or a verifiable fact? If it describes how you see yourself, rewrite it or cut it.
 - **Evidence density:** Every claim maps to something verifiable in the public repos.
 - **Word counts:** Q1 ~170 words, Q2 ~190 words, Q3 ~85 words. Check Lab Five's limits before submitting.
 

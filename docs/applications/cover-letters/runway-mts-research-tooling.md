@@ -6,13 +6,11 @@
 
 ---
 
-I'm applying for the MTS, Research Tooling & Data Platform role at Runway. I'm an artist-engineer — someone who builds production infrastructure with the same care for user experience that you'd expect from a creative tool. Runway's mission of merging art and technology isn't aspirational for me; it's how I've been working.
+The eight-organ system coordinates 97 repositories across 8 organizations — half generative art, interactive narrative, and experiential design; half the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. metasystem-master serves as the internal tooling layer that makes the whole system navigable. I built both because creative systems need the same engineering rigor as production platforms. That's Runway's thesis, and why I'm applying for the MTS, Research Tooling & Data Platform role.
 
 ## Why Runway
 
-The eight-organ system I designed is a creative-institutional architecture: 97 repositories across 8 GitHub organizations, half of which are generative art, interactive narrative, and experiential design projects. The other half is the governance, orchestration, and tooling infrastructure that makes the creative work possible at scale. I didn't build art tools OR infrastructure — I built both, because I believe creative systems deserve the same engineering rigor as production platforms.
-
-Runway is doing the same thing at a much larger scale. Your research teams need internal tooling built by someone who understands both what researchers need and how to build platforms that don't get in their way. That's the intersection I work at.
+Runway's research teams need internal tooling built by someone who understands what researchers need and how to build platforms that don't get in their way. The eight-organ system required solving that problem: generative art repos need different workflows than governance infrastructure, but they share a registry, a dependency model, and a promotion pipeline. Every design choice in the tooling layer came from watching creative work get blocked by bad infrastructure — and building something better.
 
 ## What I'd Bring
 

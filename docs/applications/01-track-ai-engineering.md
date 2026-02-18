@@ -1,7 +1,7 @@
 # Track: AI Engineering Roles
 
 **Targets:** Anthropic, OpenAI, Runway, Together AI, Hugging Face, + 2 TBD
-**Identity:** Independent systems builder who designs autonomous creative infrastructure with production-grade governance
+**Evidence:** 97-repo system with automated governance, 2,349 tests across flagship projects, 5 CI/CD governance workflows, ~404K+ words of documentation
 **Core evidence:** ORGAN-IV orchestration + agentic-titan + recursive-engine
 
 ---
@@ -63,9 +63,11 @@ This positions you as someone who:
 
 ## Cover Letter Template
 
-> I'm applying for [ROLE] at [COMPANY]. My background is in building autonomous creative systems with production-grade governance — I'm an artist-engineer who treats orchestration and infrastructure as primary outputs.
+> [One sentence: what the system does that's relevant to THIS role]
+> [One sentence: a specific metric or mechanism]
+> [Then: how this connects to the role]
 >
-> Most recently, I designed and deployed an eight-organ system coordinating 97 repositories across 8 GitHub organizations. The system includes:
+> The eight-organ system I designed coordinates 97 repositories across 8 GitHub organizations. The system includes:
 >
 > - A machine-readable registry serving as single source of truth for all repos
 > - Automated dependency validation enforcing no circular dependencies and no back-edges
@@ -79,7 +81,9 @@ This positions you as someone who:
 >
 > - **recursive-engine** — A symbolic operating system with 1,254 tests and 85% coverage, implementing 21 organ handlers for myth, identity, ritual, and recursive systems. This shows my comfort with abstract formal systems translated into production code.
 >
-> I care about [COMPANY-SPECIFIC VALUE] because [GENUINE CONNECTION]. The eight-organ system exists because I believe autonomous creative systems need the same governance rigor as production AI — and that building infrastructure transparently makes it better.
+> [COMPANY-SPECIFIC CONNECTION: how a specific aspect of the system maps to what the company builds]
+>
+> The eight-organ system applies production governance rigor to creative infrastructure — and the transparency of building it in public made it better.
 >
 > Portfolio: github.com/meta-organvm
 > Public process: github.com/organvm-v-logos/public-process
@@ -119,13 +123,13 @@ Key points:
 **Expected questions and how to answer using the system:**
 
 Q: "Tell me about a complex system you've built."
-A: The eight-organ system — 97 repos, 8 orgs, automated governance. Focus on architectural decisions: why 8 organs, why a promotion state machine, why dependency validation.
+A: 97 repositories across 8 GitHub organizations, coordinated by a machine-readable registry, automated dependency validation, and a promotion state machine. Walk through the architectural decisions: why 8 organs (domain separation), why a state machine (governance without human bottlenecks), why dependency validation (structural integrity at scale).
 
 Q: "How do you handle system failures?"
-A: The organ-audit.py script runs monthly health checks. The governance-rules.json defines critical vs. warning thresholds. The validate-dependencies workflow blocks merges that would violate constraints.
+A: organ-audit.py runs monthly health checks across all 97 repos. governance-rules.json defines critical vs. warning thresholds. The validate-dependencies workflow blocks merges that would violate constraints. 0 critical alerts since launch.
 
 Q: "How do you test at scale?"
-A: 77+ CI/CD workflows across all code repos. agentic-titan has 1,095 tests, recursive-engine has 1,254. The platinum-validation.py script does a full system sweep checking every repo.
+A: 77+ CI/CD workflows across all code repos. agentic-titan: 1,095 tests across 18 development phases. recursive-engine: 1,254 tests, 85% coverage. platinum-validation.py sweeps the full system against 1,267 audited links and 31 dependency edges.
 
 Q: "How do you communicate technical decisions?"
-A: ~404K+ words of documentation. 36 published essays. The orchestration-system-v2.md document explains governance rationale. Every README is written for external evaluators.
+A: ~404K+ words of documentation across 97 repos. 41 published essays. orchestration-system-v2.md documents governance rationale. Every README is written for external evaluators, not internal notes.

@@ -28,7 +28,7 @@ The initial assessment overcorrected. It framed the gap as "0 years professional
 
 **Certifications:** Meta Full-Stack Developer (2023–2024), Google UX Design / Digital Marketing / Project Management (2022–2023). Structured learning through industry certification programs.
 
-**What you have built (genuinely impressive):**
+**What you have built:**
 - 97-repo eight-organ system with automated governance, dependency validation, CI/CD
 - agentic-titan: 1,095 tests, 18 phases, multi-agent orchestration
 - recursive-engine: 1,254 tests, 85% coverage, custom DSL
@@ -66,7 +66,7 @@ The engineering roles require experience that falls into four specific categorie
 
 #### Google Creative Lab Five — Realistic fit: 8/10
 - **Requirement:** "0+ years" creative experience
-- **Why you qualify:** Genuine artist-engineer practice. MFA supports creative credibility. Portfolio with generative art, p5.js sketches, eight-organ system as "governance-as-art." Lab Five has no minimum experience requirement.
+- **Why you qualify:** Five years of creative-technical practice documented across 97 repos. MFA supports creative credibility. Portfolio with generative art, p5.js sketches, eight-organ system as "governance-as-art." Lab Five has no minimum experience requirement.
 - **Advantage:** Your profile IS the profile they're looking for — creative technologists who think systemically.
 - **Action:** Submit immediately (no deadline, materials ready)
 
@@ -197,7 +197,7 @@ The engineering roles require experience that falls into four specific categorie
 
 ## Summary
 
-**Your strongest assets are real:** 5 years of independent software engineering (97 repos, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration), 18 years of professional experience across 4 domains, systems thinking, documentation quality, creative-technical hybridity, self-direction, and testing discipline. The eight-organ system is genuinely impressive.
+**Strongest assets:** 5 years of independent software engineering (97 repos, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration), 18 years of professional experience across 4 domains, systems thinking, documentation quality, creative-technical hybridity, self-direction, and testing discipline.
 
 **The gap is also real — but it's specific:** The gap is collaborative team engineering experience and production deployment to real users, not experience itself. No code review with peers. No shared production codebase. No shipping to paying customers. These are the specific things hiring managers at $230K–$560K companies are checking for.
 

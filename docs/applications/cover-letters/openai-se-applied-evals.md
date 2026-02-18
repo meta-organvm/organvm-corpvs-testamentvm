@@ -6,13 +6,11 @@
 
 ---
 
-I'm applying for the Software Engineer, Applied Evals role at OpenAI. I build evaluation and validation systems for complex AI-integrated infrastructure — and I've shipped them at a scale where manual review is impossible and automated quality gates are the only thing between you and system-wide failure.
+organ-audit.py runs monthly health checks across 97 repositories. platinum-validation.py sweeps the full system against 1,267 audited links and 31 dependency edges. Five GitHub Actions workflows enforce constitutional constraints on every merge — no circular dependencies, no back-edges, transitive depth capped at 4. These are evaluation systems built because manual review doesn't scale. That's the same problem the Software Engineer, Applied Evals role at OpenAI solves.
 
 ## Why Applied Evals
 
-Evaluation is governance. When you're evaluating multi-turn and tool-using systems, you're deciding what "good" means for an agent operating autonomously. I've made exactly these decisions for a system coordinating 97 repositories across 8 organizations: What does a healthy repo look like? What dependency patterns indicate architectural risk? When should a promotion be blocked? The answers became automated validation — organ-audit.py, platinum-validation.py, 5 GitHub Actions workflows — that runs continuously without human intervention.
-
-That's eval infrastructure. I want to build it for the systems that matter most.
+Evaluation is governance. When you're evaluating multi-turn and tool-using systems, you're deciding what "good" means for an agent operating autonomously. The eight-organ system required making exactly these decisions for 97 repositories across 8 organizations: What does a healthy repo look like? What dependency patterns indicate architectural risk? When should a promotion be blocked? The answers became the automated validation described above — running continuously without human intervention.
 
 ## What I'd Bring
 
