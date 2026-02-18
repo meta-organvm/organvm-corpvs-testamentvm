@@ -13,7 +13,7 @@
 
 ## Abstract (200 words)
 
-What happens when you treat an AI not as a replacement for a developer, but as an orchestra responding to a conductor? In nine days, I built a 97-repository system spanning 8 organizations — 404,000+ words of documentation, 40 essays, 33 sprints — as a solo operator directing AI generation with human strategic judgment.
+What happens when you treat an AI not as a replacement for a developer, but as an orchestra responding to a conductor? In nine days, I built a 97-repository system spanning 8 organizations — 404,000+ words of documentation, 41 essays, 33 sprints — as a solo operator directing AI generation with human strategic judgment.
 
 This talk introduces the AI-conductor methodology: a structured approach where the human sets direction, defines quality gates, and reviews output, while the AI generates volume at institutional scale. I'll cover the token-based effort model (measuring work in TE, not hours), the quality risks specific to AI-generated content (hallucinated code examples, generic phrasing, incorrect cross-references), and the governance structures that make it work (registries, state machines, dependency graphs).
 

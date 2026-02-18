@@ -1,7 +1,7 @@
 # Track: AI Engineering Roles
 
 **Targets:** Anthropic, OpenAI, Runway, Together AI, Hugging Face, + 2 TBD
-**Identity:** Artist-engineer who builds autonomous creative systems with production-grade governance
+**Identity:** Independent systems builder who designs autonomous creative infrastructure with production-grade governance
 **Core evidence:** ORGAN-IV orchestration + agentic-titan + recursive-engine
 
 ---

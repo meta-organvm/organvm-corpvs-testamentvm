@@ -48,7 +48,7 @@ I'll walk through the actual decisions — why a single JSON file beats a databa
 
 **Technique 5: Portfolio-as-Proof** (2 min)
 - Process documentation IS the deliverable
-- Example: 40 essays about building the system ARE the system's output
+- Example: 41 essays about building the system ARE the system's output
 
 ### 3. The Decisions (8 min)
 - 12 ADRs that shaped the architecture

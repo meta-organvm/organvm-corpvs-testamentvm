@@ -1,7 +1,7 @@
 # Track: Grant Funding
 
 **Targets:** Knight Foundation Art+Tech, Mellon Foundation Arts & Culture, NEA Grants for Arts Projects
-**Identity:** Artist-engineer building autonomous creative infrastructure with documented governance
+**Identity:** Creative systems designer building autonomous infrastructure — the process of creation IS the product
 **Core evidence:** ORGAN-V essays + registry + eight-organ organizational model
 
 ---

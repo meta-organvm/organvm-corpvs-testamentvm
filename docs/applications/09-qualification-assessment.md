@@ -18,7 +18,7 @@ The initial assessment overcorrected. It framed the gap as "0 years professional
 **Education:** MFA Creative Writing (FAU, 2015–2018), BA English Literature (CUNY, 2010–2014)
 
 **Professional experience:**
-- Independent Software Engineer / AI Systems Developer (2021–present) — 5 years. The eight-organ system: 97 repos, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration
+- Independent Creative Systems Designer / AI-Augmented Production (2021–present) — 5 years. Designed and built the eight-organ system: 97 repos, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration. Uses AI tools as compositional instruments for solo production at institutional scale.
 - College Instructor at 8+ institutions (2015–present) — 11 years. Technical explanation, curriculum design, student-facing
 - AJP Media Arts, Multimedia Specialist (2011–present) — 15 years running own business, 15 clients, video/audio/web production, client management, project delivery
 - Miami Dade College Foundation, Digital Marketing Manager (2023–2024) — organizational experience, cross-functional collaboration
@@ -33,7 +33,7 @@ The initial assessment overcorrected. It framed the gap as "0 years professional
 - agentic-titan: 1,095 tests, 18 phases, multi-agent orchestration
 - recursive-engine: 1,254 tests, 85% coverage, custom DSL
 - ~404K+ words of documentation across the system
-- 36 published essays (building in public)
+- 41 published essays (building in public)
 - Portfolio site with generative art (p5.js on all pages, Jost+CMYK design)
 
 ---

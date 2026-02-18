@@ -234,7 +234,7 @@ The methodology is measured in LLM API tokens, not human-hours. A typical 3,000-
 
 The most important aspect of the AI-conductor model is its quality infrastructure. Every AI-generated document passes through the same promotion state machine as everything else in the system — specifications, quality gates, validation checklists. This prevents the most common AI failure mode: plausible text that doesn't say anything useful. The risks we actively monitor include hallucinated code examples (all samples tested or sourced from actual repos), generic boilerplate (project-specific briefs and human review for voice), and incorrect cross-references (automated link checking across 1,267+ links).
 
-The AI-conductor model is documented extensively in the ORGAN V essays, particularly in the methodology and token economics essays. Every document in the system is transparent about its production method. The 40 essays at [public-process](https://organvm-v-logos.github.io/public-process/) provide the most detailed account, including honest post-mortems on what the model gets wrong and where human oversight is non-negotiable.
+The AI-conductor model is documented extensively in the ORGAN V essays, particularly in the methodology and token economics essays. Every document in the system is transparent about its production method. The 41 essays at [public-process](https://organvm-v-logos.github.io/public-process/) provide the most detailed account, including honest post-mortems on what the model gets wrong and where human oversight is non-negotiable.
 
 ---
 

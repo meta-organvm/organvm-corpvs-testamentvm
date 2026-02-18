@@ -414,7 +414,7 @@ This is the durable priority stack. It answers "what should I work on?" when you
 **HIGH (weeks 1-4, Feb 17 - Mar 18):**
 - `organvm-iii-ergon/life-my--midst--in` — payment integration (Stripe)
 - `organvm-v-logos/public-process` — 2 more essays (maintain bi-weekly cadence)
-- `4444J99/portfolio` — refresh with current evidence (33 sprints, 40 essays, omega scorecard, live product)
+- `4444J99/portfolio` — refresh with current evidence (33 sprints, 41 essays, omega scorecard, live product)
 - Google Creative Fellowship — deadline March 18
 
 **MEDIUM (month 2, Mar 18 - Apr 18):**

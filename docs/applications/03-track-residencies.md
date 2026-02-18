@@ -1,35 +1,37 @@
 # Track: Residencies & Fellowships
 
 **Targets:** Eyebeam, Processing Foundation Fellowship, Somerset House / Google Creative Lab
-**Identity:** Artist-engineer whose primary medium is governance and autonomous creative systems
-**Core evidence:** All 8 organs as unified artistic practice + ORGAN-V transparency + ORGAN-VI community
+**Identity:** Systems artist who builds creative infrastructure solo at institutional scale, using AI as instrument
+**Core evidence:** All 8 organs as unified creative practice + ORGAN-V process-as-product + ORGAN-VI community
 
 ---
 
 ## Framing
 
-"As an artist-engineer building autonomous creative systems, I've developed a fully documented eight-organ infrastructure for coordinating theory, art, and community work."
+"I build creative systems — environments where theory, art, and community work grow like organisms in a medium. The eight-organ system coordinates 97 repositories through governance structures I designed the way a composer designs generative scores: the constraints shape what emerges."
 
 Residency evaluators assess:
-1. **Artistic practice** — Is there a coherent body of work? (8 organs, 97 repos, 5+ years)
-2. **Systemic thinking** — Does the artist think beyond individual pieces? (Governance model, dependency graph, state machine)
-3. **Community contribution** — Will this benefit the residency community? (ORGAN-VI, public documentation, reusable patterns)
-4. **Innovation** — Is this genuinely pushing boundaries? (Governance-as-artistic-medium is uncommon)
-5. **Communication** — Can the artist articulate their practice? (~404K+ words, 40 essays, clear system narrative)
+1. **Artistic practice** — Is there a coherent body of work? (8 organs, 97 repos, 5+ years of sustained practice)
+2. **Systemic thinking** — Does the artist think beyond individual pieces? (Governance model, dependency graph, state machine, editorial vision across 97 repos)
+3. **Community contribution** — Will this benefit the residency community? (ORGAN-VI, public documentation, reusable governance patterns)
+4. **Innovation** — Is this genuinely pushing boundaries? (Solo production at institutional scale through AI-augmented methodology)
+5. **Communication** — Can the artist articulate their practice? (~404K+ words, 41 essays, process documented in real-time)
 
 ---
 
 ## Artist Statement (Template)
 
-> I build autonomous creative systems and treat their governance as an artistic medium.
+> I design environments where creative organisms grow — and then I document the process of growing them.
 >
-> My practice centers on the eight-organ system — a documented infrastructure coordinating theory, generative art, commercial products, governance, public process, community, and marketing across 97 repositories. Rather than producing individual artworks, I produce the *systems* that generate, coordinate, and sustain creative work over time.
+> My practice centers on the eight-organ system: a documented infrastructure coordinating theory, generative art, commercial products, governance, public process, community, and marketing across 97 repositories. I don't produce individual artworks. I produce the *systems* that generate, coordinate, and sustain creative work — and the visible record of how those systems are built is itself the primary creative output.
 >
-> This isn't project-based art. It's infrastructure-as-practice: registry design, dependency validation, promotion state machines, automated health checks, and public documentation are all artistic decisions. The choice of how work moves between organs (Theory -> Art -> Commerce) is as important as any individual output.
+> The process of creation is the product. The 41 essays I've published aren't reflections on the work; they ARE the work — the creative process rendered into prose in real time. The governance rules — registry design, dependency graphs, promotion pipelines — aren't bureaucratic overhead; they're generative constraints, the way a composer's harmonic rules shape what melodies can emerge. Every architectural decision is an artistic decision.
 >
-> My reference points include Julian Oliver's critical engineering (treating infrastructure as political/artistic medium), Nicky Case's Explorable Explanations (making systems visible and interactive), and Hundred Rabbits' sustainable tools (building creative infrastructure with radical transparency). Like these practitioners, I believe that protocols, governance structures, and documentation are primary artistic outputs — not supplementary.
+> I work in the tradition of solo producers who became orchestras: Brian Eno treating the studio as a compositional instrument rather than a recording space; Trent Reznor building entire albums alone because nobody else would commit at the necessary intensity; Brian Wilson directing session musicians like a film director directs actors, making the album in the assembly. I use AI tools the way these practitioners used their technologies — as instruments for realizing an architectural vision, not as replacements for creative judgment.
 >
-> The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other artist-engineers can learn from.
+> My reference points also include Julian Oliver's critical engineering, Nicky Case's Explorable Explanations, and Hundred Rabbits' radical transparency. What connects all of them is the conviction that protocols, governance structures, and systems design are primary creative outputs — not supplementary.
+>
+> The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a documented methodology for solo production at institutional scale, (c) an argument that the process of creation — made visible and governable — is itself the most interesting thing an artist can produce, and (d) a reusable model other practitioners can learn from.
 
 ---
 
@@ -98,11 +100,11 @@ Residency evaluators assess:
 
 ## Practice Description (For Application Forms)
 
-> **Discipline:** Systems Art / Creative Technology / Governance Design
+> **Discipline:** Systems Art / Creative Infrastructure / Process Design
 >
-> **Medium:** Software infrastructure, governance protocols, public documentation, generative systems
+> **Medium:** Software infrastructure, governance protocols, public documentation, generative systems, AI-augmented production
 >
-> **Practice summary:** I design autonomous creative systems and their governance — building infrastructure that coordinates theory, art, commerce, and community as a single integrated practice. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations with automated governance, public documentation (~404K+ words), and formal validation. I treat the governance model — registry design, dependency rules, promotion state machines — as artistic output equal to any individual artwork the system produces.
+> **Practice summary:** I build creative systems — environments where creative work grows through documented governance, automated coordination, and visible process. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations, coordinating theory, art, commerce, and community as a single integrated practice. The system is documented at ~404K+ words across 41 essays and governance specifications, all produced through an AI-augmented methodology where I design the architecture and editorial vision while using AI tools as compositional instruments. The governance model — registry design, dependency rules, promotion pipelines — is artistic output equal to any individual work the system produces. The process of creation, made visible and governable, IS the product.
 >
 > **Duration:** 5+ years of sustained practice
 >
@@ -131,18 +133,20 @@ Residency evaluators assess:
 > - github.com/organvm-v-logos/public-process — essays and public documentation
 > - [RELEVANT ORGAN-I/II/III repos]
 >
-> **Bio:** [NAME] is an artist-engineer who builds autonomous creative systems with production-grade governance. Their eight-organ system coordinates 97 repositories across theory, generative art, commercial products, and community — treating infrastructure and governance as primary artistic media.
+> **Bio:** [NAME] builds creative systems — environments where theory, art, commerce, and community grow through documented governance and AI-augmented production. Their eight-organ system coordinates 97 repositories across 8 organizations, treating the process of creation itself as the primary artistic output. With 18 years of professional experience across construction, education, multimedia, and software, they bring an unusual combination of execution discipline and creative vision to systemic art practice.
 
 ---
 
 ## Key Differentiators for Residency Evaluators
 
-1. **Governance IS the art.** This isn't an engineer who also makes art, or an artist who also codes. The governance model, registry design, and dependency rules are artistic decisions.
+1. **The process IS the product.** The 41 essays, the governance specifications, the public documentation — these aren't supplements to the work. They ARE the work. The creative process, made visible and governable, is the primary output.
 
-2. **5+ years of sustained practice.** This isn't a proposal — it's an ongoing body of work requesting a context (the residency) to deepen and share.
+2. **Solo production at institutional scale.** One person coordinating 97 repositories through documented governance — using AI as instrument, the way Eno uses generative systems. This is a new mode of creative production, and the system is evidence it works.
 
-3. **Community-oriented by design.** ORGAN-VI exists specifically for community infrastructure. ORGAN-V makes everything public. The system is designed to contribute, not just produce.
+3. **5+ years of sustained practice.** This isn't a proposal — it's an ongoing body of work requesting a context (the residency) to deepen and share. 33 development sprints, 404K+ words, fully operational.
 
-4. **Documented and verifiable.** Every claim can be verified by visiting the public repos. The registry, governance rules, audit reports, and essays are all visible.
+4. **Community-oriented by design.** ORGAN-VI exists specifically for community infrastructure. ORGAN-V makes everything public. The system is designed to contribute, not just produce.
 
-5. **Reusable infrastructure.** The governance model, workflow templates, and documentation patterns are designed to be adapted by other practitioners. The residency output would include a toolkit others can use.
+5. **Documented and verifiable.** Every claim can be verified by visiting the public repos. The registry, governance rules, audit reports, and essays are all visible. The system practices the transparency it preaches.
+
+6. **AI-augmented methodology as creative practice.** Using AI tools as compositional instruments — not hiding this, but making it central to the artistic identity. This is the future of creative production, and the system demonstrates it at scale.

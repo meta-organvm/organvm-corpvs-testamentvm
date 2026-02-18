@@ -10,7 +10,7 @@ Accepted
 
 ## Context
 
-Building institutional-scale documentation (97 repos, ~404K+ words, 40 essays) as a solo operator is infeasible with traditional human-writes-everything workflows. The project needed a methodology that:
+Building institutional-scale documentation (97 repos, ~404K+ words, 41 essays) as a solo operator is infeasible with traditional human-writes-everything workflows. The project needed a methodology that:
 
 1. Enables one person to produce volume equivalent to a small team
 2. Maintains consistent quality across hundreds of documents

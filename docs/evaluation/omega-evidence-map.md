@@ -136,7 +136,7 @@
 
 **Criterion:** At least one grant/job/fellowship application has been submitted using the system as evidence.
 
-**Status:** 3 applications prepared with materials ready. None yet submitted (requires human action). Evidence base strengthened to 40 essays and 14 ADRs.
+**Status:** 3 applications prepared with materials ready. None yet submitted (requires human action). Evidence base strengthened to 41 essays and 14 ADRs.
 
 **Evidence:**
 - X1 materials: `docs/applications/05-google-creative-lab-five-responses.md`
@@ -167,7 +167,7 @@
 - Essay #37: "Constraint Alchemy Workshop" — workshop format for the methodology
 - Essay #39: "Performance Platform Methodology" — platform design methodology
 - Essay #40: "Twelve Decisions" — ADR-based methodology narrative
-- Total: 40 essays published, ~140K+ words, all at `organvm-v-logos/public-process/_posts/`
+- Total: 41 essays published, ~140K+ words, all at `organvm-v-logos/public-process/_posts/`
 - Site URL: accessible via GitHub Pages
 
 **Date met:** 2026-02-16 (essay #32 deployed). Strengthened substantially by essays #36-40 (HERMETICUM + AMPLIFICATIO sessions).
@@ -336,7 +336,7 @@
 
 **Evidence:**
 - Portfolio URL: `4444j99.github.io/portfolio/`
-- Current state: 97 repos, 87 ACTIVE, 33 sprints, 40 essays displayed
+- Current state: 97 repos, 87 ACTIVE, 33 sprints, 41 essays displayed
 - Data files: `site-data/*.json` and `portfolio-site/src/data/*.json`
 
 **Gap:** No external validation exists to display. This criterion becomes achievable after #7, #14, or #8 produces user testimonials.
