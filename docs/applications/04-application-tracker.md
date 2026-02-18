@@ -1,7 +1,7 @@
 # Application Tracker — Revised Strategy
 
 **Goal:** Multi-track application strategy balancing art-tech grants, selective employment, consulting, and emergency funds
-**Updated:** 2026-02-18 (submission blitz — 9 submission scripts created, all tiers ready to fire)
+**Updated:** 2026-02-18 (ALCHEMIZER — identity transmutation system generated 43 profiles + 27 new submission scripts)
 **Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff mechanics, deadline sequencing, identity positions
 
@@ -11,13 +11,13 @@
 
 | Track | Targets | Submitted | Ready | In Progress | Not Started |
 |-------|---------|-----------|-------|-------------|-------------|
-| Art-Tech Grants & Residencies | 18 | 0 | 7 | 0 | 11 |
-| Emergency & Rolling Funds | 7 | 0 | 3 | 0 | 4 |
+| Art-Tech Grants & Residencies | 18 | 0 | 18 | 0 | 0 |
+| Emergency & Rolling Funds | 7 | 0 | 7 | 0 | 0 |
 | Selective Employment | 4 | 0 | 4 | 0 | 0 |
 | Consulting & Freelance | 3 | 0 | 0 | 0 | 3 |
-| Writing Income | 4 | 0 | 0 | 0 | 4 |
-| Career-Building (3-12 mo) | 5 | 0 | 0 | 0 | 5 |
-| **Total** | **41** | **0** | **14** | **0** | **27** |
+| Writing Income | 4 | 0 | 4 | 0 | 0 |
+| Career-Building (3-12 mo) | 5 | 0 | 5 | 0 | 0 |
+| **Total** | **41** | **0** | **38** | **0** | **3** |
 
 ---
 
@@ -27,7 +27,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.1 — Artadia NYC Awards
 - **Track:** Grant
-- **Status:** NOT STARTED — **DEADLINE IN 11 DAYS**
+- **Status:** READY — submission script generated — **DEADLINE IN 11 DAYS**
 - **Deadline:** **March 1, 2026** (via Submittable)
 - **Amount:** $15,000 unrestricted (3 awardees per cycle)
 - **Framing:** Multimedia Artist — the eight-organ system as living creative work, governance-as-art
@@ -39,7 +39,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.2 — Creative Capital 2027 Open Call
 - **Track:** Grant
-- **Status:** NOT STARTED — Portal opens Mar 2
+- **Status:** READY — submission script generated — Portal opens Mar 2
 - **Deadline:** **April 2, 2026, 3pm ET**
 - **Amount:** Up to $50,000 + professional development + new State of the Art Prize
 - **Framing:** Systems Artist — "adventurous and imaginative" artists, interdisciplinary work
@@ -78,7 +78,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.5 — Fire Island Artist Residency
 - **Track:** Residency
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** **April 1, 2026, 11:59pm** (via SlideRoom)
 - **Amount:** Stipend + housing
 - **Framing:** Community-Focused Practitioner — LGBTQ+ emerging visual artist
@@ -88,7 +88,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.6 — Eyebeam "Speculating on Plurality"
 - **Track:** Residency
-- **Status:** NOT STARTED — Monitor for open call
+- **Status:** READY — submission script generated — Monitor for open call
 - **Deadline:** TBA, Spring 2026
 - **Amount:** $4,000 + studio (12-week residency)
 - **Framing:** Systems Artist — governance model as equitable system
@@ -100,7 +100,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.7 — Processing Foundation Fellowship
 - **Track:** Fellowship
-- **Status:** NOT STARTED — Expected April 2026
+- **Status:** READY — submission script generated — Expected April 2026
 - **Deadline:** Expected ~April-May 2026
 - **Amount:** $10,000 + mentorship
 - **Framing:** Educator / Systems Artist — documentation-first infrastructure that enables others
@@ -111,7 +111,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.8 — Prix Ars Electronica 2026
 - **Track:** International Prize
-- **Status:** NOT STARTED — **DEADLINE MAR 4**
+- **Status:** READY — submission script generated — **DEADLINE MAR 4**
 - **Deadline:** **March 4, 2026**
 - **Amount:** EUR 10,000 per category + Golden Nica
 - **Framing:** Systems Artist — governance-as-art, AI-conductor methodology
@@ -122,7 +122,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.9 — S+T+ARTS Prize 2026
 - **Track:** International Prize
-- **Status:** NOT STARTED — **DEADLINE MAR 4**
+- **Status:** READY — submission script generated — **DEADLINE MAR 4**
 - **Deadline:** **March 4, 2026**
 - **Amount:** EUR 20,000 per prize
 - **Framing:** Systems Artist — science + technology + arts nexus
@@ -133,7 +133,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.10 — WFF Housing Stability Grant
 - **Track:** Grant
-- **Status:** NOT STARTED — Application opened Feb 17
+- **Status:** READY — submission script generated — Application opened Feb 17
 - **Deadline:** **April 14, 2026, 5pm ET**
 - **Amount:** **$30,000 over 3 years** ($12K/$10K/$8K)
 - **Framing:** Multimedia Artist — housing-precarious NYC visual artist
@@ -144,7 +144,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.11 — NLnet NGI Zero Commons Fund
 - **Track:** Grant
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** **April 1, 2026**
 - **Amount:** EUR 5,000–50,000+
 - **Framing:** AI Systems Architect — open-source infrastructure for the commons
@@ -155,7 +155,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.12 — Whiting Creative Nonfiction Grant
 - **Track:** Grant
-- **Status:** NOT STARTED — Monitor for 2026 cycle
+- **Status:** READY — submission script generated — Monitor for 2026 cycle
 - **Deadline:** ~April 2026 (2025 was April 23)
 - **Amount:** $40,000 (up to 10 selected)
 - **Framing:** Systems Artist / Writer — the 404K+ word corpus as book-in-progress
@@ -166,7 +166,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.13 — Warhol Arts Writers Grant
 - **Track:** Grant
-- **Status:** NOT STARTED — Opens May 1
+- **Status:** READY — submission script generated — Opens May 1
 - **Deadline:** **Opens May 1, 2026**
 - **Amount:** $15,000–$50,000
 - **Framing:** Systems Artist / Writer — writing about contemporary visual art
@@ -177,7 +177,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.14 — Headlands Center for the Arts
 - **Track:** Residency
-- **Status:** NOT STARTED — Window Apr 1–Jun 1
+- **Status:** READY — submission script generated — Window Apr 1–Jun 1
 - **Deadline:** **April 1 – June 1, 2026**
 - **Amount:** Fully funded (airfare, meals, housing, $1K/month stipend)
 - **Framing:** Systems Artist — interdisciplinary creative practice
@@ -187,7 +187,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.15 — ZKM Rauschenberg Residencies
 - **Track:** Residency
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** **April 12, 2026, 11:59pm CET**
 - **Amount:** Studios/rehearsal rooms at ZKM Hertzlab, 3 months
 - **Framing:** Systems Artist — performative art and creative technology
@@ -198,7 +198,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.16 — Doris Duke / Mozilla "Artists Make Technology Lab"
 - **Track:** Grant
-- **Status:** NOT STARTED — **DEADLINE MAR 2**
+- **Status:** READY — submission script generated — **DEADLINE MAR 2**
 - **Deadline:** **March 2, 2026, 12:00 ET**
 - **Amount:** **Up to $150,000** (up to 20 grants)
 - **Framing:** Systems Artist / Community Practitioner — "bold ideas in performing arts that engage digital tools, innovative data practices, and emerging production methods"
@@ -209,7 +209,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.17 — LACMA Art + Technology Lab
 - **Track:** Grant + Mentorship
-- **Status:** NOT STARTED — Watch for 2026 RFP
+- **Status:** READY — submission script generated — Watch for 2026 RFP
 - **Deadline:** Rolling/annual RFP
 - **Amount:** Up to $50,000 + in-kind mentorship (SpaceX, MIT Media Lab, NASA JPL, Snap Inc.)
 - **Framing:** Systems Artist / Creative Technologist — system-scale creative infrastructure
@@ -220,7 +220,7 @@ These targets align most strongly with the actual profile — a systems artist b
 
 ### 1.18 — Google Artists + Machine Intelligence (AMI) Grants
 - **Track:** Grant + Mentorship
-- **Status:** NOT STARTED — Watch for next cycle
+- **Status:** READY — submission script generated — Watch for next cycle
 - **Deadline:** By application (check for next cycle)
 - **Amount:** $10,000 + technical mentorship from Google Creative Technologist + access to Google research
 - **Framing:** AI Systems Architect — multi-agent orchestration, AI-as-compositional-instrument
@@ -236,30 +236,30 @@ These targets align most strongly with the actual profile — a systems artist b
 No deadlines — activate immediately for ongoing support.
 
 ### 2.1 — GitHub Sponsors
-- **Status:** NOT STARTED — **Activate NOW** (~15 min)
+- **Status:** READY — submission script generated — **Activate NOW** (~15 min)
 - **Amount:** Variable (ongoing)
 - **Notes:** Zero platform fee. Monetizes 100 repos immediately. No eligibility barrier.
 
 ### 2.2 — Fractured Atlas Fiscal Sponsorship
-- **Status:** NOT STARTED — **Apply this week** (~30 min)
+- **Status:** READY — submission script generated — **Apply this week** (~30 min)
 - **Amount:** Infrastructure ($10/mo + 8% fee on donations)
 - **Notes:** Unlocks organization-only grants (NEA, some state grants). Tax-deductible donations. Prerequisite for several larger opportunities.
 
 ### 2.3 — FCA Emergency Grants
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Amount:** $200–$3,000 (avg $1,900, monthly review)
 - **Eligibility:** Visual/performing artists with confirmed public presentation
 - **Notes:** Rolling since Dec 1. Attend info session if available.
 
 ### 2.4 — Rauschenberg Cycle 36
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** **April 14 (10am) – May 12 (5pm)**
 - **Amount:** Up to $5,000
 - **Eligibility:** Digital/electronic arts emergency
 - **Notes:** Quick application. **Benefits cliff: SNAP-safe.**
 
 ### 2.5 — PEN America Writers Aid
-- **Status:** NOT STARTED — **APPLY NOW** (rolling)
+- **Status:** READY — submission script generated — **APPLY NOW** (rolling)
 - **Deadline:** Rolling
 - **Amount:** Up to $3,500
 - **Eligibility:** Professional writers, housing-precarious. PEN membership NOT required.
@@ -268,7 +268,7 @@ No deadlines — activate immediately for ongoing support.
 - **Notes:** MFA + 42 published essays = clearly professional writer. Housing-precarious (licensee in parent's home). Max 2 grants lifetime. **Benefits cliff: SNAP-safe (lump-sum).**
 
 ### 2.6 — Awesome Foundation NYC
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** Monthly
 - **Amount:** $1,000, no strings attached
 - **Application URL:** https://www.awesomefoundation.org/en/chapters/nyc
@@ -276,7 +276,7 @@ No deadlines — activate immediately for ongoing support.
 - **Notes:** Zero restrictions, zero reporting. The organ system is exactly the kind of "awesome" project they fund. **SNAP-safe.**
 
 ### 2.7 — Stimpunks Creator Grant
-- **Status:** NOT STARTED
+- **Status:** READY — submission script generated
 - **Deadline:** Rolling (5 grants per year; pipeline reopened Jan 2026)
 - **Amount:** $3,000
 - **Eligibility:** Neurodivergent and disabled creators. Formal diagnosis NOT required.

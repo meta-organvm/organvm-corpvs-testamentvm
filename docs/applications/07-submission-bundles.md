@@ -1,10 +1,12 @@
 # Submission-Ready Application Bundles
 
-**Generated:** 2026-02-12 (EXODUS Sprint), updated 2026-02-18 (Submission Blitz)
-**Status:** READY TO SUBMIT
-**Total applications:** 9 (original) + 6 standalone submission scripts
+**Generated:** 2026-02-12 (EXODUS Sprint), updated 2026-02-18 (ALCHEMIZER — 27 new scripts generated)
+**Status:** READY TO SUBMIT — All 38 non-consulting targets have submission materials
+**Total applications:** 9 bundles + 8 hand-written scripts + 27 alchemizer-generated scripts = 38 targets covered
+**Generator:** `scripts/alchemizer.py` — identity transmutation system (43 JSON profiles + 27 submission scripts)
+**Profiles:** `docs/applications/profiles/` — machine-readable identity profiles per target
 
-### Standalone Submission Scripts (2026-02-18)
+### Hand-Written Submission Scripts
 
 | Script | Target | Amount | Deadline | File |
 |--------|--------|--------|----------|------|
@@ -16,6 +18,38 @@
 | F22 | Doris Duke AMT Lab | $150,000 | Mar 2 | [f22-doris-duke-amt-submission-script.md](./f22-doris-duke-amt-submission-script.md) |
 | F24 | Watermill Center Summer | Free residency | Feb 18 | [f24-watermill-submission-script.md](./f24-watermill-submission-script.md) |
 | F1/F2 | GitHub Sponsors + Fractured Atlas | Infrastructure | ASAP | [f1-f2-infrastructure-setup-guide.md](./f1-f2-infrastructure-setup-guide.md) |
+
+### Alchemizer-Generated Submission Scripts (2026-02-18)
+
+| Target | Amount | Position | Deadline | File |
+|--------|--------|----------|----------|------|
+| Creative Capital 2027 | Up to $50,000 | Systems Artist | Apr 2 | [cc-creative-capital-script.md](./cc-creative-capital-script.md) |
+| WFF Housing Stability | $30,000/3yr | Community | Apr 14 | [wff-housing-script.md](./wff-housing-script.md) |
+| Headlands Center | Fully funded | Systems Artist | Apr 1-Jun 1 | [headlands-script.md](./headlands-script.md) |
+| Fire Island Residency | Stipend + housing | Community | Apr 1 | [fire-island-script.md](./fire-island-script.md) |
+| Eyebeam | $4,000 + studio | Systems Artist | Spring TBA | [eyebeam-script.md](./eyebeam-script.md) |
+| ZKM Rauschenberg | Studios, 3 months | Systems Artist | Apr 12 | [zkm-script.md](./zkm-script.md) |
+| Whiting Nonfiction | $40,000 | Systems Artist | ~Apr | [whiting-script.md](./whiting-script.md) |
+| Warhol Arts Writers | $15K-$50K | Systems Artist | May 1 | [warhol-script.md](./warhol-script.md) |
+| LACMA Art+Tech Lab | Up to $50,000 | Systems Artist | Rolling | [lacma-script.md](./lacma-script.md) |
+| Google AMI Grants | $10,000 | Technologist | Watch | [google-ami-script.md](./google-ami-script.md) |
+| NLnet Commons Fund | EUR 5K-50K+ | Technologist | Apr 1 | [nlnet-script.md](./nlnet-script.md) |
+| Spencer Foundation | Up to $50,000 | Educator | Apr 15 | [spencer-script.md](./spencer-script.md) |
+| Processing Foundation | $10,000 | Educator | ~Apr-May | [processing-script.md](./processing-script.md) |
+| Recurse Center | Free | Technologist | Rolling | [recurse-script.md](./recurse-script.md) |
+| FCA Emergency | $200-$3,000 | Systems Artist | Rolling | [fca-emergency-script.md](./fca-emergency-script.md) |
+| Rauschenberg Cycle 36 | Up to $5,000 | Systems Artist | Apr 14 | [rauschenberg-emergency-script.md](./rauschenberg-emergency-script.md) |
+| Awesome Foundation | $1,000 | Systems Artist | Monthly | [awesome-foundation-script.md](./awesome-foundation-script.md) |
+| Stimpunks Creator Grant | $3,000 | Community | Rolling | [stimpunks-script.md](./stimpunks-script.md) |
+| Noema Magazine | $1/word | Systems Artist | Rolling | [noema-pitch-script.md](./noema-pitch-script.md) |
+| Logic Magazine | $1,200-$2K | Technologist | Themed | [logic-pitch-script.md](./logic-pitch-script.md) |
+| Gay & Lesbian Review | $250/feature | Community | Rolling | [glr-pitch-script.md](./glr-pitch-script.md) |
+| MIT TR / Wired / Aeon | $1-3/word | Technologist | Rolling | [mit-tr-pitch-script.md](./mit-tr-pitch-script.md) |
+| NEW INC | ~$600/mo | Technologist | Spring 2026 | [new-inc-script.md](./new-inc-script.md) |
+| Pioneer Works | $1K-$2.5K | Systems Artist | Summer 2026 | [pioneer-works-script.md](./pioneer-works-script.md) |
+| Tulsa Fellowship | $230K+ | Systems Artist | Spring 2026 | [tulsa-script.md](./tulsa-script.md) |
+| Queer\|Art Mentorship | Program | Community | Jun-Jul 2026 | [queer-art-script.md](./queer-art-script.md) |
+| Lambda Literary | Program | Community | Nov 2026 | [lambda-literary-script.md](./lambda-literary-script.md) |
 
 ---
 
