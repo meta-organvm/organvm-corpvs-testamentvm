@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (Strategy rewrite: added F1-F9 funding items, benefits cliff note, reordered by deadline urgency)
+**Last reviewed:** 2026-02-17 (Research integration: added F10-F21 from exhaustive funding research, writing income items W1-W3)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
@@ -63,11 +63,37 @@
 > **Non-negotiable rule from E2G-II:** No new named internal sprints until X1-X4 are complete.
 > **Clarification:** Funding applications are external-facing (breaking the seal), not internal sprints.
 
+- [ ] **F24.** Submit Watermill Center Summer Program application — **deadline TOMORROW Feb 18, 11:59pm EST** (~1-2 hrs)
+  - URL: https://www.watermillcenter.org/summer/ (via SlideRoom) · Fit: 7/10
+  - FREE: housing, food, materials, local transport, small travel stipend. 4 weeks on Long Island (Jul 5 - Aug 2, 2026).
+  - Interdisciplinary lab founded by Robert Wilson. New media, performance, literature all eligible.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) · Residency agent
+
 - [ ] **F3.** Submit Artadia NYC application ($15K unrestricted) — **deadline Mar 1** (~3-4 hrs)
   - URL: https://artadia.org/award_schedule/new-york/ (Submittable) · Fit: 8/10
   - Identity position: Multimedia Artist / Systems Artist
   - Benefits cliff: SNAP-safe. Below Medicaid threshold with Schedule C deductions.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5, #9
+
+- [ ] **F22.** Submit Doris Duke / Mozilla "Artists Make Technology Lab" ($150K) — **deadline Mar 2, 12:00 ET** (~4-6 hrs)
+  - URL: https://www.dorisduke.org/grants/projects/artists-make-technology-lab · Fit: 7/10
+  - Up to 20 grants of up to $150K each. "Bold ideas in performing arts that engage digital tools, innovative data practices, and emerging production methods."
+  - **Performing arts framing needed:** Governance-as-choreography, community salons as performance, AI orchestration as conducting.
+  - **HIGHEST SINGLE AMOUNT IN PIPELINE.** Even at 7/10 fit, the expected value justifies the 4-6 hour investment.
+  - Benefits cliff: $150K → well above all thresholds. Call NYLAG. Essential Plan bridge.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #9
+
+- [ ] **F10.** Submit Prix Ars Electronica entry (EUR 10K + Golden Nica) — **deadline Mar 4** (~2-3 hrs)
+  - URL: https://ars.electronica.art/prix/en/opencall/ · Fit: 8/10
+  - Free to submit. Categories: Digital Music & Sound Art, AI-related. Governance-as-art narrative.
+  - Benefits cliff: International prize, lump-sum. SNAP-safe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #14
+
+- [ ] **F11.** Submit S+T+ARTS Prize entry (EUR 20K) — **deadline Mar 4** (~2-3 hrs)
+  - URL: https://starts-prize.aec.at/en/open-call/ · Fit: 8/10
+  - "Projects at nexus of science, technology, and the arts." Organ system = exact match.
+  - Benefits cliff: International prize, lump-sum. SNAP-safe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #14
 
 - [ ] **X1.** Submit Google Creative Lab Five application (~1 hr)
   - Materials: `docs/applications/05-google-creative-lab-five-responses.md`
@@ -78,6 +104,17 @@
   - Credential-building. Evaluate eligibility before investing time.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md)
 
+- [ ] **F12.** Apply PEN America Writers Aid (up to $3,500) — rolling, **apply NOW** (~1 hr)
+  - URL: https://pen.org/us-writers-aid-initiative/ · Fit: **9/10** — highest-fit emergency fund
+  - MFA + 41 essays = professional writer. Housing-precarious = eligible. PEN membership NOT required.
+  - Benefits cliff: SNAP-safe (lump-sum). Max 2 grants lifetime.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1 · Omega: #5, #9
+
+- [ ] **F13.** Submit Awesome Foundation NYC ($1K no strings) — monthly deadline (~30 min)
+  - URL: https://www.awesomefoundation.org/en/chapters/nyc · Fit: 8/10
+  - Zero restrictions, zero reporting. SNAP-safe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 1
+
 - [ ] **X2.** Deploy life-my--midst--in to Render (~1-2 hrs)
   - Guide: `~/Workspace/organvm-iii-ergon/life-my--midst--in/DEPLOY.md`
   - Env vars: `DATABASE_URL` (Neon) + `JWT_SECRET`
@@ -86,6 +123,12 @@
 
 ### This Month (Feb 17 – Mar 18)
 
+- [ ] **F14.** Apply Bread Loaf Writers' Conference scholarship ($4,440 value) — **deadline Mar 15** (~2 hrs)
+  - URL: https://www.middlebury.edu/writers-conferences/writers-conference · Fit: 7/10
+  - Participant Scholarship covers tuition/room/board. Nonfiction track. MFA + 41 essays is strong.
+  - 10 days, August 12-22, 2026 in Middlebury, VT. Not income (scholarship covers program costs).
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 2
+
 - [ ] **E3.** Submit Google Creative Fellowship application — **deadline March 18, 2026**
   - URL: https://creativefellowship.google/ · Materials ready · Fit: 7/10
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #14
@@ -93,6 +136,17 @@
 - [ ] **X3.** Submit 2 job applications (~2 hrs) — Together AI Lead DX (6/10), HuggingFace Dev Advocate (5/10)
   - Cover letters: `docs/applications/cover-letters/`
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
+
+- [ ] **W1.** Pitch Noema Magazine (pays $1/word = ~$3K/essay) — rolling, **pitch this month**
+  - Contact: pitches@noemamag.com
+  - Pitch: "I built a 97-repo creative system orchestrated by AI — here's what it reveals about solo creative production."
+  - Benefits cliff: Writing income is earned (counts toward SNAP $1,580/mo threshold). One per quarter = safe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 5
+
+- [ ] **W2.** Submit to Gay & Lesbian Review ($250/feature) — rolling
+  - URL: https://glreview.org/writers-guidelines/ · Fit: 9/10
+  - Direct LGBTQ+ identity match. Essay practice perfectly suited. Immediate income pathway.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 2
 
 - [x] **E5.** Write "Construction Addiction" essay (#36) — completed 2026-02-17 (HERMETICUM session: ~2600 words, auto-deploys via essay-deploy pipeline)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
@@ -106,11 +160,29 @@
   - LGBTQ+ emerging visual artist. Stipend + housing. Fit: 7/10
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
 
+- [ ] **F15.** Submit NLnet NGI Zero Commons Fund (EUR 5K-50K) — **deadline Apr 1** (~3 hrs)
+  - URL: https://nlnet.nl/commonsfund/ · Fit: 7/10
+  - Funds open-source infrastructure for the commons. Registry, seed.yaml, orchestration patterns are genuine contributions.
+  - Benefits cliff: International grant, lump-sum. SNAP-safe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 3
+
 - [ ] **F5.** Submit Creative Capital 2027 application ($50K) — portal opens Mar 2, **deadline Apr 2, 3pm ET** (~4-6 hrs)
   - HIGHEST-FIT TARGET (9/10). 6 short questions, 500-word project description, work samples.
   - Identity position: Systems Artist — "adventurous and imaginative" interdisciplinary work.
   - Benefits cliff: $50K exceeds Medicaid → Essential Plan ($0 premium). Call NYLAG before accepting.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5, #9
+
+- [ ] **F16.** Submit ZKM Rauschenberg Residencies application (3-month Germany) — **deadline Apr 12** (~2 hrs)
+  - URL: https://zkm.de/en/open-call-rauschenberg-residencies-202627 · Fit: 8/10
+  - Submit single PDF to image@zkm.de. 3 places only. Oct-Dec 2026 in Karlsruhe.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 3
+
+- [ ] **F17.** Submit WFF Housing Stability Grant ($30K over 3 years) — **deadline Apr 14, 5pm ET** (~4 hrs)
+  - URL: https://www.nyfa.org/awards-grants/wff-housing-stability-grant-for-artists/ · Fit: **9/10**
+  - **HIGHEST-VALUE NYC opportunity.** $12K yr 1, $10K yr 2, $8K yr 3. NYC 5+ years, AGI ≤$75K, housing-precarious.
+  - **Action first:** Confirm digital/generative art eligibility with NYFA (visual artist requirement).
+  - Benefits cliff: $12K yr 1 + $12K adjunct = $24K → exceeds Medicaid. Call NYLAG.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 3 · Omega: #5, #9
 
 - [ ] **F7.** Submit Rauschenberg Cycle 36 ($5K) — **opens Apr 14, closes May 12** (~1 hr)
   - Emergency grant for digital/electronic arts. Quick application. SNAP-safe.
@@ -120,9 +192,34 @@
   - Education research focus. Identity position: Educator.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
 
+- [ ] **F18.** Submit Whiting Creative Nonfiction Grant ($40K) — **~Apr 2026** (~4 hrs)
+  - URL: https://www.whiting.org/writers/creative-nonfiction-grant · Fit: 8/10
+  - Writers completing book-length nonfiction. The 404K+ word corpus IS a book-in-progress.
+  - Benefits cliff: $40K exceeds Medicaid → Essential Plan. Call NYLAG.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 3
+
 - [ ] **F9.** Submit Processing Foundation Fellowship ($10K) — **~Apr-May** (~3 hrs)
   - Infrastructure contribution. Governance toolkit as deliverable. Fit: 6/10
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
+
+- [ ] **F19.** Submit Warhol Arts Writers Grant ($15K-$50K) — **opens May 1** (~4 hrs)
+  - URL: https://www.artswriters.org · Fit: 7/10
+  - Articles, books, short-form writing about contemporary visual art. 41 essays = strong portfolio.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 3
+
+- [ ] **F20.** Submit Headlands Center residency (fully funded) — **window Apr 1-Jun 1** (~3 hrs)
+  - Fit: **9/10**. Airfare, meals, housing, $1K/mo stipend. 4-10 weeks, Sausalito CA.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 4
+
+- [ ] **F21.** Submit Recurse Center application (free, Brooklyn) — rolling (~2 hrs)
+  - URL: https://www.recurse.com/ · Fit: **9/10**
+  - Free, no cost. 6-12 weeks in Brooklyn. Self-directed programming retreat. Perfect fit.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 4
+
+- [ ] **W3.** Pitch Logic Magazine ($1,200-$2K/essay) — rolling, themed issues
+  - URL: https://logicmag.io · Fit: 8/10
+  - Pitch: "Governance as Artistic Medium" — technology criticism angle.
+  - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 5
 
 - [ ] **M1-II.** Recruit and run first stranger test — protocol at `docs/operations/stranger-test-protocol.md`
   - 1 participant, 5 tasks, scoring rubric
@@ -241,15 +338,18 @@
 |----------------|-------------|----------|
 | [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E2, E4, M4-II completed) | 100% of open items |
 | [`autonomous-setup-guide.md`](./autonomous-setup-guide.md) | 3 of 3 PENDING/OPTIONAL | 100% |
-| [`10-funding-strategy.md`](../applications/10-funding-strategy.md) | 9 new items (F1-F9) | Funding strategy rewrite |
+| [`10-funding-strategy.md`](../applications/10-funding-strategy.md) | 9 items (F1-F9) | Funding strategy rewrite |
+| [`11-funding-research-exhaustive.md`](../applications/11-funding-research-exhaustive.md) | 15 items (F10-F21, W1-W3) | Exhaustive research integration |
 | [`operational-cadence.md`](./operational-cadence.md) Part IV | Subsumed by e2g-ii items | Cross-referenced |
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 | AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 37 (3 READY, 18 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
+**Total items:** 54 (3 READY, 35 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
+**Late agent integration (2026-02-17):** F22 (Doris Duke $150K, Mar 2) from creative tech agent. F24 (Watermill Center, **Feb 18 TOMORROW**) from residency agent — free housing/food, Long Island, 7/10 fit.
+**Research integration (2026-02-17):** 15 new items from exhaustive funding research — 12 funding (F10-F21) + 3 writing income (W1-W3). Key additions: Prix Ars Electronica (Mar 4), S+T+ARTS (Mar 4), PEN America (rolling), WFF Housing ($30K/3yr), Whiting ($40K), Headlands (9/10), Recurse Center (9/10), premium writing income (Noema, Logic, GLR).
 **Strategy rewrite (2026-02-17):** 9 funding items added (F1-F9). Benefits cliff note added. NEEDS TIME reordered by deadline urgency (F3 Artadia Mar 1 → F9 Processing ~Apr-May). Funding submissions classified as external-facing (compatible with P0 hermetic seal rule).
-**Last session:** Strategy rewrite (2026-02-17) — replaced engineering-heavy approach with multi-track (art-tech grants, emergency funds, selective employment, consulting)
+**Last session:** Late agent integration + research integration (2026-02-17) — 200+ opportunities researched across 5 domains, top targets added to queue
 
 ---
 

@@ -1,7 +1,7 @@
 # Application Tracker — Revised Strategy
 
 **Goal:** Multi-track application strategy balancing art-tech grants, selective employment, consulting, and emergency funds
-**Updated:** 2026-02-17 (strategy rewrite — replaced engineering-heavy tracker with benefits-cliff-aware multi-track approach)
+**Updated:** 2026-02-17 (research integration — 18+ new targets from exhaustive funding research; late agent: Doris Duke $150K, LACMA $50K, Google AMI $10K)
 **Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff mechanics, deadline sequencing, identity positions
 
@@ -11,12 +11,13 @@
 
 | Track | Targets | Submitted | Ready | In Progress | Not Started |
 |-------|---------|-----------|-------|-------------|-------------|
-| Art-Tech Grants & Residencies | 7 | 0 | 2 | 0 | 5 |
-| Emergency & Rolling Funds | 4 | 0 | 2 | 0 | 2 |
+| Art-Tech Grants & Residencies | 18 | 0 | 2 | 0 | 16 |
+| Emergency & Rolling Funds | 7 | 0 | 2 | 0 | 5 |
 | Selective Employment | 4 | 0 | 4 | 0 | 0 |
 | Consulting & Freelance | 3 | 0 | 0 | 0 | 3 |
+| Writing Income | 4 | 0 | 0 | 0 | 4 |
 | Career-Building (3-12 mo) | 5 | 0 | 0 | 0 | 5 |
-| **Total** | **23** | **0** | **8** | **0** | **15** |
+| **Total** | **41** | **0** | **8** | **0** | **33** |
 
 ---
 
@@ -108,6 +109,126 @@ These targets align most strongly with the actual profile — a systems artist b
 - **Fit score:** 6/10 (see [assessment](./09-qualification-assessment.md))
 - **Notes:** Governance toolkit as deliverable. Adjacent to p5.js community, not central.
 
+### 1.8 — Prix Ars Electronica 2026
+- **Track:** International Prize
+- **Status:** NOT STARTED — **DEADLINE MAR 4**
+- **Deadline:** **March 4, 2026**
+- **Amount:** EUR 10,000 per category + Golden Nica
+- **Framing:** Systems Artist — governance-as-art, AI-conductor methodology
+- **Application URL:** https://ars.electronica.art/prix/en/opencall/
+- **Eligibility:** Open, free to submit. Categories include Digital Music & Sound Art, AI-related.
+- **Fit score:** 8/10
+- **Notes:** Ars Electronica celebrates formally innovative art through technology. The organ system as living creative work built with AI is a strong narrative. International lump-sum = SNAP-safe.
+
+### 1.9 — S+T+ARTS Prize 2026
+- **Track:** International Prize
+- **Status:** NOT STARTED — **DEADLINE MAR 4**
+- **Deadline:** **March 4, 2026**
+- **Amount:** EUR 20,000 per prize
+- **Framing:** Systems Artist — science + technology + arts nexus
+- **Application URL:** https://starts-prize.aec.at/en/open-call/
+- **Eligibility:** Open. "Projects at nexus of science, technology, and the arts."
+- **Fit score:** 8/10
+- **Notes:** Grand Prize for Artistic Exploration + Grand Prize for Innovative Collaboration. The organ system IS science-technology-arts infrastructure. SNAP-safe.
+
+### 1.10 — WFF Housing Stability Grant
+- **Track:** Grant
+- **Status:** NOT STARTED — Application opened Feb 17
+- **Deadline:** **April 14, 2026, 5pm ET**
+- **Amount:** **$30,000 over 3 years** ($12K/$10K/$8K)
+- **Framing:** Multimedia Artist — housing-precarious NYC visual artist
+- **Application URL:** https://www.nyfa.org/awards-grants/wff-housing-stability-grant-for-artists/
+- **Eligibility:** NYC-based visual artist, AGI ≤$75K, NYC 5+ years, housing-precarious
+- **Fit score:** **9/10**
+- **Notes:** **HIGHEST-VALUE NYC opportunity.** Housing-precarious (licensee = no lease). Confirm digital/generative art eligibility with NYFA first. **Benefits cliff: $12K yr 1 + adjunct = $24K → exceeds Medicaid ($21,597), exceeds Fair Fares ($22,692). Call NYLAG.**
+
+### 1.11 — NLnet NGI Zero Commons Fund
+- **Track:** Grant
+- **Status:** NOT STARTED
+- **Deadline:** **April 1, 2026**
+- **Amount:** EUR 5,000–50,000+
+- **Framing:** AI Systems Architect — open-source infrastructure for the commons
+- **Application URL:** https://nlnet.nl/commonsfund/
+- **Eligibility:** Open-source projects serving the public interest
+- **Fit score:** 7/10
+- **Notes:** Registry, seed.yaml schema, orchestration patterns as genuine open-source contributions. International grant = SNAP-safe.
+
+### 1.12 — Whiting Creative Nonfiction Grant
+- **Track:** Grant
+- **Status:** NOT STARTED — Monitor for 2026 cycle
+- **Deadline:** ~April 2026 (2025 was April 23)
+- **Amount:** $40,000 (up to 10 selected)
+- **Framing:** Systems Artist / Writer — the 404K+ word corpus as book-in-progress
+- **Application URL:** https://www.whiting.org/writers/creative-nonfiction-grant
+- **Eligibility:** Writers completing book-length deeply researched nonfiction
+- **Fit score:** 8/10
+- **Notes:** MFA + 41 essays + the extraordinary building-in-public record is a strong Whiting pitch. The organ system documentation IS a book about building creative infrastructure with AI. **Benefits cliff: $40K → Essential Plan. Call NYLAG.**
+
+### 1.13 — Warhol Arts Writers Grant
+- **Track:** Grant
+- **Status:** NOT STARTED — Opens May 1
+- **Deadline:** **Opens May 1, 2026**
+- **Amount:** $15,000–$50,000
+- **Framing:** Systems Artist / Writer — writing about contemporary visual art
+- **Application URL:** https://www.artswriters.org
+- **Eligibility:** Articles, books, short-form writing about contemporary visual art
+- **Fit score:** 7/10
+- **Notes:** 41 essays about governance-as-medium, systems art, AI art criticism, process-as-product. Strong writing portfolio.
+
+### 1.14 — Headlands Center for the Arts
+- **Track:** Residency
+- **Status:** NOT STARTED — Window Apr 1–Jun 1
+- **Deadline:** **April 1 – June 1, 2026**
+- **Amount:** Fully funded (airfare, meals, housing, $1K/month stipend)
+- **Framing:** Systems Artist — interdisciplinary creative practice
+- **Eligibility:** Open, competitive (4-10 week residencies in Sausalito, CA)
+- **Fit score:** **9/10**
+- **Notes:** One of the most generous fully-funded residencies. The organ system as creative practice demonstrates exactly the kind of sustained, interdisciplinary work Headlands values.
+
+### 1.15 — ZKM Rauschenberg Residencies
+- **Track:** Residency
+- **Status:** NOT STARTED
+- **Deadline:** **April 12, 2026, 11:59pm CET**
+- **Amount:** Studios/rehearsal rooms at ZKM Hertzlab, 3 months
+- **Framing:** Systems Artist — performative art and creative technology
+- **Application URL:** https://zkm.de/en/open-call-rauschenberg-residencies-202627
+- **Eligibility:** Artists at intersection of performative art and creative technology. Only 3 places.
+- **Fit score:** 8/10
+- **Notes:** ZKM is a premier media art institution. Requires Germany relocation Oct-Dec 2026. Submit single PDF.
+
+### 1.16 — Doris Duke / Mozilla "Artists Make Technology Lab"
+- **Track:** Grant
+- **Status:** NOT STARTED — **DEADLINE MAR 2**
+- **Deadline:** **March 2, 2026, 12:00 ET**
+- **Amount:** **Up to $150,000** (up to 20 grants)
+- **Framing:** Systems Artist / Community Practitioner — "bold ideas in performing arts that engage digital tools, innovative data practices, and emerging production methods"
+- **Application URL:** https://www.dorisduke.org/grants/projects/artists-make-technology-lab
+- **Eligibility:** Individuals, collaborations, partnerships, organizations
+- **Fit score:** 7/10
+- **Notes:** **HIGHEST SINGLE AMOUNT IN PIPELINE.** The performing arts framing is a stretch — organ system is systems art, not performance. However, "innovative data practices and emerging production methods" is a strong match. Frame ORGAN-VI salons as performative, governance-as-choreography, AI orchestration as conducting. **Benefits cliff: $150K → well above all thresholds. Call NYLAG.**
+
+### 1.17 — LACMA Art + Technology Lab
+- **Track:** Grant + Mentorship
+- **Status:** NOT STARTED — Watch for 2026 RFP
+- **Deadline:** Rolling/annual RFP
+- **Amount:** Up to $50,000 + in-kind mentorship (SpaceX, MIT Media Lab, NASA JPL, Snap Inc.)
+- **Framing:** Systems Artist / Creative Technologist — system-scale creative infrastructure
+- **Application URL:** https://www.lacma.org/lab
+- **Eligibility:** Open worldwide. Prior tech experience welcome.
+- **Fit score:** 8/10
+- **Notes:** Explicit art+technology mandate. The in-kind mentorship from major tech partners is uniquely valuable. System-scale creative infrastructure would be novel in their portfolio.
+
+### 1.18 — Google Artists + Machine Intelligence (AMI) Grants
+- **Track:** Grant + Mentorship
+- **Status:** NOT STARTED — Watch for next cycle
+- **Deadline:** By application (check for next cycle)
+- **Amount:** $10,000 + technical mentorship from Google Creative Technologist + access to Google research
+- **Framing:** AI Systems Architect — multi-agent orchestration, AI-as-compositional-instrument
+- **Application URL:** https://experiments.withgoogle.com/ami-grants
+- **Eligibility:** Artists working with machine learning. 5-month engagement.
+- **Fit score:** **9/10**
+- **Notes:** The multi-agent orchestration and AI-conductor methodology is precisely what AMI supports. 5-month engagement with weekly advisory meetings and Google research access. **HIGHEST-FIT tech-specific opportunity.**
+
 ---
 
 ## Track 2: Emergency & Rolling Funds
@@ -136,6 +257,32 @@ No deadlines — activate immediately for ongoing support.
 - **Amount:** Up to $5,000
 - **Eligibility:** Digital/electronic arts emergency
 - **Notes:** Quick application. **Benefits cliff: SNAP-safe.**
+
+### 2.5 — PEN America Writers Aid
+- **Status:** NOT STARTED — **APPLY NOW** (rolling)
+- **Deadline:** Rolling
+- **Amount:** Up to $3,500
+- **Eligibility:** Professional writers, housing-precarious. PEN membership NOT required.
+- **Fit score:** **9/10** — Highest-fit emergency fund
+- **Application URL:** https://pen.org/us-writers-aid-initiative/
+- **Notes:** MFA + 41 published essays = clearly professional writer. Housing-precarious (licensee in parent's home). Max 2 grants lifetime. **Benefits cliff: SNAP-safe (lump-sum).**
+
+### 2.6 — Awesome Foundation NYC
+- **Status:** NOT STARTED
+- **Deadline:** Monthly
+- **Amount:** $1,000, no strings attached
+- **Application URL:** https://www.awesomefoundation.org/en/chapters/nyc
+- **Fit score:** 8/10
+- **Notes:** Zero restrictions, zero reporting. The organ system is exactly the kind of "awesome" project they fund. **SNAP-safe.**
+
+### 2.7 — Stimpunks Creator Grant
+- **Status:** NOT STARTED
+- **Deadline:** Rolling (5 grants per year; pipeline reopened Jan 2026)
+- **Amount:** $3,000
+- **Eligibility:** Neurodivergent and disabled creators. Formal diagnosis NOT required.
+- **Application URL:** https://stimpunks.org/creators/grant/
+- **Fit score:** 7/10
+- **Notes:** Broad creative fields. Only 5 grants/year — apply soon. **SNAP-safe.**
 
 ---
 
@@ -225,27 +372,75 @@ Longer-horizon institutional credibility. Not urgent — prepare during Months 3
 
 ---
 
+## Track 6: Writing Income (NEW — Pitch Immediately)
+
+Premium publications that pay professional rates for exactly the kind of essays already being written.
+
+### 6.1 — Noema Magazine
+- **Rate:** $1/word (~$3K per 3K-word essay)
+- **Contact:** pitches@noemamag.com
+- **Topic fit:** Technology, governance, AI, culture — direct match
+- **Pitch angle:** "I built a 97-repository creative system orchestrated by AI — here's what it reveals about the future of solo creative production."
+- **Benefits cliff:** Earned income (counts toward SNAP $1,580/mo threshold). One per quarter = safe.
+
+### 6.2 — Gay & Lesbian Review
+- **Rate:** $250/feature, $100/review
+- **URL:** https://glreview.org/writers-guidelines/
+- **Topic fit:** LGBTQ+ culture, arts — direct identity match. **9/10** fit.
+- **Pitch angle:** Systems-art through queer lens, recovery-informed writing, governance-as-art theory.
+- **Notes:** Year-round submissions. Immediate income pathway.
+
+### 6.3 — Logic Magazine
+- **Rate:** $1,200–$2,000/essay
+- **URL:** https://logicmag.io
+- **Topic fit:** Technology criticism — 8/10 fit
+- **Pitch angle:** "Governance as Artistic Medium: When the rules that coordinate 97 repositories become the artwork."
+- **Notes:** Themed issues — pitch must align with current call.
+
+### 6.4 — MIT Technology Review / Wired / Aeon
+- **Rate:** MIT TR $1-3/word ($2.5K-12K), Wired $2,500+ starting, Aeon $500-1,500
+- **Topic fit:** AI, creative technology, LLMs. High prestige + high pay.
+- **Pitch angle:** "The AI-Conductor Model: How one person used Claude to coordinate 97 repos, 33 sprints, and 404K words."
+- **Notes:** Highest-value outlets. Competitive but the story is genuinely unusual.
+
+---
+
 ## Recalibrated Priority Queue
 
-Priorities reordered by fit score and deadline urgency. See [09-qualification-assessment.md](./09-qualification-assessment.md) for full rationale.
+Priorities reordered by fit score and deadline urgency. See [09-qualification-assessment.md](./09-qualification-assessment.md) for full rationale. Full exhaustive research at [11-funding-research-exhaustive.md](./11-funding-research-exhaustive.md).
 
 | Priority | Target | Fit | Deadline | Track | Action |
 |----------|--------|-----|----------|-------|--------|
-| 1 | **Artadia NYC** | **8/10** | **Mar 1** | Grant | **BEGIN NOW** — 11 days |
-| 2 | Google Creative Lab Five | **8/10** | Open | Residency | **SUBMIT NOW** — no deadline |
-| 3 | **Creative Capital 2027** | **9/10** | **Apr 2** | Grant | Portal opens Mar 2 — HIGHEST FIT |
-| 4 | Google Creative Fellowship | **7/10** | **Mar 18** | Fellowship | Submit by deadline |
-| 5 | Fire Island Residency | **7/10** | **Apr 1** | Residency | LGBTQ+ emerging artist |
-| 6 | Eyebeam | **7/10** | Spring TBA | Residency | Monitor for open call |
-| 7 | GitHub Sponsors | — | **ASAP** | Infrastructure | ~15 min setup |
-| 8 | Fractured Atlas | — | **ASAP** | Infrastructure | ~30 min, unlocks grants |
-| 9 | Together AI Lead DX | **6/10** | Rolling | Employment | Best employment target |
-| 10 | Spencer Foundation | **6/10** | Apr 15 | Grant | Education research angle |
-| 11 | Processing Foundation | **6/10** | ~Apr-May | Fellowship | Infrastructure contribution |
-| 12 | Rauschenberg Cycle 36 | **6/10** | Apr 14 | Emergency | Quick application |
-| 13 | HuggingFace Dev Advocate | **5/10** | Rolling | Employment | Skills-based |
-| 14 | Anthropic FDE | 4/10 | Rolling | Employment | Deprioritized |
-| 15 | OpenAI SE Evals | 4/10 | Rolling | Employment | Deprioritized |
+| 0 | **Watermill Center** | **7/10** | **FEB 18 TOMORROW** | Residency | **APPLY TONIGHT** — free, SlideRoom |
+| 1 | **Artadia NYC** | **8/10** | **Mar 1** | Grant | **BEGIN NOW** |
+| 2 | **Doris Duke / Mozilla AMT Lab** | **7/10** | **Mar 2** | Grant | **$150K — HIGHEST AMOUNT.** Performing arts framing needed. |
+| 3 | **Prix Ars Electronica** | **8/10** | **Mar 4** | Prize | **SUBMIT THIS WEEK** |
+| 4 | **S+T+ARTS Prize** | **8/10** | **Mar 4** | Prize | **SUBMIT THIS WEEK** |
+| 5 | Google Creative Lab Five | **8/10** | Open | Residency | **SUBMIT NOW** — no deadline |
+| 6 | **PEN America Writers Aid** | **9/10** | Rolling | Emergency | **APPLY NOW** — highest-fit emergency |
+| 7 | Google Creative Fellowship | **7/10** | **Mar 18** | Fellowship | Submit by deadline |
+| 8 | **Noema pitch** | — | Rolling | Writing | **PITCH THIS MONTH** — $3K/essay |
+| 9 | **Creative Capital 2027** | **9/10** | **Apr 2** | Grant | Portal opens Mar 2 — HIGHEST FIT |
+| 10 | **WFF Housing Stability** | **9/10** | **Apr 14** | Grant | $30K/3yr — confirm eligibility first |
+| 11 | Fire Island Residency | **7/10** | **Apr 1** | Residency | LGBTQ+ emerging artist |
+| 12 | NLnet Commons Fund | **7/10** | **Apr 1** | Grant | Open-source infrastructure |
+| 13 | **Headlands Center** | **9/10** | Apr 1-Jun 1 | Residency | Fully funded, Sausalito |
+| 14 | ZKM Rauschenberg | **8/10** | **Apr 12** | Residency | 3 months Germany |
+| 15 | **Whiting Nonfiction** | **8/10** | ~Apr | Grant | $40K — 404K-word corpus pitch |
+| 16 | Eyebeam | **7/10** | Spring TBA | Residency | Monitor for open call |
+| 17 | GitHub Sponsors | — | **ASAP** | Infrastructure | ~15 min setup |
+| 18 | Fractured Atlas | — | **ASAP** | Infrastructure | ~30 min, unlocks grants |
+| 19 | **LACMA Art + Tech Lab** | **8/10** | Rolling RFP | Grant | $50K + SpaceX/MIT mentorship |
+| 20 | **Google AMI Grants** | **9/10** | Watch for cycle | Grant | $10K + Google research access |
+| 21 | **Warhol Arts Writers** | **7/10** | Opens May 1 | Grant | $15K-$50K |
+| 22 | Spencer Foundation | **6/10** | Apr 15 | Grant | Education research angle |
+| 23 | Processing Foundation | **6/10** | ~Apr-May | Fellowship | Infrastructure contribution |
+| 24 | **Recurse Center** | **9/10** | Rolling | Program | Free, Brooklyn, 6-12 weeks |
+| 25 | Together AI Lead DX | **6/10** | Rolling | Employment | Best employment target |
+| 26 | Rauschenberg Cycle 36 | **6/10** | Apr 14 | Emergency | Quick application |
+| 27 | HuggingFace Dev Advocate | **5/10** | Rolling | Employment | Skills-based |
+| 28 | Anthropic FDE | 4/10 | Rolling | Employment | Deprioritized |
+| 29 | OpenAI SE Evals | 4/10 | Rolling | Employment | Deprioritized |
 | — | Cohere / Runway / Anthropic SE | 3/10 | Rolling | — | Apply if time permits |
 | — | Knight / Mellon / NEA (direct) | 0-1/10 | — | — | **DROPPED** |
 
@@ -274,7 +469,8 @@ For each application:
 | AI engineering framing | DONE | docs/applications/01-track-ai-engineering.md |
 | Grant framing | DONE | docs/applications/02-track-grants.md |
 | Residency framing | DONE | docs/applications/03-track-residencies.md |
-| Funding strategy | **NEW** | docs/applications/10-funding-strategy.md |
+| Funding strategy | DONE | docs/applications/10-funding-strategy.md |
+| Exhaustive research | **NEW** | docs/applications/11-funding-research-exhaustive.md |
 | Resume/CV | DONE | https://4444j99.github.io/portfolio/resume/ |
 | Artist statement | TEMPLATE READY | 03-track-residencies.md |
 | Cover letters (7 drafted) | DONE (7/7) | docs/applications/cover-letters/*.md |
@@ -285,17 +481,25 @@ For each application:
 
 ---
 
-## What Changed (2026-02-17 Strategy Rewrite)
+## What Changed
 
-**Before:** 10 targets — 7 engineering (3-6/10 fit), 2 residencies (6-7/10), 3 dead grants (0-1/10). Strategy assumed "get a $200K+ engineering job" as primary path.
+### Research Integration (2026-02-17)
 
-**After:** 23 targets across 5 tracks — 7 art-tech grants/residencies (6-9/10), 4 emergency/rolling funds, 4 selective employment (4-6/10), 3 consulting tracks, 5 career-building. Strategy is benefits-cliff-aware, deadline-sequenced, and recovery-informed.
+**Before:** 23 targets across 5 tracks.
 
-**Key shifts:**
-- Creative Capital ($50K, 9/10 fit) is now the highest-priority target, not Anthropic FDE ($280K, 4/10 fit)
-- Artadia NYC ($15K, 8/10 fit, Mar 1 deadline) is the most urgent action item
-- 3 dead grants (Knight/Mellon/NEA) replaced with 7+ verified live targets
-- Engineering roles deprioritized to Track 3 — apply selectively, calibrate expectations
-- Consulting track added at $100-125/hr minimum (corrected from $60/hr)
-- Benefits cliff awareness integrated into every target assessment
-- Recovery-informed staging: stabilization → light production → full execution
+**After:** 38 targets across 6 tracks — 15 art-tech grants/residencies (6-9/10), 7 emergency/rolling funds, 4 selective employment (4-6/10), 3 consulting tracks, 4 writing income, 5 career-building.
+
+**Key additions from exhaustive research:**
+- Prix Ars Electronica (EUR 10K, 8/10, Mar 4) and S+T+ARTS Prize (EUR 20K, 8/10, Mar 4) — **urgent international prizes**
+- PEN America Writers Aid ($3,500, 9/10, rolling) — **highest-fit emergency fund**
+- WFF Housing Stability ($30K/3yr, 9/10, Apr 14) — **highest-value NYC opportunity**
+- Whiting Nonfiction ($40K, 8/10, ~Apr) — the 404K-word corpus as book pitch
+- Headlands Center (fully funded, 9/10), ZKM (8/10), NLnet (7/10), Recurse Center (9/10)
+- **NEW Track 6: Writing Income** — Noema ($1/word), Logic ($1,200-2K), GLR ($250), MIT TR ($1-3/word)
+- Warhol Arts Writers ($15K-50K, 7/10, May 1), Awesome Foundation ($1K, monthly), Stimpunks ($3K)
+
+### Strategy Rewrite (2026-02-17)
+
+**Before (original):** 10 targets — 7 engineering (3-6/10 fit), 2 residencies (6-7/10), 3 dead grants (0-1/10).
+
+**Shifts:** Creative Capital 9/10 replaced Anthropic 4/10 as top target. Engineering deprioritized to Track 3. Benefits cliff awareness integrated. Recovery-informed staging added.

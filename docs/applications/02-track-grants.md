@@ -1,7 +1,7 @@
 # Track: Grant Funding
 
-**Targets:** Creative Capital, Artadia NYC, Spencer Foundation, Rauschenberg, FCA Emergency, NYSCA/NYFA
-**Updated:** 2026-02-17 (strategy rewrite — replaced dead targets with verified live opportunities)
+**Targets:** Creative Capital, Artadia NYC, WFF Housing, Whiting, Prix Ars, S+T+ARTS, Warhol, Spencer, Rauschenberg, NLnet, FCA, NYSCA/NYFA + more
+**Updated:** 2026-02-17 (research integration — expanded from 6 to 15+ verified targets)
 **Evidence:** 97-repo system with automated governance, 41 published essays (~150K words), 5+ years sustained practice, operational infrastructure
 **Core evidence:** ORGAN-V essays + registry + eight-organ organizational model
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff, deadline sequencing, identity positions
@@ -87,11 +87,99 @@ Grant reviewers evaluate:
 
 **Requirements:** Need to organize a public showing of AI/creative-tech work at a non-commercial venue.
 
-### NYSCA/NYFA Artist Fellowship FY2027 — **FUTURE TARGET**
+### NYSCA/NYFA Artist Fellowship FY2027 — **HIGH FIT (9/10, FUTURE)**
 
-**What they fund:** $8,000 unrestricted. Expected to open ~May 2026 for FY2027 cycle. Requires fiscal sponsor.
+**What they fund:** $8,000 unrestricted. Expected to open ~May 2026 for FY2027 cycle. Requires fiscal sponsor. **Digital/Electronic Arts** is an explicit category.
 
 **Action:** Activate Fractured Atlas fiscal sponsorship first (F2 in rolling TODO), then apply when cycle opens.
+
+### Prix Ars Electronica 2026 — **HIGH FIT (8/10)**
+
+**What they fund:** EUR 10,000 per category + Golden Nica trophy. Categories include Digital Music & Sound Art, Computer Animation, and AI-related categories.
+
+**Why you fit:** The organ system as a living creative work built with AI-conductor methodology is a strong Ars Electronica narrative — formally innovative art through technology.
+
+**Deadline:** March 4, 2026. Free to submit.
+**URL:** https://ars.electronica.art/prix/en/opencall/
+**Benefits cliff:** International prize, lump-sum. SNAP-safe.
+
+### S+T+ARTS Prize 2026 — **HIGH FIT (8/10)**
+
+**What they fund:** EUR 20,000 per prize (Grand Prize for Artistic Exploration + Grand Prize for Innovative Collaboration). Seeks "projects at the nexus of science, technology, and the arts."
+
+**Why you fit:** The organ system IS science-technology-arts infrastructure. Governance that enables creative production at scale — exactly their mandate.
+
+**Deadline:** March 4, 2026.
+**URL:** https://starts-prize.aec.at/en/open-call/
+**Benefits cliff:** International prize, lump-sum. SNAP-safe.
+
+### WFF Housing Stability Grant — **HIGHEST FIT (9/10)**
+
+**What they fund:** $30,000 over 3 years ($12K/$10K/$8K) for NYC-based visual artists facing housing instability.
+
+**Why you fit:** NYC-based, housing-precarious (licensee in parent's home = no lease), low income qualifies, 5+ year NYC resident. **HIGHEST-VALUE NYC-specific opportunity.**
+
+**Key evidence:**
+- Housing instability: licensee arrangement, no lease
+- AGI well under $75K threshold (2-year average)
+- MFA + portfolio site + generative art repos as visual artist evidence
+
+**Action first:** Confirm digital/generative art eligibility with NYFA before applying.
+
+**Deadline:** April 14, 2026, 5pm ET. Application opened February 17, 2026.
+**URL:** https://www.nyfa.org/awards-grants/wff-housing-stability-grant-for-artists/
+**Benefits cliff:** $12K yr 1 + adjunct = $24K → exceeds Medicaid ($21,597), exceeds Fair Fares ($22,692). Call NYLAG.
+
+### Whiting Creative Nonfiction Grant — **HIGH FIT (8/10)**
+
+**What they fund:** $40,000 (up to 10 selected). Writers completing book-length deeply researched nonfiction.
+
+**Why you fit:** The organ system documentation corpus (404K+ words) IS a book-in-progress about building creative infrastructure with AI. MFA + 41 published essays + the extraordinary building-in-public record.
+
+**Narrative angle:**
+"Over five years, I built an eight-organ creative-institutional system — 97 repositories, 33 development sprints, 404,000 words of documentation — using AI as a compositional instrument. The process of creation, documented in real-time across 41 essays, IS the book: a work about what happens when governance, technology, and artistic vision converge at the scale of one person's practice."
+
+**Deadline:** ~April 2026 (2025 deadline was April 23). Monitor.
+**URL:** https://www.whiting.org/writers/creative-nonfiction-grant
+**Benefits cliff:** $40K → Essential Plan. Call NYLAG.
+
+### Warhol Arts Writers Grant — **HIGH FIT (7/10)**
+
+**What they fund:** $15,000-$50,000 for articles, books, short-form writing about contemporary visual art.
+
+**Why you fit:** 41 essays about governance-as-medium, systems art, AI art criticism, and process-as-product. The writing portfolio is strong and the subject matter (creative systems, AI art, governance-as-art) is exactly contemporary visual art criticism.
+
+**Deadline:** Application opens May 1, 2026.
+**URL:** https://www.artswriters.org
+
+### NLnet NGI Zero Commons Fund — **MODERATE FIT (7/10)**
+
+**What they fund:** EUR 5,000 to EUR 50,000+ for open-source infrastructure serving the commons.
+
+**Why you fit:** The registry, seed.yaml schema, and orchestration patterns are genuine open-source contributions. The organ system as reusable creative governance infrastructure.
+
+**Deadline:** April 1, 2026.
+**URL:** https://nlnet.nl/commonsfund/
+**Benefits cliff:** International grant, lump-sum. SNAP-safe.
+
+### PEN America Writers Aid — **HIGHEST FIT (9/10, Emergency)**
+
+**What they fund:** Up to $3,500, rolling. Professional writers facing financial hardship, especially housing-precarious.
+
+**Why you fit:** MFA + 41 published essays = professional writer. Housing-precarious = eligible. PEN membership NOT required. Max 2 grants lifetime.
+
+**URL:** https://pen.org/us-writers-aid-initiative/
+**Benefits cliff:** SNAP-safe (lump-sum).
+
+### Additional Targets (See [11-funding-research-exhaustive.md](./11-funding-research-exhaustive.md))
+
+- **Awesome Foundation NYC** — $1K monthly, no strings (8/10)
+- **Stimpunks Creator Grant** — $3K, rolling (7/10)
+- **DCLA PAIR** — $40K, Spring 2026 TBA (8/10)
+- **Jerome Hill Fellowship** — Multi-year, technology arts (8/10)
+- **Guggenheim Fellowship** — $50K-75K, Sep 2026 (8/10, aspirational)
+- **USA Fellowship** — $50K unrestricted, watch for 2027 (8/10)
+- **Rhizome Commissions** — $2,500-2,900, annual cycle TBA (8/10)
 
 ---
 

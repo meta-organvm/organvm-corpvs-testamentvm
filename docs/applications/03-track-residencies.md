@@ -1,7 +1,7 @@
 # Track: Residencies & Fellowships
 
-**Targets:** Fire Island, Eyebeam, Processing Foundation, Google Creative Lab, Pioneer Works, Tulsa, NEW INC, Queer|Art
-**Updated:** 2026-02-17 (strategy rewrite — added emergency-help research targets)
+**Targets:** Headlands, MacDowell, Recurse, Fire Island, ZKM, Eyebeam, SFPC, Harvestworks, LMCC, Processing Foundation, Google CL5, Pioneer Works, Tulsa, NEW INC, Queer|Art, Bread Loaf + more
+**Updated:** 2026-02-17 (research integration — expanded from 8 to 18+ targets including premier fully-funded residencies)
 **Evidence:** 97-repo system built solo over 5+ years, 41 published essays, AI tools used as compositional instruments, all 8 organs operational
 **Core evidence:** All 8 organs as unified creative practice + ORGAN-V process-as-product + ORGAN-VI community
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff, deadline sequencing, identity positions
@@ -153,6 +153,108 @@ Residency evaluators assess:
 **Why you fit:** MFA Creative Writing + LGBTQ+ identity + 41 published essays. The essays as creative nonfiction about building creative systems.
 
 **Timeline:** Application expected ~November 2026-January 2027.
+
+---
+
+## New Targets from Research (Added 2026-02-17)
+
+### Headlands Center for the Arts — **HIGHEST FIT (9/10)**
+
+**What they value:** Interdisciplinary artists. Fully funded residencies in Sausalito, CA.
+
+**Why you fit:** One of the most generous fully-funded residencies. The organ system as creative practice demonstrates exactly the kind of sustained, interdisciplinary work Headlands values.
+
+**Amount:** Fully funded — airfare, meals, housing, $1,000/month stipend. 4-10 weeks.
+**Deadline:** April 1 – June 1, 2026 application window.
+
+**Proposed residency work:**
+1. Develop the organ system's community dimension (ORGAN-VI) in a residency context
+2. Write 5+ essays documenting the residency experience as creative practice
+3. Create site-specific generative work responding to Headlands environment
+4. Workshop: "Governance as Creative Medium"
+
+### MacDowell — **HIGHEST FIT (9/10)**
+
+**What they value:** Uninterrupted creative time. Interdisciplinary practice. Deep work.
+
+**Why you fit:** MacDowell values sustained creative work across all disciplines. The organ system is exactly the kind of practice that benefits from uninterrupted deep work time. The documentation corpus (404K+ words) demonstrates capacity for the intensive production MacDowell enables.
+
+**Amount:** Fully funded + need-based stipends available. 10 days to 6 weeks, Peterborough NH.
+**Deadline:** August 15 – September 10, 2026 window (for 2027 residencies).
+
+### Recurse Center — **HIGHEST FIT (9/10)**
+
+**What they value:** Self-directed programming. Learning generously. Community.
+
+**Why you fit:** Perfect fit — free, Brooklyn-based, self-directed. The organ system is exactly the kind of ambitious creative-technical project RC values. The 97-repo governance infrastructure would be a fascinating RC project.
+
+**Amount:** FREE (no tuition, no stipend, no obligation). 6 or 12 weeks in Brooklyn.
+**Timeline:** Rolling admissions. Apply anytime.
+**URL:** https://www.recurse.com/
+
+### ZKM Rauschenberg Residencies — **HIGH FIT (8/10)**
+
+**What they value:** Artists at intersection of performative art and creative technology.
+
+**Why you fit:** ZKM is one of the world's premier media art institutions. The organ system as living creative infrastructure maps directly to their mission. Only 3 places per cycle.
+
+**Amount:** Studios/rehearsal rooms at ZKM Hertzlab (sound studios, wet lab, VR lab). 3 months in Karlsruhe, Germany.
+**Deadline:** April 12, 2026, 11:59pm CET. Submit single PDF to image@zkm.de.
+**Note:** Requires Germany relocation Oct-Dec 2026.
+
+### SFPC (School for Poetic Computation) — **HIGHEST FIT (9/10)**
+
+**What they value:** Poetic computation. Code as creative medium. Alternative pedagogy.
+
+**Why you fit:** The organ system IS poetic computation — governance rules as generative constraints, code as creative medium, the process of building as the art. SFPC's philosophy of treating computation as poetic practice aligns perfectly.
+
+**Amount:** Pay-what-you-can tuition. NYC-based.
+**Timeline:** Next session TBA — monitor their website.
+
+### Harvestworks New Works — **HIGH FIT (8/10)**
+
+**What they value:** AR/VR, Machine Learning, AI, code-based media. Digital media art.
+
+**Why you fit:** AI-conductor methodology, code-based creative systems, ML/AI as primary medium. Harvestworks explicitly funds the kind of technology-centered art practice the organ system represents.
+
+**Amount:** $5,000 + lab access.
+**Timeline:** ~December 2026.
+
+### LMCC Workspace Residency — **HIGH FIT (8/10)**
+
+**What they value:** Manhattan-based artists working in digital media, new media, performance.
+
+**Why you fit:** NYC-based, digital media practice, systems art. LMCC Workspace provides 9-month studio access — perfect for sustained creative work on the organ system.
+
+**Amount:** 9-month studio.
+**Timeline:** Spring/Summer 2026 TBA.
+
+### Bread Loaf Writers' Conference — **MODERATE FIT (7/10)**
+
+**What they value:** Distinguished writing practice. Serious literary community.
+
+**Why you fit:** MFA + 41 published essays. The Participant Scholarship covers tuition, room, and board ($4,440 value) for 10 days. Nonfiction track.
+
+**Amount:** $4,440 scholarship value (covers tuition/room/board).
+**Deadline:** March 15, 2026 via Submittable.
+**Dates:** August 12-22, 2026, Middlebury VT.
+
+### Velvetpark Writers Residency — **MODERATE FIT (8/10, LGBTQ+)**
+
+**What they value:** LGBTQ+ writers. Studio space in Brooklyn.
+
+**Why you fit:** LGBTQ+ identity, MFA Creative Writing, 41 essays, Brooklyn-adjacent.
+
+**Timeline:** ~September 2026.
+
+### Additional Residency Targets
+
+See [11-funding-research-exhaustive.md](./11-funding-research-exhaustive.md) Part 4 for the complete list, including:
+- **Yaddo** (8/10) — fully funded, Saratoga Springs, Aug 1 deadline
+- **Ucross** (7/10) — $1,500 + room/board, Wyoming, Jul 15 deadline
+- **Stochastic Labs** (7/10) — fully funded + housing, Berkeley, rolling
+- **BRIClab** (6/10) — $2,500, Brooklyn, video/contemporary art
+- **Residency Unlimited NYCBAR** (7/10) — LGBTQ+ prioritized, Fall 2026
 
 ---
 

@@ -2,9 +2,9 @@
 
 **Created:** 2026-02-17
 **Purpose:** Master funding strategy merging emergency-help research with application planning
-**Status:** ACTIVE — replaces dead targets (Knight/Mellon/NEA) with verified opportunities
-**Companion:** [04-application-tracker.md](./04-application-tracker.md) (status tracking), [09-qualification-assessment.md](./09-qualification-assessment.md) (fit scores)
-**Sources:** FILE-059 (benefits cliff), FILE-060 (12-month transition), FILE-058 (market intelligence), FUNDING_ACTION_SEQUENCE.md
+**Status:** ACTIVE — expanded with exhaustive research (200+ opportunities cataloged)
+**Companion:** [04-application-tracker.md](./04-application-tracker.md) (status tracking), [09-qualification-assessment.md](./09-qualification-assessment.md) (fit scores), [11-funding-research-exhaustive.md](./11-funding-research-exhaustive.md) (master reference)
+**Sources:** FILE-059 (benefits cliff), FILE-060 (12-month transition), FILE-058 (market intelligence), FUNDING_ACTION_SEQUENCE.md, 5-domain exhaustive research (2026-02-17)
 
 ---
 
@@ -67,24 +67,37 @@ All deadlines verified as of 2026-02-17. Ordered chronologically.
 | Opportunity | Type | Amount | Deadline | Fit | Action |
 |-------------|------|--------|----------|-----|--------|
 | **Artadia NYC Awards** | Unrestricted grant | **$15,000** | **Mar 1** | 8/10 | Begin application NOW (Submittable) |
+| **Doris Duke / Mozilla AMT Lab** | Grant | **Up to $150,000** | **Mar 2** | 7/10 | Performing arts + digital tools. Highest single amount. |
+| **Prix Ars Electronica** | International prize | **EUR 10,000** | **Mar 4** | 8/10 | Free to submit. Governance-as-art narrative |
+| **S+T+ARTS Prize** | International prize | **EUR 20,000** | **Mar 4** | 8/10 | Science+Technology+Arts nexus |
 | **NEH Summer Programs** | Stipended program | Stipend | **Mar 6, 11:59pm PT** | 5/10 | Research eligibility + submit |
+| **PEN America Writers Aid** | Emergency | **Up to $3,500** | Rolling | **9/10** | **APPLY NOW** — highest-fit emergency fund |
 
 ### This Month (Feb 17 – Mar 18)
 
 | Opportunity | Type | Amount | Deadline | Fit | Action |
 |-------------|------|--------|----------|-----|--------|
+| **Bread Loaf Conference** | Writing scholarship | **$4,440** value | **Mar 15** | 7/10 | Nonfiction track, MFA + 41 essays |
 | **Google Creative Fellowship** | Paid fellowship (6 mo) | Stipend (~$50K+) | **Mar 18, 5pm PST** | 7/10 | Submit (materials ready) |
 | **Google Creative Lab Five** | Paid residency (1 yr) | Salary | Open (no close date) | 8/10 | Submit ASAP |
+| **Noema Magazine** | Writing income | **$1/word** (~$3K/essay) | Rolling | — | Pitch this month |
+| **Gay & Lesbian Review** | Writing income | **$250/feature** | Rolling | 9/10 | Submit this month |
 
 ### Next 1–3 Months
 
 | Opportunity | Type | Amount | Deadline | Fit | Action |
 |-------------|------|--------|----------|-----|--------|
 | **Fire Island Artist Residency** | Residency | Stipend + housing | **Apr 1, 11:59pm** | 7/10 | Begin via SlideRoom (LGBTQ+) |
+| **NLnet NGI Zero Commons** | Grant | **EUR 5K–50K+** | **Apr 1** | 7/10 | Open-source infrastructure |
+| **Headlands Center** | Residency | **Fully funded** + $1K/mo | **Apr 1–Jun 1** | **9/10** | Premier fully-funded residency |
 | **Creative Capital 2027** | Grant | **Up to $50,000** + services | **Apr 2, 3pm ET** | **9/10** | Portal opens Mar 2 — HIGHEST PRIORITY |
+| **ZKM Rauschenberg** | Residency | Studios, 3 months | **Apr 12** | 8/10 | Premier media art institution |
+| **WFF Housing Stability** | Grant | **$30,000/3yr** | **Apr 14, 5pm ET** | **9/10** | Highest-value NYC opportunity |
 | **Rauschenberg Cycle 36** | Emergency grant | **Up to $5,000** | **Apr 14–May 12** | 6/10 | Opens Apr 14, quick application |
 | **Spencer Foundation Small** | Research grant | **Up to $50,000** | **Apr 15, noon CT** | 6/10 | Education research angle |
+| **Whiting Nonfiction** | Grant | **$40,000** | **~Apr** | 8/10 | 404K-word corpus as book pitch |
 | **Processing Foundation** | Fellowship | **$10,000** | **~Apr-May** | 6/10 | Monitor for 2026 announcement |
+| **Warhol Arts Writers** | Grant | **$15K–$50K** | **Opens May 1** | 7/10 | Writing about contemporary art |
 | **Eyebeam** | Residency | **$4,000** + studio | **Spring 2026 (TBA)** | 7/10 | Check Submittable portal |
 
 ### Dropped Targets
@@ -117,15 +130,32 @@ Longer-horizon opportunities that build institutional credibility:
 
 ### Residencies & Fellowships
 
-| Opportunity | Amount | Timeline | Notes |
-|-------------|--------|----------|-------|
-| **NEW INC (New Museum)** | ~$600/mo membership | Spring/Summer 2026 app | 13th Cohort — tech-focused incubator |
-| **Pioneer Works** | $1K–$2.5K + studio | Summer 2026 for 2027 | Brooklyn-based |
-| **Tulsa Artist Fellowship** | **$230K+** ($150K + housing + studio + healthcare) | Spring 2026 app for 2027-2029 | Requires relocation to Tulsa |
-| **Queer\|Art Mentorship** | Program-based | ~Jun-Jul 2026 app | LGBTQ+ artists |
-| **Lambda Literary Writers Retreat** | Program-based | ~Nov 2026-Jan 2027 | MFA-relevant writing focus |
-| **Harvestworks New Works** | $5,000 + lab access | ~Dec 2026 | AR/VR, ML, AI, code-based media |
-| **NYSCA/NYFA Artist Fellowship** | $8,000 unrestricted | ~May 2026 for FY2027 | Requires fiscal sponsor |
+| Opportunity | Amount | Timeline | Fit | Notes |
+|-------------|--------|----------|-----|-------|
+| **MacDowell** | Fully funded + stipends | Aug 15-Sep 10 | **9/10** | 10 days-6 weeks, NH |
+| **Yaddo** | Room/board/studio | Aug 1 | 8/10 | 2 weeks-2 months, Saratoga Springs |
+| **Recurse Center** | FREE (no cost) | Rolling | **9/10** | 6-12 weeks, Brooklyn |
+| **SFPC** | Pay-what-you-can | Next session TBA | **9/10** | NYC, poetic computation |
+| **Harvestworks New Works** | $5,000 + lab access | ~Dec 2026 | 8/10 | AR/VR, ML, AI, code-based media |
+| **LMCC Workspace** | 9-month studio | Spring/Summer TBA | 8/10 | Manhattan, digital media |
+| **NEW INC (New Museum)** | ~$600/mo membership | Spring/Summer 2026 app | 7/10 | 13th Cohort — tech-focused incubator |
+| **Pioneer Works** | $1K–$2.5K + studio | Summer 2026 for 2027 | 7/10 | Brooklyn-based |
+| **Stochastic Labs** | Fully funded + housing | Rolling | 7/10 | Berkeley, CA |
+| **Ucross** | $1,500 + full room/board | Jul 15 | 7/10 | 2-4 weeks, Wyoming |
+| **Tulsa Artist Fellowship** | **$230K+** ($150K + housing + healthcare) | Spring 2026 app for 2027-2029 | 7/10 | Requires relocation to Tulsa |
+| **Queer\|Art Mentorship** | Program-based | ~Jun-Jul 2026 app | 8/10 | LGBTQ+ artists |
+| **Lambda Literary Writers Retreat** | Program-based | ~Nov 2026-Jan 2027 | 7/10 | MFA-relevant writing focus |
+| **NYSCA/NYFA Artist Fellowship** | $8,000 unrestricted | ~May 2026 for FY2027 | **9/10** | Requires fiscal sponsor |
+
+### Major Grants (Summer-Fall)
+
+| Opportunity | Amount | Timeline | Fit | Notes |
+|-------------|--------|----------|-----|-------|
+| **Guggenheim Fellowship** | $50K-$75K | Sep 2026 | 8/10 | Aspirational but genuine |
+| **USA Fellowship** | $50,000 unrestricted | Watch for 2027 | 8/10 | Media or design category |
+| **DCLA PAIR** | $40,000 | Spring 2026 TBA | 8/10 | Highest-value NYC individual grant |
+| **Jerome Hill Fellowship** | Multi-year substantial | Watch for next cycle | 8/10 | Technology-centered arts, NYC |
+| **Rhizome Commissions** | $2,500-$2,900 | Annual cycle TBA | 8/10 | Born-digital art |
 
 ### LGBTQ+-Specific
 
@@ -174,6 +204,41 @@ The $60/hr floor from early planning is **significantly below market** (FILE-058
 **Below the line** (apply only if time permits): Cohere (3/10), Runway (3/10), Anthropic SE Claude Code (3/10).
 
 **Benefits cliff note:** Full-time employment income blows through all thresholds. This is a total exit from the benefits safety net — which is fine IF the salary is sufficient ($120K+ provides a wide margin). Do NOT accept a $60K role that loses benefits worth $8K–$15K/yr.
+
+---
+
+## Writing Income — Premium Publications
+
+A major discovery from research: several publications pay professional rates for exactly the kind of essays already being written. This creates a new income channel that leverages existing output.
+
+| Publication | Rate | Topic Fit | Frequency |
+|-------------|------|-----------|-----------|
+| **Noema Magazine** | $1/word ($3K/3K-word essay) | Technology, governance, AI, culture | Quarterly |
+| **MIT Technology Review** | $1-3/word ($2.5K-12K/feature) | AI, creative technology, LLMs | As pitched |
+| **Wired** | $2,500+ starting | Technology stories | As pitched |
+| **Logic Magazine** | $1,200-2,000/essay | Technology criticism | Themed issues |
+| **Aeon** | $500-1,500 | Philosophy, culture, technology | As pitched |
+| **Gay & Lesbian Review** | $250/feature | LGBTQ+ culture, arts | Ongoing |
+| **e-flux journal** | ~$200-500 | Contemporary art theory | Prestige value |
+
+**Benefits cliff note:** Writing income is **earned income** (not lump-sum) — counts toward SNAP monthly threshold ($1,580/month net for 1 person). One Noema essay per quarter ($3K/quarter = $12K/year) exceeds annual SNAP threshold but keeps within Essential Plan. Two essays per year ($6K) is safest on $12K base.
+
+**Strategy:** Pitch Noema and Logic Magazine this month. Build toward 2-4 premium essay placements per year ($6K-$12K). This supplements grant income without the application overhead.
+
+---
+
+## Monetization Infrastructure
+
+Set up passive income channels alongside active applications:
+
+| Platform | Fee | Priority | Income Potential |
+|----------|-----|----------|-----------------|
+| **GitHub Sponsors** | 0% | **IMMEDIATE** | $50-500/mo |
+| **Ko-fi** | 0% tips | **IMMEDIATE** | $50-200/mo |
+| **Substack** | 10% + processing | This week | $300-3,000/mo |
+| **Lemon Squeezy** | 5% + $0.50 | This month | Variable |
+
+**Digital products to create (Month 2-3):** Governance Toolkit ($29-$49), Essay Collection PDF ($9.99), AI-Conductor Methodology Guide ($19-$39), README-as-Portfolio Template Pack ($9.99).
 
 ---
 
