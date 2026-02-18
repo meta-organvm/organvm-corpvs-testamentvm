@@ -3,7 +3,7 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (Research integration: added F10-F21 from exhaustive funding research, writing income items W1-W3)
+**Last reviewed:** 2026-02-18 (ERUPTIO: execution guide created, all submission materials staged, omega scorecard added to roadmap)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 

@@ -25,7 +25,7 @@ COVENANT_ARK_PATH = ROOT / "docs" / "applications" / "00-covenant-ark.md"
 REGISTRY_PATH = ROOT / "registry-v2.json"
 METRICS_PATH = ROOT / "system-metrics.json"
 PROFILES_DIR = ROOT / "docs" / "applications" / "profiles"
-SCRIPTS_DIR = ROOT / "docs" / "applications"
+SCRIPTS_DIR = ROOT / "docs" / "applications" / "submission-scripts"
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # IDENTITY MAP — target_id → (primary_position, secondary_position)
@@ -816,33 +816,33 @@ SCRIPT_TARGETS = [t["id"] for t in TARGETS
                   and t["category"] != "Consulting"]
 
 SCRIPT_FILENAMES = {
-    "creative-capital": "cc-creative-capital-script.md",
-    "wff-housing": "wff-housing-script.md",
-    "headlands": "headlands-script.md",
-    "fire-island": "fire-island-script.md",
-    "eyebeam": "eyebeam-script.md",
-    "zkm-rauschenberg": "zkm-script.md",
-    "whiting-nonfiction": "whiting-script.md",
-    "warhol-arts-writers": "warhol-script.md",
-    "lacma-art-tech": "lacma-script.md",
-    "google-ami": "google-ami-script.md",
-    "nlnet-commons": "nlnet-script.md",
-    "spencer-foundation": "spencer-script.md",
-    "processing-foundation": "processing-script.md",
-    "recurse-center": "recurse-script.md",
-    "fca-emergency": "fca-emergency-script.md",
-    "rauschenberg-emergency": "rauschenberg-emergency-script.md",
-    "awesome-foundation": "awesome-foundation-script.md",
-    "stimpunks": "stimpunks-script.md",
-    "noema": "noema-pitch-script.md",
-    "logic-magazine": "logic-pitch-script.md",
-    "gay-lesbian-review": "glr-pitch-script.md",
-    "mit-tech-review": "mit-tr-pitch-script.md",
-    "new-inc": "new-inc-script.md",
-    "pioneer-works": "pioneer-works-script.md",
-    "tulsa-fellowship": "tulsa-script.md",
-    "queer-art": "queer-art-script.md",
-    "lambda-literary": "lambda-literary-script.md",
+    "creative-capital": "cc-creative-capital.md",
+    "wff-housing": "wff-housing.md",
+    "headlands": "headlands.md",
+    "fire-island": "fire-island.md",
+    "eyebeam": "eyebeam.md",
+    "zkm-rauschenberg": "zkm.md",
+    "whiting-nonfiction": "whiting.md",
+    "warhol-arts-writers": "warhol.md",
+    "lacma-art-tech": "lacma.md",
+    "google-ami": "google-ami.md",
+    "nlnet-commons": "nlnet.md",
+    "spencer-foundation": "spencer.md",
+    "processing-foundation": "processing.md",
+    "recurse-center": "recurse.md",
+    "fca-emergency": "fca-emergency.md",
+    "rauschenberg-emergency": "rauschenberg-emergency.md",
+    "awesome-foundation": "awesome-foundation.md",
+    "stimpunks": "stimpunks.md",
+    "noema": "noema-pitch.md",
+    "logic-magazine": "logic-pitch.md",
+    "gay-lesbian-review": "glr-pitch.md",
+    "mit-tech-review": "mit-tr-pitch.md",
+    "new-inc": "new-inc.md",
+    "pioneer-works": "pioneer-works.md",
+    "tulsa-fellowship": "tulsa.md",
+    "queer-art": "queer-art.md",
+    "lambda-literary": "lambda-literary.md",
 }
 
 
@@ -1301,7 +1301,7 @@ def run_audit():
     all_profiles = list(PROFILES_DIR.glob("*.json"))
     profile_ids = {p.stem for p in all_profiles if p.stem != "_index"}
 
-    all_scripts = list(SCRIPTS_DIR.glob("*-script.md")) + list(SCRIPTS_DIR.glob("*-pitch-script.md"))
+    all_scripts = list(SCRIPTS_DIR.glob("*.md"))
     existing_script_names = {s.name for s in all_scripts}
 
     target_ids = {t["id"] for t in TARGETS}

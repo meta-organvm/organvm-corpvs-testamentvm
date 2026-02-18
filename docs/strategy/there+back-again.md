@@ -98,7 +98,7 @@ Thirty-three sprints have executed since launch. The system's current state:
 | Archived repos | 10 |
 | Design-only repos | 0 |
 | Total documentation | ~404K+ words |
-| Meta-system essays | 42 (~134K words) |
+| Meta-system essays | 42 (~142K words) |
 | CI/CD workflows | 82+ (17 crons disabled for billing) |
 | Dependency edges | 31 validated, 0 violations |
 | Seed.yaml contracts | 115 edges across 97 repos |
@@ -112,7 +112,7 @@ Thirty-three sprints have executed since launch. The system's current state:
 | Soak test | Started (30-day clock running) |
 | Runbooks | 3 written, not yet validated |
 | Stranger test | Protocol ready, not yet executed |
-| Applications | 9 bundles ready, 0 submitted |
+| Applications | 41 targets tracked, 7 scripts ready for ERUPTIO session, 0 submitted |
 | Revenue | $0 MRR (all ORGAN-III repos pre-launch) |
 
 **What is strong:** Documentation depth, automated governance, dependency integrity, CI coverage, portfolio presentation, audit trail, provenance tracking.
@@ -344,6 +344,34 @@ Omega is achieved when all 17 criteria below are met. Each criterion is measurab
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data |
 
 **Progress tracking:** The omega checklist should be reviewed monthly. Each criterion transitions from `NOT MET` → `IN PROGRESS` → `MET` with a date stamp and evidence link. The review cadence aligns with the monthly-organ-audit workflow already running in ORGAN-IV.
+
+### Omega Scorecard — Live Status
+
+*Last updated: 2026-02-18 (ERUPTIO session)*
+
+| # | Criterion | Status | Date | Evidence |
+|---|-----------|--------|------|----------|
+| 1 | 30-day soak test passes | IN PROGRESS | 2026-02-16 | Soak test running (day 3/30) |
+| 2 | Stranger test score ≥80% | NOT MET | — | Protocol ready, no participant |
+| 3 | Engagement baseline (30 days) | IN PROGRESS | 2026-02-16 | Data collecting via soak-test-monitor.py |
+| 4 | Runbooks validated | NOT MET | — | 3 runbooks written, not validated |
+| 5 | ≥1 application submitted | NOT MET | — | 7 scripts ready, 0 submitted |
+| 6 | AI-conductor essay published | MET | 2026-02-12 | public-process essay #9 |
+| 7 | ≥3 external feedback collected | NOT MET | — | 0 feedback |
+| 8 | ≥1 ORGAN-III product live | NOT MET | — | Deploy script ready |
+| 9 | revenue_status: live for ≥1 | NOT MET | — | All pre-launch |
+| 10 | MRR ≥ operating costs | NOT MET | — | $0 MRR |
+| 11 | ≥2 salons/events held | NOT MET | — | Infrastructure only |
+| 12 | ≥3 external contributions | NOT MET | — | 5 good-first-issues created |
+| 13 | ≥1 organic inbound link | NOT MET | — | Mastodon+Discord broadcast active |
+| 14 | ≥1 recognition event | NOT MET | — | 0 external recognition |
+| 15 | Portfolio updated with validation | NOT MET | — | Portfolio live, no validation data |
+| 16 | Bus factor >1 (validated) | NOT MET | — | Runbooks written, not tested |
+| 17 | System operates 30+ days | IN PROGRESS | 2026-02-16 | Soak test running |
+
+**Score: 1/17 MET, 3/17 IN PROGRESS, 13/17 NOT MET**
+
+> **ERUPTIO targets:** #5 → MET (submit applications), #8 → MET (deploy product). #9 → IN PROGRESS (GitHub Sponsors activated).
 
 ---
 
@@ -600,9 +628,15 @@ For reference, the complete sprint history that brought the system to Checkpoint
 | 25 | Inspectio | 2026-02-16 | Product assessment | life-my--midst--in selected as beta |
 | 26 | Propagatio | 2026-02-16 | Findings propagation | Fit scores reconciled, roadmap extended |
 | 27 | Beta-Vitae | 2026-02-16 | Beta deployment prep | 44 tables on Neon, 3 migration fixes, 2 essays deployed |
+| 28 | Recognitio | 2026-02-17 | E2G-II review | Omega scorecard (1/17), P0 gate, cadence refreshed |
+| 29 | Automata | 2026-02-17 | Autonomous activation | 3 cron workflows, auto-deploy, system-pulse-generator |
+| 30 | Distributio | 2026-02-17 | Essay distribution | Backfill pipeline, POSSE metadata, security hardening |
+| 31 | Fundamen | 2026-02-17 | Infrastructure hardening | 6 repos synced, 25+ tests, social-automation HTTP |
+| 32 | Sensoria | 2026-02-17 | Perception layer | seed.yaml 100%, stale-detector, propagation fixes |
+| 33 | Operatio | 2026-02-17 | Operations batch | organ-cli, essay-deploy, generate-dashboard |
 
-**Total construction period:** 7 days (2026-02-09 through 2026-02-16)
-**Total sprints:** 27 post-launch + 7 pre-launch phases = 34 discrete work units
+**Total construction period:** 9 days (2026-02-09 through 2026-02-17)
+**Total sprints:** 33 post-launch + 7 pre-launch phases = 40 discrete work units
 **Total documentation:** ~404K+ words across 97 repositories
 
 The construction velocity is itself evidence of the AI-conductor methodology's effectiveness — and its limitations. The methodology excels at volume production (404K+ words in 9 days) but cannot substitute for the external validation, community formation, and revenue generation that the omega criteria require. Those take calendar time, not token expenditure.

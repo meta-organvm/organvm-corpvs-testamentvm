@@ -10,46 +10,46 @@
 
 | Script | Target | Amount | Deadline | File |
 |--------|--------|--------|----------|------|
-| X1 | Google Creative Lab Five | Stipend | Open | [x1-submission-script.md](./x1-submission-script.md) |
-| E3 | Google Creative Fellowship | Stipend | Mar 18 | [e3-submission-script.md](./e3-submission-script.md) |
-| E4 | Artadia NYC Awards | $15,000 | Mar 1 | [e4-artadia-submission-script.md](./e4-artadia-submission-script.md) |
-| E5 | Prix Ars Electronica + S+T+ARTS | EUR 30,000 | Mar 4 | [e5-prix-ars-starts-submission-script.md](./e5-prix-ars-starts-submission-script.md) |
-| E6 | PEN America Writers Aid | $3,500 | Rolling | [e6-pen-america-submission-script.md](./e6-pen-america-submission-script.md) |
-| F22 | Doris Duke AMT Lab | $150,000 | Mar 2 | [f22-doris-duke-amt-submission-script.md](./f22-doris-duke-amt-submission-script.md) |
-| F24 | Watermill Center Summer | Free residency | Feb 18 | [f24-watermill-submission-script.md](./f24-watermill-submission-script.md) |
-| F1/F2 | GitHub Sponsors + Fractured Atlas | Infrastructure | ASAP | [f1-f2-infrastructure-setup-guide.md](./f1-f2-infrastructure-setup-guide.md) |
+| X1 | Google Creative Lab Five | Stipend | Open | [google-cl5.md](./submission-scripts/google-cl5.md) |
+| E3 | Google Creative Fellowship | Stipend | Mar 18 | [google-fellowship.md](./submission-scripts/google-fellowship.md) |
+| E4 | Artadia NYC Awards | $15,000 | Mar 1 | [artadia-nyc.md](./submission-scripts/artadia-nyc.md) |
+| E5 | Prix Ars Electronica + S+T+ARTS | EUR 30,000 | Mar 4 | [prix-ars-starts.md](./submission-scripts/prix-ars-starts.md) |
+| E6 | PEN America Writers Aid | $3,500 | Rolling | [pen-america.md](./submission-scripts/pen-america.md) |
+| F22 | Doris Duke AMT Lab | $150,000 | Mar 2 | [doris-duke.md](./submission-scripts/doris-duke.md) |
+| F24 | Watermill Center Summer | Free residency | Feb 18 | [watermill.md](./submission-scripts/watermill.md) |
+| F1/F2 | GitHub Sponsors + Fractured Atlas | Infrastructure | ASAP | [infrastructure-setup.md](./submission-scripts/infrastructure-setup.md) |
 
 ### Alchemizer-Generated Submission Scripts (2026-02-18)
 
 | Target | Amount | Position | Deadline | File |
 |--------|--------|----------|----------|------|
-| Creative Capital 2027 | Up to $50,000 | Systems Artist | Apr 2 | [cc-creative-capital-script.md](./cc-creative-capital-script.md) |
-| WFF Housing Stability | $30,000/3yr | Community | Apr 14 | [wff-housing-script.md](./wff-housing-script.md) |
-| Headlands Center | Fully funded | Systems Artist | Apr 1-Jun 1 | [headlands-script.md](./headlands-script.md) |
-| Fire Island Residency | Stipend + housing | Community | Apr 1 | [fire-island-script.md](./fire-island-script.md) |
-| Eyebeam | $4,000 + studio | Systems Artist | Spring TBA | [eyebeam-script.md](./eyebeam-script.md) |
-| ZKM Rauschenberg | Studios, 3 months | Systems Artist | Apr 12 | [zkm-script.md](./zkm-script.md) |
-| Whiting Nonfiction | $40,000 | Systems Artist | ~Apr | [whiting-script.md](./whiting-script.md) |
-| Warhol Arts Writers | $15K-$50K | Systems Artist | May 1 | [warhol-script.md](./warhol-script.md) |
-| LACMA Art+Tech Lab | Up to $50,000 | Systems Artist | Rolling | [lacma-script.md](./lacma-script.md) |
-| Google AMI Grants | $10,000 | Technologist | Watch | [google-ami-script.md](./google-ami-script.md) |
-| NLnet Commons Fund | EUR 5K-50K+ | Technologist | Apr 1 | [nlnet-script.md](./nlnet-script.md) |
-| Spencer Foundation | Up to $50,000 | Educator | Apr 15 | [spencer-script.md](./spencer-script.md) |
-| Processing Foundation | $10,000 | Educator | ~Apr-May | [processing-script.md](./processing-script.md) |
-| Recurse Center | Free | Technologist | Rolling | [recurse-script.md](./recurse-script.md) |
-| FCA Emergency | $200-$3,000 | Systems Artist | Rolling | [fca-emergency-script.md](./fca-emergency-script.md) |
-| Rauschenberg Cycle 36 | Up to $5,000 | Systems Artist | Apr 14 | [rauschenberg-emergency-script.md](./rauschenberg-emergency-script.md) |
-| Awesome Foundation | $1,000 | Systems Artist | Monthly | [awesome-foundation-script.md](./awesome-foundation-script.md) |
-| Stimpunks Creator Grant | $3,000 | Community | Rolling | [stimpunks-script.md](./stimpunks-script.md) |
-| Noema Magazine | $1/word | Systems Artist | Rolling | [noema-pitch-script.md](./noema-pitch-script.md) |
-| Logic Magazine | $1,200-$2K | Technologist | Themed | [logic-pitch-script.md](./logic-pitch-script.md) |
-| Gay & Lesbian Review | $250/feature | Community | Rolling | [glr-pitch-script.md](./glr-pitch-script.md) |
-| MIT TR / Wired / Aeon | $1-3/word | Technologist | Rolling | [mit-tr-pitch-script.md](./mit-tr-pitch-script.md) |
-| NEW INC | ~$600/mo | Technologist | Spring 2026 | [new-inc-script.md](./new-inc-script.md) |
-| Pioneer Works | $1K-$2.5K | Systems Artist | Summer 2026 | [pioneer-works-script.md](./pioneer-works-script.md) |
-| Tulsa Fellowship | $230K+ | Systems Artist | Spring 2026 | [tulsa-script.md](./tulsa-script.md) |
-| Queer\|Art Mentorship | Program | Community | Jun-Jul 2026 | [queer-art-script.md](./queer-art-script.md) |
-| Lambda Literary | Program | Community | Nov 2026 | [lambda-literary-script.md](./lambda-literary-script.md) |
+| Creative Capital 2027 | Up to $50,000 | Systems Artist | Apr 2 | [cc-creative-capital.md](./submission-scripts/cc-creative-capital.md) |
+| WFF Housing Stability | $30,000/3yr | Community | Apr 14 | [wff-housing.md](./submission-scripts/wff-housing.md) |
+| Headlands Center | Fully funded | Systems Artist | Apr 1-Jun 1 | [headlands.md](./submission-scripts/headlands.md) |
+| Fire Island Residency | Stipend + housing | Community | Apr 1 | [fire-island.md](./submission-scripts/fire-island.md) |
+| Eyebeam | $4,000 + studio | Systems Artist | Spring TBA | [eyebeam.md](./submission-scripts/eyebeam.md) |
+| ZKM Rauschenberg | Studios, 3 months | Systems Artist | Apr 12 | [zkm.md](./submission-scripts/zkm.md) |
+| Whiting Nonfiction | $40,000 | Systems Artist | ~Apr | [whiting.md](./submission-scripts/whiting.md) |
+| Warhol Arts Writers | $15K-$50K | Systems Artist | May 1 | [warhol.md](./submission-scripts/warhol.md) |
+| LACMA Art+Tech Lab | Up to $50,000 | Systems Artist | Rolling | [lacma.md](./submission-scripts/lacma.md) |
+| Google AMI Grants | $10,000 | Technologist | Watch | [google-ami.md](./submission-scripts/google-ami.md) |
+| NLnet Commons Fund | EUR 5K-50K+ | Technologist | Apr 1 | [nlnet.md](./submission-scripts/nlnet.md) |
+| Spencer Foundation | Up to $50,000 | Educator | Apr 15 | [spencer.md](./submission-scripts/spencer.md) |
+| Processing Foundation | $10,000 | Educator | ~Apr-May | [processing.md](./submission-scripts/processing.md) |
+| Recurse Center | Free | Technologist | Rolling | [recurse.md](./submission-scripts/recurse.md) |
+| FCA Emergency | $200-$3,000 | Systems Artist | Rolling | [fca-emergency.md](./submission-scripts/fca-emergency.md) |
+| Rauschenberg Cycle 36 | Up to $5,000 | Systems Artist | Apr 14 | [rauschenberg-emergency.md](./submission-scripts/rauschenberg-emergency.md) |
+| Awesome Foundation | $1,000 | Systems Artist | Monthly | [awesome-foundation.md](./submission-scripts/awesome-foundation.md) |
+| Stimpunks Creator Grant | $3,000 | Community | Rolling | [stimpunks.md](./submission-scripts/stimpunks.md) |
+| Noema Magazine | $1/word | Systems Artist | Rolling | [noema-pitch.md](./submission-scripts/noema-pitch.md) |
+| Logic Magazine | $1,200-$2K | Technologist | Themed | [logic-pitch.md](./submission-scripts/logic-pitch.md) |
+| Gay & Lesbian Review | $250/feature | Community | Rolling | [glr-pitch.md](./submission-scripts/glr-pitch.md) |
+| MIT TR / Wired / Aeon | $1-3/word | Technologist | Rolling | [mit-tr-pitch.md](./submission-scripts/mit-tr-pitch.md) |
+| NEW INC | ~$600/mo | Technologist | Spring 2026 | [new-inc.md](./submission-scripts/new-inc.md) |
+| Pioneer Works | $1K-$2.5K | Systems Artist | Summer 2026 | [pioneer-works.md](./submission-scripts/pioneer-works.md) |
+| Tulsa Fellowship | $230K+ | Systems Artist | Spring 2026 | [tulsa.md](./submission-scripts/tulsa.md) |
+| Queer\|Art Mentorship | Program | Community | Jun-Jul 2026 | [queer-art.md](./submission-scripts/queer-art.md) |
+| Lambda Literary | Program | Community | Nov 2026 | [lambda-literary.md](./submission-scripts/lambda-literary.md) |
 
 ---
 

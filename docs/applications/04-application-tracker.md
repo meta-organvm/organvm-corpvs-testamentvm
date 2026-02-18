@@ -1,7 +1,8 @@
 # Application Tracker — Revised Strategy
 
 **Goal:** Multi-track application strategy balancing art-tech grants, selective employment, consulting, and emergency funds
-**Updated:** 2026-02-18 (ALCHEMIZER — identity transmutation system generated 43 profiles + 27 new submission scripts)
+**Updated:** 2026-02-18 (ERUPTIO session — execution guide created, all materials staged for 7 submissions + deploy + Sponsors)
+**ERUPTIO guide:** [eruptio-execution-guide.md](./eruptio-execution-guide.md) — master checklist for all actions
 **Assessment:** [09-qualification-assessment.md](./09-qualification-assessment.md) — honest gap analysis per target
 **Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff mechanics, deadline sequencing, identity positions
 
