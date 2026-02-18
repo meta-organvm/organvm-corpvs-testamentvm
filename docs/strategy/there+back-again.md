@@ -98,7 +98,7 @@ Thirty-three sprints have executed since launch. The system's current state:
 | Archived repos | 10 |
 | Design-only repos | 0 |
 | Total documentation | ~404K+ words |
-| Meta-system essays | 36 (~132K words) |
+| Meta-system essays | 42 (~134K words) |
 | CI/CD workflows | 82+ (17 crons disabled for billing) |
 | Dependency edges | 31 validated, 0 violations |
 | Seed.yaml contracts | 115 edges across 97 repos |

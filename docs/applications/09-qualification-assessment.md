@@ -1,9 +1,9 @@
-# Qualification Assessment: 13 Application Targets
+# Qualification Assessment: Application Targets
 
 **Created:** 2026-02-16
-**Revised:** 2026-02-16 (corrected framing — see Revision Note below)
+**Revised:** 2026-02-17 (strategy rewrite — added art-tech grant assessments, updated identity framing)
 **Purpose:** Honest gap analysis comparing actual profile against stated requirements for each target
-**Companion:** [04-application-tracker.md](./04-application-tracker.md) (fit scores recalibrated to match)
+**Companion:** [04-application-tracker.md](./04-application-tracker.md) (fit scores recalibrated to match), [10-funding-strategy.md](./10-funding-strategy.md) (benefits cliff, deadline sequencing)
 
 ---
 
@@ -28,6 +28,8 @@ The initial assessment overcorrected. It framed the gap as "0 years professional
 
 **Certifications:** Meta Full-Stack Developer (2023–2024), Google UX Design / Digital Marketing / Project Management (2022–2023). Structured learning through industry certification programs.
 
+**Identity framing (VERITAS II):** Systems artist and auteur-producer who builds creative systems. The ORGANVM system IS the creative practice — not a portfolio piece for an engineering job. Governance is the medium. The process of creation is the product. Four identity positions for different audiences: Educator, Multimedia Artist, AI Systems Architect, Community-Focused Practitioner.
+
 **What you have built:**
 - 97-repo eight-organ system with automated governance, dependency validation, CI/CD
 - agentic-titan: 1,095 tests, 18 phases, multi-agent orchestration
@@ -35,6 +37,7 @@ The initial assessment overcorrected. It framed the gap as "0 years professional
 - ~404K+ words of documentation across the system
 - 41 published essays (building in public)
 - Portfolio site with generative art (p5.js on all pages, Jost+CMYK design)
+- 33 named development sprints over 5+ years of sustained practice
 
 ---
 
@@ -62,6 +65,24 @@ The engineering roles require experience that falls into four specific categorie
 
 ## Assessment by Tier
 
+### TIER A+: Highest Fit (Art-Tech Grants — Apply Immediately)
+
+#### Creative Capital 2027 Open Call — Realistic fit: 9/10
+- **Requirement:** 5+ years professional artistic practice, "formally and/or conceptually innovative works"
+- **Why you qualify:** The eight-organ system is a 5+ year sustained creative practice that is formally innovative (governance-as-art, AI-augmented methodology) and conceptually innovative (process-as-product, solo production at institutional scale). Creative Capital explicitly funds technology as a sub-discipline. Up to $50,000 + professional development services + new State of the Art Prize.
+- **Advantage:** The ORGANVM system as a living creative work is exactly what Creative Capital exists to fund. 41 essays document the practice in real-time. 97 repos demonstrate sustained commitment. The "process of creation IS the product" thesis is genuinely novel. Panelist advice: "Describe your project with the clarity of a children's book" — the system has a clear, communicable thesis.
+- **Risk:** Highly competitive (thousands of applications for ~40 awards). Application opens Mar 2, due Apr 2.
+- **Action:** Begin preparing materials now, submit April 2
+- **Benefits cliff:** $50K would exceed Medicaid threshold → Essential Plan ($0 premium). Call NYLAG before accepting.
+
+#### Artadia NYC Awards — Realistic fit: 8/10
+- **Requirement:** Contemporary visual artist, NYC-based, work presented in contemporary art context
+- **Why you qualify:** MFA provides creative credibility. The eight-organ system IS the artistic practice — governance as medium, process as product. Portfolio site with generative art (p5.js) demonstrates visual practice. NYC-based. Unrestricted $15,000 grant, 3 awardees per cycle.
+- **Advantage:** Unrestricted funds — no project proposal required, just evidence of sustained practice. The system's public documentation makes every claim verifiable. Strong institutional framing (8 orgs, 97 repos, automated governance = institutional scale).
+- **Risk:** "Contemporary visual artist" framing — the system is more conceptual/systems art than traditional visual art. Need to frame the portfolio site, generative art repos, and interactive installations as the visual practice.
+- **Action:** Submit by March 1 via Submittable
+- **Benefits cliff:** SNAP-safe (lump sum excluded). $15K on $12K base stays below Medicaid threshold with Schedule C deductions.
+
 ### TIER A: Strong Realistic Fit (Apply with confidence)
 
 #### Google Creative Lab Five — Realistic fit: 8/10
@@ -82,6 +103,13 @@ The engineering roles require experience that falls into four specific categorie
 - **Risk:** $4,000 stipend (modest). "Emerging artist" may be interpreted narrowly.
 - **Action:** Monitor for open call, prepare materials
 
+#### Fire Island Artist Residency — Realistic fit: 7/10
+- **Requirement:** LGBTQ+ emerging visual artist
+- **Why you qualify:** LGBTQ+ identity is a direct match. "Emerging" status appropriate — first decade of professional art career (2021-present). NYC-adjacent. Stipend + housing.
+- **Advantage:** Strong identity match. The systems-art practice is genuinely emerging (5 years). Housing component addresses a real need.
+- **Risk:** "Visual artist" interpretation — need to frame generative art, portfolio site, and interactive installations as visual practice. Competition from traditional visual artists.
+- **Action:** Submit by April 1 via SlideRoom
+
 ---
 
 ### TIER B: Realistic Stretch (Apply with clear angle)
@@ -100,7 +128,7 @@ The engineering roles require experience that falls into four specific categorie
 
 #### HuggingFace Developer Advocate ($120K–$160K) — Realistic fit: 5/10 (was: 4/10)
 - **Requirement:** No years requirement — purely skills-based. "Deeply technical, not a marketing position." Create docs, blog posts, tutorials; build demos; contribute to Transformers/Datasets libraries.
-- **What works:** Documentation volume and quality are proven (~404K+ words, 40 essays). Self-directed operator. Writing quality. Remote-first. HuggingFace hires 30–40% from community — unconventional backgrounds are normal.
+- **What works:** Documentation volume and quality are proven (~404K+ words, 42 essays). Self-directed operator. Writing quality. Remote-first. HuggingFace hires 30–40% from community — unconventional backgrounds are normal.
 - **What doesn't:** No published ML tutorials or blog posts. No contributions to HF libraries. No professional ML experience. "Deeply technical" means debugging transformer training loops and model evaluation.
 - **Realistic angle:** Content creation is demonstrated at scale. The gap is ML-specific content, not content ability. Skills-based evaluation favors you more than credential-based roles.
 

@@ -72,7 +72,7 @@ Copy everything between the lines:
 
 ---
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 11 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~404K+ words of public documentation including 36 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 11 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~404K+ words of public documentation including 42 published essays.
 
 The system operates autonomously: daily health checks, weekly metrics refresh, automated essay distribution via POSSE (Mastodon + Discord + RSS), and a self-generating status dashboard.
 

@@ -81,19 +81,19 @@ I built an eight-organ system that coordinates 97 repositories across 8 GitHub o
 
 ### Artist Statement
 
-I build autonomous creative systems and treat their governance as an artistic medium.
+I build environments for creative work to grow in.
 
-My practice centers on the eight-organ system — a documented infrastructure coordinating theory, generative art, commercial products, governance, public process, community, and marketing across 97 repositories. Rather than producing individual artworks, I produce the *systems* that generate, coordinate, and sustain creative work over time.
+My reference points are Brian Eno (the studio as compositional instrument), Trent Reznor and Prince (solo production because no one else would commit at the required level), Brian Wilson (the edit as the creative act), and Terrence Malick (the creature formed in the assembly). These aren't comparisons of quality — they describe a method of production I recognize as my own: design the environment, generate the material, assemble in the edit.
 
-This isn't project-based art. It's infrastructure-as-practice: registry design, dependency validation, promotion state machines, automated health checks, and public documentation are all artistic decisions. The choice of how work moves between organs (Theory → Art → Commerce) is as important as any individual output.
+I applied to roughly 3,000 jobs before building this system. I lost every time to people who actually wanted those jobs. What I wanted was to build the thing that IS what I am — a documented creative infrastructure that coordinates theory, generative art, commercial products, governance, public process, community, and marketing under a single architecture. The eight-organ system is that infrastructure: 97 repositories across 8 GitHub organizations, governed by automated dependency validation, a formal promotion pipeline, and 42 published essays that treat the process of creation as a first-class deliverable.
 
-My reference points include Julian Oliver's critical engineering (treating infrastructure as political/artistic medium), Nicky Case's Explorable Explanations (making systems visible and interactive), and Hundred Rabbits' sustainable tools (building creative infrastructure with radical transparency). Like these practitioners, I believe that protocols, governance structures, and documentation are primary artistic outputs — not supplementary.
+This isn't project-based art. It's infrastructure-as-practice. The choice of how work flows between organs — theory feeds art feeds commerce, never the reverse — is as much an artistic decision as any individual output. The governance model isn't bureaucracy; it's generative constraint. The documentation isn't supplementary; it's the product. I use AI tools the way Wilson used session musicians: I direct, I specify, I review, I assemble. The creative intelligence is in the architecture and the editorial judgment, not in any single line of code or prose.
 
-The eight-organ system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating systems thinking, (c) an argument that governance and art are not separate categories, and (d) a reusable model that other creative technologists can learn from.
+The system is simultaneously: (a) working infrastructure that produces creative work, (b) a portfolio demonstrating sustained creative practice at institutional scale, (c) an argument that governance and art are not separate categories, and (d) a methodology — the AI-conductor model — that other practitioners can adopt.
 
 ### Project Description
 
-The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 77+ CI/CD pipelines, and ~404K+ words of public documentation including 36 published essays.
+The eight-organ system coordinates 97 repositories across 8 GitHub organizations: Theory (ORGAN-I), Art (ORGAN-II), Commerce (ORGAN-III), Governance (ORGAN-IV), Public Process (ORGAN-V), Community (ORGAN-VI), Marketing (ORGAN-VII), and Meta (ORGAN-VIII). Key features: machine-readable registry as single source of truth, automated dependency validation (no circular dependencies, no back-edges), formal promotion state machine, 5 GitHub Actions workflows for autonomous governance, 82+ CI/CD pipelines, and ~404K+ words of public documentation including 42 published essays. The system was built by a single practitioner using the AI-conductor methodology — AI generates volume, human directs strategy and ensures accuracy — documented transparently in the essay series.
 
 ### Links to Submit
 - Portfolio: https://4444j99.github.io/portfolio/
@@ -192,7 +192,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 
 **What I'd Bring**
 
-*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 36 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
+*Documentation at scale, built from scratch.* The eight-organ system has: 97 documented repositories, each with a README written for external evaluators; a reading order and cross-document dependency map so newcomers know where to start; an annotated manifest providing per-file descriptions of every document in the corpus; 42 published essays explaining architectural decisions to non-technical audiences. This wasn't a documentation pass on existing code. It was documentation-first development: the docs defined what the system would become.
 
 *LLM and AI application experience.* agentic-titan is a multi-agent orchestration framework with 1,095 tests. recursive-engine implements a symbolic operating system with a custom DSL, 21 organ handlers, and 1,254 tests. metasystem-master coordinates these subsystems at the meta-level — the kind of architecture documentation that teaches by showing how pieces compose. I understand LLM APIs — tool-use, chaining, structured outputs, function calling — because I've built production systems that depend on them.
 
@@ -238,7 +238,7 @@ That's eval infrastructure. I want to build it for the systems that matter most.
 
 *Agent harness design.* agentic-titan is a multi-agent orchestration framework with 1,095 tests across 18 development phases. The test framework itself IS an agent harness. a-i-council--coliseum takes this further: multi-agent deliberation where AI agents debate positions and synthesize conclusions — evaluating the quality of that synthesis requires exactly the kind of multi-turn eval infrastructure this role builds.
 
-*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 77+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
+*Production systems end-to-end.* I shipped the eight-organ system from architecture through deployment: 82+ CI/CD pipelines, automated health audits, dependency validation, promotion state machine. I own the full lifecycle.
 
 *Feedback loops that strengthen systems.* The system uses a tiered documentation approach (Bronze/Silver/Gold) where validation results feed directly into the next sprint. Regression monitoring, golden datasets, and drift detection — these are eval patterns applied to infrastructure.
 
@@ -272,7 +272,7 @@ Hugging Face hires people who tell it where to go. I'm the person who sees a gap
 
 **What I'd Bring**
 
-*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 36 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~404K+ words of structured technical writing that IS the product.
+*Technical content at scale, from scratch.* 97 repository READMEs, each written for grant reviewers and hiring managers. A cross-document dependency map and reading order. An annotated manifest with per-file descriptions. 42 published essays explaining architectural decisions to non-technical audiences. organvm-corpvs-testamentvm as the meta-governance document — ~404K+ words of structured technical writing that IS the product.
 
 *Developer-first instinct.* my-knowledge-base is a knowledge management system designed around how developers actually retrieve information. metasystem-master coordinates subsystems at the meta-level, and its documentation teaches by showing how pieces compose rather than listing features.
 
