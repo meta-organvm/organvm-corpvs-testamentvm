@@ -3,13 +3,19 @@
 **Created:** 2026-02-17
 **Author:** @4444j99
 **Status:** ACTIVE — Living document, reviewed weekly (Friday retrospective)
-**Last reviewed:** 2026-02-17 (Post-AMPLIFICATIO: M9-II + M10-II CI fixes completed, omega evidence map refreshed 1/8/8)
+**Last reviewed:** 2026-02-17 (Strategy rewrite: added F1-F9 funding items, benefits cliff note, reordered by deadline urgency)
 **Companions:** [`operational-cadence.md`](./operational-cadence.md) (rhythm), [`there+back-again.md`](../strategy/there+back-again.md) (destination), [`sprint-catalog.md`](../strategy/sprint-catalog.md) (menu), [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) (audit trail), [`concordance.md`](./concordance.md) (ID lookup)
 **Constitution:** [`docs/memory/constitution.md`](../memory/constitution.md) — Articles I-VI govern all specifications
 
 ---
 
 > *The roadmap says **where we're going.** The catalog says **what we could do.** The cadence says **when we work.** This document says **what we're actually doing next.***
+
+> **Benefits Cliff Awareness:** SNAP excludes lump-sum grants (safe).
+> Medicaid threshold: $21,597/year. Essential Plan $0 premium to $39,125.
+> Fair Fares hard cliff: $22,692/year.
+> Call NYLAG (212-613-5000) before accepting any single grant >$5K.
+> See [`docs/applications/10-funding-strategy.md`](../applications/10-funding-strategy.md) for full analysis.
 
 ---
 
@@ -39,6 +45,10 @@
 
 - [x] **X4.** Make first social media post — completed 2026-02-17 (HERMETICUM session: Mastodon + Discord via distribution pipeline, issue #45)
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: feeds #7, #13
+- [ ] **F1.** Activate GitHub Sponsors (~15 min) — zero fee, monetizes 97 repos immediately
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: feeds #9, #10
+- [ ] **F2.** Apply for Fractured Atlas fiscal sponsorship (~30 min) — $10/mo, unlocks org-only grants (NEA, state arts councils)
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: feeds #9
 - [ ] **G2.** Configure Render deploy hook for life-my--midst--in — deploy service first (depends on X2), then copy deploy hook URL to `RENDER_DEPLOY_HOOK` secret
   - Render free tier costs $0, no credit card required
   - Enables auto-deploy on push to master
@@ -48,14 +58,25 @@
 
 ## NEEDS TIME — Schedule a Block
 
-### This Week (Break the Hermetic Seal)
+### This Week — URGENT DEADLINES
 
 > **Non-negotiable rule from E2G-II:** No new named internal sprints until X1-X4 are complete.
+> **Clarification:** Funding applications are external-facing (breaking the seal), not internal sprints.
+
+- [ ] **F3.** Submit Artadia NYC application ($15K unrestricted) — **deadline Mar 1** (~3-4 hrs)
+  - URL: https://artadia.org/award_schedule/new-york/ (Submittable) · Fit: 8/10
+  - Identity position: Multimedia Artist / Systems Artist
+  - Benefits cliff: SNAP-safe. Below Medicaid threshold with Schedule C deductions.
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5, #9
 
 - [ ] **X1.** Submit Google Creative Lab Five application (~1 hr)
   - Materials: `docs/applications/05-google-creative-lab-five-responses.md`
   - URL: https://www.creativelab5.com/ · Fit: 8/10
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
+
+- [ ] **F4.** Research and submit NEH Summer Programs — **deadline Mar 6** (~2 hrs)
+  - Credential-building. Evaluate eligibility before investing time.
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md)
 
 - [ ] **X2.** Deploy life-my--midst--in to Render (~1-2 hrs)
   - Guide: `~/Workspace/organvm-iii-ergon/life-my--midst--in/DEPLOY.md`
@@ -63,15 +84,15 @@
   - **Status:** `render.yaml` fixed for free tier (removed worker + Redis). Delete old Render blueprint, then fresh deploy from updated yaml.
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #8
 
-- [ ] **X3.** Submit 2 job applications (~2 hrs) — Together AI Lead DX (6/10), HuggingFace Dev Advocate (5/10)
-  - Cover letters: `docs/applications/cover-letters/`
-  - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
-
 ### This Month (Feb 17 – Mar 18)
 
 - [ ] **E3.** Submit Google Creative Fellowship application — **deadline March 18, 2026**
-  - URL: https://creativefellowship.google/ · Materials ready
+  - URL: https://creativefellowship.google/ · Materials ready · Fit: 7/10
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #14
+
+- [ ] **X3.** Submit 2 job applications (~2 hrs) — Together AI Lead DX (6/10), HuggingFace Dev Advocate (5/10)
+  - Cover letters: `docs/applications/cover-letters/`
+  - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
 
 - [x] **E5.** Write "Construction Addiction" essay (#36) — completed 2026-02-17 (HERMETICUM session: ~2600 words, auto-deploys via essay-deploy pipeline)
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #6
@@ -79,7 +100,29 @@
 - [ ] **G1.** Set up LinkedIn developer token (~30 min, OAuth flow) — enables automated LinkedIn distribution
   - Source: [autonomous-setup-guide](./autonomous-setup-guide.md) §5
 
-### Next 1-3 Months
+### Next 1-3 Months (Deadline-Sequenced)
+
+- [ ] **F6.** Submit Fire Island Artist Residency — **deadline Apr 1** (~2 hrs, SlideRoom)
+  - LGBTQ+ emerging visual artist. Stipend + housing. Fit: 7/10
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
+
+- [ ] **F5.** Submit Creative Capital 2027 application ($50K) — portal opens Mar 2, **deadline Apr 2, 3pm ET** (~4-6 hrs)
+  - HIGHEST-FIT TARGET (9/10). 6 short questions, 500-word project description, work samples.
+  - Identity position: Systems Artist — "adventurous and imaginative" interdisciplinary work.
+  - Benefits cliff: $50K exceeds Medicaid → Essential Plan ($0 premium). Call NYLAG before accepting.
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5, #9
+
+- [ ] **F7.** Submit Rauschenberg Cycle 36 ($5K) — **opens Apr 14, closes May 12** (~1 hr)
+  - Emergency grant for digital/electronic arts. Quick application. SNAP-safe.
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md)
+
+- [ ] **F8.** Submit Spencer Foundation Small Research ($50K) — **deadline Apr 15, noon CT** (~4 hrs)
+  - Education research focus. Identity position: Educator.
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
+
+- [ ] **F9.** Submit Processing Foundation Fellowship ($10K) — **~Apr-May** (~3 hrs)
+  - Infrastructure contribution. Governance toolkit as deliverable. Fit: 6/10
+  - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md) · Omega: #5
 
 - [ ] **M1-II.** Recruit and run first stranger test — protocol at `docs/operations/stranger-test-protocol.md`
   - 1 participant, 5 tasks, scoring rubric
@@ -198,14 +241,15 @@
 |----------------|-------------|----------|
 | [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E2, E4, M4-II completed) | 100% of open items |
 | [`autonomous-setup-guide.md`](./autonomous-setup-guide.md) | 3 of 3 PENDING/OPTIONAL | 100% |
+| [`10-funding-strategy.md`](../applications/10-funding-strategy.md) | 9 new items (F1-F9) | Funding strategy rewrite |
 | [`operational-cadence.md`](./operational-cadence.md) Part IV | Subsumed by e2g-ii items | Cross-referenced |
 | [`sprint-catalog.md`](../strategy/sprint-catalog.md) | Referenced via recommended sprints | Menu, not queue |
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 | AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 28 (1 READY, 11 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
-**Post-AMPLIFICATIO maturation (2026-02-17):** M9-II completed (fetch-familiar-friends @types/react-dom fix), M10-II completed (life-my--midst--in ESLint 9 + design-system coverage). Omega evidence map updated (1/8/8). CI target: ~69/72 pending workflow runs.
-**Last session:** Post-AMPLIFICATIO maturation (2026-02-17) — omega evidence map refresh (3 criteria flipped to IN PROGRESS), 2 CI fixes pushed, metrics propagated
+**Total items:** 37 (3 READY, 18 TIME, 3 INCOME, 3 EXTERNAL, 10 COMPLETED)
+**Strategy rewrite (2026-02-17):** 9 funding items added (F1-F9). Benefits cliff note added. NEEDS TIME reordered by deadline urgency (F3 Artadia Mar 1 → F9 Processing ~Apr-May). Funding submissions classified as external-facing (compatible with P0 hermetic seal rule).
+**Last session:** Strategy rewrite (2026-02-17) — replaced engineering-heavy approach with multi-track (art-tech grants, emergency funds, selective employment, consulting)
 
 ---
 

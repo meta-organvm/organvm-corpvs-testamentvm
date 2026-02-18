@@ -1,8 +1,9 @@
 # Portfolio Brief: The Eight-Organ System
 
-**For:** All application tracks (AI roles, grants, residencies)
-**Updated:** 2026-02-18
+**For:** All application tracks (art-tech grants, residencies, selective employment, consulting)
+**Updated:** 2026-02-17
 **Status:** LAUNCHED — all 8 organs OPERATIONAL
+**Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff, deadline sequencing, identity positions
 
 ---
 
@@ -66,14 +67,17 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 ## Positioning by Track
 
-### AI Engineering Roles
-**Evidence:** ORGAN-IV orchestration architecture, registry-as-truth design, governance trade-offs encoded in governance-rules.json, agentic-titan (1,095 tests across 18 phases). **Demonstrates:** Production-ready systems thinking, architectural reasoning, autonomous system design, test-driven development at scale.
-
-### Grant Funding
-**Evidence:** ORGAN-V essays (41 published, ~150K words) + machine-readable registry documenting 5 years of sustained organizational capacity. **Demonstrates:** Digital sustainability, infrastructure that enables ongoing work (not project-based), transparent governance, community contribution model.
+### Art-Tech Grants (PRIMARY TRACK — highest fit)
+**Evidence:** ORGAN-V essays (41 published, ~150K words) + machine-readable registry documenting 5 years of sustained organizational capacity + 33 named development sprints. **Demonstrates:** The ORGANVM system AS a creative work — governance-as-art, process-as-product, sustained practice at institutional scale. **Targets:** Creative Capital (9/10), Artadia NYC (8/10), Spencer Foundation (6/10).
 
 ### Residencies & Fellowships
-**Evidence:** 97 repos assembled into a coherent system through editorial vision, documented in real-time across 41 essays — the creative process itself rendered as the product. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output.
+**Evidence:** 97 repos assembled into a coherent system through editorial vision, documented in real-time across 41 essays — the creative process itself rendered as the product. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output. **Targets:** Google Creative Lab (8/10), Fire Island (7/10), Eyebeam (7/10), Processing Foundation (6/10).
+
+### Consulting & Freelance
+**Evidence:** The 97-repo system IS the credential. AI orchestration, documentation, workshop facilitation. **Demonstrates:** $100-125/hr market rate for AI orchestration consulting. 100+ courses taught, 2,000+ students, ~404K+ words of documentation. **Rate floor:** $100/hr (corrected from $60/hr per market research).
+
+### Selective Employment (deprioritized)
+**Evidence:** ORGAN-IV orchestration architecture, registry-as-truth design, governance trade-offs encoded in governance-rules.json, agentic-titan (1,095 tests across 18 phases). **Demonstrates:** Production-ready systems thinking, architectural reasoning, autonomous system design, test-driven development at scale. **Targets:** Together AI (6/10), HuggingFace (5/10). Engineering roles are competitive reaches from a non-traditional background — apply selectively.
 
 ---
 
@@ -105,7 +109,8 @@ Solo production at full intensity: not isolation as limitation, but as the only 
 
 | Audience | What They See |
 |----------|--------------|
-| AI engineering roles | Production-grade systems thinking: governance, orchestration, autonomous infrastructure |
-| Grant programs | Sustained organizational capacity: the infrastructure already exists and is operational |
+| Art-tech grant programs | A living creative work: governance-as-art, 5+ years sustained practice, the system IS the artwork |
 | Residencies & fellowships | A documented creative methodology: the process of creation as artistic practice |
-| Collaborators | A system that's designed to scale: community infrastructure, public documentation, reusable patterns |
+| Consulting clients | Demonstrated AI orchestration at scale: 97 repos, autonomous governance, ~404K+ words of documentation |
+| Selective employment | Production-grade systems thinking: governance, orchestration, autonomous infrastructure |
+| Collaborators | A system designed to scale: community infrastructure, public documentation, reusable patterns |

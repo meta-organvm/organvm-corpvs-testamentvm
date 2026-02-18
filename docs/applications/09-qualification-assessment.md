@@ -185,22 +185,24 @@ The engineering roles require experience that falls into four specific categorie
 
 ---
 
-## Revised Priority Queue
+## Revised Priority Queue (2026-02-17 Strategy Rewrite)
 
-| Priority | Target | Fit | Action |
-|----------|--------|-----|--------|
-| 1 | Google Creative Lab Five | **8/10** | **SUBMIT NOW** (no deadline, materials ready) |
-| 2 | Google Creative Fellowship | **7/10** | Submit by March 18 |
-| 3 | Eyebeam | **7/10** | Monitor for open call (Spring 2026) |
-| 4 | Together AI Lead DX | **6/10** | Apply — documentation + teaching angle is real |
-| 5 | Processing Foundation | **6/10** | Apply when opens (~April 2026) |
-| 6 | HuggingFace Dev Advocate | **5/10** | Apply — skills-based, no years requirement |
-| 7 | Anthropic FDE | **4/10** | Apply — teaching-as-customer-facing, agent skills demonstrated |
-| 8 | OpenAI SE Evals | **4/10** | Apply — independent SWE + eval infrastructure |
-| 9 | Runway MTS | 3/10 | Apply if time permits |
-| 10 | Cohere Applied AI | 3/10 | Apply if time permits |
-| 11 | Anthropic SE Claude Code | 3/10 | Apply if time permits |
-| — | Knight / Mellon / NEA | 0–1 | **DROP** |
+| Priority | Target | Fit | Deadline | Action |
+|----------|--------|-----|----------|--------|
+| 1 | **Artadia NYC** | **8/10** | **Mar 1** | **BEGIN NOW** — 11 days |
+| 2 | Google Creative Lab Five | **8/10** | Open | **SUBMIT NOW** — no deadline |
+| 3 | **Creative Capital 2027** | **9/10** | **Apr 2** | Portal opens Mar 2 — HIGHEST FIT |
+| 4 | Google Creative Fellowship | **7/10** | **Mar 18** | Submit by deadline |
+| 5 | Fire Island Residency | **7/10** | **Apr 1** | LGBTQ+ emerging artist |
+| 6 | Eyebeam | **7/10** | Spring TBA | Monitor for open call |
+| 7 | Together AI Lead DX | **6/10** | Rolling | Best employment target |
+| 8 | Spencer Foundation | **6/10** | Apr 15 | Education research angle |
+| 9 | Processing Foundation | **6/10** | ~Apr-May | Infrastructure contribution |
+| 10 | HuggingFace Dev Advocate | **5/10** | Rolling | Skills-based |
+| 11 | Anthropic FDE | 4/10 | Rolling | Deprioritized |
+| 12 | OpenAI SE Evals | 4/10 | Rolling | Deprioritized |
+| — | Cohere / Runway / Anthropic SE | 3/10 | Rolling | Apply if time permits |
+| — | Knight / Mellon / NEA (direct) | 0–1 | — | **DROPPED** |
 
 ---
 
@@ -225,12 +227,14 @@ The engineering roles require experience that falls into four specific categorie
 
 ## Summary
 
-**Strongest assets:** 5 years of independent software engineering (97 repos, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration), 18 years of professional experience across 4 domains, systems thinking, documentation quality, creative-technical hybridity, self-direction, and testing discipline.
+**Strongest assets:** 5 years of sustained creative-technical practice (97 repos, 33 sprints, 2,349 tests, CI/CD, custom DSL, multi-agent orchestration), 18 years of professional experience across 4 domains, systems thinking, documentation quality (~404K+ words), creative-technical hybridity, self-direction, and testing discipline. 41 published essays documenting the practice in real-time.
 
-**The gap is also real — but it's specific:** The gap is collaborative team engineering experience and production deployment to real users, not experience itself. No code review with peers. No shared production codebase. No shipping to paying customers. These are the specific things hiring managers at $230K–$560K companies are checking for.
+**The engineering gap is real but specific:** No collaborative team engineering, no production deployment to real users, no enterprise customer-facing tech experience, limited ML domain knowledge. These matter for engineering roles at $230K–$560K but are irrelevant for art-tech grants and residencies.
 
-**Best immediate ROI:** Google Creative Lab Five and Google Creative Fellowship. These are designed for people with your exact profile — creative technologists with systematic practice. Submit Lab Five today. Submit Creative Fellowship by March 18.
+**Best immediate ROI — art-tech grants (NEW):** Creative Capital ($50K, 9/10 fit, Apr 2), Artadia NYC ($15K, 8/10 fit, Mar 1), Google Creative Lab Five (8/10, no deadline). These targets are designed for creative technologists with systematic practice — the exact profile you have. The ORGANVM system framed as living creative work is a much stronger application than the same system framed as engineering experience.
 
-**Best stretch plays:** Together AI (documentation + teaching angle), HuggingFace (skills-based, no years requirement), and Anthropic FDE (teaching-as-customer-facing + agent skills).
+**Best stretch plays:** Together AI (6/10, documentation + teaching), HuggingFace (5/10, skills-based), Anthropic FDE (4/10, teaching-as-customer-facing).
 
-**The engineering roles are competitive reaches from a non-traditional background.** Your 5 years of independent engineering work and 18 years of professional experience are real — the gap is collaborative team experience and production deployment to real users, not experience itself. The creative-tech and documentation roles are where your profile is strongest today. The engineering roles are worth applying to — just calibrate expectations.
+**Strategy shift (2026-02-17):** The previous assessment focused almost entirely on engineering roles, where the profile is weakest. The art-tech funding landscape — Creative Capital, Artadia, Eyebeam, Fire Island, Processing Foundation, Spencer — is where the profile is strongest. The system IS the artwork. The engineering roles are worth applying to selectively, but the highest-ROI path is art-tech grants + consulting ($100-125/hr) + selective employment, not a sprint to a $200K+ engineering job.
+
+**Benefits cliff awareness:** SNAP excludes lump-sum grants entirely. Medicaid threshold $21,597/yr → Essential Plan ($0 premium) up to $39,125. Fair Fares cliff $22,692. Call NYLAG (212-613-5000) before any single grant >$5K. See [10-funding-strategy.md](./10-funding-strategy.md) for full analysis.

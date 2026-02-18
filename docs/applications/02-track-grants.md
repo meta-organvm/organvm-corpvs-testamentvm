@@ -1,8 +1,10 @@
 # Track: Grant Funding
 
-**Targets:** Knight Foundation Art+Tech, Mellon Foundation Arts & Culture, NEA Grants for Arts Projects
+**Targets:** Creative Capital, Artadia NYC, Spencer Foundation, Rauschenberg, FCA Emergency, NYSCA/NYFA
+**Updated:** 2026-02-17 (strategy rewrite — replaced dead targets with verified live opportunities)
 **Evidence:** 97-repo system with automated governance, 41 published essays (~150K words), 5+ years sustained practice, operational infrastructure
 **Core evidence:** ORGAN-V essays + registry + eight-organ organizational model
+**Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff, deadline sequencing, identity positions
 
 ---
 
@@ -21,57 +23,75 @@ Grant reviewers evaluate:
 
 ## Target-Specific Angles
 
-### Knight Foundation — Art+Tech Expansion Fund
+### Creative Capital 2027 Open Call — **HIGHEST FIT (9/10)**
 
-**What they fund:** Long-term capacity for arts organizations using technology. Infrastructure, not projects.
+**What they fund:** "Formally and/or conceptually innovative works" by individual artists. Up to $50,000 unrestricted + professional development. Technology is an explicit sub-discipline.
 
-**Why you fit:** The eight-organ system IS long-term infrastructure. It's not a single artwork or product — it's a documented, automated system for producing creative work indefinitely.
-
-**Key evidence:**
-- Registry-v2.json: Machine-readable infrastructure for 97 repos
-- 5 GitHub Actions workflows: Autonomous governance that runs without human intervention
-- Monthly audit: Automated health checks ensure system remains coherent
-- ORGAN-V essays: Public documentation of the entire model
-
-**Narrative angle:**
-"The eight-organ system is creative infrastructure at institutional scale — operated by a single practitioner but designed with the governance rigor of an organization. This isn't a project request; it's evidence that the infrastructure already exists and is operational. The grant would fund sustained content production (ORGAN-V essays), community programming (ORGAN-VI), and implementation of the highest-priority SKELETON repos into working systems."
-
-**Budget methodology:**
-- Content production: 5 essays/month x TE cost per essay (~120K TE each) = mapped to API costs
-- Infrastructure maintenance: Monthly audit + ad-hoc fixes
-- Community programming: ORGAN-VI salon series, reading groups
-- Implementation sprints: 3-5 SKELETON -> PROTOTYPE elevations per quarter
-
-### Mellon Foundation — Arts & Culture
-
-**What they fund:** Arts organizations demonstrating holistic approaches to culture and organizational sustainability.
-
-**Why you fit:** The eight-organ model IS a holistic organizational model. Theory, Art, Commerce, Governance, Public Process, Community, Marketing — all coordinated as one system.
+**Why you fit:** The eight-organ system IS a formally innovative creative work. 5+ years of sustained practice. The "process of creation IS the product" thesis is genuinely novel. 41 essays document the practice in real-time.
 
 **Key evidence:**
-- All 8 organs operational simultaneously — not sequential, not siloed
-- Cross-organ dependency model: I->II->III with formal validation
-- ORGAN-VI community infrastructure: collaborative spaces, governance
-- State machine: formal lifecycle management for creative work
+- 97-repo system as living creative work, not a portfolio piece
+- 33 named development sprints demonstrating sustained commitment
+- Automated governance: the rules that coordinate 97 repos are as carefully designed as any artwork
+- Public process methodology: building in public as creative practice
+
+**Application format:** 6 short questions, 500-word project description, work samples, bio, resume. Panelist advice: "Describe your project with the clarity of a children's book."
 
 **Narrative angle:**
-"The eight-organ creative-institutional system demonstrates that a single practitioner can operate at organizational scale through documented governance and automated coordination. Each organ addresses a distinct institutional function — theory, production, commerce, governance, transparency, community, distribution — creating a complete creative ecosystem. The Mellon Foundation's commitment to holistic arts practice aligns with this model's core premise: that sustainable creative work requires institutional infrastructure, not just artistic talent."
+"The eight-organ system is a living creative work that treats governance as an artistic medium. The 97 repositories are not code projects — they are the medium through which theory, art, commerce, and community are orchestrated by a single practitioner at institutional scale. The 41 essays documenting this process in real-time are not supplements to the work — they ARE the work. Creative Capital would fund the next phase of a practice that already demonstrates the capacity, innovation, and sustainability that grant reviewers look for."
 
-### NEA — Grants for Arts Projects
+**Benefits cliff:** $50K would exceed Medicaid threshold → Essential Plan ($0 premium). Call NYLAG before accepting.
 
-**What they fund:** Specific art projects, $10K-$50K. Smaller scope, more concrete deliverables.
+### Artadia NYC Awards — **HIGH FIT (8/10)**
 
-**Why you fit:** Focus on a single ORGAN-II project as the proposal, with the eight-organ system as organizational context.
+**What they fund:** Unrestricted $15,000 grants for NYC-based contemporary visual artists. 3 awardees per cycle. Free to apply, open-call via Submittable.
 
-**Proposed project:** Interactive generative installation (ORGAN-II) drawing from recursive-engine theory (ORGAN-I), documented publicly (ORGAN-V), with community engagement (ORGAN-VI).
+**Why you fit:** MFA provides creative credibility. NYC-based. The eight-organ system as artistic practice, with generative art (p5.js), portfolio site, and interactive installations as visual output.
 
 **Key evidence:**
-- ORGAN-II repos: example-interactive-installation, metasystem-master
-- ORGAN-I theoretical foundation: recursive-engine, narratological-algorithmic-lenses
-- Documented process: ORGAN-V essays about the artistic methodology
+- Portfolio site with generative art (p5.js on all pages, Jost+CMYK design)
+- ORGAN-II generative art repos (metasystem-master, interactive installations)
+- 41 published essays as evidence of sustained practice
+- MFA Creative Writing (FAU, 2015-2018) — creative terminal degree
 
 **Narrative angle:**
-"This project creates an interactive generative installation that translates recursive epistemological frameworks (ORGAN-I: Theoria) into embodied artistic experience. The work exists within a larger eight-organ creative infrastructure that provides governance, documentation, and community support — ensuring the project has institutional backing for long-term sustainability."
+"My practice centers on building creative systems — environments where creative organisms grow through documented governance and AI-augmented production. The eight-organ system coordinates 97 repositories through governance structures designed the way a composer designs generative scores: the constraints shape what emerges."
+
+**Benefits cliff:** SNAP-safe (lump sum excluded). $15K on $12K base stays below Medicaid with Schedule C deductions.
+
+### Spencer Foundation Small Research — **MODERATE FIT (6/10)**
+
+**What they fund:** Education research grants up to $50,000. Focus on improving education practice.
+
+**Why you fit (Educator identity):** 11 years teaching at 8+ institutions, 100+ courses, 2,000+ students. The governance toolkit could be framed as educational infrastructure research.
+
+**Key evidence:**
+- 11 years of teaching experience across multiple institutions
+- The eight-organ system as a model for teaching systems thinking and creative technology
+- ORGAN-V public documentation as pedagogical methodology
+
+**Narrative angle:**
+"This research investigates how documented governance systems — designed for creative practice — can serve as pedagogical tools for teaching systems thinking, AI literacy, and creative technology. Drawing on 11 years of teaching experience and a five-year creative systems practice, the project develops reusable governance patterns that creative technology educators can adapt."
+
+### Rauschenberg Emergency Grants (Cycle 36) — **MODERATE FIT (6/10)**
+
+**What they fund:** Up to $5,000 emergency grants for artists in digital/electronic arts.
+
+**Why you fit:** Digital/electronic arts practitioner. Emergency need is real.
+
+**Benefits cliff:** SNAP-safe. $5K on $12K base = $17K total, well below all thresholds.
+
+### FCA Emergency Grants — **MODERATE FIT (rolling)**
+
+**What they fund:** $200–$3,000 (average $1,900) for visual/performing artists with a confirmed public presentation of experimental, contemporary work. Monthly review.
+
+**Requirements:** Need to organize a public showing of AI/creative-tech work at a non-commercial venue.
+
+### NYSCA/NYFA Artist Fellowship FY2027 — **FUTURE TARGET**
+
+**What they fund:** $8,000 unrestricted. Expected to open ~May 2026 for FY2027 cycle. Requires fiscal sponsor.
+
+**Action:** Activate Fractured Atlas fiscal sponsorship first (F2 in rolling TODO), then apply when cycle opens.
 
 ---
 
@@ -79,13 +99,13 @@ Grant reviewers evaluate:
 
 > **Project Title:** [SPECIFIC OR GENERAL]
 >
-> **Applicant:** [NAME] — designer and builder of the eight-organ creative-institutional system
+> **Applicant:** [NAME] — systems artist and builder of the eight-organ creative-institutional system
 >
 > **Summary:**
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (5 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 97 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (11 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational, built through 33 named development sprints using AI tools as compositional instruments.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -95,10 +115,11 @@ Grant reviewers evaluate:
 >
 > **Evidence of Capacity:**
 > - 97 repositories across 8 organizations, all operational
-> - 82+ CI/CD pipelines, 5 governance workflows, automated monthly audits
-> - 42 published essays (~404K+ words)
+> - 82+ CI/CD pipelines, 11 governance workflows, automated monthly audits
+> - 41 published essays (~150K words)
 > - Flagship projects with >1,000 tests each
 > - Complete documentation at portfolio quality (~404K+ words)
+> - 33 named development sprints over 5+ years
 >
 > **Budget:** [AMOUNT]
 > **Timeline:** [DURATION]
@@ -128,10 +149,20 @@ For grants that require dollar budgets, translate the TE model:
 
 1. **The infrastructure already exists.** You're not proposing to build something — you're showing what you've built and requesting support to sustain and expand it.
 
-2. **Automated governance at solo-practitioner scale.** Monthly audits run automatically. Dependency validation happens on every PR. Health checks monitor all 97 repos.
+2. **Automated governance at solo-practitioner scale.** Monthly audits run automatically. Dependency validation happens on every push. Health checks monitor all 97 repos.
 
 3. **Public documentation as evidence.** Grant reviewers can verify every claim by visiting the public repos. The registry, governance rules, and audit reports are all visible.
 
 4. **Creative-technical integration.** The system is simultaneously infrastructure and artistic output. The governance model IS the artwork.
 
-5. **Sustained practice, not a one-time project.** The eight-organ system has been developing for 5+ years. The grant would fund the next phase of an ongoing practice, not a speculative new idea.
+5. **Sustained practice, not a one-time project.** The eight-organ system has been developing for 5+ years through 33 named sprints. The grant would fund the next phase of an ongoing practice, not a speculative new idea.
+
+---
+
+## Dropped Targets
+
+| Target | Old Fit | Reason | Substitute |
+|--------|---------|--------|------------|
+| Knight Foundation Art+Tech | 1/10 | Geographically restricted to Akron/Detroit/Miami | Creative Capital, Artadia |
+| Mellon Foundation Arts & Culture | 0/10 | Invitation-only — cannot apply | Spencer Foundation |
+| NEA Grants for Arts Projects | 1/10 | Requires 501(c)(3) — revisit after Fractured Atlas fiscal sponsorship | NYSCA/NYFA (also needs fiscal sponsor) |

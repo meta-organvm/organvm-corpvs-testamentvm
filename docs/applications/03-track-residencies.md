@@ -1,8 +1,10 @@
 # Track: Residencies & Fellowships
 
-**Targets:** Eyebeam, Processing Foundation Fellowship, Somerset House / Google Creative Lab
+**Targets:** Fire Island, Eyebeam, Processing Foundation, Google Creative Lab, Pioneer Works, Tulsa, NEW INC, Queer|Art
+**Updated:** 2026-02-17 (strategy rewrite — added emergency-help research targets)
 **Evidence:** 97-repo system built solo over 5+ years, 41 published essays, AI tools used as compositional instruments, all 8 organs operational
 **Core evidence:** All 8 organs as unified creative practice + ORGAN-V process-as-product + ORGAN-VI community
+**Funding strategy:** [10-funding-strategy.md](./10-funding-strategy.md) — benefits cliff, deadline sequencing, identity positions
 
 ---
 
@@ -37,7 +39,27 @@ Residency evaluators assess:
 
 ## Target-Specific Angles
 
-### Eyebeam
+### Fire Island Artist Residency — **HIGH FIT (7/10)**
+
+**What they value:** LGBTQ+ emerging visual artists. Stipend + housing. NYC-adjacent.
+
+**Why you fit:** LGBTQ+ identity is a direct match. "Emerging" status appropriate (first decade of professional art career, 2021-present). Systems-art practice with visual output (generative art, portfolio site, interactive installations).
+
+**Proposed residency work:**
+1. Develop a site-specific generative installation responding to the Fire Island environment
+2. Write 3-5 essays documenting the residency within the eight-organ model
+3. Community workshops on creative technology and governance-as-art
+4. Present the eight-organ system as a case study in solo creative production
+
+**Key evidence:**
+- LGBTQ+ identity, NYC-based
+- MFA Creative Writing (creative terminal degree)
+- ORGAN-II generative art repos with visual output
+- Portfolio site with p5.js generative art on all pages
+
+**Deadline:** April 1, 2026, 11:59pm (SlideRoom)
+
+### Eyebeam — **HIGH FIT (7/10)**
 
 **What they value:** "Equitable systems in support of creativity." Technology as civic infrastructure. Artists who build systems, not just objects.
 
@@ -60,7 +82,9 @@ Residency evaluators assess:
 - "The public documentation isn't just transparency; it's a contribution to the community of practice"
 - "The eight-organ model demonstrates that a single practitioner can operate at institutional scale through documented governance"
 
-### Processing Foundation Fellowship
+**Deadline:** TBA, Spring 2026 (check Submittable portal)
+
+### Processing Foundation Fellowship — **MODERATE FIT (6/10)**
 
 **What they value:** Infrastructure that enables others. Open-source tools and documentation. Community contribution. Making creative coding more accessible.
 
@@ -72,29 +96,63 @@ Residency evaluators assess:
 3. Contribute to Processing community: workshops on systematic creative practice
 4. Document the fellowship itself as ORGAN-V content
 
-**Key evidence:**
-- Templates already exist (meta-dependencies.json, workflow templates)
-- Documentation written for external audiences (every README is a portfolio piece)
-- Processing-adjacent tools: generative systems, interactive installations, creative coding infrastructure
-- ORGAN-V public process = commitment to knowledge sharing
+**Deadline:** Expected ~April-May 2026
 
-### Somerset House / Google Creative Lab
+### Google Creative Lab Five / Creative Fellowship — **HIGH FIT (8/10 Lab, 7/10 Fellowship)**
 
 **What they value:** Practice-led research. Artist-engineer hybrid work. Projects at the intersection of art, technology, and society.
 
 **Why you fit:** The eight-organ system IS practice-led research. It evolved over 5+ years through building, not theorizing. The recursive-engine (ORGAN-I) implements formal epistemological frameworks as working code.
 
-**Proposed residency work:**
-1. Develop an interactive installation translating the eight-organ model into physical/digital experience
-2. Use recursive-engine principles to create a generative artwork for exhibition
-3. Public lecture series on governance as creative practice
-4. Document the entire residency process via ORGAN-V
+**Proposed work:**
+1. Apply the orchestration methodology to Google's creative projects
+2. Bridge creative vision and AI implementation within Google's teams
+3. Document the methodology for broader creative technology community
 
-**Key evidence:**
-- recursive-engine: 1,254 tests, formal systems translated into production code
-- ORGAN-II: generative art repos with interactive and performance systems
-- The eight-organ model itself: systems thinking made visible and tangible
-- 5+ years of sustained practice
+**Deadlines:** Lab Five — open (no close date). Fellowship — March 18, 2026, 5pm PST.
+
+### Pioneer Works — **FUTURE TARGET (3-12 months)**
+
+**What they value:** Interdisciplinary research and practice. Brooklyn-based. Art + science + technology.
+
+**Why you fit:** The eight-organ system bridges art, technology, and governance. Pioneer Works' interdisciplinary ethos aligns with the cross-organ methodology.
+
+**Amount:** $1K–$2.5K + studio space
+**Timeline:** Summer 2026 application for 2027 residency
+
+### Tulsa Artist Fellowship — **FUTURE TARGET (3-12 months)**
+
+**What they fund:** Extraordinary support for artists: $150,000 stipend over 3 years + $12,000/year housing + studio + healthcare. **Total value: $230K+**.
+
+**Why you fit:** Sustained creative practice with demonstrated commitment. The fellowship's generous support would enable full-time creative work.
+
+**Requirement:** Relocation to Tulsa.
+**Timeline:** Applications for 2027-2029 expected Spring 2026 (April-May).
+
+**Benefits cliff:** $50K/year income would exit the benefits safety net entirely, but the comprehensive support package (housing + healthcare) replaces those benefits.
+
+### NEW INC (New Museum) — **FUTURE TARGET (3-12 months)**
+
+**What they value:** Technology-focused creative incubator. 13th cohort.
+
+**Note:** Members pay ~$600/month. More of a co-working/incubator than a funded residency.
+**Timeline:** Spring/Summer 2026 applications expected.
+
+### Queer|Art Mentorship — **FUTURE TARGET (3-12 months)**
+
+**What they value:** LGBTQ+ artists at a pivotal career moment. Mentorship with established artists.
+
+**Why you fit:** LGBTQ+ identity. Creative practice at a transitional moment. The mentorship structure could provide institutional connection the practice currently lacks.
+
+**Timeline:** Application expected Summer 2026 (~June-July).
+
+### Lambda Literary Writers Retreat — **FUTURE TARGET (6-12 months)**
+
+**What they value:** LGBTQ+ writers. MFA-relevant writing focus.
+
+**Why you fit:** MFA Creative Writing + LGBTQ+ identity + 41 published essays. The essays as creative nonfiction about building creative systems.
+
+**Timeline:** Application expected ~November 2026-January 2027.
 
 ---
 
@@ -106,7 +164,7 @@ Residency evaluators assess:
 >
 > **Practice summary:** I build creative systems — environments where creative work grows through documented governance, automated coordination, and visible process. My current body of work is the eight-organ system: 97 repositories across 8 GitHub organizations, coordinating theory, art, commerce, and community as a single integrated practice. The system is documented at ~404K+ words across 41 essays and governance specifications, all produced through an AI-augmented methodology where I design the architecture and editorial vision while using AI tools as compositional instruments. The governance model — registry design, dependency rules, promotion pipelines — is artistic output equal to any individual work the system produces. The process of creation, made visible and governable, IS the product.
 >
-> **Duration:** 5+ years of sustained practice
+> **Duration:** 5+ years of sustained practice, 33 named development sprints
 >
 > **Exhibition/presentation history:** [FILL IN — include talks, workshops, publications, code exhibitions]
 >
