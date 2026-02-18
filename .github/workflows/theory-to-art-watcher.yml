@@ -1,0 +1,118 @@
+name: Theory → Art Watcher
+
+# Scans registry for ORGAN-I repos at CANDIDATE status and dispatches
+# theory.candidate events to ORGAN-IV for promotion processing.
+# Fires on registry push + Tuesday 10:00 UTC fallback.
+
+on:
+  push:
+    paths:
+      - 'registry-v2.json'
+  schedule:
+    - cron: '0 10 * * 2'  # Tuesday 10:00 UTC
+  workflow_dispatch:
+
+jobs:
+  scan-candidates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Scan ORGAN-I CANDIDATE repos
+        id: scan
+        run: |
+          python3 << 'PYEOF'
+          import json
+          import os
+
+          with open("registry-v2.json") as f:
+              registry = json.load(f)
+
+          organ_i = registry.get("organs", {}).get("ORGAN-I", {})
+          candidates = []
+
+          for repo in organ_i.get("repositories", []):
+              promo_status = repo.get("promotion_status", "")
+              if promo_status == "CANDIDATE":
+                  candidates.append({
+                      "name": repo["name"],
+                      "org": repo.get("org", "organvm-i-theoria"),
+                      "full": f"{repo.get('org', 'organvm-i-theoria')}/{repo['name']}",
+                      "implementation_status": repo.get("implementation_status", ""),
+                      "documentation_status": repo.get("documentation_status", ""),
+                  })
+
+          print(f"Found {len(candidates)} CANDIDATE repo(s) in ORGAN-I")
+          for c in candidates:
+              print(f"  - {c['full']} (impl={c['implementation_status']}, doc={c['documentation_status']})")
+
+          with open("candidates.json", "w") as f:
+              json.dump(candidates, f)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"count={len(candidates)}\n")
+          PYEOF
+
+      - name: Dispatch theory.candidate events
+        if: steps.scan.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ secrets.ORCHESTRATION_PAT || secrets.GITHUB_TOKEN }}
+        run: |
+          python3 << 'PYEOF'
+          import json
+          import subprocess
+
+          with open("candidates.json") as f:
+              candidates = json.load(f)
+
+          dispatched = 0
+          for candidate in candidates:
+              full_repo = candidate["full"]
+
+              # Idempotency: check if tracking issue already exists
+              result = subprocess.run(
+                  ["gh", "issue", "list",
+                   "--repo", "organvm-iv-taxis/orchestration-start-here",
+                   "--search", f"Promotion: {full_repo} in:title",
+                   "--state", "open", "--json", "title", "--limit", "3"],
+                  capture_output=True, text=True,
+              )
+              if result.returncode == 0:
+                  try:
+                      existing = json.loads(result.stdout)
+                      if any(f"Promotion: {full_repo}" in i.get("title", "") for i in existing):
+                          print(f"  Skipping {full_repo} — tracking issue already exists")
+                          continue
+                  except json.JSONDecodeError:
+                      pass
+
+              # Dispatch to ORGAN-IV
+              payload = json.dumps({
+                  "source_repo": full_repo,
+                  "source_organ": "ORGAN-I",
+                  "target_organ": "ORGAN-II",
+                  "promotion_type": "promote-to-art",
+                  "triggered_by": "theory-to-art-watcher",
+              })
+
+              result = subprocess.run(
+                  ["gh", "api", "repos/organvm-iv-taxis/orchestration-start-here/dispatches",
+                   "--method", "POST",
+                   "-f", "event_type=theory.candidate",
+                   "-f", f"client_payload={payload}"],
+                  capture_output=True, text=True,
+              )
+
+              if result.returncode == 0:
+                  print(f"  Dispatched theory.candidate for {full_repo}")
+                  dispatched += 1
+              else:
+                  print(f"  Failed to dispatch for {full_repo}: {result.stderr}")
+
+          print(f"\nDispatched {dispatched}/{len(candidates)} theory.candidate events")
+          PYEOF
