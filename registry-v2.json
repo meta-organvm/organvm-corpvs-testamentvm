@@ -9,7 +9,7 @@
   "source": "Audit of 8 GitHub orgs (organvm-i-theoria through organvm-vii-kerygma + meta-organvm) + personal account 4444J99 + local repos",
   "project_status": "SENSORIA SPRINT 2026-02-17. Infrastructure buildout: +3 META-ORGANVM repos (schema-definitions, organvm-engine, system-dashboard), 85 new tests, 6 JSON schemas. 90 ACTIVE, 10 ARCHIVED, 100 registry entries. Previous sprints: CONCORDIA, VERITAS, PRAXIS, CONVERGENCE, ALCHEMIA, GENESIS, AUTONOMY, PERFECTION, EXODUS, ASCENSION, PROPULSION, IGNITION.",
   "summary": {
-    "total_repos": 100,
+    "total_repos": 101,
     "total_repos_note": "100 registry entries, all on GitHub. SENSORIA Sprint 2026-02-17: +3 META-ORGANVM repos (schema-definitions, organvm-engine, system-dashboard). CONCORDIA Sprint 2026-02-16: +6 orphan repos registered (meta-source--ledger-output, alchemical-synthesizer, ivi374ivi027-05, anon-hookup-now, render-second-amendment, select-or-left-or-right-or). 2026-02-14: +2 ORGAN-II repos (chthon-oneiros, krypto-velamen). VERITAS Sprint 2026-02-13: credibility hardening (PRODUCTION→ACTIVE rename, revenue field split, essay date corrections). Previous: PRAXIS, CONVERGENCE, ALCHEMIA, GENESIS, AUTONOMY, PERFECTION, EXODUS, ASCENSION, PROPULSION, IGNITION. 7 explicitly archived.",
     "operational_organs": 8,
     "completion_at_launch": "Platinum Sprint COMPLETE 2026-02-11 — 65 repos with CI workflows, standardized badge rows, CHANGELOGs, ADRs. 17 meta-system essays (~70K words). ~339K total words.",
@@ -1931,7 +1931,7 @@
       "completion": "100% — org profile expanded to 1,213 words",
       "public_visibility": "FULLY PUBLIC",
       "portfolio_angle": "The meta-system itself is the primary portfolio asset. Demonstrates orchestration capacity, architectural reasoning, and systemic sustainability.",
-      "repository_count": 6,
+      "repository_count": 7,
       "repositories": [
         {
           "name": ".github",
@@ -2039,6 +2039,25 @@
           "tier": "standard",
           "last_validated": "2026-02-17",
           "note": "Created 2026-02-17. FastAPI app with 6 routes, 7 Jinja2 templates, file-watching cache, 11 passing tests. Reads data from organvm-corpvs-testamentvm JSON files.",
+          "implementation_status": "ACTIVE",
+          "ci_workflow": "ci-python.yml",
+          "platinum_status": false
+        },
+        {
+          "name": "organvm-mcp-server",
+          "org": "meta-organvm",
+          "status": "ACTIVE",
+          "public": true,
+          "description": "MCP server exposing full ORGANVM system context to Claude Code sessions. Provides real-time registry queries, dependency graph traversal, and contextual awareness for any repo in the system.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "CRITICAL - Core developer infrastructure; demonstrates systems engineering, real-time context management, and cross-repo awareness",
+          "dependencies": [
+            "meta-organvm/organvm-engine"
+          ],
+          "promotion_status": "LOCAL",
+          "tier": "infrastructure",
+          "last_validated": "2026-02-21",
+          "note": "Created 2026-02-21. Python package using MCP SDK. Registers 12 tools for registry, seeds, graph, health, and context groups. Enables autonomous cross-repo awareness for AI assistants.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
           "platinum_status": false
