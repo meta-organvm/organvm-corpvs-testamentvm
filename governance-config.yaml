@@ -1,0 +1,26 @@
+# ORGANVM Governance Configuration
+# Source of truth for organ mappings and superproject locations
+
+# Organ key (from registry) -> local directory name
+organ_directory_map:
+  ORGAN-I: organvm-i-theoria
+  ORGAN-II: organvm-ii-poiesis
+  ORGAN-III: organvm-iii-ergon
+  ORGAN-IV: organvm-iv-taxis
+  ORGAN-V: organvm-v-logos
+  ORGAN-VI: organvm-vi-koinonia
+  ORGAN-VII: organvm-vii-kerygma
+  META-ORGANVM: meta-organvm
+  PERSONAL: 4444J99
+
+# Short identifiers -> local directory name (used by CLI)
+short_key_map:
+  I: organvm-i-theoria
+  II: organvm-ii-poiesis
+  III: organvm-iii-ergon
+  IV: organvm-iv-taxis
+  V: organvm-v-logos
+  VI: organvm-vi-koinonia
+  VII: organvm-vii-kerygma
+  META: meta-organvm
+  LIMINAL: 4444J99

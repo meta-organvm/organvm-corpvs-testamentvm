@@ -211,3 +211,22 @@ When completing tasks across the organ system, use this decision tree to determi
 ## Parent Directory Context
 
 This corpus lives at `~/Workspace/meta-organvm/organvm-corpvs-testamentvm/`, alongside `~/Workspace/meta-organvm/alchemia-ingestvm/` in the meta-organvm org directory. The old path `~/Workspace/organvm-pactvm/ingesting-organ-document-structure/` is deprecated (restructured 2026-02-16).
+
+<!-- ORGANVM:AUTO:START -->
+## System Context (auto-generated — do not edit)
+
+**Organ:** META-ORGANVM (Meta) | **Tier:** flagship | **Status:** PUBLIC_PROCESS
+**Org:** `unknown` | **Repo:** `organvm-corpvs-testamentvm`
+
+### Edges
+- **Produces** → `unknown`: unknown
+- **Consumes** ← `ORGAN-IV`: unknown
+
+### Siblings in Meta
+`.github`, `alchemia-ingestvm`, `schema-definitions`, `organvm-engine`, `system-dashboard`, `organvm-mcp-server`
+
+### Governance
+- *Standard ORGANVM governance applies*
+
+*Last synced: 2026-02-19T00:57:56Z*
+<!-- ORGANVM:AUTO:END -->
