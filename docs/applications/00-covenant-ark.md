@@ -18,13 +18,13 @@
 | Metric | Value |
 |--------|-------|
 | Total repositories | 100 |
-| Implementation status | 90 ACTIVE, 10 ARCHIVED |
+| Implementation status | 87 ACTIVE, 9 ARCHIVED |
 | GitHub organizations | 8 (7 organ orgs + 1 meta-org) |
-| Published essays | 42 (~142K words) |
+| Published essays | 42 (~404K+ words) |
 | Total documentation | ~410K+ words |
 | Named development sprints | 33 |
-| CI/CD workflows | 82+ repos with workflows |
-| Dependency edges | 31 validated |
+| CI/CD workflows | 81+ repos with workflows |
+| Dependency edges | 38 validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
 | CLAUDE.md coverage | 100% of eligible repos |
@@ -107,7 +107,7 @@ Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 1
 
 ### Short (~50 words)
 
-Systems artist. Creator of the ORGANVM eight-organ system — 100 repositories, 8 organizations, 42 essays, 410K+ words. Builds creative infrastructure at institutional scale using AI tools as compositional instruments. MFA Creative Writing, 18 years professional experience. NYC-based.
+Systems artist. Creator of the ORGANVM eight-organ system — 100 repositories, 8 organizations, 42 essays, ~404K+ words. Builds creative infrastructure at institutional scale using AI tools as compositional instruments. MFA Creative Writing, 18 years professional experience. NYC-based.
 
 ---
 
@@ -116,8 +116,8 @@ Systems artist. Creator of the ORGANVM eight-organ system — 100 repositories, 
 | # | Work | URL | One-Line Description |
 |---|------|-----|---------------------|
 | 1 | Portfolio Site | https://4444j99.github.io/portfolio/ | Interactive portfolio with generative art (p5.js), CMYK design system, 19 curated projects |
-| 2 | Eight-Organ System Hub | https://github.com/meta-organvm/organvm-corpvs-testamentvm | Governance corpus: 410K+ words, registry, orchestration specs, 33 sprint records |
-| 3 | Public Process Essays | https://organvm-v-logos.github.io/public-process/ | 42 essays documenting creative methodology in real time (~142K words) |
+| 2 | Eight-Organ System Hub | https://github.com/meta-organvm/organvm-corpvs-testamentvm | Governance corpus: ~404K+ words, registry, orchestration specs, 33 sprint records |
+| 3 | Public Process Essays | https://organvm-v-logos.github.io/public-process/ | 42 essays documenting creative methodology in real time (~404K+ words) |
 | 4 | Recursive Engine | https://github.com/organvm-i-theoria/recursive-engine--generative-entity | Symbolic operating system: 1,254 tests, 85% coverage, 21 organ handlers, custom DSL |
 | 5 | Agentic Titan | https://github.com/organvm-iv-taxis/agentic-titan | Multi-agent orchestration framework: 1,095 tests, 18 development phases |
 | 6 | life-my--midst--in | https://github.com/organvm-iii-ergon/life-my--midst--in | Interactive identity platform: 291 tests, 44 DB tables, Inverted Interview paradigm |
@@ -160,7 +160,7 @@ Copy-paste into any application form:
 
 4. **Governance as creative medium.** Registry design, dependency graphs, promotion pipelines, and constitutional constraints are treated as generative structures — the way a composer's harmonic rules shape what melodies can emerge.
 
-5. **Radical transparency at system scale.** Every decision, sprint, failure, and course correction is documented and published. 410K+ words, 33 sprint specs, 12 ADRs, a constitution with amendments — the entire institutional memory is public.
+5. **Radical transparency at system scale.** Every decision, sprint, failure, and course correction is documented and published. ~404K+ words, 33 sprint specs, 12 ADRs, a constitution with amendments — the entire institutional memory is public.
 
 6. **Cross-domain integration.** The eight-organ model bridges theory, art, commerce, governance, public process, community, and marketing in a single coordinated system. Most practitioners work in one domain; this system treats the boundaries between domains as the most interesting sites for creative work.
 
@@ -182,7 +182,7 @@ Frame the same body of work differently for different audiences:
 
 ### 3. Creative Technologist (tech grants, selective roles)
 - **Narrative:** "Production-grade AI orchestration with creative-artistic applications"
-- **Evidence:** Multi-agent orchestration, autonomous governance, 2,349+ tests, 82+ CI/CD workflows
+- **Evidence:** Multi-agent orchestration, autonomous governance, 2,349+ tests, 81+ CI/CD workflows
 - **Targets:** Google Creative Lab, Processing Foundation, consulting clients, selective tech roles
 
 ### 4. Community Practitioner (community-focused funding)
@@ -199,13 +199,13 @@ What you can claim, with proof:
 | Claim | Evidence | Verification |
 |-------|----------|-------------|
 | 100 repos across 8 orgs | registry-v2.json | `jq '.summary.total_repos' registry-v2.json` → 100 |
-| 90 ACTIVE, 10 ARCHIVED | registry-v2.json | implementation_status_distribution field |
+| 87 ACTIVE, 9 ARCHIVED | registry-v2.json | implementation_status_distribution field |
 | 42 published essays | public-process/_posts/ | `ls _posts/ \| wc -l` → 42 |
-| ~142K words in essays | Word count of _posts/ | Measured at deploy |
+| ~404K+ words in essays | Word count of _posts/ | Measured at deploy |
 | ~410K+ total words | Aggregate across all repos | system-metrics.json |
 | 33 development sprints | docs/specs/sprints/ | 01-ignition through 33-operatio |
-| 82+ CI/CD workflows | Per-repo .github/workflows/ | Counted in MANIFESTATIO audit |
-| 31 dependency edges, 0 violations | validate-dependencies.yml | Weekly automated check |
+| 81+ CI/CD workflows | Per-repo .github/workflows/ | Counted in MANIFESTATIO audit |
+| 38 dependency edges, 0 violations | validate-dependencies.yml | Weekly automated check |
 | 2,349+ tests | agentic-titan (1,095) + recursive-engine (1,254) | Package test suites |
 | 100% CLAUDE.md coverage | Per-repo CLAUDE.md files | SENSORIA audit |
 | 100% seed.yaml coverage | Per-repo seed.yaml files | SENSORIA generate-seed-yaml.py |
@@ -224,7 +224,7 @@ Honest gap list — do not overstate in any application:
 |-----|---------|-------------|
 | No production users | Beta not yet deployed. 291 tests pass, DB provisioned, but 0 live users | "Feature-complete, preparing for beta deployment" |
 | No collaborative team engineering | All 5 years solo. No code review with peers, no shared codebases | "Independent engineering practice" (don't claim team experience) |
-| No published book | 42 essays (~142K words) but no book | "Sustained nonfiction practice" or "book-length corpus" |
+| No published book | 42 essays (~404K+ words) but no book | "Sustained nonfiction practice" or "book-length corpus" |
 | No gallery exhibitions | Portfolio site and generative art, but no gallery shows | "Digital exhibition" via portfolio site |
 | No institutional affiliation | Adjunct instructor, no full-time academic position | "Independent practitioner" (many grants prefer this) |
 | Limited ML knowledge | Uses LLM APIs, doesn't train or fine-tune models | "AI orchestration" not "ML engineering" |

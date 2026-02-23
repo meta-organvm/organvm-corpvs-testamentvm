@@ -18,16 +18,16 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 
 | Dimension | Value |
 |-----------|-------|
-| Total repositories | 97 |
+| Total repositories | 100 |
 | GitHub organizations | 8 |
 | Documentation | ~404K+ words |
 | CI/CD coverage | 82+ repos with workflows |
 | Validation scripts | 5 automated, all passing |
 | Meta-system essays | 41 published (~150K words) |
-| Dependency edges | 31, all validated |
+| Dependency edges | 38, all validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
-| Implementation status | 90 ACTIVE, 10 ARCHIVED |
+| Implementation status | 87 ACTIVE, 9 ARCHIVED |
 
 ---
 
@@ -69,7 +69,7 @@ I designed and implemented an eight-organ orchestration system that coordinates 
 ## Positioning by Track
 
 ### Art-Tech Grants (PRIMARY TRACK — highest fit)
-**Evidence:** ORGAN-V essays (41 published, ~150K words) + machine-readable registry documenting 5 years of sustained organizational capacity + 33 named development sprints. **Demonstrates:** The ORGANVM system AS a creative work — governance-as-art, process-as-product, sustained practice at institutional scale. **Targets:** Creative Capital (9/10), Artadia NYC (8/10), Spencer Foundation (6/10).
+**Evidence:** ORGAN-V essays (41 published, ~404K+ words) + machine-readable registry documenting 5 years of sustained organizational capacity + 33 named development sprints. **Demonstrates:** The ORGANVM system AS a creative work — governance-as-art, process-as-product, sustained practice at institutional scale. **Targets:** Creative Capital (9/10), Artadia NYC (8/10), Spencer Foundation (6/10).
 
 ### Residencies & Fellowships
 **Evidence:** 100 repos assembled into a coherent system through editorial vision, documented in real-time across 42 essays — the creative process itself rendered as the product. **Demonstrates:** Systemic creative practice, solo production at institutional scale, AI-augmented methodology, documentation as primary artistic output. **Targets:** Google Creative Lab (8/10), Fire Island (7/10), Eyebeam (7/10), Processing Foundation (6/10).

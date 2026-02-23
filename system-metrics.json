@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-17T08:38:53.738483+00:00",
+  "generated": "2026-02-23T06:59:34.940201+00:00",
   "computed": {
-    "total_repos": 97,
+    "total_repos": 100,
     "active_repos": 87,
-    "archived_repos": 10,
+    "archived_repos": 9,
     "total_organs": 8,
     "operational_organs": 8,
-    "ci_workflows": 77,
-    "dependency_edges": 31,
+    "ci_workflows": 81,
+    "dependency_edges": 38,
     "per_organ": {
       "ORGAN-I": {
         "name": "Theory",
@@ -40,14 +40,15 @@
       },
       "META-ORGANVM": {
         "name": "Meta",
-        "repos": 3
+        "repos": 6
       }
     },
     "implementation_status": {
       "ACTIVE": 87,
-      "ARCHIVED": 10
+      "ARCHIVED": 9,
+      "PRODUCTION": 4
     },
-    "published_essays": 40,
+    "published_essays": 42,
     "sprints_completed": 33,
     "sprint_names": [
       "01-ignition",

@@ -47,7 +47,7 @@ Residency evaluators assess:
 
 **Proposed residency work:**
 1. Develop a site-specific generative installation responding to the Fire Island environment
-2. Write 3-5 essays documenting the residency within the eight-organ model
+2. Write 3-42 essays documenting the residency within the eight-organ model
 3. Community workshops on creative technology and governance-as-art
 4. Present the eight-organ system as a case study in solo creative production
 
@@ -177,7 +177,7 @@ Residency evaluators assess:
 
 **What they value:** Uninterrupted creative time. Interdisciplinary practice. Deep work.
 
-**Why you fit:** MacDowell values sustained creative work across all disciplines. The organ system is exactly the kind of practice that benefits from uninterrupted deep work time. The documentation corpus (404K+ words) demonstrates capacity for the intensive production MacDowell enables.
+**Why you fit:** MacDowell values sustained creative work across all disciplines. The organ system is exactly the kind of practice that benefits from uninterrupted deep work time. The documentation corpus (~404K+ words) demonstrates capacity for the intensive production MacDowell enables.
 
 **Amount:** Fully funded + need-based stipends available. 10 days to 6 weeks, Peterborough NH.
 **Deadline:** August 15 – September 10, 2026 window (for 2027 residencies).
@@ -301,9 +301,9 @@ See [11-funding-research-exhaustive.md](./11-funding-research-exhaustive.md) Par
 
 1. **The process IS the product.** The 42 essays, the governance specifications, the public documentation — these aren't supplements to the work. They ARE the work. The creative process, made visible and governable, is the primary output.
 
-2. **Solo production at institutional scale.** One person coordinating 100 repositories through documented governance, using AI tools as compositional instruments. 33 named sprints, 404K+ words, 82+ CI/CD workflows — the system is evidence this mode of production works.
+2. **Solo production at institutional scale.** One person coordinating 100 repositories through documented governance, using AI tools as compositional instruments. 33 named sprints, ~404K+ words, 81+ CI/CD workflows — the system is evidence this mode of production works.
 
-3. **5+ years of sustained practice.** This isn't a proposal — it's an ongoing body of work requesting a context (the residency) to deepen and share. 33 development sprints, 404K+ words, fully operational.
+3. **5+ years of sustained practice.** This isn't a proposal — it's an ongoing body of work requesting a context (the residency) to deepen and share. 33 development sprints, ~404K+ words, fully operational.
 
 4. **Community-oriented by design.** ORGAN-VI exists specifically for community infrastructure. ORGAN-V makes everything public. The system is designed to contribute, not just produce.
 

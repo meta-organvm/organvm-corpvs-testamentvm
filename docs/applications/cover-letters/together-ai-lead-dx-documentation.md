@@ -15,7 +15,7 @@ Together AI is building the infrastructure layer for open-source AI. That infras
 ## What I'd Bring
 
 **Documentation at scale, built from scratch.** The eight-organ system has:
-- 97 documented repositories, each with a README written for external evaluators
+- 100 documented repositories, each with a README written for external evaluators
 - A reading order and cross-document dependency map so newcomers know where to start
 - An annotated manifest providing per-file descriptions of every document in the corpus
 - 42 published essays explaining architectural decisions to non-technical audiences

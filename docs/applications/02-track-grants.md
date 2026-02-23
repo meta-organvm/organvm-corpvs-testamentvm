@@ -137,7 +137,7 @@ Grant reviewers evaluate:
 **Why you fit:** The organ system documentation corpus (404K+ words) IS a book-in-progress about building creative infrastructure with AI. MFA + 42 published essays + the extraordinary building-in-public record.
 
 **Narrative angle:**
-"Over five years, I built an eight-organ creative-institutional system — 100 repositories, 33 development sprints, 404,000 words of documentation — using AI as a compositional instrument. The process of creation, documented in real-time across 42 essays, IS the book: a work about what happens when governance, technology, and artistic vision converge at the scale of one person's practice."
+"Over five years, I built an eight-organ creative-institutional system — 100 repositories, 33 development sprints, 404,000+ words of documentation — using AI as a compositional instrument. The process of creation, documented in real-time across 42 essays, IS the book: a work about what happens when governance, technology, and artistic vision converge at the scale of one person's practice."
 
 **Deadline:** ~April 2026 (2025 deadline was April 23). Monitor.
 **URL:** https://www.whiting.org/writers/creative-nonfiction-grant
@@ -203,7 +203,7 @@ Grant reviewers evaluate:
 >
 > **Evidence of Capacity:**
 > - 100 repositories across 8 organizations, all operational
-> - 82+ CI/CD pipelines, 11 governance workflows, automated monthly audits
+> - 81+ CI/CD pipelines, 11 governance workflows, automated monthly audits
 > - 42 published essays (~150K words)
 > - Flagship projects with >1,000 tests each
 > - Complete documentation at portfolio quality (~404K+ words)
