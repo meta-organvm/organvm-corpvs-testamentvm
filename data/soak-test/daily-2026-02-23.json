@@ -1,6 +1,6 @@
 {
   "date": "2026-02-23",
-  "collected_at": "2026-02-23T08:39:42.927941+00:00",
+  "collected_at": "2026-02-23T18:19:59.031759+00:00",
   "validation": {
     "registry_pass": true,
     "registry_issues": [],
@@ -9,10 +9,10 @@
     "stale_repos": []
   },
   "ci": {
-    "total_checked": 76,
-    "passing": 51,
-    "failing": 24,
-    "unknown": 1,
+    "total_checked": 77,
+    "passing": 50,
+    "failing": 25,
+    "unknown": 2,
     "failures": [
       "organvm-i-theoria/recursive-engine--generative-entity: failure",
       "organvm-i-theoria/organon-noumenon--ontogenetic-morphe: failure",
@@ -32,6 +32,7 @@
       "organvm-iii-ergon/public-record-data-scrapper: failure",
       "organvm-iii-ergon/life-my--midst--in: failure",
       "organvm-iii-ergon/card-trade-social: failure",
+      "organvm-iv-taxis/a-i--skills: failure",
       "organvm-vi-koinonia/adaptive-personal-syllabus: failure",
       "organvm-vii-kerygma/announcement-templates: failure",
       "organvm-vii-kerygma/social-automation: failure",
