@@ -30,7 +30,7 @@ Grant reviewers evaluate:
 **Why you fit:** The eight-organ system IS a formally innovative creative work. 5+ years of sustained practice. The "process of creation IS the product" thesis is genuinely novel. 42 essays document the practice in real-time.
 
 **Key evidence:**
-- 100-repo system as living creative work, not a portfolio piece
+- 101-repo system as living creative work, not a portfolio piece
 - 33 named development sprints demonstrating sustained commitment
 - Automated governance: the rules that coordinate 100 repos are as carefully designed as any artwork
 - Public process methodology: building in public as creative practice
@@ -38,7 +38,7 @@ Grant reviewers evaluate:
 **Application format:** 6 short questions, 500-word project description, work samples, bio, resume. Panelist advice: "Describe your project with the clarity of a children's book."
 
 **Narrative angle:**
-"The eight-organ system is a living creative work that treats governance as an artistic medium. The 100 repositories are not code projects — they are the medium through which theory, art, commerce, and community are orchestrated by a single practitioner at institutional scale. The 42 essays documenting this process in real-time are not supplements to the work — they ARE the work. Creative Capital would fund the next phase of a practice that already demonstrates the capacity, innovation, and sustainability that grant reviewers look for."
+"The eight-organ system is a living creative work that treats governance as an artistic medium. The 100 repositories are not code projects — they are the medium through which theory, art, commerce, and community are orchestrated by a single practitioner at institutional scale. The 0 essays documenting this process in real-time are not supplements to the work — they ARE the work. Creative Capital would fund the next phase of a practice that already demonstrates the capacity, innovation, and sustainability that grant reviewers look for."
 
 **Benefits cliff:** $50K would exceed Medicaid threshold → Essential Plan ($0 premium). Call NYLAG before accepting.
 
@@ -193,7 +193,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 100 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (11 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational, built through 33 named development sprints using AI tools as compositional instruments.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 101 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (11 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational, built through 33 named development sprints using AI tools as compositional instruments.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -202,8 +202,8 @@ Grant reviewers evaluate:
 > The eight-organ model demonstrates that sustainable creative practice requires institutional infrastructure — not just talent. By treating governance as an artistic medium and documenting the entire system publicly, this work contributes reusable patterns for other creative technologists, small arts organizations, and practitioners operating at the intersection of art and systems design.
 >
 > **Evidence of Capacity:**
-> - 100 repositories across 8 organizations, all operational
-> - 81+ CI/CD pipelines, 11 governance workflows, automated monthly audits
+> - 101 repositories across 8 organizations, all operational
+> - 82+ CI/CD pipelines, 11 governance workflows, automated monthly audits
 > - 42 published essays (~150K words)
 > - Flagship projects with >1,000 tests each
 > - Complete documentation at portfolio quality (~404K+ words)

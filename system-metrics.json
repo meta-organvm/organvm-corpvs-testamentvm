@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-23T18:20:27.389895+00:00",
+  "generated": "2026-02-23T19:31:31.353176+00:00",
   "computed": {
     "total_repos": 101,
     "active_repos": 92,
@@ -46,44 +46,7 @@
     "implementation_status": {
       "ACTIVE": 92,
       "ARCHIVED": 9
-    },
-    "published_essays": 42,
-    "sprints_completed": 33,
-    "sprint_names": [
-      "01-ignition",
-      "02-propulsion",
-      "03-ascension",
-      "04-exodus",
-      "05-perfection",
-      "06-autonomy",
-      "07-genesis",
-      "08-alchemia",
-      "09-convergence",
-      "10-praxis",
-      "11-veritas",
-      "12-illustratio",
-      "13-manifestatio",
-      "14-operatio",
-      "15-gap-fill",
-      "16-platinum",
-      "17-remedium",
-      "18-synchronium",
-      "19-concordia",
-      "20-tripartitum",
-      "21-submissio",
-      "22-metricum",
-      "23-publicatio",
-      "24-canon",
-      "25-inspectio",
-      "26-propagatio",
-      "27-beta-vitae",
-      "28-recognitio",
-      "29-automata",
-      "30-distributio",
-      "31-fundamen",
-      "32-sensoria",
-      "33-operatio"
-    ]
+    }
   },
   "manual": {
     "_note": "Edit these by hand. calculate-metrics.py preserves this section.",
