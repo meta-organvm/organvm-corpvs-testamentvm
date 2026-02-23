@@ -1,0 +1,32 @@
+# Centralized manifest of all system-metrics.json consumers.
+# Used by `organvm metrics propagate --cross-repo` and `propagate-metrics.py --cross-repo`.
+#
+# Types:
+#   json_copies — copy system-metrics.json to destination (for code that imports JSON at build time)
+#   markdown_targets — regex-propagate metric values into whitelisted markdown files
+
+json_copies:
+  - dest: "~/Workspace/4444J99/portfolio/src/data/system-metrics.json"
+    transform: portfolio
+    note: "Portfolio site imports at build time via Astro"
+
+markdown_targets:
+  # Corpus internal docs (existing whitelist)
+  - root: "."
+    whitelist:
+      - "README.md"
+      - "CLAUDE.md"
+      - "applications/*.md"
+      - "applications/shared/*.md"
+      - "docs/applications/*.md"
+      - "docs/applications/cover-letters/*.md"
+      - "docs/essays/09-ai-conductor-methodology.md"
+      - "docs/operations/*.md"
+
+  # Application pipeline
+  - root: "~/Workspace/4444J99/application-pipeline"
+    whitelist:
+      - "blocks/**/*.md"
+      - "strategy/*.md"
+      - "docs/*.md"
+      - "variants/**/*.md"

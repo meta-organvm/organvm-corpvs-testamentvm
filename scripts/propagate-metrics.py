@@ -6,21 +6,27 @@ in markdown files via pattern matching. Patterns include surrounding context
 words to avoid replacing unrelated numbers.
 
 Usage:
-    python3 scripts/propagate-metrics.py              # apply changes
-    python3 scripts/propagate-metrics.py --dry-run    # preview only
-    python3 scripts/propagate-metrics.py --verbose    # show every match
-    python3 scripts/propagate-metrics.py --file X.md  # single file only
+    python3 scripts/propagate-metrics.py                    # corpus-only (default)
+    python3 scripts/propagate-metrics.py --dry-run          # preview only
+    python3 scripts/propagate-metrics.py --verbose          # show every match
+    python3 scripts/propagate-metrics.py --file X.md        # single file only
+    python3 scripts/propagate-metrics.py --cross-repo       # all targets from manifest
+    python3 scripts/propagate-metrics.py --cross-repo --dry-run  # preview cross-repo
 """
 
 import argparse
 import json
 import re
+import shutil
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_METRICS = ROOT / "system-metrics.json"
+DEFAULT_TARGETS = ROOT / "metrics-targets.yaml"
 
 # ── Whitelist ────────────────────────────────────────────────
 # Only these files are ever touched. Everything else is sacred.
@@ -46,6 +52,134 @@ def resolve_whitelist(root: Path) -> list[Path]:
     seen = set()
     result = []
     for f in files:
+        if f not in seen:
+            seen.add(f)
+            result.append(f)
+    return result
+
+
+def resolve_globs(root: Path, globs: list[str]) -> list[Path]:
+    """Expand arbitrary glob list relative to root, deduplicated."""
+    files = []
+    for pattern in globs:
+        files.extend(sorted(root.glob(pattern)))
+    seen = set()
+    result = []
+    for f in files:
+        if f not in seen:
+            seen.add(f)
+            result.append(f)
+    return result
+
+
+def expand_path(raw: str) -> Path:
+    """Expand ~ and resolve a path string from the manifest."""
+    return Path(raw).expanduser().resolve()
+
+
+def load_manifest(manifest_path: Path) -> dict:
+    """Load metrics-targets.yaml."""
+    with open(manifest_path) as f:
+        return yaml.safe_load(f)
+
+
+def transform_for_portfolio(canonical: dict, portfolio_path: Path) -> dict:
+    """Merge canonical metrics into the portfolio's existing schema.
+
+    The portfolio uses a different JSON shape (registry.*, essays.total, etc.)
+    than the canonical computed/manual structure. This preserves the portfolio's
+    extra fields (sprint_history, engagement_baseline, etc.) while updating
+    the metrics fields from canonical.
+    """
+    # Load existing portfolio data to preserve non-canonical fields
+    if portfolio_path.exists():
+        with open(portfolio_path) as f:
+            portfolio = json.load(f)
+    else:
+        portfolio = {}
+
+    c = canonical["computed"]
+
+    # Update generated timestamp
+    portfolio["generated"] = canonical["generated"]
+
+    # Update registry section from canonical computed
+    reg = portfolio.get("registry", {})
+    reg["total_repos"] = c["total_repos"]
+    reg["total_organs"] = c["total_organs"]
+    reg["operational_organs"] = c["operational_organs"]
+    reg["implementation_status"] = c["implementation_status"]
+    reg["ci_coverage"] = c["ci_workflows"]
+    reg["dependency_edges"] = c["dependency_edges"]
+
+    # Update per-organ data
+    organs = reg.get("organs", {})
+    for organ_key, info in c.get("per_organ", {}).items():
+        if organ_key in organs:
+            organs[organ_key]["total_repos"] = info["repos"]
+        else:
+            organs[organ_key] = {
+                "name": info["name"],
+                "total_repos": info["repos"],
+            }
+    reg["organs"] = organs
+    portfolio["registry"] = reg
+
+    # Update essay count
+    essays = portfolio.get("essays", {})
+    essays["total"] = c.get("published_essays", essays.get("total", 0))
+    portfolio["essays"] = essays
+
+    return portfolio
+
+
+def copy_json_targets(manifest: dict, metrics: dict, dry_run: bool) -> int:
+    """Process json_copies from manifest. Returns number of copies made."""
+    copies = manifest.get("json_copies", [])
+    count = 0
+    for entry in copies:
+        dest = expand_path(entry["dest"])
+        transform = entry.get("transform")
+        note = entry.get("note", "")
+
+        if transform == "portfolio":
+            data = transform_for_portfolio(metrics, dest)
+        else:
+            data = metrics
+
+        if dry_run:
+            print(f"  [JSON COPY] → {dest}")
+            if note:
+                print(f"    ({note})")
+        else:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            with open(dest, "w") as f:
+                json.dump(data, f, indent=2)
+                f.write("\n")
+            print(f"  Copied → {dest}")
+
+        count += 1
+    return count
+
+
+def resolve_cross_repo_files(manifest: dict) -> list[Path]:
+    """Resolve all markdown targets from manifest into file paths."""
+    all_files = []
+    for target in manifest.get("markdown_targets", []):
+        raw_root = target.get("root", ".")
+        if raw_root == ".":
+            root = ROOT
+        else:
+            root = expand_path(raw_root)
+
+        whitelist = target.get("whitelist", [])
+        files = resolve_globs(root, whitelist)
+        all_files.extend(files)
+
+    # Deduplicate
+    seen = set()
+    result = []
+    for f in all_files:
         if f not in seen:
             seen.add(f)
             result.append(f)
@@ -454,6 +588,17 @@ def update_file(filepath: Path, patterns, dry_run: bool, verbose: bool) -> list[
     return replacements
 
 
+def _display_path(filepath: Path) -> str:
+    """Show a file path relative to ROOT if inside it, else relative to home."""
+    try:
+        return str(filepath.relative_to(ROOT))
+    except ValueError:
+        try:
+            return "~/" + str(filepath.relative_to(Path.home()))
+        except ValueError:
+            return str(filepath)
+
+
 def print_summary(all_replacements: list[Replacement], verbose: bool):
     """Print grouped-by-file change report."""
     if not all_replacements:
@@ -475,7 +620,7 @@ def print_summary(all_replacements: list[Replacement], verbose: bool):
     print(f"{'─' * 60}")
 
     for filepath, reps in sorted(by_file.items()):
-        rel = filepath.relative_to(ROOT)
+        rel = _display_path(filepath)
         print(f"\n  {rel} ({len(reps)} change{'s' if len(reps) != 1 else ''})")
         for r in reps:
             if verbose:
@@ -500,6 +645,10 @@ def main():
                         help="Show old/new text for every match")
     parser.add_argument("--file", type=str, default=None,
                         help="Process only this file (relative to repo root)")
+    parser.add_argument("--cross-repo", action="store_true",
+                        help="Read metrics-targets.yaml and propagate to all registered consumers")
+    parser.add_argument("--targets", default=None,
+                        help="Path to metrics-targets.yaml (default: repo root)")
     args = parser.parse_args()
 
     # Load metrics
@@ -520,7 +669,36 @@ def main():
     # Build patterns
     patterns = build_patterns(metrics)
 
-    # Resolve target files
+    # ── Cross-repo mode ──
+    if args.cross_repo:
+        manifest_path = Path(args.targets) if args.targets else DEFAULT_TARGETS
+        if not manifest_path.exists():
+            print(f"ERROR: {manifest_path} not found.", file=sys.stderr)
+            sys.exit(1)
+
+        manifest = load_manifest(manifest_path)
+        mode = "DRY RUN (cross-repo)" if args.dry_run else "PROPAGATING (cross-repo)"
+
+        # 1. JSON copies
+        json_count = copy_json_targets(manifest, metrics, args.dry_run)
+        print(f"[{mode}] {json_count} JSON copy target(s)")
+
+        # 2. Markdown targets from manifest
+        files = resolve_cross_repo_files(manifest)
+        print(f"[{mode}] {len(files)} markdown file(s), {len(patterns)} patterns")
+
+        all_replacements = []
+        for filepath in files:
+            reps = update_file(filepath, patterns, args.dry_run, args.verbose)
+            all_replacements.extend(reps)
+
+        print_summary(all_replacements, args.verbose)
+
+        if args.dry_run and all_replacements:
+            print(f"\n  Run without --dry-run to apply these changes.")
+        return
+
+    # ── Single-file or corpus-only mode ──
     if args.file:
         target = ROOT / args.file
         if not target.exists():
