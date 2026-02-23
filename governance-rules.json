@@ -5,6 +5,33 @@
     "max_transitive_depth": 4,
     "no_circular_dependencies": true,
     "no_back_edges": true,
+    "allowed_edges": [
+      "ORGAN-I->ORGAN-II",
+      "ORGAN-II->ORGAN-III",
+      "ORGAN-I->ORGAN-III",
+      "ORGAN-VII->ORGAN-I",
+      "ORGAN-VII->ORGAN-II",
+      "ORGAN-VII->ORGAN-III",
+      "ORGAN-VII->ORGAN-V",
+      "ORGAN-VII->ORGAN-VI",
+      "ORGAN-IV->ORGAN-I",
+      "ORGAN-IV->ORGAN-II",
+      "ORGAN-IV->ORGAN-III",
+      "ORGAN-IV->ORGAN-V",
+      "ORGAN-IV->ORGAN-VI",
+      "ORGAN-IV->ORGAN-VII",
+      "ORGAN-V->ORGAN-I",
+      "ORGAN-V->ORGAN-II",
+      "ORGAN-V->ORGAN-III",
+      "ORGAN-I->ORGAN-VI",
+      "ORGAN-II->ORGAN-VI",
+      "ORGAN-III->ORGAN-VI"
+    ],
+    "forbidden_edges": [
+      "ORGAN-II->ORGAN-I",
+      "ORGAN-III->ORGAN-II",
+      "ORGAN-III->ORGAN-I"
+    ],
     "back_edge_definition": "Within the I-II-III chain, data flows I->II->III. A back-edge is any dependency where a lower-numbered organ depends on a higher-numbered organ (e.g., I depends on II, or II depends on III). ORGAN-IV through Meta may reference any organ.",
     "restricted_organs": ["ORGAN-I", "ORGAN-II", "ORGAN-III"],
     "restricted_orgs": ["organvm-i-theoria", "organvm-ii-poiesis", "organvm-iii-ergon"]

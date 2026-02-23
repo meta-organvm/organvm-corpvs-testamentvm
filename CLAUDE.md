@@ -200,8 +200,15 @@ When completing tasks across the organ system, use this decision tree to determi
 | Standard / methodology | `docs/standards/` |
 | ADR (short decision record) | `docs/adr/` |
 | Sprint spec | `docs/specs/<sprint>/` |
-| Application / submission | `docs/applications/` |
+| Application / submission (canonical source) | `docs/applications/` (covenant-ark, tracker, strategy — source of truth for identity/metrics) |
+| Application / submission (pipeline ops) | `~/Workspace/4444J99/application-pipeline/` (pipeline YAML, blocks, variants, conversion tracking) |
 | Essay draft | `docs/essays/` |
+
+**Q2b: Application materials?**
+→ Application work is split between two locations:
+- **Canonical identity, metrics, evidence:** Stay in `docs/applications/` (covenant-ark is the source of truth)
+- **Pipeline tracking, composable blocks, variants, conversion analytics:** Go to `~/Workspace/4444J99/application-pipeline/`
+- When metrics change, update `docs/applications/00-covenant-ark.md` first, then propagate to `application-pipeline/blocks/`
 
 **Q3: Unsorted / temporary / exploratory?**
 → `~/Workspace/intake/` (universal catch-all; triage later)
