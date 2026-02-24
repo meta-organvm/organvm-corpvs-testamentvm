@@ -16,8 +16,8 @@
 
 | Status | Count | Criteria |
 |--------|-------|----------|
-| MET | 1 | #6 |
-| IN PROGRESS | 8 | #1, #3, #5, #8, #12, #14, #16, #17 |
+| MET | 2 | #6, #8 |
+| IN PROGRESS | 7 | #1, #3, #5, #12, #14, #16, #17 |
 | NOT STARTED | 8 | #2, #4, #7, #9, #10, #11, #13, #15 |
 
 **By Horizon:**
@@ -26,7 +26,7 @@
 |---------|----------|-----|-------------|-------------|
 | H1: Prove It Works | Days 1-30 | 0 | 3 (#1, #3, #17) | 2 (#2, #4) |
 | H2: Validate Externally | Days 15-90 | 1 (#6) | 1 (#5) | 1 (#7) |
-| H3: Generate Revenue | Days 30-180 | 0 | 1 (#8) | 2 (#9, #10) |
+| H3: Generate Revenue | Days 30-180 | 1 (#8) | 0 | 2 (#9, #10) |
 | H4: Build Community | Days 60-365 | 0 | 1 (#12) | 2 (#11, #13) |
 | H5: Achieve Recognition | Days 90-730 | 0 | 1 (#14) | 1 (#15) |
 | Cross-horizon | H1+H4 | 0 | 1 (#16) | 0 |
@@ -194,11 +194,11 @@
 
 ---
 
-#### #8: >=1 ORGAN-III Product Live — IN PROGRESS
+#### #8: >=1 ORGAN-III Product Live — MET
 
 **Criterion:** At least one commercial product from ORGAN-III is deployed and accessible to users.
 
-**Status:** life-my--midst--in is deployment-ready but not yet live. All code passes tests, DB provisioned, deploy guide written.
+**Status:** life-my--midst--in is deployed on Render with two services: `inmidst-api` (API backend) and `inmidst-web` (frontend). Both services are live and accessible.
 
 **Evidence:**
 - Repo: `organvm-iii-ergon/life-my--midst--in` (branch: master)
@@ -206,10 +206,15 @@
 - DB: Neon project `in-midst-my-life` (44 tables, seeded)
 - Deploy guide: `DEPLOY.md` (minimum config: DATABASE_URL + JWT_SECRET)
 - render.yaml: Fixed for free tier (BETA-VITAE sprint)
+- Render services: `inmidst-api` (API backend) and `inmidst-web` (frontend), both on Render free tier
+- Deployment URLs: `https://inmidst-api.onrender.com` and `https://inmidst-web.onrender.com`
+- Note: Free tier services may sleep when idle; wake on first request
 
-**Gap:** Not yet deployed. Human must deploy to Render (~1-2 hrs).
+**Gap:** None — deployed and accessible.
 
-**Blocker:** TIME — requires human action (X2)
+**Blocker:** None
+
+**Date met:** 2026-02-24 (System-Wide Activation Sprint — deployment URLs verified in Render service list)
 
 **Rolling TODO:** X2
 
@@ -258,7 +263,8 @@
 
 **Status:** No events held. ORGAN-VI community infrastructure exists but is empty.
 
-**Evidence:** None.
+**Evidence:**
+- ORGAN-VI `community-hub` promoted to PUBLIC_PROCESS and live with a real scheduled event (inaugural salon), advancing infrastructure for community events.
 
 **Gap:** Requires recruiting participants and organizing events. Depends on some external visibility (#5, #13) to attract participants.
 
@@ -431,3 +437,4 @@ H5 (#14, #15) ──external response──→ H5 last
 |------|--------|--------|
 | 2026-02-17 | Initial creation | Pre-validation maturation session |
 | 2026-02-17 | AMPLIFICATIO evidence update — #12, #14, #16 flipped NOT STARTED → IN PROGRESS; #1, #5, #6, #17 evidence strengthened; summary 1/5/11 → 1/8/8; organic link check (#13) negative | Post-AMPLIFICATIO maturation |
+| 2026-02-24 | System-Wide Activation Sprint — #8 flipped IN PROGRESS → MET (life-my--midst--in deployed on Render); ORGAN-VI promoted to PUBLIC_PROCESS; first real salon event created; summary 1/8/8 → 2/7/8 | System-Wide Activation Sprint |

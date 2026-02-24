@@ -1773,10 +1773,10 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Shared database infrastructure",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
-          "note": "Neon PostgreSQL provisioned. 4 schemas, 108 tests, CI green. Foundation for all ORGAN-VI repos.",
+          "note": "Neon PostgreSQL provisioned. 4 schemas, 108 tests, CI green. Foundation for all ORGAN-VI repos. Promoted CANDIDATE→PUBLIC_PROCESS 2026-02-24 (System-Wide Activation Sprint).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci.yml",
           "platinum_status": true
@@ -1792,10 +1792,10 @@
           "dependencies": [
             "koinonia-db"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "flagship",
           "last_validated": "2026-02-24",
-          "note": "122 tests, CSRF, rate limiting, 8 route modules. Deployed to Render.",
+          "note": "122 tests, CSRF, rate limiting, 8 route modules. Deployed to Render. Promoted CANDIDATE→PUBLIC_PROCESS 2026-02-24 (System-Wide Activation Sprint).",
           "deployment_url": "https://community-hub-8p8t.onrender.com",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci.yml",
@@ -1813,7 +1813,7 @@
           "dependencies": [
             "koinonia-db"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,054 words). CONSOLIDATION-II: Python prototype deployed \u2014 transcription, taxonomy, sessions modules. Tests + CI green. Phase 1-2: DB integration, repository pattern, 87 tests.",
@@ -1854,10 +1854,10 @@
           "dependencies": [
             "koinonia-db"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
-          "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,471 words). 38 tests, CI green, working CLI (syllabus/aps). Phase 3: promoted to CANDIDATE.",
+          "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,471 words). 38 tests, CI green, working CLI (syllabus/aps). Phase 3: promoted to CANDIDATE. Promoted CANDIDATE→PUBLIC_PROCESS 2026-02-24 (System-Wide Activation Sprint).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
           "platinum_status": true
