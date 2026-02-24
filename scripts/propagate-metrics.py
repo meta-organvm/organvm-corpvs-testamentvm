@@ -158,7 +158,8 @@ def compute_vitals(metrics: dict) -> dict:
         },
         "logos": {
             "essays": c.get("published_essays", 0),
-            "words": m.get("total_words_numeric", 0),
+            "words": c.get("total_words_numeric") or m.get("total_words_numeric", 0),
+            **({"word_breakdown": c["word_counts"]} if "word_counts" in c else {}),
         },
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
@@ -328,10 +329,13 @@ def build_patterns(metrics: dict) -> list[tuple[str, re.Pattern, str, str]]:
     dep_edges = c["dependency_edges"]
     ci_workflows = c["ci_workflows"]
     sprints = c["sprints_completed"]
-    total_words_numeric = str(m.get("total_words_numeric", 386000))
+    # Try computed first (auto-counted), fall back to manual (legacy)
+    total_words_numeric = str(
+        c.get("total_words_numeric") or m.get("total_words_numeric", 386000)
+    )
     # Format: "386,000"
     total_words_formatted = f"{int(total_words_numeric):,}"
-    total_words_short = m.get("total_words_short", "386K+")
+    total_words_short = c.get("total_words_short") or m.get("total_words_short", "386K+")
     # Extract just the number part for K pattern, e.g. "386"
     total_words_k = total_words_short.rstrip("K+")
 

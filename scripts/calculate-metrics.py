@@ -13,6 +13,8 @@ Usage:
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import sys
 from collections import defaultdict
@@ -23,6 +25,19 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_REGISTRY = ROOT / "registry-v2.json"
 DEFAULT_OUTPUT = ROOT / "system-metrics.json"
 SPRINTS_DIR = ROOT / "docs" / "specs" / "sprints"
+
+# Organ directory mappings (mirrors organ_config.py for standalone use)
+ORGAN_DIRS = {
+    "ORGAN-I": "organvm-i-theoria",
+    "ORGAN-II": "organvm-ii-poiesis",
+    "ORGAN-III": "organvm-iii-ergon",
+    "ORGAN-IV": "organvm-iv-taxis",
+    "ORGAN-V": "organvm-v-logos",
+    "ORGAN-VI": "organvm-vi-koinonia",
+    "ORGAN-VII": "organvm-vii-kerygma",
+    "META-ORGANVM": "meta-organvm",
+    "PERSONAL": "4444J99",
+}
 
 
 def compute_registry_metrics(registry: dict) -> dict:
@@ -96,6 +111,73 @@ def fetch_essay_count(skip: bool = False) -> int:
     return -1
 
 
+def _strip_frontmatter(text: str) -> str:
+    """Strip YAML frontmatter from markdown text."""
+    if text.startswith("---"):
+        end = text.find("---", 3)
+        if end != -1:
+            text = text[end + 3:]
+    return text
+
+
+def _count_file_words(path: Path) -> int:
+    """Count words in a file, stripping frontmatter and HTML tags."""
+    try:
+        text = path.read_text(errors="replace")
+    except OSError:
+        return 0
+    text = _strip_frontmatter(text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    return len(text.split())
+
+
+def count_words_local(workspace: Path) -> dict:
+    """Count words across the workspace by walking the filesystem."""
+    readme_words = 0
+    for organ_dir_name in ORGAN_DIRS.values():
+        organ_dir = workspace / organ_dir_name
+        if not organ_dir.is_dir():
+            continue
+        for entry in sorted(organ_dir.iterdir()):
+            if not entry.is_dir():
+                continue
+            readme = entry / "README.md"
+            if readme.is_file():
+                readme_words += _count_file_words(readme)
+
+    essay_words = 0
+    essays_dir = workspace / "organvm-v-logos" / "public-process" / "_posts"
+    if essays_dir.is_dir():
+        for md in sorted(essays_dir.glob("*.md")):
+            essay_words += _count_file_words(md)
+
+    corpus_words = 0
+    corpus_dir = workspace / "meta-organvm" / "organvm-corpvs-testamentvm" / "docs"
+    if corpus_dir.is_dir():
+        for md in sorted(corpus_dir.rglob("*.md")):
+            corpus_words += _count_file_words(md)
+
+    profile_words = 0
+    for organ_dir_name in ORGAN_DIRS.values():
+        profile = workspace / organ_dir_name / ".github" / "profile" / "README.md"
+        if profile.is_file():
+            profile_words += _count_file_words(profile)
+
+    total = readme_words + essay_words + corpus_words + profile_words
+    return {
+        "readmes": readme_words,
+        "essays": essay_words,
+        "corpus": corpus_words,
+        "org_profiles": profile_words,
+        "total": total,
+    }
+
+
+def format_word_count(total: int) -> tuple[str, int, str]:
+    """Format word count into display strings."""
+    return f"~{total:,}+", total, f"{total // 1000}K+"
+
+
 def load_manual_section(output_path: Path) -> dict:
     """Load the manual section from the existing metrics file, if any."""
     default_manual = {
@@ -140,6 +222,10 @@ def main():
                         help="Path for JSON metrics output")
     parser.add_argument("--skip-essays", action="store_true",
                         help="Skip GitHub API call for essay count")
+    parser.add_argument("--workspace", default=None,
+                        help="Workspace root for word counting (default: ~/Workspace)")
+    parser.add_argument("--skip-words", action="store_true",
+                        help="Skip word counting")
     args = parser.parse_args()
 
     registry_path = Path(args.registry)
@@ -158,19 +244,50 @@ def main():
         essay_count = load_existing_essay_count(output_path)
         print(f"  Using existing essay count: {essay_count}")
 
+    # Word counting
+    word_counts = None
+    if not args.skip_words:
+        workspace_raw = args.workspace or os.environ.get("ORGANVM_WORKSPACE_DIR")
+        if workspace_raw:
+            workspace = Path(workspace_raw).expanduser().resolve()
+        else:
+            workspace = Path.home() / "Workspace"
+
+        if workspace.is_dir():
+            word_counts = count_words_local(workspace)
+            tw, tw_num, tw_short = format_word_count(word_counts["total"])
+        else:
+            print(f"  WARNING: Workspace {workspace} not found, skipping word count",
+                  file=sys.stderr)
+
     # Load manual section (preserved across runs)
     manual = load_manual_section(output_path)
+
+    # Migrate word count fields from manual when auto-computed
+    if word_counts is not None:
+        for key in ("total_words", "total_words_numeric", "total_words_short"):
+            manual.pop(key, None)
+
+    # Build computed section
+    computed = {
+        **reg_metrics,
+        "published_essays": essay_count,
+        "sprints_completed": sprint_count,
+        "sprint_names": sprint_names,
+    }
+
+    if word_counts is not None:
+        computed["word_counts"] = word_counts
+        tw, tw_num, tw_short = format_word_count(word_counts["total"])
+        computed["total_words"] = tw
+        computed["total_words_numeric"] = tw_num
+        computed["total_words_short"] = tw_short
 
     # Assemble output
     metrics = {
         "schema_version": "1.0",
         "generated": datetime.now(timezone.utc).isoformat(),
-        "computed": {
-            **reg_metrics,
-            "published_essays": essay_count,
-            "sprints_completed": sprint_count,
-            "sprint_names": sprint_names,
-        },
+        "computed": computed,
         "manual": manual,
     }
 
@@ -187,6 +304,10 @@ def main():
     print(f"  Dependencies: {c['dependency_edges']} edges")
     print(f"  Essays: {c['published_essays']}")
     print(f"  Sprints: {c['sprints_completed']}")
+    if word_counts is not None:
+        wc = word_counts
+        print(f"  Words: {tw_short} (readmes={wc['readmes']:,}, essays={wc['essays']:,}, "
+              f"corpus={wc['corpus']:,}, profiles={wc['org_profiles']:,})")
 
 
 if __name__ == "__main__":
