@@ -1,6 +1,6 @@
 {
   "date": "2026-02-24",
-  "collected_at": "2026-02-24T08:37:49.183079+00:00",
+  "collected_at": "2026-02-24T12:45:43.176249+00:00",
   "validation": {
     "registry_pass": true,
     "registry_issues": [],
@@ -9,37 +9,35 @@
     "stale_repos": []
   },
   "ci": {
-    "total_checked": 77,
-    "passing": 49,
-    "failing": 26,
+    "total_checked": 89,
+    "passing": 66,
+    "failing": 6,
     "unknown": 2,
+    "billing_locked": 15,
+    "billing_locked_repos": [
+      "organvm-i-theoria/recursive-engine--generative-entity",
+      "organvm-i-theoria/organon-noumenon--ontogenetic-morphe",
+      "organvm-i-theoria/auto-revision-epistemic-engine",
+      "organvm-i-theoria/narratological-algorithmic-lenses",
+      "organvm-i-theoria/call-function--ontological",
+      "organvm-i-theoria/sema-metra--alchemica-mundi",
+      "organvm-i-theoria/system-governance-framework",
+      "organvm-i-theoria/cognitive-archaelogy-tribunal",
+      "organvm-i-theoria/a-recursive-root",
+      "organvm-i-theoria/radix-recursiva-solve-coagula-redi",
+      "organvm-i-theoria/reverse-engine-recursive-run",
+      "organvm-i-theoria/collective-persona-operations",
+      "organvm-i-theoria/linguistic-atomization-framework",
+      "organvm-i-theoria/my-knowledge-base",
+      "organvm-i-theoria/scalable-lore-expert"
+    ],
     "failures": [
-      "organvm-i-theoria/recursive-engine--generative-entity: failure",
-      "organvm-i-theoria/organon-noumenon--ontogenetic-morphe: failure",
-      "organvm-i-theoria/auto-revision-epistemic-engine: failure",
-      "organvm-i-theoria/narratological-algorithmic-lenses: failure",
-      "organvm-i-theoria/call-function--ontological: failure",
-      "organvm-i-theoria/sema-metra--alchemica-mundi: failure",
-      "organvm-i-theoria/system-governance-framework: failure",
-      "organvm-i-theoria/cognitive-archaelogy-tribunal: failure",
-      "organvm-i-theoria/a-recursive-root: failure",
-      "organvm-i-theoria/radix-recursiva-solve-coagula-redi: failure",
-      "organvm-i-theoria/reverse-engine-recursive-run: failure",
-      "organvm-i-theoria/linguistic-atomization-framework: failure",
-      "organvm-i-theoria/my-knowledge-base: failure",
-      "organvm-i-theoria/scalable-lore-expert: failure",
       "organvm-iii-ergon/fetch-familiar-friends: failure",
       "organvm-iii-ergon/public-record-data-scrapper: failure",
       "organvm-iii-ergon/life-my--midst--in: failure",
-      "organvm-iii-ergon/card-trade-social: failure",
       "organvm-iv-taxis/a-i--skills: failure",
-      "organvm-vi-koinonia/adaptive-personal-syllabus: failure",
-      "organvm-vii-kerygma/announcement-templates: failure",
-      "organvm-vii-kerygma/social-automation: failure",
-      "organvm-vii-kerygma/distribution-strategy: failure",
-      "organvm-vii-kerygma/.github: failure",
-      "meta-organvm/alchemia-ingestvm: failure",
-      "meta-organvm/organvm-engine: failure"
+      "organvm-vi-koinonia/community-hub: failure",
+      "meta-organvm/system-dashboard: failure"
     ]
   },
   "engagement": {
