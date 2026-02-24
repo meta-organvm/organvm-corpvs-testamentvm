@@ -235,5 +235,5 @@ This corpus lives at `~/Workspace/meta-organvm/organvm-corpvs-testamentvm/`, alo
 ### Governance
 - *Standard ORGANVM governance applies*
 
-*Last synced: 2026-02-19T00:57:56Z*
+*Last synced: 2026-02-24T01:01:15Z*
 <!-- ORGANVM:AUTO:END -->
