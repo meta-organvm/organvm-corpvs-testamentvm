@@ -1669,9 +1669,9 @@
           "dependencies": [
             "organvm-iv-taxis/agentic-titan"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
-          "last_validated": "2026-02-11",
+          "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,394 words).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-typescript.yml",
@@ -1688,9 +1688,9 @@
           "dependencies": [
             "organvm-iv-taxis/agent--claude-smith"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
-          "last_validated": "2026-02-11",
+          "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,222 words).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
