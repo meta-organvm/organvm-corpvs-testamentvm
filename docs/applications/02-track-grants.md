@@ -17,7 +17,7 @@ Grant reviewers evaluate:
 2. **Long-term sustainability** — Will this outlast the grant period? (Automated governance = yes)
 3. **Community contribution** — Does this benefit others? (Public documentation + ORGAN-VI = yes)
 4. **Innovation** — Is this genuinely new? (Governance-as-artistic-medium = yes)
-5. **Demonstrated track record** — Have you shipped before? (~404K+ words deployed, 82+ CI/CD = yes)
+5. **Demonstrated track record** — Have you shipped before? (~810K+ words deployed, 82+ CI/CD = yes)
 
 ---
 
@@ -137,7 +137,7 @@ Grant reviewers evaluate:
 **Why you fit:** The organ system documentation corpus (404K+ words) IS a book-in-progress about building creative infrastructure with AI. MFA + 42 published essays + the extraordinary building-in-public record.
 
 **Narrative angle:**
-"Over five years, I built an eight-organ creative-institutional system — 100 repositories, 33 development sprints, 404,000+ words of documentation — using AI as a compositional instrument. The process of creation, documented in real-time across 42 essays, IS the book: a work about what happens when governance, technology, and artistic vision converge at the scale of one person's practice."
+"Over five years, I built an eight-organ creative-institutional system — 100 repositories, 33 development sprints, 809,812+ words of documentation — using AI as a compositional instrument. The process of creation, documented in real-time across 42 essays, IS the book: a work about what happens when governance, technology, and artistic vision converge at the scale of one person's practice."
 
 **Deadline:** ~April 2026 (2025 deadline was April 23). Monitor.
 **URL:** https://www.whiting.org/writers/creative-nonfiction-grant
@@ -193,7 +193,7 @@ Grant reviewers evaluate:
 > [1-2 sentences describing the specific request]
 >
 > **Background:**
-> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 103 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (11 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~404K+ words of public documentation. All eight organs are currently operational, built through 33 named development sprints using AI tools as compositional instruments.
+> Over the past five years, I have developed an eight-organ creative-institutional system that coordinates 103 repositories across theory, generative art, commercial products, governance, public process, community, and marketing. The system includes automated governance (11 GitHub Actions workflows), a machine-readable registry, formal dependency validation, and ~810K+ words of public documentation. All eight organs are currently operational, built through 33 named development sprints using AI tools as compositional instruments.
 >
 > **What This Grant Would Fund:**
 > [Specific deliverables — essays, implementations, community programming, installations]
@@ -206,7 +206,7 @@ Grant reviewers evaluate:
 > - 94+ CI/CD pipelines, 11 governance workflows, automated monthly audits
 > - 42 published essays (~150K words)
 > - Flagship projects with >1,000 tests each
-> - Complete documentation at portfolio quality (~404K+ words)
+> - Complete documentation at portfolio quality (~810K+ words)
 > - 33 named development sprints over 5+ years
 >
 > **Budget:** [AMOUNT]
