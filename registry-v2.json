@@ -1546,7 +1546,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "LOW - Satirical web project",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "implementation_status": "ACTIVE",
