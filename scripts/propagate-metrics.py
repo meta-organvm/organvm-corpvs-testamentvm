@@ -20,6 +20,7 @@ import re
 import shutil
 import sys
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -133,7 +134,104 @@ def transform_for_portfolio(canonical: dict, portfolio_path: Path) -> dict:
     return portfolio
 
 
-def copy_json_targets(manifest: dict, metrics: dict, dry_run: bool) -> int:
+def compute_vitals(metrics: dict) -> dict:
+    """Build vitals.json from canonical system-metrics.json."""
+    c = metrics["computed"]
+    m = metrics.get("manual", {})
+
+    total_repos = c["total_repos"]
+    ci_workflows = c["ci_workflows"]
+    ci_coverage_pct = round(ci_workflows / total_repos * 100) if total_repos else 0
+
+    return {
+        "repos": {
+            "total": total_repos,
+            "active": c.get("active_repos", 0),
+            "orgs": c.get("total_organs", 8),
+        },
+        "substance": {
+            "code_files": m.get("code_files", 0),
+            "test_files": m.get("test_files", 0),
+            "automated_tests": m.get("automated_tests", m.get("repos_with_tests", 0)),
+            "ci_passing": ci_workflows,
+            "ci_coverage_pct": ci_coverage_pct,
+        },
+        "logos": {
+            "essays": c.get("published_essays", 0),
+            "words": m.get("total_words_numeric", 0),
+        },
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def compute_landing(metrics: dict, registry: dict, dest: Path) -> dict:
+    """Build landing.json from canonical metrics + registry."""
+    c = metrics["computed"]
+
+    organ_meta = {
+        "ORGAN-I": ("Theoria", "Theory"),
+        "ORGAN-II": ("Poiesis", "Art"),
+        "ORGAN-III": ("Ergon", "Commerce"),
+        "ORGAN-IV": ("Taxis", "Orchestration"),
+        "ORGAN-V": ("Logos", "Public Process"),
+        "ORGAN-VI": ("Koinonia", "Community"),
+        "ORGAN-VII": ("Kerygma", "Marketing"),
+        "META-ORGANVM": ("META-ORGANVM", "META-ORGANVM"),
+    }
+    organ_orgs = {
+        "ORGAN-I": "organvm-i-theoria",
+        "ORGAN-II": "organvm-ii-poiesis",
+        "ORGAN-III": "organvm-iii-ergon",
+        "ORGAN-IV": "organvm-iv-taxis",
+        "ORGAN-V": "organvm-v-logos",
+        "ORGAN-VI": "organvm-vi-koinonia",
+        "ORGAN-VII": "organvm-vii-kerygma",
+        "META-ORGANVM": "",
+    }
+
+    organs_list = []
+    for organ_key, organ_data in registry.get("organs", {}).items():
+        greek, nice_name = organ_meta.get(organ_key, (organ_key, organ_key))
+        organs_list.append({
+            "key": organ_key,
+            "name": nice_name,
+            "greek": greek,
+            "org": organ_orgs.get(organ_key, ""),
+            "repo_count": len(organ_data.get("repositories", [])),
+            "status": organ_data.get("launch_status", "OPERATIONAL"),
+            "description": organ_data.get("description", ""),
+        })
+
+    landing_metrics = {
+        "total_repos": c["total_repos"],
+        "active_repos": c.get("active_repos", 0),
+        "archived_repos": c.get("archived_repos", 0),
+        "dependency_edges": c.get("dependency_edges", 0),
+        "ci_workflows": c.get("ci_workflows", 0),
+        "operational_organs": c.get("operational_organs", 8),
+        "sprints_completed": c.get("sprints_completed", 0),
+    }
+
+    # Preserve sprint_history from existing portfolio system-metrics.json
+    sprint_history = []
+    sm_path = dest.parent / "system-metrics.json"
+    if sm_path.exists():
+        with open(sm_path) as f:
+            existing = json.load(f)
+        sprint_history = existing.get("sprint_history", [])
+
+    return {
+        "title": "ORGANVM \u2014 Eight-Organ Creative-Institutional System",
+        "tagline": "A living system of 8 organs coordinating theory, art, commerce, orchestration, public process, community, marketing, and governance.",
+        "metrics": landing_metrics,
+        "organs": organs_list,
+        "sprint_history": sprint_history,
+        "generated": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def copy_json_targets(manifest: dict, metrics: dict, dry_run: bool,
+                      registry: dict | None = None) -> int:
     """Process json_copies from manifest. Returns number of copies made."""
     copies = manifest.get("json_copies", [])
     count = 0
@@ -144,6 +242,15 @@ def copy_json_targets(manifest: dict, metrics: dict, dry_run: bool) -> int:
 
         if transform == "portfolio":
             data = transform_for_portfolio(metrics, dest)
+        elif transform == "vitals":
+            data = compute_vitals(metrics)
+        elif transform == "landing":
+            if registry is None:
+                if dry_run:
+                    print(f"  [JSON COPY] → {dest} (SKIPPED: no registry for landing transform)")
+                count += 1
+                continue
+            data = compute_landing(metrics, registry, dest)
         else:
             data = metrics
 
@@ -679,8 +786,15 @@ def main():
         manifest = load_manifest(manifest_path)
         mode = "DRY RUN (cross-repo)" if args.dry_run else "PROPAGATING (cross-repo)"
 
+        # Load registry for landing.json transform
+        registry_path = ROOT / "registry-v2.json"
+        registry = None
+        if registry_path.exists():
+            with open(registry_path) as f:
+                registry = json.load(f)
+
         # 1. JSON copies
-        json_count = copy_json_targets(manifest, metrics, args.dry_run)
+        json_count = copy_json_targets(manifest, metrics, args.dry_run, registry=registry)
         print(f"[{mode}] {json_count} JSON copy target(s)")
 
         # 2. Markdown targets from manifest

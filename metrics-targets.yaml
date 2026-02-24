@@ -9,6 +9,12 @@ json_copies:
   - dest: "~/Workspace/4444J99/portfolio/src/data/system-metrics.json"
     transform: portfolio
     note: "Portfolio site imports at build time via Astro"
+  - dest: "~/Workspace/4444J99/portfolio/src/data/vitals.json"
+    transform: vitals
+    note: "Dashboard vitals for homepage"
+  - dest: "~/Workspace/4444J99/portfolio/src/data/landing.json"
+    transform: landing
+    note: "Organ list + aggregate metrics for landing page"
 
 markdown_targets:
   # Corpus internal docs (existing whitelist)

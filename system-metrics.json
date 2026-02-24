@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-23T19:31:31.353176+00:00",
+  "generated": "2026-02-24T17:18:00.965300+00:00",
   "computed": {
-    "total_repos": 101,
-    "active_repos": 92,
+    "total_repos": 103,
+    "active_repos": 94,
     "archived_repos": 9,
     "total_organs": 8,
     "operational_organs": 8,
-    "ci_workflows": 82,
-    "dependency_edges": 39,
+    "ci_workflows": 94,
+    "dependency_edges": 43,
     "per_organ": {
       "ORGAN-I": {
         "name": "Theory",
@@ -32,7 +32,7 @@
       },
       "ORGAN-VI": {
         "name": "Community",
-        "repos": 4
+        "repos": 6
       },
       "ORGAN-VII": {
         "name": "Marketing",
@@ -44,7 +44,7 @@
       }
     },
     "implementation_status": {
-      "ACTIVE": 92,
+      "ACTIVE": 94,
       "ARCHIVED": 9
     }
   },

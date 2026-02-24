@@ -1,12 +1,14 @@
 name: Metrics Refresh
 
-# Weekly auto-refresh of system-metrics.json and propagation
-# into whitelisted documentation files.
+# Auto-refresh system-metrics.json and propagation into documentation.
+# Triggers: registry push, daily cron, manual dispatch.
 
 on:
+  push:
+    paths:
+      - registry-v2.json
   schedule:
-    # Monday at 06:00 UTC (before orchestrator-agent at 07:00)
-    - cron: '0 6 * * 1'
+    - cron: '0 6 * * *'  # daily at 06:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -24,6 +26,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install PyYAML
+        run: pip install pyyaml
+
       - name: Calculate metrics
         env:
           GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN || secrets.GITHUB_TOKEN }}
@@ -35,14 +40,25 @@ jobs:
           python3 scripts/propagate-metrics.py
 
       - name: Commit changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --staged --quiet; then
             echo "No metrics changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             DATE=$(date -u +%Y-%m-%d)
             git commit -m "chore: auto-refresh metrics ${DATE}"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Trigger portfolio data refresh
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_ORG_TOKEN }}
+        run: |
+          gh api repos/4444J99/portfolio/dispatches \
+            -f event_type=metrics-refresh
