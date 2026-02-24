@@ -296,7 +296,7 @@
           "dependencies": [
             "organvm-i-theoria/recursive-engine--generative-entity"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-12",
           "note": "Silver Sprint README deployed 2026-02-10 (5,038 words).",
@@ -728,7 +728,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "infrastructure",
           "last_validated": "2026-02-10",
           "note": "Silver Sprint: org profile README expanded to 577 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY→PRODUCTION 2026-02-12.",
@@ -1596,7 +1596,7 @@
           "dependencies": [
             "organvm-i-theoria/system-governance-framework"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-12",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,717 words). PROTOTYPE Sprint 2026-02-12: Python package with governance engine, policy rules, audit modules. Tests + Python CI green.",
@@ -1614,7 +1614,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Infrastructure",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (2,811 words). Promoted stub→standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed — node, network, discovery modules. Tests + CI green.",
@@ -1631,7 +1631,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "infrastructure",
           "last_validated": "2026-02-10",
           "note": "Silver Sprint: org profile README expanded to 575 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY→PRODUCTION 2026-02-12.",
@@ -1789,11 +1789,14 @@
           "description": "FastAPI flagship portal — salon archive, curricula browser, contributor profiles, full-text search, adaptive syllabus, Atom feeds, WebSocket live rooms",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Flagship community infrastructure",
-          "dependencies": ["koinonia-db"],
+          "dependencies": [
+            "koinonia-db"
+          ],
           "promotion_status": "CANDIDATE",
           "tier": "flagship",
           "last_validated": "2026-02-24",
           "note": "122 tests, CSRF, rate limiting, 8 route modules. Deployed to Render.",
+          "deployment_url": "https://community-hub-8p8t.onrender.com",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci.yml",
           "platinum_status": true
@@ -1807,7 +1810,9 @@
           "description": "Archive infrastructure for intellectual salons: transcription pipeline, topic taxonomy, and session metadata aligned with the eight-organ model",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Community participation and facilitation",
-          "dependencies": ["koinonia-db"],
+          "dependencies": [
+            "koinonia-db"
+          ],
           "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-24",
@@ -1826,7 +1831,9 @@
           "description": "Structured reading group curricula spanning eight-organ domains: 8-12 week programs with curated reading lists, discussion guides, and exercises",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Educational facilitation",
-          "dependencies": ["koinonia-db"],
+          "dependencies": [
+            "koinonia-db"
+          ],
           "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-24",
@@ -1844,7 +1851,9 @@
           "description": "AI-personalized education system with multi-module curriculum spanning OS development, algorithms, DSLs, and mixed reality. Features Wings multi-artifact framework.",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates educational infrastructure and AI personalization",
-          "dependencies": ["koinonia-db"],
+          "dependencies": [
+            "koinonia-db"
+          ],
           "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-24",
@@ -1862,7 +1871,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 772 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY→PRODUCTION 2026-02-12. Phase 2: updated with full repo table.",
@@ -1976,7 +1985,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "CRITICAL - System-wide identity and entry point",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "infrastructure",
           "last_validated": "2026-02-10",
           "note": "Silver Sprint: org profile README expanded to 1,213 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY→PRODUCTION 2026-02-12.",
@@ -2013,7 +2022,7 @@
           "dependencies": [
             "meta-organvm/organvm-corpvs-testamentvm"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-12",
           "note": "Created 2026-02-12. Python CLI tool with 8 commands (intake, absorb, alchemize, status, review, capture, sync, synthesize). 6 capture channels (screenshot watcher, bookmarks, Apple Notes, AI chats, Google Docs, quick-capture CLI). Synthesis engine generates per-organ creative briefs. 19 tests passing.",
@@ -2030,7 +2039,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Contract-first design for system-wide data validation",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "CANDIDATE",
           "tier": "standard",
           "last_validated": "2026-02-17",
           "note": "Created 2026-02-17. 6 JSON Schema files (Draft 2020-12), 3 examples, validator script, 11 passing tests.",
