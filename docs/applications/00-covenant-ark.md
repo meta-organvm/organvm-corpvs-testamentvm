@@ -53,8 +53,9 @@
 > I am a systems artist and auteur-producer who builds creative systems at institutional scale. The ORGANVM project — 100 repositories coordinated across 8 GitHub organizations through automated governance, dependency validation, and a formal promotion state machine — is simultaneously working infrastructure, a documented creative methodology, and an argument that the process of creation, made visible and governable, is itself the most interesting thing an artist can produce. I use AI tools as compositional instruments: the architectural vision, governance design, and editorial judgment are the creative work.
 
 **Rules:**
-- **Never** say "I am an engineer" or "software engineer" — use "systems artist," "creative technologist," or "auteur-producer"
-- **Never** frame the system as a portfolio piece for an engineering job — the system IS the creative practice
+- **Never** say "I am an engineer" or "software engineer" in art/grant contexts — use "systems artist," "creative technologist," or "auteur-producer"
+- **Exception:** For job-track applications at AI labs, use "independent engineer" or "systems engineer" framing (see Identity Position #5)
+- **Never** frame the system as a portfolio piece for an engineering job in grant contexts — the system IS the creative practice
 - The process of creation IS the product — this is the thesis, not a metaphor
 - "Solo production at institutional scale" is the method descriptor
 - "AI tools as compositional instruments" is the technology descriptor
@@ -166,7 +167,7 @@ Copy-paste into any application form:
 
 ---
 
-## H. Four Identity Positions
+## H. Five Identity Positions
 
 Frame the same body of work differently for different audiences:
 
@@ -189,6 +190,13 @@ Frame the same body of work differently for different audiences:
 - **Narrative:** "Building creative infrastructure from lived experience of precarity"
 - **Evidence:** LGBTQ+, housing-precarious, recovery-informed practice, ORGAN-VI community repos
 - **Targets:** Queer|Art, Fire Island, TJFP, Lambda Literary, WFF Housing Stability
+
+### 5. Independent Engineer (AI lab roles)
+- **Narrative:** "5 years building production-grade Python/TypeScript infrastructure at scale — 103 repos, 21K code files, 3.6K tests, 94 CI/CD pipelines, governance as architecture"
+- **Evidence:** system-metrics.json (computed, verifiable), agentic-titan (1,095 tests), recursive-engine (1,254 tests, 85% coverage), 43 validated dependency edges, 0 violations, automated governance
+- **What to emphasize:** Testing discipline, CI/CD, systems architecture, API orchestration, documentation rigor, autonomous governance design
+- **What to acknowledge:** Independent practice (no team PRs), no production users, LLM API orchestration not ML training
+- **Targets:** Anthropic, OpenAI, Runway, Together AI, Cohere, HuggingFace
 
 ---
 

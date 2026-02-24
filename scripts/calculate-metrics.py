@@ -39,8 +39,17 @@ def count_sprint_specs(sprints_dir: Path) -> tuple[int, list[str]]:
     return len(specs), specs
 
 
-def fetch_essay_count(skip: bool = False) -> int:
-    """Get essay count from public-process _posts/ via gh API."""
+def count_local_essays(workspace: Path) -> int:
+    """Count essays from local public-process _posts/ directory."""
+    posts_dir = workspace / "organvm-v-logos" / "public-process" / "_posts"
+    if not posts_dir.is_dir():
+        return -1
+    essays = [f for f in posts_dir.iterdir() if f.is_file() and f.suffix in (".md", ".markdown", ".html")]
+    return len(essays)
+
+
+def fetch_essay_count_remote(skip: bool = False) -> int:
+    """Get essay count from public-process _posts/ via gh API (fallback)."""
     if skip:
         return -1  # sentinel: caller should preserve existing value
 
@@ -58,6 +67,30 @@ def fetch_essay_count(skip: bool = False) -> int:
 
     print("  WARNING: Could not fetch essay count from GitHub API", file=sys.stderr)
     return -1
+
+
+def fetch_essay_count(skip: bool = False, workspace: Path | None = None) -> int:
+    """Get essay count: local _posts/ as primary source, GitHub API as fallback.
+
+    Local counting is preferred because essays may exist locally before being
+    pushed to the remote. The GitHub API only sees pushed content.
+    """
+    if skip:
+        return -1
+
+    # Primary: count from local filesystem
+    if workspace:
+        local_count = count_local_essays(workspace)
+        if local_count > 0:
+            # Validate against remote if available (informational only)
+            remote_count = fetch_essay_count_remote(skip=False)
+            if remote_count > 0 and remote_count != local_count:
+                print(f"  NOTE: Local essays ({local_count}) != remote ({remote_count}) — "
+                      f"{local_count - remote_count} unpushed", file=sys.stderr)
+            return local_count
+
+    # Fallback: GitHub API
+    return fetch_essay_count_remote(skip=False)
 
 
 def load_existing_essay_count(output_path: Path) -> int:
@@ -109,8 +142,8 @@ def main() -> None:
     computed["sprints_completed"] = sprint_count
     computed["sprint_names"] = sprint_names
 
-    # Corpus-specific: essay count via GitHub API
-    essay_count = fetch_essay_count(skip=args.skip_essays)
+    # Corpus-specific: essay count (local primary, GitHub API fallback)
+    essay_count = fetch_essay_count(skip=args.skip_essays, workspace=workspace)
     if essay_count == -1:
         essay_count = load_existing_essay_count(output_path)
         print(f"  Using existing essay count: {essay_count}")
