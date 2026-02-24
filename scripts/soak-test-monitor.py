@@ -205,10 +205,19 @@ def check_stale_repos(registry: dict, threshold_days: int = 90) -> list:
 # --- CI Status ---
 
 def fetch_ci_status(registry: dict, dry_run: bool = False) -> dict:
-    """Fetch latest CI run status for non-archived repos with CI configured."""
+    """Fetch latest CI run status for non-archived repos with CI configured.
+
+    Filters to push events only (excludes Dependabot PRs, scheduled runs, and
+    Pages builds). Repos in billing-locked orgs are classified separately so
+    they don't inflate the failure count.
+    """
     if dry_run:
         return {"total_checked": 0, "passing": 0, "failing": 0, "unknown": 0,
-                "dry_run": True}
+                "billing_locked": 0, "dry_run": True}
+
+    # Orgs with known billing locks — CI runs fail with empty runners.
+    # Update this set when billing is resolved or new locks appear.
+    BILLING_LOCKED_ORGS = {"organvm-i-theoria"}
 
     _, all_repos = build_repo_map(registry)
     ci_repos = [
@@ -219,11 +228,22 @@ def fetch_ci_status(registry: dict, dry_run: bool = False) -> dict:
     passing = 0
     failing = 0
     unknown = 0
+    billing_locked = 0
     failures = []
+    billing_locked_repos = []
 
     for repo in ci_repos:
         org = repo["org"]
         name = repo["name"]
+
+        # Skip detailed check for billing-locked orgs — they always fail
+        # with empty runner_name, not due to code issues
+        if org in BILLING_LOCKED_ORGS:
+            billing_locked += 1
+            billing_locked_repos.append(f"{org}/{name}")
+            time.sleep(0.1)
+            continue
+
         # Filter to push events on default branch to exclude Dependabot PRs,
         # Pages builds, and other non-CI workflow runs
         rc, out = gh_api(
@@ -248,6 +268,8 @@ def fetch_ci_status(registry: dict, dry_run: bool = False) -> dict:
         "passing": passing,
         "failing": failing,
         "unknown": unknown,
+        "billing_locked": billing_locked,
+        "billing_locked_repos": billing_locked_repos,
         "failures": failures,
     }
 
@@ -330,7 +352,8 @@ def cmd_collect(args):
     print("\n[3/4] CI status...")
     ci_result = fetch_ci_status(registry, dry_run=args.dry_run)
     print(f"  Checked: {ci_result['total_checked']}, Passing: {ci_result.get('passing', 0)}, "
-          f"Failing: {ci_result.get('failing', 0)}, Unknown: {ci_result.get('unknown', 0)}")
+          f"Failing: {ci_result.get('failing', 0)}, Unknown: {ci_result.get('unknown', 0)}, "
+          f"Billing-locked: {ci_result.get('billing_locked', 0)}")
 
     # 4. Engagement
     print("\n[4/4] Engagement metrics...")
@@ -356,6 +379,8 @@ def cmd_collect(args):
             "passing": ci_result.get("passing", 0),
             "failing": ci_result.get("failing", 0),
             "unknown": ci_result.get("unknown", 0),
+            "billing_locked": ci_result.get("billing_locked", 0),
+            "billing_locked_repos": ci_result.get("billing_locked_repos", []),
             "failures": ci_result.get("failures", []),
         },
         "engagement": eng_result,
@@ -471,11 +496,15 @@ def cmd_report(args):
             report_lines.append(f"- {issue}")
         report_lines.append("")
 
+    avg_billing_locked = (sum(d["ci"].get("billing_locked", 0) for d in ci_days)
+                          / len(ci_days)) if ci_days else 0
+
     report_lines.extend([
         f"## CI Stability",
         f"",
         f"- Average passing: **{avg_passing:.1f}** per day",
         f"- Average failing: **{avg_failing:.1f}** per day",
+        f"- Average billing-locked: **{avg_billing_locked:.1f}** per day",
         f"- Days with CI data: {len(ci_days)}",
         f"",
     ])
