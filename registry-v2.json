@@ -1409,7 +1409,7 @@
           "deployment_url": "https://inmidst-web.onrender.com",
           "deployment_api_url": "https://inmidst-api.onrender.com",
           "last_validated": "2026-02-24",
-          "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,609 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
+          "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,609 words). Deployed to Render (inmidst-api + inmidst-web services). System-Wide Activation Sprint 2026-02-24. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true,
