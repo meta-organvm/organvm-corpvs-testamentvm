@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-02-24T21:27:11.386960+00:00",
+  "generated": "2026-02-25T06:58:30.563545+00:00",
   "computed": {
     "total_repos": 103,
     "active_repos": 94,
@@ -47,19 +47,6 @@
       "ACTIVE": 94,
       "ARCHIVED": 9
     },
-    "word_counts": {
-      "readmes": 267147,
-      "essays": 133769,
-      "corpus": 402985,
-      "org_profiles": 6031,
-      "total": 809932
-    },
-    "total_words": "~810,000+",
-    "total_words_numeric": 809932,
-    "total_words_short": "810K+",
-    "code_files": 21265,
-    "test_files": 3616,
-    "repos_with_tests": 70,
     "sprints_completed": 33,
     "sprint_names": [
       "01-ignition",
