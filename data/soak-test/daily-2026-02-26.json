@@ -1,0 +1,104 @@
+{
+  "date": "2026-02-26",
+  "collected_at": "2026-02-26T08:37:23.264803+00:00",
+  "validation": {
+    "registry_pass": true,
+    "registry_issues": [],
+    "dependency_pass": true,
+    "dependency_violations": 0,
+    "stale_repos": []
+  },
+  "ci": {
+    "total_checked": 89,
+    "passing": 60,
+    "failing": 13,
+    "unknown": 1,
+    "billing_locked": 15,
+    "billing_locked_repos": [
+      "organvm-i-theoria/recursive-engine--generative-entity",
+      "organvm-i-theoria/organon-noumenon--ontogenetic-morphe",
+      "organvm-i-theoria/auto-revision-epistemic-engine",
+      "organvm-i-theoria/narratological-algorithmic-lenses",
+      "organvm-i-theoria/call-function--ontological",
+      "organvm-i-theoria/sema-metra--alchemica-mundi",
+      "organvm-i-theoria/system-governance-framework",
+      "organvm-i-theoria/cognitive-archaelogy-tribunal",
+      "organvm-i-theoria/a-recursive-root",
+      "organvm-i-theoria/radix-recursiva-solve-coagula-redi",
+      "organvm-i-theoria/reverse-engine-recursive-run",
+      "organvm-i-theoria/collective-persona-operations",
+      "organvm-i-theoria/linguistic-atomization-framework",
+      "organvm-i-theoria/my-knowledge-base",
+      "organvm-i-theoria/scalable-lore-expert"
+    ],
+    "failures": [
+      "organvm-ii-poiesis/a-mavs-olevm: failure",
+      "organvm-iii-ergon/fetch-familiar-friends: failure",
+      "organvm-iii-ergon/public-record-data-scrapper: failure",
+      "organvm-iii-ergon/life-my--midst--in: failure",
+      "organvm-vi-koinonia/koinonia-db: failure",
+      "organvm-vi-koinonia/community-hub: failure",
+      "organvm-vi-koinonia/salon-archive: failure",
+      "organvm-vi-koinonia/reading-group-curriculum: failure",
+      "organvm-vii-kerygma/social-automation: failure",
+      "organvm-vii-kerygma/.github: failure",
+      "meta-organvm/organvm-engine: failure",
+      "meta-organvm/system-dashboard: failure",
+      "meta-organvm/organvm-mcp-server: failure"
+    ]
+  },
+  "engagement": {
+    "total_stars": 5,
+    "total_forks": 3,
+    "top_repos": {
+      "organvm-i-theoria/recursive-engine--generative-entity": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 897
+      },
+      "organvm-ii-poiesis/metasystem-master": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 9,
+        "clones_14d": 1527
+      },
+      "organvm-ii-poiesis/a-mavs-olevm": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 2,
+        "clones_14d": 402
+      },
+      "organvm-iii-ergon/public-record-data-scrapper": {
+        "stars": 2,
+        "forks": 3,
+        "views_14d": 89,
+        "clones_14d": 519
+      },
+      "organvm-iv-taxis/orchestration-start-here": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 8,
+        "clones_14d": 556
+      },
+      "organvm-iv-taxis/agentic-titan": {
+        "stars": 1,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 657
+      },
+      "organvm-v-logos/public-process": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 6,
+        "clones_14d": 844
+      },
+      "meta-organvm/organvm-corpvs-testamentvm": {
+        "stars": 0,
+        "forks": 0,
+        "views_14d": 5,
+        "clones_14d": 2872
+      }
+    }
+  }
+}
