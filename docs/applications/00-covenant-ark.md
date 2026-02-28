@@ -18,7 +18,7 @@
 | Metric | Value |
 |--------|-------|
 | Total repositories | 103 |
-| Implementation status | 94 ACTIVE, 9 ARCHIVED |
+| Implementation status | 93 ACTIVE, 9 ARCHIVED |
 | GitHub organizations | 8 (7 organ orgs + 1 meta-org) |
 | Published essays | 42 (~404K+ words) |
 | Total documentation | ~410K+ words |
@@ -207,7 +207,7 @@ What you can claim, with proof:
 | Claim | Evidence | Verification |
 |-------|----------|-------------|
 | 100 repos across 8 orgs | registry-v2.json | `jq '.summary.total_repos' registry-v2.json` → 100 |
-| 94 ACTIVE, 9 ARCHIVED | registry-v2.json | implementation_status_distribution field |
+| 93 ACTIVE, 9 ARCHIVED | registry-v2.json | implementation_status_distribution field |
 | 42 published essays | public-process/_posts/ | `ls _posts/ \| wc -l` → 42 |
 | ~404K+ words in essays | Word count of _posts/ | Measured at deploy |
 | ~410K+ total words | Aggregate across all repos | system-metrics.json |

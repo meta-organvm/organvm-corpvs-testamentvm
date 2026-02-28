@@ -5,7 +5,7 @@
 | Metric | Value |
 |--------|-------|
 | Total repositories | 103 |
-| Active status | 94 |
+| Active status | 93 |
 | Archived | 9 |
 | Organs operational | 8/8 |
 | CI/CD workflows | 94+ |
