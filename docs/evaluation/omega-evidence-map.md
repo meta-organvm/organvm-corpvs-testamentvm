@@ -16,8 +16,8 @@
 
 | Status | Count | Criteria |
 |--------|-------|----------|
-| MET | 2 | #6, #8 |
-| IN PROGRESS | 7 | #1, #3, #5, #12, #14, #16, #17 |
+| MET | 3 | #5, #6, #8 |
+| IN PROGRESS | 6 | #1, #3, #12, #14, #16, #17 |
 | NOT STARTED | 8 | #2, #4, #7, #9, #10, #11, #13, #15 |
 
 **By Horizon:**
@@ -25,7 +25,7 @@
 | Horizon | Timeline | Met | In Progress | Not Started |
 |---------|----------|-----|-------------|-------------|
 | H1: Prove It Works | Days 1-30 | 0 | 3 (#1, #3, #17) | 2 (#2, #4) |
-| H2: Validate Externally | Days 15-90 | 1 (#6) | 1 (#5) | 1 (#7) |
+| H2: Validate Externally | Days 15-90 | 2 (#5, #6) | 0 | 1 (#7) |
 | H3: Generate Revenue | Days 30-180 | 1 (#8) | 0 | 2 (#9, #10) |
 | H4: Build Community | Days 60-365 | 0 | 1 (#12) | 2 (#11, #13) |
 | H5: Achieve Recognition | Days 90-730 | 0 | 1 (#14) | 1 (#15) |
@@ -132,25 +132,22 @@
 
 ---
 
-#### #5: >=1 Application Submitted — IN PROGRESS
+#### #5: >=1 Application Submitted — MET
 
 **Criterion:** At least one grant/job/fellowship application has been submitted using the system as evidence.
 
-**Status:** 3 applications prepared with materials ready. None yet submitted (requires human action). Evidence base strengthened to 41 essays and 14 ADRs.
+**Status:** Application submitted 2026-02-24 (PROPULSIO MAXIMA Sprint).
 
 **Evidence:**
 - X1 materials: `docs/applications/05-google-creative-lab-five-responses.md`
 - X3 cover letters: `docs/applications/cover-letters/`
 - E3 script: `docs/applications/e3-google-creative-fellowship-submission.md` (deadline March 18)
-- Submission scripts: clipboard-ready, character counts verified
-- Supporting evidence: 40 published essays (~140K+ words), 14 ADRs, CONTRIBUTING.md, 97 repos across 8 orgs
+- Supporting evidence: 41 published essays (~140K+ words), 14 ADRs, CONTRIBUTING.md, 100+ repos across 8 orgs
 - 2 conference proposals drafted (AMPLIFICATIO): AI-conductor talk + constraint-alchemy workshop
 
-**Gap:** Human must actually submit the applications. Materials are complete.
+**Gap:** None — criterion met.
 
-**Blocker:** TIME — requires human action (~1-2 hrs per application)
-
-**Rolling TODO:** X1, X3, E3
+**Date met:** 2026-02-24
 
 ---
 
@@ -198,23 +195,35 @@
 
 **Criterion:** At least one commercial product from ORGAN-III is deployed and accessible to users.
 
-**Status:** life-my--midst--in is deployed on Render with two services: `inmidst-api` (API backend) and `inmidst-web` (frontend). Both services are live and accessible.
+**Status:** 12 products deployed across Netlify and Render, all returning HTTP 200. Far exceeds the ≥1 requirement.
 
 **Evidence:**
-- Repo: `organvm-iii-ergon/life-my--midst--in` (branch: master)
-- Tests: 291 pass, 7/7 packages build
-- DB: Neon project `in-midst-my-life` (44 tables, seeded)
-- Deploy guide: `DEPLOY.md` (minimum config: DATABASE_URL + JWT_SECRET)
-- render.yaml: Fixed for free tier (BETA-VITAE sprint)
-- Render services: `inmidst-api` (API backend) and `inmidst-web` (frontend), both on Render free tier
-- Deployment URLs: `https://inmidst-api.onrender.com` and `https://inmidst-web.onrender.com`
-- Note: Free tier services may sleep when idle; wake on first request
 
-**Gap:** None — deployed and accessible.
+*Render (full-stack):*
+- `life-my--midst--in` — https://inmidst-web.onrender.com (web) + https://inmidst-api.onrender.com (API)
+- `public-record-data-scrapper` — https://ucc-mca-api.onrender.com (API backend)
+- `community-hub` (ORGAN-VI) — https://community-hub-8p8t.onrender.com
+
+*Netlify (static SPAs):*
+- `fetch-familiar-friends` — https://fetch-familiar-friends.netlify.app
+- `classroom-rpg-aetheria` — https://classroom-rpg-aetheria.netlify.app
+- `trade-perpetual-future` — https://trade-perpetual-future.netlify.app
+- `search-local--happy-hour` — https://search-local-happy-hour.netlify.app
+- `public-record-data-scrapper` — https://public-record-data-scrapper.netlify.app (frontend)
+- `mirror-mirror` — https://mirror-mirror-app.netlify.app
+- `sovereign-ecosystem--real-estate-luxury` — https://sovereign-ecosystem.netlify.app
+- `the-invisible-ledger` — https://the-invisible-ledger.netlify.app
+- `a-mavs-olevm` (ORGAN-II) — https://etceter4.netlify.app
+- `public-process` (ORGAN-V) — https://public-process.netlify.app
+- `portfolio` (4444J99) — https://4444j99-portfolio.netlify.app
+
+All seed.yaml files updated with deployment_url. Registry-v2.json updated.
+
+**Gap:** None — massively exceeded.
 
 **Blocker:** None
 
-**Date met:** 2026-02-24 (System-Wide Activation Sprint — deployment URLs verified in Render service list)
+**Date met:** 2026-02-24 (life-my--midst--in initial deploy), strengthened 2026-02-28 (12 total products live)
 
 **Rolling TODO:** X2
 
@@ -438,3 +447,4 @@ H5 (#14, #15) ──external response──→ H5 last
 | 2026-02-17 | Initial creation | Pre-validation maturation session |
 | 2026-02-17 | AMPLIFICATIO evidence update — #12, #14, #16 flipped NOT STARTED → IN PROGRESS; #1, #5, #6, #17 evidence strengthened; summary 1/5/11 → 1/8/8; organic link check (#13) negative | Post-AMPLIFICATIO maturation |
 | 2026-02-24 | System-Wide Activation Sprint — #8 flipped IN PROGRESS → MET (life-my--midst--in deployed on Render); ORGAN-VI promoted to PUBLIC_PROCESS; first real salon event created; summary 1/8/8 → 2/7/8 | System-Wide Activation Sprint |
+| 2026-02-28 | Deployment Sprint — #5 flipped IN PROGRESS → MET (application submitted 02-24); #8 evidence massively expanded (12 products live across Netlify/Render); summary 2/7/8 → 3/6/8 | Full Deployment Sprint |

@@ -112,7 +112,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 5 | ≥1 application submitted | H2 | Application tracker | MET (2026-02-24) |
 | 6 | AI-conductor essay published | H2 | Public-process URL | MET (2026-02-11) |
 | 7 | ≥3 pieces of external feedback collected | H2 | Feedback synthesis doc | NOT MET |
-| 8 | ≥1 ORGAN-III product live | H3 | Product URL + user count | NOT MET |
+| 8 | ≥1 ORGAN-III product live | H3 | Product URL + user count | MET (2026-02-28) |
 | 9 | `revenue_status: live` for ≥1 registry entry | H3 | `registry-v2.json` | NOT MET |
 | 10 | MRR ≥ system operating costs | H3 | Financial record | NOT MET |
 | 11 | ≥2 salons/events held with external participants | H4 | Event records | NOT MET |
@@ -123,7 +123,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | NOT MET |
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | NOT MET |
 
-**Scorecard:** 2/17 MET (#5 application submitted 2026-02-24, #6 AI-conductor essay 2026-02-11), 8 IN PROGRESS, 7 NOT STARTED (as of 2026-02-28). Soak streak at 13 days (Feb 16-28). Seed.yaml ↔ registry reconciled. CI coverage 102/112.
+**Scorecard:** 3/17 MET (#5 application submitted 2026-02-24, #6 AI-conductor essay 2026-02-11, #8 12 ORGAN-III products deployed 2026-02-28), 4 IN PROGRESS (#1, #3, #12, #17 — soak/engagement clocks at day 13), 10 NOT STARTED (as of 2026-02-28). Soak streak at 13 days (Feb 16-28). 12 products live across Netlify/Render.
 
 ---
 
