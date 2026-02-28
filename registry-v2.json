@@ -1116,7 +1116,8 @@
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true,
           "revenue_model": "subscription",
-          "revenue_status": "pre-launch"
+          "revenue_status": "pre-launch",
+          "deployment_url": "https://sovereign-ecosystem.netlify.app"
         },
         {
           "name": "public-record-data-scrapper",
@@ -1218,7 +1219,8 @@
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true,
           "revenue_model": "none",
-          "revenue_status": "n/a"
+          "revenue_status": "n/a",
+          "deployment_url": "https://mirror-mirror-app.netlify.app"
         },
         {
           "name": "the-invisible-ledger",
@@ -1238,7 +1240,8 @@
           "ci_workflow": "ci-typescript.yml",
           "platinum_status": true,
           "revenue_model": "none",
-          "revenue_status": "n/a"
+          "revenue_status": "n/a",
+          "deployment_url": "https://the-invisible-ledger.netlify.app"
         },
         {
           "name": "enterprise-plugin",
@@ -1742,7 +1745,8 @@
           "note": "Created Bronze Sprint 2026-02-10. Silver Sprint README (4,040w). Gold Sprint: 5 meta-system essays deployed (21,625 total words).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": true
+          "platinum_status": true,
+          "deployment_url": "https://public-process.netlify.app"
         },
         {
           "name": ".github",
