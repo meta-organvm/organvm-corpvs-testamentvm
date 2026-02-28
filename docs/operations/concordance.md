@@ -109,7 +109,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 2 | Stranger test score ≥80% | H1 | Test protocol results | NOT MET |
 | 3 | Engagement baseline established (30 days of data) | H1 | Engagement report | NOT MET |
 | 4 | Runbooks validated by second operator | H1 | Validation log | NOT MET |
-| 5 | ≥1 application submitted | H2 | Application tracker | NOT MET |
+| 5 | ≥1 application submitted | H2 | Application tracker | MET (2026-02-24) |
 | 6 | AI-conductor essay published | H2 | Public-process URL | MET (2026-02-11) |
 | 7 | ≥3 pieces of external feedback collected | H2 | Feedback synthesis doc | NOT MET |
 | 8 | ≥1 ORGAN-III product live | H3 | Product URL + user count | NOT MET |
@@ -123,7 +123,7 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | NOT MET |
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | NOT MET |
 
-**Scorecard:** 1/17 MET, 8 IN PROGRESS, 8 NOT STARTED (as of 2026-02-17, post-AMPLIFICATIO). #12/#14/#16 advanced to IN PROGRESS (CONTRIBUTING.md, conference proposals, 14 ADRs). X4 completed (social post live). M9-II/M10-II CI fixes pushed.
+**Scorecard:** 2/17 MET (#5 application submitted 2026-02-24, #6 AI-conductor essay 2026-02-11), 8 IN PROGRESS, 7 NOT STARTED (as of 2026-02-28). Soak streak at 13 days (Feb 16-28). Seed.yaml ↔ registry reconciled. CI coverage 102/112.
 
 ---
 
