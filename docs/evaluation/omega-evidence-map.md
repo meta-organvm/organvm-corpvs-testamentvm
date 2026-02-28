@@ -16,9 +16,9 @@
 
 | Status | Count | Criteria |
 |--------|-------|----------|
-| MET | 3 | #5, #6, #8 |
+| MET | 4 | #5, #6, #8, #13 |
 | IN PROGRESS | 6 | #1, #3, #12, #14, #16, #17 |
-| NOT STARTED | 8 | #2, #4, #7, #9, #10, #11, #13, #15 |
+| NOT STARTED | 7 | #2, #4, #7, #9, #10, #11, #15 |
 
 **By Horizon:**
 
@@ -27,7 +27,7 @@
 | H1: Prove It Works | Days 1-30 | 0 | 3 (#1, #3, #17) | 2 (#2, #4) |
 | H2: Validate Externally | Days 15-90 | 2 (#5, #6) | 0 | 1 (#7) |
 | H3: Generate Revenue | Days 30-180 | 1 (#8) | 0 | 2 (#9, #10) |
-| H4: Build Community | Days 60-365 | 0 | 1 (#12) | 2 (#11, #13) |
+| H4: Build Community | Days 60-365 | 1 (#13) | 1 (#12) | 1 (#11) |
 | H5: Achieve Recognition | Days 90-730 | 0 | 1 (#14) | 1 (#15) |
 | Cross-horizon | H1+H4 | 0 | 1 (#16) | 0 |
 
@@ -303,19 +303,21 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 
 ---
 
-#### #13: >=1 Organic Inbound Link — NOT STARTED
+#### #13: >=1 Organic Inbound Link — MET
 
 **Criterion:** At least 1 external website links to any part of the system without being solicited.
 
-**Status:** First social media posts made 2026-02-17 (Mastodon + Discord). Essay distribution pipeline active (backfill-distribution.yml distributing 3/week). No confirmed inbound links yet.
+**Status:** LobeHub Skills Marketplace (lobehub.com) has organically indexed and published skills from `organvm-iv-taxis/a-i--skills`, creating permanent external links to the ORGANVM ecosystem.
 
-**Evidence:** None confirmed. Would need to check via search engine or analytics.
+**Evidence:**
+- https://lobehub.com/skills/organvm-iv-taxis-a-i-skills-theme-factory — links to `github.com/organvm-iv-taxis/a-i--skills`, published under `organvm-iv-taxis` author
+- https://lobehub.com/pl/skills/organvm-iv-taxis-a-i-skills-continuous-learning-agent — same repo linkback
+- These are organic — LobeHub indexed the repo content automatically without manual submission
+- Verified 2026-02-28: page exists, contains full skill documentation, links back to GitHub org
 
-**Gap:** Requires time for content to be discovered. Distribution pipeline is active — content is being pushed to Mastodon and Discord.
+**Gap:** None — criterion met.
 
-**Blocker:** TIME + organic discovery
-
-**Rolling TODO:** Fed by essay distribution pipeline and social media activity
+**Date met:** Discovered 2026-02-28 (pages likely indexed earlier)
 
 ---
 
@@ -447,4 +449,4 @@ H5 (#14, #15) ──external response──→ H5 last
 | 2026-02-17 | Initial creation | Pre-validation maturation session |
 | 2026-02-17 | AMPLIFICATIO evidence update — #12, #14, #16 flipped NOT STARTED → IN PROGRESS; #1, #5, #6, #17 evidence strengthened; summary 1/5/11 → 1/8/8; organic link check (#13) negative | Post-AMPLIFICATIO maturation |
 | 2026-02-24 | System-Wide Activation Sprint — #8 flipped IN PROGRESS → MET (life-my--midst--in deployed on Render); ORGAN-VI promoted to PUBLIC_PROCESS; first real salon event created; summary 1/8/8 → 2/7/8 | System-Wide Activation Sprint |
-| 2026-02-28 | Deployment Sprint — #5 flipped IN PROGRESS → MET (application submitted 02-24); #8 evidence massively expanded (12 products live across Netlify/Render); summary 2/7/8 → 3/6/8 | Full Deployment Sprint |
+| 2026-02-28 | Deployment Sprint — #5 flipped IN PROGRESS → MET (application submitted 02-24); #8 evidence massively expanded (12 products live across Netlify/Render); #13 flipped NOT STARTED → MET (LobeHub organic indexing of ORGAN-IV skills discovered); summary 2/7/8 → 4/6/7 | Full Deployment Sprint |

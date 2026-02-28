@@ -117,13 +117,13 @@ Source: [`there+back-again.md`](../strategy/there+back-again.md) §"The Seventee
 | 10 | MRR ≥ system operating costs | H3 | Financial record | NOT MET |
 | 11 | ≥2 salons/events held with external participants | H4 | Event records | NOT MET |
 | 12 | ≥3 external contributions to the system | H4 | GitHub activity | NOT MET |
-| 13 | ≥1 organic inbound link from external site | H4 | Analytics | NOT MET |
+| 13 | ≥1 organic inbound link from external site | H4 | Analytics | MET (2026-02-28) |
 | 14 | ≥1 recognition event (grant, citation, invitation, or adoption) | H5 | Evidence URL | NOT MET |
 | 15 | Portfolio updated with external validation | H5 | Portfolio site | NOT MET |
 | 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | NOT MET |
 | 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | NOT MET |
 
-**Scorecard:** 3/17 MET (#5 application submitted 2026-02-24, #6 AI-conductor essay 2026-02-11, #8 12 ORGAN-III products deployed 2026-02-28), 4 IN PROGRESS (#1, #3, #12, #17 — soak/engagement clocks at day 13), 10 NOT STARTED (as of 2026-02-28). Soak streak at 13 days (Feb 16-28). 12 products live across Netlify/Render.
+**Scorecard:** 4/17 MET (#5 application submitted 2026-02-24, #6 AI-conductor essay 2026-02-11, #8 12 products deployed 2026-02-28, #13 LobeHub organic inbound links 2026-02-28), 4 IN PROGRESS (#1, #3, #12, #17 — soak/engagement clocks at day 13), 9 NOT STARTED (as of 2026-02-28). Soak streak at 13 days (Feb 16-28). 12 products live across Netlify/Render.
 
 ---
 
