@@ -2,13 +2,13 @@
   "title": "ORGANVM \u2014 Eight-Organ Creative-Institutional System",
   "tagline": "A living system of 8 organs coordinating theory, art, commerce, orchestration, public process, community, marketing, and governance.",
   "metrics": {
-    "total_repos": 89,
-    "production_repos": 82,
-    "archived_repos": 7,
-    "dependency_edges": 33,
-    "ci_workflows": 77,
+    "total_repos": 103,
+    "active_repos": 94,
+    "archived_repos": 9,
+    "dependency_edges": 43,
+    "ci_workflows": 94,
     "operational_organs": 8,
-    "sprints_completed": 10
+    "sprints_completed": 13
   },
   "organs": [
     {
@@ -16,7 +16,7 @@
       "name": "Theory",
       "greek": "Theoria",
       "org": "organvm-i-theoria",
-      "repo_count": 19,
+      "repo_count": 20,
       "status": "OPERATIONAL",
       "description": "Epistemological frameworks, recursive engines, ontological systems, conceptual research"
     },
@@ -25,7 +25,7 @@
       "name": "Art",
       "greek": "Poiesis",
       "org": "organvm-ii-poiesis",
-      "repo_count": 26,
+      "repo_count": 30,
       "status": "OPERATIONAL",
       "description": "Generative art, interactive systems, performance frameworks, experiential work"
     },
@@ -34,7 +34,7 @@
       "name": "Commerce",
       "greek": "Ergon",
       "org": "organvm-iii-ergon",
-      "repo_count": 24,
+      "repo_count": 27,
       "status": "OPERATIONAL",
       "description": "Revenue-generating products, deployed systems, customer-facing tools, B2B/B2C applications"
     },
@@ -61,9 +61,9 @@
       "name": "Community",
       "greek": "Koinonia",
       "org": "organvm-vi-koinonia",
-      "repo_count": 4,
+      "repo_count": 6,
       "status": "OPERATIONAL",
-      "description": "Community infrastructure, member management, governance, forums, shared resources, collaborative spaces"
+      "description": "Community infrastructure \u2014 salon archives, reading group curricula, adaptive syllabi, contributor profiles, shared PostgreSQL layer, FastAPI portal with full-text search, Atom feeds, and WebSocket live rooms"
     },
     {
       "key": "ORGAN-VII",
@@ -72,14 +72,14 @@
       "org": "organvm-vii-kerygma",
       "repo_count": 4,
       "status": "OPERATIONAL",
-      "description": "Content distribution, social amplification, audience building, POSSE automation, release coordination, press/announcement strategy"
+      "description": "Marketing & Distribution \u2014 POSSE distribution pipeline with Ghost newsletter hub, Mastodon, Discord, Bluesky adapters, cross-organ event wiring, autonomous RSS polling, bidirectional analytics, Ghost Handlebars theme, 15 announcement templates"
     },
     {
       "key": "META-ORGANVM",
       "name": "META-ORGANVM",
       "greek": "META-ORGANVM",
       "org": "",
-      "repo_count": 3,
+      "repo_count": 7,
       "status": "OPERATIONAL",
       "description": "Umbrella organization coordinating all 7 organ orgs. System-wide governance, cross-organ visibility, and institutional identity."
     }
@@ -128,13 +128,28 @@
     {
       "name": "CONVERGENCE",
       "date": "2026-02-13",
-      "summary": "82 PRODUCTION, 7 ARCHIVED, zero gaps"
+      "summary": "82 ACTIVE, 7 ARCHIVED, zero gaps"
     },
     {
       "name": "PRAXIS",
       "date": "2026-02-13",
       "summary": "External impact \u2014 portfolio, distribution, revenue"
+    },
+    {
+      "name": "VERITAS",
+      "date": "2026-02-13",
+      "summary": "Credibility hardening \u2014 PRODUCTION\u2192ACTIVE, revenue split, essay dates"
+    },
+    {
+      "name": "MANIFESTATIO",
+      "date": "2026-02-14",
+      "summary": "Re-audit (7x more code), 3 CI fixes, engagement baseline"
+    },
+    {
+      "name": "ILLUSTRATIO",
+      "date": "2026-02-14",
+      "summary": "Portfolio polish \u2014 CMYK design, p5.js animations, LLM consultation"
     }
   ],
-  "generated": "2026-02-13T23:14:14.545632+00:00"
+  "generated": "2026-02-26T15:20:51.636321+00:00"
 }
