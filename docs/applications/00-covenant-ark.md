@@ -24,7 +24,7 @@
 | Total documentation | ~410K+ words |
 | Named development sprints | 33 completed + 48 cataloged |
 | Architecture Decision Records | 16 (ADR-001 through ADR-016) |
-| CI/CD workflows | 94 repos with workflows |
+| CI/CD workflows | 94+ repos with workflows |
 | Dependency edges | 43 validated |
 | Back-edge violations | 0 |
 | Circular dependencies | 0 |
