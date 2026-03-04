@@ -200,6 +200,7 @@ Three work streams in one sprint: (1) stale metrics corrected across 13 files (~
 | Effort | ~6–8 hours (12–15 ADRs) |
 | Horizon | H1 (operational maturity), H5 (shows rigorous engineering) |
 | Omega criteria | #16 (bus factor — ADRs help second operators understand decisions) |
+| Tracking | [Issue #10](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/10) |
 
 ### CANON (Canon Cleanup) — COMPLETE *(unscheduled)*
 
@@ -272,6 +273,7 @@ Backfill distribution workflow created (3/week drip-feed of 35-essay backlog), e
 | Effort | ~2–4 hours |
 | Horizon | H4 (distribution network) |
 | Omega criteria | #13 |
+| Tracking | [Issue #11](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/11) |
 
 ---
 
@@ -295,6 +297,7 @@ Backfill distribution workflow created (3/week drip-feed of 35-essay backlog), e
 | Effort | ~20–40 hours depending on state |
 | Horizon | H3 (#8, #9, #10) |
 | Omega criteria | #8 (product live), #9 (revenue_status: live), #10 (MRR) |
+| Tracking | [Issue #12](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/12) |
 
 ### Sprint 27: BETA-VITAE (Life-My-Midst-In Beta) — **COMPLETE** (2026-02-16)
 
@@ -321,6 +324,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 | Effort | ~20–40 hours |
 | Horizon | H3 (#8, #9, #10) |
 | Omega criteria | #8, #9, #10 |
+| Tracking | [Issue #13](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/13) |
 
 ### Sprint 29: BETA-AETHERIA (Classroom RPG Aetheria Beta)
 
@@ -330,6 +334,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Strong case study documentation
 
 | Field | Value |
+| Tracking | [Issue #14](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/14) |
 |-------|-------|
 | Effort | ~15–30 hours |
 | Horizon | H3 |
@@ -342,6 +347,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Cron workflow disabled during ILLUSTRATIO
 
 | Field | Value |
+| Tracking | [Issue #15](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/15) |
 |-------|-------|
 | Effort | ~15–30 hours |
 | Horizon | H3 |
@@ -353,6 +359,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Revenue model: subscription
 
 | Field | Value |
+| Tracking | [Issue #16](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/16) |
 |-------|-------|
 | Effort | ~15–30 hours |
 | Horizon | H3 |
@@ -364,6 +371,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Revenue model: freemium
 
 | Field | Value |
+| Tracking | [Issue #17](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/17) |
 |-------|-------|
 | Effort | ~15–30 hours |
 | Horizon | H3 |
@@ -376,6 +384,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Financial product — extra regulatory/compliance considerations
 
 | Field | Value |
+| Tracking | [Issue #18](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/18) |
 |-------|-------|
 | Effort | ~20–40 hours (compliance adds overhead) |
 | Horizon | H3 |
@@ -387,6 +396,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Revenue model: freemium
 
 | Field | Value |
+| Tracking | [Issue #19](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/19) |
 |-------|-------|
 | Effort | ~10–20 hours |
 | Horizon | H3 |
@@ -398,6 +408,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Revenue model: subscription
 
 | Field | Value |
+| Tracking | [Issue #20](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/20) |
 |-------|-------|
 | Effort | ~10–20 hours |
 | Horizon | H3 |
@@ -410,6 +421,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Minimal code substance — may need significant development
 
 | Field | Value |
+| Tracking | [Issue #21](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/21) |
 |-------|-------|
 | Effort | ~30–50 hours |
 | Horizon | H3 |
@@ -422,6 +434,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Very little code — essentially needs to be built from scratch
 
 | Field | Value |
+| Tracking | [Issue #22](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/22) |
 |-------|-------|
 | Effort | ~40–60 hours |
 | Horizon | H3 |
@@ -434,6 +447,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Essentially empty — needs full build
 
 | Field | Value |
+| Tracking | [Issue #23](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/23) |
 |-------|-------|
 | Effort | ~40–60 hours |
 | Horizon | H3 |
@@ -446,6 +460,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - Empty locally — may have code on remote
 
 | Field | Value |
+| Tracking | [Issue #24](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/24) |
 |-------|-------|
 | Effort | ~50–80 hours |
 | Horizon | H3 |
@@ -460,6 +475,7 @@ DB provisioned on Neon (44 tables, seeded). 3 migration bugs fixed (016_settings
 - First dollar milestone
 
 | Field | Value |
+| Tracking | [Issue #25](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/25) |
 |-------|-------|
 | Effort | ~8–16 hours per product |
 | Horizon | H3 (#9, #10) |
@@ -498,6 +514,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Document findings and fix identified issues
 
 | Field | Value |
+| Tracking | [Issue #26](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/26) |
 |-------|-------|
 | Effort | ~4–8 hours (recruitment + administration + analysis) |
 | Horizon | H1 (#2), H2 (#7) |
@@ -514,6 +531,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Creative Capital, MAP Fund, Rhizome as alternatives
 
 | Field | Value |
+| Tracking | [Issue #27](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/27) |
 |-------|-------|
 | Effort | ~8–16 hours per application × 4–6 applications |
 | Horizon | H2 (#5, #7), H5 (#14) |
@@ -528,6 +546,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Compile feedback synthesis document
 
 | Field | Value |
+| Tracking | [Issue #28](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/28) |
 |-------|-------|
 | Effort | ~6–10 hours |
 | Horizon | H2 (#7) |
@@ -549,6 +568,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Host the event, document it
 
 | Field | Value |
+| Tracking | [Issue #29](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/29) |
 |-------|-------|
 | Effort | ~8–12 hours (planning + hosting + documentation) |
 | Horizon | H4 (#11) |
@@ -562,6 +582,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Iterate on lessons from Sprint 45
 
 | Field | Value |
+| Tracking | [Issue #30](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/30) |
 |-------|-------|
 | Effort | ~6–10 hours |
 | Horizon | H4 (#11) |
@@ -578,6 +599,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Community guidelines / code of conduct review
 
 | Field | Value |
+| Tracking | [Issue #31](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/31) |
 |-------|-------|
 | Effort | ~4–8 hours |
 | Horizon | H4 (#12) |
@@ -593,6 +615,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Invite initial community members
 
 | Field | Value |
+| Tracking | [Issue #32](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/32) |
 |-------|-------|
 | Effort | ~4–6 hours |
 | Horizon | H4 (#12, #13) |
@@ -613,6 +636,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Write new theory that produces citable artifacts
 
 | Field | Value |
+| Tracking | [Issue #33](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/33) |
 |-------|-------|
 | Effort | ~20–40 hours (ongoing creative work, not a fixed deliverable) |
 | Horizon | H5 (#14 — intellectual contribution) |
@@ -627,6 +651,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - These are ACTIVE in the registry but have no code substance — the VERITAS honesty standard questions this
 
 | Field | Value |
+| Tracking | [Issue #34](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/34) |
 |-------|-------|
 | Effort | ~4–8 hours per repo × 15 repos = ~60–120 hours total |
 | Horizon | H1 (registry honesty), H4 (creative artifacts attract community) |
@@ -643,6 +668,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - AI collaboration pieces
 
 | Field | Value |
+| Tracking | [Issue #35](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/35) |
 |-------|-------|
 | Effort | Unbounded (this is the ongoing creative practice the system protects) |
 | Horizon | H4 (creative artifacts), H5 (recognition through art) |
@@ -664,6 +690,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Ensure all project links resolve
 
 | Field | Value |
+| Tracking | [Issue #36](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/36) |
 |-------|-------|
 | Effort | ~2–4 hours |
 | Horizon | H2 (#15), H5 |
@@ -679,6 +706,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Screenshot gallery of key repos and workflows
 
 | Field | Value |
+| Tracking | [Issue #37](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/37) |
 |-------|-------|
 | Effort | ~8–16 hours |
 | Horizon | H2, H5 |
@@ -693,6 +721,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Update narrative to reflect validation phase
 
 | Field | Value |
+| Tracking | [Issue #38](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/38) |
 |-------|-------|
 | Effort | ~2–3 hours |
 | Horizon | H2 |
@@ -713,6 +742,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Target: every repo with 10+ code files should have real test execution in CI
 
 | Field | Value |
+| Tracking | [Issue #39](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/39) |
 |-------|-------|
 | Effort | ~12–24 hours |
 | Horizon | H1 (system integrity) |
@@ -728,6 +758,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - Review security policies (SECURITY.md files)
 
 | Field | Value |
+| Tracking | [Issue #40](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/40) |
 |-------|-------|
 | Effort | ~8–16 hours |
 | Horizon | H1 |
@@ -741,6 +772,7 @@ All 9 bundles verified with current metrics — 97 repos, 398K+ words, 33 essays
 - ORGAN-III product accessibility (when products ship)
 
 | Field | Value |
+| Tracking | [Issue #41](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/41) |
 |-------|-------|
 | Effort | ~4–8 hours per property |
 | Horizon | H4 (community inclusivity) |
@@ -804,6 +836,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Should new articles be added (community governance, revenue policy)?
 
 | Field | Value |
+| Tracking | [Issue #42](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/42) |
 |-------|-------|
 | Effort | ~4–6 hours |
 | Horizon | H1 (governance maturity) |
@@ -820,6 +853,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Formalize schema with JSON Schema validation
 
 | Field | Value |
+| Tracking | [Issue #43](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/43) |
 |-------|-------|
 | Effort | ~8–12 hours |
 | Horizon | H1, H3 |
@@ -834,6 +868,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Update dependency validation rules if needed
 
 | Field | Value |
+| Tracking | [Issue #44](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/44) |
 |-------|-------|
 | Effort | ~4–6 hours |
 | Horizon | H1 |
@@ -854,6 +889,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Document all incidents with post-mortems
 
 | Field | Value |
+| Tracking | [Issue #45](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/45) |
 |-------|-------|
 | Effort | ~2–4 hours active (over 30 days) + ~2 hours for report |
 | Horizon | H1 (#1, #3, #17) |
@@ -868,6 +904,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Compare results
 
 | Field | Value |
+| Tracking | [Issue #46](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/46) |
 |-------|-------|
 | Effort | ~4–8 hours active + 30 calendar days |
 | Horizon | H1 |
@@ -887,6 +924,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Write abstract, bio, talk outline for each
 
 | Field | Value |
+| Tracking | [Issue #47](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/47) |
 |-------|-------|
 | Effort | ~4–6 hours per proposal × 3–4 proposals |
 | Horizon | H5 (#14) |
@@ -901,6 +939,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Practice delivery
 
 | Field | Value |
+| Tracking | [Issue #48](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/48) |
 |-------|-------|
 | Effort | ~16–24 hours |
 | Horizon | H5 |
@@ -922,6 +961,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - AI labs with open-source mandates (for methodology adoption)
 
 | Field | Value |
+| Tracking | [Issue #49](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/49) |
 |-------|-------|
 | Effort | ~8–12 hours |
 | Horizon | H4 (#12, #13), H5 (#14) |
@@ -936,6 +976,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Participate in relevant communities as contributor (not just broadcaster)
 
 | Field | Value |
+| Tracking | [Issue #50](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/50) |
 |-------|-------|
 | Effort | ~4–8 hours (ongoing) |
 | Horizon | H4, H5 |
@@ -956,6 +997,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - GDPR/CCPA compliance assessment for any product with users
 
 | Field | Value |
+| Tracking | [Issue #51](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/51) |
 |-------|-------|
 | Effort | ~8–16 hours |
 | Horizon | H3 (prerequisite for revenue) |
@@ -970,6 +1012,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Review any third-party code dependencies for license compliance
 
 | Field | Value |
+| Tracking | [Issue #52](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/52) |
 |-------|-------|
 | Effort | ~4–8 hours |
 | Horizon | H5 |
@@ -989,6 +1032,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Apply consistent design language across public-facing properties
 
 | Field | Value |
+| Tracking | [Issue #53](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/53) |
 |-------|-------|
 | Effort | ~12–20 hours |
 | Horizon | H3 (product quality), H4 (brand recognition) |
@@ -1003,6 +1047,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Improve cross-references between repos
 
 | Field | Value |
+| Tracking | [Issue #54](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/54) |
 |-------|-------|
 | Effort | ~8–12 hours |
 | Horizon | H2, H4 |
@@ -1024,6 +1069,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Define key metrics and tracking cadence
 
 | Field | Value |
+| Tracking | [Issue #55](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/55) |
 |-------|-------|
 | Effort | ~4–8 hours |
 | Horizon | H1 (#3 engagement baseline), H4 |
@@ -1039,6 +1085,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Before/after comparisons
 
 | Field | Value |
+| Tracking | [Issue #56](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/56) |
 |-------|-------|
 | Effort | ~4–6 hours |
 | Horizon | H2 (#5, #7) |
@@ -1059,6 +1106,7 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 - Archive critical data outside GitHub
 
 | Field | Value |
+| Tracking | [Issue #57](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/57) |
 |-------|-------|
 | Effort | ~4–8 hours |
 | Horizon | H1 (operational maturity) |
@@ -1095,25 +1143,25 @@ Static HTML dashboard (`scripts/generate-dashboard.py`) reads soak-test snapshot
 
 Every omega criterion maps to at least one sprint. The 17 criteria are from [`there+back-again.md`](./there+back-again.md) § "The Seventeen Omega Criteria."
 
-| # | Criterion | Required Sprints | Notes |
-|---|-----------|-----------------|-------|
-| 1 | 30-day soak test passes | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | Workflows confirmed healthy; soak test in progress |
-| 2 | Stranger test ≥80% | 42 (PEREGRINUS), 73 (NAVIGATIO) | Test first, fix second |
-| 3 | Engagement baseline established | 64 (VIGILIA), 74 (ANALYTICA) | Passive collection + analytics |
-| 4 | Runbooks validated | 42 (PEREGRINUS) | Stranger test validates runbooks |
-| 5 | ≥1 application submitted | 41 (SUBMISSIO) | Materials ready now |
-| 6 | AI-conductor essay published | **ALREADY MET** | Deployed 2026-02-11 |
-| 7 | ≥3 external feedback | 41 (SUBMISSIO), 44 (TESTIMONIUM) | Applications produce feedback |
-| 8 | ≥1 ORGAN-III product live | 27 BETA-VITAE (life-my--midst--in) | Selected by Sprint 25 INSPECTIO assessment |
-| 9 | `revenue_status: live` for ≥1 entry | 40 (MERCATURA) | Requires a beta product first |
-| 10 | MRR ≥ system operating costs | 40 (MERCATURA) | Requires payment integration |
-| 11 | ≥2 salons with external participants | 45 (CONVIVIUM), 46 (CONVIVIUM-II) | Two separate events |
-| 12 | ≥3 external contributions | 47 (HOSPITIUM), 48 (FORUM) | Create pathway, then attract |
-| 13 | ≥1 organic inbound link | 24 (DISTRIBUTIO), 68 (FOEDUS) | Distribution creates surface area |
-| 14 | ≥1 recognition event | 43 (PETITIO), 66 (ORATIO), 68 (FOEDUS) | Multiple vectors |
-| 15 | Portfolio updated with validation | 52 (RENOVATIO) | Quick update |
-| 16 | Bus factor >1 | 42 (PEREGRINUS), 58 (INSTRUMENTUM) | Test + tools |
-| 17 | 30+ days autonomous operation | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | Workflows healthy; soak test clock running |
+| # | Criterion | Required Sprints | Tracking | Notes |
+|---|-----------|-----------------|----------|-------|
+| 1 | 30-day soak test passes | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) | Soak test in progress (17/30 days) |
+| 2 | Stranger test ≥80% | 42 (PEREGRINUS), 73 (NAVIGATIO) | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) | Test first, fix second |
+| 3 | Engagement baseline established | 64 (VIGILIA), 74 (ANALYTICA) | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) | Passive collection + analytics |
+| 4 | Runbooks validated | 42 (PEREGRINUS) | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) | Stranger test validates runbooks |
+| 5 | ≥1 application submitted | 41 (SUBMISSIO) | **MET** | Doris Duke / Mozilla AMT submitted 2026-02-24 |
+| 6 | AI-conductor essay published | **ALREADY MET** | **MET** | Deployed 2026-02-11 |
+| 7 | ≥3 external feedback | 41 (SUBMISSIO), 44 (TESTIMONIUM) | [Omega #3](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/3) | Applications produce feedback |
+| 8 | ≥1 ORGAN-III product live | 27 BETA-VITAE (life-my--midst--in) | **MET** | 12 products deployed 2026-02-28 |
+| 9 | `revenue_status: live` for ≥1 entry | 40 (MERCATURA) | [Omega #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4) | Requires Stripe integration |
+| 10 | MRR ≥ system operating costs | 40 (MERCATURA) | [Omega #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4) | Requires payment integration |
+| 11 | ≥2 salons with external participants | 45 (CONVIVIUM), 46 (CONVIVIUM-II) | [Omega #5](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/5) | Two separate events |
+| 12 | ≥3 external contributions | 47 (HOSPITIUM), 48 (FORUM) | [Omega #6](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/6) | Create pathway, then attract |
+| 13 | ≥1 organic inbound link | 24 (DISTRIBUTIO), 68 (FOEDUS) | **MET** | LobeHub organic indexing 2026-02-28 |
+| 14 | ≥1 recognition event | 43 (PETITIO), 66 (ORATIO), 68 (FOEDUS) | [Omega #7](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/7) | Multiple vectors |
+| 15 | Portfolio updated with validation | 52 (RENOVATIO) | [Omega #8](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/8) | Quick update |
+| 16 | Bus factor >1 | 42 (PEREGRINUS), 58 (INSTRUMENTUM) | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) | Test + tools |
+| 17 | 30+ days autonomous operation | ~~17 (REMEDIUM)~~, 64 (VIGILIA) | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) | Soak test clock running (17/30) |
 
 ---
 

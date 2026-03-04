@@ -323,25 +323,25 @@ The minimum viable revenue path picks the single most deployment-ready product a
 
 Omega is achieved when all 17 criteria below are met. Each criterion is measurable, binary (met or not met), and linked to a specific horizon. No criterion can be waived. The criteria are designed to be achievable within 12-24 months, with a 6-36 month acceptable range accounting for external dependencies (grant cycles, community formation, market timing).
 
-| # | Criterion | Horizon | Measurement |
-|---|-----------|---------|-------------|
-| 1 | 30-day soak test passes (≤3 critical incidents) | H1 | Soak test report |
-| 2 | Stranger test score ≥80% | H1 | Test protocol results |
-| 3 | Engagement baseline established (30 days of data) | H1 | Engagement report |
-| 4 | Runbooks validated by second operator | H1 | Validation log |
-| 5 | ≥1 application submitted | H2 | Application tracker |
-| 6 | AI-conductor essay published | H2 | Public-process URL |
-| 7 | ≥3 pieces of external feedback collected | H2 | Feedback synthesis doc |
-| 8 | ≥1 ORGAN-III product live | H3 | Product URL + user count |
-| 9 | `revenue_status: live` for ≥1 registry entry | H3 | `registry-v2.json` |
-| 10 | MRR ≥ system operating costs | H3 | Financial record |
-| 11 | ≥2 salons/events held with external participants | H4 | Event records |
-| 12 | ≥3 external contributions to the system | H4 | GitHub activity |
-| 13 | ≥1 organic inbound link from external site | H4 | Analytics |
-| 14 | ≥1 recognition event (grant, citation, invitation, or adoption) | H5 | Evidence URL |
-| 15 | Portfolio updated with external validation | H5 | Portfolio site |
-| 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log |
-| 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data |
+| # | Criterion | Horizon | Measurement | Tracking |
+|---|-----------|---------|-------------|----------|
+| 1 | 30-day soak test passes (≤3 critical incidents) | H1 | Soak test report | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) |
+| 2 | Stranger test score ≥80% | H1 | Test protocol results | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) |
+| 3 | Engagement baseline established (30 days of data) | H1 | Engagement report | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) |
+| 4 | Runbooks validated by second operator | H1 | Validation log | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) |
+| 5 | ≥1 application submitted | H2 | Application tracker | MET |
+| 6 | AI-conductor essay published | H2 | Public-process URL | MET |
+| 7 | ≥3 pieces of external feedback collected | H2 | Feedback synthesis doc | [Omega #3](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/3) |
+| 8 | ≥1 ORGAN-III product live | H3 | Product URL + user count | MET |
+| 9 | `revenue_status: live` for ≥1 registry entry | H3 | `registry-v2.json` | [Omega #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4) |
+| 10 | MRR ≥ system operating costs | H3 | Financial record | [Omega #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4) |
+| 11 | ≥2 salons/events held with external participants | H4 | Event records | [Omega #5](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/5) |
+| 12 | ≥3 external contributions to the system | H4 | GitHub activity | [Omega #6](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/6) |
+| 13 | ≥1 organic inbound link from external site | H4 | Analytics | MET |
+| 14 | ≥1 recognition event (grant, citation, invitation, or adoption) | H5 | Evidence URL | [Omega #7](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/7) |
+| 15 | Portfolio updated with external validation | H5 | Portfolio site | [Omega #8](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/8) |
+| 16 | Bus factor >1 (validated, not just documented) | H1+H4 | Second operator log | [Omega #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) |
+| 17 | System operates 30+ days without primary operator intervention | H1 | Soak test data | [Omega #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) |
 
 **Progress tracking:** The omega checklist should be reviewed monthly. Each criterion transitions from `NOT MET` → `IN PROGRESS` → `MET` with a date stamp and evidence link. The review cadence aligns with the monthly-organ-audit workflow already running in ORGAN-IV.
 

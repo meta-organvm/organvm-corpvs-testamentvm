@@ -12,6 +12,25 @@
 
 ---
 
+## GitHub Tracking
+
+All omega criteria and remaining sprints are tracked as GitHub issues on [`meta-organvm/organvm-corpvs-testamentvm`](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues).
+
+| Omega Criteria | Issue | Sprint Issues |
+|----------------|-------|---------------|
+| #1, #3, #17 (soak) | [#1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1) | [#45](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/45) VIGILIA, [#46](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/46) VIGILIA-II |
+| #2, #4, #16 (stranger test) | [#2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2) | [#26](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/26) PEREGRINUS |
+| #7 (feedback) | [#3](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/3) | [#28](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/28) TESTIMONIUM |
+| #9, #10 (revenue) | [#4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4) | [#25](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/25) MERCATURA |
+| #11 (salons) | [#5](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/5) | [#29](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/29) CONVIVIUM, [#30](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/30) CONVIVIUM-II |
+| #12 (contributions) | [#6](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/6) | [#31](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/31) HOSPITIUM, [#32](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/32) FORUM |
+| #14 (recognition) | [#7](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/7) | [#27](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/27) PETITIO, [#47](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/47) ORATIO |
+| #15 (portfolio) | [#8](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/8) | [#36](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/36) RENOVATIO |
+
+Scorecard code fix: [`organvm-engine#1`](https://github.com/meta-organvm/organvm-engine/issues/1) — sync `_KNOWN_MET` to include #8 and #13.
+
+---
+
 ## Summary
 
 | Status | Count | Criteria |
@@ -66,6 +85,8 @@
 
 **Rolling TODO:** S1-II
 
+**Tracking:** [Omega issue #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1), [Sprint 64 VIGILIA #45](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/45)
+
 ---
 
 #### #2: Stranger Test Score >=80% — NOT STARTED
@@ -82,6 +103,8 @@
 **Blocker:** EXTERNAL — requires human participant
 
 **Rolling TODO:** M1-II
+
+**Tracking:** [Omega issue #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2), [Sprint 42 PEREGRINUS #26](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/26)
 
 ---
 
@@ -108,6 +131,8 @@
 
 **Rolling TODO:** E2 (completed — soak test now collecting real data)
 
+**Tracking:** [Omega issue #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1), [Sprint 74 ANALYTICA #55](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/55)
+
 ---
 
 #### #4: Runbooks Validated by Second Operator — NOT STARTED
@@ -125,6 +150,8 @@
 **Blocker:** EXTERNAL — requires second person
 
 **Rolling TODO:** M1-II (combined with stranger test — same participant could validate both)
+
+**Tracking:** [Omega issue #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2), [Sprint 42 PEREGRINUS #26](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/26)
 
 ---
 
@@ -185,6 +212,8 @@
 
 **Rolling TODO:** Fed by X1, X4, M1-II
 
+**Tracking:** [Omega issue #3](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/3), [Sprint 44 TESTIMONIUM #28](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/28)
+
 ---
 
 ### H3: Generate Revenue
@@ -244,6 +273,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 
 **Rolling TODO:** M2-II
 
+**Tracking:** [Omega issue #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4), [Sprint 40 MERCATURA #25](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/25)
+
 ---
 
 #### #10: MRR >= System Operating Costs — NOT STARTED
@@ -259,6 +290,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Blocker:** Depends on #9
 
 **Rolling TODO:** Downstream of M2-II
+
+**Tracking:** [Omega issue #4](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/4)
 
 ---
 
@@ -281,6 +314,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 
 **Rolling TODO:** S2-II
 
+**Tracking:** [Omega issue #5](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/5), [Sprint 45 CONVIVIUM #29](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/29), [Sprint 46 CONVIVIUM-II #30](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/30)
+
 ---
 
 #### #12: >=3 External Contributions — IN PROGRESS
@@ -300,6 +335,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Blocker:** EXTERNAL — needs community discovery and engagement
 
 **Rolling TODO:** S3-II
+
+**Tracking:** [Omega issue #6](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/6), [Sprint 47 HOSPITIUM #31](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/31), [Sprint 48 FORUM #32](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/32)
 
 ---
 
@@ -343,6 +380,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 
 **Rolling TODO:** S6-II, E3
 
+**Tracking:** [Omega issue #7](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/7), [Sprint 43 PETITIO #27](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/27), [Sprint 66 ORATIO #47](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/47)
+
 ---
 
 #### #15: Portfolio Updated with External Validation — NOT STARTED
@@ -361,6 +400,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Blocker:** Depends on external validation from other criteria
 
 **Rolling TODO:** M3-II (partial — data files updated, omega scorecard page pending)
+
+**Tracking:** [Omega issue #8](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/8), [Sprint 52 RENOVATIO #36](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/36)
 
 ---
 
@@ -388,6 +429,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Blocker:** EXTERNAL — requires second person (potentially same as #2 and #4)
 
 **Rolling TODO:** M1-II (shares participant with stranger test)
+
+**Tracking:** [Omega issue #2](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/2), [Sprint 42 PEREGRINUS #26](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/26)
 
 ---
 
@@ -417,6 +460,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Completion target:** ~March 18, 2026
 
 **Rolling TODO:** S1-II
+
+**Tracking:** [Omega issue #1](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/1), [Sprint 64 VIGILIA #45](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/45)
 
 ---
 
@@ -450,3 +495,4 @@ H5 (#14, #15) ──external response──→ H5 last
 | 2026-02-17 | AMPLIFICATIO evidence update — #12, #14, #16 flipped NOT STARTED → IN PROGRESS; #1, #5, #6, #17 evidence strengthened; summary 1/5/11 → 1/8/8; organic link check (#13) negative | Post-AMPLIFICATIO maturation |
 | 2026-02-24 | System-Wide Activation Sprint — #8 flipped IN PROGRESS → MET (life-my--midst--in deployed on Render); ORGAN-VI promoted to PUBLIC_PROCESS; first real salon event created; summary 1/8/8 → 2/7/8 | System-Wide Activation Sprint |
 | 2026-02-28 | Deployment Sprint — #5 flipped IN PROGRESS → MET (application submitted 02-24); #8 evidence massively expanded (12 products live across Netlify/Render); #13 flipped NOT STARTED → MET (LobeHub organic indexing of ORGAN-IV skills discovered); summary 2/7/8 → 4/6/7 | Full Deployment Sprint |
+| 2026-03-04 | GitHub issue tracking — 58 issues created across organvm-engine (1) and organvm-corpvs-testamentvm (57). 9 omega tracking issues + 48 sprint issues + 1 scorecard code fix. Tracking links added to all 17 criteria entries in this document. | Issue codification session |
