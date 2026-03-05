@@ -48,6 +48,24 @@ def load_registry() -> dict:
 
 
 def save_registry(data: dict):
+    # Guard: refuse to write a suspiciously small registry
+    repo_count = sum(
+        len(organ.get("repositories", []))
+        for organ in data.get("organs", {}).values()
+        if isinstance(organ, dict)
+    )
+    if repo_count < 50:
+        raise ValueError(
+            f"Refusing to write registry with only {repo_count} repos. "
+            f"This looks like test/corrupt data."
+        )
+
+    # Backup before overwrite
+    import shutil
+    backup = REGISTRY_PATH.with_suffix(".json.bak")
+    if REGISTRY_PATH.exists():
+        shutil.copy2(REGISTRY_PATH, backup)
+
     with open(REGISTRY_PATH, "w") as f:
         json.dump(data, f, indent=2)
         f.write("\n")

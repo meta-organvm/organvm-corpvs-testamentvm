@@ -458,6 +458,13 @@ def promote_repo(org, repo, lang, ci_template, dry_run=False):
 
 def update_registry(promoted_repos):
     """Update registry-v2.json with PRODUCTION status for promoted repos."""
+    import shutil
+    # Backup before any modification
+    backup = REGISTRY_PATH.with_suffix(".json.bak")
+    if REGISTRY_PATH.exists():
+        shutil.copy2(REGISTRY_PATH, backup)
+        print(f"  Backup: {backup}")
+
     with open(REGISTRY_PATH) as f:
         registry = json.load(f)
 
@@ -506,6 +513,16 @@ def update_registry(promoted_repos):
         f"{counts.get('ARCHIVED', 0)} ARCHIVED. "
         f"89 registry entries, all on GitHub."
     )
+
+    # Guard: refuse to write suspiciously small registry
+    total_repos = sum(
+        len(organ.get("repositories", []))
+        for organ in registry.get("organs", {}).values()
+        if isinstance(organ, dict)
+    )
+    if total_repos < 50:
+        print(f"ERROR: Registry has only {total_repos} repos — refusing to write (likely corrupt)")
+        return
 
     with open(REGISTRY_PATH, "w") as f:
         json.dump(registry, f, indent=2)

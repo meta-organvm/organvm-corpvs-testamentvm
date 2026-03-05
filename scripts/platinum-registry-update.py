@@ -88,6 +88,18 @@ DESIGN_ONLY_REPOS = set()
 
 
 def main():
+    import argparse
+    import shutil
+
+    parser = argparse.ArgumentParser(description="Update registry with Platinum Sprint fields")
+    parser.add_argument("--dry-run", action="store_true", default=True,
+                        help="Preview changes without writing (default)")
+    parser.add_argument("--write", action="store_true",
+                        help="Actually write changes to registry")
+    args = parser.parse_args()
+
+    dry_run = not args.write
+
     with open(REGISTRY_PATH) as f:
         registry = json.load(f)
 
@@ -180,6 +192,32 @@ def main():
                 status_counts[s] += 1
 
     registry["launch_metrics"]["implementation_status_distribution"] = status_counts
+
+    if dry_run:
+        print(f"[DRY RUN] Would update registry:")
+        print(f"  Schema: v0.3")
+        print(f"  Repos updated: {updated_count}")
+        print(f"  Platinum repos: {platinum_count}")
+        print(f"  CI workflows: {ci_count}")
+        print(f"  Implementation status distribution: {status_counts}")
+        print(f"\nRe-run with --write to apply changes.")
+        return
+
+    # Guard: refuse to write suspiciously small registry
+    total_repos = sum(
+        len(organ.get("repositories", []))
+        for organ in registry.get("organs", {}).values()
+        if isinstance(organ, dict)
+    )
+    if total_repos < 50:
+        print(f"ERROR: Registry has only {total_repos} repos — refusing to write")
+        return
+
+    # Backup before overwrite
+    backup = REGISTRY_PATH.with_suffix(".json.bak")
+    if REGISTRY_PATH.exists():
+        shutil.copy2(REGISTRY_PATH, backup)
+        print(f"  Backup: {backup}")
 
     with open(REGISTRY_PATH, "w") as f:
         json.dump(registry, f, indent=2, ensure_ascii=False)
