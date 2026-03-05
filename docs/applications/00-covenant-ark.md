@@ -18,9 +18,9 @@
 | Metric | Value |
 |--------|-------|
 | Total repositories | 103 |
-| Implementation status | 93 ACTIVE, 9 ARCHIVED |
+| Implementation status | 94 ACTIVE, 9 ARCHIVED |
 | GitHub organizations | 8 (7 organ orgs + 1 meta-org) |
-| Published essays | 46 (~404K+ words) |
+| Published essays | 47 (~404K+ words) |
 | Total documentation | ~410K+ words |
 | Named development sprints | 33 completed + 48 cataloged |
 | Architecture Decision Records | 16 (ADR-001 through ADR-016) |
@@ -123,7 +123,7 @@ Systems artist. Creator of the ORGANVM eight-organ system — 100 repositories, 
 |---|------|-----|---------------------|
 | 1 | Portfolio Site | https://4444j99.github.io/portfolio/ | Interactive portfolio with generative art (p5.js), CMYK design system, 19 curated projects |
 | 2 | Eight-Organ System Hub | https://github.com/meta-organvm/organvm-corpvs-testamentvm | Governance corpus: ~404K+ words, registry, orchestration specs, 33 sprint records |
-| 3 | Public Process Essays | https://organvm-v-logos.github.io/public-process/ | 46 essays documenting creative methodology in real time (~404K+ words) |
+| 3 | Public Process Essays | https://organvm-v-logos.github.io/public-process/ | 47 essays documenting creative methodology in real time (~404K+ words) |
 | 4 | Recursive Engine | https://github.com/organvm-i-theoria/recursive-engine--generative-entity | Symbolic operating system: 1,254 tests, 85% coverage, 21 organ handlers, custom DSL |
 | 5 | Agentic Titan | https://github.com/organvm-iv-taxis/agentic-titan | Multi-agent orchestration framework: 1,095 tests, 18 development phases |
 | 6 | life-my--midst--in | https://github.com/organvm-iii-ergon/life-my--midst--in | Interactive identity platform: 291 tests, 44 DB tables, Inverted Interview paradigm |
@@ -212,7 +212,7 @@ What you can claim, with proof:
 | Claim | Evidence | Verification |
 |-------|----------|-------------|
 | 100 repos across 8 orgs | registry-v2.json | `jq '.summary.total_repos' registry-v2.json` → 100 |
-| 93 ACTIVE, 9 ARCHIVED | registry-v2.json | implementation_status_distribution field |
+| 94 ACTIVE, 9 ARCHIVED | registry-v2.json | implementation_status_distribution field |
 | 42 published essays | public-process/_posts/ | `ls _posts/ \| wc -l` → 42 |
 | ~404K+ words in essays | Word count of _posts/ | Measured at deploy |
 | ~410K+ total words | Aggregate across all repos | system-metrics.json |

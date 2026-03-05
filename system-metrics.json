@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-03-04T21:04:00.547224+00:00",
+  "generated": "2026-03-05T00:50:41.403434+00:00",
   "computed": {
     "total_repos": 103,
-    "active_repos": 93,
+    "active_repos": 94,
     "archived_repos": 9,
     "total_organs": 8,
     "operational_organs": 8,
@@ -44,9 +44,8 @@
       }
     },
     "implementation_status": {
-      "ACTIVE": 93,
-      "ARCHIVED": 9,
-      "PRODUCTION": 1
+      "ACTIVE": 94,
+      "ARCHIVED": 9
     },
     "sprints_completed": 33,
     "sprint_names": [
@@ -84,7 +83,7 @@
       "32-sensoria",
       "33-operatio"
     ],
-    "published_essays": 46
+    "published_essays": 47
   },
   "manual": {
     "_note": "Edit these by hand. calculate-metrics.py preserves this section."
