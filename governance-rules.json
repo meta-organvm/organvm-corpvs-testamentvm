@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "schema_note": "Governance rules v2.0 — post-construction operational rules (REGULA sprint, 2026-03-04). Updated from v1.0 to reflect operational reality: all 8 organs launched, 103 repos tracked, schema v1.0.0. Promotion rules retained as archival context; dependency and audit rules are actively enforced.",
+  "schema_note": "Governance rules v2.0 \u2014 post-construction operational rules (REGULA sprint, 2026-03-04). Updated from v1.0 to reflect operational reality: all 8 organs launched, 103 repos tracked, schema v1.0.0. Promotion rules retained as archival context; dependency and audit rules are actively enforced.",
   "dependency_rules": {
     "max_transitive_depth": 4,
     "no_circular_dependencies": true,
@@ -34,8 +34,16 @@
       "ORGAN-III->ORGAN-I"
     ],
     "back_edge_definition": "Within the I-II-III chain, data flows I->II->III. A back-edge is any dependency where a lower-numbered organ depends on a higher-numbered organ (e.g., I depends on II, or II depends on III). ORGAN-IV through Meta may reference any organ. ORGAN-III->VI and ORGAN-III->VII are forward edges (products feed community and distribution).",
-    "restricted_organs": ["ORGAN-I", "ORGAN-II", "ORGAN-III"],
-    "restricted_orgs": ["organvm-i-theoria", "organvm-ii-poiesis", "organvm-iii-ergon"]
+    "restricted_organs": [
+      "ORGAN-I",
+      "ORGAN-II",
+      "ORGAN-III"
+    ],
+    "restricted_orgs": [
+      "organvm-i-theoria",
+      "organvm-ii-poiesis",
+      "organvm-iii-ergon"
+    ]
   },
   "promotion_rules_note": "Construction-era promotion rules. Defined cross-organ repo promotion during the build phase (Feb 2026). Retained as archival context; not enforced by any current code path. See ADR-016.",
   "promotion_rules": {
@@ -78,12 +86,31 @@
     }
   },
   "state_machine": {
-    "states": ["LOCAL", "CANDIDATE", "PUBLIC_PROCESS", "GRADUATED", "ARCHIVED"],
+    "states": [
+      "LOCAL",
+      "CANDIDATE",
+      "PUBLIC_PROCESS",
+      "GRADUATED",
+      "ARCHIVED"
+    ],
     "transitions": {
-      "LOCAL": ["CANDIDATE", "ARCHIVED"],
-      "CANDIDATE": ["PUBLIC_PROCESS", "LOCAL", "ARCHIVED"],
-      "PUBLIC_PROCESS": ["GRADUATED", "CANDIDATE", "ARCHIVED"],
-      "GRADUATED": ["ARCHIVED"],
+      "LOCAL": [
+        "CANDIDATE",
+        "ARCHIVED"
+      ],
+      "CANDIDATE": [
+        "PUBLIC_PROCESS",
+        "LOCAL",
+        "ARCHIVED"
+      ],
+      "PUBLIC_PROCESS": [
+        "GRADUATED",
+        "CANDIDATE",
+        "ARCHIVED"
+      ],
+      "GRADUATED": [
+        "ARCHIVED"
+      ],
       "ARCHIVED": []
     },
     "promotion_criteria": {
@@ -163,5 +190,6 @@
       "requires_readme": true,
       "requires_seed_yaml": true
     }
-  }
+  },
+  "schema_version": "1"
 }
