@@ -60,7 +60,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Ontology work differentiates from standard AI practice",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (2,216 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -163,7 +163,7 @@
           "dependencies": [
             "organvm-i-theoria/a-recursive-root"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (4,171 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -181,7 +181,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - Orchestration foundation",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (2,549 words). Promoted stub\u2192standard 2026-02-11. Full project structure: pyproject.toml, src/ (promotion.py, rules.py, validator.py), tests/, 14 CI workflows. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -201,7 +201,7 @@
           "dependencies": [
             "organvm-i-theoria/recursive-engine--generative-entity"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,186 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -219,7 +219,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Theoretical foundation",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,382 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -239,7 +239,7 @@
           "dependencies": [
             "organvm-i-theoria/a-recursive-root"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,796 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -296,7 +296,7 @@
           "dependencies": [
             "organvm-i-theoria/recursive-engine--generative-entity"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-12",
           "note": "Silver Sprint README deployed 2026-02-10 (5,038 words).",
@@ -349,7 +349,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Multi-agent theory",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (2,930 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed \u2014 persona, operations, registry modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -367,7 +367,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Computational rhetoric methodology",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (4,636 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -386,7 +386,7 @@
           "dependencies": [
             "organvm-i-theoria/linguistic-atomization-framework"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10. Silver Sprint README deployed 2026-02-10 (3,152 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -404,7 +404,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates epistemological rigor and knowledge architecture",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,469 words). Integrated from local planning materials. CONVERGENCE: promoted DESIGN_ONLY\u2192PRODUCTION, Python skeleton + full CI deployed. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -489,7 +489,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,125 words). Promoted stub\u2192standard 2026-02-11. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -528,7 +528,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,036 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed \u2014 interface, motion, renderer modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -545,7 +545,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - Aggregates art work for visibility",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (2,864 words). PROTOTYPE Sprint 2026-02-12: Python package with data/, src/, tests/, Python CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -563,7 +563,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Historical record",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,127 words). CONSOLIDATION-II: Python prototype deployed \u2014 catalog, metadata, provenance modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -581,7 +581,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - Evidence of systemic artistic practice",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,332 words). PROTOTYPE Sprint 2026-02-12: Python package with parser, cross_reference, export modules. 17 tests, Python CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -599,7 +599,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Community contribution",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,685 words). CONSOLIDATION-II: Python prototype deployed \u2014 curriculum, paths, exercises modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -637,7 +637,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (3,920 words). Consolidation Sprint: Python prototype deployed \u2014 src/ (sensor_sim, mapping, output, engine, config), renderers/ (terminal, json_stream, osc), 3 YAML presets, 15+ tests. Phase 3 Sprint: validated 1,439+ lines, 81 tests, 3 presets, terminal+OSC renderers, CI passing. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -654,7 +654,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Most relevant 2026 topic for grants and hiring",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created and README deployed 2026-02-11 Gap-Fill Sprint (4,172 words). Consolidation Sprint: Python prototype deployed \u2014 src/ (session, attribution, conductor, export, metrics), workflows/ (text_generation, code_generation), examples/, 15+ tests. Phase 3 Sprint: validated 1,190+ lines, 92 test methods, 2 demo scripts, CI passing. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -711,7 +711,7 @@
             "organvm-ii-poiesis/performance-sdk",
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,194 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -729,7 +729,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 577 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
@@ -746,7 +746,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Artist infrastructure",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,050 words). PROTOTYPE Sprint 2026-02-12: Python package with template_engine, grant_finder, portfolio_builder modules. Tests + Python CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -766,7 +766,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (2,981 words). CONSOLIDATION-II: TypeScript prototype deployed \u2014 client, websocket, events modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -783,7 +783,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Academic documentation",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (2,907 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed \u2014 publication, datasets, citations modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -802,7 +802,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,146 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed \u2014 server, client, dialogue modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -821,7 +821,7 @@
           "dependencies": [
             "organvm-ii-poiesis/metasystem-master"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (2,512 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: TypeScript prototype deployed \u2014 osc, webaudio, bridge modules. Tests + CI green. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -841,7 +841,7 @@
           "dependencies": [
             "organvm-i-theoria/auto-revision-epistemic-engine"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-12 ASCENSION Sprint. Art derivative of ORGAN-I auto-revision-epistemic-engine. Python package with CI. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -861,7 +861,7 @@
           "dependencies": [
             "organvm-i-theoria/narratological-algorithmic-lenses"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-12 ASCENSION Sprint. Art derivative of ORGAN-I narratological-algorithmic-lenses. Python package with CI. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -879,7 +879,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates serious games and behavioral science integration",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,689 words). Integrated from local planning materials. CONVERGENCE: promoted DESIGN_ONLY\u2192PRODUCTION, Python skeleton + full CI deployed. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -897,7 +897,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - Demonstrates generative art and audio synthesis",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,483 words). Integrated from local planning materials. CONVERGENCE: promoted DESIGN_ONLY\u2192PRODUCTION, TypeScript skeleton + full CI deployed. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -915,7 +915,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates experiential design and ethical technology",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created GENESIS Sprint 2026-02-12. README deployed (3,669 words). Integrated from local planning materials. CONVERGENCE: promoted DESIGN_ONLY\u2192PRODUCTION, TypeScript skeleton + full CI deployed. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -951,12 +951,12 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates literary craft research and queer aesthetic theory",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "note": "Created 2026-02-14. Creative theory document corpus \u2014 ~20 markdown files exploring queer theory, literary technique, double-channel text, concealment as compositional engine. Promoted DESIGN_ONLY\u2192ACTIVE: substantive intellectual content (document corpus IS the deliverable)."
         },
         {
@@ -968,12 +968,12 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Creative tooling, alchemical process metaphor",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "note": "Added CONCORDIA Sprint 2026-02-16. Was in intake/ pre-organ; transferred to ORGAN-II."
         },
         {
@@ -1110,7 +1110,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Sophisticated systems architecture",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (4,135 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1195,7 +1195,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Workflow automation",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,550 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1215,7 +1215,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Business intelligence",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (3,731 words). Promoted stub\u2192standard 2026-02-11. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1236,7 +1236,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint README deployed 2026-02-10 (4,108 words). Promoted stub\u2192standard 2026-02-11. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1296,7 +1296,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Full-stack SaaS product",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,974 words). Consolidation Sprint: validated Docker Compose stack, added demo-mode.md, root .env.example, fixed deployment docs. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1316,7 +1316,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Utility tool",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Fork of pionxzh/chatgpt-exporter. Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (2,863 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1336,7 +1336,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 563 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
@@ -1445,7 +1445,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - macOS utility tool",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (4,299 words). Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1465,7 +1465,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "INTERNAL - Commerce governance infrastructure",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-11 Consolidation Sprint. README + directory scaffold deployed. EXODUS Sprint 2026-02-12: promoted SKELETON\u2192PRODUCTION, CI passing. Promoted LOCAL\u2192CANDIDATE 2026-02-24 (PROPULSIO MAXIMA Sprint).",
@@ -1531,12 +1531,12 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "LOW - Android/Kotlin mod project",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "implementation_status": "ACTIVE",
           "ci_workflow": "python-package.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "revenue_model": "none",
           "revenue_status": "n/a",
           "note": "Added CONCORDIA Sprint 2026-02-16. Cron workflow disabled in ILLUSTRATIO."
@@ -1551,7 +1551,7 @@
           "documentation_status": "MINIMAL",
           "portfolio_relevance": "LOW - Binary data archive, no README",
           "dependencies": [],
-          "promotion_status": "LOCAL",
+          "promotion_status": "ARCHIVED",
           "tier": "archive",
           "last_validated": "2026-02-16",
           "implementation_status": "ACTIVE",
@@ -1571,12 +1571,12 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "LOW - Satirical web project",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "revenue_model": "none",
           "revenue_status": "n/a",
           "note": "Added CONCORDIA Sprint 2026-02-16."
@@ -1587,7 +1587,7 @@
           "status": "ACTIVE",
           "public": true,
           "type": "SaaS",
-          "description": "Styx — peer-audited behavioral market using loss aversion and financial stakes. NestJS API, Next.js web, React Native mobile, Tauri desktop. 499+ tests, formal thesis with 9 theorem proofs, 8 validation gates.",
+          "description": "Styx \u2014 peer-audited behavioral market using loss aversion and financial stakes. NestJS API, Next.js web, React Native mobile, Tauri desktop. 499+ tests, formal thesis with 9 theorem proofs, 8 validation gates.",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - Most tested repo in system (499+ tests), formal academic thesis, full business organism with 7 agent departments",
           "dependencies": [],
@@ -1641,7 +1641,7 @@
           "dependencies": [
             "organvm-i-theoria/system-governance-framework"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-12",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,717 words). PROTOTYPE Sprint 2026-02-12: Python package with governance engine, policy rules, audit modules. Tests + Python CI green.",
@@ -1659,7 +1659,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Infrastructure",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-11",
           "note": "Transferred from organvm-i-theoria 2026-02-10 Silver Sprint README deployed 2026-02-10 (2,811 words). Promoted stub\u2192standard 2026-02-11. CONSOLIDATION-II: Python prototype deployed \u2014 node, network, discovery modules. Tests + CI green.",
@@ -1676,7 +1676,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 575 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
@@ -1714,7 +1714,7 @@
           "dependencies": [
             "organvm-iv-taxis/agentic-titan"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,394 words).",
@@ -1733,7 +1733,7 @@
           "dependencies": [
             "organvm-iv-taxis/agent--claude-smith"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Transferred from 4444J99 personal account 2026-02-10 Silver Sprint README deployed 2026-02-10 (3,222 words).",
@@ -1773,7 +1773,7 @@
             "organvm-iii-ergon/public-record-data-scrapper",
             "organvm-iv-taxis/agentic-titan"
           ],
-          "promotion_status": "PUBLIC_PROCESS",
+          "promotion_status": "GRADUATED",
           "tier": "flagship",
           "last_validated": "2026-02-11",
           "note": "Created Bronze Sprint 2026-02-10. Silver Sprint README (4,040w). Gold Sprint: 5 meta-system essays deployed (21,625 total words).",
@@ -1791,7 +1791,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 632 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
@@ -2031,7 +2031,7 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "CRITICAL - System-wide identity and entry point",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Silver Sprint: org profile README expanded to 1,213 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
@@ -2048,7 +2048,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution",
           "dependencies": [],
-          "promotion_status": "PUBLIC_PROCESS",
+          "promotion_status": "GRADUATED",
           "tier": "flagship",
           "last_validated": "2026-02-11",
           "note": "Initial commit 2026-02-11. 131 files, ~45K lines. Contains genesis transcripts, planning toolkit, governance specs, validation scripts, registry, cross-AI validation runs, and full execution history.",
@@ -2068,13 +2068,13 @@
           "dependencies": [
             "meta-organvm/organvm-corpvs-testamentvm"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-12. Python CLI tool with 8 commands (intake, absorb, alchemize, status, review, capture, sync, synthesize). 6 capture channels (screenshot watcher, bookmarks, Apple Notes, AI chats, Google Docs, quick-capture CLI). Synthesis engine generates per-organ creative briefs. 19 tests passing.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "schema-definitions",
@@ -2085,13 +2085,13 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Contract-first design for system-wide data validation",
           "dependencies": [],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-17. 6 JSON Schema files (Draft 2020-12), 3 examples, validator script, 11 passing tests.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "organvm-engine",
@@ -2104,7 +2104,7 @@
           "dependencies": [
             "meta-organvm/schema-definitions"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "flagship",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-17. 7 module groups (registry, governance, seed, metrics, dispatch, git, contextmd), unified CLI ('organvm' command with 12 subcommands), 192 passing tests. Pitchdeck generator, omega scorecard, context sync. Validates production registry (101 repos), dependency graph (31 edges, 0 violations), discovers 99+ seed.yaml files. Promoted LOCAL\u2192CANDIDATE 2026-02-24.",
@@ -2124,13 +2124,13 @@
             "meta-organvm/organvm-engine",
             "meta-organvm/organvm-corpvs-testamentvm"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-17. FastAPI app with 6 routes, 7 Jinja2 templates, file-watching cache, 11 passing tests. Reads data from organvm-corpvs-testamentvm JSON files. Promoted LOCAL\u2192CANDIDATE 2026-02-24.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "organvm-mcp-server",
@@ -2143,13 +2143,13 @@
           "dependencies": [
             "meta-organvm/organvm-engine"
           ],
-          "promotion_status": "LOCAL",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "infrastructure",
           "last_validated": "2026-02-24",
           "note": "Created 2026-02-21. Python package using MCP SDK. Registers 15 tools across 6 groups: registry, seeds, graph, health, context, pitch. 24 passing tests. Enables autonomous cross-repo awareness for AI assistants. Updated 2026-02-24.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-python.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "praxis-perpetua",
@@ -2162,13 +2162,13 @@
           "dependencies": [
             "meta-organvm/organvm-corpvs-testamentvm"
           ],
-          "promotion_status": "CANDIDATE",
+          "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
           "last_validated": "2026-03-06",
           "note": "Created 2026-03-06. Docs-only corpus for process governance. 6 standards (METADOC + 5 SOPs), 4 templates, session logs, derived principles. SOPs moved from superproject root.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci.yml",
-          "platinum_status": false
+          "platinum_status": true
         }
       ]
     }
