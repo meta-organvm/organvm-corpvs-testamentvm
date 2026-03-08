@@ -262,7 +262,7 @@
           "note": "Silver Sprint: org profile README expanded to 620 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "nexus--babel-alexandria-",
@@ -735,7 +735,7 @@
           "note": "Silver Sprint: org profile README expanded to 577 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "artist-toolkit-and-templates",
@@ -1342,7 +1342,7 @@
           "note": "Silver Sprint: org profile README expanded to 563 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "type": "internal",
           "revenue_model": "none",
           "revenue_status": "n/a"
@@ -1597,7 +1597,7 @@
           "note": "Registered 2026-03-06 (structural integrity audit). Previously unregistered despite 159 commits. Promoted from standard to flagship tier based on substance: 499+ tests, 147 doc files, 7 CI workflows, 8 validation gates, formal thesis, Terraform IaC, 7 specialist agent departments.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-typescript.yml",
-          "platinum_status": false,
+          "platinum_status": true,
           "revenue_model": "subscription",
           "revenue_status": "pre-launch"
         }
@@ -1682,7 +1682,7 @@
           "note": "Silver Sprint: org profile README expanded to 575 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "agentic-titan",
@@ -1797,7 +1797,7 @@
           "note": "Silver Sprint: org profile README expanded to 632 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false
+          "platinum_status": true
         }
       ]
     },
@@ -1923,7 +1923,7 @@
           "note": "Silver Sprint: org profile README expanded to 772 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12. Phase 2: updated with full repo table. Promoted CANDIDATE\u2192PUBLIC_PROCESS 2026-02-24 (System-Wide Activation Sprint).",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false
+          "platinum_status": true
         }
       ]
     },
@@ -2037,7 +2037,7 @@
           "note": "Silver Sprint: org profile README expanded to 1,213 words (2026-02-10). GENESIS Sprint: promoted DESIGN_ONLY\u2192PRODUCTION 2026-02-12.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci-minimal.yml",
-          "platinum_status": false
+          "platinum_status": true
         },
         {
           "name": "organvm-corpvs-testamentvm",
