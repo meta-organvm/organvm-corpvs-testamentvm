@@ -1836,7 +1836,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Flagship community infrastructure",
           "dependencies": [
-            "koinonia-db"
+            "organvm-vi-koinonia/koinonia-db"
           ],
           "promotion_status": "PUBLIC_PROCESS",
           "tier": "flagship",
@@ -1857,7 +1857,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Community participation and facilitation",
           "dependencies": [
-            "koinonia-db"
+            "organvm-vi-koinonia/koinonia-db"
           ],
           "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
@@ -1878,7 +1878,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "MEDIUM - Educational facilitation",
           "dependencies": [
-            "koinonia-db"
+            "organvm-vi-koinonia/koinonia-db"
           ],
           "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
@@ -1898,7 +1898,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Demonstrates educational infrastructure and AI personalization",
           "dependencies": [
-            "koinonia-db"
+            "organvm-vi-koinonia/koinonia-db"
           ],
           "promotion_status": "PUBLIC_PROCESS",
           "tier": "standard",
@@ -1997,9 +1997,9 @@
           "documentation_status": "INFRASTRUCTURE",
           "portfolio_relevance": "INTERNAL",
           "dependencies": [
-            "announcement-templates",
-            "social-automation",
-            "distribution-strategy"
+            "organvm-vii-kerygma/announcement-templates",
+            "organvm-vii-kerygma/social-automation",
+            "organvm-vii-kerygma/distribution-strategy"
           ],
           "promotion_status": "GRADUATED",
           "tier": "infrastructure",
