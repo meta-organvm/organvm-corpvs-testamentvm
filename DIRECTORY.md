@@ -33,6 +33,7 @@ Concise map of the corpus. For detailed per-file annotations, see [`docs/ANNOTAT
 | `preparing-ai-handoff-autonomous-agent-scaffolding.md` | Pre-launch agent scaffolding and handoff protocols |
 | `universal-orchestrator-architecture.md` | Early universal orchestrator design (pre-ORGAN-IV split) |
 | `gemini-session-2026-02-15-organ-iv-architecture.md` | Gemini CLI session: ORGAN-IV automation engine design reasoning |
+| `01-artistic-triforce-creative-ontology.md` | Creative ontology: three polarities (Conscious, Subconscious, Temporal) orthogonal to 8-organ structure |
 
 ### `docs/planning/` — Layer 1: Phase 1 Planning Toolkit
 

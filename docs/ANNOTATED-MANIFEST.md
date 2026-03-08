@@ -193,6 +193,27 @@ The system is designed to:
 
 ---
 
+#### `01-artistic-triforce-creative-ontology.md`
+- **Size:** ~20 KB
+- **Format:** Structured essay (genesis-layer foundational document)
+- **Role:** CREATIVE ONTOLOGY — establishes three fundamental creative polarities that cut across all 8 organs
+- **Content (7 sections):**
+  1. **Preamble** — The artist at 35 recognizing recurring creative lanes; naming the shape
+  2. **The Problem** — Unconscious repetition in prolific artists (King, Allen, Whitman as case studies)
+  3. **The Three Polarities** — I. Conscious (present, autobiographical, persona as lens), II. Subconscious (hidden, masked, dreamlike, persona as mask), III. Temporal (past/future, mythology, canon, speculation)
+  4. **Orthogonality** — 8×3 matrix showing valid polarity × organ combinations; polarities are creative-intent categories, not organizational categories
+  5. **The Creative Process as Product** — Eno (environment-builder), Tarantino/Malick (director vs. selector), Reznor/Prince/Wilson (solo multi-instrumentalist), Whitman (one work, lifetime); commodifying the process itself
+  6. **Precedents** — Extended case studies: Eno, Tarantino, Malick, Reznor, Prince, Wilson, Whitman
+  7. **Relationship to Existing Infrastructure** — taste.yaml (form vs. content), ABSORB classifier (potential future polarity axis), seed contracts (polarity resonance edges)
+- **Key annotations:**
+  - Sister document to `essay-2-aesthetic-nervous-system.md`: that essay covers form (aesthetic governance), this covers content (creative intent)
+  - Orthogonal to the 8-organ structure — any organ's output can be Conscious, Subconscious, or Temporal
+  - Establishes vocabulary for a future polarity axis in the ABSORB classifier (not yet implemented)
+  - First genesis document numbered `01-` (post-audit), marking a new layer of foundational theory beyond the original `00-` system transcripts
+  - Key philosophical position: the creative process itself, made conscious and systematic, is the primary work of art
+
+---
+
 ### Layer 1: Phase 1 Planning Documents (01–05)
 
 These 5 documents form a sequential planning toolkit. Each is self-contained but references adjacent documents.
