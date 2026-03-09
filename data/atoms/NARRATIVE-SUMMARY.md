@@ -1,16 +1,16 @@
 # Prompt Narrative Analysis
-**Generated**: 2026-03-08
-**Sessions**: 1449 | **Prompts**: 3938 | **Threads**: 110
+**Generated**: 2026-03-09
+**Sessions**: 1459 | **Prompts**: 3947 | **Threads**: 110
 
 ## Prompt Type Distribution
 
 | Type | Count | % |
 |------|-------|---|
-| command | 1330 | 33% |
-| plan_invocation | 714 | 18% |
-| git_ops | 698 | 17% |
-| question | 486 | 12% |
-| context_setting | 326 | 8% |
+| command | 1334 | 33% |
+| plan_invocation | 716 | 18% |
+| git_ops | 699 | 17% |
+| question | 487 | 12% |
+| context_setting | 327 | 8% |
 | continuation | 268 | 6% |
 | exploration | 93 | 2% |
 | correction | 23 | 0% |
@@ -19,18 +19,18 @@
 
 | Class | Count | % |
 |-------|-------|---|
-| long | 1256 | 31% |
-| terse | 1222 | 31% |
-| short | 997 | 25% |
-| medium | 463 | 11% |
+| long | 1260 | 31% |
+| terse | 1223 | 30% |
+| short | 999 | 25% |
+| medium | 465 | 11% |
 
 ## Top Narrative Threads (by prompt count)
 
 | Thread | Sessions | Prompts | Date Range | Dominant Type |
 |--------|----------|---------|------------|---------------|
 | organvm-pactvm/ingesting-organ-document-structure/ | 93 | 336 | 2026-02-08..2026-02-16 | command |
+| meta-organvm/implement-2026-03-06..2026-03-09 | 85 | 327 | 2026-03-06..2026-03-09 | command |
 | 4444J99/application-pipeline/implement-2026-02-23. | 75 | 322 | 2026-02-23..2026-02-27 | command |
-| meta-organvm/implement-2026-03-06..2026-03-09 | 82 | 318 | 2026-03-06..2026-03-09 | command |
 | 4444J99/portfolio/implement-2026-02-15..2026-02-18 | 46 | 220 | 2026-02-15..2026-02-18 | command |
 | meta-organvm/organvm-corpvs-testamentvm/implement- | 50 | 187 | 2026-02-16..2026-02-18 | git_ops |
 | 4444J99/application-pipeline/implement-2026-02-28. | 38 | 180 | 2026-02-28..2026-03-05 | command |
@@ -62,13 +62,13 @@
 | 2025-12 | 23 | 23 | 13 | Users/4jp |
 | 2026-01 | 13 | 15 | 9 | 4jp/Legal/padavano-v-mdc--empl |
 | 2026-02 | 639 | 2771 | 62 | organvm-pactvm/ingesting-organ |
-| 2026-03 | 249 | 1123 | 26 | meta-organvm |
+| 2026-03 | 252 | 1132 | 26 | meta-organvm |
 
 ## Top Imperative Verbs
 
 | Verb | Count | % |
 |------|-------|---|
-| implement | 663 | 16% |
+| implement | 665 | 16% |
 | stage | 324 | 8% |
 | proceed | 87 | 2% |
 | commit | 73 | 1% |
@@ -102,31 +102,31 @@
 
 | Tag | Count |
 |-----|-------|
-| python | 530 |
-| bash | 387 |
-| pytest | 284 |
-| typescript | 221 |
-| go | 173 |
-| mcp | 162 |
+| python | 534 |
+| bash | 389 |
+| pytest | 285 |
+| typescript | 222 |
+| go | 175 |
+| mcp | 165 |
+| react | 145 |
 | node | 144 |
-| react | 144 |
 | astro | 133 |
 | p5.js | 102 |
-| docker | 89 |
+| docker | 90 |
 | jekyll | 78 |
 | postgresql | 74 |
 | neon | 74 |
 | vitest | 71 |
-| chezmoi | 68 |
+| chezmoi | 69 |
 | vite | 66 |
 | cloudflare | 66 |
 | javascript | 60 |
 | fastapi | 57 |
 | playwright | 56 |
-| redis | 54 |
-| zsh | 49 |
+| redis | 55 |
+| zsh | 50 |
 | vercel | 48 |
-| homebrew | 35 |
+| homebrew | 36 |
 | express | 33 |
 | supercollider | 33 |
 | terraform | 32 |

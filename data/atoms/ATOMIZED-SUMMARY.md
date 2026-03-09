@@ -1,6 +1,6 @@
 # Plan Atomization Summary
-**Generated**: 2026-03-08
-**Plans parsed**: 238 | **Tasks extracted**: 3293
+**Generated**: 2026-03-09
+**Plans parsed**: 254 | **Tasks extracted**: 3458
 
 ## By Project
 
@@ -11,9 +11,9 @@
 | 4444J99/portfolio/.claude/plans | 7 | 98 | 0 | 98 | 0 |
 | 4444J99/portfolio/.codex/plans | 1 | 1 | 0 | 1 | 0 |
 | 4444J99/portfolio/.gemini/plans | 4 | 30 | 0 | 30 | 0 |
-| _root | 43 | 477 | 3 | 474 | 0 |
-| meta-organvm/.claude/plans | 42 | 673 | 10 | 663 | 0 |
-| meta-organvm/.codex/plans | 4 | 35 | 0 | 35 | 0 |
+| _root | 44 | 565 | 3 | 562 | 0 |
+| meta-organvm/.claude/plans | 43 | 679 | 16 | 663 | 0 |
+| meta-organvm/.codex/plans | 5 | 36 | 0 | 36 | 0 |
 | meta-organvm/.gemini/plans | 1 | 16 | 0 | 16 | 0 |
 | meta-organvm/intake/alchemical-synthesizer/.claude/plans | 1 | 38 | 0 | 38 | 0 |
 | meta-organvm/organvm-engine/.claude/plans | 3 | 42 | 0 | 42 | 0 |
@@ -21,17 +21,20 @@
 | meta-organvm/stakeholder-portal/.claude/plans | 10 | 132 | 0 | 132 | 0 |
 | meta-organvm/stakeholder-portal/.codex/plans | 4 | 100 | 0 | 100 | 0 |
 | meta-organvm/stakeholder-portal/.gemini/plans | 5 | 22 | 0 | 22 | 0 |
+| organvm-i-theoria/hierarchia-mundi/.claude/plans | 1 | 14 | 0 | 14 | 0 |
 | organvm-ii-poiesis/.codex/plans | 1 | 4 | 0 | 4 | 0 |
+| organvm-ii-poiesis/metasystem-master/.codex/plans | 1 | 1 | 0 | 1 | 0 |
 | organvm-iii-ergon/.claude/plans | 2 | 2 | 0 | 2 | 0 |
 | organvm-iii-ergon/fetch-familiar-friends/.gemini/plans | 1 | 4 | 0 | 4 | 0 |
 | organvm-iii-ergon/peer-audited--behavioral-blockchain/.claude/plans | 21 | 296 | 0 | 296 | 0 |
-| organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans | 7 | 35 | 0 | 35 | 0 |
+| organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans | 13 | 58 | 0 | 58 | 0 |
+| organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans | 4 | 27 | 0 | 27 | 0 |
 | organvm-iv-taxis/.claude/plans | 12 | 236 | 19 | 217 | 0 |
 | organvm-iv-taxis/domus-semper-palingenesis/.claude/plans | 5 | 63 | 7 | 56 | 0 |
 | organvm-iv-taxis/domus-semper-palingenesis/.gemini/plans | 3 | 15 | 0 | 15 | 0 |
 | organvm-iv-taxis/orchestration-start-here/.claude/plans | 1 | 3 | 0 | 3 | 0 |
 | organvm-iv-taxis/orchestration-start-here/.gemini/plans | 1 | 1 | 0 | 1 | 0 |
-| organvm-iv-taxis/tool-interaction-design/.claude/plans | 20 | 333 | 0 | 333 | 0 |
+| organvm-iv-taxis/tool-interaction-design/.claude/plans | 21 | 338 | 0 | 338 | 0 |
 | organvm-iv-taxis/tool-interaction-design/.codex/plans | 2 | 9 | 0 | 9 | 0 |
 | organvm-iv-taxis/tool-interaction-design/.gemini/plans | 1 | 6 | 0 | 6 | 0 |
 | organvm-v-logos/.claude/plans | 5 | 80 | 0 | 80 | 0 |
@@ -42,28 +45,28 @@
 
 | Type | Count | % |
 |------|-------|---|
-| generic | 1187 | 36% |
-| create_file | 441 | 13% |
-| document | 297 | 9% |
-| modify_file | 267 | 8% |
-| write_test | 266 | 8% |
-| configure | 238 | 7% |
-| verify | 129 | 3% |
-| migrate | 99 | 3% |
-| research | 89 | 2% |
-| deploy | 88 | 2% |
-| git_operation | 67 | 2% |
+| generic | 1254 | 36% |
+| create_file | 459 | 13% |
+| document | 299 | 8% |
+| write_test | 277 | 8% |
+| modify_file | 274 | 7% |
+| configure | 262 | 7% |
+| verify | 140 | 4% |
+| migrate | 102 | 2% |
+| deploy | 95 | 2% |
+| research | 95 | 2% |
+| git_operation | 69 | 1% |
 | delete_file | 53 | 1% |
-| review | 34 | 1% |
-| exploration | 20 | 0% |
-| refactor | 18 | 0% |
+| review | 37 | 1% |
+| exploration | 21 | 0% |
+| refactor | 21 | 0% |
 
 ## By Status
 
 | Status | Count | % |
 |--------|-------|---|
-| pending | 3253 | 98% |
-| completed | 40 | 1% |
+| pending | 3412 | 98% |
+| completed | 46 | 1% |
 
 ## Largest Plans (by task count)
 
@@ -72,6 +75,7 @@
 | Conversation Summary: Research Ingestion SOP Searc | organvm-iv-taxis/.claude/plans | 64 | 0% |
 | Research Ingestion/Synthesis/Digestion SOP Discove | meta-organvm/.claude/plans | 62 | 0% |
 | Review: `~/.claude/plans/archive/` — Full Audit | meta-organvm/.claude/plans | 59 | 0% |
+| Session Lifecycle Architecture & Gap Analysis | _root | 57 | 0% |
 | Evaluation-to-Growth: Codebase Study v2 | 4444J99/application-pipeline/.claude/plans | 56 | 0% |
 | ORGANVM-IV Research Ingestion SOP Discovery — Conv | organvm-iv-taxis/.claude/plans | 54 | 0% |
 | Portfolio Project: Complete Failure Modes & Invari | 4444J99/portfolio/.claude/plans | 52 | 0% |
@@ -88,34 +92,38 @@
 | Stakeholder Portal Omnipresence + Omnipotence Plan | meta-organvm/stakeholder-portal/.codex/plans | 39 | 0% |
 | Ecosystem.yaml Exploration Summary | _root | 38 | 0% |
 | E2G Review #5 — Comprehensive Audit + Test Coverag | meta-organvm/intake/alchemical-synthesizer/.claude/plans | 38 | 0% |
-| Task Triage Report — 2026-03-07 | meta-organvm/.claude/plans | 37 | 27% |
 
 ## By Agent
 
 | Agent | Count | % |
 |-------|-------|---|
-| claude | 2960 | 89% |
-| codex | 239 | 7% |
-| gemini | 94 | 2% |
+| claude | 3073 | 88% |
+| codex | 264 | 7% |
+| gemini | 121 | 3% |
 
 ## By Organ
 
 | Organ | Count | % |
 |-------|-------|---|
-| META | 1178 | 35% |
-| IV | 745 | 22% |
-| LIMINAL | 644 | 19% |
-| III | 413 | 12% |
-| _root | 116 | 3% |
+| META | 1173 | 33% |
+| IV | 825 | 23% |
+| LIMINAL | 644 | 18% |
+| III | 463 | 13% |
+| _root | 141 | 4% |
 | V | 111 | 3% |
-| I | 82 | 2% |
-| II | 4 | 0% |
+| I | 96 | 2% |
+| II | 5 | 0% |
 
 ## Non-Actionable Documents
 
 | Plan | Project | Classification |
 |------|---------|----------------|
 | 2026-03-09 Exhaustive CI Remediation Plan | meta-organvm/.gemini/plans | modify_file |
+| Architecture: Ergon Test Harness (`ergon-test-harn | organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans | verify |
+| Plan: Organ III Test Repo Functional Spec | organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans | write_test |
+| Session Lifecycle Architecture & Gap Analysis | _root | generic |
+| Plan: Hierarchia Mundi — Phase 2: Dynamic Schema T | _root | configure |
+| Conductor Auto-Start & Session Runway | _root | generic |
 | Oracle Advisory Attack Plan | meta-organvm/.claude/plans | generic |
 | Phase 2: Activation Pipeline — Research → Implemen | organvm-iv-taxis/tool-interaction-design/.claude/plans | create_file |
 | Research Corpus Activation — Phase 1 Complete + Ba | organvm-iv-taxis/tool-interaction-design/.claude/plans | deploy |

@@ -1,8 +1,92 @@
 {
-  "generated": "2026-03-09T02:42:45Z",
-  "total_plans": 195,
-  "total_tasks": 2816,
+  "generated": "2026-03-09T16:36:59Z",
+  "total_plans": 210,
+  "total_tasks": 2893,
   "entries": [
+    {
+      "qualified_id": "claude:META:?:24h-retrospective-sop-distillation",
+      "path": "/Users/4jp/Workspace/meta-organvm/.claude/plans/2026-03-09-24h-retrospective-sop-distillation.md",
+      "agent": "claude",
+      "organ": "META",
+      "repo": null,
+      "slug": "24h-retrospective-sop-distillation",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "24-Hour Retrospective: Hiccup Analysis → SOP Distillation",
+      "size_bytes": 1993,
+      "has_verification": true,
+      "archetype": "checkbox",
+      "task_count": 6,
+      "completed_count": 6,
+      "tags": [],
+      "file_refs": [
+        "praxis-perpetua/standards/SOP--container-deployment-preflight.md",
+        "praxis-perpetua/standards/SOP--quality-gate-baseline-calibration.md",
+        "praxis-perpetua/standards/SOP--context-window-conservation.md",
+        "praxis-perpetua/standards/SOP--theory-to-concrete-gate.md",
+        "praxis-perpetua/standards/SOP--background-task-resilience.md",
+        "praxis-perpetua/standards/SOP--cross-reference-validation.md",
+        "praxis-perpetua/standards/SOP--cross-agent-handoff.md",
+        "praxis-perpetua/standards/SOP--session-self-critique.md",
+        "praxis-perpetua/standards/SOP--product-deployment-and-revenue-activation.md",
+        "praxis-perpetua/standards/METADOC--sop-ecosystem.md",
+        "praxis-perpetua/lessons/derived-principles.md"
+      ],
+      "domain_fingerprint": "1aea492e3b335608"
+    },
+    {
+      "qualified_id": "claude:IV:tool-interaction-design:conductor-preflight-auto-start",
+      "path": "/Users/4jp/Workspace/organvm-iv-taxis/tool-interaction-design/.claude/plans/2026-03-09-conductor-preflight-auto-start.md",
+      "agent": "claude",
+      "organ": "IV",
+      "repo": "tool-interaction-design",
+      "slug": "conductor-preflight-auto-start",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Conductor Auto-Start & Session Runway",
+      "size_bytes": 1205,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 5,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "codex-preflight.sh",
+        "constants.py",
+        "conductor/preflight.py",
+        "commands/preflight_cmd.py",
+        "hooks/codex-preflight.sh",
+        "commands/__init__.py",
+        "hooks/claude-prompt-gate.sh"
+      ],
+      "domain_fingerprint": "436ad0e507b40584"
+    },
+    {
+      "qualified_id": "claude:I:hierarchia-mundi:hierarchia-phase2-dynamic-schema",
+      "path": "/Users/4jp/Workspace/organvm-i-theoria/hierarchia-mundi/.claude/plans/2026-03-09-hierarchia-phase2-dynamic-schema.md",
+      "agent": "claude",
+      "organ": "I",
+      "repo": "hierarchia-mundi",
+      "slug": "hierarchia-phase2-dynamic-schema",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Hierarchia Mundi — Phase 2: Dynamic Schema Types + New Intake Integration",
+      "size_bytes": 3516,
+      "has_verification": false,
+      "archetype": "table_inventory",
+      "task_count": 14,
+      "completed_count": 0,
+      "tags": [
+        "python"
+      ],
+      "file_refs": [
+        "lib/automata.lib"
+      ],
+      "domain_fingerprint": "19042d188f1b4fbc"
+    },
     {
       "qualified_id": "gemini:META:?:exhaustive-ci-remediation",
       "path": "/Users/4jp/Workspace/meta-organvm/.gemini/plans/2026-03-09-exhaustive-ci-remediation.md",
@@ -27,6 +111,130 @@
         "organvm-vii-kerygma/.github"
       ],
       "domain_fingerprint": "a713563417c77412"
+    },
+    {
+      "qualified_id": "gemini:III:peer-audited--behavioral-blockchain:core-implementation-burndown",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans/2026-03-09-core-implementation-burndown.md",
+      "agent": "gemini",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "core-implementation-burndown",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Core Implementation Burndown (2026-03-09)",
+      "size_bytes": 1665,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 3,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "src/api/services/ledger/truth-log.service.ts",
+        "src/api/services/intelligence/honeypot.service.ts",
+        "src/api/services/health/recovery-protocol.service.ts"
+      ],
+      "domain_fingerprint": "7aa0bedca85412b2"
+    },
+    {
+      "qualified_id": "gemini:III:peer-audited--behavioral-blockchain:ergon-test-harness-architecture",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans/2026-03-09-ergon-test-harness-architecture.md",
+      "agent": "gemini",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "ergon-test-harness-architecture",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Architecture: Ergon Test Harness (`ergon-test-harness`)",
+      "size_bytes": 3443,
+      "has_verification": false,
+      "archetype": "sequenced_list",
+      "task_count": 9,
+      "completed_count": 0,
+      "tags": [
+        "node",
+        "playwright",
+        "typescript",
+        "vitest"
+      ],
+      "file_refs": [],
+      "domain_fingerprint": "964e651c61d65261"
+    },
+    {
+      "qualified_id": "gemini:III:peer-audited--behavioral-blockchain:organ-iii-test-repo-spec",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans/2026-03-09-organ-iii-test-repo-spec.md",
+      "agent": "gemini",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "organ-iii-test-repo-spec",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Organ III Test Repo Functional Spec",
+      "size_bytes": 3530,
+      "has_verification": false,
+      "archetype": "sequenced_list",
+      "task_count": 12,
+      "completed_count": 0,
+      "tags": [
+        "playwright",
+        "typescript"
+      ],
+      "file_refs": [],
+      "domain_fingerprint": "9328c0acebc2605d"
+    },
+    {
+      "qualified_id": "gemini:III:peer-audited--behavioral-blockchain:research-legal-foundations-burndown",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.gemini/plans/2026-03-09-research-legal-foundations-burndown.md",
+      "agent": "gemini",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "research-legal-foundations-burndown",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Research & Legal Foundations Burndown (2026-03-09)",
+      "size_bytes": 1768,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 3,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/research/research--behavioral-physics-manifesto.md",
+        "docs/legal/legal--performance-wagering.md",
+        "docs/research/research--breakup-psychology-loss-aversion.md"
+      ],
+      "domain_fingerprint": "8ecdc57b866280af"
+    },
+    {
+      "qualified_id": "codex:META:?:contract-first-verification",
+      "path": "/Users/4jp/Workspace/meta-organvm/.codex/plans/2026-03-09-contract-first-verification.md",
+      "agent": "codex",
+      "organ": "META",
+      "repo": null,
+      "slug": "contract-first-verification",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Contract-First Verification for META-ORGANVM",
+      "size_bytes": 3914,
+      "has_verification": true,
+      "archetype": "generic",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [
+        "mcp",
+        "pytest",
+        "python",
+        "vitest"
+      ],
+      "file_refs": [
+        "tools/verify_contracts.py",
+        "stakeholder-portal/package.json"
+      ],
+      "domain_fingerprint": "d6fe0378ed493b80"
     },
     {
       "qualified_id": "codex:META:?:exhaustive-ci-remediation",
@@ -64,6 +272,164 @@
         ".github/workflows/ci.yml"
       ],
       "domain_fingerprint": "19ca968105d13ea0"
+    },
+    {
+      "qualified_id": "codex:II:metasystem-master:dependency-risk-mapping",
+      "path": "/Users/4jp/Workspace/organvm-ii-poiesis/metasystem-master/.codex/plans/2026-03-09-dependency-risk-mapping.md",
+      "agent": "codex",
+      "organ": "II",
+      "repo": "metasystem-master",
+      "slug": "dependency-risk-mapping",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Dependency Risk Mapping for metasystem-master",
+      "size_bytes": 1303,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [
+        "python"
+      ],
+      "file_refs": [
+        ".meta/dependencies.json"
+      ],
+      "domain_fingerprint": "55ab6ccd54ee3776"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:parallel-boundary-mobile-native",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-parallel-boundary-mobile-native.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "parallel-boundary-mobile-native",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Parallel Boundary: Mobile Native Blockers",
+      "size_bytes": 2311,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 8,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/FEATURE-BACKLOG.md",
+        "docs/planning/planning--blocked-handoff-index--latest.md",
+        "docs/planning/planning--monthly-calendar--2026-03-08.md"
+      ],
+      "domain_fingerprint": "c1b2c80e3f5f0822"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:parallel-sprint-map",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-parallel-sprint-map.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "parallel-sprint-map",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Parallel Sprint Map",
+      "size_bytes": 643,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/planning/planning--parallel-sprint-map--2026-03-09.md"
+      ],
+      "domain_fingerprint": "6e9008c3b535c0f9"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:partner-workboard",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-partner-workboard.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "partner-workboard",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Partner Workboard",
+      "size_bytes": 923,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 3,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/planning/planning--partner-workboard--2026-03-09.md"
+      ],
+      "domain_fingerprint": "5437c0978f0f181b"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:project-board-checklists",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-project-board-checklists.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "project-board-checklists",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Project Board Checklists",
+      "size_bytes": 451,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/planning/planning--project-board-checklists--2026-03-09.md"
+      ],
+      "domain_fingerprint": "b79b639195a02c6d"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:project-board-live-apply",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-project-board-live-apply.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "project-board-live-apply",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Live Project Board Apply",
+      "size_bytes": 971,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 5,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [],
+      "domain_fingerprint": "e3b0c44298fc1c14"
+    },
+    {
+      "qualified_id": "codex:III:peer-audited--behavioral-blockchain:project-board-rationalization",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans/2026-03-09-project-board-rationalization.md",
+      "agent": "codex",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "project-board-rationalization",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: Project Board Rationalization",
+      "size_bytes": 1273,
+      "has_verification": false,
+      "archetype": "generic",
+      "task_count": 5,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "docs/planning/planning--issue-owner-matrix--2026-03-09.md",
+        "docs/planning/planning--weekly-founder-partner-review--2026-03-09.md",
+        "docs/planning/planning--project-board-setup--2026-03-09.md"
+      ],
+      "domain_fingerprint": "efa9d8567ec49f49"
     },
     {
       "qualified_id": "claude:META:?:forward-propulsion-work-queue",
@@ -6225,25 +6591,43 @@
     }
   ],
   "organ_summary": {
-    "II": {
-      "organ_key": "II",
+    "I": {
+      "organ_key": "I",
       "total_plans": 1,
       "active_plans": 1,
-      "total_tasks": 4,
+      "total_tasks": 14,
+      "completed_tasks": 0,
+      "completion_pct": 0.0,
+      "agents_active": [
+        "claude"
+      ],
+      "top_tags": [
+        "python"
+      ],
+      "cross_organ_refs": [],
+      "stale_count": 0
+    },
+    "II": {
+      "organ_key": "II",
+      "total_plans": 2,
+      "active_plans": 2,
+      "total_tasks": 5,
       "completed_tasks": 0,
       "completion_pct": 0.0,
       "agents_active": [
         "codex"
       ],
-      "top_tags": [],
+      "top_tags": [
+        "python"
+      ],
       "cross_organ_refs": [],
       "stale_count": 0
     },
     "III": {
       "organ_key": "III",
-      "total_plans": 31,
-      "active_plans": 31,
-      "total_tasks": 337,
+      "total_plans": 41,
+      "active_plans": 41,
+      "total_tasks": 387,
       "completed_tasks": 0,
       "completion_pct": 0.0,
       "agents_active": [
@@ -6257,11 +6641,11 @@
         "react",
         "terraform",
         "vite",
-        "postgresql",
-        "cloudflare",
         "playwright",
-        "mcp",
-        "tailwind"
+        "node",
+        "vitest",
+        "postgresql",
+        "cloudflare"
       ],
       "cross_organ_refs": [
         "META"
@@ -6270,9 +6654,9 @@
     },
     "IV": {
       "organ_key": "IV",
-      "total_plans": 45,
-      "active_plans": 45,
-      "total_tasks": 666,
+      "total_plans": 46,
+      "active_plans": 46,
+      "total_tasks": 671,
       "completed_tasks": 26,
       "completion_pct": 3.9,
       "agents_active": [
@@ -6328,11 +6712,11 @@
     },
     "META": {
       "organ_key": "META",
-      "total_plans": 71,
-      "active_plans": 68,
-      "total_tasks": 1060,
-      "completed_tasks": 10,
-      "completion_pct": 0.9,
+      "total_plans": 73,
+      "active_plans": 70,
+      "total_tasks": 1067,
+      "completed_tasks": 16,
+      "completion_pct": 1.5,
       "agents_active": [
         "claude",
         "codex",
@@ -6383,6 +6767,7 @@
     {
       "domain": "astro, aws, bash, chezmoi, cloudflare",
       "plans": [
+        "claude:I:hierarchia-mundi:hierarchia-phase2-dynamic-schema",
         "claude:IV:?:organvm-iv-research-exploration-analysis",
         "claude:IV:?:organvm-iv-research-exploration-plan",
         "claude:IV:domus-semper-palingenesis:dotdir-migration-matrix-phase-4",
@@ -6418,11 +6803,15 @@
         "claude:META:stakeholder-portal:stakeholder-portal-entity-graph-analysis-agent-1f75a118",
         "claude:META:stakeholder-portal:velvet-petting-raccoon-agent-a2d69449222449e75",
         "claude:V:?:captains-log-revision",
+        "codex:II:metasystem-master:dependency-risk-mapping",
         "codex:IV:tool-interaction-design:evaluation-to-growth-project-review-and-hardening",
+        "codex:META:?:contract-first-verification",
         "codex:META:?:e2g-exhaustive-implementation",
         "codex:META:?:evaluation-growth-implementation-pass",
         "codex:META:?:evaluation-to-growth-project-review",
         "codex:META:organvm-engine:expand-registry-features-and-functions",
+        "gemini:III:peer-audited--behavioral-blockchain:ergon-test-harness-architecture",
+        "gemini:III:peer-audited--behavioral-blockchain:organ-iii-test-repo-spec",
         "gemini:IV:domus-semper-palingenesis:agentic-python-matrix",
         "gemini:IV:domus-semper-palingenesis:evaluation-growth",
         "gemini:IV:tool-interaction-design:evaluation-to-growth-report",
@@ -6434,6 +6823,9 @@
         "gemini"
       ],
       "organs": [
+        "I",
+        "II",
+        "III",
         "IV",
         "LIMINAL",
         "META",

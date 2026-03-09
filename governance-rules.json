@@ -143,6 +143,15 @@
       "missing_seed_yaml": true
     }
   },
+  "internalized_principles": [
+    "biz.ship_speed",
+    "practice.idempotency",
+    "antipattern.big_bang",
+    "practice.feature_flags",
+    "phil.scylla_charybdis",
+    "logical_consistency",
+    "quality_over_quantity"
+  ],
   "organ_requirements": {
     "ORGAN-I": {
       "min_repos": 1,
