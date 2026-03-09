@@ -1,8 +1,70 @@
 {
-  "generated": "2026-03-08T21:20:40Z",
-  "total_plans": 191,
-  "total_tasks": 2777,
+  "generated": "2026-03-09T02:42:45Z",
+  "total_plans": 195,
+  "total_tasks": 2816,
   "entries": [
+    {
+      "qualified_id": "gemini:META:?:exhaustive-ci-remediation",
+      "path": "/Users/4jp/Workspace/meta-organvm/.gemini/plans/2026-03-09-exhaustive-ci-remediation.md",
+      "agent": "gemini",
+      "organ": "META",
+      "repo": null,
+      "slug": "exhaustive-ci-remediation",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "2026-03-09 Exhaustive CI Remediation Plan",
+      "size_bytes": 3328,
+      "has_verification": true,
+      "archetype": "phase_task",
+      "task_count": 16,
+      "completed_count": 0,
+      "tags": [
+        "fastapi",
+        "pytest"
+      ],
+      "file_refs": [
+        "organvm-vii-kerygma/.github"
+      ],
+      "domain_fingerprint": "a713563417c77412"
+    },
+    {
+      "qualified_id": "codex:META:?:exhaustive-ci-remediation",
+      "path": "/Users/4jp/Workspace/meta-organvm/.codex/plans/2026-03-09-exhaustive-ci-remediation.md",
+      "agent": "codex",
+      "organ": "META",
+      "repo": null,
+      "slug": "exhaustive-ci-remediation",
+      "date": "2026-03-09",
+      "version": 1,
+      "status": "active",
+      "title": "Exhaustive CI Remediation Plan (2026-03-09)",
+      "size_bytes": 7075,
+      "has_verification": true,
+      "archetype": "generic",
+      "task_count": 21,
+      "completed_count": 0,
+      "tags": [
+        "pytest",
+        "python"
+      ],
+      "file_refs": [
+        "src/organvm_engine/session/parser.py",
+        "src/organvm_engine/plans/atomizer.py",
+        "tests/test_vars.py",
+        "tests/test_session_agents.py",
+        "src/organvm_engine/cli/ecosystem.py",
+        "tests/test_manifest_loader.py",
+        "tests/test_bookmarks.py",
+        "scripts/validate.py",
+        "tests/test_tools.py",
+        "src/lib/ingestion/ingest-worker.ts",
+        "tests/test_ai_chats.py",
+        "tests/test_server.py",
+        ".github/workflows/ci.yml"
+      ],
+      "domain_fingerprint": "19ca968105d13ea0"
+    },
     {
       "qualified_id": "claude:META:?:forward-propulsion-work-queue",
       "path": "/Users/4jp/Workspace/meta-organvm/.claude/plans/2026-03-08-forward-propulsion-work-queue.md",
@@ -73,6 +135,56 @@
       ],
       "file_refs": [],
       "domain_fingerprint": "8ec6e75d4b1b9344"
+    },
+    {
+      "qualified_id": "claude:META:?:universal-hierarchy-living-infrastructure",
+      "path": "/Users/4jp/Workspace/meta-organvm/.claude/plans/2026-03-08-universal-hierarchy-living-infrastructure.md",
+      "agent": "claude",
+      "organ": "META",
+      "repo": null,
+      "slug": "universal-hierarchy-living-infrastructure",
+      "date": "2026-03-08",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: The Universal Hierarchy as Living Infrastructure",
+      "size_bytes": 2909,
+      "has_verification": false,
+      "archetype": "sequenced_list",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [
+        "node",
+        "react",
+        "three.js",
+        "typescript",
+        "vite"
+      ],
+      "file_refs": [
+        "src/hierarchy.py",
+        "src/__init__.py",
+        "tests/test_hierarchy.py",
+        "specs/thermodynamics.titan.yaml",
+        "titan/hierarchy/__init__.py",
+        "tests/hierarchy/__init__.py",
+        "src/data/hierarchy.ts",
+        "src/assembly.py",
+        "src/homeostasis.py",
+        "src/network.py",
+        "src/discovery.py",
+        "tests/test_assembly.py",
+        "tests/test_homeostasis.py",
+        "tests/test_hierarchy_network.py",
+        "tests/hierarchy/test_lens_agent.py",
+        "src/scene/HierarchyScene.tsx",
+        "src/App.tsx",
+        "src/main.tsx",
+        "titan/hierarchy/lens_agent.py",
+        "specs/ecology.titan.yaml",
+        "specs/economics.titan.yaml",
+        "specs/sociology.titan.yaml",
+        "specs/neuroscience.titan.yaml"
+      ],
+      "domain_fingerprint": "d6959f9499a5a040"
     },
     {
       "qualified_id": "claude:IV:?:full-backlog-completion",
@@ -298,6 +410,33 @@
         "scripts/validate-agent-run.py"
       ],
       "domain_fingerprint": "ecacd5961d00d2d2"
+    },
+    {
+      "qualified_id": "claude:III:peer-audited--behavioral-blockchain:rege-department-organisms",
+      "path": "/Users/4jp/Workspace/organvm-iii-ergon/peer-audited--behavioral-blockchain/.claude/plans/2026-03-08-rege-department-organisms.md",
+      "agent": "claude",
+      "organ": "III",
+      "repo": "peer-audited--behavioral-blockchain",
+      "slug": "rege-department-organisms",
+      "date": "2026-03-08",
+      "version": 1,
+      "status": "active",
+      "title": "Plan: RE:GE — Recursive Engine: Generative Entities for Styx Departments",
+      "size_bytes": 2088,
+      "has_verification": false,
+      "archetype": "sequenced_list",
+      "task_count": 1,
+      "completed_count": 0,
+      "tags": [],
+      "file_refs": [
+        "packages/schema/rege.schema.json",
+        "packages/schema/rege.example.yaml",
+        "packages/schema/README.md",
+        "docs/README.md",
+        "departments/README.md",
+        "departments/PULSE.md"
+      ],
+      "domain_fingerprint": "304cf926f981e7ef"
     },
     {
       "qualified_id": "claude:LIMINAL:portfolio:curious-napping-gosling",
@@ -6102,9 +6241,9 @@
     },
     "III": {
       "organ_key": "III",
-      "total_plans": 30,
-      "active_plans": 30,
-      "total_tasks": 336,
+      "total_plans": 31,
+      "active_plans": 31,
+      "total_tasks": 337,
       "completed_tasks": 0,
       "completion_pct": 0.0,
       "agents_active": [
@@ -6189,11 +6328,11 @@
     },
     "META": {
       "organ_key": "META",
-      "total_plans": 68,
-      "active_plans": 65,
-      "total_tasks": 1022,
+      "total_plans": 71,
+      "active_plans": 68,
+      "total_tasks": 1060,
       "completed_tasks": 10,
-      "completion_pct": 1.0,
+      "completion_pct": 0.9,
       "agents_active": [
         "claude",
         "codex",
@@ -6202,17 +6341,18 @@
       "top_tags": [
         "python",
         "bash",
+        "pytest",
         "mcp",
         "vercel",
-        "pytest",
         "typescript",
         "go",
-        "zsh",
-        "neon",
-        "react"
+        "node",
+        "react",
+        "zsh"
       ],
       "cross_organ_refs": [
-        "IV"
+        "IV",
+        "VII"
       ],
       "stale_count": 0
     },
@@ -6285,7 +6425,8 @@
         "codex:META:organvm-engine:expand-registry-features-and-functions",
         "gemini:IV:domus-semper-palingenesis:agentic-python-matrix",
         "gemini:IV:domus-semper-palingenesis:evaluation-growth",
-        "gemini:IV:tool-interaction-design:evaluation-to-growth-report"
+        "gemini:IV:tool-interaction-design:evaluation-to-growth-report",
+        "gemini:META:?:exhaustive-ci-remediation"
       ],
       "agents": [
         "claude",

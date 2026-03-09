@@ -1,0 +1,8 @@
+schema_version: '1.0'
+repo: organvm-corpvs-testamentvm
+organ: META
+display_name: The authoritative planning and governance corpus for the eight-organ
+  creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
+delivery:
+- platform: web_app
+  status: not_started
