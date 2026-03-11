@@ -90,6 +90,26 @@ The system has transitioned from **construction** (building, documenting, deploy
 
 **Next review:** After stranger test execution (omega #2) or at 60-day post-launch mark, whichever comes first.
 
+## Machine-Readable Constitution (Dictums)
+
+The `dictums` section of `governance-rules.json` is the authoritative machine-readable encoding of this constitution's structural laws. It encodes three tiers:
+
+- **Axioms (AX-*):** Universal invariants (AX-1 DAG, AX-2 Epistemic Membranes, AX-3 TTL Eviction)
+- **Organ Dictums (OD-*):** Per-organ constraints (OD-I through OD-VII + OD-META)
+- **Repo Rules (RR-*):** Per-repository requirements (RR-1 Seed Contract, RR-2 SRP, RR-3 Event Handshake)
+
+Each dictum declares enforcement mode (`automated`/`audit`/`manual`) and severity (`critical`/`warning`/`info`). Automated dictums are checked by validators in `organvm-engine/governance/dictums.py`.
+
+**CLI commands:**
+- `organvm governance dictums` — list all dictums
+- `organvm governance dictums --check` — run compliance validators
+- `organvm governance dictums --id AX-1` — show specific dictum
+- `organvm governance audit` — includes dictum violations in full audit
+
+**MCP tools:**
+- `organvm_governance_dictums` — list dictums (optional `level` filter)
+- `organvm_governance_check_dictums` — run compliance checks
+
 ## Governance
 
 This constitution supersedes ad-hoc decision-making for the organvm project. All specifications (`docs/specs/`) and planning documents must be validated against these articles, amendments, and gates before execution.

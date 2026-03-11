@@ -211,5 +211,160 @@
       "requires_seed_yaml": true
     }
   },
-  "schema_version": "1"
+  "schema_version": "2",
+  "dictums": {
+    "schema_version": "1",
+    "preamble": "The Ontological Constitution defines invariant structural laws for the ORGANVM ecosystem. Axioms are universal, organ dictums scope to individual organs, and repo rules apply at the repository level. Each dictum declares its enforcement mode and severity.",
+    "axioms": [
+      {
+        "id": "AX-1",
+        "name": "DAG Invariant",
+        "statement": "The dependency graph among organs I, II, and III is a strict directed acyclic graph: I→II→III. No back-edges, no cycles. ORGAN-IV orchestrates all; ORGAN-V observes; ORGAN-VII consumes.",
+        "enforcement": "automated",
+        "validator": "validate_dag_invariant",
+        "references": ["governance/dependency_graph.py", "constitution.md Article II"],
+        "severity": "critical"
+      },
+      {
+        "id": "AX-2",
+        "name": "Epistemic Membranes",
+        "statement": "Each organ is an epistemic domain. Cross-organ data flow must be declared as produces/consumes edges in seed.yaml. No undeclared cross-organ imports, shared databases, or implicit coupling.",
+        "enforcement": "audit",
+        "validator": "validate_epistemic_membranes",
+        "references": ["seed/graph.py", "constitution.md Article II"],
+        "severity": "critical"
+      },
+      {
+        "id": "AX-3",
+        "name": "TTL Eviction",
+        "statement": "Every repository must show activity within 90 days (stale_repo_days threshold). INCUBATOR repos have a 14-day TTL — graduate to LOCAL or archive. No zombie repos.",
+        "enforcement": "automated",
+        "validator": "validate_ttl_eviction",
+        "references": ["governance/audit.py", "audit_thresholds.warning.stale_repo_days"],
+        "severity": "warning"
+      }
+    ],
+    "organ_dictums": {
+      "ORGAN-I": [
+        {
+          "id": "OD-I",
+          "name": "Theoria Purity",
+          "statement": "ORGAN-I repos produce foundational theory, recursive engines, and symbolic computing. They must not depend on any other organ in the I-II-III chain.",
+          "constraints": { "no_dependencies_on": ["ORGAN-II", "ORGAN-III"] },
+          "enforcement": "automated",
+          "validator": "validate_dag_invariant",
+          "severity": "warning"
+        }
+      ],
+      "ORGAN-II": [
+        {
+          "id": "OD-II",
+          "name": "Poiesis Derivation",
+          "statement": "ORGAN-II repos derive from ORGAN-I theory. They may depend on ORGAN-I but never on ORGAN-III.",
+          "constraints": { "allowed_dependencies": ["ORGAN-I"], "forbidden_dependencies": ["ORGAN-III"] },
+          "enforcement": "automated",
+          "validator": "validate_dag_invariant",
+          "severity": "warning"
+        }
+      ],
+      "ORGAN-III": [
+        {
+          "id": "OD-III",
+          "name": "Ergon Factory Gate",
+          "statement": "ORGAN-III repos are commercial products. Every non-archived ORGAN-III repo must declare a revenue_model and have CI configured. Graduation requires passing tests.",
+          "constraints": { "requires_revenue_model": true, "requires_ci": true },
+          "enforcement": "automated",
+          "validator": "validate_organ_iii_factory",
+          "severity": "warning"
+        }
+      ],
+      "ORGAN-IV": [
+        {
+          "id": "OD-IV",
+          "name": "Taxis Orchestration",
+          "statement": "ORGAN-IV is the orchestration layer. It may reference any organ but must not contain domain logic belonging to I, II, or III.",
+          "constraints": { "role": "orchestrator" },
+          "enforcement": "manual",
+          "validator": null,
+          "severity": "info"
+        }
+      ],
+      "ORGAN-V": [
+        {
+          "id": "OD-V",
+          "name": "Logos Observation",
+          "statement": "ORGAN-V observes and documents. It reads from many organs but writes only to its own domain (essays, public process).",
+          "constraints": { "write_scope": "self_only" },
+          "enforcement": "manual",
+          "validator": null,
+          "severity": "info"
+        }
+      ],
+      "ORGAN-VI": [
+        {
+          "id": "OD-VI",
+          "name": "Koinonia Community",
+          "statement": "ORGAN-VI hosts community infrastructure. Products feed into VI via declared event edges.",
+          "constraints": { "receives_from": ["ORGAN-I", "ORGAN-II", "ORGAN-III"] },
+          "enforcement": "audit",
+          "validator": null,
+          "severity": "info"
+        }
+      ],
+      "ORGAN-VII": [
+        {
+          "id": "OD-VII",
+          "name": "Kerygma Distribution",
+          "statement": "ORGAN-VII is a pure consumer. It distributes content from other organs via POSSE but produces no original domain content.",
+          "constraints": { "role": "consumer" },
+          "enforcement": "manual",
+          "validator": null,
+          "severity": "info"
+        }
+      ],
+      "META-ORGANVM": [
+        {
+          "id": "OD-META",
+          "name": "Meta Governance",
+          "statement": "META-ORGANVM holds the registry, schemas, engine, and governance corpus. It is the structural substrate — changes here propagate system-wide.",
+          "constraints": { "role": "governance_substrate" },
+          "enforcement": "audit",
+          "validator": null,
+          "severity": "warning"
+        }
+      ]
+    },
+    "repo_rules": [
+      {
+        "id": "RR-1",
+        "name": "Seed Contract Mandate",
+        "statement": "Every non-archived repository must have a seed.yaml declaring organ membership, tier, and produces/consumes edges.",
+        "enforcement": "automated",
+        "validator": "validate_seed_mandate",
+        "references": ["seed/discover.py", "audit_thresholds.warning.missing_seed_yaml"],
+        "severity": "warning",
+        "applies_to": "all non-archived repos"
+      },
+      {
+        "id": "RR-2",
+        "name": "Single Responsibility",
+        "statement": "Each repository should have a single, well-defined responsibility. Monoliths should be decomposed; micro-repos should be consolidated.",
+        "enforcement": "manual",
+        "validator": null,
+        "references": ["constitution.md Article V"],
+        "severity": "info",
+        "applies_to": "all repos"
+      },
+      {
+        "id": "RR-3",
+        "name": "Event Handshake",
+        "statement": "Repos that declare event subscriptions or productions in seed.yaml must reference events that exist in the event catalog. No orphaned event edges.",
+        "enforcement": "audit",
+        "validator": "validate_event_handshake",
+        "references": ["seed/graph.py", "event-catalog.yaml"],
+        "severity": "warning",
+        "applies_to": "repos with event edges"
+      }
+    ]
+  }
 }
