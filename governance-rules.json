@@ -87,6 +87,7 @@
   },
   "state_machine": {
     "states": [
+      "INCUBATOR",
       "LOCAL",
       "CANDIDATE",
       "PUBLIC_PROCESS",
@@ -94,6 +95,10 @@
       "ARCHIVED"
     ],
     "transitions": {
+      "INCUBATOR": [
+        "LOCAL",
+        "ARCHIVED"
+      ],
       "LOCAL": [
         "CANDIDATE",
         "ARCHIVED"
@@ -114,6 +119,12 @@
       "ARCHIVED": []
     },
     "promotion_criteria": {
+      "INCUBATOR_to_LOCAL": [
+        "Epistemic Boundary: strict JSON Schema or YAML configuration defined",
+        "DAG Check: Upstream/Downstream edges explicitly declared in seed.yaml",
+        "Neurological Handshake: Interface Contract (Webhook/MCP) established",
+        "14-Day TTL: Graduation within 14 days of project creation"
+      ],
       "CANDIDATE_to_PUBLIC_PROCESS": [
         "ci_workflow is not null",
         "implementation_status is ACTIVE",
