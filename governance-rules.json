@@ -242,6 +242,15 @@
         "validator": "validate_ttl_eviction",
         "references": ["governance/audit.py", "audit_thresholds.warning.stale_repo_days"],
         "severity": "warning"
+      },
+      {
+        "id": "AX-4",
+        "name": "Registry Coherence",
+        "statement": "registry-v2.json is the single source of truth. No repo may appear in multiple organs, repository_count must match actual arrays, and no entry may have an empty name.",
+        "enforcement": "automated",
+        "validator": "validate_registry_coherence",
+        "references": ["constitution.md Article I", "registry/query.py"],
+        "severity": "critical"
       }
     ],
     "organ_dictums": {
@@ -292,12 +301,12 @@
       "ORGAN-V": [
         {
           "id": "OD-V",
-          "name": "Logos Observation",
-          "statement": "ORGAN-V observes and documents. It reads from many organs but writes only to its own domain (essays, public process).",
+          "name": "Logos Write Scope",
+          "statement": "ORGAN-V observes and documents. It reads from many organs but produces only to its own domain (essays, public process). seed.yaml produces edges must target ORGAN-V.",
           "constraints": { "write_scope": "self_only" },
-          "enforcement": "manual",
-          "validator": null,
-          "severity": "info"
+          "enforcement": "audit",
+          "validator": "validate_logos_write_scope",
+          "severity": "warning"
         }
       ],
       "ORGAN-VI": [
@@ -314,12 +323,12 @@
       "ORGAN-VII": [
         {
           "id": "OD-VII",
-          "name": "Kerygma Distribution",
-          "statement": "ORGAN-VII is a pure consumer. It distributes content from other organs via POSSE but produces no original domain content.",
-          "constraints": { "role": "consumer" },
-          "enforcement": "manual",
-          "validator": null,
-          "severity": "info"
+          "name": "Kerygma Consumer",
+          "statement": "ORGAN-VII is a pure consumer. It distributes content from other organs via POSSE but must not have produces edges in seed.yaml — it generates no original domain content.",
+          "constraints": { "role": "consumer", "no_produces": true },
+          "enforcement": "audit",
+          "validator": "validate_kerygma_consumer",
+          "severity": "warning"
         }
       ],
       "META-ORGANVM": [
@@ -364,6 +373,26 @@
         "references": ["seed/graph.py", "event-catalog.yaml"],
         "severity": "warning",
         "applies_to": "repos with event edges"
+      },
+      {
+        "id": "RR-4",
+        "name": "README Mandate",
+        "statement": "Every non-archived repository must have documentation. documentation_status must not be EMPTY or missing. Every README is a portfolio piece.",
+        "enforcement": "automated",
+        "validator": "validate_readme_mandate",
+        "references": ["constitution.md Article V", "audit_thresholds.critical.missing_readme"],
+        "severity": "warning",
+        "applies_to": "all non-archived repos"
+      },
+      {
+        "id": "RR-5",
+        "name": "Promotion Integrity",
+        "statement": "All repos must have a valid promotion_status from the state machine. No invented states, no skipped transitions.",
+        "enforcement": "automated",
+        "validator": "validate_promotion_integrity",
+        "references": ["constitution.md Article VI", "governance/state_machine.py"],
+        "severity": "warning",
+        "applies_to": "all repos"
       }
     ]
   }
