@@ -1,13 +1,13 @@
 # Atom Link Summary
-**Generated**: 2026-03-09
-**Links**: 3246 | **Threshold**: 0.3
+**Generated**: 2026-03-11
+**Links**: 3439 | **Threshold**: 0.3
 
 ## Jaccard Distribution
 
 | Range | Count | % |
 |-------|-------|---|
-| 0.50+ | 1167 | 35% |
-| 0.30–0.49 | 2079 | 64% |
+| 0.50+ | 1289 | 37% |
+| 0.30–0.49 | 2150 | 62% |
 | 0.20–0.29 | 0 | 0% |
 | 0.15–0.19 | 0 | 0% |
 | <0.15 | 0 | 0% |
@@ -16,26 +16,26 @@
 
 | Tag | Occurrences |
 |-----|-------------|
-| mcp | 2469 |
-| python | 835 |
-| go | 492 |
-| bash | 488 |
-| pytest | 422 |
+| mcp | 2655 |
+| python | 993 |
+| bash | 523 |
+| go | 522 |
+| pytest | 474 |
 | react | 49 |
 | typescript | 48 |
 | neon | 45 |
-| zsh | 44 |
-| p5.js | 44 |
+| zsh | 41 |
 | vercel | 38 |
 | jekyll | 31 |
+| p5.js | 28 |
 | vitest | 25 |
+| fastapi | 23 |
 | graphql | 21 |
 | vite | 18 |
-| chezmoi | 14 |
 | astro | 13 |
+| chezmoi | 11 |
 | homebrew | 9 |
-| node | 7 |
-| postgresql | 6 |
+| aws | 6 |
 
 ## Top Shared File References
 
@@ -66,18 +66,18 @@
 
 | Task ID | Links |
 |---------|-------|
-| 84929d1fcd12 | 38 |
-| 5f0b60f013fc | 38 |
-| d0d4eea6fe4c | 38 |
-| 77530a1afa96 | 38 |
-| 9a9f699c43e0 | 38 |
-| ca2164f82188 | 38 |
-| 226164947357 | 38 |
-| 7e13fe47f30d | 36 |
-| a89f77dd9214 | 36 |
-| 17d699cdd9c3 | 36 |
-| bed8022d27e2 | 20 |
-| 98eb565992e7 | 20 |
-| 300914896a3d | 20 |
-| aa783114d4a8 | 20 |
-| 933e101396c8 | 20 |
+| 84929d1fcd12 | 41 |
+| 5f0b60f013fc | 41 |
+| d0d4eea6fe4c | 41 |
+| 77530a1afa96 | 41 |
+| 9a9f699c43e0 | 41 |
+| ca2164f82188 | 41 |
+| 226164947357 | 41 |
+| 7e13fe47f30d | 39 |
+| a89f77dd9214 | 39 |
+| 17d699cdd9c3 | 39 |
+| 178a7280edff | 20 |
+| 69ded66292fe | 19 |
+| 7d0ee6aec463 | 19 |
+| 6baa75788789 | 19 |
+| dc4791046352 | 19 |

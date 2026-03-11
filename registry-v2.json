@@ -1596,13 +1596,35 @@
           "last_validated": "2026-03-06",
           "note": "Registered 2026-03-06 (structural integrity audit). Previously unregistered despite 159 commits. Promoted from standard to flagship tier based on substance: 499+ tests, 147 doc files, 7 CI workflows, 8 validation gates, formal thesis, Terraform IaC, 7 specialist agent departments.",
           "implementation_status": "ACTIVE",
-          "ci_workflow": "ci-typescript.yml",
+          "ci_workflow": "ci-python.yml",
           "platinum_status": true,
           "revenue_model": "subscription",
           "revenue_status": "pre-launch"
-        }
-      ]
-    },
+          },
+          {
+          "name": "styx-behavioral-commerce",
+          "org": "organvm-iii-ergon",
+          "status": "ACTIVE",
+          "public": false,
+          "description": "Styx — peer-audited behavioral commerce engine. Commercial realization of the Styx Pipeline traversal.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "HIGH - Commercial realization of theoretical proofs",
+          "dependencies": [
+            "organvm-i-theoria/styx-behavioral-economics-theory",
+            "organvm-ii-poiesis/styx-behavioral-art"
+          ],
+          "promotion_status": "LOCAL",
+          "tier": "standard",
+          "last_validated": "2026-03-11",
+          "note": "Scaffolded during Meta-Org workflow expansion. Implements Loss Aversion Engine and Peer Audit visualization.",
+          "implementation_status": "PROTOTYPE",
+          "ci_workflow": null,
+          "platinum_status": false,
+          "revenue_model": "loss-aversion",
+          "revenue_status": "building"
+          }
+          ]
+          },
     "ORGAN-IV": {
       "name": "Orchestration",
       "description": "Cross-organ routing, governance, promotion automation, system coordination, dependency management",
