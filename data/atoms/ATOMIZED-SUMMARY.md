@@ -1,6 +1,6 @@
 # Plan Atomization Summary
-**Generated**: 2026-03-11
-**Plans parsed**: 266 | **Tasks extracted**: 3631
+**Generated**: 2026-03-12
+**Plans parsed**: 274 | **Tasks extracted**: 3670
 
 ## By Project
 
@@ -13,10 +13,10 @@
 | 4444J99/portfolio/.claude/plans | 7 | 98 | 0 | 98 | 0 |
 | 4444J99/portfolio/.codex/plans | 1 | 1 | 0 | 1 | 0 |
 | 4444J99/portfolio/.gemini/plans | 4 | 30 | 0 | 30 | 0 |
-| _root | 53 | 812 | 6 | 806 | 0 |
-| meta-organvm/.claude/plans | 45 | 782 | 16 | 766 | 0 |
+| _root | 53 | 800 | 6 | 794 | 0 |
+| meta-organvm/.claude/plans | 47 | 796 | 16 | 780 | 0 |
 | meta-organvm/.codex/plans | 5 | 36 | 0 | 36 | 0 |
-| meta-organvm/.gemini/plans | 1 | 16 | 0 | 16 | 0 |
+| meta-organvm/.gemini/plans | 2 | 30 | 0 | 30 | 0 |
 | meta-organvm/intake/alchemical-synthesizer/.claude/plans | 1 | 38 | 0 | 38 | 0 |
 | meta-organvm/intake/alchemical-synthesizer/.gemini/plans | 1 | 5 | 0 | 5 | 0 |
 | meta-organvm/materia-collider/bench/organ-reset-2026-03-11/organ-i/hierarchia-mundi/.claude/plans | 1 | 14 | 0 | 14 | 0 |
@@ -26,8 +26,8 @@
 | meta-organvm/stakeholder-portal/.claude/plans | 10 | 132 | 0 | 132 | 0 |
 | meta-organvm/stakeholder-portal/.codex/plans | 4 | 100 | 0 | 100 | 0 |
 | meta-organvm/stakeholder-portal/.gemini/plans | 5 | 22 | 0 | 22 | 0 |
-| organvm-i-theoria/knowledge-engine/.codex/plans | 1 | 1 | 0 | 1 | 0 |
-| organvm-i-theoria/uaks/.codex/plans | 1 | 1 | 0 | 1 | 0 |
+| organvm-i-theoria/atomic-substrata/.codex/plans | 3 | 9 | 0 | 9 | 0 |
+| organvm-i-theoria/ontological-framework/.codex/plans | 4 | 16 | 0 | 16 | 0 |
 | organvm-ii-poiesis/.codex/plans | 1 | 4 | 0 | 4 | 0 |
 | organvm-ii-poiesis/alchemical-synthesizer/.claude/plans | 1 | 38 | 0 | 38 | 0 |
 | organvm-ii-poiesis/metasystem-master/.codex/plans | 1 | 1 | 0 | 1 | 0 |
@@ -49,18 +49,18 @@
 
 | Type | Count | % |
 |------|-------|---|
-| generic | 1347 | 37% |
-| create_file | 465 | 12% |
-| document | 319 | 8% |
-| write_test | 271 | 7% |
-| configure | 270 | 7% |
+| generic | 1362 | 37% |
+| create_file | 476 | 12% |
+| document | 320 | 8% |
+| configure | 275 | 7% |
+| write_test | 273 | 7% |
 | modify_file | 259 | 7% |
-| verify | 159 | 4% |
-| migrate | 113 | 3% |
+| verify | 154 | 4% |
+| migrate | 121 | 3% |
 | research | 102 | 2% |
 | deploy | 97 | 2% |
-| delete_file | 69 | 1% |
-| git_operation | 59 | 1% |
+| delete_file | 70 | 1% |
+| git_operation | 60 | 1% |
 | review | 43 | 1% |
 | refactor | 31 | 0% |
 | exploration | 27 | 0% |
@@ -69,7 +69,7 @@
 
 | Status | Count | % |
 |--------|-------|---|
-| pending | 3582 | 98% |
+| pending | 3621 | 98% |
 | completed | 49 | 1% |
 
 ## Largest Plans (by task count)
@@ -101,20 +101,20 @@
 
 | Agent | Count | % |
 |-------|-------|---|
-| claude | 3242 | 89% |
-| codex | 266 | 7% |
-| gemini | 123 | 3% |
+| claude | 3244 | 88% |
+| codex | 289 | 7% |
+| gemini | 137 | 3% |
 
 ## By Organ
 
 | Organ | Count | % |
 |-------|-------|---|
-| META | 1319 | 36% |
+| META | 1328 | 36% |
 | IV | 834 | 22% |
 | LIMINAL | 722 | 19% |
 | III | 308 | 8% |
 | _root | 174 | 4% |
-| I | 120 | 3% |
+| I | 150 | 4% |
 | V | 111 | 3% |
 | II | 43 | 1% |
 
@@ -122,6 +122,8 @@
 
 | Plan | Project | Classification |
 |------|---------|----------------|
+| Atomic Corpus Branch Preservation Plan | organvm-i-theoria/atomic-substrata/.codex/plans | configure |
+| Plan: Ecosystem Activation — Meta-Org-Wide Workflo | meta-organvm/.claude/plans | generic |
 | Plan: Positioning Core | organvm-iii-ergon/peer-audited--behavioral-blockchain/.codex/plans | delete_file |
 | Meta-Organvm Architectural Exploration Plan | _root | generic |
 | 2026-03-09 Exhaustive CI Remediation Plan | meta-organvm/.gemini/plans | modify_file |

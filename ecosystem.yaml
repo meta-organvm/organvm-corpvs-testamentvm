@@ -1,8 +1,28 @@
 schema_version: '1.0'
 repo: organvm-corpvs-testamentvm
 organ: META
-display_name: The authoritative planning and governance corpus for the eight-organ
-  creative-institutional system. 81 repos, ~339K words, 8 organizations, 21 essays.
+display_name: "Authoritative planning and governance corpus — 404K+ words, 105 repos, 8 organizations"
+
 delivery:
+- platform: governance_corpus
+  status: live
+  priority: critical
+  notes: "registry-v2.json, governance-rules.json, 21 essays, full planning record"
+  next_action: "Maintain as source of truth, keep registry current"
 - platform: web_app
-  status: not_started
+  status: planned
+  priority: medium
+  notes: "Portfolio site for public-facing corpus presentation"
+  next_action: "Design portfolio site for governance documentation"
+
+content:
+- platform: docs_site
+  status: live
+  priority: critical
+  notes: "ANNOTATED-MANIFEST.md, concordance, 5 planning layers"
+  next_action: "Keep documentation aligned with system evolution"
+- platform: academic_writing
+  status: in_progress
+  priority: high
+  notes: "21 essays on system development methodology"
+  next_action: "Publish next essay through ORGAN-V pipeline"

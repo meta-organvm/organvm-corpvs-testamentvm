@@ -1,34 +1,34 @@
 # Prompt Narrative Analysis
-**Generated**: 2026-03-11
-**Sessions**: 1433 | **Prompts**: 3810 | **Threads**: 104
+**Generated**: 2026-03-12
+**Sessions**: 1451 | **Prompts**: 3826 | **Threads**: 105
 
 ## Prompt Type Distribution
 
 | Type | Count | % |
 |------|-------|---|
-| command | 1295 | 33% |
-| git_ops | 673 | 17% |
-| plan_invocation | 669 | 17% |
+| command | 1301 | 34% |
+| plan_invocation | 674 | 17% |
+| git_ops | 674 | 17% |
 | question | 476 | 12% |
-| context_setting | 323 | 8% |
-| continuation | 271 | 7% |
-| exploration | 82 | 2% |
+| context_setting | 325 | 8% |
+| continuation | 272 | 7% |
+| exploration | 83 | 2% |
 | correction | 21 | 0% |
 
 ## Size Distribution
 
 | Class | Count | % |
 |-------|-------|---|
-| long | 1207 | 31% |
-| terse | 1184 | 31% |
-| short | 965 | 25% |
+| long | 1215 | 31% |
+| terse | 1189 | 31% |
+| short | 968 | 25% |
 | medium | 454 | 11% |
 
 ## Top Narrative Threads (by prompt count)
 
 | Thread | Sessions | Prompts | Date Range | Dominant Type |
 |--------|----------|---------|------------|---------------|
-| meta-organvm/implement-2026-03-06..2026-03-11 | 96 | 384 | 2026-03-06..2026-03-11 | command |
+| meta-organvm/implement-2026-03-06..2026-03-11 | 98 | 394 | 2026-03-06..2026-03-11 | command |
 | organvm-pactvm/ingesting-organ-document-structure/ | 93 | 336 | 2026-02-08..2026-02-16 | command |
 | 4444J99/application-pipeline/implement-2026-02-23. | 75 | 322 | 2026-02-23..2026-02-27 | command |
 | 4444J99/portfolio/implement-2026-02-15..2026-02-18 | 46 | 220 | 2026-02-15..2026-02-18 | command |
@@ -62,15 +62,15 @@
 | 2025-12 | 23 | 23 | 13 | Users/4jp |
 | 2026-01 | 13 | 15 | 9 | 4jp/Legal/padavano-v-mdc--empl |
 | 2026-02 | 580 | 2569 | 55 | organvm-pactvm/ingesting-organ |
-| 2026-03 | 264 | 1197 | 27 | meta-organvm |
+| 2026-03 | 268 | 1213 | 28 | meta-organvm |
 
 ## Top Imperative Verbs
 
 | Verb | Count | % |
 |------|-------|---|
-| implement | 627 | 16% |
+| implement | 631 | 16% |
 | stage | 324 | 8% |
-| proceed | 88 | 2% |
+| proceed | 89 | 2% |
 | run | 64 | 1% |
 | commit | 56 | 1% |
 | analyze | 56 | 1% |
@@ -79,8 +79,8 @@
 | check | 27 | 0% |
 | update | 24 | 0% |
 | fix | 18 | 0% |
+| review | 17 | 0% |
 | create | 17 | 0% |
-| review | 16 | 0% |
 | add | 11 | 0% |
 | open | 8 | 0% |
 | make | 6 | 0% |
@@ -93,7 +93,7 @@
 
 | Pattern | Count | Description |
 |---------|-------|-------------|
-| steady-build | 65 | Continuous command flow without major corrections |
+| steady-build | 66 | Continuous command flow without major corrections |
 | single-shot | 28 | Thread with 1-2 prompts only |
 | exploration-first | 10 | Opens with questions or exploration |
 | plan-then-execute | 1 | Opens with plan invocation, bulk commands follow |
@@ -102,33 +102,33 @@
 
 | Tag | Count |
 |-----|-------|
-| python | 524 |
-| bash | 363 |
-| pytest | 285 |
+| python | 529 |
+| bash | 365 |
+| pytest | 287 |
 | typescript | 206 |
-| mcp | 172 |
+| mcp | 179 |
 | go | 171 |
-| node | 134 |
+| node | 135 |
 | astro | 133 |
 | react | 128 |
 | p5.js | 102 |
 | jekyll | 77 |
-| neon | 75 |
+| neon | 76 |
 | docker | 73 |
 | postgresql | 72 |
 | vite | 66 |
 | vitest | 63 |
 | cloudflare | 62 |
 | chezmoi | 60 |
-| fastapi | 57 |
+| fastapi | 59 |
 | javascript | 57 |
 | playwright | 56 |
 | zsh | 49 |
 | redis | 47 |
-| vercel | 44 |
+| vercel | 46 |
 | homebrew | 34 |
 | supercollider | 33 |
-| terraform | 31 |
+| terraform | 32 |
 | express | 30 |
 | tailwind | 24 |
-| three.js | 23 |
+| aws | 23 |

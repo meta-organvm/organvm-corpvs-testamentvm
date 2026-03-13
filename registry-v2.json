@@ -1662,7 +1662,7 @@
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "HIGH - Governance tooling",
           "dependencies": [
-            "organvm-i-theoria/system-governance-framework"
+            "organvm-iv-taxis/system-governance-framework"
           ],
           "promotion_status": "GRADUATED",
           "tier": "standard",
