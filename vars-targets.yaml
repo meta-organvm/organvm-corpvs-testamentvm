@@ -21,6 +21,10 @@ targets:
   - root: "~/Workspace/meta-organvm/.github"
     files: ["profile/README.md"]
 
+  # Personal profile README
+  - root: "~/Workspace/4444J99/4444J99"
+    files: ["README.md"]
+
   # Workspace context files
   - root: "~/Workspace"
     files: ["CLAUDE.md", "GEMINI.md", "AGENTS.md"]
