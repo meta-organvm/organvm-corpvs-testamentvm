@@ -30,6 +30,7 @@ jobs:
         run: |
           pip install pyyaml
           pip install git+https://github.com/meta-organvm/organvm-engine.git
+          pip install git+https://github.com/meta-organvm/organvm-ontologia.git
 
       - name: Calculate metrics
         env:
@@ -40,6 +41,21 @@ jobs:
       - name: Propagate metrics
         run: |
           python3 scripts/propagate-metrics.py
+
+      - name: Build system snapshot
+        run: |
+          python3 -c "
+          from organvm_engine.metrics.snapshot import build_system_snapshot, write_system_snapshot
+          from organvm_engine.metrics.calculator import compute_metrics
+          from organvm_engine.registry.loader import load_registry
+          from pathlib import Path
+
+          registry = load_registry(Path('registry-v2.json'))
+          computed = compute_metrics(registry)
+          snapshot = build_system_snapshot(registry, computed)
+          write_system_snapshot(snapshot, Path('system-snapshot.json'))
+          print(f'Snapshot: {len(snapshot.get(\"organs\", []))} organs, {snapshot[\"system\"][\"total_repos\"]} repos')
+          "
 
       - name: Commit changes
         id: commit
