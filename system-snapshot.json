@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T21:57:22.016823+00:00",
+  "generated_at": "2026-03-15T22:02:54.913274+00:00",
   "system": {
     "total_repos": 113,
     "active_repos": 59,
@@ -14,22 +14,64 @@
     "total_words_numeric": 738579,
     "published_essays": 49,
     "sprints_completed": 33,
-    "ammoi": "AMMOI:58% E:28 T:33 C:5 Ev24h:5120 IS:98% 8o/113r/1654c [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-IV:77%] | d24h:+0.6%"
+    "ammoi": "AMMOI:58% E:28 T:33 C:5 Ev24h:5130 IS:98% 8o/113r/1654c [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-IV:77%] | d24h:+0.6%"
   },
   "code_profile": {
-    "languages": {
+    "all_files": {
+      "JSON": 46960,
+      "Markdown": 24836,
       "Python": 2812,
-      "TypeScript": 1948,
-      "TypeScript/React": 727,
+      "HTML": 2245,
+      "TypeScript": 1956,
+      "YAML": 1753,
+      "TypeScript/React": 728,
       "JavaScript": 369,
-      "Shell": 195,
+      "Shell": 196,
+      "CSS": 159,
+      "SQL": 98,
+      "Astro": 96,
+      "TOML": 57,
+      "Lua": 8,
       "Rust": 6,
+      "MDX": 5,
       "JavaScript/React": 4,
-      "Go": 1
+      "Swift": 3,
+      "Kotlin": 2,
+      "PHP": 1,
+      "C++": 1,
+      "C": 1,
+      "Go": 1,
+      "Ruby": 1,
+      "Java": 1,
+      "SCSS": 1
+    },
+    "code_files_by_language": {
+      "Python": 2812,
+      "HTML": 2245,
+      "TypeScript": 1956,
+      "TypeScript/React": 728,
+      "JavaScript": 369,
+      "Shell": 196,
+      "CSS": 159,
+      "SQL": 98,
+      "Astro": 96,
+      "Lua": 8,
+      "Rust": 6,
+      "MDX": 5,
+      "JavaScript/React": 4,
+      "Swift": 3,
+      "Kotlin": 2,
+      "PHP": 1,
+      "C++": 1,
+      "C": 1,
+      "Go": 1,
+      "Ruby": 1,
+      "Java": 1,
+      "SCSS": 1
     },
     "test_languages": {
       "Python": 768,
-      "TypeScript": 561,
+      "TypeScript": 564,
       "TypeScript/React": 120
     },
     "test_frameworks": {
@@ -37,13 +79,14 @@
       "vitest": 14,
       "jest": 5
     },
-    "total_code_files": 6062,
-    "total_test_files": 1449,
+    "total_files": 82300,
+    "total_code_files": 8694,
+    "total_test_files": 1452,
     "primary_language": "Python",
     "test_functions": {
       "python": 14506,
-      "typescript": 8953,
-      "total": 23459
+      "typescript": 8964,
+      "total": 23470
     }
   },
   "word_counts": {
