@@ -322,3 +322,11 @@ You are free to share and adapt this material for any purpose, including commerc
 **@4444j99** / **@4444J99**
 
 This corpus operates on an AI-conductor model: human directs, AI generates volume, human reviews and refines. The meta-system — and the process of building it — is itself the primary portfolio artifact.
+
+<!-- SYSTEM-NAV-START -->
+
+---
+
+<sub>[Portfolio](https://4444j99.github.io/portfolio/) · [System Directory](https://4444j99.github.io/portfolio/directory/) · [ORGAN Meta](https://meta-organvm.github.io/) · Part of the <a href="https://4444j99.github.io/portfolio/directory/">ORGANVM eight-organ system</a></sub>
+
+<!-- SYSTEM-NAV-END -->
