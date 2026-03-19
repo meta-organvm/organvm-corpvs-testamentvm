@@ -3,8 +3,8 @@
 ```
 Document ID:      SPEC-004
 Title:            Logical Specification
-Version:          1.0
-Status:           RATIFIED
+Version:          1.1
+Status:           RATIFIED (G3 review incorporated)
 Layer:            L2 — Constitutional Logic
 Authoritative:    Governance Behavior
 Parent Specs:     SPEC-000 (System Manifesto), SPEC-003 (Invariant Register)
@@ -20,7 +20,7 @@ Principal Author: https://orcid.org/0009-0008-2007-3596
 
 ## 1. Promotion Statechart
 
-The promotion state machine governs the lifecycle of every registered repository. This section replaces the flat `TRANSITIONS` dict in `governance/state_machine.py` with a Harel statechart specification (Harel 1987) that serves as the single, canonical behavioral specification. The statechart is loaded from `governance-rules.json`; the engine executes it. This resolves the AX-005 DRIFT problem identified in SPEC-003's inventory: two sources of truth for the same behavioral specification, diverging in expressiveness and disconnected in implementation.
+The promotion state machine governs the lifecycle of every registered repository. This section replaces the flat `TRANSITIONS` dict in `governance/state_machine.py` with a Harel statechart specification (Harel 1987) that serves as the single, canonical behavioral specification. The statechart is loaded from `governance-rules.json`; the engine executes it. This resolves the AX-000-005 DRIFT problem identified in SPEC-003's inventory: two sources of truth for the same behavioral specification, diverging in expressiveness and disconnected in implementation.
 
 ### 1.1 Top-Level States
 
@@ -38,7 +38,9 @@ PROMOTION_STATECHART
 
 ### 1.2 INCUBATOR: OR-Decomposition with Clock Guard
 
-INCUBATOR repos have a 14-day TTL (AX-3). The internal structure tracks progress toward graduation.
+*Constitutional authority note:* INCUBATOR is a pre-constitutional state defined in `governance-rules.json` and `state_machine.py` but not explicitly named in SPEC-000's promotion description. Its constitutional authority derives from AX-000-004 (Constitutional Governance — every component requires authorization) and the governance-rules.json `state_machine.transitions` section. A Conservative Refinement to SPEC-000 should formalize INCUBATOR in the promotion sequence.
+
+INCUBATOR repos have a 14-day TTL (governance-rules.json TTL rule, derives from AX-000-004). The internal structure tracks progress toward graduation.
 
 ```
 INCUBATOR [OR]
@@ -114,12 +116,14 @@ Governance invariants are expressed as linear temporal logic (LTL) formulas (Pnu
 
 **LTL:**
 ```
-G(not exists(r1, r2 : Repo) . depends_on(r1, r2) AND depends_on(r2, r1))
+G(not exists(r : Repo) . reachable(r, r, G_dep))
 ```
 
-**Classification:** Safety property. "Nothing bad happens." Enforced structurally by `validate_dag_invariant()` on every registry load. The LTL formulation enables trace-based verification: has any observed sequence of dependency-edge additions ever created a cycle, even transiently?
+where `reachable(a, b, G)` is the transitive closure of edges in graph G. This captures cycles of ALL lengths (not just mutual 2-cycles). A→B→C→A is detected because `reachable(A, A, G_dep)` holds via the path A→B→C→A.
 
-**Traces to:** AX-000-001 (DAG Invariant), INV-000-001 (Dependency Acyclicity).
+**Classification:** Safety property. "Nothing bad happens." Enforced structurally by `validate_dag_invariant()` (topological sort) on every registry load. The LTL formulation enables trace-based verification: has any observed sequence of dependency-edge additions ever created a cycle, even transiently?
+
+**Traces to:** AX-000-004 (Constitutional Governance), AX-000-008 (Multiplex Flow Governance — dependency layer acyclicity), INV-000-001 (Dependency Acyclicity).
 
 ### TEMP-002: Promotion Resolution (Bounded Liveness)
 
@@ -171,7 +175,7 @@ G(days_since_activity(r) > 90 -> F_within(30, reviewed(r) OR archived(r)))
 
 **Classification:** Safety-liveness hybrid. The 90-day threshold is a safety condition (the bad state of staleness should not persist); the 30-day response window is a bounded liveness condition (remediation must occur within a fixed interval). `F_within(k, phi)` is syntactic sugar for the timed-automata formalization in Section 3.
 
-**Traces to:** AX-3 (TTL Eviction), AX-000-004 (Constitutional Governance).
+**Traces to:** governance-rules.json TTL rule (derives from AX-000-004), AX-000-004 (Constitutional Governance).
 
 ### TEMP-006: Constitutional Supremacy (Safety)
 
@@ -216,7 +220,7 @@ Clock-based constraints formalize the temporal dimension that plain statecharts 
 
 **Semantics:** An INCUBATOR repo has 14 calendar days to graduate to LOCAL or be archived. Expiration without graduation triggers a mandatory transition. The guard is an obligation, not a permission: the system must act when the clock exceeds 14.
 
-**Traces to:** AX-3 (TTL Eviction), LOG-001, LOG-002.
+**Traces to:** governance-rules.json TTL rule (derives from AX-000-004), LOG-001, LOG-002.
 
 ### TIMED-002: Soak Test Duration
 
@@ -239,7 +243,7 @@ Clock-based constraints formalize the temporal dimension that plain statecharts 
 
 **Semantics:** Two-stage temporal constraint. The 90-day threshold triggers a warning (TEMP-005's bounded liveness begins). At 120 days (90 + 30-day response window), remediation becomes mandatory. This formalizes the `F_within(30, ...)` construct from TEMP-005 as a concrete clock guard.
 
-**Traces to:** AX-3 (TTL Eviction), audit_thresholds.warning.stale_repo_days.
+**Traces to:** governance-rules.json TTL rule (derives from AX-000-004), audit_thresholds.warning.stale_repo_days.
 
 ### TIMED-004: Promotion Request Timeout
 
@@ -311,7 +315,7 @@ This is an empirical complement to the normative specification, not a replacemen
 
 The full Harel statechart formalism (AND-decomposition, OR-decomposition, history states, broadcast) was designed for avionics and embedded systems with combinatorial state spaces. ORGANVM has 6 top-level states and 14 transitions. The overhead of the full formalism may exceed the complexity it manages at current scale.
 
-**Mitigation:** The formalism is applied selectively. CANDIDATE receives AND-decomposition because three independent readiness dimensions genuinely compose in parallel. PUBLIC_PROCESS receives OR-decomposition because the soak test is a sequential sub-process. LOCAL, GRADUATED, and ARCHIVED remain atomic. The formalism is used where it resolves concrete problems (the AX-005 DRIFT, scattered guard logic, lost sub-state on demotion), not applied uniformly for theoretical completeness.
+**Mitigation:** The formalism is applied selectively. CANDIDATE receives AND-decomposition because three independent readiness dimensions genuinely compose in parallel. PUBLIC_PROCESS receives OR-decomposition because the soak test is a sequential sub-process. LOCAL, GRADUATED, and ARCHIVED remain atomic. The formalism is used where it resolves concrete problems (the AX-000-005 DRIFT, scattered guard logic, lost sub-state on demotion), not applied uniformly for theoretical completeness.
 
 ### 5.2 Pi-Calculus Applicability
 

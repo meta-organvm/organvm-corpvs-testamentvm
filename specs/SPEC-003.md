@@ -3,8 +3,8 @@
 ```
 Document ID:      SPEC-003
 Title:            Invariant Register
-Version:          1.0
-Status:           RATIFIED
+Version:          1.1
+Status:           RATIFIED (G3 review incorporated)
 Layer:            L2 — Formal Ontology
 Authoritative:    Entire System
 Parent Specs:     SPEC-000 (System Manifesto), SPEC-001 (Ontology Charter), SPEC-002 (Primitive Register)
@@ -442,11 +442,11 @@ THEOREM Spec => [](ConstraintDomain)
 
 | ID | Name | Deontic | Formalization | Implementation | Source |
 |----|------|---------|---------------|----------------|--------|
-| INV-000-001 | Dependency Acyclicity | F | FORMAL | ALIGNED | SPEC-000 AX-004/008 |
-| INV-000-002 | Governance Reachability | O | FORMAL | MISSING | SPEC-000 AX-002/004 |
-| INV-000-003 | Identity Persistence | F | FORMAL | DRIFT | SPEC-000 AX-003/007 |
-| INV-000-004 | Constitutional Supremacy | O | JUDGMENT | MISSING | SPEC-000 AX-004 |
-| INV-000-005 | Observability | O | FORMALIZABLE | DRIFT | SPEC-000 AX-002 |
+| INV-000-001 | Dependency Acyclicity | F | FORMAL | ALIGNED | SPEC-000 AX-000-004, AX-000-008 |
+| INV-000-002 | Governance Reachability | O | FORMAL | MISSING | SPEC-000 AX-000-002, AX-000-004 |
+| INV-000-003 | Identity Persistence | F | FORMAL | DRIFT | SPEC-000 AX-000-003, AX-000-007 |
+| INV-000-004 | Constitutional Supremacy | O | JUDGMENT | MISSING | SPEC-000 AX-000-004 |
+| INV-000-005 | Observability | O | FORMALIZABLE | DRIFT | SPEC-000 AX-000-002 |
 | INV-001-001 | Ontological Categorization | O | FORMALIZABLE | MISSING | SPEC-001 ONT-001 |
 | INV-001-002 | Subsumption Discipline | F | FORMALIZABLE | MISSING | SPEC-001 OntoClean |
 | INV-001-003 | Identity Criteria | O | FORMALIZABLE | MISSING | SPEC-001 ONT-001 |
@@ -454,7 +454,14 @@ THEOREM Spec => [](ConstraintDomain)
 | INV-002-002 | Non-Extensional Mereology | F | FORMAL | ALIGNED | SPEC-002 Section 2.1 |
 | INV-002-003 | Constraint Domain | O | FORMALIZABLE | DRIFT | SPEC-002 PRIM-005/006 |
 
-**Totals:** 3 ALIGNED, 3 DRIFT, 5 MISSING. 4 FORMAL, 6 FORMALIZABLE, 1 JUDGMENT. 5 Obligations, 5 Prohibitions, 0 Permissions.
+| INV-000-006 | Topological Data-Drivenness | O | FORMALIZABLE | MISSING | SPEC-000 AX-000-006 |
+| INV-000-009 | Signal Observability | O | FORMALIZABLE | MISSING | SPEC-000 AX-000-009 |
+
+**INV-000-006: Topological Data-Drivenness.** The organ topology must be loaded from a data configuration at runtime, not hardcoded in source code. Any code path that references a fixed set of organ identifiers violates this invariant. *Formalization: FORMALIZABLE. Implementation: MISSING — topology is hardcoded in organ_config.py, dependency_graph.py, and organ-definitions.schema.json (AX-000-006 CONFLICT per SPEC-000 inventory). Target: Layer 3B.*
+
+**INV-000-009: Signal Observability.** Every active signal connection between organs must be recorded in the patch matrix and observable through the event spine. Unrecorded signal flows violate this invariant. *Formalization: FORMALIZABLE. Implementation: MISSING — no patch matrix, no signal I/O declarations, no event spine (AX-000-009 MISSING per SPEC-000 inventory). Target: Layer 3B + Layer 4A.*
+
+**Totals:** 3 ALIGNED, 3 DRIFT, 7 MISSING. 4 FORMAL, 8 FORMALIZABLE, 1 JUDGMENT. 7 Obligations, 4 Prohibitions, 0 Permissions.
 
 ---
 

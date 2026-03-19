@@ -3,8 +3,8 @@
 ```
 Document ID:      SPEC-005
 Title:            Rulebook
-Version:          1.0
-Status:           RATIFIED
+Version:          1.1
+Status:           RATIFIED (G3 review incorporated)
 Layer:            L2 — Constitutional Logic
 Authoritative:    Governance Rules
 Parent Specs:     SPEC-000 (System Manifesto), SPEC-003 (Invariant Register)
@@ -26,11 +26,11 @@ SPEC-005 mandates explicit Or-else for all rules. A statement with A-D-I-C but n
 
 ### 1.1 Axioms
 
-#### RULE-001: DAG Invariant (AX-1)
+#### RULE-001: DAG Invariant (derives from AX-000-004, AX-000-008)
 
 | Component | Content |
 |-----------|---------|
-| **A** | Any repository in organs I, II, or III |
+| **A** | Any repository in the system (all organs including META) |
 | **D** | MUST NOT |
 | **I** | Create a dependency cycle in the inter-organ dependency graph |
 | **C** | Always -- applies to every dependency edge declaration |
@@ -38,7 +38,7 @@ SPEC-005 mandates explicit Or-else for all rules. A statement with A-D-I-C but n
 
 **Classification:** Full ADICO rule. Structurally enforced for normal engine operation. Manual-bypass Or-else chain added by SPEC-005.
 
-#### RULE-002: Epistemic Membranes (AX-2)
+#### RULE-002: Epistemic Membranes (derives from AX-000-004, AX-000-008)
 
 | Component | Content |
 |-----------|---------|
@@ -50,7 +50,7 @@ SPEC-005 mandates explicit Or-else for all rules. A statement with A-D-I-C but n
 
 **Classification:** Elevated from norm (ADIC) to rule (ADICO). The Or-else chain provides a remediation path: first declare the flow, then remove it if undeclarable, then block promotion if neither action is taken.
 
-#### RULE-003: TTL Eviction (AX-3)
+#### RULE-003: TTL Eviction (derives from AX-000-004)
 
 | Component | Content |
 |-----------|---------|
@@ -62,7 +62,7 @@ SPEC-005 mandates explicit Or-else for all rules. A statement with A-D-I-C but n
 
 **Classification:** Elevated from norm to rule. Two-stage Or-else with explicit time bounds. The 30-day response window (SPEC-004 TIMED-003) operationalizes the escalation.
 
-#### RULE-004: Registry Coherence (AX-4)
+#### RULE-004: Registry Coherence (derives from AX-000-004)
 
 | Component | Content |
 |-----------|---------|
@@ -74,7 +74,7 @@ SPEC-005 mandates explicit Or-else for all rules. A statement with A-D-I-C but n
 
 **Classification:** The most structurally enforced axiom. `save_registry()` refuses to write fewer than 50 repos (corruption guard). Validation rejects malformed entries. SPEC-005 adds the explicit escalation chain.
 
-#### RULE-005: Organ Placement (AX-5)
+#### RULE-005: Organ Placement (derives from AX-000-004, AX-000-005)
 
 | Component | Content |
 |-----------|---------|
