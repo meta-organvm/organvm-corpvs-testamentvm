@@ -2251,16 +2251,17 @@
           "org": "meta-organvm",
           "status": "ACTIVE",
           "public": false,
-          "description": "Process governance corpus: SOPs, session self-critique logs, derived principles, and continuous improvement templates",
+          "description": "Studium Generale ORGANVM (SGO): Internal university, research engine, process governance corpus, and publication house. Cross-organ intake authority for commissioning, evaluating, and certifying original contributions via IRA multi-model consensus.",
           "documentation_status": "DEPLOYED",
-          "portfolio_relevance": "MEDIUM - Demonstrates process maturity and continuous improvement methodology",
+          "portfolio_relevance": "HIGH - Demonstrates institutional design, academic rigor, and self-governing evaluation methodology",
           "dependencies": [
-            "meta-organvm/organvm-corpvs-testamentvm"
+            "meta-organvm/organvm-corpvs-testamentvm",
+            "organvm-i-theoria/auto-revision-epistemic-engine"
           ],
           "promotion_status": "GRADUATED",
           "tier": "standard",
-          "last_validated": "2026-03-06",
-          "note": "Created 2026-03-06. Docs-only corpus for process governance. 6 standards (METADOC + 5 SOPs), 4 templates, session logs, derived principles. SOPs moved from superproject root.",
+          "last_validated": "2026-03-19",
+          "note": "Created 2026-03-06 as process governance corpus. Evolved into SGO 2026-03-19: governance YAMLs migrated from organvm-i-theoria/studium-generale (now ARCHIVED). 47+ research docs, 64 SOPs, full dissertation (SGO-2026-D-002), defense rubrics, faculty registry.",
           "implementation_status": "ACTIVE",
           "ci_workflow": "ci.yml",
           "platinum_status": true
