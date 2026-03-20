@@ -32,13 +32,13 @@
 - "Just hire someone" / "Just raise funding" / "Just reduce scope"
 - Why none of these work for bootstrapped creative practice
 - The gap between what one person can write and what a system needs
-- A 3,000-word README takes 4-6 hours to write well. You have 103 repos.
+- A 3,000-word README takes 4-6 hours to write well. You have 113 repos.
 
 **Slide 4 — What I Actually Built**
-- 103 repositories, 8 GitHub organizations, 3 weeks
-- 404,000+ words of documentation
-- 46 published essays
-- 2,349 automated tests, 94 CI/CD workflows
+- 113 repositories, 8 GitHub organizations, 3 weeks
+- 739K+ words of documentation
+- 49 published essays
+- 4,015+ automated tests, 104 CI/CD workflows
 - 6 JSON schemas, 16 ADRs
 - Visual: the eight-organ diagram
 
@@ -86,14 +86,14 @@
 - "The registry is more important than any individual repo"
 
 **Slide 11 — Registry-as-JSON**
-- `registry-v2.json`: single source of truth for all 103 repos
+- `registry-v2.json`: single source of truth for all 113 repos
 - Keyed by organ, each containing array of repo objects
 - Fields: name, org, status, tier, promotion_status, ci_workflow, revenue_model
 - Demo moment: show the actual registry file, scroll through it
 
 **Slide 12 — Dependency Graph & Promotion Pipeline**
 - Unidirectional flow: Theory (I) -> Art (II) -> Commerce (III)
-- 43 validated cross-organ edges, 0 circular dependencies, 0 back-edge violations
+- 50 validated cross-organ edges, 0 circular dependencies, 0 back-edge violations
 - Five-state promotion: LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED
 - Current pipeline: 4 GRADUATED, 29 PUBLIC_PROCESS, 55 CANDIDATE, 6 LOCAL, 53 ARCHIVED
 - Visual: the dependency DAG with organ labels
@@ -128,9 +128,10 @@
 **Slide 17 — The Numbers**
 - 33 completed sprints (IGNITION through OPERATIO) in 3 weeks of calendar time
 - 12 ORGAN-III products deployed across Netlify/Render
-- 30-day soak test running (17+ consecutive days, daily snapshots)
-- Omega scorecard: 4/17 criteria met, 3 in progress, 10 awaiting external validation
-- Custom CLI with 12 command groups, MCP server with 16 tools
+- 32-day zero-incident soak test COMPLETE
+- Omega scorecard: 8/17 criteria met
+- Custom CLI with 23 command groups, MCP server with 88 tools
+- Stakeholder portal LIVE
 
 **Slide 18 — What You Can Steal**
 - The AI-conductor model is methodology, not tooling — works with any AI provider
@@ -154,7 +155,7 @@
 
 ### Key Demo Moments
 
-1. **Slide 11:** Open `registry-v2.json` in an editor — scroll through the 103 repos to show real scale. Show a single repo entry with all its fields.
+1. **Slide 11:** Open `registry-v2.json` in an editor — scroll through the 113 repos to show real scale. Show a single repo entry with all its fields.
 2. **Slide 12:** Show the `organvm` CLI running `organvm registry list --organ ORGAN-I` — live listing of repos with their promotion states.
 3. **Slide 7:** Show a terminal with a TE budget calculation — the token arithmetic for generating a README (input tokens + output tokens + revision iterations).
 4. **Slide 17:** Run `organvm metrics calculate` or show the system dashboard at localhost:8000 — the omega scorecard in real time.
@@ -169,7 +170,7 @@
 
 ---
 
-## Talk 2: Constraint Alchemy: From Zero Budget to 103 Repositories
+## Talk 2: Constraint Alchemy: From Zero Budget to 113 Repositories
 
 **Format:** 30 minutes + 10 min Q&A
 **Target venues:** XOXO, IndieWebCamp, Eyebeam
@@ -179,7 +180,7 @@
 **SECTION 1: THE CONSTRAINTS (5 min)**
 
 **Slide 1 — Title Slide**
-- Title: "Constraint Alchemy: From Zero Budget to 103 Repositories"
+- Title: "Constraint Alchemy: From Zero Budget to 113 Repositories"
 - Subtitle: "How limitations become architecture"
 - Name, handle, date
 - Visual: alchemical transformation symbol (lead -> gold)
@@ -197,9 +198,9 @@
 - "What if the constraint IS the architecture?"
 
 **Slide 4 — What Emerged**
-- 103 repositories, 8 GitHub organizations
-- 410,000+ words of documentation, 46 published essays
-- 2,349 tests, 94 CI/CD workflows, 6 JSON schemas
+- 113 repositories, 8 GitHub organizations
+- 739K+ words of documentation, 49 published essays
+- 4,015+ tests, 104 CI/CD workflows, 6 JSON schemas
 - Constitutional governance framework with 6 articles + 5 amendments
 - All on free-tier infrastructure, zero employees, three weeks of calendar time
 
@@ -209,7 +210,7 @@
 - Build FROM the constraint, not DESPITE it
 - "No database budget" does not mean "find a cheaper database"
 - It means: "What if the entire system runs on a single JSON file?"
-- `registry-v2.json`: 2,217 lines, 103 repos, zero infrastructure cost
+- `registry-v2.json`: 2,400+ lines, 113 repos, zero infrastructure cost
 - Demo moment: show the registry file — a JSON file that IS the database
 - "The constraint eliminated an entire class of operational complexity"
 
@@ -231,15 +232,15 @@
 **Slide 8 — Technique 4: Autonomous Amplification**
 - Systems that generate their own content and distribution pipeline
 - Essay published -> essay-monitor detects -> POSSE distribution fires -> social channels update
-- 46 essays published with automated cross-posting
+- 49 essays published with automated cross-posting
 - 23 kerygma profiles mapping products to distribution channels
 - "The system amplifies itself — I just conduct"
 
 **Slide 9 — Technique 5: Portfolio-as-Proof**
 - Process documentation IS the primary deliverable
-- The 46 essays about building the system ARE the system's most visible output
+- The 49 essays about building the system ARE the system's most visible output
 - Grant reviewers and hiring managers see methodology, not just artifacts
-- The governance corpus (~404K+ words) is evidence of capability
+- The governance corpus (~739K+ words) is evidence of capability
 - "Documenting the building is building"
 
 **SECTION 3: THE DECISIONS (8 min)**
@@ -255,7 +256,7 @@
 **Slide 11 — The Billing Disaster**
 - 48,880 minutes of GitHub Actions CI in one month
 - Free tier limit: 2,000 minutes. That is a 24x overage.
-- Root cause: 94 workflows running on every push across 113 repos
+- Root cause: 104 workflows running on every push across 113 repos
 - Decision: disabled 17 non-critical workflows, added billing guardrails
 - "Constraints you forget about come back as invoices"
 
@@ -307,7 +308,7 @@
 
 ### Key Demo Moments
 
-1. **Slide 5:** Open `registry-v2.json` and show it as the "database" — a single JSON file serving the function of an entire data layer. Scroll to show scale (2,217 lines, 103 repos).
+1. **Slide 5:** Open `registry-v2.json` and show it as the "database" — a single JSON file serving the function of an entire data layer. Scroll to show scale (2,400+ lines, 113 repos).
 2. **Slide 7:** Show the four governance quadrilateral documents side by side in split panes — roadmap, catalog, cadence, rolling TODO.
 3. **Slide 10:** Open an actual ADR file and walk through the constraint -> decision -> consequences format.
 4. **Slide 13:** Run `organvm registry validate` to show the validation scripts catching errors in real time.
@@ -348,7 +349,7 @@
 - Nicky Case's Explorable Explanations — systems thinking as creative medium
 - Hundred Rabbits' radical transparency — process documentation as art
 - Sol LeWitt's wall drawings — instruction-based art, system as work
-- "I am not the first to treat systems as medium. I may be the first to run 103 repos to do it."
+- "I am not the first to treat systems as medium. I may be the first to run 113 repos to do it."
 
 **SECTION 2: THE EIGHT ORGANS (10 min)**
 
@@ -361,7 +362,7 @@
   - V: Logos (Discourse) — 6 repos — essays, public process, analytics
   - VI: Koinonia (Community) — 6 repos — salons, reading groups, learning
   - VII: Kerygma (Distribution) — 6 repos — POSSE, social automation
-  - VIII: Meta — 7 repos — governance of governors, schemas, dashboard
+  - VIII: Meta — 8 repos — governance of governors, schemas, dashboard
 
 **Slide 5 — The Dependency Graph**
 - Unidirectional flow: I -> II -> III (enforced, zero violations)
@@ -369,7 +370,7 @@
 - V observes (read-many, write-one)
 - VII is pure consumer (receives, never produces upstream)
 - VIII governs the governors
-- 43 validated cross-organ edges, 0 circular dependencies
+- 50 validated cross-organ edges, 0 circular dependencies
 - Visual: DAG with color-coded organs and edge arrows
 - "This is a compositional constraint, like a harmonic rule in music"
 
@@ -396,15 +397,15 @@
 
 **Slide 9 — Organs IV-VII: The Infrastructure**
 - IV (Taxis): orchestration, governance rules, AI agent skills, dependency validation
-- V (Logos): 46 published essays documenting the building process in real time
+- V (Logos): 49 published essays documenting the building process in real time
 - VI (Koinonia): community infrastructure — salons, reading groups, taxonomy
 - VII (Kerygma): POSSE distribution pipeline, 23 kerygma profiles
 - "These organs do not make things. They make the making possible."
 
 **Slide 10 — Organ VIII: Meta**
-- The governance corpus (~404K+ words), the registry, the schemas
-- Custom CLI (`organvm` — 12 command groups)
-- MCP server (16 tools) exposing the system graph to AI sessions
+- The governance corpus (~739K+ words), the registry, the schemas
+- Custom CLI (`organvm` — 23 command groups)
+- MCP server (88 tools) exposing the system graph to AI sessions
 - System dashboard with dependency visualization
 - "Meta governs the governors. It is the organ that watches all other organs."
 
@@ -458,11 +459,11 @@
 - Not a portfolio (portfolios are collections; this is an organism)
 - Not a monorepo (103 independent repos with formal governance)
 - Not a framework (you cannot install it; you can only study and adapt the model)
-- Not finished (omega scorecard: 4/17 criteria met — the system is alive and growing)
+- Not finished (omega scorecard: 8/17 criteria met — the system is alive and growing)
 - "It is a creative practice that happens to look like systems architecture"
 
 **Slide 18 — The Organ Model as Creative Methodology**
-- You do not need 103 repos — you need the thinking behind them
+- You do not need 113 repos — you need the thinking behind them
 - Design your practice as organs with dependencies, not projects in a folder
 - Ask: what produces, what transforms, what distributes, what governs?
 - The four questions that define any creative system:
@@ -474,7 +475,7 @@
 **Slide 19 — Resources**
 - Full governance corpus: github.com/meta-organvm/organvm-corpvs-testamentvm
 - Interactive portfolio with generative art: 4444j99.github.io/portfolio/
-- 46 Public Process essays: organvm-v-logos.github.io/public-process/
+- 49 Public Process essays: organvm-v-logos.github.io/public-process/
 - Evidence portfolio with verifiable metrics
 - QR code to the governance corpus
 
@@ -485,7 +486,7 @@
 
 ### Key Demo Moments
 
-1. **Slide 5:** Run `organvm seed graph` or show the system dashboard dependency graph — the full DAG with all 43 edges, color-coded by organ.
+1. **Slide 5:** Run `organvm seed graph` or show the system dashboard dependency graph — the full DAG with all 50 edges, color-coded by organ.
 2. **Slide 7:** Show a running generative art piece from an ORGAN-II repo (if audio is available) or a screenshot/recording of one.
 3. **Slide 11:** Show two `organ-aesthetic.yaml` files side by side — contrast the visual identity definitions between Theory and Art organs.
 4. **Slide 13:** Run `organvm seed validate` — show the system verifying its own structural integrity across 113 repos.
@@ -509,23 +510,23 @@ These metrics appear across all three talks and should be kept consistent. Sourc
 |--------|-------|--------|
 | Total repositories | 113 | registry-v2.json |
 | GitHub organizations | 8 | registry-v2.json |
-| Documentation volume | ~404K+ words | system metrics |
-| Published essays | 48 | ORGAN-V public-process |
-| Automated tests | 2,349+ | CI aggregation |
-| CI/CD workflows | 104+ | registry-v2.json |
+| Documentation volume | ~739K+ words | system metrics |
+| Published essays | 49 | ORGAN-V public-process |
+| Automated tests | 4,015+ | CI aggregation |
+| CI/CD workflows | 104 | registry-v2.json |
 | JSON schemas | 6 (all v1.0.0) | schema-definitions |
 | ADRs | 16 | docs/adr/ |
 | Completed sprints | 33 | sprint catalog |
-| Cross-organ edges | 43 (0 violations) | seed graph |
+| Cross-organ edges | 50 (0 violations) | seed graph |
 | Promotion: GRADUATED | 4 | registry |
 | Promotion: PUBLIC_PROCESS | 29 | registry |
 | Promotion: CANDIDATE | 55 | registry |
 | Products deployed | 12 | Netlify/Render |
 | Total TE budget | ~6.5M tokens | implementation-package-v2 |
 | CI billing incident | 48,880 minutes | ADR |
-| Omega scorecard | 4/17 met | omega evidence map |
-| CLI command groups | 12 | organvm-engine |
-| MCP server tools | 16 | organvm-mcp-server |
+| Omega scorecard | 8/17 met | omega evidence map |
+| CLI command groups | 23 | organvm-engine |
+| MCP server tools | 88 | organvm-mcp-server |
 | Kerygma profiles | 23 | ORGAN-VII |
 
 ## Adaptation Notes

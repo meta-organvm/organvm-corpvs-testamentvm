@@ -13,11 +13,11 @@
 
 What happens when you treat an AI not as a replacement for a developer, but as an orchestra responding to a conductor?
 
-In three weeks, working solo, I built a 103-repository system spanning 8 GitHub organizations -- 410,000 words of documentation, 46 published essays, 2,349 automated tests, 94 CI/CD workflows -- all governed by a formal promotion state machine, validated dependency graph, and machine-readable registry. The effort metric was not hours but tokens expended: 6.5 million of them, budgeted and tracked across 33 named sprints the way a film production tracks shooting days.
+In three weeks, working solo, I built a 113-repository system spanning 8 GitHub organizations -- 739K+ words of documentation, 49 published essays, 4,015+ automated tests, 104 CI/CD workflows -- all governed by a formal promotion state machine, validated dependency graph, and machine-readable registry. The effort metric was not hours but tokens expended: 6.5 million of them, budgeted and tracked across 33+ named sprints the way a film production tracks shooting days.
 
 This talk introduces the AI-conductor methodology: a structured approach where the human provides architectural vision, governance design, and editorial judgment while the AI generates volume at institutional scale. The model has three phases -- direct, generate, review -- and three failure modes I discovered the hard way: hallucinated code examples that pass CI but do nothing, generic phrasing that makes every README indistinguishable, and the VERITAS sprint where I found nine honest-to-god lies in my own AI-generated data and had to build an entire audit framework in response.
 
-The governance layer is what makes it work. A single JSON registry tracks all 103 repositories. A dependency graph enforces unidirectional flow between organs with zero back-edges. A five-state promotion pipeline (LOCAL through ARCHIVED) ensures nothing goes public until it meets quality gates. Six JSON schemas validate every data contract. Without these structures, AI-generated volume is just AI-generated noise.
+The governance layer is what makes it work. A single JSON registry tracks all 113 repositories. A dependency graph enforces unidirectional flow between organs with 50 dependency edges and zero back-edge violations. A five-state promotion pipeline (LOCAL through ARCHIVED) ensures nothing goes public until it meets quality gates. Six JSON schemas validate every data contract. A 32-day zero-incident soak test has verified autonomous operation. Without these structures, AI-generated volume is just AI-generated noise.
 
 This is not a talk about prompt engineering. It is a talk about organizational design -- about how one person can operate at institutional scale by treating AI as infrastructure rather than intelligence. I will share the actual architecture decision records, the billing disasters (48,880 minutes of CI in one month), the metrics, and the methodology you can steal.
 
@@ -28,7 +28,7 @@ This is not a talk about prompt engineering. It is a talk about organizational d
 
 ### Speaker Bio
 
-Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 103 repositories across 8 GitHub organizations coordinating theory, generative art, commercial products, governance, public process, community, and marketing through automated governance. 46 published essays, 33 development sprints, 410K+ words of documentation. 18 years professional experience spanning creative systems design, college instruction (11 years, 2,000+ students at 8+ institutions), multimedia production, and construction project management. MFA Creative Writing (FAU), Meta Full-Stack Developer certification. NYC-based.
+Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 113 repositories across 8 GitHub organizations coordinating theory, generative art, commercial products, governance, public process, community, and marketing through automated governance. 49 published essays, 33+ development sprints, 739K+ words of documentation, 4,015+ automated tests, 27 constitutional specs grounded in 130 peer-reviewed sources. 18 years professional experience spanning creative systems design, college instruction (11 years, 2,000+ students at 8+ institutions), multimedia production, and construction project management. MFA Creative Writing (FAU), Meta Full-Stack Developer certification. NYC-based.
 
 ### Technical Requirements
 
@@ -47,15 +47,15 @@ Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 1
 
 ---
 
-## Talk 2: Constraint Alchemy: From Zero Budget to 103 Repositories
+## Talk 2: Constraint Alchemy: From Zero Budget to 113 Repositories
 
 ### Abstract (300 words)
 
-No budget. No team. No runway. These are the constraints I started with when I built an eight-organ creative system that now spans 103 repositories, 8 GitHub organizations, and 404,000+ words of documentation -- all on free-tier hosting, with zero employees, in three weeks of calendar time.
+No budget. No team. No runway. These are the constraints I started with when I built an eight-organ creative system that now spans 113 repositories, 8 GitHub organizations, and 739K+ words of documentation -- all on free-tier hosting, with zero employees, in three weeks of calendar time.
 
-Constraint alchemy is not motivational thinking. It is a structured methodology with five techniques I developed and documented across 33 sprints: inverse design (build from the constraint, not despite it -- "no database budget" becomes "registry-as-JSON"), temporal compression (deadlines as creative accelerants -- 33 sprints in three weeks through AI-conductor methodology), minimum viable governance (the four-document quadrilateral that prevents chaos without creating bureaucracy), autonomous amplification (systems that generate their own content and distribution pipeline), and portfolio-as-proof (process documentation IS the primary deliverable -- 46 essays about building the system ARE the system's output).
+Constraint alchemy is not motivational thinking. It is a structured methodology with five techniques I developed and documented across 33 sprints: inverse design (build from the constraint, not despite it -- "no database budget" becomes "registry-as-JSON"), temporal compression (deadlines as creative accelerants -- 33+ sprints in three weeks through AI-conductor methodology), minimum viable governance (the four-document quadrilateral that prevents chaos without creating bureaucracy), autonomous amplification (systems that generate their own content and distribution pipeline), and portfolio-as-proof (process documentation IS the primary deliverable -- 49 essays about building the system ARE the system's output).
 
-I will walk through the actual decisions. Why a single JSON file beats a database when you have 103 repos and zero infrastructure budget. Why disabling 17 GitHub Actions workflows saved the system after a billing disaster of 48,880 CI minutes. Why publishing honest revenue numbers (all zeros) built more credibility with grant reviewers than inflated projections. Why I run a formal promotion state machine, six validated JSON schemas, and a constitutional governance framework -- for a project with exactly one contributor.
+I will walk through the actual decisions. Why a single JSON file beats a database when you have 113 repos and zero infrastructure budget. Why disabling 17 GitHub Actions workflows saved the system after a billing disaster of 48,880 CI minutes. Why publishing honest revenue numbers (all zeros) built more credibility with grant reviewers than inflated projections. Why I run a formal promotion state machine, six validated JSON schemas, and a constitutional governance framework grounded in 27 specs backed by 130 peer-reviewed sources -- for a project with exactly one contributor.
 
 The answer to that last question is the core of the talk: constraints do not just shape what you build. They shape what you become. The governance structures I designed to survive zero-budget, zero-team conditions turned out to be more interesting than any individual artifact the system produced. The constraint became the medium. The limitation became the architecture.
 
@@ -69,7 +69,7 @@ I will provide the full constraint-to-decision-to-architecture pipeline, with te
 
 ### Speaker Bio
 
-Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 103 repositories across 8 GitHub organizations, built with zero budget, zero team, and a methodology that transmutes constraints into architecture. 46 published essays document the creative process -- including the failures, billing disasters, and course corrections -- in real time. 18 years professional experience across creative systems design, college instruction (2,000+ students), and multimedia production. MFA Creative Writing. NYC-based.
+Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 113 repositories across 8 GitHub organizations, built with zero budget, zero team, and a methodology that transmutes constraints into architecture. 49 published essays document the creative process -- including the failures, billing disasters, and course corrections -- in real time. 4,015+ automated tests, 104 CI/CD workflows, 8/17 omega maturity criteria met. 18 years professional experience across creative systems design, college instruction (2,000+ students), and multimedia production. MFA Creative Writing. NYC-based.
 
 ### Technical Requirements
 
@@ -94,7 +94,7 @@ Systems artist and auteur-producer. Creator of the ORGANVM eight-organ system: 1
 
 What happens when you model creative practice as a distributed system?
 
-Most artists work in one domain. Most software architects build one product. I built eight organs -- Theory, Art, Commerce, Orchestration, Public Process, Community, Marketing, and Meta-governance -- as a single coordinated system with 103 repositories, enforced dependency rules, and a formal promotion pipeline. The result is not a portfolio. It is an organism, and the architecture decisions that shape it are indistinguishable from the artistic decisions.
+Most artists work in one domain. Most software architects build one product. I built eight organs -- Theory, Art, Commerce, Orchestration, Public Process, Community, Marketing, and Meta-governance -- as a single coordinated system with 113 repositories, enforced dependency rules, and a formal promotion pipeline. The result is not a portfolio. It is an organism, and the architecture decisions that shape it are indistinguishable from the artistic decisions.
 
 The eight-organ model is a dependency graph. Theory (ORGAN-I) produces frameworks that Art (ORGAN-II) consumes and transforms into generative works. Art produces artifacts that Commerce (ORGAN-III) packages into products. The flow is unidirectional: I to II to III, enforced by automated validation with zero back-edge violations across 50 dependency edges. Orchestration (ORGAN-IV) coordinates everything. Public Process (ORGAN-V) observes and documents. Community (ORGAN-VI) and Marketing (ORGAN-VII) distribute. Meta (ORGAN-VIII) governs the governors.
 
@@ -109,7 +109,7 @@ This is systems architecture as creative practice. The dependency graph is a com
 
 ### Speaker Bio
 
-Systems artist and auteur-producer working at the intersection of creative infrastructure, governance design, and AI-augmented methodology. Creator of the ORGANVM eight-organ system: 103 repositories across 8 GitHub organizations coordinating theory, generative art, commercial products, governance, public process, community, and marketing through automated governance and a formal promotion state machine. 46 published essays document the creative process in real time. Reference points: Julian Oliver's critical engineering, Nicky Case's Explorable Explanations, Hundred Rabbits' radical transparency. MFA Creative Writing. NYC-based.
+Systems artist and auteur-producer working at the intersection of creative infrastructure, governance design, and AI-augmented methodology. Creator of the ORGANVM eight-organ system: 113 repositories across 8 GitHub organizations coordinating theory, generative art, commercial products, governance, public process, community, and marketing through automated governance and a formal promotion state machine. 49 published essays document the creative process in real time. 8/17 omega maturity criteria met, 32-day zero-incident soak test complete. Reference points: Julian Oliver's critical engineering, Nicky Case's Explorable Explanations, Hundred Rabbits' radical transparency. MFA Creative Writing. NYC-based.
 
 ### Technical Requirements
 
@@ -122,7 +122,7 @@ Systems artist and auteur-producer working at the intersection of creative infra
 
 - Full governance corpus: [organvm-corpvs-testamentvm](https://github.com/meta-organvm/organvm-corpvs-testamentvm)
 - Interactive portfolio with generative art: [4444j99.github.io/portfolio](https://4444j99.github.io/portfolio/)
-- Public Process essays (46 published): [organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)
+- Public Process essays (49 published): [organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)
 - System dashboard with dependency graph visualization
 - Evidence portfolio: [evidence-portfolio.md](https://github.com/meta-organvm/organvm-corpvs-testamentvm/blob/main/docs/applications/evidence-portfolio.md)
 - Organ-aesthetic.yaml files defining visual identity cascades per organ
