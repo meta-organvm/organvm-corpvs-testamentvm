@@ -90,7 +90,7 @@
   - URL: https://www.creativelab5.com/ · Fit: 8/10
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
 
-- [ ] **F4.** Research and submit NEH Summer Programs — **deadline Mar 6** (~2 hrs)
+- [ ] **[EXPIRED] F4.** Research and submit NEH Summer Programs — **deadline Mar 6** (~2 hrs)
   - Credential-building. Evaluate eligibility before investing time.
   - Source: [10-funding-strategy.md](../applications/10-funding-strategy.md)
 
@@ -110,17 +110,17 @@
 
 ### This Month (Feb 17 – Mar 18)
 
-- [ ] **F14.** Apply Bread Loaf Writers' Conference scholarship ($4,440 value) — **deadline Mar 15** (~2 hrs)
+- [ ] **[EXPIRED] F14.** Apply Bread Loaf Writers' Conference scholarship ($4,440 value) — **deadline Mar 15** (~2 hrs)
   - URL: https://www.middlebury.edu/writers-conferences/writers-conference · Fit: 7/10
   - Participant Scholarship covers tuition/room/board. Nonfiction track. MFA + 41 essays is strong.
   - 10 days, August 12-22, 2026 in Middlebury, VT. Not income (scholarship covers program costs).
   - Source: [11-funding-research-exhaustive.md](../applications/11-funding-research-exhaustive.md) Part 2
 
-- [ ] **E3.** Submit Google Creative Fellowship application — **deadline March 18, 2026**
+- [ ] **[EXPIRED] E3.** Submit Google Creative Fellowship application — **deadline March 18, 2026**
   - URL: https://creativefellowship.google/ · Materials ready · Fit: 7/10
   - Source: [e2g-ii P1](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #14
 
-- [ ] **X3.** Submit 2 job applications (~2 hrs) — Together AI Lead DX (6/10), HuggingFace Dev Advocate (5/10)
+- [x] **X3.** Submit 9 job applications — completed 2026-03-19 (Anthropic, Coinbase, Temporal, Cursor, Datadog, Deepgram, Perplexity, Railway, Render)
   - Cover letters: `docs/applications/cover-letters/`
   - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
 
@@ -234,7 +234,7 @@
 - [x] **M8-II.** Resolve 5 ghost repos — completed 2026-02-17 (RENOVATIO: all 5 exist on GitHub and are active; "ghost" was false alarm from missing local clones, not missing remotes)
   - Source: Sprint 32 SENSORIA findings
 
-- [ ] **S1-II.** Complete 30-day soak test and generate report — clock started 2026-02-16, completes ~March 18
+- [x] **S1-II.** Complete 30-day soak test and generate report — completed 2026-03-18 (32/30 days, 0 incidents)
   - Command: `python3 scripts/soak-test-monitor.py report --days 30`
   - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md) · Omega: #1, #17
 
@@ -308,6 +308,10 @@
   - Source: AMPLIFICATIO CI investigation
 - [x] **M10-II.** Fix life-my--midst--in CI — completed 2026-02-17 (ESLint 10→9.x, design-system coverage 75%→20%, closes #91)
   - Source: AMPLIFICATIO CI investigation
+- [x] **S1-II.** Complete 30-day soak test — completed 2026-03-18 (32/30 days, 0 incidents)
+  - Source: [e2g-ii P3](../evaluation/e2g-ii-action-items.md) · Omega: #1, #17
+- [x] **X3.** Submit 9 job applications — completed 2026-03-19 (Anthropic, Coinbase, Temporal, Cursor, Datadog, Deepgram, Perplexity, Railway, Render)
+  - Source: [e2g-ii P0](../evaluation/e2g-ii-action-items.md) · Omega: #5, feeds #7
 
 ---
 
@@ -323,7 +327,7 @@
 
 | Source Document | Items Drawn | Coverage |
 |----------------|-------------|----------|
-| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E2, E4, M4-II completed) | 100% of open items |
+| [`e2g-ii-action-items.md`](../evaluation/e2g-ii-action-items.md) | 20 of 21 (E1, E2, E4, M4-II, S1-II, X3 completed) | 100% of open items |
 | [`autonomous-setup-guide.md`](./autonomous-setup-guide.md) | 3 of 3 PENDING/OPTIONAL | 100% |
 | [`10-funding-strategy.md`](../applications/10-funding-strategy.md) | 9 items (F1-F9) | Funding strategy rewrite |
 | [`11-funding-research-exhaustive.md`](../applications/11-funding-research-exhaustive.md) | 15 items (F10-F21, W1-W3) | Exhaustive research integration |
@@ -332,7 +336,7 @@
 | Sprint 32 SENSORIA findings | 2 new items (M7-II, M8-II) | Registry anomalies |
 | AMPLIFICATIO CI investigation | 2 new items (M9-II, M10-II) | Deferred CI fixes |
 
-**Total items:** 54 (2 READY, 34 TIME, 3 INCOME, 3 EXTERNAL, 12 COMPLETED) — 9 of the READY/TIME items are STAGED (materials ready, awaiting submission/execution)
+**Total items:** 54 (2 READY, 32 TIME, 3 INCOME, 3 EXTERNAL, 14 COMPLETED) — 9 of the READY/TIME items are STAGED (materials ready, awaiting submission/execution). 3 TIME items expired (F4 Mar 6, F14 Mar 15, E3 Mar 18).
 **Late agent integration (2026-02-17):** F22 (Doris Duke $150K, Mar 2) from creative tech agent. F24 (Watermill Center, **Feb 18 TOMORROW**) from residency agent — free housing/food, Long Island, 7/10 fit.
 **Research integration (2026-02-17):** 15 new items from exhaustive funding research — 12 funding (F10-F21) + 3 writing income (W1-W3). Key additions: Prix Ars Electronica (Mar 4), S+T+ARTS (Mar 4), PEN America (rolling), WFF Housing ($30K/3yr), Whiting ($40K), Headlands (9/10), Recurse Center (9/10), premium writing income (Noema, Logic, GLR).
 **Strategy rewrite (2026-02-17):** 9 funding items added (F1-F9). Benefits cliff note added. NEEDS TIME reordered by deadline urgency (F3 Artadia Mar 1 → F9 Processing ~Apr-May). Funding submissions classified as external-facing (compatible with P0 hermetic seal rule).
