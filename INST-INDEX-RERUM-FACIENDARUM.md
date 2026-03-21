@@ -205,6 +205,20 @@ Verified on disk 2026-03-20:
 
 ---
 
+## ORGAN-I — Theoria (Conversation Corpus Engine)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-CCE-001 | P1 | Migrate intake/ai-exports to a proper ORGANVM home — currently lives at `~/Workspace/intake/ai-exports` which is an unsorted staging directory, not an organ. The deployment site (5 corpora, source-drop, state, federation) needs a permanent address under ORGAN-I or META governance | Agent | S27 (this session) | Naming: should it be an ORGAN-I repo, a META deployment, or a standalone workspace site? |
+| IRF-CCE-002 | P2 | Reconcile canonical ChatGPT adapter with 5,403-line genesis `export_chatgpt_history.py` — the archive at `intake/ai-exports/archive/legacy-scripts/` has richer entity disambiguation, family grouping, duplicate/contradiction detection, and triage scoring. Cherry-pick the best extraction logic into the canonical adapter | Agent | S27 | None |
+| IRF-CCE-003 | P2 | Add provider adapters for ChatGPT local app data (macOS sandbox), DeepSeek, Mistral — expand beyond the 6 current providers | Agent | S27 | Need export format documentation |
+| IRF-CCE-004 | P2 | Dashboard or TUI for corpus health — readiness, evaluation gates, federation status, review queue at a glance | Agent | S27 | None |
+| IRF-CCE-005 | P1 | Wire `chatgpt-history` corpus into provider readiness as "registered-active" not "missing" — the genesis corpus exists but shows "missing" because it predates the source-drop inbox flow | Agent | S27 | Readiness logic assumes all corpora arrive through source-drop |
+| IRF-CCE-006 | P2 | Publish `cce` to PyPI or at minimum make it `pipx install`-able from GitHub | Agent | S27 | None |
+| IRF-CCE-007 | P1 | Resolve `claude-history-memory` gate=warn — evaluation shows `source_reliability_state: warn` because manual gold fixtures haven't been added for the Claude export corpus | Agent | S27 | Need manual review of Claude export conversations |
+
+---
+
 ## ORGAN-II — Object Lessons
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -486,6 +500,50 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-038 | stakeholder-portal Next.js 16.2.1 + eslint-config-next sync — PR #27, 265/265 tests, lint clean | S26 | 2026-03-21 |
 | DONE-039 | Community reply to m13v on agentic-titan#20 (multi-agent orchestration evaluation) | S26 | 2026-03-21 |
 | DONE-040 | Security PR merged — organvm-corpvs-testamentvm#269 (npm_and_yarn low severity) | S26 | 2026-03-21 |
+| DONE-041 | conversation-corpus-engine CI — GitHub Actions (pytest × 3.11/3.12/3.13 + ruff + schema validation) | S27 (CCE) | 2026-03-21 |
+| DONE-042 | conversation-corpus-engine governance — seed.yaml (ORGAN-I, GRADUATED) + CLAUDE.md | S27 (CCE) | 2026-03-21 |
+| DONE-043 | conversation-corpus-engine ChatGPT adapter — detection, import, provider wiring, CLI integration, sanitized fixtures, 49 tests | S27 (CCE) | 2026-03-21 |
+| DONE-044 | conversation-corpus-engine v0.2.0 — 6 providers (ChatGPT/Claude/Gemini/Grok/Perplexity/Copilot), 8 schemas, `cce` CLI installed | S27 (CCE) | 2026-03-21 |
+| DONE-045 | Symbiotic architecture — `cce` CLI operates staging data via `.cce-env`; engine is code, `intake/ai-exports/` is deployment site | S27 (CCE) | 2026-03-21 |
+| DONE-046 | Data separation — project root lifted from `chatgpt-history/` to `ai-exports/`; 84 legacy scripts archived; corpora are corpus-only | S27 (CCE) | 2026-03-21 |
+| DONE-047 | Live federation verified — 5 corpora, 744 families, 3,542 actions, 2,241 entities, surface bundle valid | S27 (CCE) | 2026-03-21 |
+| DONE-048 | ORGAN-I section added to IRF with 7 active items (IRF-CCE-001 through IRF-CCE-007) | S27 (CCE) | 2026-03-21 |
+| DONE-049 | SGO Research: Naming Convention Validator built and tested — `meta-organvm/tools/naming-validator/` (naming_validator.py + test_naming_validator.py, 67 tests passing). Code implementation of IRF-RES-005 | Research programme | 2026-03-21 |
+| DONE-050 | SGO Research: Cross-Reference Audit — all 13 papers audited for citation consistency, cross-references verified and findings applied to v2 drafts (`intake/research-adventures-2026-03/CROSS-REFERENCE-AUDIT.md`) | Research programme | 2026-03-21 |
+| DONE-051 | SGO Research: LaTeX Conversion — 3 papers converted to .tex for arXiv submission (RP-06, SYN-01, SYN-02) at `intake/research-adventures-2026-03/arxiv/` | Research programme | 2026-03-21 |
+| DONE-052 | SGO Research: Citation Knowledge Graph — 188 citations mapped across the programme (`intake/research-adventures-2026-03/CITATION-KNOWLEDGE-GRAPH.md` + `CITATION-DATABASE.yaml`) | Research programme | 2026-03-21 |
+| DONE-053 | SGO Research: arXiv Submission Packages — 3 papers prepared with LaTeX source, metadata, and submission checklists (`intake/research-adventures-2026-03/ARXIV-SUBMISSION-PACKAGES.md`) | Research programme | 2026-03-21 |
+| DONE-054 | SGO Research: Wikipedia Article Drafts — 3 concepts drafted for potential contribution (`intake/research-adventures-2026-03/WIKIPEDIA-ARTICLE-DRAFTS.md`) | Research programme | 2026-03-21 |
+| DONE-055 | SGO Research: Wikipedia Research Atlas updated with programme registration (`praxis-perpetua/research/sgo-2026-formalization-of-knowledge/wikipedia-research-atlas-2026-03.md`) | Research programme | 2026-03-21 |
+| DONE-056 | SGO Research: All 13 papers cleared TRP Round 2 review (`intake/research-adventures-2026-03/reviews/TRP-ROUND-2-ALL-PAPERS.md`) | Research programme | 2026-03-21 |
+| DONE-057 | organvm-engine CI full remediation — ontologia optional dep, 206 ruff fixes, 34 pyright errors, CodeQL conflict, 5 workflow permissions, URL sanitization (CWE-020), test isolation, Dependabot PRs #5/#6 absorbed (checkout v6, setup-python v6). CI green. (partial IRF-SYS-004) | S28 (engine-remediation) | 2026-03-21 |
+| DONE-058 | GitHub label taxonomy — 67 labels with precise descriptions; state:/priority:/domain:/effort:/organ: prefixes; deprecated wontfix+invalid | S28 | 2026-03-21 |
+| DONE-059 | feat: `organvm registry list --json` (GH#2) | S28 | 2026-03-21 |
+| DONE-060 | fix: governance/audit.py type hints (GH#3) | S28 | 2026-03-21 |
+| DONE-061 | feat: shell completion bash/zsh/fish (GH#4) — argcomplete + `organvm completion` | S28 | 2026-03-21 |
+| DONE-062 | feat: temporal versioning for dependency graph (GH#8) — TemporalGraph, graph_at(), graph_diff(), CLI | S28 | 2026-03-21 |
+| DONE-063 | feat: research activation stage in atoms pipeline (GH#9) — 7-step pipeline, research docs → actionable tasks | S28 | 2026-03-21 |
+| DONE-064 | feat: multiplex flow governance (GH#19, AX-008) — FlowType enum, MultiplexGraph with typed edges | S28 | 2026-03-21 |
+| DONE-065 | feat: signal I/O in seed.yaml (GH#20, AX-009) — SignalPort/SignalEdge/SignalGraph, 7 signal classes | S28 | 2026-03-21 |
+| DONE-066 | feat: individual primacy governance check (GH#21, AX-003) — HITL validation, promotion gating | S28 | 2026-03-21 |
+| DONE-067 | feat: DEBT header tracking (GH#23) — `organvm debt scan/stats` CLI, 3 DEBT patterns | S28 | 2026-03-21 |
+| DONE-068 | refactor: deduplicate agent lifecycle SPEC-013/014 (GH#36) — coordination/lifecycle.py | S28 | 2026-03-21 |
+| DONE-069 | verified: content pipeline CLI (GH#40) — organvm content list/new/status confirmed working | S28 | 2026-03-21 |
+| DONE-070 | feat: per-repo metrics propagation (GH#43) — code_files/test_files into registry entries | S28 | 2026-03-21 |
+| DONE-071 | feat: promotion_history recording (GH#44) — append history on state transitions, --reason flag | S28 | 2026-03-21 |
+| DONE-072 | feat: testament play CLI (GH#49) — `organvm testament play` with --json/--osc/--yaml | S28 | 2026-03-21 |
+| DONE-073 | feat: testament public API (GH#54) — get_testament_summary() for portal consumption | S28 | 2026-03-21 |
+| DONE-074 | feat: chain anchor foundation (GH#55) — AnchorRecord, compute_anchor_hash() for future L2 | S28 | 2026-03-21 |
+| DONE-075 | feat: chain.jsonl rotation at 100MB (GH#56) — auto-rotate, chain-index.json, cross-segment verification | S28 | 2026-03-21 |
+| DONE-076 | feat: unified event vocabulary (GH#57) — EventType 21→49 members, pulse aliases from spine | S28 | 2026-03-21 |
+| DONE-077 | feat: CI scaffold + protect commands (GH#58-61) — stack detection, workflow YAML gen, branch protection planning | S28 | 2026-03-21 |
+| DONE-078 | feat: monthly infrastructure audit workflow (GH#62) — cron + GITHUB_STEP_SUMMARY | S28 | 2026-03-21 |
+| DONE-079 | feat: improved docs-only detection (GH#63) — 12 code-indicator files, 7 directories | S28 | 2026-03-21 |
+| DONE-080 | feat: content-based CodeQL/release detection (GH#64) — workflow YAML content scanning | S28 | 2026-03-21 |
+| DONE-081 | feat: parallel mirrors 27→127 + kinship 11→61 (GH#65-66) — real GitHub projects across all organs | S28 | 2026-03-21 |
+| DONE-082 | feat: omega criterion #19 Network Testament health (GH#67) — density/velocity/milestones, scorecard 18→19 (advances IRF-CRP-001) | S28 | 2026-03-21 |
+| DONE-083 | feat: tomllib scanner replacing regex TOML parser (GH#68) — PEP 508/503 compliant | S28 | 2026-03-21 |
+| DONE-084 | organvm-engine test suite 4253→4584 tests, all passing. 0 pyright errors, ruff clean. | S28 | 2026-03-21 |
 
 ---
 
@@ -503,24 +561,25 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 123 (119 prior + 4 new from S26)
+- **Total active items:** 130 (GH issues resolved but most were not tracked as IRF active items — they were engine-internal)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 43 (41 prior + 2 new: IRF-SYS-006, IRF-SYS-009)
-- **P2 (GROWTH):** 58 (56 prior + 2 new: IRF-SYS-007, IRF-SYS-008)
+- **P1 (SOON):** 46
+- **P2 (GROWTH):** 62
 - **P3 (HORIZON):** 9
-- **Completed:** 40 (31 prior + 9 from S26)
+- **Completed:** 84 (56 prior + 28 from S28 engine-remediation: DONE-057–084)
 - **Blocked:** 0
 
 ### By Domain
 
 | Domain | Active | Completed | Total |
 |--------|--------|-----------|-------|
+| CCE (Corpus Engine) | 7 | 8 | 15 |
 | SYS (System-wide) | 9 | 0 | 9 |
 | IDX (Index apparatus) | 3 | 1 | 4 |
 | SKL (Skills) | 3 | 1 | 4 |
 | MON (Monitoring) | 3 | 0 | 3 |
 | CRP (Corpus) | 3 | 0 | 3 |
-| SGO (Studium) | 6 | 3 | 9 |
+| SGO (Studium) | 6 | 11 | 17 |
 | VIG (Vigiles) | 2 | 1 | 3 |
 | TRV (Trivium) | 2 | 1 | 3 |
 | TST (Testament) | 1 | 1 | 2 |
@@ -535,7 +594,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DOC (Documentation) | 5 | 0 | 5 |
 | VER (Verification) | 3 | 3 | 6 |
 | RES (Research Programme) | 68 | 9 | 77 |
-| **TOTAL** | **128** | **23** | **151** |
+| **TOTAL** | **135** | **39** | **174** |
 
 ### Research Programme Breakdown
 
@@ -549,7 +608,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | PROCESS | 0 | 5 | 3 | 8 | 0 |
 | **Total** | **12** | **29** | **26** | **67** | **3** |
 
-*Note: 3 additional completed research programme items (Research Pipeline SOP, Research Registry, Session Retrospective) are process deliverables not in the 71-task manifest.*
+*Note: 11 additional completed research programme items (Research Pipeline SOP, Research Registry, Session Retrospective, Naming Convention Validator code, Cross-Reference Audit, LaTeX Conversion, Citation Knowledge Graph, arXiv Submission Packages, Wikipedia Article Drafts, Wikipedia Research Atlas, TRP Round 2 clearance) are process deliverables not in the 71-task manifest.*
 
 ### Effort Distribution (Research Programme)
 
@@ -562,5 +621,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-20 — Session: SGO research programme implementation manifest integration (71 tasks added; 3 DONE, 68 OPEN)*
+*Last updated: 2026-03-21 — Session S28 (engine-remediation): 30 GitHub issues resolved, CI fully green, 4584 tests, 67 labels, 28 DONE entries (DONE-057–084). Advances IRF-SYS-004 (Descent Protocol tooling), IRF-CRP-001 (omega now 19 criteria), IRF-CRP-003 (chain rotation + anchor).*
 *Next update: After any session that produces or discovers work items*
