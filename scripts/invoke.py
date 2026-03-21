@@ -37,6 +37,7 @@ ID_PATTERNS = [
     (re.compile(r"^H[1-5]$", re.IGNORECASE), "horizon"),
     (re.compile(r"^AP-\d+$", re.IGNORECASE), "anti-pattern"),
     (re.compile(r"^(?:W|SP|BS|LC|BL|ET|LO)\d+-II$", re.IGNORECASE), "e2g-ii"),
+    (re.compile(r"^IRF-[A-Z]+-\d+$", re.IGNORECASE), "irf"),
     # Sprint: two-digit number or a sprint name (lowercase alpha)
     (re.compile(r"^\d{2}$"), "sprint"),
     (re.compile(r"^[A-Z][-A-Z]+$", re.IGNORECASE), "sprint"),
@@ -72,6 +73,7 @@ NAMESPACE_NAMES = {
     "e2g-ii": "E2G-II Findings",
     "sprint": "Sprints",
     "xref": "Cross-Reference: Omega ← TODO",
+    "irf": "Index Rerum Faciendarum",
 }
 
 
@@ -146,6 +148,33 @@ def parse_concordance(path: Path) -> dict:
         namespaces[current_ns].extend(parse_table(table_lines))
 
     return namespaces
+
+
+def _parse_tables_from_file(path: Path) -> list[dict]:
+    """Read a markdown file and extract all table rows as dicts."""
+    text = path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    rows: list[dict] = []
+    table_lines: list[str] = []
+    in_table = False
+
+    for line in lines:
+        if line.strip().startswith("|"):
+            if not in_table:
+                in_table = True
+                table_lines = []
+            table_lines.append(line)
+        elif in_table:
+            if table_lines:
+                rows.extend(parse_table(table_lines))
+            table_lines = []
+            in_table = False
+
+    # Flush final table
+    if in_table and table_lines:
+        rows.extend(parse_table(table_lines))
+
+    return rows
 
 
 # ── ID detection ─────────────────────────────────────────────────────────
@@ -356,6 +385,12 @@ def main():
         sys.exit(0)
 
     namespaces = parse_concordance(args.concordance)
+
+    # Load IRF items directly from the authoritative source
+    irf_file = ROOT / "INST-INDEX-RERUM-FACIENDARUM.md"
+    if irf_file.exists():
+        irf_tables = _parse_tables_from_file(irf_file)
+        namespaces.setdefault("irf", []).extend(irf_tables)
 
     # --list: show namespace summary
     if args.list:
