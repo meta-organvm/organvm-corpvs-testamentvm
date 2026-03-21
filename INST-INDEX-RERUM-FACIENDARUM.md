@@ -32,6 +32,25 @@ This is a **living governance instrument**, not a snapshot. Every session that p
 3. When work is blocked, move to `## Blocked` with blocking reason.
 4. When work becomes irrelevant, move to `## Archived` with reason.
 
+### Completion Logging — External Index Propagation
+
+**REQUIRED:** When work is completed, it MUST be logged not only here but across ALL external indices with an interest. Every completion triggers this checklist:
+
+| # | External Index | When to update | How |
+|---|---------------|----------------|-----|
+| 1 | **This document** (IRF) | Always | Move item to `## Completed` with session + date |
+| 2 | **GitHub Issues** | If a GitHub issue exists for this work | Close the issue with comment referencing commit SHA + IRF ID |
+| 3 | **Omega Scorecard** | If the work advances an omega criterion (#1-#19) | Run `organvm omega status` to verify; note criterion state change |
+| 4 | **Inquiry Log** | If the work completes/advances an SGO research commission | Update `praxis-perpetua/commissions/inquiry-log.yaml` |
+| 5 | **Testament Chain** | If the work is a significant system event (new module, repo, governance change, deployment) | Verify with `organvm testament status` |
+| 6 | **Concordance** | If the work introduces or retires governance IDs | Update `docs/operations/concordance.md` |
+| 7 | **Registry** | If the work changes repo state (new repo, status/tier change, new edges) | `organvm registry update` |
+| 8 | **Seed contracts** | If the work changes repo capabilities, dependencies, or event subscriptions | Update the repo's `seed.yaml` |
+| 9 | **CLAUDE.md** | If the work adds/changes modules, routes, tools, commands, or architecture | Update the repo's CLAUDE.md hand-written sections |
+| 10 | **Companion indices** | If the work creates new locations (Locorum), names (Nominum), or artifacts (Rerum) | Update the relevant companion index when built |
+
+Not every completion triggers every index. A P2 doc fix may only need #1 and #9. A new engine module needs #1, #2, #5, #7, #8, #9. Use judgment — but the DEFAULT is to check all 10 and consciously skip inapplicable ones, rather than unconsciously miss applicable ones.
+
 **Priority tiers:**
 - **P0 — NOW**: Human-gated or zero-cost unblocking actions. Do today.
 - **P1 — SOON**: Next-session work. Clear path, no blockers.
