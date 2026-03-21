@@ -51,6 +51,10 @@ This is a **living governance instrument**, not a snapshot. Every session that p
 | IRF-SYS-003 | P2 | Seed.yaml coverage: 72/117 → 117/117 | Agent | CLAUDE.md | Incremental |
 | IRF-SYS-004 | P1 | Descent Protocol remaining 22% — repos missing descriptions/topics on GitHub | Agent | S11 | None |
 | IRF-SYS-005 | P2 | World Root Phase 2-4 — repo migration per `~/Workspace/Organizing-Local-Remote-Structure.md` | Human | Memory | Phase 1 audit complete, execution not started |
+| IRF-SYS-006 | P1 | Audit global gitignore for remaining overly-broad patterns — `/.config` and `lib/` fixed, but other language-template patterns may still clash across 117 repos | Agent | S26 | None |
+| IRF-SYS-007 | P2 | Deploy Dependabot auto-merge + grouping to remaining high-traffic repos (portfolio already has grouping; growth-auditor, ORGAN-I/II flagships need it) | Agent | S26 | Template now exists from S26 |
+| IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
+| IRF-SYS-009 | P1 | Gmail notification hygiene — create filter for `from:notifications@github.com subject:"chore(deps)"` to skip inbox, label `github/dependabot` | Human | S26 | None |
 
 ### Skills & Automation
 
@@ -454,6 +458,15 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-029 | Merged PR #27 (Copilot autofix — 4 quality corrections to session retrospective) | S25 | 2026-03-21 |
 | DONE-030 | Org-level ci-minimal.yml bumped to actions/checkout@v6 (in .github repo, feat/canonical-readme-standards branch) | S25 | 2026-03-21 |
 | DONE-031 | Research corpus status taxonomy applied — 66 files updated to `status: reference-activated` frontmatter | S25 | 2026-03-21 |
+| DONE-032 | Gmail notification triage — 201 emails → 3 actionable items, all resolved | S26 (gmail-triage) | 2026-03-21 |
+| DONE-033 | victoroff-group a11y remediation — 4 Gemini review issues (h1 overlap, disclosure clipping, badge version, meta-viewport rule), 40/40 Playwright | S26 | 2026-03-21 |
+| DONE-034 | growth-auditor security — PDF endpoint rate limiting (10 req/hr/IP), Codex P1 finding | S26 | 2026-03-21 |
+| DONE-035 | growth-auditor infra — `.config/` restored (vitest/playwright/eslint), 3 missing lib modules created (schemas/config/env), tests 196→346 | S26 | 2026-03-21 |
+| DONE-036 | Global gitignore fix — `/.config` removed, `lib/`→`/lib/` scoped, chezmoi-deployed system-wide | S26 | 2026-03-21 |
+| DONE-037 | Dependabot auto-merge + grouping on stakeholder-portal, organvm-engine, praxis-perpetua (partial IRF-SYS-002) | S26 | 2026-03-21 |
+| DONE-038 | stakeholder-portal Next.js 16.2.1 + eslint-config-next sync — PR #27, 265/265 tests, lint clean | S26 | 2026-03-21 |
+| DONE-039 | Community reply to m13v on agentic-titan#20 (multi-agent orchestration evaluation) | S26 | 2026-03-21 |
+| DONE-040 | Security PR merged — organvm-corpvs-testamentvm#269 (npm_and_yarn low severity) | S26 | 2026-03-21 |
 
 ---
 
@@ -471,19 +484,19 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 119 (52 pre-existing + 68 from research programme − 1 closed)
-- **P0 (NOW):** 13 (2 pre-existing + 11 from research programme)
-- **P1 (SOON):** 41 (13 pre-existing + 29 from research programme − 1 closed)
-- **P2 (GROWTH):** 56 (28 pre-existing + 28 from research programme)
+- **Total active items:** 123 (119 prior + 4 new from S26)
+- **P0 (NOW):** 13
+- **P1 (SOON):** 43 (41 prior + 2 new: IRF-SYS-006, IRF-SYS-009)
+- **P2 (GROWTH):** 58 (56 prior + 2 new: IRF-SYS-007, IRF-SYS-008)
 - **P3 (HORIZON):** 9
-- **Completed:** 31
+- **Completed:** 40 (31 prior + 9 from S26)
 - **Blocked:** 0
 
 ### By Domain
 
 | Domain | Active | Completed | Total |
 |--------|--------|-----------|-------|
-| SYS (System-wide) | 5 | 0 | 5 |
+| SYS (System-wide) | 9 | 0 | 9 |
 | IDX (Index apparatus) | 3 | 1 | 4 |
 | SKL (Skills) | 3 | 1 | 4 |
 | MON (Monitoring) | 3 | 0 | 3 |
