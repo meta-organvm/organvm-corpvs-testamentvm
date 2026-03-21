@@ -218,7 +218,7 @@ Verified on disk 2026-03-20:
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-PRT-001 | P2 | Performance job timeout (15min for 18 Lighthouse runs) — parallelize or subset | Agent | S15 | None |
+| IRF-PRT-002 | P2 | Re-evaluate security allowlist (h3, fast-xml-parser) by 2026-04-03 — GitHub issue #66 | Human | S24 | Time-gated |
 
 ---
 
@@ -298,6 +298,127 @@ Items discovered during the 22-session triage and filesystem verification that d
 
 ---
 
+## SGO Research Programme — Implementation Manifest
+
+**Source:** 12 SGO papers + 3 TRP reviews across 4 research phases (INQ-2026-004)
+**Added:** 2026-03-20
+**Total tasks:** 71 (3 DONE, 68 OPEN)
+**Manifest location:** `~/Workspace/intake/research-adventures-2026-03/IMPLEMENTATION-MANIFEST.md`
+
+These tasks represent every actionable design recommendation extracted from the SGO research programme. Each traces to specific paper sections via the source field. Categories: GOVERNANCE, MEASUREMENT, NAMING, ARCHITECTURE, TOOLING, PROCESS.
+
+### P0 — Foundational (must precede other research programme work)
+
+| ID | Priority | Action | Category | Effort | Source | Status | Dependencies |
+|----|----------|--------|----------|--------|--------|--------|--------------|
+| IRF-RES-001 | P0 | Make the Governance Trilemma choice explicit — document ORGANVM's implicit choice of Consistent + Measurable over Complete; create machine-readable registry of governance blind spots | GOVERNANCE | M | SYN-02 SS5.5 R1; TRP-SYN-02 POV-3 | DONE | None |
+| IRF-RES-002 | P0 | Classify all governance rules as syntactic or semantic — audit every rule in governance-rules.json, seed.yaml schemas, and CI checks; maintain classification as machine-readable annotation | GOVERNANCE | M | RP-02 SS4.5 I1, SS5.2; SYN-02 SS4.1 | DONE | None |
+| IRF-RES-003 | P0 | Define "readiness" construct independently of its operationalization — convene expert panel to define full domain of "repository readiness" independently of metrics that measure it | MEASUREMENT | M | RP-07 SS7 I1; SYN-02 SS4.4; SYN-04 SS4.1 | OPEN | None |
+| IRF-RES-004 | P0 | Conduct factor analysis on the omega scorecard — perform EFA on all indicators across repo population; determine single vs. multiple latent factors | MEASUREMENT | L | RP-07 SS6.2, SS6.3; SYN-02 SS5.5 R2 | OPEN | IRF-RES-003 |
+| IRF-RES-005 | P0 | Implement the naming convention validator (double-hyphen linter) — automated validator enforcing double-hyphen convention in CI as syntactic governance check | NAMING | M | RP-04 SS5.1 P6; SYN-03 SS6.4; RP-02 SS4.5 I2 | DONE | None |
+| IRF-RES-006 | P0 | Build a controlled vocabulary registry for domain terms — machine-readable mapping of canonical terms to synonyms; validate new names against vocabulary in CI | NAMING | M | RP-04 SS5.1 P4; SYN-03 SS6.4 | OPEN | IRF-RES-005 |
+| IRF-RES-007 | P0 | Make incompleteness visible in all governance verdicts — every automated verdict must include explicit scope statement listing unverified semantic properties | GOVERNANCE | M | RP-02 SS5.5; SYN-02 SS5.5 R1 | OPEN | IRF-RES-002 |
+| IRF-RES-008 | P0 | Formalize the IRA panel protocol — strengthen IRA panel as Tarskian escape; provide explicit guidance on semantic properties that automated checks cannot assess | GOVERNANCE | M | RP-02 SS6.3; SYN-02 SS4.5, SS5.3, SS5.5 R5 | OPEN | IRF-RES-002 |
+| IRF-RES-009 | P0 | Implement seed.yaml semantic accuracy tracking — maintain machine-readable registry of properties not covered by seed.yaml validation; track gap between declared and actual behavior | GOVERNANCE | L | RP-02 SS6.2, SS6.4; SYN-02 SS5.4 | OPEN | IRF-RES-002 |
+| IRF-RES-010 | P0 | Separate self-maintenance from self-improvement in governance — build two distinct operational modes with architectural enforcement of the boundary | ARCHITECTURE | L | RP-02 SS5.7, SS6.4 | OPEN | IRF-RES-002, IRF-RES-008 |
+| IRF-RES-011 | P0 | Establish the hybrid topology principle as architectural law — codify inter-organ hierarchical flow and intra-organ rhizomatic connectivity as compression/search principle | ARCHITECTURE | S | RP-03 SS6.1-6.4; SYN-02 SS4.2 | OPEN | None |
+| IRF-RES-012 | P0 | Design governance artifacts as boundary objects — redesign seed.yaml, CLAUDE.md, and governance-rules.json as boundary objects accommodating human, machine, and AI interpretive communities | ARCHITECTURE | M | RP-05 SS4.3, SS7.1; SYN-02 SS4.3; SYN-03 SS5.1-5.3 | OPEN | None |
+| IRF-RES-013 | P0 | Implement temporal staging for governance validation — ensure governance always validates previous state using current state, never current state using itself | GOVERNANCE | S | RP-02 SS5.1, SS6.1; SYN-02 SS4.1, SS5.2 | OPEN | None |
+| IRF-RES-014 | P0 | Implement context-specific governance norms — differentiate thresholds by organ, programming language, and project type; use expert-determined context-specific norms | MEASUREMENT | L | RP-07 SS5.5, SS7 I4; SYN-02 SS5.5 R3; SYN-04 SS5.2 | OPEN | IRF-RES-003, IRF-RES-004 |
+
+### P1 — Important (high-impact, clear value; after P0 foundations)
+
+| ID | Priority | Action | Category | Effort | Source | Status | Dependencies |
+|----|----------|--------|----------|--------|--------|--------|--------------|
+| IRF-RES-015 | P1 | Implement IRT-based scoring for governance checks — fit 2PL IRT model to pass/fail data; weight checks by information content; assign to promotion levels by empirical difficulty | MEASUREMENT | L | RP-07 SS5.1-5.4, SS6.3; SYN-02 SS4.4 | OPEN | IRF-RES-004 |
+| IRF-RES-016 | P1 | Implement Goodhart monitoring system — track correlation between governance metrics and external outcomes over time; implement periodic metric rotation; track IRT discrimination parameters | MEASUREMENT | L | RP-07 SS7 I7; SYN-02 SS5.4, SS5.5 R4; SYN-04 SS5.3 | OPEN | IRF-RES-015 |
+| IRF-RES-017 | P1 | Report governance scores with confidence intervals — use CTT formula SEM = sigma_X * sqrt(1 - r_XX); acknowledge uncertainty near promotion thresholds | MEASUREMENT | M | RP-07 SS6.4, SS7; SYN-02 SS4.4 | OPEN | IRF-RES-004 |
+| IRF-RES-018 | P1 | Build a Governance Trilemma Audit instrument — formal audit methodology to test actual behavior against declared trilemma position | GOVERNANCE | M | SYN-02 SS6; TRP-SYN-02 POV-1 E2 | OPEN | IRF-RES-001 |
+| IRF-RES-019 | P1 | Create a Practitioner's Decision Matrix for trilemma positions — table mapping governance contexts to recommended trilemma positions with specific guidance | GOVERNANCE | S | TRP-SYN-02 POV-3; SYN-02 SS6 | OPEN | IRF-RES-001 |
+| IRF-RES-020 | P1 | Implement OPP-based governance architecture — design explicit obligatory passage points at every critical juncture; document the OPP map | ARCHITECTURE | L | RP-05 SS7.3; SYN-02 SS4.3 | OPEN | IRF-RES-002 |
+| IRF-RES-021 | P1 | Build the stigmergic infrastructure layer — invest in rich, persistent, searchable stigmergic substrates; extend registry and dashboard | TOOLING | L | RP-03 SS6.4 H5, SS7.2-7.3 | OPEN | IRF-RES-011 |
+| IRF-RES-022 | P1 | Implement namespace governance proportional to scale — formalize who can create top-level names, rules for naming within each namespace, dispute resolution | NAMING | S | RP-04 SS5.1 P3, P6; SYN-03 SS6.5 | OPEN | IRF-RES-005, IRF-RES-006 |
+| IRF-RES-023 | P1 | Track naming debt and implement naming health metrics — detect and track names that no longer accurately describe what they name; implement periodic naming audits | NAMING | M | RP-04 SS5.3; SYN-03 SS3.4, SS6.2 | OPEN | IRF-RES-005 |
+| IRF-RES-024 | P1 | Formalize the distinction between designed and emergent hierarchy — monitor flat domains for hub-and-spoke emergence; track centrality distribution over time | ARCHITECTURE | M | RP-03 SS4.4; SYN-02 SS2.2 | OPEN | IRF-RES-011 |
+| IRF-RES-025 | P1 | Build relational quality metrics (not just entity-level) — supplement entity-level metrics with network-level metrics for dependency health, test quality, documentation adequacy | MEASUREMENT | L | SYN-04 SS5.1 | OPEN | IRF-RES-004 |
+| IRF-RES-026 | P1 | Record network configuration alongside every assessment score — accompany every governance score with tool versions, checks applied, dependency network state, development context | MEASUREMENT | M | SYN-04 SS5.2 | OPEN | IRF-RES-014 |
+| IRF-RES-027 | P1 | Implement Guttman scale validation for the promotion pipeline — scalogram analysis, compute coefficient of reproducibility; identify hard/soft/structural violations | MEASUREMENT | M | RP-07 SS4.1, SS6.3; SYN-02 SS5.2 | OPEN | IRF-RES-004 |
+| IRF-RES-028 | P1 | Implement criterion validation for governance scores — correlate with external outcomes; compute concurrent and predictive validity coefficients | MEASUREMENT | L | RP-07 SS4.4, SS6.3, SS7 I5 | OPEN | IRF-RES-015 |
+| IRF-RES-029 | P1 | Adopt VSM recursive structure for organs — align each organ with Beer's five subsystems; map VSM subsystems to trilemma properties | ARCHITECTURE | L | SYN-02 SS4.6, SS5.5 R6; TRP-SYN-02 POV-1 | OPEN | IRF-RES-010, IRF-RES-011 |
+| IRF-RES-030 | P1 | Design system prompts as enrollment contracts, not command lists — redesign CLAUDE.md files to define role, establish relationship, specify conditions of productive collaboration | PROCESS | M | RP-05 SS7.1 | OPEN | IRF-RES-012 |
+| IRF-RES-031 | P1 | Implement mediator visibility in AI-generated outputs — transparent attribution, confidence/uncertainty indication, visible translation traces, challenge mechanisms | PROCESS | M | RP-05 SS7.2 | OPEN | None |
+| IRF-RES-032 | P1 | Build governance-as-type-system framework — use Curry-Howard framing to classify governance rules by type-theoretic strength; map to Chomsky hierarchy | GOVERNANCE | L | RP-02 SS4.4, SS4.5 I5; RP-06 SS7.4 | OPEN | IRF-RES-002 |
+| IRF-RES-033 | P1 | Implement over/under-approximation strategy per governance rule — for each semantic rule, explicitly choose conservative or liberal approximation direction; document error rate | GOVERNANCE | M | RP-02 SS4.3, SS5.4 | OPEN | IRF-RES-002 |
+| IRF-RES-034 | P1 | Implement language-game specification for naming contexts — when designing naming conventions, specify where name appears, who reads it, what must be understood from name alone | NAMING | S | RP-04 SS5.1 P7 | OPEN | IRF-RES-005 |
+| IRF-RES-035 | P1 | Design for translation drift in governance rules — monitor for excessive interpretation drift between human understanding and AI interpretation; build feedback loops | GOVERNANCE | M | SYN-02 SS4.3, SS5.5 R7; RP-05 SS7.1 | OPEN | IRF-RES-012 |
+| IRF-RES-036 | P1 | Implement the four-phase design audit — for each organ, verify coverage across Naming, Structuring, Computing, and Reflecting phases; identify gaps | GOVERNANCE | M | CAPSTONE SS11.6 | OPEN | IRF-RES-001 |
+| IRF-RES-037 | P1 | Build item analysis for governance checks — compute pass rate and point-biserial correlation for each check; remove or redesign non-discriminating checks | MEASUREMENT | M | RP-07 SS6.3 S1 | OPEN | IRF-RES-004 |
+| IRF-RES-038 | P1 | Design assessment criteria for constitutive value, not just diagnostic value — optimize checks for encouraging desirable practices alongside distinguishing quality levels | MEASUREMENT | M | SYN-04 SS5.4 | OPEN | IRF-RES-003, IRF-RES-015 |
+| IRF-RES-039 | P1 | Implement schema contracts as syntactic categories — treat seed.yaml contracts as formal syntactic category; implement schema validation as type-checking in Curry-Howard sense | TOOLING | L | SYN-01 SS6; CAPSTONE SS10.2 | OPEN | IRF-RES-009 |
+| IRF-RES-040 | P1 | Implement external case study of the Governance Trilemma — apply framework to at least one governance system not designed by the author (Linux kernel, GDPR, Kubernetes) | PROCESS | M | TRP-SYN-02 A4 (all POVs) | OPEN | IRF-RES-001 |
+| IRF-RES-041 | P1 | Calibrate formality claims in SYN-02 — replace "formal theorem" language with "structural argument"; engage with mechanism design as partial counterexamples; add Formalization Roadmap | PROCESS | M | TRP-SYN-02 A1, A2, A3 | OPEN | None |
+| IRF-RES-042 | P1 | Address the small-N problem for psychometric calibration — develop simplified approaches for 117 repos: classical reliability, Bayesian methods, repeated measures over time | MEASUREMENT | M | TRP-SYN-02 POV-3 C3, A8 | OPEN | IRF-RES-004 |
+| IRF-RES-043 | P1 | Implement panarchy-aware design for phase transitions — build structures that can transition between hierarchical and rhizomatic phases; innovation sandboxes, periodic reorganization | ARCHITECTURE | L | RP-03 SS4.5, SS6.4 H3 | OPEN | IRF-RES-011 |
+
+### P2 — Enhancement (deepens theoretical alignment and operational sophistication)
+
+| ID | Priority | Action | Category | Effort | Source | Status | Dependencies |
+|----|----------|--------|----------|--------|--------|--------|--------------|
+| IRF-RES-044 | P2 | Build adaptive governance assessment — IRT-enabled adaptive testing; evaluate repos with checks selected based on estimated quality level | MEASUREMENT | L | RP-07 SS7 I6 | OPEN | IRF-RES-015 |
+| IRF-RES-045 | P2 | Implement measurement invariance testing across organs — multi-group CFA and DIF analysis across organs, languages, and project types | MEASUREMENT | XL | RP-07 SS5.5, SS6.3; SYN-02 SS5.5 R3 | OPEN | IRF-RES-015, IRF-RES-014 |
+| IRF-RES-046 | P2 | Build a rhizomaticity index for organizational monitoring — implement R(G) function tracking clustering coefficient, path length, power-law exponent, centrality inequality, modularity | TOOLING | L | RP-03 SS2.4 | OPEN | IRF-RES-021 |
+| IRF-RES-047 | P2 | Implement sense-preservation checks for aliases — when multiple names point to same referent, validate that naming system preserves sense distinctions | NAMING | S | RP-04 SS5.1 P2 | OPEN | IRF-RES-006 |
+| IRF-RES-048 | P2 | Implement type-token naming discipline — enforce visual distinction between types and tokens, schemas and records, conventions and applications | NAMING | S | RP-04 SS5.1 P5 | OPEN | IRF-RES-005 |
+| IRF-RES-049 | P2 | Build the dynamic trilemma navigation model — governance lifecycle model mapping expected trajectory of trilemma choices as system scales | GOVERNANCE | M | TRP-SYN-02 POV-1 E1 | OPEN | IRF-RES-018 |
+| IRF-RES-050 | P2 | Map the inter-organ trilemma coordination problem — map how one organ's incompleteness interacts with another's inconsistency; identify failure modes at inter-organ interfaces | GOVERNANCE | M | TRP-SYN-02 POV-1 E3 | OPEN | IRF-RES-018 |
+| IRF-RES-051 | P2 | Implement the Willard strategy for restricted self-verification — restrict governance expressiveness so it cannot construct self-referential rules | GOVERNANCE | L | RP-02 SS7 | OPEN | IRF-RES-010 |
+| IRF-RES-052 | P2 | Implement abstract interpretation for semantic governance approximation — explicit soundness/completeness tradeoffs for undecidable governance rules | TOOLING | L | RP-02 SS4.3 | OPEN | IRF-RES-033 |
+| IRF-RES-053 | P2 | Design strange loop stability analysis — identify all strange loops in governance architecture; characterize stability as convergent vs. divergent | GOVERNANCE | M | RP-02 SS5.6 | OPEN | IRF-RES-013 |
+| IRF-RES-054 | P2 | Explore consequential validity monitoring — build feedback loops tracking downstream effects of assessment decisions on production outcomes | MEASUREMENT | L | SYN-04 SS5.3; RP-07 SS7 I7 | OPEN | IRF-RES-016 |
+| IRF-RES-055 | P2 | Implement multi-level interpretation naming — ensure naming conventions provide shallow interpretability (novice) and deep interpretability (expert) | NAMING | S | SYN-03 SS6.3 | OPEN | IRF-RES-005 |
+| IRF-RES-056 | P2 | Build the ontological commitment registry — maintain registry of every naming decision that constitutes an ontological commitment; review periodically | NAMING | S | RP-04 SS5.1 P1; SYN-03 SS5.4 | OPEN | IRF-RES-006 |
+| IRF-RES-057 | P2 | Implement names-as-infrastructure breakdown detection — automated detection for reference failures, collisions, semantic drift, abstraction mismatches | NAMING | M | SYN-03 SS2.2, SS6.4 | OPEN | IRF-RES-005, IRF-RES-006 |
+| IRF-RES-058 | P2 | Design for ontological pluralism in quality assessment — accept "quality" is constituted differently in different network configurations; produce quality profiles | MEASUREMENT | L | SYN-04 SS5.5 | OPEN | IRF-RES-014, IRF-RES-045 |
+| IRF-RES-059 | P2 | Build a formalization roadmap for the Governance Trilemma — specify what fully formal version would require: formal definitions, conditions, proof | GOVERNANCE | M | TRP-SYN-02 A3 | OPEN | IRF-RES-041 |
+| IRF-RES-060 | P2 | Build governance rule classification by Chomsky level — classify every rule as regular, context-free, context-sensitive, or unrestricted; map decidability implications | GOVERNANCE | M | RP-06 SS7.4; TRP-RP-06 POV-3 E4 | OPEN | IRF-RES-002, IRF-RES-032 |
+| IRF-RES-061 | P2 | Implement alignment-as-translation framework for AI interactions — reframe AI alignment as ongoing network stabilization; classify misalignment types by translation-failure moment | PROCESS | M | RP-05 SS5.5; CAPSTONE SS12.5 | OPEN | IRF-RES-030 |
+| IRF-RES-062 | P2 | Build the test information function for governance assessment — compute I(theta) across all governance checks; identify under-measured regions of quality continuum | MEASUREMENT | M | RP-07 SS5.4 | OPEN | IRF-RES-015 |
+| IRF-RES-063 | P2 | Implement Dunbar-aware team sizing for organs — keep active participants below cognitive limit; design for future scaling with hierarchical compression thresholds | ARCHITECTURE | S | RP-03 SS4.1, SS6.4 H6 | OPEN | None |
+| IRF-RES-064 | P2 | Implement SEM-based relational quality model — use structural equation modeling to specify quality as network of related constructs; test fit against observed data | MEASUREMENT | XL | SYN-04 SS5.1 | OPEN | IRF-RES-004, IRF-RES-015 |
+| IRF-RES-065 | P2 | Scope-narrow the SYN-01 claims per TRP review — narrow to "the architecture of compositional formal meaning"; engage with philosophy of unification; provide honest DisCoCat assessment | PROCESS | M | TRP-SYN-01 Priorities 1-3 | OPEN | None |
+| IRF-RES-066 | P2 | Address RP-06 Type 1 correspondence weakness — provide concrete worked example encoding {a^n b^n c^n} as System F typing problem, or acknowledge encoding is conjectural | PROCESS | M | TRP-RP-06 A2 | OPEN | None |
+| IRF-RES-067 | P2 | Propose MCS type-theoretic conjecture — propose concrete conjecture for type-theoretic characterization of mildly context-sensitive languages; document as open problem | ARCHITECTURE | L | RP-06 SS2.5, SS6.2; TRP-RP-06 A6 | OPEN | None |
+| IRF-RES-068 | P2 | Design assessment for constitutive rather than just detection value — accept CI checks are mediators that constitute quality; design checks whose constitutive effects encourage beneficial practices | MEASUREMENT | S | SYN-04 SS4.2-4.3, SS5.4 | OPEN | IRF-RES-038 |
+| IRF-RES-069 | P2 | Implement names-stable-under-change principle — names should refer to what is stable (function/domain), not what is volatile (org-chart position); audit existing names | NAMING | S | SYN-03 SS6.2 | OPEN | IRF-RES-005 |
+| IRF-RES-070 | P2 | Build the compression/search ratio monitoring tool — monitor ratio of hierarchical compression to rhizomatic search per domain; alert on mismatches | TOOLING | M | RP-03 SS3.3, SS6.4 H1 | OPEN | IRF-RES-046 |
+| IRF-RES-071 | P2 | Build explicit typological coverage in RP-06 — expand linguistic examples to include polysynthetic, free word-order, and sign languages; acknowledge non-generativist frameworks | PROCESS | M | TRP-RP-06 A3, A4 | OPEN | None |
+
+### Cross-Cutting Concerns (from SGO research programme)
+
+These are not discrete tasks but organizing principles that cross-cut the entire programme:
+
+| ID | Concern | Description | Scope |
+|----|---------|-------------|-------|
+| IRF-RES-CC1 | Syntactic/semantic boundary | All governance automation must respect the Rice boundary — every check is either syntactic (decidable) or semantic (undecidable, requiring human judgment) | All organs, CI, governance |
+| IRF-RES-CC2 | Governance Trilemma universality | The trilemma applies at every level: system, organ, repo, and governance tool; each level makes its own choice; choices must be coordinated | META, ORGAN-IV, all organs |
+| IRF-RES-CC3 | Naming as infrastructure | Every naming decision is an ontological commitment that shapes organizational topology; naming debt compounds; naming governance = API design rigor | All repos, conventions, docs |
+| IRF-RES-CC4 | Measurement constitutes its object | CI checks, governance scores, and quality metrics constitute quality, not merely detect it; assessment design must optimize constitutive alongside diagnostic value | All CI, scoring, governance |
+| IRF-RES-CC5 | Human-in-the-loop is structurally necessary | Human judgment at the semantic boundary responds to impossibility results (Godel, Tarski, Rice, Goodhart), not a stopgap; the human is the incompleteness response | IRA panel, promotion, AI design |
+
+### Implementation Sequence (from manifest)
+
+| Phase | Weeks | Focus | Key Tasks |
+|-------|-------|-------|-----------|
+| A: Foundations | 1-4 | Structural preconditions | IRF-RES-001(DONE), 002(DONE), 011, 013, 005(DONE), 006, 012, 007 |
+| B: Measurement Foundations | 3-8 | Psychometric infrastructure | IRF-RES-003, 004, 014, 037, 027, 017 |
+| C: Governance Hardening | 6-12 | Impossibility-aware governance | IRF-RES-008, 009, 010, 018, 019, 020, 032, 033 |
+| D: Naming and Architecture | 8-14 | Naming infrastructure, org topology | IRF-RES-022, 023, 034, 024, 021, 029, 043 |
+| E: Advanced Measurement | 12-20 | Psychometric calibration | IRF-RES-015, 042, 028, 016, 025, 026 |
+| F: Research Revisions | 4-16 | Paper revisions per TRP reviews | IRF-RES-041, 040, 065, 066, 071 |
+| G: Enhancements | 16+ | P2 tasks as capacity allows | IRF-RES-044, 046, 049, 054, 060 (prioritized) |
+
+---
+
 ## Completed (from 22-session cataloguing, 2026-03-20)
 
 | ID | What | Session | Date |
@@ -318,6 +439,13 @@ Items discovered during the 22-session triage and filesystem verification that d
 | DONE-014 | 22-session triage, cataloguing, and filesystem verification | This session (S23) | 2026-03-20 |
 | DONE-015 | Index Rerum Faciendarum — universal work registry created | This session (S23) | 2026-03-20 |
 | DONE-016 | Wants-vs-sessions tracking with corrected completion states | This session (S23) | 2026-03-20 |
+| DONE-017 | SGO Research: Governance Trilemma Declaration (IRF-RES-001) | Research programme | 2026-03-20 |
+| DONE-018 | SGO Research: Syntactic-Semantic Boundary Classification (IRF-RES-002) | Research programme | 2026-03-20 |
+| DONE-019 | SGO Research: Naming Convention Spec (IRF-RES-005) | Research programme | 2026-03-20 |
+| DONE-020 | Portfolio Lighthouse CI fix — programmatic API, 3-trigger system, security remediation (IRF-PRT-001) | S24 | 2026-03-21 |
+| DONE-020 | SGO Research: Research Pipeline SOP | Research programme | 2026-03-20 |
+| DONE-021 | SGO Research: Research Registry | Research programme | 2026-03-20 |
+| DONE-022 | SGO Research: Session Retrospective | Research programme | 2026-03-20 |
 
 ---
 
@@ -335,12 +463,12 @@ Items discovered during the 22-session triage and filesystem verification that d
 
 ## Statistics
 
-- **Total active items:** 52
-- **P0 (NOW):** 2 (both human-gated: collaborator password, share URL)
-- **P1 (SOON):** 13 (includes 3 companion indices, 4 verification items, test runs)
-- **P2 (GROWTH):** 28
+- **Total active items:** 120 (52 pre-existing + 68 from research programme)
+- **P0 (NOW):** 13 (2 pre-existing + 11 from research programme)
+- **P1 (SOON):** 42 (13 pre-existing + 29 from research programme)
+- **P2 (GROWTH):** 56 (28 pre-existing + 28 from research programme)
 - **P3 (HORIZON):** 9
-- **Completed:** 16
+- **Completed:** 22
 - **Blocked:** 0
 
 ### By Domain
@@ -358,7 +486,7 @@ Items discovered during the 22-session triage and filesystem verification that d
 | TST (Testament) | 1 | 1 | 2 |
 | OBJ (Object Lessons) | 7 | 1 | 8 |
 | KER (Kerygma) | 2 | 0 | 2 |
-| PRT (Portfolio) | 1 | 1 | 2 |
+| PRT (Portfolio) | 1 | 2 | 3 |
 | APP (Application) | 1 | 1 | 2 |
 | GEN (Generative) | 3 | 0 | 3 |
 | IRA (Authority) | 3 | 1 | 4 |
@@ -366,9 +494,33 @@ Items discovered during the 22-session triage and filesystem verification that d
 | BLK (Blockchain) | 2 | 0 | 2 |
 | DOC (Documentation) | 5 | 0 | 5 |
 | VER (Verification) | 3 | 3 | 6 |
-| **TOTAL** | **60** | **16** | **76** |
+| RES (Research Programme) | 68 | 9 | 77 |
+| **TOTAL** | **128** | **23** | **151** |
+
+### Research Programme Breakdown
+
+| Category | P0 | P1 | P2 | Total | DONE |
+|----------|----|----|----|----|------|
+| GOVERNANCE | 5 | 7 | 5 | 17 | 2 |
+| MEASUREMENT | 3 | 8 | 7 | 18 | 0 |
+| NAMING | 1 | 3 | 6 | 10 | 1 |
+| ARCHITECTURE | 3 | 4 | 2 | 9 | 0 |
+| TOOLING | 0 | 2 | 3 | 5 | 0 |
+| PROCESS | 0 | 5 | 3 | 8 | 0 |
+| **Total** | **12** | **29** | **26** | **67** | **3** |
+
+*Note: 3 additional completed research programme items (Research Pipeline SOP, Research Registry, Session Retrospective) are process deliverables not in the 71-task manifest.*
+
+### Effort Distribution (Research Programme)
+
+| Effort | Count |
+|--------|-------|
+| S (hours) | 13 |
+| M (days) | 30 |
+| L (weeks) | 22 |
+| XL (months) | 3 |
 
 ---
 
-*Last updated: 2026-03-20 — Session: 22-session triage, filesystem verification, and index construction*
+*Last updated: 2026-03-20 — Session: SGO research programme implementation manifest integration (71 tasks added; 3 DONE, 68 OPEN)*
 *Next update: After any session that produces or discovers work items*
