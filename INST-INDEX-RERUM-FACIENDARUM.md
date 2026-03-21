@@ -112,7 +112,7 @@ All 7 research prompts from INQ-2026-004 are delivered:
 | IRF-SGO-002 | P2 | Write first dissertation chapter — convert research corpus into D-003 Ch 1 | Agent | S4, S8-22 | 170K+ words of research available |
 | IRF-SGO-003 | P2 | D-001 needs: 3+ months v2 outcome data, retrospective comparison, MPI test | Human | inquiry-log.yaml | Time-gated (need outcome data) |
 | IRF-SGO-004 | P2 | D-002 needs: second instantiation, human baseline, expanded panel, longitudinal data | Agent+Human | inquiry-log.yaml | Partially time-gated |
-| IRF-SGO-005 | P2 | Add governance YAMLs to praxis-perpetua (Phase 1 roadmap next step) | Agent | Memory | None |
+| ~~IRF-SGO-005~~ | ~~P2~~ | ~~Add governance YAMLs to praxis-perpetua~~ — **DONE** (charter, defense-protocol, faculty-registry, senate-config all on disk + 4 new governance declarations 2026-03-21) | Agent | Memory | Completed S25 |
 | IRF-SGO-006 | P3 | Build defense.py, publish.py, senate.py — SGO defense orchestration scripts | Agent | SGO spec | Depends on IRA code maturity |
 
 ### SGO Infrastructure (EXISTS)
@@ -443,9 +443,17 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-018 | SGO Research: Syntactic-Semantic Boundary Classification (IRF-RES-002) | Research programme | 2026-03-20 |
 | DONE-019 | SGO Research: Naming Convention Spec (IRF-RES-005) | Research programme | 2026-03-20 |
 | DONE-020 | Portfolio Lighthouse CI fix — programmatic API, 3-trigger system, security remediation (IRF-PRT-001) | S24 | 2026-03-21 |
-| DONE-020 | SGO Research: Research Pipeline SOP | Research programme | 2026-03-20 |
-| DONE-021 | SGO Research: Research Registry | Research programme | 2026-03-20 |
-| DONE-022 | SGO Research: Session Retrospective | Research programme | 2026-03-20 |
+| DONE-021 | SGO Research: Research Pipeline SOP | Research programme | 2026-03-21 |
+| DONE-022 | SGO Research: Research Registry | Research programme | 2026-03-21 |
+| DONE-023 | SGO Research: Session Retrospective | Research programme | 2026-03-21 |
+| DONE-024 | praxis-perpetua CI remediation — fixed broken-link checker (SIGPIPE, cross-repo links, session artifacts), added permissions block, made link check informational | S25 | 2026-03-21 |
+| DONE-025 | praxis-perpetua dependency bumps — actions/checkout v4→v6, actions/stale v9→v10, Dependabot PRs #14/#15 absorbed and closed | S25 | 2026-03-21 |
+| DONE-026 | Security: redacted leaked Render API token from session logs (secret scanning alert #1), resolved alert | S25 | 2026-03-21 |
+| DONE-027 | Security: dismissed code scanning alert #1 (missing permissions — fixed in CI workflow) | S25 | 2026-03-21 |
+| DONE-028 | Closed GitHub issues #1 (research taxonomy — superseded by SGO registry), #2 (ingestion cleanup — source files deleted), #26 (org checkout bump) | S25 | 2026-03-21 |
+| DONE-029 | Merged PR #27 (Copilot autofix — 4 quality corrections to session retrospective) | S25 | 2026-03-21 |
+| DONE-030 | Org-level ci-minimal.yml bumped to actions/checkout@v6 (in .github repo, feat/canonical-readme-standards branch) | S25 | 2026-03-21 |
+| DONE-031 | Research corpus status taxonomy applied — 66 files updated to `status: reference-activated` frontmatter | S25 | 2026-03-21 |
 
 ---
 
@@ -463,12 +471,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 120 (52 pre-existing + 68 from research programme)
+- **Total active items:** 119 (52 pre-existing + 68 from research programme − 1 closed)
 - **P0 (NOW):** 13 (2 pre-existing + 11 from research programme)
-- **P1 (SOON):** 42 (13 pre-existing + 29 from research programme)
+- **P1 (SOON):** 41 (13 pre-existing + 29 from research programme − 1 closed)
 - **P2 (GROWTH):** 56 (28 pre-existing + 28 from research programme)
 - **P3 (HORIZON):** 9
-- **Completed:** 22
+- **Completed:** 31
 - **Blocked:** 0
 
 ### By Domain
