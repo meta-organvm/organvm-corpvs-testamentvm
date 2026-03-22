@@ -18,6 +18,8 @@
         {"condition": "Orchestrates other repos or manages agent behavior", "redirect": "ORGAN-IV"},
         {"condition": "Is primarily documentation or essays", "redirect": "ORGAN-V"}
       ],
+      "hosted_formation_types": ["GENERATOR", "FRAMEWORK", "CORPUS", "RESERVOIR", "LABORATORY"],
+      "reservoir_hosting_note": "Theoria hosts cross-organ knowledge reservoirs per PROOF-reservoir-placement v2. Knowledge federation is a form of knowledge production.",
       "canonical_repo_types": ["engine", "framework", "theory", "ontology", "knowledge-base"],
       "boundary_tests": [
         {"question": "Does it produce a conceptual framework consumed by other organs?", "expected": true},
@@ -205,7 +207,8 @@
         {"condition": "Is an orchestration agent or routing system", "redirect": "ORGAN-IV"},
         {"condition": "Is a product serving external customers", "redirect": "ORGAN-III"},
         {"condition": "Is public-facing content or essays", "redirect": "ORGAN-V"},
-        {"condition": "Is foundational theory consumed by other organs", "redirect": "ORGAN-I"}
+        {"condition": "Is foundational theory consumed by other organs", "redirect": "ORGAN-I"},
+        {"condition": "Accumulated experience or memory corpus (non-constitutional knowledge)", "redirect": "ORGAN-I", "rationale": "Genome ≠ memory. Constitutional Map §1 enumerates Meta's function: doctrine, registry, schema, migration law. Memory is Theoria's domain per PROOF-reservoir-placement v2."}
       ],
       "canonical_repo_types": ["engine", "schema", "dashboard", "corpus", "pipeline", "infrastructure", "mcp-server"],
       "boundary_tests": [
