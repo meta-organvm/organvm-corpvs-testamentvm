@@ -16,7 +16,7 @@
 
 ## Project Statement
 
-ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 116 repositories across 8 GitHub organizations with 55 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
+ORGANVM is a living creative-institutional system — eight interconnected organs governing theory, art, commerce, orchestration, public process, community, marketing, and meta-governance. Built by a single operator using an AI-conductor methodology (human directs architecture and decisions; AI generates documentation, CI pipelines, and boilerplate at volume; human reviews and refines), the system coordinates 117 repositories across 8 GitHub organizations with 56 tracked dependency relationships, 115 inter-repository contracts defining data flow, and zero circular dependencies.
 
 This application highlights the system's relevance to Processing Foundation Fellowship through:
 
@@ -32,13 +32,13 @@ The Processing Foundation supports projects that expand access to creative codin
 
 | Metric | Value |
 |--------|-------|
-| Total repositories | 116 |
+| Total repositories | 117 |
 | Active (non-archived) | 84 |
 | Repos with 10+ code files | 38 |
 | Repos with test directories | 56 |
 | Total code files | 3,586 |
 | Total test files | 736 |
-| Published essays | 0 |
+| Published essays | 29 |
 | GitHub organizations | 8 |
 | Dependency relationships | 31 (zero circular) |
 | CI workflows | 76 |

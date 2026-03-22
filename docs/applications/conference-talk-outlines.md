@@ -36,7 +36,7 @@
 
 **Slide 4 — What I Actually Built**
 - 113 repositories, 8 GitHub organizations, 3 weeks
-- ~741K+ words of documentation
+- ~404K+ words of documentation
 - 49 published essays
 - 4,015+ automated tests, 104 CI/CD workflows
 - 6 JSON schemas, 16 ADRs
@@ -95,7 +95,7 @@
 - Unidirectional flow: Theory (I) -> Art (II) -> Commerce (III)
 - 50 validated cross-organ edges, 0 circular dependencies, 0 back-edge violations
 - Five-state promotion: LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED
-- Current pipeline: 4 GRADUATED, 29 PUBLIC_PROCESS, 55 CANDIDATE, 6 LOCAL, 53 ARCHIVED
+- Current pipeline: 4 GRADUATED, 29 PUBLIC_PROCESS, 55 CANDIDATE, 6 LOCAL, 54 ARCHIVED
 - Visual: the dependency DAG with organ labels
 
 **Slide 13 — Six JSON Schemas**
@@ -240,7 +240,7 @@
 - Process documentation IS the primary deliverable
 - The 49 essays about building the system ARE the system's most visible output
 - Grant reviewers and hiring managers see methodology, not just artifacts
-- The governance corpus (~741K+ words) is evidence of capability
+- The governance corpus (~404K+ words) is evidence of capability
 - "Documenting the building is building"
 
 **SECTION 3: THE DECISIONS (8 min)**
@@ -256,7 +256,7 @@
 **Slide 11 — The Billing Disaster**
 - 48,880 minutes of GitHub Actions CI in one month
 - Free tier limit: 2,000 minutes. That is a 24x overage.
-- Root cause: 104 workflows running on every push across 116 repos
+- Root cause: 104 workflows running on every push across 117 repos
 - Decision: disabled 17 non-critical workflows, added billing guardrails
 - "Constraints you forget about come back as invoices"
 
@@ -403,7 +403,7 @@
 - "These organs do not make things. They make the making possible."
 
 **Slide 10 — Organ VIII: Meta**
-- The governance corpus (~741K+ words), the registry, the schemas
+- The governance corpus (~404K+ words), the registry, the schemas
 - Custom CLI (`organvm` — 23 command groups)
 - MCP server (88 tools) exposing the system graph to AI sessions
 - System dashboard with dependency visualization
@@ -419,7 +419,7 @@
 
 **Slide 12 — Promotion as Curation**
 - Five-state pipeline: LOCAL -> CANDIDATE -> PUBLIC_PROCESS -> GRADUATED -> ARCHIVED
-- Current state: 4 GRADUATED, 29 PUBLIC_PROCESS, 55 CANDIDATE, 6 LOCAL, 53 ARCHIVED
+- Current state: 4 GRADUATED, 29 PUBLIC_PROCESS, 55 CANDIDATE, 6 LOCAL, 54 ARCHIVED
 - The same pipeline applies to a philosophical framework AND a commercial web scraper
 - Promotion criteria: CI workflow + platinum status + active implementation
 - "Curation is not just selection. It is a state machine."
@@ -489,7 +489,7 @@
 1. **Slide 5:** Run `organvm seed graph` or show the system dashboard dependency graph — the full DAG with all 50 edges, color-coded by organ.
 2. **Slide 7:** Show a running generative art piece from an ORGAN-II repo (if audio is available) or a screenshot/recording of one.
 3. **Slide 11:** Show two `organ-aesthetic.yaml` files side by side — contrast the visual identity definitions between Theory and Art organs.
-4. **Slide 13:** Run `organvm seed validate` — show the system verifying its own structural integrity across 116 repos.
+4. **Slide 13:** Run `organvm seed validate` — show the system verifying its own structural integrity across 117 repos.
 5. **Slide 14:** Walk through the dependency graph in the dashboard, clicking from ORGAN-I -> ORGAN-II -> ORGAN-III to trace one transformation pipeline.
 
 ### Audience Takeaways
@@ -508,12 +508,12 @@ These metrics appear across all three talks and should be kept consistent. Sourc
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| Total repositories | 116 | registry-v2.json |
+| Total repositories | 117 | registry-v2.json |
 | GitHub organizations | 8 | registry-v2.json |
-| Documentation volume | ~741K+ words | system metrics |
-| Published essays | 0 | ORGAN-V public-process |
+| Documentation volume | ~404K+ words | system metrics |
+| Published essays | 29 | ORGAN-V public-process |
 | Automated tests | 4,015+ | CI aggregation |
-| CI/CD workflows | 104+ | registry-v2.json |
+| CI/CD workflows | 105+ | registry-v2.json |
 | JSON schemas | 6 (all v1.0.0) | schema-definitions |
 | ADRs | 16 | docs/adr/ |
 | Completed sprints | 33 | sprint catalog |
