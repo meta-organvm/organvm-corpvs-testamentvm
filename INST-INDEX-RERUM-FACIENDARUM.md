@@ -653,6 +653,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-138 | Avditor Mvndi WebGL Stargate shader — slit-scan radial rays + domain-warped Interstellar fluid. 6 sensor inputs: gyroscope (primary, iOS permission), geolocation, time-of-day, scroll, touch. Chromatic aberration, bloom, film grain. | DWV-S1 | 2026-03-22 |
 | DONE-139 | Avditor Mvndi generative audio — Web Audio API ambient engine. Time-of-day drone, 3 harmonic overtones modulated by device orientation, sub-bass LFO, filtered noise, latitude-stretched harmonics. | DWV-S1 | 2026-03-22 |
 | DONE-140 | Avditor Mvndi UI — 8 celestial pillars (was 4), interactive expand, glassmorphism 45%, gradient-stroke hollow icons, mobile-first, RAG 5→22 playbooks | DWV-S1 | 2026-03-22 |
+| DONE-141 | `organvm fossil` — Living Stratigraphy module, all 6 phases complete. 9 source files, 87 tests, 4,457 lines. Excavated 9,445 commits across 108 repos, classified by Jungian archetype (Shadow/Anima/Animus/Self/Trickster/Mother/Father/Individuation). Hash-linked fossil-record.jsonl (5MB). | S31 (fossil) | 2026-03-22 |
+| DONE-142 | Fossil chronicle generation — 9 epoch narratives (Genesis through Contribution Engine) in `data/fossil/chronicle/`, each voiced through dominant Jungian archetype with data tables. Narrator module with archetype vocabulary templates. | S31 (fossil) | 2026-03-22 |
+| DONE-143 | Fossil archivist — intention capture with uniqueness scoring (Jaccard), SHA256 fingerprinting, YAML serialization (no PyYAML dep). Drift detector: convergence/mutation/shadow analysis classifying intention→reality divergence by archetype. | S31 (fossil) | 2026-03-22 |
+| DONE-144 | Fossil witness — git post-commit hook generation + install across workspace, real-time WITNESSED provenance recording, witness status CLI. Bridge: EPOCH_CLOSED/INTENTION_BORN/DRIFT_DETECTED testament events + fossil:// URI scheme. | S31 (fossil) | 2026-03-22 |
+| DONE-145 | IRF reconciliation audit — cross-referenced 9,376 commits against 158 active IRF items. Closed IRF-TST-002, IRF-SYS-010, IRF-SGO-007. Added 19 DONE entries (115→133). Closed GitHub issues #20 (AX-009) and #21 (AX-003) on organvm-engine. Stats: 155 active, 145 completed. | S31 (reconciliation) | 2026-03-22 |
 
 ---
 
@@ -677,7 +682,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 - **P1 (SOON):** 56 (58 prior − 2 P1 closed: IRF-TST-002, IRF-SYS-010)
 - **P2 (GROWTH):** 76 (77 prior − 1 P2 closed: IRF-SGO-007)
 - **P3 (HORIZON):** 10
-- **Completed:** 140 (DONE-001 through DONE-140, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Completed:** 145 (DONE-001 through DONE-145, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
 - **Domains:** 23
 
@@ -711,7 +716,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 79 |
 | **Active IRF items** | **155** | — |
-| **Total DONE entries** | — | **140** |
+| **Total DONE entries** | — | **145** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
 
@@ -740,5 +745,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-22 — IRF reconciliation audit: 3 IRF items closed (TST-002, SYS-010, SGO-007), 19 new DONE entries (115→133) from cross-session git audit, DWV-S1 added 7 (134→140). Total DONE: 140.*
+*Last updated: 2026-03-22 — S31: organvm fossil Living Stratigraphy (all 6 phases), IRF reconciliation audit, 9,445 commits excavated. DONE-141→145. Total DONE: 145.*
 *Next update: After any session that produces or discovers work items*
