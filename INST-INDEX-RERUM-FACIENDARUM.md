@@ -303,6 +303,22 @@ Verified on disk 2026-03-20:
 
 ---
 
+## PERSONAL — Domus Semper Palingenesis (Infrastructure)
+
+> The operator's machine is the system's root. If domus breaks, every organ loses its shell environment, agent infrastructure, secrets, and context files. Currently a **governance ghost** — critical dependency, zero formal visibility.
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-DOM-001 | P1 | Create seed.yaml — organ: LIMINAL, tier: infrastructure, status: GRADUATED. Declare produces (environment-config, agent-infrastructure, secrets-management), consumes (skills from ORGAN-IV, governance-policy from META). First LIMINAL repo with a formal contract | Agent | S29 E2G audit | None |
+| IRF-DOM-002 | P1 | Add domus to registry-v2.json — new LIMINAL section or META-ORGANVM infrastructure entry. Include CI workflow, platinum status, test counts. Makes domus visible to network density metrics (omega #19) | Agent | S29 E2G audit | IRF-DOM-001 (seed first) |
+| IRF-DOM-003 | P1 | Emit testament events — ENTITY_CREATED + SEED_EDGE_ADDED + REGISTRY_UPDATED for domus. Register domus in the event spine so the network testament can see it | Agent | S29 E2G audit | IRF-DOM-001, IRF-DOM-002 |
+| IRF-DOM-004 | P2 | Register IRF-DOM prefix in concordance + concordance-quickref. Add omega cross-references noting domus implicitly supports criteria #1 (30-day soak), #16 (bus factor), #17 (autonomous ops), #19 (network density) | Agent | S29 E2G audit | None |
+| IRF-DOM-005 | P2 | Create GitHub issues for deferred E2G items — ZSH config behavioral tests (13 files), .chezmoiscripts behavioral tests (18 scripts), tools.yaml population, _agents skeleton evolution | Agent | S29 E2G audit | None |
+| IRF-DOM-006 | P2 | Add domus to omega evidence map — document its role as silent foundational dependency for #1, #16, #17, #19. Currently invisible in the evidence map | Agent | S29 E2G audit | None |
+| IRF-DOM-007 | P3 | Shell parity enforcement gate — wire domus-shell-parity into CI as a required check, not just a diagnostic tool. Prevent zsh/fish drift from accumulating | Agent | S29 E2G audit | None |
+
+---
+
 ## Generative Visuals
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -630,14 +646,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 151 (147 prior + 4 new from S29 post-flood: IRF-CCE-008, IRF-SYS-013, IRF-SYS-014, IRF-SYS-015)
+- **Total active items:** 158 (151 prior + 7 new from S29 domus E2G: IRF-DOM-001 through IRF-DOM-007)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 55 (54 prior + 1 new: IRF-CCE-008)
-- **P2 (GROWTH):** 74 (71 prior + 3 new: IRF-SYS-013, IRF-SYS-014, IRF-SYS-015)
-- **P3 (HORIZON):** 9
+- **P1 (SOON):** 58 (55 prior + 3 new: IRF-DOM-001, IRF-DOM-002, IRF-DOM-003)
+- **P2 (GROWTH):** 77 (74 prior + 3 new: IRF-DOM-004, IRF-DOM-005, IRF-DOM-006)
+- **P3 (HORIZON):** 10 (9 prior + 1 new: IRF-DOM-007)
 - **Completed:** 114 (DONE-001 through DONE-114)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 22
+- **Domains:** 23 (22 prior + DOM)
 
 ### By Domain
 
@@ -666,9 +682,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | VER (Verification) | 3 | 3 |
 | RES (Research Programme) | 68 | 9 |
 | HRM (Hermeneus) | 8 | 7 |
+| DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S29) | 0 | 54 |
-| **Active IRF items** | **141** | — |
-| **Total DONE entries** | — | **107** |
+| **Active IRF items** | **158** | — |
+| **Total DONE entries** | — | **114** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features) that don't map to a single domain prefix.*
 
