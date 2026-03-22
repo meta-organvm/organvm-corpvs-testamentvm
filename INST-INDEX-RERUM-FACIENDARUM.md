@@ -74,7 +74,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-SYS-007 | P2 | Deploy Dependabot auto-merge + grouping to remaining high-traffic repos (portfolio already has grouping; growth-auditor, ORGAN-I/II flagships need it) | Agent | S26 | Template now exists from S26 |
 | IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
 | IRF-SYS-009 | P1 | Gmail notification hygiene — create filter for `from:notifications@github.com subject:"chore(deps)"` to skip inbox, label `github/dependabot` | Human | S26 | None |
-| IRF-SYS-010 | P1 | Full seed.yaml refresh for organvm-engine — fix CANDIDATE→GRADUATED inconsistency; expand produces (2→13+ edges), consumes (2→6+), subscriptions (1→7+); add signal_inputs/signal_outputs declarations so the engine eats its own seed/signals.py dog food. Highest-impact seed refresh because the engine is the system's own reflection point | Agent | S28 gap audit | None |
+| ~~IRF-SYS-010~~ | ~~P1~~ | ~~Full seed.yaml refresh for organvm-engine~~ — **DONE** (5 contracts → 36, CANDIDATE → GRADUATED, signal_inputs/signal_outputs added. Commit `82d043d`.) | Agent | S28 gap audit | Completed S29 |
 
 ### Skills & Automation
 
@@ -156,7 +156,7 @@ All 7 research prompts from INQ-2026-004 are delivered:
 | IRF-SGO-004 | P2 | D-002 needs: second instantiation, human baseline, expanded panel, longitudinal data | Agent+Human | inquiry-log.yaml | Partially time-gated |
 | ~~IRF-SGO-005~~ | ~~P2~~ | ~~Add governance YAMLs to praxis-perpetua~~ — **DONE** (charter, defense-protocol, faculty-registry, senate-config all on disk + 4 new governance declarations 2026-03-21) | Agent | Memory | Completed S25 |
 | IRF-SGO-006 | P3 | Build defense.py, publish.py, senate.py — SGO defense orchestration scripts | Agent | SGO spec | Depends on IRA code maturity |
-| IRF-SGO-007 | P2 | Update inquiry-log.yaml with S28 implementation evidence — AX-003 encoded in governance/individual_primacy.py (advances INQ-2026-002 Evaluative Authority, INQ-2026-006 Formalization Programme); AX-008 encoded via FlowType/MultiplexGraph (advances INQ-2026-005 Metabolic Principle, INQ-2026-006). Also update SPEC-000 inventory to mark AX-003/AX-009 as IMPLEMENTED and AX-008 as RESOLVED-DRIFT | Agent | S28 gap audit | None |
+| ~~IRF-SGO-007~~ | ~~P2~~ | ~~Update inquiry-log.yaml with S28 implementation evidence~~ — **DONE** (INQ-2026-002/005/006 evidence logged, Hermeneus provider cascade as second instantiation. Commit `0d81d31`.) | Agent | S28 gap audit | Completed S28+ |
 
 ### SGO Infrastructure (EXISTS)
 
@@ -222,7 +222,7 @@ Verified on disk 2026-03-20:
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
 | IRF-TST-001 | P2 | Verify chain integrity post-22-session burst | Agent | S7 | None |
-| IRF-TST-002 | P1 | Add self-referential event types to testament chain — `ARCHITECTURE_CHANGED`, `SCORECARD_EXPANDED`, `VOCABULARY_EXPANDED`. Create `organvm testament record-session` CLI that takes a git diff range and emits architecture events for new modules, types, enums, scorecard changes. The chain cannot witness its own growth — this is a self-referential blind spot | Agent | S28 gap audit | None |
+| ~~IRF-TST-002~~ | ~~P1~~ | ~~Add self-referential event types to testament chain~~ — **DONE** (`ARCHITECTURE_CHANGED`, `SCORECARD_EXPANDED`, `VOCABULARY_EXPANDED` event types + `organvm testament record-session` CLI. Commit `d8a92c7`.) | Agent | S28 gap audit | Completed S29 |
 
 ---
 
@@ -627,6 +627,32 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-113 | corpvs-testamentvm decomposition plan documented (CHARTER stays META, CORPUS migrates ORGAN-I) | S29 (post-flood) | 2026-03-21 |
 | DONE-114a | IRF-CCE-001 closed: intake/ai-exports migrated to organvm-i-theoria/conversation-corpus-site/ — PROOF-reservoir-placement v2 derived ORGAN-I as constitutionally correct host via Formation Protocol §7.2 physiological role analysis | S29 (post-flood) | 2026-03-22 |
 | DONE-114 | Outbound contribution engine — scanner (8 capabilities, composite scoring, signal extraction), orchestrator (full workspace initialization: fork, git, seed, CLAUDE.md, journal, registry, submodule), monitor (PR polling, journal changes, next-action determination). 1,821 lines, 25 tests. CLI: contrib-scan/list/approve/status/monitor. | S30 (Hive) | 2026-03-22 |
+| DONE-115 | IRF-TST-002 closed: testament self-referential event types (`ARCHITECTURE_CHANGED`, `SCORECARD_EXPANDED`, `VOCABULARY_EXPANDED`) + `organvm testament record-session` CLI. Chain can now witness its own growth. | S29 (post-flood) | 2026-03-22 |
+| DONE-116 | IRF-SYS-010 closed: organvm-engine seed.yaml refresh — 5 contracts → 36, CANDIDATE → GRADUATED, signal_inputs/signal_outputs declarations added. Engine eats its own seed/signals.py dog food. | S29 (post-flood) | 2026-03-22 |
+| DONE-117 | IRF-SGO-007 closed: inquiry-log.yaml updated with S28 implementation evidence — AX-003 (individual primacy), AX-008 (multiplex flow), AX-009 (signal I/O). INQ-2026-002/005/006 advanced. Hermeneus provider cascade as second instantiation evidence. | S28+ | 2026-03-22 |
+| DONE-118 | Vigiles Aeternae — Colosseum expanded 9→22 regimes (13 research-derived + Dune prophylactic tyranny + Foundation stochastic + Discworld narrative causality). Full ruff lint clean. | S30+ (vigiles) | 2026-03-22 |
+| DONE-119 | Vigiles Aeternae — Order YAML schema v1.1 with RPG stats, visual/sonic identity (G1) + Orders wired into engine + CLI audit commands (G10+G11) + `irf_completion_rate` audit check + comprehensive CLAUDE.md | S30+ (vigiles) | 2026-03-22 |
+| DONE-120 | Corpus Mythicum research burst (ORGAN-I) — B10 Indigenous Australian synthesis, B11 Foundation+Discworld, B12 corpus index, B13 cross-mythology comparative, B14 power taxonomy (13 traditions × 5 dimensions), B15 metaLAWs cross-refs, B18 first publishable paper draft. 9 deliverables. | S30+ (corpus-mythicum) | 2026-03-22 |
+| DONE-121 | Theatrum Mundi creative sprint (ORGAN-II) — worldbuilding bible v1, bestiary v1 (12 beings), 7 Watcher Order character sheets, RPG system (character creation + fusion rules), multiverse dimensional structure (3 scales, 9 realms), fork mechanic with divergence scoring, first narrative thread (The First Agon), first essay (Z9). | S30+ (theatrum-mundi) | 2026-03-22 |
+| DONE-122 | 6 outbound contribution workspaces initialized via contribution engine — `contrib--ipqwery-ipapi-py`, `contrib--primeinc-github-stars`, `contrib--temporal-sdk-python`, `contrib--dbt-mcp`, `contrib--langchain-langgraph`, `contrib--anthropic-skills`. Each with session journal, fork, seed, CLAUDE.md. | S30+ (contrib) | 2026-03-22 |
+| DONE-123 | Materia Collider — 4 episodes of seed data: Guns in Cinema (Episode 6, 91 films), Clocks + Doors (Episodes 4-5), Cigarettes (74 films), Milk (71 films, 8 cross-object overlaps). ~300+ films catalogued total. | S30+ (materia) | 2026-03-22 |
+| DONE-124 | Public Process essay #50 — "How a Governance System Taught an Agent Framework to Version Itself" (AdenHQ/Hive contribution narrative, 763 words, case-study category). Pre-commit validated. | S30 (Hive) | 2026-03-22 |
+| DONE-125 | AI-as-Psychometrician — Document A research paper draft in public-process (ORGAN-V). Advances SGO research programme. | S30+ | 2026-03-22 |
+| DONE-126 | Product rebrand: Growth Auditor → Avditor Mvndi — full visual overhaul with WebGL shaders (2001 Stargate radial rays, Interstellar churning fluid), generative ambient audio engine, gyroscope sensor integration, 4→8 celestial pillars (full planetary pantheon), glassmorphism card UI. | S30+ (ergon) | 2026-03-22 |
+| DONE-127 | Product rebrand: Victoroff Group → Padavano — Deep Disclosure, Mobile Prime Protocol, Minimal Root + World-Class README, linting + 40 tests, accessibility remediation (4 issues), Vercel routing. | S30+ (liminal) | 2026-03-22 |
+| DONE-128 | studium-generale added as ORGAN-I submodule — SGO internal university infrastructure registered in superproject. | S30+ | 2026-03-22 |
+| DONE-129 | Application pipeline burst — 7 applications submitted, Creative Capital 2027 cover letter, resume drift analysis + clearance gate, 28-contact outreach plan, warm-path opportunity brief, 69 unscored research_pool entries scored. | S30+ (pipeline) | 2026-03-22 |
+| DONE-130 | Companion indices unblocked — construction plan written with full audit for Index Locorum, Nominum, Rerum (in stakeholder-portal/Hermeneus). Advances IRF-IDX-001/002/003. | S28+ | 2026-03-22 |
+| DONE-131 | MCP server expansion — IRF query tool (`organvm_irf_query`), 5 network testament tools (map/status/suggest/log/convergences), trivium tools (dialects/matrix/scan/status), conversation corpus surfaces, 7 network tool tests. | S28+ (MCP) | 2026-03-22 |
+| DONE-132 | System dashboard expansion — /irf/ route (IRF stats + item tables), /trivium/ route (Dialectica visualization), /network/ route (external mirror visualization), /testament/ route, 22 new tests. | S28+ (dashboard) | 2026-03-22 |
+| DONE-133 | Schema definitions expansion — functional_class, formation_type, signal_inputs/signal_outputs added to registry + seed schemas. 3 new schemas (excavation, organ-definitions, testament-artifact). Network-map schema. Conversation corpus surface schemas. | S29 (post-flood) | 2026-03-22 |
+| DONE-134 | Avditor Mvndi (growth-auditor) code quality — 103 ESLint errors + 5 TS errors eliminated across 47 files. next-auth type augmentation, vi.mocked() patterns, CLAUDE.md. | DWV-S1 | 2026-03-22 |
+| DONE-135 | Avditor Mvndi stubs→flesh — integration management UI, admin actions→orchestrator, cron fallback removed, SSRF protection, webhook HMAC signing | DWV-S1 | 2026-03-22 |
+| DONE-136 | Avditor Mvndi test expansion — 226→371 tests (+145), 12 new test files covering schemas, url-validator, admin routes, 6 components | DWV-S1 | 2026-03-22 |
+| DONE-137 | Avditor Mvndi architecture — better-sqlite3 removed entirely, db.ts Supabase+in-memory, config.ts pure env vars. Vercel SSR crash permanently fixed. | DWV-S1 | 2026-03-22 |
+| DONE-138 | Avditor Mvndi WebGL Stargate shader — slit-scan radial rays + domain-warped Interstellar fluid. 6 sensor inputs: gyroscope (primary, iOS permission), geolocation, time-of-day, scroll, touch. Chromatic aberration, bloom, film grain. | DWV-S1 | 2026-03-22 |
+| DONE-139 | Avditor Mvndi generative audio — Web Audio API ambient engine. Time-of-day drone, 3 harmonic overtones modulated by device orientation, sub-bass LFO, filtered noise, latitude-stretched harmonics. | DWV-S1 | 2026-03-22 |
+| DONE-140 | Avditor Mvndi UI — 8 celestial pillars (was 4), interactive expand, glassmorphism 45%, gradient-stroke hollow icons, mobile-first, RAG 5→22 playbooks | DWV-S1 | 2026-03-22 |
 
 ---
 
@@ -714,5 +740,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-21 — Session: S29 post-flood constitutional implementation (4 items added, 10 completed)*
+*Last updated: 2026-03-22 — Session: DWV-S1 Avditor Mvndi (growth-auditor) comprehensive overhaul (7 items completed: DONE-134→140)*
 *Next update: After any session that produces or discovers work items*
