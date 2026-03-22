@@ -237,6 +237,10 @@ Verified on disk 2026-03-20:
 | IRF-CCE-005 | P1 | Wire `chatgpt-history` corpus into provider readiness as "registered-active" not "missing" — the genesis corpus exists but shows "missing" because it predates the source-drop inbox flow | Agent | S27 | Readiness logic assumes all corpora arrive through source-drop |
 | IRF-CCE-006 | P2 | Publish `cce` to PyPI or at minimum make it `pipx install`-able from GitHub | Agent | S27 | None |
 | IRF-CCE-007 | P1 | Resolve `claude-history-memory` gate=warn — evaluation shows `source_reliability_state: warn` because manual gold fixtures haven't been added for the Claude export corpus | Agent | S27 | Need manual review of Claude export conversations |
+| IRF-CCE-008 | P1 | Execute corpvs-testamentvm decomposition — CHARTER stays META, CORPUS migrates to ORGAN-I per Lemma 5 of PROOF-reservoir-placement v2 | Agent | S29 decomposition plan | Migration script + GitHub repo creation needed |
+| IRF-SYS-013 | P2 | Propagate functional_class into all 74 seed.yaml files | Agent | S29 | None |
+| IRF-SYS-014 | P2 | Write formation.yaml for top 20 repos (flagships first) | Agent | S29 | None |
+| IRF-SYS-015 | P2 | Wire functional taxonomy into omega scorecard as criterion #20 | Agent | S29 | None |
 
 ---
 
@@ -595,6 +599,16 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-101 | ORGAN-II visualization artifacts — 2 Mermaid diagrams (lifecycle state machine + cross-organ fusion map) in contrib--adenhq-hive/artifacts/ | S30 (Hive) | 2026-03-21 |
 | DONE-102 | ORGAN-V public narrative — essay #50 "How a Governance System Taught an Agent Framework to Version Itself" in public-process/_posts/. 763 words, case-study category. Pre-commit validated (50 essays, 0 errors). | S30 (Hive) | 2026-03-21 |
 | DONE-103 | Portable open-source contribution system prompt — OPEN-SOURCE-CONTRIBUTION-SYSTEM-PROMPT.md for replicating the cross-organ symbiote pattern on future projects | S30 (Hive) | 2026-03-21 |
+| DONE-104 | Physical move: conversation-corpus-site to organvm-i-theoria/ (PROOF-reservoir-placement v2) | S29 (post-flood) | 2026-03-21 |
+| DONE-105 | First formation.yaml written and validated (FORM-RES-001, RESERVOIR) | S29 (post-flood) | 2026-03-21 |
+| DONE-106 | Registry schema extended: functional_class + formation_type + functional_class_secondary (v1.2.0) | S29 (post-flood) | 2026-03-21 |
+| DONE-107 | Seed schema extended with formation_type, functional_class, signal_inputs, signal_outputs | S29 (post-flood) | 2026-03-21 |
+| DONE-108 | SignalClass enum replaced with post-flood §8.1 vocabulary (14 canonical signals) | S29 (post-flood) | 2026-03-21 |
+| DONE-109 | Batch classification: 118 repos assigned functional_class in registry-v2.json | S29 (post-flood) | 2026-03-21 |
+| DONE-110 | Taxonomy CLI: organvm taxonomy classify + audit commands (6 tests) | S29 (post-flood) | 2026-03-21 |
+| DONE-111 | Governance wiring: audit + promotion gate + placement affinity + formation signal validation (26 tests) | S29 (post-flood) | 2026-03-21 |
+| DONE-112 | organ-definitions.json: RESERVOIR hosting in ORGAN-I, memory exclusion in META | S29 (post-flood) | 2026-03-21 |
+| DONE-113 | corpvs-testamentvm decomposition plan documented (CHARTER stays META, CORPUS migrates ORGAN-I) | S29 (post-flood) | 2026-03-21 |
 
 ---
 
@@ -614,21 +628,21 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 147 (143 prior + 4 new from S30: IRF-OSS-001 through IRF-OSS-004)
+- **Total active items:** 151 (147 prior + 4 new from S29 post-flood: IRF-CCE-008, IRF-SYS-013, IRF-SYS-014, IRF-SYS-015)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 54 (52 prior + 2 new: IRF-OSS-001, IRF-OSS-004)
-- **P2 (GROWTH):** 71 (69 prior + 2 new: IRF-OSS-002, IRF-OSS-003)
+- **P1 (SOON):** 55 (54 prior + 1 new: IRF-CCE-008)
+- **P2 (GROWTH):** 74 (71 prior + 3 new: IRF-SYS-013, IRF-SYS-014, IRF-SYS-015)
 - **P3 (HORIZON):** 9
-- **Completed:** 103 (DONE-001 through DONE-103)
+- **Completed:** 113 (DONE-001 through DONE-113)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 22 (added OSS)
+- **Domains:** 22
 
 ### By Domain
 
 | Domain | Active | DONE (domain) |
 |--------|--------|---------------|
-| CCE (Corpus Engine) | 7 | 8 |
-| SYS (System-wide) | 8 | 2 |
+| CCE (Corpus Engine) | 8 | 18 |
+| SYS (System-wide) | 11 | 2 |
 | IDX (Index apparatus) | 3 | 1 |
 | SKL (Skills) | 3 | 1 |
 | MON (Monitoring) | 3 | 0 |
@@ -651,8 +665,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | RES (Research Programme) | 68 | 9 |
 | HRM (Hermeneus) | 8 | 7 |
 | Cross-session (S23-S29) | 0 | 54 |
-| **Active IRF items** | **137** | — |
-| **Total DONE entries** | — | **97** |
+| **Active IRF items** | **141** | — |
+| **Total DONE entries** | — | **107** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features) that don't map to a single domain prefix.*
 
@@ -681,5 +695,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-21 — S28 gap audit: audited all 6 "Skip" indices from propagation checklist. None were truly N/A — each revealed a concrete gap. Added 6 new IRF items (IRF-SYS-010, IRF-IDX-004, IRF-CRP-004, IRF-CRP-005, IRF-TST-002, IRF-SGO-007). Key findings: seed.yaml declares 5 contracts but actual surface is 30+; concordance 1 month stale; testament chain has self-referential blind spot; engine registry entry dramatically understates capabilities.*
+*Last updated: 2026-03-21 — Session: S29 post-flood constitutional implementation (4 items added, 10 completed)*
 *Next update: After any session that produces or discovers work items*
