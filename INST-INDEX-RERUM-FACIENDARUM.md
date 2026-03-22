@@ -263,6 +263,17 @@ Verified on disk 2026-03-20:
 
 ---
 
+## ORGAN-IV — Open-Source Contributions
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-OSS-001 | P1 | AdenHQ/Hive Phase 2 — wire event bus auto-snapshot hooks, `version-diff`/`version-restore`/`version-star` CLI, runner integration | Agent | PR #6707 review feedback | Waiting on #6613 assignment + Phase 1 merge |
+| IRF-OSS-002 | P2 | AdenHQ/Hive ORGAN-I theory — expand lifecycle algebra into full paper (assembly dynamics, fission-fusion operational semantics) | Agent | S30 (Hive) | None |
+| IRF-OSS-003 | P2 | Generalize cross-organ contribution machine — extract pattern from Hive into reusable template for future open-source contributions | Agent | S30 (Hive) | Need 2+ successful contributions to validate pattern |
+| IRF-OSS-004 | P1 | Monitor AdenHQ/Hive PR #6707 — respond to review comments, address CI, maintain relationship with team | Agent | S30 (Hive) | 24h assignment window |
+
+---
+
 ## ORGAN-VII — Kerygma (Distribution)
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -578,6 +589,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-095 | domus-semper-palingenesis: 1:X modular test coverage — 31 test files, 363 tests (240 BATS + 123 pytest). New: modify_claude_json (14), agent-run (9), agent-tmux (6), plist validation (4), version-check (6), zsh-aliases (15), zsh-functions (7), zsh-path-env (10), git-config (6) | S29 (domus-E2G) | 2026-03-21 |
 | DONE-096 | domus-semper-palingenesis: CI fully green (13/13 jobs) — fixed BATS hangs (tmux mock PATH), yq version detection (skip_if_wrong_yq), osascript skip on Linux, AWS credentials ignore path (XDG), ShellCheck __pycache__ exclusion. Resolved 6 pre-existing failures. | S29 (domus-E2G) | 2026-03-21 |
 | DONE-097 | .gemini scratch files removed (tmp_swarm.py, tmp_trainer.py importing non-existent titan package) | S29 (domus-E2G) | 2026-03-21 |
+| DONE-098 | AdenHQ/Hive Phase 1 PR — `DesignVersion` schema, `DesignVersionStore`, `DesignLifecycleState` (forward-only), `version-list`/`version-show` CLI, `DESIGN_VERSION_SAVED` event type. 912 lines, 34 tests, 5920 suite green. PR #6707. | S30 (Hive) | 2026-03-21 |
+| DONE-099 | contrib--adenhq-hive ORGANVM infrastructure — GitHub repo created, superproject submodule registered, registry-v2.json entry #118, seed.yaml wired (5 produces, 3 consumes, 2 subscriptions), validate-deps clean (0 new violations) | S30 (Hive) | 2026-03-21 |
+| DONE-100 | ORGAN-I theory extraction — `agent-design-lifecycle-algebra.md` in sema-metra ecosystem/intelligence/content/. Formal state machine isomorphism (bounded join-semilattice), quality gates as morphisms, assembly dynamics operational semantics. | S30 (Hive) | 2026-03-21 |
+| DONE-101 | ORGAN-II visualization artifacts — 2 Mermaid diagrams (lifecycle state machine + cross-organ fusion map) in contrib--adenhq-hive/artifacts/ | S30 (Hive) | 2026-03-21 |
+| DONE-102 | ORGAN-V public narrative — essay #50 "How a Governance System Taught an Agent Framework to Version Itself" in public-process/_posts/. 763 words, case-study category. Pre-commit validated (50 essays, 0 errors). | S30 (Hive) | 2026-03-21 |
+| DONE-103 | Portable open-source contribution system prompt — OPEN-SOURCE-CONTRIBUTION-SYSTEM-PROMPT.md for replicating the cross-organ symbiote pattern on future projects | S30 (Hive) | 2026-03-21 |
 
 ---
 
@@ -597,14 +614,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 143 (137 prior + 6 new from S28 gap audit: IRF-SYS-010, IRF-IDX-004, IRF-CRP-004, IRF-CRP-005, IRF-TST-002, IRF-SGO-007)
+- **Total active items:** 147 (143 prior + 4 new from S30: IRF-OSS-001 through IRF-OSS-004)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 52 (49 prior + 3 new: IRF-SYS-010, IRF-CRP-005, IRF-TST-002)
-- **P2 (GROWTH):** 69 (66 prior + 3 new: IRF-IDX-004, IRF-CRP-004, IRF-SGO-007)
+- **P1 (SOON):** 54 (52 prior + 2 new: IRF-OSS-001, IRF-OSS-004)
+- **P2 (GROWTH):** 71 (69 prior + 2 new: IRF-OSS-002, IRF-OSS-003)
 - **P3 (HORIZON):** 9
-- **Completed:** 97 (DONE-001 through DONE-097)
+- **Completed:** 103 (DONE-001 through DONE-103)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 21
+- **Domains:** 22 (added OSS)
 
 ### By Domain
 
@@ -625,6 +642,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | PRT (Portfolio) | 1 | 9 |
 | APP (Application) | 1 | 1 |
 | GEN (Generative) | 3 | 0 |
+| OSS (Open-Source) | 4 | 6 |
 | IRA (Authority) | 3 | 1 |
 | ARC (Architecture) | 6 | 0 |
 | BLK (Blockchain) | 2 | 0 |
