@@ -74,6 +74,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-SYS-007 | P2 | Deploy Dependabot auto-merge + grouping to remaining high-traffic repos (portfolio already has grouping; growth-auditor, ORGAN-I/II flagships need it) | Agent | S26 | Template now exists from S26 |
 | IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
 | IRF-SYS-009 | P1 | Gmail notification hygiene — create filter for `from:notifications@github.com subject:"chore(deps)"` to skip inbox, label `github/dependabot` | Human | S26 | None |
+| IRF-SYS-010 | P1 | Full seed.yaml refresh for organvm-engine — fix CANDIDATE→GRADUATED inconsistency; expand produces (2→13+ edges), consumes (2→6+), subscriptions (1→7+); add signal_inputs/signal_outputs declarations so the engine eats its own seed/signals.py dog food. Highest-impact seed refresh because the engine is the system's own reflection point | Agent | S28 gap audit | None |
 
 ### Skills & Automation
 
@@ -90,6 +91,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-IDX-001 | P1 | Build INST-INDEX-LOCORUM.md — canonical map of where everything lives: repos (117), directories, key files, URLs, infrastructure endpoints (Cloudflare, GitHub orgs, D1 databases), deployment targets, MCP servers | Agent | This session | Pattern: INST-INDEX-RERUM-FACIENDARUM.md |
 | IRF-IDX-002 | P1 | Build INST-INDEX-NOMINUM.md — registry of all named entities: 8 organs, 117 repos, CLI tools (organvm, alchemia, ontologia), agent personas (Architect/QA Lead/Operator/Auditor), 22 regimes, 8 Watcher Orders, 18 SPECs, 64+ SOPs, 3 dissertations (D-001/D-002/D-003), 8 faculties, named protocols (Testament, Descent, Membrane, Styx), people (Chris, the Provost) | Agent | This session | Data exists across registry-v2.json, seed.yaml files, governance docs |
 | IRF-IDX-003 | P1 | Build INST-INDEX-RERUM.md — ontological inventory of what exists: every artifact type (YAML spec, Python module, Markdown research, SVG visual, YAML regime, test file, dissertation chapter), its state (implemented/specified/planned), relationships (produces/consumes, depends-on, references), provenance (which session, which commit) | Agent | This session | Ontologia UID system exists for entity identity |
+| IRF-IDX-004 | P2 | Create `organvm index generate` CLI command group with subcommands `locorum`, `nominum`, `rerum` that read from registry, seeds, AST, and ontologia to produce the three companion indices as markdown. The existing indexer/ module indexes code structure, not system knowledge — this is a different pipeline | Agent | S28 gap audit | IRF-IDX-001/002/003 define content; this defines tooling |
 
 ### Monitoring & Auditing
 
@@ -108,6 +110,8 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-CRP-001 | P1 | Omega scorecard: advance from 8/19 toward next achievable criteria (#9 stranger-ready polish is closest) | Agent | S13, S28 | None |
 | IRF-CRP-002 | P2 | Registry-v2.json maintenance — keep in sync as repos evolve. Hermeneus entry needs display_name + updated description. | Agent | S3-7, S28 | Ongoing |
 | IRF-CRP-003 | P2 | Testament Protocol — run cascade to record S28 Hermeneus events (Next.js 16, streaming, provider cascade, rename) | Agent | S7, S28 | None |
+| IRF-CRP-004 | P2 | Update organvm-engine registry-v2.json entry — currently says "7 modules, 12 commands" but actual is 42 modules, 25+ commands, 19 omega criteria. Refresh description, note field, last_validated. Also file schema-definitions issue for optional `capabilities: string[]` field | Agent | S28 gap audit | None |
+| IRF-CRP-005 | P1 | Extend concordance.md — (1) Add "Named Code Entities" section cataloging all dataclasses/enums/protocols in organvm-engine (100+ types); (2) Update Omega Criteria from 17→19; (3) Consider `organvm concordance sync` CLI command for auto-generation from AST | Agent | S28 gap audit | concordance.md 1 month stale since 2026-02-17 |
 
 ---
 
@@ -152,6 +156,7 @@ All 7 research prompts from INQ-2026-004 are delivered:
 | IRF-SGO-004 | P2 | D-002 needs: second instantiation, human baseline, expanded panel, longitudinal data | Agent+Human | inquiry-log.yaml | Partially time-gated |
 | ~~IRF-SGO-005~~ | ~~P2~~ | ~~Add governance YAMLs to praxis-perpetua~~ — **DONE** (charter, defense-protocol, faculty-registry, senate-config all on disk + 4 new governance declarations 2026-03-21) | Agent | Memory | Completed S25 |
 | IRF-SGO-006 | P3 | Build defense.py, publish.py, senate.py — SGO defense orchestration scripts | Agent | SGO spec | Depends on IRA code maturity |
+| IRF-SGO-007 | P2 | Update inquiry-log.yaml with S28 implementation evidence — AX-003 encoded in governance/individual_primacy.py (advances INQ-2026-002 Evaluative Authority, INQ-2026-006 Formalization Programme); AX-008 encoded via FlowType/MultiplexGraph (advances INQ-2026-005 Metabolic Principle, INQ-2026-006). Also update SPEC-000 inventory to mark AX-003/AX-009 as IMPLEMENTED and AX-008 as RESOLVED-DRIFT | Agent | S28 gap audit | None |
 
 ### SGO Infrastructure (EXISTS)
 
@@ -217,6 +222,7 @@ Verified on disk 2026-03-20:
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
 | IRF-TST-001 | P2 | Verify chain integrity post-22-session burst | Agent | S7 | None |
+| IRF-TST-002 | P1 | Add self-referential event types to testament chain — `ARCHITECTURE_CHANGED`, `SCORECARD_EXPANDED`, `VOCABULARY_EXPANDED`. Create `organvm testament record-session` CLI that takes a git diff range and emits architecture events for new modules, types, enums, scorecard changes. The chain cannot witness its own growth — this is a self-referential blind spot | Agent | S28 gap audit | None |
 
 ---
 
@@ -585,14 +591,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 137 (129 prior + 8 new Hermeneus: IRF-HRM-001–008)
+- **Total active items:** 143 (137 prior + 6 new from S28 gap audit: IRF-SYS-010, IRF-IDX-004, IRF-CRP-004, IRF-CRP-005, IRF-TST-002, IRF-SGO-007)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 49 (45 prior + 4 new: IRF-HRM-001–003, IRF-HRM-005)
-- **P2 (GROWTH):** 66 (62 prior + 4 new: IRF-HRM-004, IRF-HRM-006–008)
+- **P1 (SOON):** 52 (49 prior + 3 new: IRF-SYS-010, IRF-CRP-005, IRF-TST-002)
+- **P2 (GROWTH):** 69 (66 prior + 3 new: IRF-IDX-004, IRF-CRP-004, IRF-SGO-007)
 - **P3 (HORIZON):** 9
 - **Completed:** 91 (DONE-001 through DONE-091)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 21 (20 prior + 1 new: HRM)
+- **Domains:** 21
 
 ### By Domain
 
@@ -651,5 +657,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-21 — Close-out pass: registered 8 SGO research programme completions (DONE-049–056), reconciled domain table with 91 total DONE entries across S23–S28, updated external indices (inquiry-log.yaml, concordance.md, CLAUDE.md). Prior: S28 engine-remediation (DONE-057–091).*
+*Last updated: 2026-03-21 — S28 gap audit: audited all 6 "Skip" indices from propagation checklist. None were truly N/A — each revealed a concrete gap. Added 6 new IRF items (IRF-SYS-010, IRF-IDX-004, IRF-CRP-004, IRF-CRP-005, IRF-TST-002, IRF-SGO-007). Key findings: seed.yaml declares 5 contracts but actual surface is 30+; concordance 1 month stale; testament chain has self-referential blind spot; engine registry entry dramatically understates capabilities.*
 *Next update: After any session that produces or discovers work items*
