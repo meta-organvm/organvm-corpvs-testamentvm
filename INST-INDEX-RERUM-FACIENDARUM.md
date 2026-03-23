@@ -748,6 +748,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-161 | Campaign execution — 8/15 actions completed: Discord joined + verified (AdenHQ), issue #6613 claimed (follow-up comment linking PR #6707), Anthropic PR #723 bumped, LangGraph PR #7237 bumped, dbt-mcp PR #669 bumped, primeinc changeset bot false-positive addressed, meta-narrative drafted (essay-8), Anthropic review process investigated. | S32 (plague campaign) | 2026-03-23 |
 | DONE-162 | CONTRIBUTION-PROMPT.md generated for 6 SETUP workspaces — anthropic-skills, temporal-sdk-python, dbt-mcp, langchain-langgraph, primeinc-github-stars, ipqwery-ipapi-py. All pushed to origin. | S32 (plague campaign) | 2026-03-23 |
 | DONE-163 | Visualization stack installed — matplotlib, plotly, networkx, cairosvg, svgwrite (Python); d2, typst, imagemagick, librsvg (brew CLI). Production-grade rendering pipeline operational. | S32 (plague campaign) | 2026-03-23 |
+| DONE-164 | S30 close-out vacuum audit: Omega #12 tracking issue (orchestration-start-here#143, 1/3 external contributions), contrib-engine Phase 2 issue (#142), INQ-2026-002 evidence (external governance validation via Hive), CLAUDE.md architecture update. All 10 indices checked — 4 former N/As resolved. | S30 (close-out) | 2026-03-23 |
 
 ---
 
@@ -772,7 +773,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 - **P1 (SOON):** 59 (56 prior + 3 new P1: IRF-CCE-009, IRF-CCE-010, IRF-CCE-011)
 - **P2 (GROWTH):** 78 (76 prior + 2 new P2: IRF-CCE-012, IRF-CCE-013)
 - **P3 (HORIZON):** 10
-- **Completed:** 145 (DONE-001 through DONE-145, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Completed:** 164 (DONE-001 through DONE-164, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
 - **Domains:** 23
 
