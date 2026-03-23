@@ -586,6 +586,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | IRF-VAC-007f | P1 | Record DWV-S2 rebrand as testament events — REPO_RENAMED (×2), DEPLOYMENT_CREATED (×2), DEPLOYMENT_DELETED (×56). These are significant system events per testament schema (modality: archival, source_module: session) | Agent | DWV-S2 vacuum audit | IRF-VAC-003c (need REPO_RENAMED event type in EventType enum) |
 | IRF-VAC-007g | P2 | Evaluate whether DWV work constitutes an SGO research commission — AI-powered commercial product design, planetary archetype UX frameworks, LLM-as-a-Judge evaluation loops. If yes, register as INQ-2026-007 in inquiry-log.yaml | Human | DWV-S2 vacuum audit | Human decision on research framing |
 | IRF-VAC-007h | P2 | Queue `consilivm-simplex` and `specvla-ergon--avditor-mvndi` for Index Nominum (IRF-IDX-002) and Index Rerum (IRF-IDX-003) inclusion when those indices are built | Agent | DWV-S2 vacuum audit | IRF-VAC-006c/d (indices don't exist yet) |
+| IRF-DWV-001 | P1 | **Absorb DWV into ORGANVM and retire `dwv/` directory.** `specvla-ergon--avditor-mvndi` → move into `organvm-iii-ergon/` (already in that GitHub org, just needs local directory move + submodule tracking). `consilivm-simplex` → move into `4444J99/` (LIMINAL). After move: update Index Locorum (remove DWV entry, add repos under their organ sections), update `~/Workspace/CLAUDE.md` workspace map (remove DWV row), update git superproject submodule refs in both organ dirs. DWV was a client staging area — the client is gone, the work is ours, the staging area has no further purpose. | Agent | DWV-S2 session close | None |
+| IRF-DWV-002 | P1 | Post-absorption triage of DWV root artifacts — `GEMINI.md`, screenshots (4), `Streamline-Gumroad-Income.md`, `AI Website & Social Media Growth Audit.html` remain in `dwv/` after repo absorption. Archive useful artifacts to `intake/` or relevant organ docs, delete the rest. Once empty, remove `dwv/` entirely from workspace. | Human | DWV-S2 session close | IRF-DWV-001 |
 
 ### Companion Indices Construction (Vacuum 6 — advances IRF-IDX-001/002/003)
 
@@ -859,5 +861,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-23 — DWV-S2 vacuum audit: 8 new IRF-VAC-007 items (DWV integration gaps), IRF-DWV namespace added, DONE-151→153. Total DONE: 156.*
+*Last updated: 2026-03-23 — DWV-S2 close: IRF-DWV-001/002 added (absorb DWV into organs, retire staging dir). 10 total DWV items. Total DONE: 156.*
 *Next update: After any session that produces or discovers work items*
