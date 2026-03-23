@@ -278,7 +278,7 @@ Verified on disk 2026-03-20:
 |----|----------|--------|-------|--------|---------|
 | IRF-OSS-001 | P1 | AdenHQ/Hive Phase 2 — wire event bus auto-snapshot hooks, `version-diff`/`version-restore`/`version-star` CLI, runner integration | Agent | PR #6707 review feedback | Waiting on #6613 assignment + Phase 1 merge |
 | IRF-OSS-002 | P2 | AdenHQ/Hive ORGAN-I theory — expand lifecycle algebra into full paper (assembly dynamics, fission-fusion operational semantics) | Agent | S30 (Hive) | None |
-| IRF-OSS-003 | P2 | Generalize cross-organ contribution machine — extract pattern from Hive into reusable template for future open-source contributions | Agent | S30 (Hive) | Need 2+ successful contributions to validate pattern |
+| ~~IRF-OSS-003~~ | ~~P2~~ | ~~Generalize cross-organ contribution machine~~ → **DONE-153** (7 PRs, 8 workspaces, operator prompt) | Agent | 2026-03-23 | Completed |
 | IRF-OSS-004 | P1 | Monitor AdenHQ/Hive PR #6707 — respond to review comments, address CI, maintain relationship with team | Agent | S30 (Hive) | 24h assignment window |
 
 ---
@@ -731,6 +731,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-150 | Seed.yaml refresh — corpvs-testamentvm (40 days stale → current, +2 produces edges) + praxis-perpetua (+1 produces edge). | SGO-RP (vacuum fill) | 2026-03-23 |
 | DONE-151 | Registry description update — corpvs-testamentvm: 81 repos/339K words → 124 repos/740K+ words. praxis-perpetua note updated with SGO Research Program. | SGO-RP (vacuum fill) | 2026-03-23 |
 | DONE-152 | arXiv submission issues created — GitHub issues #28 (RP-06 cs.FL), #29 (SYN-02 cs.AI), #30 (SYN-01 cs.LO) on meta-organvm/praxis-perpetua. | SGO-RP (vacuum fill) | 2026-03-23 |
+| DONE-153 | IRF-OSS-003 COMPLETED: Cross-organ contribution machine generalized — operator prompt, 8 workspaces provisioned, 7 PRs across 7 repos (primeinc/github-stars, ipqwery/ipapi-py, anthropics/skills, langchain-ai/langgraph, dbt-labs/dbt-mcp, temporalio/sdk-python, m13v/summarize_recent_commit). Pattern validated with 7 successful contributions. | Pipeline outreach session | 2026-03-21/23 |
+| DONE-154 | OSS contribution infrastructure — 8 contrib workspaces in ORGAN-IV (adenhq-hive + 7 new), each with seed.yaml, CLAUDE.md, journal, fork, upstream remote. 15 GitHub issues (#40-54) on agentic-titan. | Pipeline outreach session | 2026-03-21/23 |
+| DONE-155 | Hive × ORGANVM fusion architecture — multi-organ plan across IV/V/I/META (7 repos, 4 organs). Issues #40-47 on agentic-titan. Plan at `.claude/plans/2026-03-21-hive-organvm-fusion-public-process.md`. | Pipeline outreach session | 2026-03-21 |
+| DONE-156 | Pipeline outreach — 30 actions: 18 LinkedIn connects (new contacts at 6 orgs), Together AI warm referral, Owner.com warm path, Matthew Diakonov reciprocal engagement (answered FUSION→FISSION question, starred repos, submitted PR #1). | Pipeline outreach session | 2026-03-21/23 |
 
 ---
 
@@ -818,5 +822,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-22 — S31: organvm fossil Living Stratigraphy (all 6 phases), IRF reconciliation audit, 9,445 commits excavated. DONE-141→145. Total DONE: 145.*
+*Last updated: 2026-03-23 — Pipeline outreach session: 7 OSS PRs, 30 outreach actions, IRF-OSS-003 completed. DONE-153→156. Total DONE: 156.*
 *Next update: After any session that produces or discovers work items*
