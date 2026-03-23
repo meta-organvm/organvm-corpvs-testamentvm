@@ -314,13 +314,14 @@ Verified on disk 2026-03-20:
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-DOM-001 | P1 | Create seed.yaml — organ: LIMINAL, tier: infrastructure, status: GRADUATED. Declare produces (environment-config, agent-infrastructure, secrets-management), consumes (skills from ORGAN-IV, governance-policy from META). First LIMINAL repo with a formal contract | Agent | S29 E2G audit | None |
-| IRF-DOM-002 | P1 | Add domus to registry-v2.json — new LIMINAL section or META-ORGANVM infrastructure entry. Include CI workflow, platinum status, test counts. Makes domus visible to network density metrics (omega #19) | Agent | S29 E2G audit | IRF-DOM-001 (seed first) |
-| IRF-DOM-003 | P1 | Emit testament events — ENTITY_CREATED + SEED_EDGE_ADDED + REGISTRY_UPDATED for domus. Register domus in the event spine so the network testament can see it | Agent | S29 E2G audit | IRF-DOM-001, IRF-DOM-002 |
+| ~~IRF-DOM-001~~ | ~~P1~~ | ~~Create seed.yaml~~ — **DONE** (commit `edab877`, S29 E2G audit) | Agent | S29 E2G audit | Completed S29 |
+| IRF-DOM-002 | **P0** | Add domus to registry-v2.json — new LIMINAL section. Include CI workflow, platinum status, test counts. **KEYSTONE**: unblocks DOM-003 (testament), DOM-006 (omega), and network density metrics (#19). Currently 118 repos tracked, domus is invisible repo #119 | Agent | S29 E2G audit | IRF-DOM-001 ✓ |
+| IRF-DOM-003 | P1 | Emit testament events — ENTITY_CREATED + SEED_EDGE_ADDED + REGISTRY_UPDATED for domus. Register domus in the event spine so the network testament can witness the clean-room rewrite (commit `ee8894d`) and future changes | Agent | S29 E2G audit | IRF-DOM-002 |
 | IRF-DOM-004 | P2 | Register IRF-DOM prefix in concordance + concordance-quickref. Add omega cross-references noting domus implicitly supports criteria #1 (30-day soak), #16 (bus factor), #17 (autonomous ops), #19 (network density) | Agent | S29 E2G audit | None |
-| IRF-DOM-005 | P2 | Create GitHub issues for deferred E2G items — ZSH config behavioral tests (13 files), .chezmoiscripts behavioral tests (18 scripts), tools.yaml population, _agents skeleton evolution | Agent | S29 E2G audit | None |
-| IRF-DOM-006 | P2 | Add domus to omega evidence map — document its role as silent foundational dependency for #1, #16, #17, #19. Currently invisible in the evidence map | Agent | S29 E2G audit | None |
+| IRF-DOM-005 | P1 | Create GitHub issues for domus testing gaps — (a) `_cache.zsh` unit tests (failure paths, invalidation, concurrent access), (b) `op-refresh` integration test, (c) `20-tools.zsh` fzf post-processing test, (d) `90-telemetry.zsh` JSONL rotation test, (e) `00-init.zsh` zsh/datetime fallback test. S29 E2G items plus S32 rewrite-specific gaps | Agent | S29 E2G + S32 rewrite | None |
+| IRF-DOM-006 | P1 | Add domus to omega evidence map — document its role as silent foundational dependency for #1, #16, #17, #19. The S32 rewrite (50ms startup, zero-error boot) is direct evidence for #17 (autonomous ops). Currently invisible in evidence map | Agent | S29 E2G audit, S32 rewrite | IRF-DOM-002 |
 | IRF-DOM-007 | P3 | Shell parity enforcement gate — wire domus-shell-parity into CI as a required check, not just a diagnostic tool. Prevent zsh/fish drift from accumulating | Agent | S29 E2G audit | None |
+| IRF-DOM-008 | P2 | Seed.yaml capability refresh — add `_domus_cache_init` as a produces artifact (tool: cache-primitive), add `op-refresh` as a declared capability. Current seed from S29 predates the S32 rewrite | Agent | S32 rewrite discovery | IRF-DOM-001 ✓ |
 
 ---
 
