@@ -34,6 +34,7 @@
       "ORGAN-III->ORGAN-I"
     ],
     "back_edge_definition": "Within the I-II-III chain, data flows I->II->III. A back-edge is any dependency where a lower-numbered organ depends on a higher-numbered organ (e.g., I depends on II, or II depends on III). ORGAN-IV through Meta may reference any organ. ORGAN-III->VI and ORGAN-III->VII are forward edges (products feed community and distribution).",
+    "dependency_dag_scope_note": "The numbered dependency DAG (I→II→III) governs build-order legality only. Knowledge placement, memory storage, and signal routing use the information graph (E^info), which is constitutionally cyclic. Do not use the dependency DAG to determine where knowledge or memory lives.",
     "restricted_organs": [
       "ORGAN-I",
       "ORGAN-II",
@@ -404,5 +405,66 @@
         "applies_to": "all repos"
       }
     ]
+  },
+  "liquid_constitutional_order": {
+    "spec": "SPEC-019",
+    "schema_version": "1",
+    "preamble": "The Liquid Constitutional Order (SPEC-019) redefines ORGANVM governance from numbered organ containers to named physiological functions with fluid formation participation. These rules supplement existing axioms and dictums; they do not repeal them. During migration, legacy organ keys (ORGAN-I through ORGAN-VII, META-ORGANVM) remain valid identifiers.",
+    "rules": [
+      {
+        "id": "LIQ-001",
+        "name": "Named Functions Replace Numbered Organs",
+        "statement": "Functions are named by physiological role (theoria, poiesis, ergon, taxis, logos, koinonia, kerygma, mneme), not by number (ORGAN-I through VII). The numbered organ keys remain as legacy identifiers during migration but are not the constitutional identity.",
+        "enforcement": "audit",
+        "severity": "info"
+      },
+      {
+        "id": "LIQ-002",
+        "name": "Formation Participation Replaces Organ Assignment",
+        "statement": "Formations participate in functions via participates_in declarations. No formation 'belongs to' a function. A formation may participate in multiple functions simultaneously. The primary participation declares the formation's dominant physiological role.",
+        "enforcement": "audit",
+        "severity": "info"
+      },
+      {
+        "id": "LIQ-003",
+        "name": "Signal Signatures Enable Composability",
+        "statement": "Every formation declares a signal signature: f(inputs) → (outputs) using the 14 canonical signal classes. Two formations are composable iff the output set of one intersects the input set of the other. Signal signatures are mathematical type declarations, not descriptions.",
+        "enforcement": "audit",
+        "severity": "warning"
+      },
+      {
+        "id": "LIQ-004",
+        "name": "Mneme Is the Memory Function",
+        "statement": "Mneme governs the organism's accumulated experience across all domains. Memory is not theory (theoria), not law (genome), not orchestration (taxis). Accumulated knowledge corpora, session archives, and temporal records belong in mneme. The genome stores instructions; mneme stores experience.",
+        "enforcement": "audit",
+        "severity": "warning"
+      },
+      {
+        "id": "LIQ-005",
+        "name": "The Genome Governs, Contains None",
+        "statement": "The genome (formerly META) contains constitutional law, the registry, schemas, governance rules, and migration law. It does NOT contain domain knowledge, memory corpora, or accumulated experience. The genome is the gravitational center — purpose holds the liquid in shape.",
+        "enforcement": "audit",
+        "severity": "warning"
+      },
+      {
+        "id": "LIQ-006",
+        "name": "One Organization, Flat Hierarchy",
+        "statement": "All formations exist as siblings in a single organizational namespace. Hierarchy is expressed through naming convention (double-hyphen -- separates identity from descriptor) and formation.yaml declarations, not through filesystem nesting or organizational subdivision.",
+        "enforcement": "manual",
+        "severity": "info"
+      },
+      {
+        "id": "LIQ-007",
+        "name": "Reservoir Law Extended",
+        "statement": "RESERVOIR formations may emit ANNOTATED_CORPUS (Σ), ARCHIVE_PACKET (Π), PEDAGOGICAL_UNIT (Ρ), and FAILURE_REPORT (Ε). They may NOT emit ONT_FRAGMENT (Φ) or RULE_PROPOSAL (Λ). This prevents memory from silently becoming hidden governance. Extended from Formation Protocol §15.",
+        "enforcement": "audit",
+        "severity": "critical"
+      }
+    ]
+  },
+  "backward_compatibility": {
+    "note": "Existing rules referencing ORGAN-I, ORGAN-II, etc. remain valid during migration to the liquid constitutional order. Legacy organ keys should be interpreted through the legacy_organ_map in organ-definitions.json v2.0. No existing axiom, dictum, or repo rule is repealed by SPEC-019; the liquid rules are additive.",
+    "legacy_key_status": "active_during_migration",
+    "migration_authority": "organ-definitions.json v2.0 legacy_organ_map"
   }
 }
