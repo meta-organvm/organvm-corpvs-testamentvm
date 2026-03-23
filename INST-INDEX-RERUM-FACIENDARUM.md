@@ -253,13 +253,13 @@ Verified on disk 2026-03-20:
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-OBJ-001 | P0 | `npx wrangler pages secret put COLLABORATOR_PASSWORD` | Human | S19 | None |
-| IRF-OBJ-002 | P0 | Share `https://object-lessons.pages.dev` with Chris | Human | S19 | None |
-| IRF-OBJ-003 | P1 | Replace YouTube ID placeholders for 4 V1 episodes | Human | S19 | Need to look up IDs |
-| IRF-OBJ-004 | P1 | Acquire `objectlessons.film` domain, point to Cloudflare Pages | Human | S19 | Domain availability |
-| IRF-OBJ-005 | P1 | Add film stills/thumbnails to `public/images/` | Human | S19 | Need source images |
-| IRF-OBJ-006 | P2 | Expand film database 253 → 302+ (omitted Tier 3 films) | Agent | S19 | None |
-| IRF-OBJ-007 | P2 | Connect GitHub repo to Cloudflare Pages for auto-deploy on push | Agent | S19 | None |
+| ~~IRF-OBJ-001~~ | ~~P0~~ | ~~Set COLLABORATOR_PASSWORD~~ → **DONE-158** (set programmatically via wrangler CLI) | Agent | 2026-03-23 | Completed |
+| ~~IRF-OBJ-002~~ | ~~P0~~ | ~~Share site with Chris~~ → **DONE-159** (sent via WhatsApp, Chris responded with AI critique poem — project backburnered) | Human | 2026-03-23 | Completed |
+| IRF-OBJ-003 | P3 | Replace YouTube ID placeholders for 4 V1 episodes | Agent | S19 | **BACKBURNERED** — Chris uninterested, project deprioritized |
+| IRF-OBJ-004 | P3 | Acquire `objectlessons.film` domain, point to Cloudflare Pages | Human | S19 | **BACKBURNERED** |
+| IRF-OBJ-005 | P3 | Add film stills/thumbnails to `public/images/` | Agent | S19 | **BACKBURNERED** |
+| IRF-OBJ-006 | P3 | Expand film database 253 → 302+ (omitted Tier 3 films) | Agent | S19 | **BACKBURNERED** |
+| IRF-OBJ-007 | P3 | Connect GitHub repo to Cloudflare Pages for auto-deploy on push | Agent | S19 | **BACKBURNERED** |
 
 ---
 
@@ -768,6 +768,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-156 | Pipeline outreach — 30 actions: 18 LinkedIn connects (new contacts at 6 orgs), Together AI warm referral, Owner.com warm path, Matthew Diakonov reciprocal engagement (answered FUSION→FISSION question, starred repos, submitted PR #1). | Pipeline outreach session | 2026-03-21/23 |
 | DONE-157 | IRF-OSS-005: Temporal CLA signed — PR #1385 (temporalio/sdk-python) unblocked | Pipeline outreach session | 2026-03-23 |
 | DONE-157 | Contribution engine full expansion — 3 new modules (campaign.py, outreach.py, backflow.py), CLI entry point (__main__.py), monitor fix (both seed.yaml formats), scanner expansion (4 new sources: stars/forks/deps/PR-history), 12 new Pydantic models, cli.py prefix refactor. 111 tests, 0 failures, 22 commits. | S32 (plague campaign) | 2026-03-22/23 |
+| DONE-158 | IRF-OBJ-001: COLLABORATOR_PASSWORD set on Cloudflare Pages via wrangler CLI (programmatic, no human intervention) | Pipeline session | 2026-03-23 |
+| DONE-159 | IRF-OBJ-002: Object Lessons site shared with Chris via WhatsApp. Response: poem "FOR A STUDENT WHO USED AI TO WRITE A PAPER" — philosophical pushback on AI-mediated creative work. Project backburnered per owner decision. | Pipeline session | 2026-03-23 |
 | DONE-158 | Testament codified — 13 articles of constitutional rules governing all written output: knowledge imperative, cascading causation, triple layer, non-submersible units, collision geometry, recognition pleasure, citation discipline, dual purpose, verification, opening architecture, paragraph discipline, charged language, enjambment. Formalized into logic proofs, algorithms, mathematics (testament-formalization.md). | S32 (plague campaign) | 2026-03-22/23 |
 | DONE-159 | Essay 8: The Recursive Proof — "How a Contribution Engine Proved Its Own Thesis Before Shipping a Single PR." Published to organvm-corpvs-testamentvm. The backflow pipeline's first knowledge capture was from formalizing its own rules — bidirectional transfer proved structural, not accidental. | S32 (plague campaign) | 2026-03-22/23 |
 | DONE-160 | LinkedIn Post #002 published — "The Bridge Audit." Humanities formalized into engineering diagnostics, applied to own first post. Enjambment-structured verse. Testament audit image (avg 1.0/10 on 11 articles). Aristotle, Parker/Stone, Waller-Bridge cited. | S32 (plague campaign) | 2026-03-23 |
@@ -862,5 +864,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-23 — Pipeline close: IRF-OSS-005 completed (Temporal CLA). DONE-157. Total DONE: 157.*
+*Last updated: 2026-03-23 — Pipeline close: IRF-OBJ-001/002 completed (programmatic), OBJ-003→007 backburnered. DONE-158→159. Total DONE: 159.*
 *Next update: After any session that produces or discovers work items*
