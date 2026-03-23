@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-23T07:05:35.128480+00:00",
+  "generated_at": "2026-03-23T11:03:26.053268+00:00",
   "system": {
-    "total_repos": 118,
+    "total_repos": 124,
     "active_repos": 62,
-    "density": 0.274,
-    "entities": 118,
+    "density": 0.265,
+    "entities": 124,
     "edges": 0,
     "ci_workflows": 105,
     "code_files": 0,
@@ -14,7 +14,7 @@
     "total_words_numeric": 0,
     "published_essays": 29,
     "sprints_completed": 33,
-    "ammoi": "AMMOI:27% E:0 T:0 C:0 Ev24h:2 [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-VI:76%]"
+    "ammoi": "AMMOI:26% E:0 T:0 C:0 Ev24h:2 [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-VI:76%]"
   },
   "code_profile": {},
   "word_counts": {},
@@ -626,9 +626,9 @@
     {
       "key": "ORGAN-IV",
       "name": "Orchestration",
-      "repo_count": 12,
+      "repo_count": 18,
       "flagship_count": 3,
-      "standard_count": 7,
+      "standard_count": 13,
       "infrastructure_count": 1,
       "repositories": [
         {
@@ -701,6 +701,42 @@
           "name": "contrib--adenhq-hive",
           "status": "LOCAL",
           "tier": "contrib",
+          "ci": false
+        },
+        {
+          "name": "contrib--ipqwery-ipapi-py",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "contrib--primeinc-github-stars",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "contrib--temporal-sdk-python",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "contrib--dbt-mcp",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "contrib--langchain-langgraph",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "contrib--anthropic-skills",
+          "status": "LOCAL",
+          "tier": "standard",
           "ci": false
         }
       ]
@@ -809,7 +845,7 @@
     }
   ],
   "variables": {
-    "total_repos": "118",
+    "total_repos": "124",
     "active_repos": "62",
     "archived_repos": "54",
     "total_organs": "8",
@@ -830,7 +866,7 @@
     "organ_name.ORGAN-II": "Art",
     "organ_repos.ORGAN-III": "29",
     "organ_name.ORGAN-III": "Commerce",
-    "organ_repos.ORGAN-IV": "12",
+    "organ_repos.ORGAN-IV": "18",
     "organ_name.ORGAN-IV": "Orchestration",
     "organ_repos.ORGAN-V": "2",
     "organ_name.ORGAN-V": "Public Process",
@@ -849,7 +885,7 @@
     "ARCHIVED": 54,
     "CANDIDATE": 1,
     "GRADUATED": 54,
-    "LOCAL": 5,
+    "LOCAL": 11,
     "PUBLIC_PROCESS": 4
   }
 }

@@ -4,7 +4,7 @@
 
 | Metric | Value |
 |--------|-------|
-| Total repositories | 118 |
+| Total repositories | 124 |
 | Active status | 62 |
 | Archived | 54 |
 | Organs operational | 8/8 |

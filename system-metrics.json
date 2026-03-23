@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-03-23T07:05:34.314242+00:00",
+  "generated": "2026-03-23T11:03:25.259218+00:00",
   "computed": {
-    "total_repos": 118,
+    "total_repos": 124,
     "active_repos": 62,
     "archived_repos": 54,
     "total_organs": 8,
@@ -24,7 +24,7 @@
       },
       "ORGAN-IV": {
         "name": "Orchestration",
-        "repos": 12
+        "repos": 18
       },
       "ORGAN-V": {
         "name": "Public Process",
@@ -47,7 +47,7 @@
       "ACTIVE": 62,
       "ARCHIVED": 54,
       "PROTOTYPE": 1,
-      "UNKNOWN": 1
+      "UNKNOWN": 7
     },
     "sprints_completed": 33,
     "sprint_names": [
