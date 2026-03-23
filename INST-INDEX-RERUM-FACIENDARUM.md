@@ -574,6 +574,19 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | ~~IRF-VAC-005b~~ | ~~P1~~ | ~~Update praxis-perpetua seed.yaml~~ — **DONE** (Added `governance-declarations` produce edge to META-ORGANVM, bumped last_validated to 2026-03-23.) | Agent | Vacuum analysis | Completed 2026-03-23 |
 | IRF-VAC-005c | P2 | Design seed drift detection heuristic for `organvm seed validate` — compare declared produces/consumes against filesystem evidence, flag gaps | Agent | Vacuum analysis | Seed module |
 
+### DWV Integration Gaps (Vacuum 7 — DWV-S2 rebrand revealed systemic non-registration)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-VAC-007a | P1 | Create seed.yaml for specvla-ergon--avditor-mvndi — ORGAN-III product, ACTIVE, produces: `growth-audit` (SaaS), consumes: `governance-rules` (ORGAN-IV). Per ADR-013 all non-archived repos require seed contracts | Agent | DWV-S2 vacuum audit | None |
+| IRF-VAC-007b | P1 | Create seed.yaml for consilivm-simplex — LIMINAL (personal), ACTIVE, produces: `consulting-interface` (static site). No org (lives in 4444J99, not an organ org) | Agent | DWV-S2 vacuum audit | None |
+| IRF-VAC-007c | P1 | Register both DWV repos in registry-v2.json — specvla-ergon--avditor-mvndi (ORGAN-III, organvm-iii-ergon) and consilivm-simplex (LIMINAL, 4444j99). Neither repo currently appears in the registry | Agent | DWV-S2 vacuum audit | None |
+| IRF-VAC-007d | P1 | Update concordance.md — register new governance names: `consilivm-simplex`, `specvla-ergon--avditor-mvndi`, `Padavano`, `Avditor Mvndi`. Add IRF-DWV namespace prefix if DWV becomes a tracked domain | Agent | DWV-S2 vacuum audit | None |
+| IRF-VAC-007e | P1 | Update INST-INDEX-LOCORUM.md — DWV entry still says "Victoroff Group + growth auditor staging area". Update to reflect consilivm-simplex + specvla-ergon--avditor-mvndi with current Vercel URLs | Agent | DWV-S2 vacuum audit | None |
+| IRF-VAC-007f | P1 | Record DWV-S2 rebrand as testament events — REPO_RENAMED (×2), DEPLOYMENT_CREATED (×2), DEPLOYMENT_DELETED (×56). These are significant system events per testament schema (modality: archival, source_module: session) | Agent | DWV-S2 vacuum audit | IRF-VAC-003c (need REPO_RENAMED event type in EventType enum) |
+| IRF-VAC-007g | P2 | Evaluate whether DWV work constitutes an SGO research commission — AI-powered commercial product design, planetary archetype UX frameworks, LLM-as-a-Judge evaluation loops. If yes, register as INQ-2026-007 in inquiry-log.yaml | Human | DWV-S2 vacuum audit | Human decision on research framing |
+| IRF-VAC-007h | P2 | Queue `consilivm-simplex` and `specvla-ergon--avditor-mvndi` for Index Nominum (IRF-IDX-002) and Index Rerum (IRF-IDX-003) inclusion when those indices are built | Agent | DWV-S2 vacuum audit | IRF-VAC-006c/d (indices don't exist yet) |
+
 ### Companion Indices Construction (Vacuum 6 — advances IRF-IDX-001/002/003)
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -846,5 +859,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-23 — Pipeline outreach session: 7 OSS PRs, 30 outreach actions, IRF-OSS-003 completed. DONE-153→156. Total DONE: 156.*
+*Last updated: 2026-03-23 — DWV-S2 vacuum audit: 8 new IRF-VAC-007 items (DWV integration gaps), IRF-DWV namespace added, DONE-151→153. Total DONE: 156.*
 *Next update: After any session that produces or discovers work items*

@@ -44,7 +44,7 @@ Each organ directory is a **git superproject** tracking its repos as submodules.
 
 | Directory | Purpose | Git? |
 |-----------|---------|------|
-| `dwv/` | Victoroff Group + growth auditor staging area | No (contains sub-repos) |
+| `dwv/` | Digital Value Workspace — consilivm-simplex (Padavano consulting) + specvla-ergon--avditor-mvndi (Avditor Mvndi SaaS) | No (contains sub-repos) |
 | `blender-mcp/` | Blender MCP integration addon (forked) | Yes |
 | `gemini-cli-blender-extension/` | Gemini CLI Blender extension | Yes |
 | `alchemia-ingestvm/` | Data staging area for ingestion pipeline (separate from META submodule) | No |
