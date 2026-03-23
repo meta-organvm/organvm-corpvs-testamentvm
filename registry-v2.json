@@ -9,8 +9,8 @@
   "source": "Audit of 8 GitHub orgs (organvm-i-theoria through organvm-vii-kerygma + meta-organvm) + personal account 4444J99 + local repos",
   "project_status": "ORGAN-RESET 2026-03-11. Dissolved 53 boilerplate repos into materia-collider. Styx-first pipeline hardening: first product to traverse full I\u2192II\u2192III\u2192IV\u2192V\u2192VI\u2192VII chain. Previous: PROPULSIO MAXIMA Sprint 2026-02-24.",
   "summary": {
-    "total_repos": 123,
-    "total_repos_note": "123 registry entries. 6 contrib repos added to ORGAN-IV 2026-03-23 (ipapi-py, github-stars, sdk-python, dbt-mcp, langgraph, skills). Previous: 117 entries.",
+    "total_repos": 125,
+    "total_repos_note": "125 registry entries. conversation-corpus-engine registered in ORGAN-I 2026-03-23; 6 contrib repos added to ORGAN-IV 2026-03-23 (ipapi-py, github-stars, sdk-python, dbt-mcp, langgraph, skills). Previous: 117 entries.",
     "operational_organs": 8,
     "completion_at_launch": "Platinum Sprint COMPLETE 2026-02-11 \u2014 65 repos with CI workflows, standardized badge rows, CHANGELOGs, ADRs. 17 meta-system essays (~70K words). ~339K total words.",
     "total_organizations": 8,
@@ -30,7 +30,7 @@
       "completion": "100% \u2014 17/17 non-infrastructure repos documented at 2,000+ words (~56K total)",
       "public_visibility": "MIXED",
       "portfolio_angle": "Demonstrates intellectual depth and foundational thinking. Evidences systemic theory applied to autonomous creative systems.",
-      "repository_count": 20,
+      "repository_count": 22,
       "repositories": [
         {
           "name": "recursive-engine--generative-entity",
@@ -445,6 +445,27 @@
           "revenue_model": null,
           "revenue_status": null,
           "functional_class": "CORPUS"
+        },
+        {
+          "name": "conversation-corpus-engine",
+          "org": "organvm-i-theoria",
+          "status": "ACTIVE",
+          "updated": "2026-03-23",
+          "public": true,
+          "description": "Canonical corpus and federation engine for multi-provider AI conversation memory. Owns provider import, evaluation, governance, federation, and Meta/MCP surface exports.",
+          "documentation_status": "DEPLOYED",
+          "portfolio_relevance": "CRITICAL - Multi-provider conversation memory engine with live federation, evaluation gates, and Meta/MCP surface export",
+          "dependencies": [],
+          "promotion_status": "GRADUATED",
+          "tier": "standard",
+          "last_validated": "2026-03-23",
+          "note": "Published from staging ancestor 2026-03-21. Post-flood schema v1.1. ChatGPT readiness repaired 2026-03-23; live site now reports 2 healthy providers and 3,854 open review items after low-signal alias suppression.",
+          "implementation_status": "ACTIVE",
+          "ci_workflow": "ci.yml",
+          "platinum_status": false,
+          "functional_class": "ENGINE",
+          "functional_class_secondary": "INFRASTRUCTURE",
+          "formation_type": "GENERATOR"
         },
         {
           "name": "studium-generale",
@@ -2399,7 +2420,7 @@
           "org": "meta-organvm",
           "status": "ACTIVE",
           "public": true,
-          "description": "The authoritative planning, governance, and knowledge corpus for the eight-organ creative-institutional system. 124 repos, ~740K+ words, 8 organizations, 21 essays, universal work registry (IRF), testament chain, omega scorecard, concordance.",
+          "description": "The authoritative planning, governance, and knowledge corpus for the eight-organ creative-institutional system. 125 repos, ~740K+ words, 8 organizations, 21 essays, universal work registry (IRF), testament chain, omega scorecard, concordance.",
           "documentation_status": "DEPLOYED",
           "portfolio_relevance": "CRITICAL - The meta-system planning record; demonstrates architectural reasoning, AI-conductor methodology, and systemic execution",
           "dependencies": [],

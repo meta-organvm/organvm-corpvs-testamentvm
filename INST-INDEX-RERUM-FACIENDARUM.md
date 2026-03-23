@@ -234,13 +234,13 @@ Verified on disk 2026-03-20:
 | IRF-CCE-002 | P2 | Reconcile canonical ChatGPT adapter with 5,403-line genesis `export_chatgpt_history.py` — the archive at `intake/ai-exports/archive/legacy-scripts/` has richer entity disambiguation, family grouping, duplicate/contradiction detection, and triage scoring. Cherry-pick the best extraction logic into the canonical adapter | Agent | S27 | None |
 | IRF-CCE-003 | P2 | Add provider adapters for ChatGPT local app data (macOS sandbox), DeepSeek, Mistral — expand beyond the 6 current providers | Agent | S27 | Need export format documentation |
 | IRF-CCE-004 | P2 | Dashboard or TUI for corpus health — readiness, evaluation gates, federation status, review queue at a glance | Agent | S27 | None |
-| IRF-CCE-005 | P1 | Wire `chatgpt-history` corpus into provider readiness as "registered-active" not "missing" — the genesis corpus exists but shows "missing" because it predates the source-drop inbox flow | Agent | S27 | Readiness logic assumes all corpora arrive through source-drop |
+| ~~IRF-CCE-005~~ | ~~P1~~ | ~~Wire `chatgpt-history` corpus into provider readiness as "registered-active" not "missing"~~ → **DONE-165**: readiness fallback logic now prefers the registered `chatgpt-history` corpus, source policy set on the live site, bootstrap eval seeded, and ChatGPT now reports `healthy-federation` instead of `missing`. | Agent | S27 | COMPLETED |
 | IRF-CCE-006 | P2 | Publish `cce` to PyPI or at minimum make it `pipx install`-able from GitHub | Agent | S27 | None |
 | IRF-CCE-007 | P1 | Resolve `claude-history-memory` gate=warn — evaluation shows `source_reliability_state: warn` because manual gold fixtures haven't been added for the Claude export corpus | Agent | S27 | Need manual review of Claude export conversations |
 | IRF-CCE-008 | P1 | Execute corpvs-testamentvm decomposition — CHARTER stays META, CORPUS migrates to ORGAN-I per Lemma 5 of PROOF-reservoir-placement v2 | Agent | S29 decomposition plan | Migration script + GitHub repo creation needed |
-| IRF-CCE-009 | P1 | Register CCE in registry-v2.json — the engine is invisible to the system's own discovery machinery. 118 repos classified but CCE is missing. Add with functional_class=ENGINE, formation_type=GENERATOR, tier=standard, promotion_status=GRADUATED | Agent | S27-close (vacuum audit) | None |
-| IRF-CCE-010 | P1 | Create GitHub issues for all 7 open IRF-CCE items — the repo has zero issues. No external discoverability or agent tracking for planned work | Agent | S27-close (vacuum audit) | None |
-| IRF-CCE-011 | P1 | Register FORM-RES-001 in concordance — first formation ID in the system has no concordance entry. Future agents encountering it have no resolution path | Agent | S27-close (vacuum audit) | None |
+| ~~IRF-CCE-009~~ | ~~P1~~ | ~~Register CCE in registry-v2.json~~ → **DONE-166**: `conversation-corpus-engine` registered in `registry-v2.json` with `functional_class=ENGINE`, `functional_class_secondary=INFRASTRUCTURE`, `formation_type=GENERATOR`; ORGAN-I and global totals repaired. | Agent | S27-close (vacuum audit) | COMPLETED |
+| ~~IRF-CCE-010~~ | ~~P1~~ | ~~Create GitHub issues for all open IRF-CCE items~~ → **DONE-168**: created `conversation-corpus-engine` issues `GH#1` through `GH#8` covering IRF-CCE-002, 003, 004, 006, 007, 008, 012, and 013. The repo no longer has zero issue visibility. | Agent | S27-close (vacuum audit) | COMPLETED |
+| ~~IRF-CCE-011~~ | ~~P1~~ | ~~Register FORM-RES-001 in concordance~~ → **DONE-167**: formation namespace added to `concordance.md` and `FORM-RES-001` registered as the first post-flood reservoir identity. | Agent | S27-close (vacuum audit) | COMPLETED |
 | IRF-CCE-012 | P2 | Propose omega criterion for memory infrastructure — 19 criteria, none track whether the organism can remember its own conversations. The autopoietic cycle ("the system remembers itself into existence") has no gate. Candidate: "Conversation corpus ingests ≥1 session transcript end-to-end (ingest → federate → evaluate → surface → consume)" | Agent | S27-close (vacuum audit) | Needs omega amendment process |
 | IRF-CCE-013 | P2 | CCE artifacts needed in companion indices (IRF-IDX-001/002/003) — new locations (conversation-corpus-site/), names (FORM-RES-001, Mneme), and artifacts (surface-bundle, mcp-context) have nowhere to be indexed until the Index Locorum, Index Nominum, and Index Rerum are built | Agent | S27-close (vacuum audit) | Blocked by IRF-IDX-001, IRF-IDX-002, IRF-IDX-003 |
 | IRF-SYS-013 | P2 | Propagate functional_class into all 74 seed.yaml files | Agent | S29 | None |
@@ -777,6 +777,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-162 | CONTRIBUTION-PROMPT.md generated for 6 SETUP workspaces — anthropic-skills, temporal-sdk-python, dbt-mcp, langchain-langgraph, primeinc-github-stars, ipqwery-ipapi-py. All pushed to origin. | S32 (plague campaign) | 2026-03-23 |
 | DONE-163 | Visualization stack installed — matplotlib, plotly, networkx, cairosvg, svgwrite (Python); d2, typst, imagemagick, librsvg (brew CLI). Production-grade rendering pipeline operational. | S32 (plague campaign) | 2026-03-23 |
 | DONE-164 | S30 close-out vacuum audit: Omega #12 tracking issue (orchestration-start-here#143, 1/3 external contributions), contrib-engine Phase 2 issue (#142), INQ-2026-002 evidence (external governance validation via Hive), CLAUDE.md architecture update. All 10 indices checked — 4 former N/As resolved. | S30 (close-out) | 2026-03-23 |
+| DONE-165 | IRF-CCE-005 closed: ChatGPT readiness truth repaired — fallback selection prefers the registered `chatgpt-history` corpus, live source policy written, bootstrap evaluation seeded, and provider state now reports `healthy-federation` instead of `missing`. | S32 (CCE propagation) | 2026-03-23 |
+| DONE-166 | IRF-CCE-009 closed: `conversation-corpus-engine` registered in `registry-v2.json` with `functional_class=ENGINE`, `functional_class_secondary=INFRASTRUCTURE`, and `formation_type=GENERATOR`; ORGAN-I and global totals reconciled. | S32 (CCE propagation) | 2026-03-23 |
+| DONE-167 | IRF-CCE-011 closed: concordance expanded with formation namespace + `FORM-RES-001` entry for `conversation-corpus-site`, the first registered post-flood reservoir formation. | S32 (CCE propagation) | 2026-03-23 |
+| DONE-168 | IRF-CCE-010 closed: GitHub issue trail created for all remaining open CCE work — `GH#1` through `GH#8` now track IRF-CCE-002, 003, 004, 006, 007, 008, 012, and 013 on `organvm-i-theoria/conversation-corpus-engine`. | S32 (CCE propagation) | 2026-03-23 |
 
 ---
 
@@ -796,12 +800,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 160 (155 prior + 5 new from S27-close vacuum audit: IRF-CCE-009–013)
+- **Total active items:** 156 (157 prior − 1 completed CCE propagation item: IRF-CCE-010)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 59 (56 prior + 3 new P1: IRF-CCE-009, IRF-CCE-010, IRF-CCE-011)
+- **P1 (SOON):** 55 (56 prior − 1 completed P1 item: IRF-CCE-010)
 - **P2 (GROWTH):** 78 (76 prior + 2 new P2: IRF-CCE-012, IRF-CCE-013)
 - **P3 (HORIZON):** 10
-- **Completed:** 164 (DONE-001 through DONE-164, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Completed:** 168 (DONE-001 through DONE-168, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
 - **Domains:** 23
 
@@ -809,7 +813,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 | Domain | Active | DONE (domain) |
 |--------|--------|---------------|
-| CCE (Corpus Engine) | 12 | 18 |
+| CCE (Corpus Engine) | 8 | 22 |
 | SYS (System-wide) | 10 | 3 |
 | IDX (Index apparatus) | 3 | 2 |
 | SKL (Skills) | 3 | 1 |
@@ -834,8 +838,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | HRM (Hermeneus) | 8 | 7 |
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 79 |
-| **Active IRF items** | **160** | — |
-| **Total DONE entries** | — | **145** |
+| **Active IRF items** | **156** | — |
+| **Total DONE entries** | — | **149** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
 

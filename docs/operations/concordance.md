@@ -42,6 +42,7 @@ python3 scripts/invoke.py --list               # list all namespaces and counts
 | `W\d-II`, `SP\d-II`, `BS\d-II`, `LC\d-II`, `BL\d-II`, `ET\d-II`, `LO\d-II` | E2G-II findings | W1-II |
 | Two-digit `\d\d` or sprint name | Sprints | 29 / AUTOMATA |
 | `IRF-XXX-NNN` | Index Rerum Faciendarum items | IRF-SYS-001 |
+| `FORM-[A-Z]{3}-\d+` | Formation declarations | FORM-RES-001 |
 | `INQ-YYYY-NNN` | SGO research commissions | INQ-2026-006 |
 | `SGO-YYYY-RP-NNN` | SGO research papers | SGO-2026-RP-002 |
 | `SGO-YYYY-SYN-NNN` | SGO synthesis papers | SGO-2026-SYN-02 |
@@ -108,6 +109,16 @@ Universal work registry. 24 domain prefixes:
 | `/api/admin/session` | POST | Token | Admin session management |
 
 Priority tiers: **P0** (now), **P1** (soon), **P2** (growth), **P3** (horizon).
+
+---
+
+## Formation IDs
+
+Source: formation contracts in repo roots, especially `formation.yaml`.
+
+| ID | Type | Host | Definition | Source |
+|----|------|------|------------|--------|
+| FORM-RES-001 | RESERVOIR | ORGAN-I (secondary: META-ORGANVM) | `conversation-corpus-site` — preserves, indexes, federates, and serves accumulated conversation knowledge across providers and organs. First registered reservoir formation in the post-flood order. | `organvm-i-theoria/conversation-corpus-site/formation.yaml` |
 
 ---
 
