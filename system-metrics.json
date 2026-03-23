@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0",
-  "generated": "2026-03-23T18:47:48.733504+00:00",
+  "generated": "2026-03-23T19:53:36.890790+00:00",
   "computed": {
-    "total_repos": 124,
-    "active_repos": 62,
+    "total_repos": 125,
+    "active_repos": 63,
     "archived_repos": 54,
     "total_organs": 8,
     "operational_organs": 8,
-    "ci_workflows": 105,
+    "ci_workflows": 106,
     "dependency_edges": 58,
     "per_organ": {
       "ORGAN-I": {
         "name": "Theory",
-        "repos": 21
+        "repos": 22
       },
       "ORGAN-II": {
         "name": "Art",
@@ -44,7 +44,7 @@
       }
     },
     "implementation_status": {
-      "ACTIVE": 62,
+      "ACTIVE": 63,
       "ARCHIVED": 54,
       "PROTOTYPE": 1,
       "UNKNOWN": 7

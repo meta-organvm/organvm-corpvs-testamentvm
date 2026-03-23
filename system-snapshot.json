@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-03-23T18:47:49.531663+00:00",
+  "generated_at": "2026-03-23T19:53:37.678824+00:00",
   "system": {
-    "total_repos": 124,
-    "active_repos": 62,
-    "density": 0.265,
-    "entities": 124,
+    "total_repos": 125,
+    "active_repos": 63,
+    "density": 0.266,
+    "entities": 125,
     "edges": 0,
-    "ci_workflows": 105,
+    "ci_workflows": 106,
     "code_files": 0,
     "test_files": 0,
     "repos_with_tests": 0,
@@ -14,7 +14,7 @@
     "total_words_numeric": 0,
     "published_essays": 29,
     "sprints_completed": 33,
-    "ammoi": "AMMOI:26% E:0 T:0 C:0 Ev24h:2 [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-VI:76%]"
+    "ammoi": "AMMOI:27% E:0 T:0 C:0 Ev24h:2 [ORGAN-V:90%, ORGAN-VII:79%, ORGAN-VI:76%]"
   },
   "code_profile": {},
   "word_counts": {},
@@ -104,9 +104,9 @@
     {
       "key": "ORGAN-I",
       "name": "Theory",
-      "repo_count": 21,
+      "repo_count": 22,
       "flagship_count": 1,
-      "standard_count": 16,
+      "standard_count": 17,
       "infrastructure_count": 1,
       "repositories": [
         {
@@ -228,6 +228,12 @@
           "status": "LOCAL",
           "tier": "standard",
           "ci": false
+        },
+        {
+          "name": "conversation-corpus-engine",
+          "status": "GRADUATED",
+          "tier": "standard",
+          "ci": true
         },
         {
           "name": "studium-generale",
@@ -845,22 +851,22 @@
     }
   ],
   "variables": {
-    "total_repos": "124",
-    "active_repos": "62",
+    "total_repos": "125",
+    "active_repos": "63",
     "archived_repos": "54",
     "total_organs": "8",
     "operational_organs": "8",
     "total_words_numeric": "0",
     "total_words_formatted": "0",
     "total_words_short": "0K+",
-    "ci_workflows": "105",
+    "ci_workflows": "106",
     "dependency_edges": "58",
     "published_essays": "29",
     "sprints_completed": "33",
     "code_files": "0",
     "test_files": "0",
     "repos_with_tests": "0",
-    "organ_repos.ORGAN-I": "21",
+    "organ_repos.ORGAN-I": "22",
     "organ_name.ORGAN-I": "Theory",
     "organ_repos.ORGAN-II": "32",
     "organ_name.ORGAN-II": "Art",
@@ -884,7 +890,7 @@
   "promotion_pipeline": {
     "ARCHIVED": 54,
     "CANDIDATE": 1,
-    "GRADUATED": 54,
+    "GRADUATED": 55,
     "LOCAL": 11,
     "PUBLIC_PROCESS": 4
   }
