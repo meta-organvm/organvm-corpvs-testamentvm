@@ -286,6 +286,13 @@ Verified on disk 2026-03-20:
 | IRF-OSS-008 | P1 | Decouple LinkedIn content from application-pipeline — content production belongs in ORGAN-V or ORGAN-VII, not a job-search tool. Images and text currently split across repos. | Agent | S32 (campaign) | Architecture decision needed |
 | IRF-OSS-009 | P2 | Business entity — the contribution engine and content production need a proper organizational home beyond personal repos | Human | S32 (campaign) | Legal/business decision |
 | IRF-OSS-010 | P2 | Visual production pipeline — matplotlib is functional but not design-grade for LinkedIn. Need d2/typst workflow or multimodal AI integration for publication-quality visuals. Meta-rule: every section requires a visual, every visual requires data analysis. | Agent | S32 (campaign) | Tooling evaluation |
+| IRF-OSS-011 | P1 | GitHub Issues for S32 work — create tracking issues on orchestration-start-here for: contribution engine expansion (3 modules), Testament codification, campaign execution. Campaign actions should mirror as GitHub issues for external visibility. | Agent | S32 vacuum audit | None |
+| IRF-OSS-012 | P1 | Omega evidence update — S32 advances #7 (feedback channels opened: Discord, 4 PR bumps, LinkedIn), #12 (7 outbound PRs create relationship infra for inbound), #14 (essay-8 + LinkedIn = discoverability). Update omega-evidence-map.md. | Agent | S32 vacuum audit | None |
+| IRF-OSS-013 | P1 | Inquiry log — Testament III/V isomorphism (Waller-Bridge triple-layer ≡ ℝ³ positive orthant) is a research finding from ORGAN-I lenses applied to ORGAN-IV operations. Log in inquiry-log.yaml. | Agent | S32 vacuum audit | None |
+| IRF-OSS-014 | P1 | Testament chain events — record S32: 3 modules (ARCHITECTURE_CHANGED), Testament created (GOVERNANCE_DECLARED), essay-8 (RESEARCH_PUBLISHED), Discord joined (COMMUNITY_ENGAGED). ~4 events. | Agent | S32 vacuum audit | Engine dev environment |
+| IRF-OSS-015 | P1 | Concordance update — new IDs: Testament Articles I-XIII, campaign phases (5), backflow types (6), "The Plague" campaign name. | Agent | S32 vacuum audit | Concordance file location |
+| IRF-OSS-016 | P1 | Registry description update — orchestration-start-here: "3 Python scripts" → 10 modules, 111 tests, campaign/outreach/backflow. Stale. | Agent | S32 vacuum audit | None |
+| IRF-OSS-017 | P0 | Seed.yaml refresh — orchestration-start-here 15 days stale. Add produces: campaign_data, outreach_data, backflow_data, testament_formalization. Add consumes: github_pr_states, application_pipeline_signals. Bump last_validated. | Agent | S32 vacuum audit | None |
 
 ---
 
