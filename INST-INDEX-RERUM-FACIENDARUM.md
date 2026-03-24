@@ -120,10 +120,10 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
 | IRF-HRM-001 | P1 | Repo rename: stakeholder-portal → hermeneus. 60+ files across workspace. Issue #28 has full blast radius + 7-step execution plan. | Human+Agent | S28 | Coordinate with registry, seeds, context sync |
-| IRF-HRM-002 | P1 | Registry-v2.json entry update — display_name: Hermeneus, description, capabilities, new produces edges (health API, ingest API) | Agent | S28 | None |
-| IRF-HRM-003 | P1 | Concordance registration — new API routes (/api/health/llm, /api/cron/ingest) and governance IDs (issue #28) need concordance entries | Agent | S28 | None |
-| IRF-HRM-004 | P2 | Custom domain — hermeneus.organvm.io or similar to replace stakeholder-portal-ten.vercel.app | Human | S28 | DNS + Vercel config |
-| IRF-HRM-005 | P1 | Testament cascade — run `organvm testament cascade --write` to record S28 system events in the generative self-portrait | Agent | S28 | None |
+| ~~IRF-HRM-002~~ | ~~P1~~ | ~~Registry-v2.json entry update~~ — **DONE-185**: display_name, description, capabilities, produces edges all updated. 5 fields changed. | Agent | S28 | COMPLETED |
+| ~~IRF-HRM-003~~ | ~~P1~~ | ~~Concordance registration~~ — **DONE-186**: IRF-HRM namespace + 7 API routes registered in concordance. | Agent | S28 | COMPLETED |
+| IRF-HRM-004 | P2 | Custom domain — hermeneus.organvm.io or similar to replace stakeholder-portal-ten.vercel.app | Human | S28 | DNS + Vercel config. 0 custom domains on Vercel team currently. |
+| ~~IRF-HRM-005~~ | ~~P1~~ | ~~Testament cascade~~ — **DONE-187**: Cascade executed (8 nodes, 19 shapes). | Agent | S28 | COMPLETED |
 | IRF-HRM-006 | P2 | Omega #9 advancement — stranger-test Hermeneus for polish validation (NaN% fixed, streaming works, citations render, brevity enforced) | Human | S28 | Needs stranger participant |
 | IRF-HRM-007 | P2 | Streaming markdown rendering — heading concatenation bug during token-by-token accumulation. Need debounced react-markdown or plain-text-during-stream approach | Agent | S28 | Frontend architecture decision |
 | IRF-HRM-008 | P2 | Ingestion pipeline: run full re-ingestion with new retry logic (#7) to refresh stale chunks and verify 0 HF API failures | Agent | S28 | Needs local workspace + DATABASE_URL |
@@ -806,6 +806,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-182 | Scrapper evolution plan — 3-phase roadmap for evolving public-record-data-scrapper from UCC aggregator to comprehensive MCA prospect intelligence system. Phase 1: reliability hardening (dashboard, health monitoring). Phase 2: beyond UCC (bank statements, competitive intelligence, business health signals). Phase 3: sales team automation + healthcare vertical. | Pipeline S33 (consulting) | 2026-03-23 |
 | DONE-183 | Deepgram signal — Brent George (Tech Lead Manager) profile view + new follower logged on `deepgram-backend-engineer-inference-services` submitted entry. Separate from Tony/Scott consulting tracks. | Pipeline S33 | 2026-03-23 |
 | DONE-184 | agent--claude-smith Dependabot batch — merged 4 GH Actions PRs (#20 codeql-action v3→v4, #21 release-drafter v6→v7, #22 stale v9→v10, #23 checkout v4→v6), reconfigured Dependabot from weekly/individual to monthly/grouped (IRF-SYS-007 partial), closed 5 stale individual PRs (#9, #10, #12, #18, #19). Commit `6db1e9e`. | Maintenance session | 2026-03-23 |
+| DONE-185 | IRF-HRM-002 closed: Registry-v2.json updated — display_name: Hermeneus, description, capabilities (6), produces edges (3). 5 fields changed. | S28 (Hermeneus) | 2026-03-21 |
+| DONE-186 | IRF-HRM-003 closed: Concordance registration — IRF-HRM namespace (8 items) + 7 API route entries. | S28 (Hermeneus) | 2026-03-21 |
+| DONE-187 | IRF-HRM-005 closed: Testament cascade executed — 8 nodes, 19 shapes recorded in generative self-portrait. | S28 (Hermeneus) | 2026-03-21 |
+| DONE-188 | Hermeneus CI/CD triage — fixed Release Drafter (removed pull_request trigger causing invalid targetCommitish), renamed CI job `quality`→`test` (matched branch protection required check, unblocked all PR merges), merged PR #27 (Next.js 16.1.7→16.2.1). Commits `94d378d`, `c370fb7`, squash-merge `1617b37`. | Vercel triage session | 2026-03-23 |
+| DONE-189 | specvla-ergon--avditor-mvndi PR #3 unblocked — rebased feat/stargate-shader on main (resolved auth.ts + SpaceTimeBackground.tsx conflicts), bumped GH Actions (checkout/setup-node v4→v6, upload-artifact v4→v7), `build-and-test` CI now passes. E2E failures pre-existing (tracked GH#5). | Vercel triage session | 2026-03-23 |
 | DONE-185 | Portfolio Dependabot batch — merged 3 PRs: #67 (astro 6.0.7→6.0.8 + p5), #68 (satori 0.25.0→0.26.0), #69 (biome 2.4.7→2.4.8). h3 security vulnerability resolved manually (1.15.8→1.15.10 via `npm audit fix`) after PR #65 was stale-closed. Removed h3 allowlist entry, synced biome schema, 0 vulnerabilities. IRF-PRT-002 partial. GH#66 commented. Commits `4994089`, `608380f`, `7b2c303`, `86d505d`. | S34 (portfolio maintenance) | 2026-03-23 |
 | DONE-186 | the-actual-news Dependabot batch — merged 4 PRs with full review: #21 codeql-action v3→v4, #22 release-drafter v6→v7 (caught + fixed breaking token auth change: env GITHUB_TOKEN → with token, commit ff1642d), #23 stale v9→v10, #24 next 16.1.6→16.2.1 (local build verified: typecheck clean, 6 pages static-exported with Turbopack). Configured Dependabot grouping (bc8bd90): npm minor/patch batched, GH Actions batched, majors individual. 5 superseded PRs (#14-#19) auto-closed. IRF-SYS-007 partial (3/N repos now have grouping). | Maintenance session | 2026-03-23 |
 
@@ -827,12 +832,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 165 (156 prior + 9 new APP items: IRF-APP-002→010)
+- **Total active items:** 162 (165 prior − 3 HRM completions: IRF-HRM-002, -003, -005)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 62 (55 prior + 7 new P1: IRF-APP-002, 003, 005, 006, 008, 010)
+- **P1 (SOON):** 59 (62 prior − 3 HRM P1s completed)
 - **P2 (GROWTH):** 81 (78 prior + 3 new P2: IRF-APP-004, 007, 009)
 - **P3 (HORIZON):** 10
-- **Completed:** 186 (DONE-001 through DONE-186, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Completed:** 189 (DONE-001 through DONE-189, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
 - **Domains:** 23
 
@@ -862,11 +867,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DOC (Documentation) | 5 | 0 |
 | VER (Verification) | 3 | 3 |
 | RES (Research Programme) | 68 | 9 |
-| HRM (Hermeneus) | 8 | 7 |
+| HRM (Hermeneus) | 5 | 10 |
 | DOM (Domus Infrastructure) | 7 | 6 |
-| Cross-session (S23-S30+) | 0 | 79 |
-| **Active IRF items** | **165** | — |
-| **Total DONE entries** | — | **156** |
+| Cross-session (S23-S30+) | 0 | 81 |
+| **Active IRF items** | **162** | — |
+| **Total DONE entries** | — | **161** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
 
