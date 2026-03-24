@@ -246,6 +246,9 @@ Verified on disk 2026-03-20:
 | IRF-SYS-013 | P2 | Propagate functional_class into all 74 seed.yaml files | Agent | S29 | None |
 | IRF-SYS-014 | P2 | Write formation.yaml for top 20 repos (flagships first) | Agent | S29 | None |
 | IRF-SYS-015 | P2 | Wire functional taxonomy into omega scorecard as criterion #20 | Agent | S29 | None |
+| IRF-SYS-016 | P1 | **Supply chain governance framework** — ORGANVM has 0/19 omega criteria covering dependency hygiene, CVE response time, or supply chain posture. 117 repos with no fleet-wide visibility into dependency management strategy. Discovered via N/A vacuum audit on 10-index checklist during agent--claude-smith Dependabot session. Encompasses: (a) omega sub-criterion or evidence class for supply chain health, (b) `dependency_management` field in registry-v2.json schema (`{tool, cadence, strategy}`), (c) `dependency_management` section in seed.yaml schema v1.1, (d) Dependabot strategy documented in CLAUDE.md for active repos, (e) standing GitHub issues for dependency health on flagship repos | Agent | N/A vacuum audit (DONE-184) | None |
+| IRF-SYS-017 | P2 | Add `GOVERNANCE_PATTERN_DEPLOYED` event type to testament vocabulary — witnesses when proven config templates (Dependabot grouping, CI template, etc.) propagate across repos. Currently the testament can't answer "which repos received pattern X?" Extends IRF-VAC-003c event type expansion | Agent | N/A vacuum audit (DONE-184) | IRF-VAC-003c (event type enum expansion) |
+| IRF-SYS-018 | P2 | Register governance patterns as concordance IDs (e.g., `GOV-PAT-001: dependabot-monthly-grouped`) — governance patterns are reusable artifacts that propagate across repos but have no first-class identity in the ID system | Agent | N/A vacuum audit (DONE-184) | None |
 
 ---
 
@@ -832,10 +835,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 162 (165 prior − 3 HRM completions: IRF-HRM-002, -003, -005)
+- **Total active items:** 165 (162 prior + 3 new SYS items: IRF-SYS-016→018 from supply chain governance vacuum audit)
 - **P0 (NOW):** 13
-- **P1 (SOON):** 59 (62 prior − 3 HRM P1s completed)
-- **P2 (GROWTH):** 81 (78 prior + 3 new P2: IRF-APP-004, 007, 009)
+- **P1 (SOON):** 60 (59 prior + 1 new P1: IRF-SYS-016)
+- **P2 (GROWTH):** 83 (81 prior + 2 new P2: IRF-SYS-017, IRF-SYS-018)
 - **P3 (HORIZON):** 10
 - **Completed:** 189 (DONE-001 through DONE-189, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
@@ -846,7 +849,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | Domain | Active | DONE (domain) |
 |--------|--------|---------------|
 | CCE (Corpus Engine) | 8 | 22 |
-| SYS (System-wide) | 10 | 3 |
+| SYS (System-wide) | 13 | 3 |
 | IDX (Index apparatus) | 3 | 2 |
 | SKL (Skills) | 3 | 1 |
 | MON (Monitoring) | 3 | 0 |
@@ -870,7 +873,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | HRM (Hermeneus) | 5 | 10 |
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 81 |
-| **Active IRF items** | **162** | — |
+| **Active IRF items** | **165** | — |
 | **Total DONE entries** | — | **161** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
