@@ -807,6 +807,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-183 | Deepgram signal — Brent George (Tech Lead Manager) profile view + new follower logged on `deepgram-backend-engineer-inference-services` submitted entry. Separate from Tony/Scott consulting tracks. | Pipeline S33 | 2026-03-23 |
 | DONE-184 | agent--claude-smith Dependabot batch — merged 4 GH Actions PRs (#20 codeql-action v3→v4, #21 release-drafter v6→v7, #22 stale v9→v10, #23 checkout v4→v6), reconfigured Dependabot from weekly/individual to monthly/grouped (IRF-SYS-007 partial), closed 5 stale individual PRs (#9, #10, #12, #18, #19). Commit `6db1e9e`. | Maintenance session | 2026-03-23 |
 | DONE-185 | Portfolio Dependabot batch — merged 3 PRs: #67 (astro 6.0.7→6.0.8 + p5), #68 (satori 0.25.0→0.26.0), #69 (biome 2.4.7→2.4.8). h3 security vulnerability resolved manually (1.15.8→1.15.10 via `npm audit fix`) after PR #65 was stale-closed. Removed h3 allowlist entry, synced biome schema, 0 vulnerabilities. IRF-PRT-002 partial. GH#66 commented. Commits `4994089`, `608380f`, `7b2c303`, `86d505d`. | S34 (portfolio maintenance) | 2026-03-23 |
+| DONE-186 | the-actual-news Dependabot batch — merged 4 PRs with full review: #21 codeql-action v3→v4, #22 release-drafter v6→v7 (caught + fixed breaking token auth change: env GITHUB_TOKEN → with token, commit ff1642d), #23 stale v9→v10, #24 next 16.1.6→16.2.1 (local build verified: typecheck clean, 6 pages static-exported with Turbopack). Configured Dependabot grouping (bc8bd90): npm minor/patch batched, GH Actions batched, majors individual. 5 superseded PRs (#14-#19) auto-closed. IRF-SYS-007 partial (3/N repos now have grouping). | Maintenance session | 2026-03-23 |
 
 ---
 
@@ -831,7 +832,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 - **P1 (SOON):** 62 (55 prior + 7 new P1: IRF-APP-002, 003, 005, 006, 008, 010)
 - **P2 (GROWTH):** 81 (78 prior + 3 new P2: IRF-APP-004, 007, 009)
 - **P3 (HORIZON):** 10
-- **Completed:** 185 (DONE-001 through DONE-185, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Completed:** 186 (DONE-001 through DONE-186, plus DONE-114a; DONE-126 superseded by DONE-134→140)
 - **Blocked:** 1 (IRF-SYS-008)
 - **Domains:** 23
 
@@ -894,5 +895,5 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ---
 
-*Last updated: 2026-03-23 — Pipeline consulting pivot: 9 new IRF-APP items (002→010), 5 DONE entries (179→183). Vacuum audit converted 5 false N/As into tracked work: GitHub issues (006), omega evidence (007), inquiry log D-001 evidence (008), testament milestone (009), Index Locorum update (010).*
+*Last updated: 2026-03-23 — the-actual-news Dependabot maintenance: DONE-186 (4 PRs merged, release-drafter v7 token fix, Dependabot grouping deployed). IRF-SYS-007 updated (3/N repos with grouping). Statistics: 186 completed.*
 *Next update: After any session that produces or discovers work items*
