@@ -643,12 +643,22 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | IRF-DWV-001 | P1 | **Absorb DWV into ORGANVM and retire `dwv/` directory.** `specvla-ergon--avditor-mvndi` → move into `organvm-iii-ergon/` (already in that GitHub org, just needs local directory move + submodule tracking). `consilivm-simplex` → move into `4444J99/` (LIMINAL). After move: update Index Locorum (remove DWV entry, add repos under their organ sections), update `~/Workspace/CLAUDE.md` workspace map (remove DWV row), update git superproject submodule refs in both organ dirs. DWV was a client staging area — the client is gone, the work is ours, the staging area has no further purpose. | Agent | DWV-S2 session close | None |
 | IRF-DWV-002 | P1 | Post-absorption triage of DWV root artifacts — `GEMINI.md`, screenshots (4), `Streamline-Gumroad-Income.md`, `AI Website & Social Media Growth Audit.html` remain in `dwv/` after repo absorption. Archive useful artifacts to `intake/` or relevant organ docs, delete the rest. Once empty, remove `dwv/` entirely from workspace. | Human | DWV-S2 session close | IRF-DWV-001 |
 
+### Fossil Module Integration Gaps (Vacuum 8 — S31 hall-monitor audit)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-VAC-008a | P1 | Wire fossil archivist to scan `~/.claude/projects/` for session transcripts — the archivist currently scans `.specstory/history/` (empty) but actual AI session data lives at `~/.claude/projects/-Users-4jp-*/`. Extract unique prompts as intentions from these JSONL files | Agent | S31 hall-monitor audit | None |
+| IRF-VAC-008b | P1 | Register EPOCH_CLOSED, INTENTION_BORN, DRIFT_DETECTED in the EventType enum (`events/` module) — fossil bridge emits these event dicts but the events module doesn't know they exist. Without registration, testament chain cannot type-check them | Agent | S31 hall-monitor audit | None |
+| IRF-VAC-008c | P2 | Wire testament chain to consume fossil bridge events — the bridge EMITS event dicts but nothing SUBSCRIBES. Add fossil event consumption to the testament pipeline so epoch closings, intention births, and drift detections appear in chain.jsonl | Agent | S31 hall-monitor audit | IRF-VAC-008b (register event types first) |
+| IRF-VAC-008d | P2 | Evaluate fossil record health as omega criterion #20 — candidate: "fossil-record.jsonl has records within last 7 days AND witness hooks installed on > 90% of repos AND at least 1 chronicle regenerated in last 30 days." Would make the archaeological infrastructure a first-class governance gate | Agent | S31 hall-monitor audit | Design decision |
+| IRF-VAC-008e | P1 | Create PRs for 5 ORGAN-V protected-branch repos with local-only commits — analytics-engine (1), editorial-standards (1), essay-pipeline (1), reading-observatory (1), .github (8). All are context-sync changes. "Nothing local only" principle violated | Agent | S31 hall-monitor audit | Branch protection requires PR + review |
+
 ### Companion Indices Construction (Vacuum 6 — advances IRF-IDX-001/002/003)
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
 | IRF-VAC-006a | P1 | Design content schema for all three companion indices — what fields, inclusion criteria, cross-reference format, update protocol. Must handle: 118 repos, 188 citations, 67+ SOPs, 22 regimes, 57+ research documents | Agent | Vacuum analysis | None |
-| IRF-VAC-006b | P1 | Build INST-INDEX-LOCORUM.md v1 (IRF-IDX-001) — canonical map of repos, directories, files, URLs, infrastructure endpoints, MCP servers, data paths. Estimated 500+ lines | Agent | Vacuum analysis | IRF-VAC-006a (schema design) |
+| ~~IRF-VAC-006b~~ | ~~P1~~ | ~~Build INST-INDEX-LOCORUM.md v1 (IRF-IDX-001)~~ — **DONE** (545 lines, 123 repos mapped, all infrastructure endpoints, key files, data directories. Committed S31.) | Agent | Vacuum analysis | Completed S31 |
 | IRF-VAC-006c | P1 | Build INST-INDEX-NOMINUM.md v1 (IRF-IDX-002) — registry of all named entities from registry-v2.json, seed.yaml files, governance docs, research programme, citation graph. Estimated 500+ lines | Agent | Vacuum analysis | IRF-VAC-006a (schema design) |
 | IRF-VAC-006d | P2 | Build INST-INDEX-RERUM.md v1 (IRF-IDX-003) — ontological inventory of artifact types, states, relationships, provenance. Draws from ontologia UID system. Estimated 500+ lines | Agent | Vacuum analysis | IRF-VAC-006a (schema design) |
 | IRF-VAC-006e | P2 | Build `organvm index generate` CLI (IRF-IDX-004) — automate index regeneration from registry, seeds, AST, ontologia. Different pipeline from existing indexer/ module | Agent | Vacuum analysis | IRF-VAC-006b/c/d (define target format) |
