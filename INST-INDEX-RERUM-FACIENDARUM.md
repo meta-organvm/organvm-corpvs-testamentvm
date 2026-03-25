@@ -132,6 +132,8 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-HRM-006 | P2 | Omega #9 advancement — stranger-test Hermeneus for polish validation (NaN% fixed, streaming works, citations render, brevity enforced) | Human | S28 | Needs stranger participant |
 | IRF-HRM-007 | P2 | Streaming markdown rendering — heading concatenation bug during token-by-token accumulation. Need debounced react-markdown or plain-text-during-stream approach | Agent | S28 | Frontend architecture decision |
 | IRF-HRM-008 | P2 | Ingestion pipeline: run full re-ingestion with new retry logic (#7) to refresh stale chunks and verify 0 HF API failures | Agent | S28 | Needs local workspace + DATABASE_URL |
+| IRF-HRM-009 | P1 | **Testament cascade for Vercel triage session** — branch protection was silently broken on a PUBLIC_PROCESS repo (all PRs unmergeable), now fixed. Governance event: POLICY_RESTORED. Run `organvm testament cascade --write` to record. | Agent | Vercel triage session | Needs testament tooling (cf. IRF-CCE-014) |
+| IRF-HRM-010 | P2 | **Omega #1 soak test: investigate 4 incidents** — threshold is <=3 for criterion to be met. Were any incidents inflated by CI false failures (Release Drafter, branch protection mismatch)? If so, CI fixes from this session may reduce the count. Run `organvm omega status` and audit incident log. | Agent | Vercel triage session | Needs soak-test incident data |
 
 ---
 
@@ -381,6 +383,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-PRT-007 | P2 | **Add portfolio as D-001 evidence source in inquiry-log.yaml** — portfolio operational data (security posture, uptime, engagement metrics, dependency maintenance cadence) is living proof that the pipeline functions as production infrastructure, not a portfolio exercise. Link as evidence source on INQ-2026-001. See also IRF-APP-008 (consulting pivot validates D-001) | Agent | S34 N/A vacuum audit | None |
 | IRF-PRT-008 | P3 | **Enrich concordance with portfolio governance vocabulary** — concordance tracks IRF-PRT and omega #15 but not portfolio's internal governance IDs: quality phases (W10→W12…), persona IDs, strike target IDs, sketch registry names (30 named sketches), ratchet policy identifiers. These function as governance vocabulary within the project and should be indexed | Agent | S34 N/A vacuum audit | Concordance structure must support sub-project IDs |
 | IRF-PRT-009 | P3 | **Ensure portfolio representation in companion indices** — when IRF-IDX-001 (Locorum), IRF-IDX-002 (Nominum), IRF-IDX-003 (Rerum) are built, portfolio must be included: locations (deploy URL, GitHub Pages, Cloudflare Worker D1, OG endpoint), names (personas, sketches, quality phases, strike targets), artifacts (30 sketches, 21 case studies, 49 essays, policy JSONs, quality-metrics.json) | Agent | S34 N/A vacuum audit | IRF-IDX-001/002/003 not yet built |
+| IRF-PRT-010 | **P0** | **Fix Shibui CI failure — main is red, deploy blocked.** S35 Shibui feature (commits `cc07106`→`c4ca8f8`) left 3 CI jobs failing: lint (biome formatting on `shibui-annotate.mjs`, `shibui-distill.mjs`, `shibui-extract.mjs`), test-unit, test-a11y. Fix: `npm run lint:fix` for formatting, investigate test failures. GH#70 filed. Discovered by S34 hall-monitor audit. | Agent | S34 hall-monitor audit | None |
 
 ---
 
@@ -953,8 +956,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 197 (187 prior + 10 new DOM items: IRF-DOM-009 through 018)
-- **P0 (NOW):** 14
+- **Total active items:** 198 (197 prior + 1 new P0: IRF-PRT-010 Shibui CI failure, GH#70)
+- **P0 (NOW):** 15
 - **P1 (SOON):** 70 (66 prior + 4 new: IRF-DOM-010, 013, 016)
 - **P2 (GROWTH):** 104 (98 prior + 6 new: IRF-DOM-009, 011, 014, 015, 017, 018)
 - **P3 (HORIZON):** 13 (12 prior + 1 new: IRF-DOM-012)
@@ -979,7 +982,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | TST (Testament) | 1 | 2 |
 | OBJ (Object Lessons) | 7 | 1 |
 | KER (Kerygma) | 2 | 0 |
-| PRT (Portfolio) | 8 | 10 |
+| PRT (Portfolio) | 9 | 10 |
 | APP (Application) | 8 | 9 |
 | GEN (Generative) | 3 | 0 |
 | OSS (Open-Source) | 4 | 7 |
@@ -992,7 +995,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | HRM (Hermeneus) | 5 | 10 |
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 81 |
-| **Active IRF items** | **187** | — |
+| **Active IRF items** | **188** | — |
 | **Total DONE entries** | — | **213** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
