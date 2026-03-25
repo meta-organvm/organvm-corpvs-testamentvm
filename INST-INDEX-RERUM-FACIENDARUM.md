@@ -251,13 +251,13 @@ Verified on disk 2026-03-20:
 | ~~IRF-CCE-011~~ | ~~P1~~ | ~~Register FORM-RES-001 in concordance~~ → **DONE-167**: formation namespace added to `concordance.md` and `FORM-RES-001` registered as the first post-flood reservoir identity. | Agent | S27-close (vacuum audit) | COMPLETED |
 | ~~IRF-CCE-012~~ | ~~P2~~ | ~~Propose omega criterion~~ → **DONE-175**: OM-MEM-001 proposed: "Memory infrastructure demonstrates closed-loop autopoiesis — ≥1 session transcript completes ingest→normalize→evaluate→federate→surface→consume." Evidence: Claude corpus passes all 8 gates. Routed to meta-organvm for formal amendment. | Agent | S33 | COMPLETED |
 | ~~IRF-CCE-013~~ | ~~P2~~ | ~~CCE artifacts to companion indices~~ → **DONE-176**: Registration spec documented on GH#8. Index Locorum/Nominum/Rerum entries specified, ready to execute when companion indices are built. | Agent | S33 | COMPLETED |
-| IRF-CCE-014 | P1 | **Record S33 testament events** — 2 new modules (dashboard.py, triage.py), 35 new tests, 8 providers, v0.3.0, search engine fix, genesis adapter cherry-pick, review queue triage (3854→1649). Run `organvm testament cascade --write` to record. System events: ARCHITECTURE_CHANGED, MODULE_CREATED ×2, CAPABILITY_ADDED ×4 | Agent | S33 close-out N/A audit | Needs `organvm testament cascade` tooling |
-| IRF-CCE-015 | P1 | **Ratify OM-MEM-001 in omega scorecard** — proposed criterion text: "Memory infrastructure demonstrates closed-loop autopoiesis." Evidence exists (Claude corpus all 8 gates pass). `organvm omega` currently exposes `status|check|update`, but no criterion-authoring path, and OM-MEM-001 is still absent from the live 19-criterion scorecard. | Agent | S33 close-out N/A audit | Needs omega criterion/schema authoring workflow in meta-organvm |
-| ~~IRF-CCE-016~~ | ~~P2~~ | ~~Enhance Claude adapter to parity with ChatGPT~~ — **DONE-232**: Claude export ingest now extracts richer code/execution/tool/media content, writes `import-audit.json`, detects `near-duplicates.json`, publishes both schemas, and validates them with direct regression coverage. | Agent | S33 roadmap M3/E2 | COMPLETED |
-| ~~IRF-CCE-017~~ | ~~P2~~ | ~~Test remaining 10 untested modules~~ — **DONE-233**: Dedicated direct suites landed for the remaining module blind spots (`federated_canon`, `cli`, `source_lifecycle`, `paths`, `governance_policy`, `provider_catalog`, `provider_discovery`, `provider_exports`, `claude_local_session`, `import_claude_local_session_corpus`) and `answering.py` coverage was widened. Full suite reached 232 passing tests during closeout audit. | Agent | S33 roadmap M1 | COMPLETED |
-| ~~IRF-CCE-018~~ | ~~P2~~ | ~~Add semantic similarity triage policy~~ — **DONE-234**: Triage now uses broader lexical/title-overlap handling across `entity-alias`, `family-merge`, `action-merge`, and `unresolved-merge`, collapsing the live open review queue from 4,272 to 406 before the later operator-assist campaign layer was added. | Agent | S33 roadmap M2 | COMPLETED |
-| IRF-CCE-019 | P1 | **Migrate historical federated review IDs away from slug-collision ambiguity** — live audit found preserved review/history state still contains duplicate `review_id` values because older queue items were generated from truncated slugs alone. New suggestion generation now fingerprints collisions, but existing stale resolved queue/history/sample artifacts need a migration or repair pass so hydration/indexing does not inherit ambiguous identifiers. | Agent | S37 closeout hall-monitor audit | None |
-| IRF-CCE-020 | P2 | **Record S37 CCE testament events** — this session added the review-assist campaign surface (`assist`, `campaign`, `campaign-index`, `packet-hydrate`, `campaign-scoreboard`, `campaign-rollup`, `reject-stage`, `apply-plan`, `sample-summary`, `sample-propose`, `sample-compare`), Claude adapter parity, full dedicated module test coverage, and review-ID collision stabilization. Needs testament recording once the CCE/meta tooling path exists. | Agent | S37 closeout hall-monitor audit | Depends on testament tooling / IRF-CCE-014 path |
+| IRF-CCE-014 | P1 | **Record S33 testament events** — 2 new modules (dashboard.py, triage.py), 35 new tests, 8 providers, v0.3.0, search engine fix, genesis adapter cherry-pick, review queue triage (3854→1649). Run `organvm testament cascade --write` to record. System events: ARCHITECTURE_CHANGED, MODULE_CREATED ×2, CAPABILITY_ADDED ×4. GH#11. | Agent | S33 close-out N/A audit | Needs `organvm testament cascade` tooling |
+| IRF-CCE-015 | P1 | **Ratify OM-MEM-001 in omega scorecard** — proposed criterion text: "Memory infrastructure demonstrates closed-loop autopoiesis." Evidence exists (Claude corpus all 8 gates pass). `organvm omega` currently exposes `status|check|update`, but no criterion-authoring path, and OM-MEM-001 is still absent from the live 19-criterion scorecard. GH#14. | Agent | S33 close-out N/A audit | Needs omega criterion/schema authoring workflow in meta-organvm |
+| ~~IRF-CCE-016~~ | ~~P2~~ | ~~Enhance Claude adapter to parity with ChatGPT~~ — **DONE-232**: Claude export ingest now extracts richer code/execution/tool/media content, writes `import-audit.json`, detects `near-duplicates.json`, publishes both schemas, and validates them with direct regression coverage. Commit `3fa116f`. | Agent | S33 roadmap M3/E2 | COMPLETED |
+| ~~IRF-CCE-017~~ | ~~P2~~ | ~~Test remaining 10 untested modules~~ — **DONE-233**: Dedicated direct suites landed for the remaining module blind spots (`federated_canon`, `cli`, `source_lifecycle`, `paths`, `governance_policy`, `provider_catalog`, `provider_discovery`, `provider_exports`, `claude_local_session`, `import_claude_local_session_corpus`) and `answering.py` coverage was widened. Full suite reached 232 passing tests during closeout audit. Commit `3fa116f`. | Agent | S33 roadmap M1 | COMPLETED |
+| ~~IRF-CCE-018~~ | ~~P2~~ | ~~Add semantic similarity triage policy~~ — **DONE-234**: Triage now uses broader lexical/title-overlap handling across `entity-alias`, `family-merge`, `action-merge`, and `unresolved-merge`, collapsing the live open review queue from 4,272 to 406 before the later operator-assist campaign layer was added. Commit `3fa116f`. | Agent | S33 roadmap M2 | COMPLETED |
+| IRF-CCE-019 | P1 | **Migrate historical federated review IDs away from slug-collision ambiguity** — live audit found preserved review/history state still contains duplicate `review_id` values because older queue items were generated from truncated slugs alone. New suggestion generation now fingerprints collisions (commit `3fa116f`), but existing stale resolved queue/history/sample artifacts still need a migration or repair pass so hydration/indexing does not inherit ambiguous identifiers. GH#13. | Agent | S37 closeout hall-monitor audit | None |
+| IRF-CCE-020 | P2 | **Record S37 CCE testament events** — this session added the review-assist campaign surface (`assist`, `campaign`, `campaign-index`, `packet-hydrate`, `campaign-scoreboard`, `campaign-rollup`, `reject-stage`, `apply-plan`, `sample-summary`, `sample-propose`, `sample-compare`), Claude adapter parity, full dedicated module test coverage, and review-ID collision stabilization. Needs testament recording once the CCE/meta tooling path exists. GH#12. | Agent | S37 closeout hall-monitor audit | Depends on testament tooling / IRF-CCE-014 path |
 | IRF-SYS-013 | P2 | Propagate functional_class into all 74 seed.yaml files | Agent | S29 | None |
 | IRF-SYS-014 | P2 | Write formation.yaml for top 20 repos (flagships first) | Agent | S29 | None |
 | IRF-SYS-015 | P2 | Wire functional taxonomy into omega scorecard as criterion #20 | Agent | S29 | None |
@@ -1028,65 +1028,59 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 214 (203 prior + 11 new: IRF-VOX-001 through IRF-VOX-011)
-- **P0 (NOW):** 15
-- **P1 (SOON):** 75 (73 prior + 2 new: IRF-VOX-001, IRF-VOX-002)
-- **P2 (GROWTH):** 108 (105 prior + 3 new: IRF-VOX-003, IRF-VOX-004, IRF-VOX-005)
-- **P3 (HORIZON):** 18 (14 prior + 4 new: IRF-VOX-006, IRF-VOX-007, IRF-VOX-008, IRF-VOX-009)
-- **P4 (RESEARCH):** 2 (new: IRF-VOX-010, IRF-VOX-011)
-- **Completed:** 220 (DONE-001 through DONE-220, plus DONE-114a)
-- **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 26 (25 prior + VOX)
+Refreshed 2026-03-25 via `organvm irf stats`.
 
-### By Domain
+- **Total IRF items:** 506
+- **Open:** 264
+- **Completed:** 242
+- **Blocked:** 0
+- **Archived:** 0
+- **Completion rate:** 47.8%
 
-| Domain | Active | DONE (domain) |
-|--------|--------|---------------|
-| LIQ (Liquid Constitutional Order) | 12 | 16 |
-| CCE (Corpus Engine) | 8 | 22 |
-| SYS (System-wide) | 18 | 3 |
-| IDX (Index apparatus) | 3 | 2 |
-| SKL (Skills) | 3 | 1 |
-| MON (Monitoring) | 3 | 0 |
-| CRP (Corpus) | 3 | 3 |
-| SGO (Studium) | 6 | 13 |
-| VIG (Vigiles) | 2 | 3 |
-| TRV (Trivium) | 2 | 1 |
-| TST (Testament) | 1 | 2 |
-| OBJ (Object Lessons) | 7 | 1 |
-| KER (Kerygma) | 2 | 0 |
-| PRT (Portfolio) | 9 | 14 |
-| APP (Application) | 8 | 9 |
-| GEN (Generative) | 3 | 0 |
-| OSS (Open-Source) | 4 | 7 |
-| IRA (Authority) | 3 | 1 |
-| ARC (Architecture) | 6 | 0 |
-| BLK (Blockchain) | 2 | 0 |
-| DOC (Documentation) | 5 | 0 |
-| VER (Verification) | 3 | 3 |
-| RES (Research Programme) | 68 | 9 |
-| HRM (Hermeneus) | 7 | 10 |
-| DOM (Domus Infrastructure) | 8 | 8 |
-| PSP (Petasum Super Petasum) | 3 | 2 |
-| Cross-session (S23-S30+) | 0 | 81 |
-| **Active IRF items** | **192** | — |
-| **Total DONE entries** | — | **214** |
+### Open By Priority
 
-*Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
+| Priority | Count |
+|----------|-------|
+| P0 | 14 |
+| P1 | 101 |
+| P2 | 125 |
+| P3 | 24 |
 
-### Research Programme Breakdown
+### Open By Domain
 
-| Category | P0 | P1 | P2 | Total | DONE |
-|----------|----|----|----|----|------|
-| GOVERNANCE | 5 | 7 | 5 | 17 | 2 |
-| MEASUREMENT | 3 | 8 | 7 | 18 | 0 |
-| NAMING | 1 | 3 | 6 | 10 | 1 |
-| ARCHITECTURE | 3 | 4 | 2 | 9 | 0 |
-| TOOLING | 0 | 2 | 3 | 5 | 0 |
-| PROCESS | 0 | 5 | 3 | 8 | 0 |
-| **Total** | **12** | **29** | **26** | **67** | **3** |
-
-*Note: 11 additional completed research programme items (Research Pipeline SOP, Research Registry, Session Retrospective, Naming Convention Validator code, Cross-Reference Audit, LaTeX Conversion, Citation Knowledge Graph, arXiv Submission Packages, Wikipedia Article Drafts, Wikipedia Research Atlas, TRP Round 2 clearance) are process deliverables not in the 71-task manifest.*
+| Domain | Count |
+|--------|-------|
+| RES | 68 |
+| OSS | 24 |
+| APP | 20 |
+| SYS | 17 |
+| DOM | 17 |
+| LIQ | 12 |
+| PRT | 11 |
+| MON | 7 |
+| HRM | 7 |
+| VOX | 7 |
+| SGO | 6 |
+| ARC | 6 |
+| SKL | 5 |
+| CRP | 5 |
+| OBJ | 5 |
+| LOG | 5 |
+| KOI | 5 |
+| DOC | 5 |
+| IDX | 4 |
+| CCE | 4 |
+| GEN | 3 |
+| IRA | 3 |
+| VER | 3 |
+| VIG | 2 |
+| TRV | 2 |
+| PSP | 2 |
+| KER | 2 |
+| BLK | 2 |
+| DWV | 2 |
+| INST | 2 |
+| TST | 1 |
 
 ### Effort Distribution (Research Programme)
 
