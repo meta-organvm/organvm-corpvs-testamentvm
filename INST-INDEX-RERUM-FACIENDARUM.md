@@ -303,6 +303,16 @@ Verified on disk 2026-03-20:
 
 ---
 
+## ORGAN-IV — Petasum Super Petasum (Governance Orchestration)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-PSP-001 | **P1** | **Merge security fix PR#141** — `fix/workflow-injection-security` patches script injection in `org-issue-notifications.yml`. Needs review + merge. Branch pushed, PR open. | Human | S36 stale PR triage | PR review |
+| IRF-PSP-002 | P2 | Clean up ~100 stale bot branches — jules, sentinel, bolt, palette, copilot remote branches accumulated from automated bot activity. GH#139. | Agent | S36 stale PR triage | None |
+| IRF-PSP-003 | P3 | Add ToC and back-to-top navigation to governance docs — PRINCIPLE_CONFLICTS.md, COMMANDMENTS.md, LIFECYCLE_ROADMAP.md, LOGIC_FRAMEWORK.md. Low priority UX improvement. GH#140. | Agent | S36 stale PR triage | None |
+
+---
+
 ## ORGAN-IV — Skills (a-i--skills)
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -941,6 +951,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-214 | Portfolio security allowlist fully resolved — both h3 and fast-xml-parser chains auto-removed by lifecycle workflow. Allowlist empty, `npm audit` 0 vulns. GH#47 confirmed, GH#66 closed with resolution summary. IRF-PRT-002 complete. | S35 (security check) | 2026-03-24 |
 | DONE-215 | **Dependabot firehose rationalization** — system-wide. 305+ PRs closed across 9 orgs. 76 dependabot.yml deleted from non-production repos. 9 org `.github` repos configured (monthly grouped + auto-merge workflow). 5 meta-organvm production repos optimized (monthly/grouped/auto-merge for patch+minor). 4444J99/.github created. eslint >=10 ignored on stakeholder-portal (plugin incompatibility). 41 ruff lint errors fixed in engine tests. All notifications marked read. Completes IRF-SYS-007. IRF-SYS-009 remains (human: Gmail filter + GitHub notification settings). | S36 (dependabot-rationalization) | 2026-03-24 |
 | DONE-216 | specvla-ergon--avditor-mvndi PR review triage — 20+ AI review comments triaged across 3 PRs (sourcery-ai, codex-connector, github-advanced-security). 5 code fixes committed (`e40bb2e`): env.ts gitleaks false-positive (isRealValue helper), SpaceTimeBackground WebGL orientation→ref (prevents full GL pipeline re-init per tilt event), DeviceOrientationEvent typeof guard, GPU resource cleanup on unmount, auth.ts subscription error logging. 20 PR thread replies posted (9 on PR#3, 1 on PR#2, 11 on PR#1). 2 items declined with technical reasoning (WebGL uniform null is spec no-op; sentinel value pattern overengineered). 369/369 tests pass, tsc clean. | PR review session | 2026-03-24 |
+| DONE-217 | **GitHub auth simplification** — removed 1Password PAT (`antigravity--github-api--112525`) as source of `GITHUB_TOKEN`. `gh auth` keychain is now single source of truth. `GH_TOKEN` no longer exported (was overriding gh's keyring, breaking `gh auth refresh`). Added `workflow` scope via `gh auth refresh`. 1Password entry deleted via `op item delete`. Committed in `4367b9d`. Domus GH#5 tracks verification. | S36 | 2026-03-24 |
+| DONE-218 | **Stale PR triage — petasum-super-petasum** — 8 Jules bot PRs (#107-#114) closed as stale duplicates. 3 distinct changes identified: security fix (injection), workflow optimization, navigation. All were duplicate attempts by Jules. Security vulnerability confirmed LIVE on main. Fresh fix branch opened (PR#141). GH#139 (branch cleanup), GH#140 (navigation improvements) filed. | S36 | 2026-03-24 |
+| DONE-219 | **Stale PR triage — universal-node-network** — PR#1 closed. 640 lines of TypeScript boilerplate for a Python repo; correct CLAUDE.md already exists on main. | S36 | 2026-03-24 |
+| DONE-220 | **Petasum security fix** — script injection vulnerability in `org-issue-notifications.yml` patched. `${{ join(github.event.issue.labels.*.name, ',') }}` in `run:` block moved to `env:` block. `${{ steps.categorize.outputs.labels }}` in `github-script` replaced with `context.payload.issue.labels`. PR#141 opened on `fix/workflow-injection-security` branch. | S36 | 2026-03-24 |
 
 ---
 
@@ -960,14 +974,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 199 (198 prior + 1 new P1: IRF-SYS-023 DONE ID collision crisis)
+- **Total active items:** 202 (199 prior + 3 new: IRF-PSP-001, PSP-002, PSP-003)
 - **P0 (NOW):** 15
-- **P1 (SOON):** 71 (70 prior + 1 new: IRF-SYS-023)
-- **P2 (GROWTH):** 104 (98 prior + 6 new: IRF-DOM-009, 011, 014, 015, 017, 018)
-- **P3 (HORIZON):** 13 (12 prior + 1 new: IRF-DOM-012)
-- **Completed:** 216 (DONE-001 through DONE-216, plus DONE-114a)
+- **P1 (SOON):** 72 (71 prior + 1 new: IRF-PSP-001)
+- **P2 (GROWTH):** 105 (104 prior + 1 new: IRF-PSP-002)
+- **P3 (HORIZON):** 14 (13 prior + 1 new: IRF-PSP-003)
+- **Completed:** 220 (DONE-001 through DONE-220, plus DONE-114a)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 24 (23 prior + LIQ)
+- **Domains:** 25 (24 prior + PSP)
 
 ### By Domain
 
@@ -997,7 +1011,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | VER (Verification) | 3 | 3 |
 | RES (Research Programme) | 68 | 9 |
 | HRM (Hermeneus) | 7 | 10 |
-| DOM (Domus Infrastructure) | 7 | 6 |
+| DOM (Domus Infrastructure) | 7 | 8 |
+| PSP (Petasum Super Petasum) | 3 | 2 |
 | Cross-session (S23-S30+) | 0 | 81 |
 | **Active IRF items** | **192** | — |
 | **Total DONE entries** | — | **214** |
