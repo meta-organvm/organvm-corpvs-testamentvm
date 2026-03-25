@@ -164,6 +164,7 @@ All 7 research prompts from INQ-2026-004 are delivered:
 | ~~IRF-SGO-005~~ | ~~P2~~ | ~~Add governance YAMLs to praxis-perpetua~~ — **DONE** (charter, defense-protocol, faculty-registry, senate-config all on disk + 4 new governance declarations 2026-03-21) | Agent | Memory | Completed S25 |
 | IRF-SGO-006 | P3 | Build defense.py, publish.py, senate.py — SGO defense orchestration scripts | Agent | SGO spec | Depends on IRA code maturity |
 | ~~IRF-SGO-007~~ | ~~P2~~ | ~~Update inquiry-log.yaml with S28 implementation evidence~~ — **DONE** (INQ-2026-002/005/006 evidence logged, Hermeneus provider cascade as second instantiation. Commit `0d81d31`.) | Agent | S28 gap audit | Completed S28+ |
+| IRF-SGO-008 | P1 | **praxis-perpetua: 9 uncommitted research files** — `research/sgo-2026-formalization-of-knowledge/` has uncommitted edits to ARXIV-SUBMISSION-PACKAGES.md, CROSS-REFERENCE-AUDIT.md, IMPLEMENTATION-MANIFEST.md, adventure-05/06/07, and 3 review TRP docs. Origin unknown (likely S33 research session). Review diffs, commit with proper attribution. | Human+Agent | Vercel triage session discovery | Need to identify authoring session |
 
 ### SGO Infrastructure (EXISTS)
 
@@ -265,6 +266,7 @@ Verified on disk 2026-03-20:
 | IRF-SYS-020 | P2 | Log Dependabot calling-convention blind spot as inquiry observation — Dependabot bumps version tags but cannot detect breaking changes in action calling conventions (e.g., release-drafter v7 moved from env-based token to input-based token). This is a structural limitation of automated dependency management that bears on omega criterion #3 (autonomous operation). Feed into inquiry-log.yaml as observation on CI automation reliability | Agent | N/A vacuum audit (DONE-186) | None |
 | IRF-SYS-021 | P1 | Apply IRF-SYS-016 supply chain governance to `the-actual-news` as concrete instance — add `dependency_management` section to seed.yaml, add CI/CD & Dependency Management section to CLAUDE.md, create standing GitHub issue for dependency health, update registry-v2.json with `last_maintained: 2026-03-23` and `dependabot_grouping: true` | Agent | N/A vacuum audit (DONE-186) | IRF-SYS-016 (framework design) |
 | IRF-SYS-022 | P2 | Update omega evidence map (#1 soak, #3 autonomous operation) with dependency maintenance evidence — Dependabot grouping deployment across 3 repos, breaking change detection protocol (release-drafter v7 token fix), and stale PR cleanup cadence are all evidence of system health posture that the omega evidence map doesn't capture | Agent | N/A vacuum audit (DONE-186) | None |
+| IRF-SYS-023 | **P1** | **DONE ID collision — IRF numbering integrity crisis.** Parallel sessions independently assign DONE-NNN IDs, causing duplicates: DONE-186 appears 7×, DONE-184 5×, DONE-185 4×, each with completely different content. The Completed section is now unreliable as a lookup table. Fix options: (a) retroactive dedup with suffixes (DONE-184a/b/c), (b) adopt session-prefixed IDs (DONE-S34-001), (c) add `organvm irf done --next` CLI that atomically assigns the next available ID. Current workaround: grep by content, not by ID. Source: S34 hall-monitor audit. | Agent | S34 hall-monitor audit | None |
 
 ---
 
@@ -956,9 +958,9 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 198 (197 prior + 1 new P0: IRF-PRT-010 Shibui CI failure, GH#70)
+- **Total active items:** 199 (198 prior + 1 new P1: IRF-SYS-023 DONE ID collision crisis)
 - **P0 (NOW):** 15
-- **P1 (SOON):** 70 (66 prior + 4 new: IRF-DOM-010, 013, 016)
+- **P1 (SOON):** 71 (70 prior + 1 new: IRF-SYS-023)
 - **P2 (GROWTH):** 104 (98 prior + 6 new: IRF-DOM-009, 011, 014, 015, 017, 018)
 - **P3 (HORIZON):** 13 (12 prior + 1 new: IRF-DOM-012)
 - **Completed:** 213 (DONE-001 through DONE-213, plus DONE-114a; 16 new from S29 post-flood session)
@@ -971,12 +973,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 |--------|--------|---------------|
 | LIQ (Liquid Constitutional Order) | 12 | 16 |
 | CCE (Corpus Engine) | 8 | 22 |
-| SYS (System-wide) | 17 | 3 |
+| SYS (System-wide) | 18 | 3 |
 | IDX (Index apparatus) | 3 | 2 |
 | SKL (Skills) | 3 | 1 |
 | MON (Monitoring) | 3 | 0 |
 | CRP (Corpus) | 3 | 3 |
-| SGO (Studium) | 5 | 13 |
+| SGO (Studium) | 6 | 13 |
 | VIG (Vigiles) | 2 | 3 |
 | TRV (Trivium) | 2 | 1 |
 | TST (Testament) | 1 | 2 |
@@ -992,11 +994,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DOC (Documentation) | 5 | 0 |
 | VER (Verification) | 3 | 3 |
 | RES (Research Programme) | 68 | 9 |
-| HRM (Hermeneus) | 5 | 10 |
+| HRM (Hermeneus) | 7 | 10 |
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 81 |
-| **Active IRF items** | **188** | — |
-| **Total DONE entries** | — | **213** |
+| **Active IRF items** | **191** | — |
+| **Total DONE entries** | — | **214** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
 
