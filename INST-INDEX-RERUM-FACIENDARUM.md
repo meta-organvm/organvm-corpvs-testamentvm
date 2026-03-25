@@ -256,6 +256,25 @@ Verified on disk 2026-03-20:
 
 ---
 
+## Liquid Constitutional Order (SPEC-019)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-LIQ-001 | P0 | Create `organvm` GitHub org — the single container for the liquid model. Web UI action required. | Human | SPEC-019 §7 | GitHub web UI only |
+| IRF-LIQ-002 | P1 | Build the distillation pipeline CLI (`organvm distill --repo <name>`) — four-stage alchemical transformation (nigredo/albedo/citrinitas/rubedo) that updates seed.yaml, formation.yaml, CLAUDE.md, and validates SPEC-019 compliance before any repo moves to the new org | Agent | SPEC-019 §9, Covenant | IRF-LIQ-001 (org exists) |
+| IRF-LIQ-003 | P1 | Build excretory system CLI (`organvm excrete`) — three-pass filtration (glomerular/tubular/secretion) for dead signals, isolated formations, stale repos, classification drift, governance debt | Agent | excretory-system-spec.md | None |
+| IRF-LIQ-004 | P1 | Build swarm topology CLI (`organvm swarm`) — computed signal affinity reveals emergent function participation vs declared participation. Discovery list + orphan list + affinity map | Agent | swarm-topology-spec.md | Signal algebra (done) + function signal profiles (not yet in organ-definitions) |
+| IRF-LIQ-005 | P2 | Build reproductive system CLI (`organvm reproduce --target <path>`) — von Neumann constructor that instantiates a new organism from the constitutional genome. Transmits governance rules, schemas, signal vocabulary, covenant. Does NOT transmit formations, memory, or signal edges | Agent | reproductive-system-spec.md | None |
+| IRF-LIQ-006 | P2 | Add function signal profiles to organ-definitions.json v2.0 — each named function declares appetite (signal classes it hungers for) and emission (signal classes it naturally produces). Required for swarm affinity computation | Agent | swarm-topology-spec.md | None |
+| IRF-LIQ-007 | P2 | Propagate named functions into registry-v2.json — replace `ORGAN-I`/`ORGAN-II` keys with `theoria`/`poiesis` etc., using `legacy_organ_map` for migration. Major registry transformation | Agent | SPEC-019 §4, organ-definitions v2.0 | IRF-LIQ-002 (distillation pipeline) |
+| IRF-LIQ-008 | P2 | Add terms of venery for function-level assemblies — a synthesis of formations in Theoria, a forge in Ergon, a chorus in Poiesis, a testament in Mneme, etc. Encode collective character in the function definitions | Agent | Research: animal grouping names | None |
+| IRF-LIQ-009 | P1 | Update ~/Workspace/CLAUDE.md to declare the post-flood liquid order — so every new session in every organ starts with awareness of named functions, signal algebra, SPEC-019 | Agent | Propagation vacuum | None |
+| IRF-LIQ-010 | P1 | Update context generator template to emit function names instead of organ numbers — so `organvm context sync` propagates the new language to all 117 repos' CLAUDE.md files | Agent | Propagation vacuum | None |
+| IRF-LIQ-011 | P2 | Fold Governed Serendipity and River Ordinance into the main paper — expand §8.4, add swarm topology §8.5, add biological completeness §8.6, submit to arXiv | Agent | Paper draft | None |
+| IRF-LIQ-012 | P2 | Compute the full composability matrix for all 118 formations — discover all productive accident candidates (formations that compose but don't declare participation in the same function) | Agent | swarm-topology-spec.md, signal algebra | IRF-LIQ-006 (function signal profiles) |
+
+---
+
 ## ORGAN-II — Object Lessons
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -878,6 +897,22 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-195 | dbt-mcp patterns absorbed — 5 architectural patterns identified (ToolAnnotations, toolset grouping, prompt-as-file, context injection, MCP Apps). 3 issues created on organvm-mcp-server (#6, #7, #8). | Plague campaign S35 | 2026-03-24 |
 | DONE-196 | Topology inspiration issues — 4 issues on agentic-titan (#57-#60): terms of venery naming, programmable matter model, Prey dynamics, continuous topology morphing. m13v follow-up posted linking all four. | Plague campaign S35 | 2026-03-24 |
 | DONE-197 | System-wide covenants — "System Simply Knows" installed as Supreme Operating Principle (workspace-level memory). "Full Context Ingestion" + "Never Make Human Look Stupid" + "Never Defer to Human" doctrines codified. | Plague campaign S35 | 2026-03-24 |
+| DONE-198 | PROOF-reservoir-placement.md v2 — formal 5-lemma proof that cross-organ RESERVOIR formations belong in ORGAN-I. Derived from Formation Protocol §7.2 physiological role, signal law §8.1, Constitutional Map §9. META excluded (genome ≠ memory). | S29 (post-flood) | 2026-03-21 |
+| DONE-199 | Post-flood constitutional implementation — SignalClass §8.1 replacement (14 signals), registry schema v1.2.0 (functional_class + formation_type), seed schema extensions, batch classification (118 repos), governance wiring (audit + promotion gates + placement). 4631→4783 engine tests. | S29 (post-flood) | 2026-03-21 |
+| DONE-200 | Signal algebra module — `signal_algebra.py`: 14 Greek letter variables, composability checking (f∘g valid iff output(g)∩input(f)≠∅), reservoir law validation, signature parsing/rendering. 32 tests. Commit `088f673`. | S29 (post-flood) | 2026-03-22 |
+| DONE-201 | Named functions module — `named_functions.py`: 9 named functions (theoria→mneme + genome), organ↔function bridge, participation validation. 33 tests. Commit `088f673`. | S29 (post-flood) | 2026-03-22 |
+| DONE-202 | Functions CLI — `organvm functions list` + `organvm functions resolve <key>`. FUNCTION_DIR_MAP. Backward-compatible resolution. 23 tests. Commit `e680fa9`. | S29 (post-flood) | 2026-03-22 |
+| DONE-203 | organ-definitions.json v2.0 — numbered organs → named functions + Mneme (8th function) + genome. Schema v2.0 with `legacy_organ_map`. Commit `ddd044f`. | S29 (post-flood) | 2026-03-22 |
+| DONE-204 | governance-rules.json — LIQ-001 through LIQ-007. Named functions, formation participation, signal signatures, Mneme, genome governance, flat hierarchy, extended reservoir law. Commit `4150ad2`. | S29 (post-flood) | 2026-03-22 |
+| DONE-205 | SPEC-019: System Manifestation — 650-line specification: liquid constitutional order, named functions, signal signatures, one-org flat hierarchy, Mneme, formation.yaml as identity, 7 invariants. | S29 (post-flood) | 2026-03-22 |
+| DONE-206 | Commit history preservation strategy — 4 transfer methods, 8 migration phases, verification scripts, risk mitigation. `SPEC-019-system-manifestation/commit-history-preservation.md`. | S29 (post-flood) | 2026-03-22 |
+| DONE-207 | The Covenant of ORGANVM — River Ordinance (Phlegethon→Acheron→Cocytus→Styx→Lethe), 7 principles, Mneme as keeper. Zero-order constitutional authority. `COVENANT.md`. | S29 (post-flood) | 2026-03-24 |
+| DONE-208 | Research paper: "From Numbered Organs to Named Functions" — 25 references, 9 sections, §8.4 Governed Serendipity. Author name corrected across all 15 preprints (Anthony James Padavano). | S29 (post-flood) | 2026-03-24 |
+| DONE-209 | Organ systems mapping — all 11 biological systems mapped to ORGANVM analogs. Score: 9/11 present, 2 partial. 3 gaps identified (excretory, reproductive, swarm). | S29 (post-flood) | 2026-03-24 |
+| DONE-210 | Excretory system spec — three-pass filtration for architectural waste. Dead signals, isolated formations, stale repos, classification drift, governance debt. Academic grounding: Cunningham, Xiao, Beer. | S29 (post-flood) | 2026-03-24 |
+| DONE-211 | Reproductive system spec — von Neumann self-reproducing automata applied. Genome (governance rules, schemas, signal vocabulary, covenant) transmitted; phenotype (formations, memory) not. Freitas-Merkle 137 design dimensions. | S29 (post-flood) | 2026-03-24 |
+| DONE-212 | Swarm topology spec — computed signal affinity reveals emergent function participation. Boids parallel (separation/alignment/cohesion). Discovery list, orphan list, affinity map. | S29 (post-flood) | 2026-03-24 |
+| DONE-213 | IRF Liquid Constitutional Order domain created — 12 items (IRF-LIQ-001 through 012) covering org creation, distillation pipeline, excretory/reproductive/swarm CLIs, context propagation, composability matrix. | S29 (post-flood) | 2026-03-24 |
 
 ---
 
@@ -897,19 +932,20 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-- **Total active items:** 175 (177 prior − 2 completed close-out: IRF-APP-008, IRF-APP-010)
-- **P0 (NOW):** 13
-- **P1 (SOON):** 62 (61 prior + 1 new P1: IRF-PRT-003)
-- **P2 (GROWTH):** 91 (87 prior + 4 new P2: IRF-PRT-004, 005, 006, 007)
-- **P3 (HORIZON):** 12 (10 prior + 2 new P3: IRF-PRT-008, 009)
-- **Completed:** 189 (DONE-001 through DONE-189, plus DONE-114a; DONE-126 superseded by DONE-134→140)
+- **Total active items:** 187 (175 prior + 12 new LIQ domain: IRF-LIQ-001 through 012)
+- **P0 (NOW):** 14 (13 prior + 1 new: IRF-LIQ-001)
+- **P1 (SOON):** 66 (62 prior + 4 new: IRF-LIQ-002, 003, 004, 009, 010)
+- **P2 (GROWTH):** 98 (91 prior + 7 new: IRF-LIQ-005, 006, 007, 008, 011, 012)
+- **P3 (HORIZON):** 12
+- **Completed:** 213 (DONE-001 through DONE-213, plus DONE-114a; 16 new from S29 post-flood session)
 - **Blocked:** 1 (IRF-SYS-008)
-- **Domains:** 23
+- **Domains:** 24 (23 prior + LIQ)
 
 ### By Domain
 
 | Domain | Active | DONE (domain) |
 |--------|--------|---------------|
+| LIQ (Liquid Constitutional Order) | 12 | 16 |
 | CCE (Corpus Engine) | 8 | 22 |
 | SYS (System-wide) | 17 | 3 |
 | IDX (Index apparatus) | 3 | 2 |
@@ -935,8 +971,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | HRM (Hermeneus) | 5 | 10 |
 | DOM (Domus Infrastructure) | 7 | 6 |
 | Cross-session (S23-S30+) | 0 | 81 |
-| **Active IRF items** | **170** | — |
-| **Total DONE entries** | — | **161** |
+| **Active IRF items** | **187** | — |
+| **Total DONE entries** | — | **213** |
 
 *Note: "Active" counts explicit IRF-xxx items with OPEN status. "DONE (domain)" counts DONE-xxx entries attributable to that domain. "Cross-session" captures DONE entries from general session work (CI fixes, dependency bumps, security remediations, engine features, creative sprints, product rebrands, infra expansion) that don't map to a single domain prefix.*
 
