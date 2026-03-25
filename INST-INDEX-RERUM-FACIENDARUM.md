@@ -100,6 +100,8 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-MON-001 | P2 | Deploy vigiles-aeternae watcher orders as scheduled monitoring agents (cron/Actions) | Agent | Wants list, S12 | Code exists, deployment config needed |
 | IRF-MON-002 | P2 | Connect auditor findings to omega scorecard — watchers report on criteria health | Agent | Wants list | None |
 | IRF-MON-003 | P3 | Continuous auditor mode — IRA running on schedule, not just on-demand | Agent | Wants list | Needs deployment infrastructure |
+| IRF-MON-004 | P1 | **System density historical snapshots** — `Δ24h: n/a | Δ7d: n/a` in CLAUDE.md auto-gen section. The density computation (`organvm density`) runs but stores no historical snapshots for temporal delta comparison. Need: (a) snapshot storage (JSON/YAML per-run, timestamped), (b) delta computation against T-24h and T-7d, (c) scheduled execution (LaunchAgent or GitHub Action) to populate history. Without deltas, the system cannot detect drift, regression, or acceleration — monitoring without memory is observation without diagnosis | Agent | S35 N/A vacuum audit | None |
+| IRF-MON-005 | P2 | **Pipeline audit trail** — `Last pipeline: unknown` in CLAUDE.md task queue section. The atom pipeline (`organvm atoms pipeline`) runs but doesn't record execution metadata (timestamp, duration, success/failure, item counts). Need: (a) pipeline execution log (append-only YAML/JSON), (b) last-run timestamp surfaced in context generator output. Currently invisible to session start context | Agent | S35 N/A vacuum audit | None |
 
 ---
 
@@ -368,7 +370,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| ~~IRF-PRT-002~~ | ~~P2~~ | ~~Re-evaluate security allowlist (h3, fast-xml-parser) by 2026-04-03 — GitHub issue #66~~ — **PARTIAL**: h3 resolved (1.15.10), allowlist entry removed, GH#66 commented. fast-xml-parser entries remain (expire 2026-04-03). Commit `86d505d`. | Agent | S24 | Completed S34 (h3 portion) |
+| ~~IRF-PRT-002~~ | ~~P2~~ | ~~Re-evaluate security allowlist (h3, fast-xml-parser) by 2026-04-03 — GitHub issue #66~~ — **DONE**: Both chains fully resolved. h3@1.15.10 (2026-03-23), fast-xml-parser upstream fix (2026-03-24). Allowlist empty, `npm audit` 0 vulns. GH#47 closed, GH#66 closed. | Agent | S24 | Completed 2026-03-24 |
 | IRF-PRT-003 | **P1** | **Register portfolio in registry-v2.json** — flagship PERSONAL/LIMINAL project has a seed.yaml but NO entry in the central registry (97+ repos tracked, portfolio invisible). Add entry with: organ PERSONAL, tier flagship, status CANDIDATE, promotion PUBLIC_PROCESS, CI workflow, 496 tests, deployment URL. Unblocks network density metrics and fleet-wide queries. Parallel to IRF-DOM-002 (domus registration) | Agent | S34 N/A vacuum audit | None |
 | IRF-PRT-004 | P2 | **Refresh testament artifacts for portfolio** — currently registered as "showcase-portfolio" (wrong identifier) and marked ARCHIVED (wrong status; project is CANDIDATE/PUBLIC_PROCESS and actively maintained). Regenerate testament visual artifacts with correct identifier "portfolio" and current promotion state. Dependency maintenance events (like today's h3 security fix) should be testament-recordable | Agent | S34 N/A vacuum audit | Testament regeneration tooling |
 | IRF-PRT-005 | P2 | **Enrich seed.yaml with signal edges** — produces/consumes arrays are empty but portfolio actually produces (quality-metrics.json, OG images, RSS feed, GitHub Pages index, trust-vitals.json) and consumes (system-metrics.json from organvm-engine, essay data from corpus). Declare as signal_inputs/signal_outputs to make cross-boundary data flows visible to dependency audits | Agent | S34 N/A vacuum audit | None |
@@ -413,6 +415,10 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-DOM-006 | P1 | Add domus to omega evidence map — document its role as silent foundational dependency for #1, #16, #17, #19. The S32 rewrite (50ms startup, zero-error boot) is direct evidence for #17 (autonomous ops). Currently invisible in evidence map | Agent | S29 E2G audit, S32 rewrite | IRF-DOM-002 |
 | IRF-DOM-007 | P3 | Shell parity enforcement gate — wire domus-shell-parity into CI as a required check, not just a diagnostic tool. Prevent zsh/fish drift from accumulating | Agent | S29 E2G audit | None |
 | IRF-DOM-008 | P2 | Seed.yaml capability refresh — add `_domus_cache_init` as a produces artifact (tool: cache-primitive), add `op-refresh` as a declared capability. Current seed from S29 predates the S32 rewrite | Agent | S32 rewrite discovery | IRF-DOM-001 ✓ |
+| IRF-DOM-009 | P2 | Document cloud storage nuke-and-pave (S35) — Dropbox was crashed with 760MB stale data across 8 locations, Google Drive manually installed. Both reinstalled via Homebrew casks. Old Dropbox had 3 stale LaunchAgent updaters, corrupt XDG data dir, `app_crashed.dbx` marker. Session discovered no Brewfile exists in domus at all. GH#4. | Agent | S35 vacuum audit | None |
+| IRF-DOM-010 | **P1** | **Create Brewfile for domus** — `brew bundle` is referenced in CLAUDE.md install-packages script but no Brewfile exists. Neither formulae nor casks are tracked. New machine bootstrap will miss Dropbox, Google Drive, and all other Homebrew-managed tools. GH#4. | Agent | S35 vacuum audit | None |
+| IRF-DOM-011 | P2 | Manage rclone config via chezmoi — `~/.config/rclone/rclone.conf` contains OAuth tokens for `dbx:`, `gdrive:`, `onedrive:` remotes. Not chezmoi-managed. Needs either 1Password secret refs or `.chezmoiignore` treatment (tokens rotate). New machine won't have backup cloud access paths | Agent | S35 vacuum audit | None |
+| IRF-DOM-012 | P3 | Update domus `dropbox` CLI wrapper — `~/.local/bin/dropbox` references `DROPBOX_SOCKET` at `$HOME/.dropbox/command_socket` via XDG symlink. Fresh Homebrew install creates `~/.dropbox` as a real directory (not the old symlink to `~/.local/share/dropbox`). Wrapper logic may need path update | Agent | S35 discovery | None |
 
 ---
 
@@ -918,6 +924,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-211 | Reproductive system spec — von Neumann self-reproducing automata applied. Genome (governance rules, schemas, signal vocabulary, covenant) transmitted; phenotype (formations, memory) not. Freitas-Merkle 137 design dimensions. | S29 (post-flood) | 2026-03-24 |
 | DONE-212 | Swarm topology spec — computed signal affinity reveals emergent function participation. Boids parallel (separation/alignment/cohesion). Discovery list, orphan list, affinity map. | S29 (post-flood) | 2026-03-24 |
 | DONE-213 | IRF Liquid Constitutional Order domain created — 12 items (IRF-LIQ-001 through 012) covering org creation, distillation pipeline, excretory/reproductive/swarm CLIs, context propagation, composability matrix. | S29 (post-flood) | 2026-03-24 |
+| DONE-214 | Portfolio security allowlist fully resolved — both h3 and fast-xml-parser chains auto-removed by lifecycle workflow. Allowlist empty, `npm audit` 0 vulns. GH#47 confirmed, GH#66 closed with resolution summary. IRF-PRT-002 complete. | S35 (security check) | 2026-03-24 |
 
 ---
 
