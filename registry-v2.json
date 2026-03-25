@@ -1626,6 +1626,28 @@
           "functional_class": "INFRASTRUCTURE"
         },
         {
+          "name": "content-engine--asset-amplifier",
+          "org": "organvm-iii-ergon",
+          "status": "ACTIVE",
+          "public": true,
+          "type": "SaaS",
+          "description": "AI content repurposing engine — one premium asset → 30-90 days of platform-optimized social content. Partnership between Padavano (engineering) and Lefler Design (UI/UX, marketing, sales).",
+          "display_name": "Content Engine (Asset Amplifier)",
+          "documentation_status": "SKELETON",
+          "portfolio_relevance": "HIGH - AI-powered content automation with real partnership",
+          "dependencies": [],
+          "promotion_status": "LOCAL",
+          "tier": "standard",
+          "last_validated": "2026-03-25",
+          "note": "Genesis 2026-03-23. Pre-MVP skeleton. Fastify API + AI pipeline + social platform adapters.",
+          "implementation_status": "ACTIVE",
+          "ci_workflow": null,
+          "platinum_status": false,
+          "revenue_model": "subscription",
+          "revenue_status": "pre-launch",
+          "functional_class": "APPLICATION"
+        },
+        {
           "name": "card-trade-social",
           "org": "organvm-iii-ergon",
           "status": "ARCHIVED",
