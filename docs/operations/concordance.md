@@ -512,6 +512,65 @@ Source: `organvm-engine/src/organvm_engine/cli/` — command groups registered u
 |---------|-------------|
 | `organvm testament record-session` | Record architecture events from git diff range |
 
+### CCE Commands (S33, 2026-03-24)
+
+Source: `conversation-corpus-engine/src/conversation_corpus_engine/cli.py` — entry point `cce`.
+
+| Command | Description |
+|---------|-------------|
+| `cce corpus list \| register` | Manage corpus registry |
+| `cce federation build` | Materialize cross-corpus federated indices |
+| `cce provider discover \| readiness \| import \| bootstrap-eval \| refresh` | Provider lifecycle |
+| `cce evaluation run` | Run regression gate evaluation |
+| `cce review queue \| history \| resolve \| triage` | Federated review queue + auto-triage |
+| `cce policy show \| replay \| stage \| review \| apply \| rollback` | Promotion threshold governance |
+| `cce candidate show \| history \| stage \| review \| promote \| rollback` | Corpus candidate workflow |
+| `cce schema list \| show \| validate` | Inspect/validate 8 JSON schema contracts |
+| `cce surface manifest \| context \| bundle` | Meta/MCP-facing surface exports |
+| `cce source-policy show \| set \| history` | Per-provider source authority |
+| `cce source freshness` | Source staleness check |
+| `cce dashboard` | Operator-facing health summary |
+| `cce migration seed-from-staging` | Bootstrap registry from legacy staging root |
+
+### CCE Triage Policies (S33, 2026-03-24)
+
+| Policy | Type | Decision | Description |
+|--------|------|----------|-------------|
+| `exact-cross-corpus` | All | accept | Same local ID across different corpora |
+| `slug-match` | family/action/unresolved-merge | accept | Same title slug, different UUID suffix |
+| `prefix-entity-alias` | entity-alias | accept | One entity ID is prefix of other (cross-corpus) |
+| `noise-entity` | entity-alias | reject | Numeric/null/boolean entity tokens |
+| `short-entity` | entity-alias | reject | Entity ID too short to be meaningful |
+| `contradiction-defer` | contradiction | defer | Contradictions require human review |
+
+### CCE Artifact Types (S33, 2026-03-24)
+
+| Artifact | Schema | Location |
+|----------|--------|----------|
+| `import-audit.json` | (unschematized) | `{corpus}/corpus/import-audit.json` |
+| `near-duplicates.json` | (unschematized) | `{corpus}/corpus/near-duplicates.json` |
+| `dashboard-payload` | (JSON via `--json`) | `cce dashboard --json` output |
+| `triage-plan` | (JSON via `--json`) | `cce review triage --json` output |
+
+### CCE Providers (S33, 2026-03-24)
+
+| Provider | Adapter Type | Discovery Mode |
+|----------|-------------|----------------|
+| `chatgpt` | chatgpt-export | chatgpt-bundle |
+| `claude` | claude-export | claude-bundle |
+| `gemini` | gemini-export | document-export |
+| `grok` | grok-export | document-export |
+| `perplexity` | perplexity-export | document-export |
+| `copilot` | copilot-export | document-export |
+| `deepseek` | deepseek-export | document-export |
+| `mistral` | mistral-export | document-export |
+
+### Omega Proposals (S33, 2026-03-24)
+
+| ID | Text | Status |
+|----|------|--------|
+| `OM-MEM-001` | Memory infrastructure demonstrates closed-loop autopoiesis — ≥1 session transcript completes ingest→normalize→evaluate→federate→surface→consume lifecycle | Proposed, evidence demonstrated, awaiting formal amendment |
+
 ---
 
 ## URI Schemes
