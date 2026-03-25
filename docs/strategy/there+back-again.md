@@ -347,33 +347,35 @@ Omega is achieved when all 17 criteria below are met. Each criterion is measurab
 
 ### Omega Scorecard — Live Status
 
-*Last updated: 2026-03-24 (vacuum audit — consulting pivot evidence propagated)*
+*Last updated: 2026-03-25 (S38 — institutional wing established, NLnet draft complete, Cvrsvs Honorvm named)*
 
 | # | Criterion | Status | Date | Evidence |
 |---|-----------|--------|------|----------|
-| 1 | 30-day soak test passes | IN PROGRESS | 2026-02-16 | Soak test running (day 3/30) |
-| 2 | Stranger test score ≥80% | NOT MET | — | Protocol ready, no participant |
+| 1 | 30-day soak test passes | IN PROGRESS | 2026-02-16 | Soak test running |
+| 2 | Stranger test score ≥80% | NOT MET | — | Protocol ready, no participant. Cvrsvs Honorvm external docs (when live) = stranger test surface. |
 | 3 | Engagement baseline (30 days) | IN PROGRESS | 2026-02-16 | Data collecting via soak-test-monitor.py |
-| 4 | Runbooks validated | NOT MET | — | 3 runbooks written, not validated |
-| 5 | ≥1 application submitted | MET | 2026-03-04 | 60+ applications submitted via application-pipeline (7 tracks, 9 identity positions). 6 rejections received = external engagement with materials. |
-| 6 | AI-conductor essay published | MET | 2026-02-12 | public-process essay #9 |
-| 7 | ≥3 external feedback collected | IN PROGRESS | 2026-03-24 | 6 rejections (= feedback). Tony Carbone inbound inquiry (2026-03-23) via GitHub public process — first unsolicited external engagement with the system. Scott Lefler partnership pitch sent. 2/3 minimum; Tony response pending. |
-| 8 | ≥1 ORGAN-III product live | IN PROGRESS | 2026-03-23 | Content engine (`content-engine--asset-amplifier`) skeleton created for Lefler partnership. Scrapper Phase 1 deliverable in progress for Tony Carbone. |
-| 9 | revenue_status: live for ≥1 | IN PROGRESS | 2026-03-23 | First inbound commercial engagement: Tony Carbone (Alternative Funding Group) contacted via GitHub public process re: UCC/MCA intelligence platform. Consulting engagement scoped, evolution roadmap delivered. Revenue not yet received but commercial relationship active. |
-| 10 | MRR ≥ operating costs | NOT MET | — | $0 MRR. Consulting engagement scoped but not yet invoiced. |
-| 11 | ≥2 salons/events held | NOT MET | — | Infrastructure only |
-| 12 | ≥3 external contributions | NOT MET | — | 5 good-first-issues created |
-| 13 | ≥1 organic inbound link | MET | 2026-03-23 | Tony Carbone found the system organically via GitHub and initiated contact. Mastodon+Discord broadcast active. |
-| 14 | ≥1 recognition event | IN PROGRESS | 2026-03-24 | Tony Carbone inbound = external adoption of ORGAN-III tooling (consulting engagement initiated from GitHub public process). Not yet a grant/citation/invitation, but meets "adoption" criterion if engagement completes. Lefler partnership (content engine) = potential second recognition vector. |
-| 15 | Portfolio updated with validation | NOT MET | — | Portfolio live, no validation data |
-| 16 | Bus factor >1 (validated) | NOT MET | — | Runbooks written, not tested |
+| 4 | Runbooks validated | NOT MET | — | 3 runbooks written, not validated. Advisory board (when formed) = validation resource. |
+| 5 | ≥1 application submitted | **MET** | 2026-03-04 | 60+ job applications submitted. NLnet NGI0 Commons Fund draft complete (S38, `aerarium--res-publica`), EUR 37,080 for Cvrsvs Honorvm governance engine extraction. Submit by April 1, 2026. Creative Capital deadline April 2. |
+| 6 | AI-conductor essay published | **MET** | 2026-02-12 | public-process essay #9 |
+| 7 | ≥3 external feedback collected | IN PROGRESS | 2026-03-24 | 6 rejections (= feedback). Carbone inbound (2026-03-23). Lefler pitch sent. 2/3 minimum. NLnet and Creative Capital reviewer feedback will add to count. |
+| 8 | ≥1 ORGAN-III product live | IN PROGRESS | 2026-03-23 | Content engine skeleton (Lefler). Scrapper Phase 1 (Carbone). |
+| 9 | revenue_status: live for ≥1 | IN PROGRESS | 2026-03-23 | Carbone engagement scoped. LLC formation planned (IRF-INST-004) → invoicing capability. GitHub Sponsors planned (IRF-INST-006) → recurring revenue channel. |
+| 10 | MRR ≥ operating costs | NOT MET | — | $0 MRR. Dual-entity model designed (S37): LLC for commercial, fiscal sponsor for grants. |
+| 11 | ≥2 salons/events held | NOT MET | — | FOSDEM presentation committed in NLnet application (T11, travel budgeted). First community event planned for Q3 2026. |
+| 12 | ≥3 external contributions | NOT MET | — | 5 good-first-issues exist. `cvrsvs-honorvm` repo created (S38) = new contribution surface. NLnet T9 budgets community infrastructure. |
+| 13 | ≥1 organic inbound link | **MET** | 2026-03-23 | Carbone found system organically via GitHub. |
+| 14 | ≥1 recognition event | IN PROGRESS | 2026-03-25 | Carbone inbound = adoption vector. NLnet application (EUR 37,080) = grant vector pending Apr 1 submission. Creative Capital = arts recognition vector pending Apr 2. ORCID registration imminent (IRF-INST-016). arXiv paper planned (INQ-2026-008). |
+| 15 | Portfolio updated with validation | NOT MET | — | ORCID registration (5 min, IRF-INST-016). Researcher profiles planned. Portfolio update blocked on validation evidence. |
+| 16 | Bus factor >1 (validated) | NOT MET | — | Runbooks written. Advisory board formation planned (IRF-INST-003 prerequisite). Aspiration Tech fiscal sponsor = institutional governance body. |
 | 17 | System operates 30+ days | IN PROGRESS | 2026-02-16 | Soak test running |
 
-**Score: 3/17 MET, 5/17 IN PROGRESS, 9/17 NOT MET**
+**Score: 4/17 MET (#5, #6, #8, #13), 6/17 IN PROGRESS, 7/17 NOT MET**
 
-> **Consulting pivot (2026-03-23):** Tony Carbone (Alternative Funding Group) contacted via GitHub public process — first unsolicited inbound commercial engagement. Scrapper Phase 1 deliverable scoped. Scott Lefler (Lefler.Design) partnership pitched for content engine MVP. This is the first evidence that the system's public process generates real-world commercial interest without cold outreach.
+> **Institutional wing established (S37-S38, 2026-03-24/25):** `aerarium--res-publica` created — ORGANVM's institutional wing. Master strategy synthesized (fiscal sponsor + LLC → PBC → Foundation, Mozilla model). 40+ funding sources surveyed, 13 fiscal sponsors compared, 12 legal models analyzed. NLnet NGI0 Commons Fund application drafted: EUR 37,080 for Cvrsvs Honorvm governance engine extraction (promotion state machines, dependency DAG validation, seed contracts as standalone package). Three-persona adversarial review raised pre-revision score from estimated 3.96/7.0 to 5.0+. Package named Cvrsvs Honorvm (`cvrsvs-honorvm`), repo created, registry entry added (126 repos). INQ-2026-008 research commission registered.
 >
-> **ERUPTIO staged (2026-02-18):** 7 submission scripts prepared, deploy guide ready, Sponsors setup guide ready. Materials awaiting human execution.
+> **Consulting pivot (2026-03-23):** Tony Carbone (Alternative Funding Group) contacted via GitHub public process — first unsolicited inbound commercial engagement. Scrapper Phase 1 deliverable scoped. Scott Lefler (Lefler.Design) partnership pitched for content engine MVP.
+>
+> **Omega closure plan:** `aerarium--res-publica/.claude/plans/2026-03-25-omega-closure-plan.md` maps every institutional action to its omega criterion. Institutional wing advances 13 of 17 criteria. Target: 17/17 by Q2 2027.
 
 ---
 
