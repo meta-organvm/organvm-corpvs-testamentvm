@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-27T07:02:32.045532+00:00",
+  "generated_at": "2026-03-27T18:16:33.760871+00:00",
   "system": {
-    "total_repos": 127,
-    "active_repos": 71,
-    "density": 0.263,
-    "entities": 127,
+    "total_repos": 128,
+    "active_repos": 72,
+    "density": 0.262,
+    "entities": 128,
     "edges": 0,
     "ci_workflows": 106,
     "code_files": 0,
@@ -454,9 +454,9 @@
     {
       "key": "ORGAN-III",
       "name": "Commerce",
-      "repo_count": 30,
+      "repo_count": 31,
       "flagship_count": 2,
-      "standard_count": 24,
+      "standard_count": 25,
       "infrastructure_count": 1,
       "repositories": [
         {
@@ -635,6 +635,12 @@
         },
         {
           "name": "styx-behavioral-commerce",
+          "status": "LOCAL",
+          "tier": "standard",
+          "ci": false
+        },
+        {
+          "name": "sovereign-systems--elevate-align",
           "status": "LOCAL",
           "tier": "standard",
           "ci": false
@@ -863,8 +869,8 @@
     }
   ],
   "variables": {
-    "total_repos": "127",
-    "active_repos": "71",
+    "total_repos": "128",
+    "active_repos": "72",
     "archived_repos": "54",
     "total_organs": "8",
     "operational_organs": "8",
@@ -882,7 +888,7 @@
     "organ_name.ORGAN-I": "Theory",
     "organ_repos.ORGAN-II": "32",
     "organ_name.ORGAN-II": "Art",
-    "organ_repos.ORGAN-III": "30",
+    "organ_repos.ORGAN-III": "31",
     "organ_name.ORGAN-III": "Commerce",
     "organ_repos.ORGAN-IV": "18",
     "organ_name.ORGAN-IV": "Orchestration",
@@ -903,7 +909,7 @@
     "ARCHIVED": 54,
     "CANDIDATE": 1,
     "GRADUATED": 55,
-    "LOCAL": 13,
+    "LOCAL": 14,
     "PUBLIC_PROCESS": 4
   }
 }
