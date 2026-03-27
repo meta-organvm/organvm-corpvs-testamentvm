@@ -1069,6 +1069,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-250 | **IRF-APP-034 (sovereign-systems) closed** — explore page gated behind email capture form. Netlify Function with validation. | S-elevate-purify | 2026-03-27 |
 | DONE-251 | **IRF-APP-036 (sovereign-systems) closed** — Netlify site renamed from lambent-crumble to elevate-align-spiral. | S-elevate-purify | 2026-03-27 |
 | DONE-252 | **IRF-APP-037 (sovereign-systems) DEFERRED** — Keystatic CMS removed during purification. Tracked in GitHub Issue #1 for re-add after pricing. | S-elevate-purify | 2026-03-27 |
+| DONE-253 | **Cloudflare Pages migration.** Netlify exhausted → sovereign-systems-spiral.pages.dev. CF Pages Function for email capture. All docs/configs updated. 200 on all routes. | S-elevate-cf | 2026-03-27 |
+| DONE-254 | **Citation tooltips live.** Lazy-loaded /citations.json (263 entries). Desktop hover + mobile tap. Viewport-aware positioning. prebuild step generates JSON from corpus-canon. | S-elevate-tooltip | 2026-03-27 |
+| DONE-255 | **Mobile-first overhaul.** Hamburger nav (<768px), tap-aware tooltips, 37-point modular test sweep (36 PASS / 1 PARTIAL). All tap targets ≥44px verified. | S-elevate-mobile | 2026-03-27 |
+| DONE-256 | **Three-layer funnel.** FREE (hooks) → EMAIL GATE (deep content) → SALE (product CTAs). EmailGate.astro shared component. Branch pages, pillar pages, /research, /explore all gated. Single localStorage key. | S-elevate-funnel | 2026-03-27 |
+| DONE-257 | **Pillar content expansion.** All 4 pillars rewritten to Physical Sovereignty pattern: 6 domains, opening reframe, practical entry point, spiral connection. Removed raw ## Bridge/CTA headings. | S-elevate-content | 2026-03-27 |
+| DONE-258 | **Gemini session code review.** 15 issues catalogued (4 critical, 5 important, 6 suggestions). Content quality: strong. Architecture: React/Keystatic over-engineered. All issues resolved in purification PR #2. | S-elevate-review | 2026-03-27 |
 
 ---
 
