@@ -91,10 +91,10 @@ Implications:
 
 Encoded as: AX-6 (Signal Closure) + LIQ-008 (Signal Closure Across Functions) in `governance-rules.json`.
 
-### Amendment G: Triadic Self-Knowledge — Lex Reflexionis
-*Source: First-principles derivation from the observation that every directory is the concrete realization of an idealized form — an intersection of functionalities at work. Ratified 2026-03-30.*
+### Amendment G: Tetradic Self-Knowledge — Lex Reflexionis
+*Source: First-principles derivation from the observation that every directory is the concrete realization of an idealized form — an intersection of functionalities at work — and that creation is completed by reception, not by intention. Ratified 2026-03-30.*
 
-Every non-archived formation in the system embodies an idealized form. That form has three constitutive dimensions:
+Every non-archived formation in the system embodies an idealized form. That form has four constitutive dimensions:
 
 1. **TELOS** (τέλος) — The theory, thesis, or dream that called the formation into existence. The intersectional functionalities it idealizes. Why it was conceived. What the world looks like if this formation achieves its purpose.
 
@@ -102,16 +102,20 @@ Every non-archived formation in the system embodies an idealized form. That form
 
 3. **PRAXIS** (πρᾶξις) — The remediation plan. The attack vectors for sharpening and fortifying. The specific actions that close the gap between ideal and real. Not aspirational roadmap but concrete plans of attack addressing known failures and deficiencies.
 
-Insights and theories are not ephemeral. They are structural obligations. Every directory in the system — since at its core it is an idealized form of some intersectional functionalities at work — has dreams for the dream that formed it, the concrete realized, and plans of attack for the difference between them. These three must be explicitly articulated, not left implicit in the developer's head or scattered across undiscoverable session logs.
+4. **RECEPTIO** (receptiō) — The account of reception. How the formation has been received, used, critiqued, adopted, transformed, or ignored by audiences beyond its creator. A shovel is only a shovel if it shovels — a theory of shovels does not clear the driveway snow. A book is only the author's exercise as they write it; it becomes an organism when read and imagined by an audience. The society that responds — that attempts to know, critiques, makes art — the culture sitting around the project tells the reception of the project as a living tool. For formations not yet received: the intended reception strategy and what reception would validate the telos. For formations that have been received: documented evidence of that reception.
+
+Insights and theories are not ephemeral. They are structural obligations. Every directory in the system — since at its core it is an idealized form of some intersectional functionalities at work — has dreams for the dream that formed it, the concrete realized, plans of attack for the difference between them, and the society that responds to validate its existence as a real thing in the world. All four must be explicitly articulated.
 
 **Implications:**
-1. Every non-archived `seed.yaml` must include `telos`, `pragma`, and `praxis` fields (schema v1.2)
+1. Every non-archived `seed.yaml` must include `telos`, `pragma`, `praxis`, and `receptio` fields (schema v1.2)
 2. Empty or placeholder values are violations — the fields demand genuine self-knowledge
-3. The triadic fields are consumed by: context generation (`organvm context sync`), signal routing (a formation that doesn't know its own purpose can't participate coherently in signal flows), audit (`organvm governance audit --self-knowledge`), and the Stranger Test (a reviewer encountering the formation should immediately understand its dream, its reality, and its plan)
+3. The tetradic fields are consumed by: context generation (`organvm context sync`), signal routing (a formation that doesn't know its own purpose can't participate coherently in signal flows), audit (`organvm governance audit --self-knowledge`), and the Stranger Test (a reviewer encountering the formation should immediately understand its dream, its reality, its plan, and its reception)
 4. The fields evolve as the formation evolves — they are living documents, not static declarations
-5. AX-7 extends AX-6: signal closure requires that outputs exist elsewhere; triadic self-knowledge requires that the *reason for those outputs* is articulated within
+5. AX-7 extends AX-6: signal closure requires that outputs exist elsewhere; tetradic self-knowledge requires that the *reason for those outputs* is articulated within and that the *response to those outputs* is captured back
+6. The feedback flows (VII/VI/V → I) are the constitutional mechanism by which reception reaches the formation. AX-6 mandates outward signal flow; LIQ-010 mandates that the response flows back and is recorded. The loop must close.
+7. A GRADUATED formation with no documented reception is a constitutional anomaly — promoted without evidence that it exists as anything other than its creator's intention
 
-Encoded as: AX-7 (Triadic Self-Knowledge) + RR-6 (Triadic Articulation) + LIQ-009 (Reflexive Knowledge Obligation) in `governance-rules.json`.
+Encoded as: AX-7 (Tetradic Self-Knowledge) + RR-6 (Tetradic Articulation) + LIQ-009 (Reflexive Knowledge Obligation) + LIQ-010 (Reception Completes Existence) in `governance-rules.json`.
 
 ## Post-Launch Reviews
 

@@ -273,11 +273,11 @@
       },
       {
         "id": "AX-7",
-        "name": "Triadic Self-Knowledge (Lex Reflexionis)",
-        "statement": "Every non-archived formation is the concrete realization of an idealized form. That ideal form has three constitutive dimensions that must be explicitly articulated: (1) TELOS — the theory, thesis, or dream that called the formation into existence; the intersectional functionalities it idealizes; (2) PRAGMA — the honest account of what has been concretely realized; the delta between the dream and the thing built; (3) PRAXIS — the remediation plan for closing the gap between ideal and real; the attack vectors for sharpening, fortifying, and resolving the difference. These are not metadata annotations — they are constitutive of the formation's self-knowledge. A formation that cannot articulate its own telos, pragma, and praxis does not fully know itself, and a formation that does not know itself cannot participate coherently in signal flows. Insights and theories are not ephemeral — they are structural obligations of every directory in the system.",
+        "name": "Tetradic Self-Knowledge (Lex Reflexionis)",
+        "statement": "Every non-archived formation is the concrete realization of an idealized form. That form has four constitutive dimensions that must be explicitly articulated: (1) TELOS — the theory, thesis, or dream that called the formation into existence; the intersectional functionalities it idealizes; (2) PRAGMA — the honest account of what has been concretely realized; the delta between the dream and the thing built; (3) PRAXIS — the remediation plan for closing the gap between ideal and real; the attack vectors for sharpening, fortifying, and resolving the difference; (4) RECEPTIO — the account of how the formation has been received, used, critiqued, adopted, or transformed by audiences beyond its creator. A formation without reception is a theory of shovels that has never cleared snow. A book is only masturbation as the author writes it; it becomes an organism when read and imagined by an audience. The culture sitting around the project — the reviews, the critiques, the art made in response, the community that forms — tells the reception of the project as a living tool. Creation is necessary but not sufficient; existence is completed by reception. These are not metadata annotations — they are constitutive. A formation that cannot articulate its telos, pragma, praxis, and receptio does not fully exist as a participant in the signal graph.",
         "enforcement": "audit",
-        "validator": "validate_triadic_self_knowledge",
-        "references": ["constitution.md Amendment G", "seed.yaml telos/pragma/praxis fields", "AX-6 Signal Closure"],
+        "validator": "validate_tetradic_self_knowledge",
+        "references": ["constitution.md Amendment G", "seed.yaml telos/pragma/praxis/receptio fields", "AX-6 Signal Closure"],
         "severity": "warning"
       }
     ],
@@ -424,11 +424,11 @@
       },
       {
         "id": "RR-6",
-        "name": "Triadic Articulation",
-        "statement": "Every non-archived repository must articulate the three dimensions of AX-7 (Triadic Self-Knowledge). The seed.yaml contract must include a `telos` field (the idealized form — why this formation was conceived, what intersectional functionalities it embodies), a `pragma` field (the concrete realization — what has been built, the honest delta between dream and reality), and a `praxis` field (the remediation plan — specific attack vectors for closing the gap between ideal and real, including known failures, deficiencies, and the path to resolving them). Empty or placeholder values are violations. The three fields together constitute the formation's self-knowledge and are consumed by audit, context generation, and signal routing systems.",
+        "name": "Tetradic Articulation",
+        "statement": "Every non-archived repository must articulate the four dimensions of AX-7 (Tetradic Self-Knowledge). The seed.yaml contract must include: `telos` (the idealized form — why conceived, what functionalities embodied), `pragma` (the concrete realization — honest delta between dream and reality), `praxis` (the remediation plan — attack vectors for closing the gap), and `receptio` (the reception account — how the formation has been received, used, critiqued, adopted, or ignored by audiences beyond its creator; what the culture around the project reveals about its actual function as a tool in the world). Empty or placeholder values are violations. For formations not yet received (LOCAL/CANDIDATE status), receptio must articulate the intended reception strategy and what reception would validate the telos. For formations that have been received (PUBLIC_PROCESS/GRADUATED), receptio must document actual reception evidence. The four fields together constitute the formation's complete self-knowledge.",
         "enforcement": "audit",
-        "validator": "validate_triadic_articulation",
-        "references": ["AX-7 Triadic Self-Knowledge", "seed.yaml schema v1.2"],
+        "validator": "validate_tetradic_articulation",
+        "references": ["AX-7 Tetradic Self-Knowledge", "seed.yaml schema v1.2"],
         "severity": "warning",
         "applies_to": "all non-archived repos"
       }
@@ -498,7 +498,14 @@
       {
         "id": "LIQ-009",
         "name": "Reflexive Knowledge Obligation",
-        "statement": "Every formation must maintain explicit self-knowledge in three dimensions: telos (the idealized form it aspires to realize), pragma (the concrete state of what has been built), and praxis (the plan for closing the gap). In the liquid model, these are not static metadata but living documents that evolve as the formation participates in functions, emits and receives signals, and accumulates experience. The telos is the formation's contribution to the organism's purpose. The pragma is the formation's honest self-assessment. The praxis is the formation's growth plan. Together they constitute the formation's reflexive capacity — its ability to know itself well enough to participate coherently in the signal graph. A formation without reflexive knowledge is a black box that the organism cannot route signals through intelligently.",
+        "statement": "Every formation must maintain explicit self-knowledge in four dimensions: telos (the idealized form), pragma (the concrete state), praxis (the plan for closing the gap), and receptio (the account of reception). In the liquid model, these are not static metadata but living documents that evolve as the formation participates in functions, emits and receives signals, and accumulates experience. Together they constitute the formation's reflexive capacity — its ability to know itself well enough to participate coherently in the signal graph. A formation without reflexive knowledge is a black box that the organism cannot route signals through intelligently.",
+        "enforcement": "audit",
+        "severity": "warning"
+      },
+      {
+        "id": "LIQ-010",
+        "name": "Reception Completes Existence (Lex Receptionis)",
+        "statement": "A formation's existence is not completed by creation alone. A shovel is only a shovel if it shovels; a theory of shovels does not clear the driveway snow. A book is only the author's exercise as they write it; it becomes an organism when read and imagined by an audience. The society that responds — that attempts to know, critiques, makes art, discusses, adopts, rejects, transforms — is constitutive of the formation's existence, not external to it. The culture sitting around the project tells the reception of the project as a living tool in the world. Therefore: (1) every formation must actively seek reception through the interface organs (Logos, Koinonia, Kerygma); (2) every formation must capture reception evidence in its `receptio` field; (3) the feedback flows (VII/VI/V → I) are not optional signal routes but the mechanism by which reception completes creation; (4) a GRADUATED formation with no documented reception is a constitutional anomaly — it has been promoted without evidence that it exists as anything other than its creator's intention. AX-6 mandates that signals flow outward to the interface organs. LIQ-010 mandates that the interface organs' response flows back and is recorded. The loop must close.",
         "enforcement": "audit",
         "severity": "warning"
       }
