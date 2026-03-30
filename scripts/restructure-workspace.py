@@ -106,10 +106,20 @@ def discover_workspace() -> tuple[dict[str, Path], dict[str, Path], list[Path]]:
     return git_dirs, content_dirs, symlinks
 
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
+
 def load_registry() -> list[dict]:
     """Load all repos from registry-v2.json."""
-    with open(REGISTRY_PATH) as f:
-        data = json.load(f)
+    if _engine_load is not None:
+        data = _engine_load(REGISTRY_PATH)
+    else:
+        with open(REGISTRY_PATH) as f:
+            data = json.load(f)
     repos = []
     for organ_key, organ_data in data["organs"].items():
         for repo in organ_data["repositories"]:

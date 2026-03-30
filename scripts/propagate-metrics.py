@@ -30,6 +30,9 @@ from organvm_engine.metrics.propagator import (
     resolve_manifest_files,
 )
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+from organvm_engine.registry.loader import load_registry as _engine_load
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_METRICS = ROOT / "system-metrics.json"
 DEFAULT_TARGETS = ROOT / "metrics-targets.yaml"
@@ -222,8 +225,7 @@ def main() -> None:
         registry_path = ROOT / "registry-v2.json"
         registry = None
         if registry_path.exists():
-            with open(registry_path) as f:
-                registry = json.load(f)
+            registry = _engine_load(registry_path)
 
         # JSON copies
         json_count = copy_json_targets(

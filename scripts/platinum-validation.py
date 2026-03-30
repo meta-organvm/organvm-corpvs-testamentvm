@@ -18,6 +18,12 @@ import sys
 import time
 from pathlib import Path
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
 REGISTRY_PATH = Path(__file__).parent.parent / "registry-v2.json"
 
 
@@ -43,8 +49,11 @@ def get_readme_content(org, repo):
 
 
 def main():
-    with open(REGISTRY_PATH) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(REGISTRY_PATH)
+    else:
+        with open(REGISTRY_PATH) as f:
+            registry = json.load(f)
 
     issues = []
     warnings = []

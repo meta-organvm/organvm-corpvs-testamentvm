@@ -554,10 +554,19 @@ def load_covenant_metrics() -> dict:
     return metrics
 
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
+
 def load_registry() -> Optional[dict]:
     """Load registry-v2.json."""
     if not REGISTRY_PATH.exists():
         return None
+    if _engine_load is not None:
+        return _engine_load(REGISTRY_PATH)
     with open(REGISTRY_PATH) as f:
         return json.load(f)
 

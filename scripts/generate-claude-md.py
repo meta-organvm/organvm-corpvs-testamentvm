@@ -408,8 +408,17 @@ def generate_claude_md(org, repo, organ_key, repo_meta, readme, tree, languages,
 
 # ── Main ────────────────────────────────────────────────────
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
+
 def load_registry():
     """Load and parse registry-v2.json."""
+    if _engine_load is not None:
+        return _engine_load(REGISTRY)
     with open(REGISTRY) as f:
         return json.load(f)
 

@@ -5,6 +5,12 @@ import json
 from pathlib import Path
 from datetime import date
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
 REGISTRY_PATH = Path(__file__).parent.parent / "registry-v2.json"
 
 # Map of (org, repo) -> (ci_workflow, implementation_status)
@@ -100,8 +106,11 @@ def main():
 
     dry_run = not args.write
 
-    with open(REGISTRY_PATH) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(REGISTRY_PATH)
+    else:
+        with open(REGISTRY_PATH) as f:
+            registry = json.load(f)
 
     today = date.today().isoformat()
     updated_count = 0

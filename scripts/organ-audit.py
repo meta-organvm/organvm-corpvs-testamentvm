@@ -28,6 +28,12 @@ import subprocess
 import sys
 import time
 from collections import defaultdict
+
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -319,8 +325,11 @@ def main():
     parser.add_argument("--github", action="store_true", help="Enable GitHub API checks (slower)")
     args = parser.parse_args()
 
-    with open(args.registry) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(args.registry)
+    else:
+        with open(args.registry) as f:
+            registry = json.load(f)
     with open(args.governance) as f:
         governance = json.load(f)
 

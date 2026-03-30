@@ -20,6 +20,12 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "registry-v2.json"
 WORKSPACE = Path.home() / "Workspace"
@@ -358,8 +364,11 @@ def main():
         args.write = True
 
     # Load registry
-    with open(REGISTRY) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(REGISTRY)
+    else:
+        with open(REGISTRY) as f:
+            registry = json.load(f)
 
     missing = []
     skipped_archived = 0

@@ -13,6 +13,12 @@ import sys
 import os
 from pathlib import Path
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
 TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
 REGISTRY_PATH = Path(__file__).parent.parent / "registry-v2.json"
 
@@ -465,8 +471,11 @@ def update_registry(promoted_repos):
         shutil.copy2(REGISTRY_PATH, backup)
         print(f"  Backup: {backup}")
 
-    with open(REGISTRY_PATH) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(REGISTRY_PATH)
+    else:
+        with open(REGISTRY_PATH) as f:
+            registry = json.load(f)
 
     promoted_set = {(org, repo) for org, repo, _, _ in promoted_repos}
 

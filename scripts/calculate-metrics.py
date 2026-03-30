@@ -25,6 +25,9 @@ from organvm_engine.metrics.calculator import (
     write_metrics,
 )
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+from organvm_engine.registry.loader import load_registry as _engine_load
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_REGISTRY = ROOT / "registry-v2.json"
 DEFAULT_OUTPUT = ROOT / "system-metrics.json"
@@ -124,8 +127,7 @@ def main() -> None:
     output_path = Path(args.output)
 
     # Load registry
-    with open(registry_path) as f:
-        registry = json.load(f)
+    registry = _engine_load(registry_path)
 
     # Core metrics from engine
     workspace_raw = args.workspace or os.environ.get("ORGANVM_WORKSPACE_DIR")

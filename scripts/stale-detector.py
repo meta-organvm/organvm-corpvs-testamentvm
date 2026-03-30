@@ -18,6 +18,12 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
 ROOT = Path(__file__).resolve().parent.parent
 METRICS_FILE = ROOT / "system-metrics.json"
 REGISTRY_FILE = ROOT / "registry-v2.json"
@@ -48,8 +54,11 @@ class StaleItem:
 def compute_live_metrics() -> dict:
     """Compute current metrics from registry + sprints + essays."""
     # Registry metrics
-    with open(REGISTRY_FILE) as f:
-        registry = json.load(f)
+    if _engine_load is not None:
+        registry = _engine_load(REGISTRY_FILE)
+    else:
+        with open(REGISTRY_FILE) as f:
+            registry = json.load(f)
 
     organs = registry.get("organs", {})
     all_repos = []

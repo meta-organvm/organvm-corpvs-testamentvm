@@ -21,7 +21,16 @@ SYSTEM_ORGS = [
 ]
 
 
+# ISOTOPE DISSOLUTION: Gate memory--remember G2 (CORPUS_SCRIPTS_DISSOLVED)
+try:
+    from organvm_engine.registry.loader import load_registry as _engine_load
+except ImportError:
+    _engine_load = None
+
+
 def load_registry():
+    if _engine_load is not None:
+        return _engine_load(REGISTRY_PATH)
     with open(REGISTRY_PATH) as f:
         return json.load(f)
 
