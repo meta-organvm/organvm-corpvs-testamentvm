@@ -192,6 +192,21 @@ Pragma (AX-7) is the specific antidote: the *honest account of what has been con
 
 Encoded as: PROHIB-I in `governance-rules.json` `lex_naturalis.constitutional_prohibitions`.
 
+### Amendment J: Constitutional Limits — Lex Finis
+*Source: Gödel's Incompleteness Theorems, self-organized criticality (Per Bak), and the compression principle from the genetic material ("laws = compressed reality"). The law that limits law. Ratified 2026-03-30.*
+
+Three limits bound the constitution itself:
+
+**LIM-I: Incompleteness.** This constitution will never be complete. That is not a deficiency — it is a mathematical theorem (Gödel, 1931). Every attempt to fully specify governance generates new phenomena the law didn't anticipate. The appropriate response is not more law but better judgment at the boundaries where law runs out.
+
+**LIM-II: Criticality.** Systems operate most productively at the edge of chaos. Too much governance → rigidity → death. Too little → chaos → death. Every law added pushes the system further from chaos but closer to rigidity. The burden of proof is on the law: does this axiom enable more life, or does it constrain life to enable more governance?
+
+**LIM-III: Compression.** All learning is compression. The constitution should be getting shorter over time, not longer. If a new law can be derived from existing principles without explicit statement, it should NOT be added. The remaining latent genetic material (Noether symmetry, emergence, path dependence, energy gradients, carrying capacity) is derivable from LEX-I and LEX-II and does not require separate codification. The final form of this constitution, if it reaches maturity, should be shorter than its first draft.
+
+**Implication for this session:** Amendments F through J were written in a single legislative session. The constitution grew from 6 articles and 5 amendments to 6 articles, 10 amendments, 8 axioms, 7 repo rules, 11 liquid rules, 10 natural laws, 3 limits, 1 prohibition, and 5 genesis documents as genetic material. This was necessary — the genetic material existed pre-constitutionally and needed to be expressed. But LIM-II demands that the next legislative session compress rather than expand. The constitution has spoken extensively. Now it must listen to what it governs.
+
+Encoded as: LIM-I, LIM-II, LIM-III in `governance-rules.json` `lex_naturalis.limits`.
+
 ## Post-Launch Reviews
 
 ### Review 1 (2026-03-04) — CONSTITUTIO Sprint

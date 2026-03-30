@@ -85,7 +85,26 @@
         "status": "implicit_in_practice_not_yet_axiomatized"
       }
     ],
-    "completeness_note": "These ten laws (2 master principles + 8 derived) form the natural law foundation. Additional laws from information theory (Shannon entropy, signal-to-noise, error correction), quantum mechanics (superposition before observation/reception, entanglement of formations), and complex systems theory (emergence, criticality, power laws) may be codified as the system encounters phenomena they govern. The foundation is extensible but the master principles are final — LEX-I and LEX-II do not change.",
+    "limits": [
+      {
+        "id": "LIM-I",
+        "name": "Incompleteness (Gödel's Theorem)",
+        "statement": "No sufficiently complex formal system can prove its own consistency. This constitution will never be complete. Every attempt to fully specify governance generates new edge cases, new ambiguities, new phenomena the law didn't anticipate. This is not a deficiency — it is a mathematical theorem. The constitution must operate under permanent acknowledged incompleteness. The appropriate response is not more law but better judgment at the boundaries where law runs out.",
+        "natural_law": "Gödel's Incompleteness Theorems (1931)"
+      },
+      {
+        "id": "LIM-II",
+        "name": "Criticality (Edge of Chaos)",
+        "statement": "Systems operate most productively at the boundary between order and disorder. Too much governance produces rigidity — formations cannot move, adapt, or surprise. Too little governance produces chaos — formations drift, collide, and decay. The constitution must balance at the critical point. Every law added pushes the system further from chaos but closer to rigidity. There exists a point where one more law makes the system LESS governable, not more. The constitution must watch its own growth as carefully as it watches the formations it governs. When adding a new axiom, the burden of proof is on the law: does this axiom enable more life, or does it constrain life to enable more governance?",
+        "natural_law": "Self-organized criticality (Per Bak, 1987) — complex systems self-organize to the edge of chaos"
+      },
+      {
+        "id": "LIM-III",
+        "name": "Compression Imperative",
+        "statement": "All learning is compression. Laws are compressed reality. The 23 scientific principles across disciplines compress into 2 master laws (LEX-I, LEX-II). The 10 institutional classes compress into 4 primitives (CONSTRAINT, TRANSFORM, VALIDATE, PERSIST). The entire universe compresses into: constrained state transitions under energy flow, producing emergent structure via information compression and feedback. The constitution should be getting SHORTER over time, not longer — compressing accumulated understanding into fewer, more powerful principles. If the constitution grows faster than the system it governs, it is accumulating, not learning. The final form of this constitution, if it reaches maturity, should be shorter than its first draft."
+      }
+    ],
+    "completeness_note": "The foundation is bounded by three limits: incompleteness (LIM-I — the constitution can never capture everything), criticality (LIM-II — more law is not always better law), and compression (LIM-III — the constitution should get shorter, not longer). The master principles (LEX-I and LEX-II) are final. Derived laws are extensible but subject to compression review: if a new derived law can be shown to follow from existing principles without explicit statement, it should NOT be added — it should be derived when needed. The remaining latent genetic material (Noether symmetry, emergence, path dependence, energy gradients, carrying capacity) is derivable from LEX-I and LEX-II and does not require separate codification.",
     "constitutional_prohibitions": [
       {
         "id": "PROHIB-I",
