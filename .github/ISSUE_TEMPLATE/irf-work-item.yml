@@ -105,6 +105,32 @@ body:
       placeholder: "None"
 
   - type: textarea
+    id: contact-surfaces
+    attributes:
+      label: Contact Surfaces
+      description: "What does this item touch? Every IRF item is a node in the signal graph — declare the formations, files, systems, and other IRF items it rubs against."
+      value: |
+        **Formations touched** (repos/directories this work modifies or depends on):
+        -
+
+        **Files modified** (specific files this work will create, edit, or delete):
+        -
+
+        **Constitutional obligations fulfilled** (AX-6 edges, AX-7 fields, AX-8 polis lenses, LEX violations resolved):
+        -
+
+        **IRF items related** (items this depends on, enables, or conflicts with):
+        -
+
+        **External systems touched** (GitHub orgs, Cloudflare, Render, Vercel, 1Password, LaunchAgents, etc.):
+        -
+
+        **Signal edges affected** (produces/consumes edges created, modified, or fulfilled by this work):
+        -
+    validations:
+      required: true
+
+  - type: textarea
     id: growth-trajectory
     attributes:
       label: Growth Trajectory
