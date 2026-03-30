@@ -35,7 +35,7 @@ Specific failures:
 - Cross-referencing (mention any issue from any repo)
 - Searchable, filterable, API-accessible
 
-**The IRF.md becomes a summary view, not the source of truth.** The source of truth moves to GitHub Issues on `meta-organvm/organvm-corpvs-testamentvm`.
+**The IRF.md and GitHub Issues are two different institutions with different roles.** The IRF.md is the endless box — internal, permissive, receives slips from any agent or session without friction. GitHub Issues are the public-facing assembled record — external, governed, specced by the archivists. Both exist. The box receives. The issues present. The flow: slip drops in box → archivist collects → assembles into GH issue → board tracks → completion propagates back to box.
 
 ### Issue Template (per IRF item)
 
@@ -197,7 +197,7 @@ WRITE PROTOCOL (for any agent — Claude, Gemini, OpenCode):
 | No project board | GitHub Projects v2 with priority/organ/agent views |
 | No growth trajectory | Template field linking item to cascade plan and signal closure |
 | 10-index propagation forgotten | Issue closure template includes checklist |
-| IRF.md grows forever | Becomes a generated summary view, not the source |
+| IRF.md grows forever | The box grows — that's what boxes do. Archivists periodically assemble slips into GH issues and move completed items to ## Completed. The box is never "too big" — it's the raw record |
 
 ### Token Scope Requirement
 

@@ -1,0 +1,43 @@
+name: "IRF Slip"
+description: "Drop a slip in the box. Minimum viable record. The archivists will assemble it later."
+title: ""
+labels: ["irf", "slip"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Drop a slip in the box.** Say what needs doing. That's it.
+
+        The archivists (human or agent) will later collect this slip and assemble it into a full IRF Work Item with telos, spec, done criteria, contact surfaces, phase, energy, and propagation checklist. Your job right now is just: don't let the thought die unrecorded.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs doing?
+      description: "Plain language. One sentence or ten. Whatever captures the thought before it's lost."
+      placeholder: "e.g., The essay-pipeline has no consumes edge from ORGAN-III — case studies can't flow in"
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where? (repo, organ, or system area)
+      placeholder: "e.g., organvm-v-logos/essay-pipeline, or ORGAN-III, or SYSTEM"
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Gut urgency
+      description: "Not a formal priority. Just: how loud is this in your head right now?"
+      options:
+        - "now — it's blocking something"
+        - "soon — next session or two"
+        - "eventually — but don't lose it"
+        - "just noting — might matter later"
+
+  - type: input
+    id: source
+    attributes:
+      label: What surfaced this?
+      placeholder: "e.g., S42, vacuum audit, gut feeling, conversation with Tony"
