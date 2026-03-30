@@ -117,6 +117,31 @@ Insights and theories are not ephemeral. They are structural obligations. Every 
 
 Encoded as: AX-7 (Tetradic Self-Knowledge) + RR-6 (Tetradic Articulation) + LIQ-009 (Reflexive Knowledge Obligation) + LIQ-010 (Reception Completes Existence) in `governance-rules.json`.
 
+### Amendment H: Constructed Polis — Lex Civitatis
+*Source: The recognition that in a system of systems in nesting systems, reception cannot be outsourced to the external world's timeline. Each formation must construct its own idealized critical society. Ratified 2026-03-30.*
+
+Every formation is its own universal system. Scientists study a thing. Philosophers interrogate its premises. Critics challenge its execution. Academics place it in lineage. Practitioners test it as a tool. Artists respond to its aesthetic. This will happen in the real world eventually — but the system cannot wait for the world to catch on.
+
+Each formation constructs an **idealized polis** — the critical society that its phase of development demands. This polis actively produces the formation's `receptio` (AX-7) rather than waiting for organic reception. The polis is not decorative commentary or aspirational metadata. It is the mechanism by which self-knowledge is generated under adversarial review, the same operation the IRA panel performs for dissertations extended to every formation in the system.
+
+The polis draws from existing infrastructure:
+- **IRA panels** (`auto-revision-epistemic-engine`) — multi-model evaluative consensus with disciplinary personas
+- **Triadic Review Protocol** — 3 distinct perspectives minimum (memory: `feedback_triadic_review.md`)
+- **Voice governance** (`vox--architectura-gubernatio`) — per-organ voice profiles and stylesheet scoring
+- **Faculty registry** (`praxis-perpetua/governance/faculty-registry.yaml`) — named competency domains and evaluation rubrics
+
+The nesting is recursive. A formation's polis examines the formation. An organ's polis examines the organ. The system's polis examines the system. At every level: knowledge creation, each module as its own universal system.
+
+**Implications:**
+1. Every non-archived repo at PUBLIC_PROCESS or GRADUATED must declare a `polis` section in seed.yaml (RR-7)
+2. Minimum 3 disciplinary lenses per the Triadic Review Protocol — genuinely distinct perspectives
+3. Each lens names a role, states what it examines, and records findings (or null for formations not yet reviewed)
+4. The polis produces the `receptio` — findings feed back into `pragma` (updating honest assessment) and `praxis` (updating remediation plan)
+5. LOCAL/CANDIDATE formations may declare intended lenses with null findings — the polis is planned before it operates
+6. The constructed polis is autopoietic: the formation produces the society that evaluates and evolves the formation
+
+Encoded as: AX-8 (Constructed Polis) + RR-7 (Polis Declaration) + LIQ-011 (Autopoietic Reception) in `governance-rules.json`.
+
 ## Post-Launch Reviews
 
 ### Review 1 (2026-03-04) — CONSTITUTIO Sprint

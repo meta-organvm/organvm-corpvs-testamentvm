@@ -279,6 +279,15 @@
         "validator": "validate_tetradic_self_knowledge",
         "references": ["constitution.md Amendment G", "seed.yaml telos/pragma/praxis/receptio fields", "AX-6 Signal Closure"],
         "severity": "warning"
+      },
+      {
+        "id": "AX-8",
+        "name": "Constructed Polis (Lex Civitatis)",
+        "statement": "Every non-archived formation must construct its own idealized critical society — a polis — that reviews, studies, critiques, contextualizes, and imagines the formation as a universal system unto itself. The world will eventually produce real scientists, philosophers, critics, academics, and artists who engage with the formation's ideas, but the system of systems cannot wait for organic reception. Each formation constructs the idyllized social apparatus that its phase of development demands: the scientist who studies it empirically, the philosopher who interrogates its premises, the critic who challenges its execution, the academic who places it in lineage, the practitioner who tests it as a tool, the artist who responds to it aesthetically. This polis is not decorative commentary — it is the mechanism by which the formation's receptio (AX-7) is actively produced rather than passively awaited. The polis draws from existing system infrastructure: IRA multi-model evaluative panels, the Triadic Review Protocol's 3-POV minimum, voice governance per-organ profiles, and the faculty registry's disciplinary personas. A formation without a constructed polis has outsourced its self-knowledge to chance — hoping the world notices rather than ensuring it is examined.",
+        "enforcement": "audit",
+        "validator": "validate_constructed_polis",
+        "references": ["constitution.md Amendment H", "AX-7 Tetradic Self-Knowledge", "LIQ-010 Reception Completes Existence", "praxis-perpetua/governance/faculty-registry.yaml", "auto-revision-epistemic-engine"],
+        "severity": "warning"
       }
     ],
     "organ_dictums": {
@@ -431,6 +440,16 @@
         "references": ["AX-7 Tetradic Self-Knowledge", "seed.yaml schema v1.2"],
         "severity": "warning",
         "applies_to": "all non-archived repos"
+      },
+      {
+        "id": "RR-7",
+        "name": "Polis Declaration",
+        "statement": "Every non-archived repository at PUBLIC_PROCESS or GRADUATED status must declare a `polis` section in its seed.yaml specifying the disciplinary lenses through which the formation is critically examined. Each lens names a role (e.g., systems_theorist, business_critic, rhetorician, ethicist, practitioner, historian) and states what that perspective examines and what it has found. For LOCAL/CANDIDATE formations, the polis may declare intended lenses with null findings. The polis is not a wish list of future reviewers but the constructed critical society that actively produces the formation's receptio. Minimum: 3 lenses (per Triadic Review Protocol). The lenses must represent genuinely distinct disciplinary perspectives — three variants of 'developer' is not a polis.",
+        "enforcement": "audit",
+        "validator": "validate_polis_declaration",
+        "references": ["AX-8 Constructed Polis", "feedback_triadic_review.md"],
+        "severity": "warning",
+        "applies_to": "PUBLIC_PROCESS and GRADUATED repos"
       }
     ]
   },
@@ -504,8 +523,15 @@
       },
       {
         "id": "LIQ-010",
-        "name": "Reception Completes Existence (Lex Receptionis)",
+        "name": "Reception Completes Existence (Lex Receptionis — superseded scope note: LIQ-011 extends this)",
         "statement": "A formation's existence is not completed by creation alone. A shovel is only a shovel if it shovels; a theory of shovels does not clear the driveway snow. A book is only the author's exercise as they write it; it becomes an organism when read and imagined by an audience. The society that responds — that attempts to know, critiques, makes art, discusses, adopts, rejects, transforms — is constitutive of the formation's existence, not external to it. The culture sitting around the project tells the reception of the project as a living tool in the world. Therefore: (1) every formation must actively seek reception through the interface organs (Logos, Koinonia, Kerygma); (2) every formation must capture reception evidence in its `receptio` field; (3) the feedback flows (VII/VI/V → I) are not optional signal routes but the mechanism by which reception completes creation; (4) a GRADUATED formation with no documented reception is a constitutional anomaly — it has been promoted without evidence that it exists as anything other than its creator's intention. AX-6 mandates that signals flow outward to the interface organs. LIQ-010 mandates that the interface organs' response flows back and is recorded. The loop must close.",
+        "enforcement": "audit",
+        "severity": "warning"
+      },
+      {
+        "id": "LIQ-011",
+        "name": "Autopoietic Reception (Lex Civitatis Liquidum)",
+        "statement": "In a system of systems in nesting systems, reception cannot be outsourced to the external world's timeline. Each formation constructs its own idealized society — a polis — that performs the critical functions the real world will eventually perform: empirical study (the scientist), theoretical interrogation (the philosopher), adversarial review (the critic), historical contextualization (the academic), practical validation (the practitioner), aesthetic response (the artist). This constructed polis is not pretense — it is the same operation the IRA panel performs for dissertations, extended to every formation. The polis produces the formation's receptio, which feeds back into its pragma (updating the honest assessment) and praxis (updating the remediation plan). The formation is thereby autopoietic in the fullest sense: it produces not only its own structure but the society that evaluates and evolves that structure. The nesting is recursive: a formation's polis may itself be examined by a higher-order polis (the organ's polis, the system's polis). Knowledge creation at every level — each module as its own universal system, studied by its own scientists, dreamed by its own philosophers, challenged by its own critics.",
         "enforcement": "audit",
         "severity": "warning"
       }
