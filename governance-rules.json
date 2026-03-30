@@ -1,6 +1,92 @@
 {
-  "version": "2.0",
-  "schema_note": "Governance rules v2.0 \u2014 post-construction operational rules (REGULA sprint, 2026-03-04). Updated from v1.0 to reflect operational reality: all 8 organs launched, 103 repos tracked, schema v1.0.0. Promotion rules retained as archival context; dependency and audit rules are actively enforced.",
+  "version": "3.0",
+  "schema_note": "Governance rules v3.0 — natural law foundation added 2026-03-30. All axioms derive from two master principles of conservation and universal composition. v2.0 operational rules remain enforced; natural law section provides the deductive substrate from which all governance is derived.",
+  "lex_naturalis": {
+    "preamble": "The governance of this system is not invented — it is derived from the laws of the universe in which we exist. Two master principles form the substrate beneath all axioms: conservation and universal composition. Every axiom, dictum, repo rule, and liquid rule in this document is a specific application of these principles to the domain of multi-repository creative-institutional systems. A system of unforgiving objective constraints controls and dictates every facet of the thing it watches. All laws of natural science and metaphysics are relevant here.",
+    "master_principles": [
+      {
+        "id": "LEX-I",
+        "name": "Conservation (Lex Conservationis)",
+        "statement": "Nothing can be created or destroyed — only transformed. Every artifact, every signal, every unit of work persists in some form. An ARCHIVED formation is not destroyed; its energy transforms into the formations that superseded it. A session that produced insights is not ephemeral; the insights persist as transformed knowledge in the formations they touched. The 200 unheard songs are latent energy, not nothing. Work done in one organ transforms into work in another — the generative flow (I→II→III) is energy transformation, not energy creation. This principle is absolute: nothing produced by the system ever truly vanishes. If it appears to vanish, it was never properly captured (violation of 'Nothing Local Only'), or it transformed into something not yet recognized.",
+        "natural_law": "First Law of Thermodynamics / Conservation of Mass-Energy",
+        "derives": ["AX-4 (Registry Coherence — identity is conserved)", "AX-6 (Signal Closure — energy must flow, not vanish)", "AX-7 (Tetradic Self-Knowledge — knowledge of the formation is conserved across its lifecycle)", "LIQ-010 (Reception Completes Existence — the energy of creation is conserved into the energy of reception)", "Nothing Local Only (memory covenant — artifacts must persist in durable form)"]
+      },
+      {
+        "id": "LEX-II",
+        "name": "Universal Composition (Lex Materiae Universalis)",
+        "statement": "Everything is made from the same materials. A theoretical paper and a commercial product are the same substrate differently arranged. The 14 canonical signal classes are the periodic table of this system — every formation, every organ, every signal is composed of combinations of these atomic types. This is why the liquid model works: organ boundaries are not different substances but different arrangements of universal material. A formation in Theoria and a formation in Ergon are the same stuff; one is arranged for contemplation, the other for commerce. Phase transitions (LOCAL→GRADUATED) do not change the material — they change the arrangement. Composability (LIQ-003) works because everything shares the same atomic signal vocabulary. The Stranger Test works because a reviewer from outside the system can read any formation — they're all made of the same materials, legible to the same faculties.",
+        "natural_law": "Atomic Theory / Quantum Field Theory — all matter is composed of the same fundamental particles in different configurations",
+        "derives": ["AX-2 (Epistemic Membranes — boundaries between arrangements, not between substances)", "AX-5 (Organ Placement — affinity dictates arrangement)", "LIQ-002 (Formation Participation — formations participate in functions, not belong to them, because they're the same material)", "LIQ-003 (Signal Signatures — composability via shared atomic vocabulary)", "LIQ-006 (Flat Hierarchy — no ontological hierarchy among arrangements of the same stuff)"]
+      }
+    ],
+    "derived_laws": [
+      {
+        "id": "LEX-III",
+        "name": "Entropy (Lex Dissipationis)",
+        "statement": "In any closed system, disorder increases over time. Useful energy degrades into heat. Documentation goes stale. Dependencies drift. Tests bit-rot. Links break. Code that is not maintained decays not because anything attacks it but because entropy is the default state of the universe. The system must continuously expend organized energy (maintenance) to resist entropy. Maintenance is not separate from creation — it IS the ongoing cost of existence. A formation that is not actively maintained is actively dying. AX-3 (TTL Eviction) is the terminal expression of this law; the law itself operates continuously, not after a 90-day threshold.",
+        "natural_law": "Second Law of Thermodynamics",
+        "derives": ["AX-3 (TTL Eviction — terminal entropy)", "domus maintain (active entropy resistance)", "stale seed audits, dependency refresh, documentation freshness"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-IV",
+        "name": "Metabolism (Lex Metabolismi)",
+        "statement": "A living thing converts inputs to outputs through transformation. If it stops metabolizing, it is dead — not archived, not resting, dead. Conservation (LEX-I) says energy persists; metabolism says it must CHANGE FORM to be alive. A formation that receives signals and passes them through unchanged is a wire, not an organ. A formation that consumes but never produces is a parasite. A formation that claims to produce without consuming is asserting perpetual motion — physically impossible. Every living formation must metabolize: take in, transform, put out. The transformation IS the value. The produces/consumes edges in seed.yaml are the metabolic declaration; the actual code, content, and artifacts are the metabolic output.",
+        "natural_law": "Biological metabolism — anabolism (building up) and catabolism (breaking down)",
+        "derives": ["AX-6 (Signal Closure — the metabolic obligation to route outputs)", "produces/consumes edges (metabolic declarations)", "formation functional_class (ENGINE, GENERATOR, RESERVOIR — metabolic roles)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-V",
+        "name": "Apoptosis (Lex Mortis Salubris)",
+        "statement": "Healthy organisms kill their own cells. Cells that are damaged, infected, or past their purpose self-destruct — not as failure but as service to the organism. Cancer is what happens when apoptosis fails: cells that refuse to die, consuming resources, growing without purpose, crowding out healthy tissue. ARCHIVED status is not defeat. It is the organism's immune response removing what no longer serves. A formation clinging to existence past its utility is the constitutional equivalent of cancer. The act of archiving is an act of health — the organism shedding dead cells so living ones have room. This is a direct consequence of LEX-I (conservation): the energy is not destroyed by archiving; it transforms into the namespace, the lessons learned, the seed.yaml that future formations can study.",
+        "natural_law": "Programmed cell death (apoptosis) — essential to multicellular organism health",
+        "derives": ["ARCHIVED promotion state (healthy death)", "AX-3 TTL Eviction (forced apoptosis for zombies)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-VI",
+        "name": "Selection Pressure (Lex Selectionis)",
+        "statement": "The environment decides what survives, not the creator. Variations that increase fitness persist; variations that don't are selected against. Not by judgment but by physics — the thing that works better continues. In this system, fitness is demonstrated by reception (AX-7 receptio): formations that are used, cited, adopted, critiqued, and built upon demonstrate fitness. Formations that are not received — regardless of their creator's intention or the beauty of their telos — are selected against. The promotion state machine is the selection apparatus: LOCAL formations face selection pressure at every gate. A formation that cannot demonstrate reception at PUBLIC_PROCESS has not proved fitness for GRADUATED. This law has teeth: the polis (AX-8) constructs the critics, but the environment — the actual use, the actual reception — renders the verdict.",
+        "natural_law": "Natural selection (Darwin) — differential survival based on environmental fitness",
+        "derives": ["Promotion state machine (selection gates)", "AX-8 Constructed Polis (constructed selection pressure)", "AX-7 receptio (fitness evidence)", "Stranger Test (external selection event)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-VII",
+        "name": "Homeostasis (Lex Stabilitatis)",
+        "statement": "A living system maintains internal stability despite external perturbation. When temperature rises, the organism sweats. When blood sugar drops, the organism eats. The corrective mechanism is automatic — it does not wait for conscious decision. The system must self-correct without being told. When a seed.yaml edge points to a formation that no longer exists, homeostasis detects and flags. When a formation goes stale, the response activates proportionally and continuously — not after a 90-day cliff. The auditors (vigiles-aeternae), the self-heal daemon (chezmoi), and the continuous monitoring infrastructure are the homeostatic mechanisms. Their operation is not optional maintenance — it is the organism's autonomic nervous system.",
+        "natural_law": "Homeostasis (Claude Bernard, Walter Cannon) — self-regulation of internal environment",
+        "derives": ["vigiles-aeternae (watcher system)", "chezmoi self-heal (autonomic correction)", "domus doctor (diagnostic)", "organvm governance audit (systemic health check)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-VIII",
+        "name": "Latent Heat (Lex Transitus)",
+        "statement": "Phase transitions require energy that produces no visible change. Ice at 0°C requires 334 J/g to become water at 0°C — the energy goes into breaking molecular bonds, not raising temperature. Promotion from CANDIDATE to PUBLIC_PROCESS costs real work — documentation, testing, CI, community health files — that adds no features. This is latent heat. It is the most undervalued work in the system because it is invisible: nothing the user sees changed, but the formation's internal structure reorganized to support a new phase of existence. The constitution must protect this work from being dismissed as 'overhead.' Phase transition energy is not overhead — it is the cost of changing state. You cannot skip it. You cannot shortcut it. The energy must be spent or the transition does not occur.",
+        "natural_law": "Latent heat of transformation — energy required for phase change without temperature change",
+        "derives": ["Promotion criteria (energy requirements per transition)", "Amendment A Bronze Tier (the latent heat budget for launch)", "Documentation precedes deployment (Article IV — the energy must be spent before the phase changes)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-IX",
+        "name": "Gravity (Lex Gravitatis)",
+        "statement": "Mass warps spacetime. Everything with mass attracts. Flagships attract attention, resources, contributions, and signal. The genome (META) is the gravitational center — purpose holds the liquid in shape (LIQ-005). Small formations orbit in the gravitational field of large ones. This is not a problem to solve but a physics to acknowledge: resource allocation, attention, and contribution will always be disproportionately attracted to massive formations. Plan accordingly. Flagship strategy is gravitational engineering.",
+        "natural_law": "General relativity — mass-energy equivalence and gravitational attraction",
+        "derives": ["LIQ-005 (genome as gravitational center)", "Flagship tier (gravitationally significant formations)", "Promotion state machine (gravity increases with maturity)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      },
+      {
+        "id": "LEX-X",
+        "name": "Catalysis (Lex Catalysis)",
+        "statement": "A catalyst enables a reaction without being consumed. It lowers the activation energy required for transformation. ORGAN-IV (Taxis) is a catalyst — it orchestrates without producing domain content. Skills, tools, orchestration scripts, CI pipelines, governance infrastructure — these are catalytic formations. They are not judged by their own outputs but by the outputs they enable in others. A catalyst that produces nothing is doing its job perfectly. The constitution must distinguish catalytic formations from productive ones and evaluate each by the appropriate metric. Measuring a catalyst by its production output is like measuring a match by how much light it produces after the fire is lit.",
+        "natural_law": "Chemical catalysis — lowering activation energy without being consumed in the reaction",
+        "derives": ["OD-IV Taxis Orchestration (catalytic organ)", "formation functional_class INFRASTRUCTURE (catalytic role)", "Skills system (catalytic knowledge)"],
+        "status": "implicit_in_practice_not_yet_axiomatized"
+      }
+    ],
+    "completeness_note": "These ten laws (2 master principles + 8 derived) form the natural law foundation. Additional laws from information theory (Shannon entropy, signal-to-noise, error correction), quantum mechanics (superposition before observation/reception, entanglement of formations), and complex systems theory (emergence, criticality, power laws) may be codified as the system encounters phenomena they govern. The foundation is extensible but the master principles are final — LEX-I and LEX-II do not change."
+  },
   "dependency_rules": {
     "max_transitive_depth": 4,
     "no_circular_dependencies": true,

@@ -142,6 +142,34 @@ The nesting is recursive. A formation's polis examines the formation. An organ's
 
 Encoded as: AX-8 (Constructed Polis) + RR-7 (Polis Declaration) + LIQ-011 (Autopoietic Reception) in `governance-rules.json`.
 
+### Amendment I: Lex Naturalis — Natural Law Foundation
+*Source: The recognition that the governance of this system is not invented but derived from the laws of the universe. Two master principles form the deductive substrate: conservation and universal composition. Ratified 2026-03-30.*
+
+The constitution rests on two principles that precede all axioms:
+
+**LEX-I: Conservation.** Nothing can be created or destroyed — only transformed. Every artifact persists in some form. ARCHIVED is not death but transformation. The 200 unheard songs are latent energy, not nothing.
+
+**LEX-II: Universal Composition.** Everything is made from the same materials. A paper and a product are the same substrate differently arranged. The 14 signal classes are the periodic table. Organ boundaries are arrangements, not substances.
+
+From these two principles, eight derived laws govern the system:
+
+| Law | Natural analog | Governs |
+|-----|---------------|---------|
+| LEX-III Entropy | 2nd Law of Thermodynamics | Maintenance is the cost of existence; unmaintained things decay |
+| LEX-IV Metabolism | Biological metabolism | Every formation must transform inputs to outputs or it is dead |
+| LEX-V Apoptosis | Programmed cell death | Healthy death serves the organism; ARCHIVED is immune response |
+| LEX-VI Selection Pressure | Natural selection | The environment decides what survives via demonstrated reception |
+| LEX-VII Homeostasis | Self-regulation | The system self-corrects automatically and continuously |
+| LEX-VIII Latent Heat | Phase transition energy | Promotion costs invisible work that must not be dismissed |
+| LEX-IX Gravity | General relativity | Mass attracts; flagships pull signal disproportionately |
+| LEX-X Catalysis | Chemical catalysis | Formations that enable without producing are judged by what they enable |
+
+Every existing axiom (AX-1 through AX-8) derives from LEX-I and LEX-II. The derivation chains are documented in the `lex_naturalis` section of `governance-rules.json`. The master principles are final and do not change. The derived laws are extensible as the system encounters phenomena they govern.
+
+**Self-similarity (fractal law):** An atom is the smallest unit; as you zoom all the way out, the universe is a massive atom. The system is self-similar at every scale: a formation contains the same structure as an organ, which contains the same structure as the organism. seed.yaml is the genome of a formation; governance-rules.json is the genome of the organism. The tetrad (telos/pragma/praxis/receptio) applies at every level. The polis applies at every level. The natural laws apply at every level. This self-similarity is not designed — it is a consequence of universal composition (LEX-II).
+
+Encoded as: `lex_naturalis` section in `governance-rules.json` (LEX-I through LEX-X + completeness note).
+
 ## Post-Launch Reviews
 
 ### Review 1 (2026-03-04) — CONSTITUTIO Sprint
