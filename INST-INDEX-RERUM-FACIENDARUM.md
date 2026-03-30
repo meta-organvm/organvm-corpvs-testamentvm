@@ -490,8 +490,8 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-APP-059 | P1 | Create GitHub Actions CI/CD workflow (completes seed.yaml vacuum). | Agent | S39 | None |
 | ~~IRF-APP-060~~ | ~~P1~~ | ~~Production environment configuration~~ — **DONE** (Deployed to Cloudflare Workers + Neon + CF Pages instead of Vercel/Railway. API: `cronus-api.ivixivi.workers.dev`, Dashboard: `cronus-dashboard.pages.dev`. S40.) | Agent | S39→S40 | Completed 2026-03-27 |
 
-| IRF-APP-036 | P2 | sovereign-systems: Netlify site rename — current URL is auto-generated (`lambent-crumble-64ba1d.netlify.app`). Needs branded name before custom domains are connected | Agent | S-elevate (deploy) | None |
-| IRF-APP-037 | P3 | sovereign-systems: Keystatic CMS — visual content editor for Maddie at /keystatic URL. Phase 1 fallback was manual editing; CMS is the fast-follow | Agent | S-elevate (editing) | None |
+| ~~IRF-APP-036~~ | ~~P2~~ | ~~sovereign-systems: Netlify site rename~~ — **DONE** (DONE-251/253. Migrated entirely to Cloudflare Pages: `sovereign-systems-spiral.pages.dev`.) | Agent | S-elevate (deploy) | Completed 2026-03-27 |
+| ~~IRF-APP-037~~ | ~~P3~~ | ~~sovereign-systems: Keystatic CMS~~ — **DEFERRED** (DONE-252. Removed during purification. GH#11 tracks re-add.) | Agent | S-elevate (editing) | Deferred |
 | IRF-APP-031 | P2 | Omega scorecard update — composite 3.5→8.3 is evidence for omega #7 (system quality). Diagnostic score improvement not recorded in omega evidence map. | Agent | S35 close-out vacuum (index #3) | None |
 | IRF-APP-032 | P2 | Concordance update — Protocol articles P-I through P-VII are new governance identifiers. Not registered in `docs/operations/concordance.md`. | Agent | S35 close-out vacuum (index #6) | None |
 | IRF-APP-033 | P2 | Seed.yaml update — Protocol modules (protocol_types, protocol_validator, dm_composer), log_dm, reconcile_outreach, three-pillar rubric are new capabilities not declared in seed contract. Extends IRF-APP-013. | Agent | S35 close-out vacuum (index #8) | None |
