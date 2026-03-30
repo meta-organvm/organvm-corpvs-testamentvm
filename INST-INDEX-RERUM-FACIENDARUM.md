@@ -32,6 +32,19 @@ This is a **living governance instrument**, not a snapshot. Every session that p
 3. When work is blocked, move to `| DONE-247 | Cronus Metabolus Core Metabolism Loop (Ingestion, Extraction, Generation, Scoring). | S39 | 2026-03-26 |
 | DONE-248 | Cronus Metabolus Product Portal (Dashboard, Review Queue, LinkedIn OAuth). | S39 | 2026-03-26 |
 | DONE-249 | AES-256 Token Encryption & Identity Inquiry system. | S39 | 2026-03-26 |
+| DONE-S41-001 | AX-6 Signal Closure (Lex Necessitatis) — axiom + LIQ-008 + Amendment F + entailment matrix + Signal Closure Gate. 17 seed edges wired across 5 repos. | S41 | 2026-03-30 |
+| DONE-S41-002 | AX-7 Tetradic Self-Knowledge (Lex Reflexionis) — telos/pragma/praxis/receptio + RR-6 + LIQ-009 + LIQ-010 + Amendment G. Sovereign-systems exemplar. | S41 | 2026-03-30 |
+| DONE-S41-003 | AX-8 Constructed Polis (Lex Civitatis) — RR-7 + LIQ-011 + Amendment H. 5-lens polis exemplar on sovereign-systems. | S41 | 2026-03-30 |
+| DONE-S41-004 | Lex Naturalis — LEX-I through LEX-X (2 master principles + 8 derived laws) + Amendment I. governance-rules.json v3.0. | S41 | 2026-03-30 |
+| DONE-S41-005 | PROHIB-I Inversion Prohibition (Lex Contra Simulacrum) — recording serves the living, never the reverse. 5 detection heuristics. | S41 | 2026-03-30 |
+| DONE-S41-006 | LIM-I/II/III Constitutional Limits (Lex Finis) — Gödel incompleteness, criticality, compression imperative + Amendment J. | S41 | 2026-03-30 |
+| DONE-S41-007 | Genetic Incorporation Audit — 69 principles from 5 genesis docs mapped to constitutional expressions. 68% incorporated, 13% partial, 17% derivable, 1 gap. | S41 | 2026-03-30 |
+| DONE-S41-008 | Three Pillars of Existence reference doc — natural/social/formal sciences as organizing frame. Economics identified as critical gap. | S41 | 2026-03-30 |
+| DONE-S41-009 | IRF Institutional Reform — dual-system architecture (box + issues), slip template + work item template, agent fingerprint metadata. 14 labels specified. | S41 | 2026-03-30 |
+| DONE-S41-010 | Formation Chemistry spec — periodic table, 4 bond types, 6 reaction types, Le Chatelier, limiting reagent, Mendeleev gaps. 5-phase implementation plan. | S41 | 2026-03-30 |
+| DONE-S41-011 | Post-flood Reconstruction plan — River Ordinance as migration architecture, clean-room distillation, infection prevention protocol, meta-organvm as womb. | S41 | 2026-03-30 |
+| DONE-S41-012 | 5 genesis DNA documents tracked in git — 3,129 lines of genetic material now version-controlled. | S41 | 2026-03-30 |
+| DONE-S41-013 | IRF-LIQ-001 resolved — meta-organvm IS the womb, no new org needed. | S41 | 2026-03-30 |
 
 ## Blocked` with blocking reason.
 4. When work becomes irrelevant, move to `## Archived` with reason.
@@ -84,6 +97,13 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
+| IRF-SYS-024 | P1 | **Create IRF GitHub labels** — `irf`, `slip`, `P0-NOW`, `P1-SOON`, `P2-GROWTH`, `P3-HORIZON`, `organ-I` through `organ-META`, `system`. 14 labels total. Bash creation was rejected in S41 — needs retry. | Agent | S41 IRF reform | None |
+| IRF-SYS-025 | P1 | **Build `validate_signal_closure` engine validator** — read entailment_flows from governance-rules.json, check seed.yaml produces edges against required targets, emit violations. Wire into `organvm governance audit --signal-closure`. Tests in `test_governance_signal_closure.py`. | Agent | S41 AX-6 | None |
+| IRF-SYS-026 | P1 | **Build `validate_tetradic_self_knowledge` engine validator** — check seed.yaml for telos/pragma/praxis/receptio fields. Wire into `organvm governance audit --self-knowledge`. | Agent | S41 AX-7 | None |
+| IRF-SYS-027 | P2 | **Build `organvm chemistry` module** — 5 phases: atomic properties → periodic table → reaction prediction → bottleneck analysis → dashboard. Plan: `.claude/plans/2026-03-30-formation-chemistry.md`. | Agent | S41 formation chemistry spec | None |
+| IRF-SYS-028 | P2 | **Build allocative institution** — the economics of the organism. Resource allocation, token economy, attention budget, carrying capacity. Only 1 of 10 institutional classes with no ORGANVM expression. Identified via Three Pillars of Existence analysis. | Agent | S41 three pillars | Design needed |
+| IRF-SYS-029 | P1 | **Merge essay-pipeline PR #8** — AX-6 signal closure edges. Branch `feat/ax6-signal-closure-edges` is mergeable but blocked by `test` CI check. Need to ensure CI passes. | Agent | S41 | CI check |
+| IRF-SYS-030 | P1 | **Propagate AX-7 telos/pragma/praxis/receptio to seed.yaml schema** — update schema-definitions with v1.2 schema including the 4 tetradic fields + polis. Currently exemplar-only (sovereign-systems). Needs to be in the formal schema. | Agent | S41 AX-7/RR-6 | None |
 | IRF-SKL-001 | P2 | Map 142 skills to design-process phases for auto-triggering | Agent | Wants list | Needs phase taxonomy designed |
 | IRF-SKL-002 | P2 | Implement hook-based triggering for "universal standards" tier skills | Agent | Wants list | Depends on IRF-SKL-001 |
 | IRF-SKL-003 | P2 | Skills governance metadata enrichment — continue from S17 baseline | Agent | S17 | None |
@@ -280,8 +300,8 @@ Verified on disk 2026-03-20:
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-LIQ-001 | P0 | Create `organvm` GitHub org — the single container for the liquid model. Web UI action required. | Human | SPEC-019 §7 | GitHub web UI only |
-| IRF-LIQ-002 | P1 | Build the distillation pipeline CLI (`organvm distill --repo <name>`) — four-stage alchemical transformation (nigredo/albedo/citrinitas/rubedo) that updates seed.yaml, formation.yaml, CLAUDE.md, and validates SPEC-019 compliance before any repo moves to the new org | Agent | SPEC-019 §9, Covenant | IRF-LIQ-001 (org exists) |
+| ~~IRF-LIQ-001~~ | ~~P0~~ | ~~Create `organvm` GitHub org~~ — **RESOLVED**: `meta-organvm` IS the womb. The genome's own namespace. LIQ-006 (flat hierarchy) + SPEC-019 always intended this. Decision confirmed session 2026-03-30. | — | — | — |
+| IRF-LIQ-002 | P1 | Build the distillation pipeline CLI (`organvm distill --repo <name>`) — four-stage alchemical transformation (nigredo/albedo/citrinitas/rubedo) that updates seed.yaml, formation.yaml, CLAUDE.md, and validates SPEC-019 compliance. Formations distill INTO meta-organvm. River Ordinance maps 1:1 onto alchemical stages. Clean-room seed generation: never copy V1 seed.yaml. | Agent | SPEC-019 §9, Covenant, post-flood reconstruction plan | None (IRF-LIQ-001 resolved) |
 | IRF-LIQ-003 | P1 | Build excretory system CLI (`organvm excrete`) — three-pass filtration (glomerular/tubular/secretion) for dead signals, isolated formations, stale repos, classification drift, governance debt | Agent | excretory-system-spec.md | None |
 | IRF-LIQ-004 | P1 | Build swarm topology CLI (`organvm swarm`) — computed signal affinity reveals emergent function participation vs declared participation. Discovery list + orphan list + affinity map | Agent | swarm-topology-spec.md | Signal algebra (done) + function signal profiles (not yet in organ-definitions) |
 | IRF-LIQ-005 | P2 | Build reproductive system CLI (`organvm reproduce --target <path>`) — von Neumann constructor that instantiates a new organism from the constitutional genome. Transmits governance rules, schemas, signal vocabulary, covenant. Does NOT transmit formations, memory, or signal edges | Agent | reproductive-system-spec.md | None |
