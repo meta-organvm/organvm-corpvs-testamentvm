@@ -155,6 +155,9 @@ Universal work registry. 26 domain prefixes:
 | ~~IRF-CCE-025~~ | ~~Multi-provider refresh + LaunchAgent~~ — DONE-299 | ~~P1~~ | `conversation-corpus-engine@3d86009` + domus plist |
 | IRF-CCE-026 | ChatGPT API scope degradation (633→4 conversations visible) | P1 | External blocker |
 | IRF-CCE-027 | Post Office discover endpoint uses wrong API (gizmos ≠ Projects) | P2 | Blocked by CCE-026 |
+| ~~IRF-CCE-028~~ | ~~Devise handoff documents for 6 open GH issues~~ — DONE-301 | ~~P1~~ | `conversation-corpus-engine@593c60d` |
+| IRF-CCE-029 | Testament vacuum: S38/S39/S40 have no testament files | P2 | None |
+| IRF-CCE-030 | S40 code committed in S41 close-out (was uncommitted +470 lines) | P2 | Resolved S41 |
 
 #### Hermeneus API Routes (S28, 2026-03-21)
 
