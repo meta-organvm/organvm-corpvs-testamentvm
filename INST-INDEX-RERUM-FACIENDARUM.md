@@ -121,6 +121,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-SYS-036 | P1 | **Design git architecture for a-organvm/** — is it a git repo? Superproject? How does .gitmodules work for product formations? Must resolve before distillation. | Agent | S42 open question | None |
 | IRF-SYS-037 | P2 | **SOP filtration** — apply cribrum heuristics (cosine similarity, liveness, V1-era detection) to 84 governance docs (67 SOPs + 17 ops docs). Produce merge/fuse/archive report. Human review gate. | Agent | S42 | IRF-SYS-032 |
 | IRF-SYS-038 | P1 | **Scaffold canonical `src/organvm_engine/` package spine in `a-organvm/`** — once IRF-SYS-035 is ratified, create the minimal package root, cocoon subpackages, import smoke tests, and `pyproject.toml`/test wiring needed so `skeletal--define` can prove itself against a real import surface rather than a hypothetical one. | Agent | S43 relay clarification | IRF-SYS-035 |
+| IRF-SYS-039 | P1 | **Build proposal-order inbox for governance change** — accept rules, laws, and new suggestions together with their full originating context; derive impact dispositions, reusable shards that may apply elsewhere, and explicit post-derivation context deficits when more thought is required. Route outputs to the IRF, inquiry log, and affected cocoon contracts rather than leaving them trapped in chat. | Agent | S43 proposal-order request | None |
 | IRF-SKL-001 | P2 | Map 142 skills to design-process phases for auto-triggering | Agent | Wants list | Needs phase taxonomy designed |
 | IRF-SKL-002 | P2 | Implement hook-based triggering for "universal standards" tier skills | Agent | Wants list | Depends on IRF-SKL-001 |
 | IRF-SKL-003 | P2 | Skills governance metadata enrichment — continue from S17 baseline | Agent | S17 | None |
@@ -1186,6 +1187,17 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 ## Archived
 
 *None currently.*
+
+---
+
+### S-patch-signal Discovered Items (Patch Signal Architecture Session, 2026-03-30)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-SYS-040 | **P1** | **Build `patches/` engine module — Patch-Based Signal Architecture.** SOPs become modular synth modules with parameter interfaces (physics/bio/chem/met constraint categories). Patches wire signals to SOPs with specific parameter values. Same SOP, different patch = different governance profile. New module: `patches/` (registry, signal graph, validation, blind-spot detection). CLI: `organvm patches list/trace/blind-spots/unpatched/validate`. Dashboard: patch bay view. Revenue layer: patch packs as exportable products. Spec: `.claude/plans/2026-03-30-patch-signal-architecture.md`. Related: IRF-SYS-025 (signal closure), IRF-SYS-034 (module decomposition), IRF-LIQ-004 (swarm topology), IRF-LIQ-006 (function signal profiles). | Agent | S-patch-signal brainstorming | Design complete, needs implementation plan |
+| IRF-SYS-041 | **P1** | **Add parameter interface frontmatter to all 60+ SOPs** — each SOP in `praxis-perpetua/standards/` needs `parameters:` block declaring physics/bio/chem/met knobs with types, ranges, defaults. Enables patches to reference SOPs with specific parameter values. Stranger-test the parameter interface itself. | Agent | S-patch-signal | IRF-SYS-040 (patch module exists first) |
+| IRF-SYS-042 | **P2** | **Add `patch-v1.json` schema to schema-definitions** — formal JSON Schema for patch YAML definitions. Validates: input_signal, sop_ref, parameters (against SOP interface), output_signal, recurrence. Wire into `organvm patches validate`. | Agent | S-patch-signal | IRF-SYS-040 |
+| IRF-SYS-043 | **P2** | **Revenue architecture: patch pack export format** — design exportable patch pack format (collection of YAML patch definitions tuned for a customer context). Relates to Network Testament mirror protocol. Patches = presets = product. | Agent | S-patch-signal revenue insight | IRF-SYS-040 |
 
 ---
 
