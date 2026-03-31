@@ -642,7 +642,65 @@ Source: `organvm-mcp-server/src/organvm_mcp/` — tools exposed via MCP stdio pr
 
 ---
 
-*This concordance was last updated on 2026-03-26. It should be updated when TODO items are completed, new IDs are created, or omega criteria change status. The `scripts/invoke.py` CLI tool parses this file directly — keep the markdown table format consistent.*
+*This concordance was last updated on 2026-03-31. It should be updated when TODO items are completed, new IDs are created, or omega criteria change status. The `scripts/invoke.py` CLI tool parses this file directly — keep the markdown table format consistent.*
+
+---
+
+## Fieldwork Intelligence System (added S-fieldwork-mvp, 2026-03-31)
+
+Layer 1 of 4-layer process intelligence system. Captures observations from contribution workflows.
+
+### Enums
+
+| Enum | Values | Location |
+|------|--------|----------|
+| `ObservationCategory` | merge_protocol, review_culture, ci_architecture, repo_layout, tooling, contributor_experience, communication_style, governance, documentation, security_posture (10) | `contrib_engine/schemas.py` |
+| `SpectrumLevel` | AVOID=-2, CAUTION=-1, NOTE=0, STUDY=+1, ABSORB=+2 (IntEnum — first in codebase) | `contrib_engine/schemas.py` |
+| `StrategicTag` | shatterpoint, missing_shield, friction_point, fortress, competitive_edge, competitive_gap (6) | `contrib_engine/schemas.py` |
+| `ObservationSource` | pr_submission, review_response, ci_run, repo_exploration, phase_transition, automated (6) | `contrib_engine/schemas.py` |
+
+### Models
+
+| Model | Fields | Location |
+|-------|--------|----------|
+| `FieldObservation` | id, workspace, timestamp, category, signal, spectrum, strategic, source, evidence, scored_by, related_absorption_ids, atom_id | `contrib_engine/schemas.py` |
+| `FieldworkIndex` | generated, observations + by_workspace(), by_category(), by_spectrum() | `contrib_engine/schemas.py` |
+
+### CLI Commands
+
+| Command | Description |
+|---------|-------------|
+| `fieldwork record` | Append observation to stream. Flags: --workspace, --category, --signal, --spectrum, --source, --evidence, --strategic, --scored-by |
+| `fieldwork show` | Display observations. Filters: --workspace, --category, --min-spectrum |
+
+### Data Files
+
+| File | Pattern | Location |
+|------|---------|----------|
+| `fieldwork.yaml` | Append-only observation stream (rotation at 500 planned) | `contrib_engine/data/fieldwork.yaml` |
+
+### ID Format
+
+| Pattern | Example | Description |
+|---------|---------|-------------|
+| `fo-{workspace_short}-{MMDD}-{seq:03d}` | `fo-dbt-mcp-0330-001` | Strips `contrib--` prefix, sequential per workspace+date |
+
+### Session IDs
+
+| ID | Session | Date |
+|----|---------|------|
+| `S-fieldwork-mvp` | Fieldwork Layer 1 MVP + seed.yaml P0 fix + health audit | 2026-03-31 |
+
+### IRF Items
+
+| ID | Title |
+|----|-------|
+| `IRF-OSS-022` | Fieldwork implementation (Layer 1 done, Layers 2-4 remain) |
+| `IRF-OSS-027` | TypeScript dead code archive |
+| `IRF-OSS-028` | Workflow execution audit |
+| `IRF-OSS-029` | Render CLI subcommand |
+| `IRF-OSS-030` | Unused imports cleanup |
+| `IRF-OSS-031` | capabilities.py test file |
 
 ---
 
