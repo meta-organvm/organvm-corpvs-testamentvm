@@ -156,17 +156,17 @@ Universal work registry. 26 domain prefixes:
 | IRF-CCE-026 | ChatGPT API scope degradation (633→4 conversations visible) | P1 | External blocker |
 | IRF-CCE-027 | Post Office discover endpoint uses wrong API (gizmos ≠ Projects) | P2 | Blocked by CCE-026 |
 | ~~IRF-CCE-028~~ | ~~Devise handoff documents for 6 open GH issues~~ — DONE-301 | ~~P1~~ | `conversation-corpus-engine@593c60d` |
-| IRF-CCE-029 | Testament vacuum: S38/S39/S40 have no testament files | P2 | None |
+| IRF-CCE-029 | Testament vacuum: S38/S39/S40 have no testament files | P2 | GH#17 |
 | ~~IRF-CCE-030~~ | ~~S40 code committed in S41 close-out~~ — DONE-302 | ~~P2~~ | `conversation-corpus-engine@593c60d` |
-| IRF-CCE-031 | CCE has no inquiry-log.yaml (SGO research vacuum) | P2 | None |
-| IRF-CCE-032 | Omega format specimen missing from GH#14 handoff | P2 | None |
-| IRF-CCE-033 | Execute CCE commercial architecture (H1: PyPI, MCP, landing page) | P1 | Spec approved S41. Needs GH issue. |
-| IRF-CCE-034 | GH issues missing for CCE-029/031/032/033 | P2 | Batch issue creation |
-| IRF-CCE-035 | Omega evidence map: note commercial spec for #9/#10 | P2 | Evidence update |
-| IRF-CCE-036 | seed.yaml planned produces edges (3 ORGAN-III vehicles) | P2 | Schema extension or activation |
-| IRF-CCE-037 | S41 testament gap — vacuum now spans S38-S41 (4 sessions) | P2 | Growing |
-| IRF-CCE-038 | Cross-repo commercial awareness (CCE ↔ application-pipeline) | P2 | Backlink needed |
-| IRF-CCE-039 | Implementation plan not derived from commercial spec | P2 | Next session: writing-plans |
+| IRF-CCE-031 | CCE has no inquiry-log.yaml (SGO research vacuum) | P2 | GH#18 |
+| IRF-CCE-032 | Omega format specimen missing from GH#14 handoff | P2 | GH#19 |
+| IRF-CCE-033 | Execute CCE commercial architecture (H1: PyPI, MCP, landing page) | P1 | GH#20 |
+| ~~IRF-CCE-034~~ | ~~GH issues missing for CCE-029/031/032/033~~ — DONE-S41-CLOSURE | ~~P2~~ | GH#17-24 created |
+| IRF-CCE-035 | Omega evidence map: note commercial spec for #9/#10 | P2 | GH#21 |
+| IRF-CCE-036 | seed.yaml planned produces edges (3 ORGAN-III vehicles) | P2 | GH#22 |
+| IRF-CCE-037 | S41 testament gap — vacuum now spans S38-S41 (4 sessions) | P2 | GH#17 (combined with CCE-029) |
+| IRF-CCE-038 | Cross-repo commercial awareness (CCE ↔ application-pipeline) | P2 | GH#23 |
+| IRF-CCE-039 | Implementation plan not derived from commercial spec | P2 | GH#24 |
 
 #### Hermeneus API Routes (S28, 2026-03-21)
 
