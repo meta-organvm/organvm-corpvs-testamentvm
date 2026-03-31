@@ -137,7 +137,7 @@ Universal work registry. 26 domain prefixes:
 | IRF-HRM-007 | Streaming markdown rendering fix (heading concatenation) | P2 | — |
 | IRF-HRM-008 | Full re-ingestion with retry logic | P2 | — |
 
-#### IRF-CCE Items (S33/S37, 2026-03-25)
+#### IRF-CCE Items (S33/S37/S38/S39)
 
 | ID | Description | Priority | Refs |
 |----|-------------|----------|------|
@@ -148,6 +148,13 @@ Universal work registry. 26 domain prefixes:
 | ~~IRF-CCE-018~~ | ~~Semantic/title-overlap triage expansion~~ — DONE-234 | ~~P2~~ | `conversation-corpus-engine@3fa116f` |
 | IRF-CCE-019 | Migrate historical federated review IDs away from slug-collision ambiguity | P1 | GH#13 |
 | IRF-CCE-020 | Record S37 CCE testament events for review-assist/operator expansion | P2 | GH#12 |
+| ~~IRF-CCE-021~~ | ~~ChatGPT local-session adapter + Chrome fallback~~ — DONE-295 | ~~P1~~ | `conversation-corpus-engine@cf97add..8fe770b` |
+| ~~IRF-CCE-022~~ | ~~ChatGPT incremental sync + state persistence~~ — DONE-296 | ~~P1~~ | `conversation-corpus-engine@8fe770b` |
+| ~~IRF-CCE-023~~ | ~~Post Office project registry lifecycle~~ — DONE-297 | ~~P1~~ | `conversation-corpus-engine@3d86009` |
+| ~~IRF-CCE-024~~ | ~~Claude delta-sync adapter~~ — DONE-298 | ~~P1~~ | `conversation-corpus-engine@3d86009` |
+| ~~IRF-CCE-025~~ | ~~Multi-provider refresh + LaunchAgent~~ — DONE-299 | ~~P1~~ | `conversation-corpus-engine@3d86009` + domus plist |
+| IRF-CCE-026 | ChatGPT API scope degradation (633→4 conversations visible) | P1 | External blocker |
+| IRF-CCE-027 | Post Office discover endpoint uses wrong API (gizmos ≠ Projects) | P2 | Blocked by CCE-026 |
 
 #### Hermeneus API Routes (S28, 2026-03-21)
 
