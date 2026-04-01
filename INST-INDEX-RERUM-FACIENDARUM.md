@@ -469,7 +469,7 @@ Verified on disk 2026-03-20:
 | IRF-OSS-030 | P3 | Clean 3 unused imports — `campaign.py` (CampaignAction, CampaignPhase), `orchestrator.py` (Any), `schemas.py` (datetime, Any). Mechanical cleanup. | Agent | S-fieldwork-mvp health audit | None |
 | IRF-OSS-031 | P2 | Add `capabilities.py` dedicated test file — only contrib_engine module without its own test file (tested indirectly through scanner tests). Add `test_contrib_capabilities.py` with match_capabilities and get_capability tests. | Agent | S-fieldwork-mvp health audit | None |
 | ~~IRF-OSS-011~~ | ~~P1~~ | ~~GitHub Issues for S32 work~~ — **PARTIALLY DONE** (DONE-292: 22 issues on a-organvm/a-organvm, public project board). Remaining: Testament codification issues, campaign module expansion issues not yet issued. | Agent | S32 vacuum audit | Downgrade to P2, partial |
-| IRF-OSS-032 | **P1** | **Action Ledger Phase 5 — Integration.** Wire contrib_engine modules to emit actions into the ledger. fieldwork.py, campaign.py, monitor.py should call ledger.record() on state transitions. Phases 1-4 built (schemas, ledger, routes, cycles — 57 tests, 221 total suite). | Agent | S-action-ledger session (2026-03-31) | None |
+| IRF-OSS-032 | **P1** | **Action Ledger Phase 5 — Integration.** **PARTIALLY DONE:** `action_ledger/emissions.py` + `emit_state_change()` + `ActionOrigin` landed (`211c98b`, `e720ada`) and initial `contrib_engine` emission wiring is live. Remaining: wire `fieldwork.py`, `monitor.py`, and conductor/dispatch transitions into the ledger stream. | Agent | S-action-ledger session (2026-03-31) | None |
 | IRF-OSS-033 | **P1** | **Action Ledger + Dispatch Ledger convergence.** The action ledger (orchestration-start-here) and dispatch ledger (tool-interaction-design/conductor/) are the same system at different scales, built independently on consecutive days. Dispatch receipt → action type, timecard → sequence, energy → param axes, scorecard → cycle detection. Must converge. See `project_temporal_convergence.md`. | Agent | S-action-ledger session (2026-03-31) | IRF-OSS-032, IRF-CND-001 |
 | IRF-OSS-034 | P2 | **Action Ledger design spec** — write formal spec to `docs/superpowers/specs/2026-03-31-action-ledger-design.md`. Plan exists (`.claude/plans/scalable-baking-conway.md`) but formal spec not yet written. | Agent | S-action-ledger session (2026-03-31) | None |
 | IRF-OSS-035 | P2 | **TypeScript dead code archive** — 572 lines in `src/agents/` and `src/dreamcatcher/` (dispatcher.ts, metasystem-manager.ts, router.ts, watchman.ts). Legacy Dreamcatcher prototype. Archive or delete. | Agent | S-fieldwork-mvp vacuum audit | None |
@@ -1278,6 +1278,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-304 | **Full contrib_engine health audit.** 14 modules + 4 renderers (4,443 lines) assessed. All models used (28/28), all CLI commands implemented (25/25), all data files loaded (6/6), no dead code, no circular deps, no TODOs. Found: 3 unused imports, 4 orphaned render scripts (998 lines, no CLI), capabilities.py lacks dedicated tests. | S-fieldwork-mvp | 2026-03-31 |
 | DONE-305 | **CLAUDE.md compression: 43,749→27,580 chars (37%).** Merged Commands+Quick Commands+CLI into unified 3-column table, restructured Script Dependency Graph into import table + non-obvious notes, compressed 5 secondary sections. All behavioral rules preserved. 12.4k headroom below 40k threshold. Plan at `.claude/plans/2026-03-31-claude-md-compression.md`. Memory synced 1:1 (46 files). | S-compression | 2026-03-31 |
 | DONE-306 | **SPEC-021 Gravitas Culturalis Layer 0 (theory).** 4 files in `post-flood/specs/SPEC-021-gravitas-culturalis/`: grounding.md (134 lines, 10 sources), literature-matrix.md (125 lines, 40% GROUNDED / 50% ADAPTED / 10% NOVEL), risk-register.md (46 lines, 10 claims), inventory.md (87 lines, 18 terms + integration map). Commit `fcbfdf2`. Plan at `.claude/plans/2026-03-31-gravitas-culturalis.md`. | S-gravitas-culturalis | 2026-03-31 |
+| DONE-307 | **Intake router (`intake_router/`) built.** Keyword classifier across 7 domains, archetype prompt loading, dual emission (`manual` + `emitted`), CLI entry point, and test coverage. 240 tests passing in the full suite. Commit `b3ea5b9`. | S-energy-emission | 2026-03-31 |
+| DONE-308 | **Emission layer built.** `action_ledger/emissions.py` adds `emit_state_change()`, `ActionOrigin` typing, and action-stream growth; test isolation repaired so emission tests stop contaminating production data. Commits `211c98b`, `e720ada`. | S-energy-emission | 2026-03-31 |
+| DONE-309 | **War-Master Protocol SOP formalized.** `docs/sop-war-master-protocol.md` now carries the universal session injection pattern, Four Laws, and castra layout for operator close-out discipline. Commit `1477d90`. | S-energy-emission | 2026-03-31 |
+| DONE-310 | **72-hour chronicle + prompt corpus compiled.** `docs/chronicle-72h-2026-03-29-to-31.md` assembled and `docs/operator-prompts-raw-423.txt` extracted from JSONL session files. Commits `b3ea5b9`, `6fbccd1`. | S-energy-emission | 2026-03-31 |
+| DONE-311 | **Concordance registration completed for S47 IDs.** `CIR-001`, `SIG-002`, `SIG-003`, and `GEN-002` are now registered in `docs/operations/concordance.md` under the A-Organism embodiment section. | S-energy-emission | 2026-03-31 |
 | DONE-S47-001 | **YAML blocker fixed** — `muscular--execute.yaml` line 29 unquoted `{(command, subcommand): handler}` crashed YAML parser, blocking all observation and test cycles. Quoted the string. Commit `290b783`. | S47 | 2026-03-31 |
 | DONE-S47-002 | **Second embodiment: `circulatory_route.py` (CIR-001)** — organism's second function. 255 lines, 27 tests. Computes routes, signal attractions (453 candidates), structural defects (3 found: DEAD_SIGNAL TEACHING, STARVED_CONSUMER AESTHETIC, STARVED_CONSUMER QUERY). Following SEED §II Procedure 1 Steps 1-7. Commit `290b783`. | S47 | 2026-03-31 |
 | DONE-S47-003 | **Signal types CONTRACT (SIG-002) and STATE (SIG-003) discovered** — CONTRACT: "declared behavioral agreement between organism functions." STATE: "current configuration of the organism's elements at a point in time." Added to signal-graph.yaml. Vocabulary now 5 types. | S47 | 2026-03-31 |
@@ -1316,39 +1321,45 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-03-25 via `organvm irf stats`. **Partial update 2026-03-30 (S-CC-review + S-plague):** INST domain corrected. +4 DONE (291-294: 3 new PRs, project board, fieldwork spec, scout). +5 new OSS items (022-026: fieldwork impl, retroactive obs, knowledge outputs, seed refresh, scout remaining). IRF-OSS-011 partially closed (DONE-292). **Partial update 2026-03-31 (S-action-ledger):** +4 new OSS items (032-035: action ledger Phase 5, convergence, design spec, TS dead code). Full stats refresh needed.
+Refreshed 2026-03-31 via `organvm irf stats`. Includes S-energy-emission close-out propagation: +5 DONE entries (307-311), IRF-AOR-006 closed, and partial-status text for IRF-OSS-032 updated to reflect the emission layer landing while downstream wiring remains open.
 
-- **Total IRF items:** 530
-- **Open:** 268 (264 prior + 4 new OSS items)
-- **Completed:** 258 (255 + 3 new: DONE-247 through DONE-249)
+- **Total IRF items:** 704
+- **Open:** 372
+- **Completed:** 332
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 49.1%
+- **Completion rate:** 47.2%
 
 ### Open By Priority
 
 | Priority | Count |
 |----------|-------|
-| P0 | 14 |
-| P1 | 101 |
-| P2 | 125 |
-| P3 | 24 |
+| P0 | 11 |
+| P1 | 136 |
+| P2 | 190 |
+| P3 | 35 |
 
-### Open By Domain
+### By Domain
 
 | Domain | Count |
 |--------|-------|
+| DONE | 332 |
 | RES | 68 |
-| OSS | 24 |
-| APP | 20 |
-| SYS | 17 |
-| DOM | 17 |
-| LIQ | 12 |
-| PRT | 11 |
+| APP | 46 |
+| OSS | 34 |
+| SYS | 29 |
+| DOM | 24 |
+| PRT | 18 |
+| III | 15 |
+| CCE | 12 |
+| LIQ | 11 |
+| VOX | 9 |
 | MON | 7 |
 | HRM | 7 |
-| VOX | 7 |
+| INST | 7 |
+| AOR | 7 |
 | SGO | 6 |
+| CND | 6 |
 | ARC | 6 |
 | SKL | 5 |
 | CRP | 5 |
@@ -1357,7 +1368,7 @@ Refreshed 2026-03-25 via `organvm irf stats`. **Partial update 2026-03-30 (S-CC-
 | KOI | 5 |
 | DOC | 5 |
 | IDX | 4 |
-| CCE | 4 |
+| GRC | 4 |
 | GEN | 3 |
 | IRA | 3 |
 | VER | 3 |
@@ -1367,7 +1378,6 @@ Refreshed 2026-03-25 via `organvm irf stats`. **Partial update 2026-03-30 (S-CC-
 | KER | 2 |
 | BLK | 2 |
 | DWV | 2 |
-| INST | 23 |
 | TST | 1 |
 
 ### Effort Distribution (Research Programme)
@@ -1443,7 +1453,7 @@ Refreshed 2026-03-25 via `organvm irf stats`. **Partial update 2026-03-30 (S-CC-
 | IRF-AOR-003 | P2 | **STARVED_CONSUMER: AESTHETIC** — consumed by immune--score, integumentary--present, integumentary--render, theoria--define-omega. Produced by nobody. No function or contract generates aesthetic standards. Needs: which mechanism produces AESTHETIC? Or is this a boundary signal (operator-originated)? | Agent | S47 circulatory defect scan | None |
 | IRF-AOR-004 | P1 | **STARVED_CONSUMER: QUERY** — consumed by skeletal--define, produced by nobody. QUERY is an operator-initiated signal — needs boundary signal declaration in signal-graph.yaml (type: EXTERNAL, source: operator, direction: inbound). Current signal-graph.yaml only declares pyyaml as boundary signal. | Agent | S47 circulatory defect scan | None |
 | IRF-AOR-005 | P2 | **TRIPTYCH.md framing conflict** — line 69 still says "grows around them" (biological absorption frame). Operator has corrected this twice to alchemical (calcination) frame. SEED.md uses biological vocabulary (Procedure 5: "digest a predecessor"). Needs: operator decision on which frame the portal document carries. | Agent | S47 cross-session audit | Operator decision |
-| IRF-AOR-006 | P2 | **Concordance: CIR-001, SIG-002, SIG-003, GEN-002 not registered** — four new governance IDs introduced across S46-S47. Not yet in concordance.md. | Agent | S47 10-index audit | None |
+| ~~IRF-AOR-006~~ | ~~P2~~ | ~~Concordance: CIR-001, SIG-002, SIG-003, GEN-002 not registered~~ — **DONE-311**: all four IDs are now registered in `docs/operations/concordance.md` under the A-Organism embodiment section. | Agent | S47 10-index audit | Completed 2026-03-31 |
 | IRF-AOR-007 | P2 | **GitHub issues: S47 work not tracked on project board** — a-organvm/a-organvm has a GH Projects V2 board (22 issues). Second embodiment work (circulatory_route.py, signal types, edge wiring) has no corresponding GH issues. | Agent | S47 10-index audit | None |
 | IRF-AOR-008 | P1 | **a-organvm has no CLAUDE.md** — the organism's instance directory has AGENTS.md, RELAY.md, SEED.md, TRIPTYCH.md but no CLAUDE.md. Every repo in the system should have one. The SEED procedure, run commands, test commands, and session protocol should be documented. | Agent | S47 10-index audit | None |
 

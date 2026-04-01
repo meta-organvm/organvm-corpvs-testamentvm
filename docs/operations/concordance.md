@@ -471,6 +471,19 @@ Source: `aerarium--res-publica/` — institutional wing. Package identities, gra
 
 ---
 
+## A-Organism Embodiment IDs
+
+Source: `a-organvm/` — embodiment vocabulary introduced during S47 second-function work.
+
+| ID | Type | Definition | Source |
+|----|------|------------|--------|
+| `CIR-001` | Function ID | `circulatory_route.py` — the organism's second embodiment/function. Computes routes, signal attractions, and structural defects across gate contracts to assess circulation. | `a-organvm/RELAY.md`, `a-organvm/circulatory_route.py` |
+| `SIG-002` | Signal type | `CONTRACT` — a declared behavioral agreement between organism functions. Added to `signal-graph.yaml` during S47. | `a-organvm/RELAY.md`, `a-organvm/signal-graph.yaml` |
+| `SIG-003` | Signal type | `STATE` — the current configuration of the organism's elements at a point in time. Added to `signal-graph.yaml` during S47. | `a-organvm/RELAY.md`, `a-organvm/signal-graph.yaml` |
+| `GEN-002` | Naming rule | Canonical names use `--` (double hyphen); Python module filenames map canonical `--` to `_` when rendered on disk. | `a-organvm/pyproject.toml`, `a-organvm/circulatory_route.py` |
+
+---
+
 ## Named Code Entities
 
 Source: `organvm-engine/src/organvm_engine/` — key classes by domain module. ~200 total classes across 28 modules.
