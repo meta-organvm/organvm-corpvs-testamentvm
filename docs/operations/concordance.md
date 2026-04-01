@@ -88,6 +88,13 @@ Universal work registry. 26 domain prefixes:
 | IRF-DOM | Domus Infrastructure | PERSONAL (domus) |
 | IRF-OSS | Open-Source Contributions | Cross-organ |
 | IRF-DWV | DWV Integration (rebrand) | Cross-organ |
+| IRF-DSF | Dispersio Formalis (SPEC-022) | META (post-flood) |
+| IRF-GRC | Gravitas Culturalis (SPEC-021) | META (post-flood) |
+| IRF-LIQ | Liquid Constitutional Order (SPEC-019) | META (post-flood) |
+| IRF-PSP | Petasum Super Petasum (governance orch.) | ORGAN-IV |
+| IRF-VOX | Voice Governance | ORGAN-IV |
+| IRF-CND | Conductor OS | ORGAN-IV |
+| IRF-AOR | A-Organism | META (a-organvm) |
 
 #### IRF-APP Items (Pipeline S33, 2026-03-23)
 

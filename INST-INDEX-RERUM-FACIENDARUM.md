@@ -1269,6 +1269,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-S47-002 | **Second embodiment: `circulatory_route.py` (CIR-001)** — organism's second function. 255 lines, 27 tests. Computes routes, signal attractions (453 candidates), structural defects (3 found: DEAD_SIGNAL TEACHING, STARVED_CONSUMER AESTHETIC, STARVED_CONSUMER QUERY). Following SEED §II Procedure 1 Steps 1-7. Commit `290b783`. | S47 | 2026-03-31 |
 | DONE-S47-003 | **Signal types CONTRACT (SIG-002) and STATE (SIG-003) discovered** — CONTRACT: "declared behavioral agreement between organism functions." STATE: "current configuration of the organism's elements at a point in time." Added to signal-graph.yaml. Vocabulary now 5 types. | S47 | 2026-03-31 |
 | DONE-S47-004 | **First INFORMATION edge wired** — `skeletal--define →[KNOWLEDGE]→ circulatory--route` (feedfront). Also implicit TRACE edge discovered. Signal graph edges no longer empty. CHECK 7 (CONNECTED) now assessable. Commit `290b783`. | S47 | 2026-03-31 |
+| DONE-312 | **SPEC-022 Dispersio Formalis Layer 0 (theory).** 4 files in `post-flood/specs/SPEC-022-dispersio-formalis/`: grounding.md (303 lines, 7 sections, 8-phase portal lifecycle + Room topology), literature-matrix.md (13 sources, 12% GROUNDED / 48% ADAPTED / 40% NOVEL), risk-register.md (15 claims, 5 LOW / 6 MEDIUM / 4 HIGH), inventory.md (27 terms, integration map across 13 modules). Plan at `.claude/plans/2026-04-01-dispersio-formalis.md`. IRF-OSS-038 subsumed. | S-dispersio-formalis | 2026-04-01 |
 
 ---
 
@@ -1302,12 +1303,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-03-31 via `organvm irf stats`. Includes S-energy-emission close-out propagation: +5 DONE entries (307-311), IRF-AOR-006 closed, and partial-status text for IRF-OSS-032 updated to reflect the emission layer landing while downstream wiring remains open.
 
-- **Total IRF items:** 704
-- **Open:** 372
-- **Completed:** 332
+- **Total IRF items:** 710
+- **Open:** 377
+- **Completed:** 333
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 47.2%
+- **Completion rate:** 46.9%
 
 ### Open By Priority
 
@@ -1315,14 +1316,14 @@ Refreshed 2026-03-31 via `organvm irf stats`. Includes S-energy-emission close-o
 |----------|-------|
 | P0 | 11 |
 | P1 | 136 |
-| P2 | 190 |
+| P2 | 195 |
 | P3 | 35 |
 
 ### By Domain
 
 | Domain | Count |
 |--------|-------|
-| DONE | 332 |
+| DONE | 333 |
 | RES | 68 |
 | APP | 46 |
 | OSS | 34 |
@@ -1348,6 +1349,7 @@ Refreshed 2026-03-31 via `organvm irf stats`. Includes S-energy-emission close-o
 | DOC | 5 |
 | IDX | 4 |
 | GRC | 4 |
+| DSF | 5 |
 | GEN | 3 |
 | IRA | 3 |
 | VER | 3 |

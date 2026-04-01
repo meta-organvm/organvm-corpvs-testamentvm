@@ -27,6 +27,10 @@
 | SPEC-016 | Epistemic Routing Specification | L5 | Source-of-truth registry, context injection, context budgets |
 | SPEC-017 | Agent Authority Matrix | L5 | Read/Propose/Mutate/Approve levels, immutability declarations |
 | SPEC-018 | Dialectica Universalis | L1 | Structural isomorphism thesis: eight organs as eight dialects of universal logic, 28 translation pairs, Curry-Howard-Lambek extended |
+| SPEC-019 | System Manifestation (Liquid Constitutional Order) | L1 | Numbered organs → named physiological functions, signal signatures, one-org flat hierarchy, formation.yaml as identity |
+| SPEC-020 | Zettelkasten Protocol | L3B | Atomic note capture, knowledge linking, recovery protocol for dispersed material |
+| SPEC-021 | Gravitas Culturalis | L1 | Orbital emergence theory: cultural gravity, three-tier orbit model, eclipse point, contextualization axes |
+| SPEC-022 | Dispersio Formalis | L1 | Seven-state material taxonomy of interaction (INVOKED/IMPLEMENTED/THINNED/MISREPRESENTED/MISHEARD/NOT-ENACTED/LOST), planning as wound/scar, portal-as-prism, Room topology, collision map, portal correction |
 
 ## Governance Instruments (not numbered, receive full RFIV treatment)
 
@@ -40,10 +44,10 @@
 
 | Layer | Name | Specs |
 |-------|------|-------|
-| L1 | Metaphysical Identity | SPEC-000, 001, 002, 018 |
+| L1 | Metaphysical Identity | SPEC-000, 001, 002, 018, 019, 021, 022 |
 | L2 | Constitutional Logic | SPEC-003, 004, 005 |
 | L3A | Structural Architecture | SPEC-006, 007, 008 |
-| L3B | Governance Instruments | SPEC-012, Formation Protocol, Functional Taxonomy, Era Model |
+| L3B | Governance Instruments | SPEC-012, 020, Formation Protocol, Functional Taxonomy, Era Model |
 | L4A | Sensing & Observation | Event Spine, Temporal Metrics, Variable Resolution, Heartbeat |
 | L4B | Diagnosis & Meta-Evolution | SPEC-009, 010, 011, AMMOI Reconciliation, Graph Indices |
 | L5 | Swarm Governance | SPEC-013, 014, 015, 016, 017 |
