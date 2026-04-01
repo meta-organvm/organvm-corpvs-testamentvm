@@ -73,6 +73,9 @@ This is a **living governance instrument**, not a snapshot. Every session that p
 | DONE-S43-001 | OpenClaw installation and health diagnostic — 17 vacuums identified, 2 critical. | S43 | 2026-03-31 |
 | DONE-S43-002 | Wiring test suite expansion — 113 tests across 4 files (data_flow, state, apply, signals). | S43 | 2026-03-31 |
 | DONE-S43-003 | CLAUDE.md compression (43.7k→27.6k) — eliminated performance warnings. | S43 | 2026-03-31 |
+| DONE-S43-001 | OpenClaw installation and health diagnostic — 17 vacuums identified, 2 critical. | S43 | 2026-03-31 |
+| DONE-S43-002 | Wiring test suite expansion — 113 tests across 4 files (data_flow, state, apply, signals). | S43 | 2026-03-31 |
+| DONE-S43-003 | CLAUDE.md compression (43.7k→27.6k) — eliminated performance warnings. | S43 | 2026-03-31 |
 | 4 | **Inquiry Log** | If the work completes/advances an SGO research commission | Update `praxis-perpetua/commissions/inquiry-log.yaml` |
 | 5 | **Testament Chain** | If the work is a significant system event (new module, repo, governance change, deployment) | Verify with `organvm testament status` |
 | 6 | **Concordance** | If the work introduces or retires governance IDs | Update `docs/operations/concordance.md` |
@@ -646,6 +649,16 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-APP-065 | P2 | Update seed.yaml with new capabilities from S43 wiring tests. | Agent | S43 hall-monitor audit | None |
 | IRF-APP-064 | P2 | Fix N/A vacuums in pipeline entries (location: N/A). | Agent | S43 hall-monitor audit | None |
 | IRF-APP-065 | P2 | Update seed.yaml with new capabilities from S43 wiring tests. | Agent | S43 hall-monitor audit | None |
+| IRF-APP-066 | P1 | **First interview conversion SOP** — standardized as 6-phase, 26-step sequence in `pipeline/submissions/grafana-labs-full-dossier.md` §XIV. Needs extraction to standalone SOP document in `docs/` or `strategy/`. Reusable for all future positive conversions. | Agent | Session S46 (2026-04-01) | None |
+| IRF-APP-067 | P1 | **External application quick-log command** — Grafana application was submitted outside pipeline, requiring retroactive backfill. Build `run.py quicklog --org "X" --role "Y" --date YYYY-MM-DD` to register external submissions in real-time, preventing pipeline gaps. | Agent | Session S46 (vacuum: out-of-pipeline applications) | None |
+| IRF-APP-068 | P2 | **Grafana Tier 1 contributions** — 4 insertion points identified: grafana/metrics-drilldown #1146 (CLAUDE.md), grafana/mcp-grafana #680 (prompt injection), #641 (camelCase fix), #620 (docs org). Execute before Mon 2026-04-06 interview. | Human+Agent | Session S46 (contextual insertion) | None |
+| IRF-APP-069 | P2 | **Outreach-log.yaml structural fix** — pre-existing validation error: missing top-level `entries:` key. Signal validator reports 0 entries parsed. Not introduced this session but blocks `--strict` validation. | Agent | Session S46 (hall-monitor audit) | None |
+| IRF-APP-070 | P2 | **IRF-APP-064/065 duplicate collision** — two pairs of duplicate entries (064 appears twice, 065 appears twice). Pre-existing from S43. Dedup needed. Related to IRF-APP-062 (general ID collision issue). | Agent | Session S46 (hall-monitor audit) | None |
+| IRF-APP-071 | P1 | **Grafana interview prep — update after recruiter screen** — Mon 2026-04-06 10:30 AM. Update dossier §XIII with new intelligence, advance entry if proceeding, log interaction via crm.py. | Human+Agent | Session S46 | Time-gated (2026-04-06) |
+| IRF-APP-072 | P2 | **Grafana entry N/A vacuums** — `application_url` is generic (boards.greenhouse.io/grafanalabs, not job-specific), `amount.value` is 0 (known: $175K-$210K), `network.referral_source` not populated, `fit.framing` empty, `fit.extracted_keywords` empty, no `description` field. All discoverable from posting. | Agent | Session S46 (N/A vacuum audit) | None |
+| IRF-APP-073 | P2 | **Protocol-compliant email reply** — draft saved in Gmail (thread 19d44c671abf5c5f). Contains P-I hook (Greenhouse API), P-IV terminal question (pipeline architecture). Needs user review and send. Hanging action. | Human | Session S46 | User action |
+| IRF-APP-064 | P2 | Fix N/A vacuums in pipeline entries (location: N/A). | Agent | S43 hall-monitor audit | None |
+| IRF-APP-065 | P2 | Update seed.yaml with new capabilities from S43 wiring tests. | Agent | S43 hall-monitor audit | None |
 
 ---
 
@@ -676,6 +689,10 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-DOM-019 | P2 | **gh auth scopes are ephemeral** — 13 scopes stored in macOS Keychain, not declared in chezmoi source. Fresh machine bootstrap or keychain wipe requires manual `gh auth refresh -s <scopes>`. Need: (a) document required scopes in BOOTSTRAP.md, (b) add `domus doctor` check for scope coverage, (c) consider a `run_once_after_` script that requests scopes post-bootstrap. Currently scopes: admin:enterprise, admin:org, admin:repo_hook, audit_log, copilot, delete_repo, gist, notifications, project, repo, user, workflow, write:packages | Agent | S-domus-auth | None |
 | IRF-DOM-020 | P2 | **`domus-ingestion-refresh` committed but unverified** — script and LaunchAgent (`com.4jp.ingestion-refresh.plist.tmpl`) added in commit `eeb35df` but not yet: (a) deployed via `chezmoi apply`, (b) tested, (c) verified LaunchAgent loads. Pre-existing from prior session, committed alongside auth fix. Needs audit | Agent | S-domus-board | None |
 | IRF-DOM-021 | P1 | **Domus CLAUDE.md missing board URL** — project board at `https://github.com/users/4444J99/projects/3` not documented in CLAUDE.md. Board is discoverable but not linked from the primary context file agents read on session start | Agent | S-domus-board | None |
+| IRF-DOM-022 | P1 | OpenClaw security: small model + web tools vulnerability. 3B model with web access and no sandbox. | Agent | S43 vacuum audit | GH#52 |
+| IRF-DOM-023 | P1 | lefthook global ghost fix. Blocks git push system-wide. | Agent | S43 vacuum audit | GH#51 |
+| IRF-DOM-024 | P2 | OpenClaw cloud model auth (Google OAuth failed). | Agent | S43 vacuum audit | GH#52 |
+| IRF-DOM-025 | P2 | OpenClaw chat channels connection (Discord/Telegram). | Agent | S43 vacuum audit | GH#52 |
 | IRF-DOM-022 | P1 | OpenClaw security: small model + web tools vulnerability. 3B model with web access and no sandbox. | Agent | S43 vacuum audit | GH#52 |
 | IRF-DOM-023 | P1 | lefthook global ghost fix. Blocks git push system-wide. | Agent | S43 vacuum audit | GH#51 |
 | IRF-DOM-024 | P2 | OpenClaw cloud model auth (Google OAuth failed). | Agent | S43 vacuum audit | GH#52 |
