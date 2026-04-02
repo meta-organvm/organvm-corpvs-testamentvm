@@ -746,6 +746,14 @@ Layer 1 of 4-layer process intelligence system. Captures observations from contr
 | `IRF-APP-080` | Productize Application Pipeline |
 | `IRF-OSS-042` | System-wide Action Ledger |
 | `IRF-OSS-043` | IRF Instrument v3 (Endless Box) |
+| `IRF-SYS-051` | Stable Unit Notice Ownership Audit |
+
+### Sessions
+
+| ID | Description |
+|----|-------------|
+| `S52` | 72h Reconciliation Plotting |
+| `S-2026-04-02` | Governance Audit & Notice Ownership Tending |
 
 ---
 
