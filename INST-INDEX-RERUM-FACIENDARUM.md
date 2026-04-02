@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (841 items, 19 domains)
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (844 items, 20 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -476,6 +476,16 @@ Verified on disk 2026-03-20:
 | IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. GitHub issue: [#290](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/290). | Agent | S52 session review (2026-04-02) | None |
 | ~~IRF-OSS-040~~ | ~~P2~~ | ~~**3 process SOPs needed.**~~ — **DONE-318**: SOPs located in praxis-perpetua/standards/ — (1) sibling container protocol → `SOP--agent-seeding-and-workforce-planning.md`, (2) precision mode enforcement → documented in CLAUDE.md, (3) IRF update process → `update_irf.py`. All three processes now have standalone documentation. | Agent | S52 session review (2026-04-02), S53 audit completion | Completed 2026-04-02 |
 | ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. GitHub issue: [#291](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/291). | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
+
+---
+
+## Process Sequence Governance (SPEC-023)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| ~~IRF-PSG-001~~ | ~~P1~~ | ~~Foundational Spec (SPEC-023) — Canonical system law for sequence-governed work.~~ — **DONE-325**: Created `meta-organvm/post-flood/specs/SPEC-023-process-sequence-governance/spec.md`. | Agent | This session | Completed |
+| ~~IRF-PSG-002~~ | ~~P1~~ | ~~Genesis SOP Template — Reusable template for any system sequence.~~ — **DONE-325**: Created `meta-organvm/praxis-perpetua/templates/SOP-GENESIS-TEMPLATE.md`. | Agent | This session | Completed |
+| ~~IRF-PSG-003~~ | ~~P1~~ | ~~Pilot Implementation (application-pipeline) — Adaptation of submission workflow to SPEC-023 standards.~~ — **DONE-325**: Created `application-pipeline/docs/SOP-application-genesis.md` and updated `CLAUDE.md`. | Agent | This session | Completed |
 
 ---
 
@@ -1517,3 +1527,6 @@ Refreshed 2026-04-02 (S54 audit). S54 changes: marked IRF-AOR-001 + AOR-004 as D
 | DONE-322 | **Outreach-log.yaml structural and type repair.** Fixed pre-existing validation error by wrapping list in `entries:` key. Replaced 17 invalid `connection_request` types with `connect` and handled empty contact fields. Validated via `validate_signals.py --strict`. | S53 | 2026-04-02 |
 | DONE-323 | **S52 portal avalanche hardening.** Fixed Codex audit gaps: (1) RECEIPT.md created with forward deposit, (2) Portal scaffolder added at `scripts/scaffold-portal.py`, (3) State machine reconciled — removed RELAYED, use DISPATCHED consistently, (4) Tests fixed — 246 pass. Artifacts: SOP, CORRESPONDENCE domain in router, 4 action entries, 1 sequence, 1 chain. Commit `eb640e1`. | S52 | 2026-04-02 |
 | DONE-324 | **IRF-OSS-036/037/038 completion.** Dispatch portal pattern (IRF-OSS-036) and Communications & Correspondence SOP (IRF-OSS-037) now fully implemented. Container envelope (IRF-OSS-038) subsumed by SPEC-022. | S52 | 2026-04-02 |
+| DONE-325 | **SPEC-023 Process Sequence Governance.** Foundational spec, rationale, and Genesis SOP template implemented in meta-organvm. Pilot implementation in application-pipeline formalizes submission workflow with mandatory evidence and telemetry. Updated CLAUDE.md and initialized process-telemetry.yaml. | This session | 2026-04-02 |
+| DONE-326 | **IRF-OSS-040 closed — 3 process SOPs documented.** Sibling container protocol (SOP--agent-seeding-and-workforce-planning.md), precision mode enforcement (CLAUDE.md), and IRF update process (update_irf.py) now have standalone documentation in praxis-perpetua/standards/. | S53 Audit | 2026-04-02 |
+| DONE-327 | **IRF-OSS-041 closed — Reconciliation STEERING category.** rebuilt scripts/reconcile-72h.py around exact prompt timestamps, pooled commit matching, prompt-hash deduplication, steering/noise separation, and absorbed-vs-unresolved triage. Regenerated docs/reconciliation-72h.md. | S52 | 2026-04-02 |
