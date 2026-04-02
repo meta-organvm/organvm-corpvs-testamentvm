@@ -462,7 +462,7 @@ Verified on disk 2026-03-20:
 | IRF-OSS-038 | P2 | **Container envelope spec.** Utopia/dystopia orbit at every scale (function→module→organ→body). Counter-force field (homeostasis↔homeorhesis, elasticity↔plasticity, reactive↔allostasis, preservation↔kinorhesis). Extends SPEC-019 organ-systems-mapping. Proper home: meta-organvm post-flood corpus. Axiom: "ideal→form mismatch = design problem." **Subsumed by SPEC-022 (Dispersio Formalis)** — the mismatch IS the dispersive profile at each scale. See IRF-DSF-006. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
 | IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. | Agent | S52 session review (2026-04-02) | None |
 | IRF-OSS-040 | P2 | **3 process SOPs needed.** S52 review identified 3 partially documented processes that need standalone SOP docs: (1) sibling container protocol (in transcript only), (2) precision mode enforcement (in CLAUDE.md only), (3) IRF update process (manual `update_irf.py` only). Target: `docs/sop-*.md` files in orchestration-start-here. | Agent | S52 session review (2026-04-02) | None |
-| IRF-OSS-041 | P2 | **Reconciliation STEERING category.** S52 review confirmed S50's finding: 59% HANGING rate in `scripts/reconcile-72h.py` is inflated by steering commands ("proceed", "continue", "logic dictates order") that cannot match any commit. Needs a STEERING prompt classification category to filter non-actionable commands. | Agent | S52 session review (2026-04-02) | None |
+| ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
 
 ---
 
@@ -1290,6 +1290,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-312 | **SPEC-022 Dispersio Formalis Layer 0 (theory).** 4 files in `post-flood/specs/SPEC-022-dispersio-formalis/`: grounding.md (303 lines, 7 sections, 8-phase portal lifecycle + Room topology), literature-matrix.md (13 sources, 12% GROUNDED / 48% ADAPTED / 40% NOVEL), risk-register.md (15 claims, 5 LOW / 6 MEDIUM / 4 HIGH), inventory.md (27 terms, integration map across 13 modules). Plan at `.claude/plans/2026-04-01-dispersio-formalis.md`. IRF-OSS-038 subsumed. | S-dispersio-formalis | 2026-04-01 |
 | DONE-313 | **sovereign-systems Maddie Spiral Path handoff atomization + persistence sync.** Mirrored the canonical 2026-04-01 handoff into `sovereign-systems--elevate-align/docs/handoff-maddie-spiral-path-2026-04-01.md`, preserved board atomization and session-close audit artifacts, expanded the operating board from 11 to 19 issues (GH#4 closed; GH#6-9 rewritten; GH#13-20 created), reconciled `CLAUDE.md` and `seed.yaml`, and pushed project commit `05cc9a5` to origin. Omega checked: no criterion change. Testament checked: no new recordable event. | 2026-04-01 sovereign-systems handoff closeout | 2026-04-01 |
 | DONE-314 | **IRF-APP-003 advanced for `public-record-data-scrapper`.** Implemented production reliability hardening for `ucc-mca-api`: `npm start` now runs the bundled `dist/server.cjs`, telemetry schema drift is repaired by `013_ingestion_telemetry_available_strategies.sql`, and startup hydration is bounded/optionally skippable via env. Created GH#230 because concordance’s legacy GH#273 reference was stale/nonexistent. Remaining open work stays under IRF-APP-003: deploy to Render, apply migration 013, verify boot, and decide worker bundling parity. Session-close audit also raised IRF-SYS-044 / GH#70 for hanging `organvm session review` and `organvm session plans` commands in this repo. | S-2026-04-02 ucc-mca-api hardening | 2026-04-02 |
+| DONE-315 | **72-hour reconciliation instrument repaired and re-run.** `scripts/reconcile-72h.py` now filters by actual prompt timestamp for the fixed Mar 29-31 window, pools commits across tracked workspaces, deduplicates repeated prompts by normalized hash, separates steering/noise from outcome-bearing work, distinguishes ABSORBED vs UNRESOLVED hanging populations, redacts credential-like material in report summaries, and ships regression coverage in `tests/test_reconcile_72h.py`. The regenerated report (`docs/reconciliation-72h.md`) now reports 352 raw prompts, 49 duplicates collapsed, 159 commits in-window, 102 DELIVERED / 34 PARTIAL / 4 STEERING / 17 ABSORBED / 116 UNRESOLVED / 6 DEFERRED. Action ledger + fieldwork records were emitted in-repo. Commit `71dabd7`. | RECON72H / S52 reconciliation refinement | 2026-04-02 |
 | ~~DONE-126~~ | *(Superseded by DONE-134→140 — DWV-S1 logged Avditor Mvndi work in granular detail)* | — | — |
 
 ---
@@ -1324,14 +1325,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the registry source file after adding IRF-SYS-044 and IRF-SYS-045; CLI undercount is tracked separately under IRF-SYS-045 / GH#71.
+Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the registry source file after closing IRF-OSS-041 as DONE-315; CLI undercount is still tracked separately under IRF-SYS-045 / GH#71.
 
 - **Total IRF items:** 717
-- **Open:** 386
-- **Completed:** 331
+- **Open:** 385
+- **Completed:** 332
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 46.1%
+- **Completion rate:** 46.3%
 
 ### Open By Priority
 
@@ -1339,17 +1340,17 @@ Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recove
 |----------|-------|
 | P0 | 11 |
 | P1 | 141 |
-| P2 | 199 |
+| P2 | 198 |
 | P3 | 35 |
 
 ### By Domain
 
 | Domain | Count |
 |--------|-------|
-| DONE | 331 |
+| DONE | 332 |
 | RES | 68 |
 | APP | 52 |
-| OSS | 35 |
+| OSS | 34 |
 | SYS | 31 |
 | DOM | 24 |
 | PRT | 18 |
@@ -1394,7 +1395,7 @@ Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recove
 
 ---
 
-*Last updated: 2026-04-02 — `public-record-data-scrapper` reliability closeout. DONE-314 added, IRF-APP-003 repointed to GH#230, IRF-SYS-044 logged against `organvm-engine#70`, IRF-SYS-045 logged against `organvm-engine#71`, and the human-maintained stats block was corrected to match the source file while the CLI undercount bug remains tracked.*
+*Last updated: 2026-04-02 — 72-hour reconciliation refinement closeout. DONE-315 added, IRF-OSS-041 closed against `orchestration-start-here` commit `71dabd7`, and the manual stats block was advanced accordingly while the CLI undercount bug remains tracked under IRF-SYS-045 / GH#71.*
 *Next update: After any session that produces or discovers work items*
 
 ### S36 Email Triage Discovered Items (2026-03-24)
