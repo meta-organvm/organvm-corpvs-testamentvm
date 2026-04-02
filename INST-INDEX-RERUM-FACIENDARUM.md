@@ -29,9 +29,7 @@ This is a **living governance instrument**, not a snapshot. Every session that p
 **Update protocol:**
 1. When a session closes, add completed items to `## Completed` with session ID and date.
 2. When new work is discovered, add to the appropriate organ section with priority and source.
-3. When work is blocked, move to `| DONE-247 | Cronus Metabolus Core Metabolism Loop (Ingestion, Extraction, Generation, Scoring). | S39 | 2026-03-26 |
-
-## Blocked` with blocking reason.
+3. When work is blocked, move to `## Blocked` with blocking reason.
 4. When work becomes irrelevant, move to `## Archived` with reason.
 
 ### Completion Logging — External Index Propagation
@@ -340,6 +338,19 @@ Verified on disk 2026-03-20:
 
 ---
 
+## META — Dispersio Formalis (SPEC-022)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| ~~IRF-DSF-001~~ | ~~P1~~ | ~~**Layer 0: Write SPEC-022 grounding paper**~~ — **DONE-312**: 4 files in `post-flood/specs/SPEC-022-dispersio-formalis/` (grounding.md 303 lines, literature-matrix.md 119 lines, risk-register.md 63 lines, inventory.md 123 lines). 608 total lines. 13 sources, 15 claims, 27 terms, 5-layer implementation surface. Plan at `.claude/plans/2026-04-01-dispersio-formalis.md`. | Agent | S-dispersio-formalis (2026-04-01) | Completed |
+| IRF-DSF-002 | P2 | **Layer 1: JSON Schema** — `schema-definitions/schemas/dispersio-formalis-v1.json`. MaterialState enum (7 values), DispersiveRecord object, wound/scar classification, dispersive manifest object. Integrate with seed-v1 (edge dispersion profiles) and dispatch-payload (dispersive metadata). | Agent | SPEC-022 inventory.md integration map | None |
+| IRF-DSF-003 | P2 | **Layer 2: Engine module** — `organvm-engine/src/organvm_engine/dispersio/`. states.py, portal.py, audit.py, manifest.py, wound_scar.py. CLI: `organvm dispersio audit/manifest/classify`. Dispatch events: dispersio.audit_complete, dispersio.portal_closed, dispersio.wound_to_scar. Atomic Clock integration: beat registration for 8-phase portal lifecycle. | Agent | SPEC-022 inventory.md implementation surface | IRF-DSF-002 (schema) |
+| IRF-DSF-004 | P2 | **Layer 3: Session integration** — extend session review protocol with dispersive audit step, extend agent handoff protocol with dispersive manifest, extend plan management with wound/scar classification, formally declare IRF as NOT-ENACTED registry under SPEC-022. | Agent | SPEC-022 inventory.md Layer 3 | IRF-DSF-003 (engine) |
+| IRF-DSF-005 | P2 | **Layer 4: Behavioral integration** — update agent prompt standards to request dispersive self-assessment, update planning methodology to surface MISHEARD/THINNED/LOST states, integrate with session-self-critique SOP. | Agent | SPEC-022 §6 governing implications | IRF-DSF-001 (theory, done) |
+| IRF-DSF-006 | P2 | **Subsume IRF-OSS-038** — container envelope spec becomes extension of SPEC-022. The ideal→form mismatch at every scale IS the dispersive profile at that scale. Counter-force field (homeostasis↔homeorhesis) = portal refractive properties. Update IRF-OSS-038 to reference SPEC-022 as governing spec. | Agent | SPEC-022 inventory.md §Relationship to IRF-OSS-038 | IRF-DSF-001 (theory, done) |
+
+---
+
 ## ORGAN-II — Object Lessons
 
 | ID | Priority | Action | Owner | Source | Blocker |
@@ -446,6 +457,9 @@ Verified on disk 2026-03-20:
 | IRF-OSS-033 | **P1** | **Action Ledger + Dispatch Ledger convergence.** The action ledger (orchestration-start-here) and dispatch ledger (tool-interaction-design/conductor/) are the same system at different scales, built independently on consecutive days. Dispatch receipt → action type, timecard → sequence, energy → param axes, scorecard → cycle detection. Must converge. See `project_temporal_convergence.md`. | Agent | S-action-ledger session (2026-03-31) | IRF-OSS-032, IRF-CND-001 |
 | IRF-OSS-034 | P2 | **Action Ledger design spec** — write formal spec to `docs/superpowers/specs/2026-03-31-action-ledger-design.md`. Plan exists (`.claude/plans/scalable-baking-conway.md`) but formal spec not yet written. | Agent | S-action-ledger session (2026-03-31) | None |
 | IRF-OSS-035 | P2 | **TypeScript dead code archive** — 572 lines in `src/agents/` and `src/dreamcatcher/` (dispatcher.ts, metasystem-manager.ts, router.ts, watchman.ts). Legacy Dreamcatcher prototype. Archive or delete. | Agent | S-fieldwork-mvp vacuum audit | None |
+| IRF-OSS-036 | **P1** | **Dispatch portal pattern formalization.** `tasks/<slug>/` convention for ephemeral agent dispatch containers with 4-file viral genome (CLAUDE.md, BRIEFING.md, REFERENCES.md, SEQUENCE.md). Counter-force archetype assembly replaces agent dispatch. First instance: `tasks/communications-correspondence-relay/`. Needs: universal container schema doc, `tasks/` CLI or domus subcommand for portal creation, evaporation automation. | Agent | S51 (2026-04-01) | None |
+| IRF-OSS-037 | **P1** | **Communications & Correspondence SOP.** 6-phase relay protocol (SWEEP→CLASSIFY→COMPOSE→RELAY→DISPATCH→VERIFY) unifying mail-triage, handoff relay, outbound compose, cross-channel dispatch. Portal seeded at `tasks/communications-correspondence-relay/`, awaiting execution. Includes intake router CORRESPONDENCE domain addition. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
+| IRF-OSS-038 | P2 | **Container envelope spec.** Utopia/dystopia orbit at every scale (function→module→organ→body). Counter-force field (homeostasis↔homeorhesis, elasticity↔plasticity, reactive↔allostasis, preservation↔kinorhesis). Extends SPEC-019 organ-systems-mapping. Proper home: meta-organvm post-flood corpus. Axiom: "ideal→form mismatch = design problem." **Subsumed by SPEC-022 (Dispersio Formalis)** — the mismatch IS the dispersive profile at each scale. See IRF-DSF-006. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
 
 ---
 
@@ -610,6 +624,11 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-APP-033 | P2 | Seed.yaml update — Protocol modules (protocol_types, protocol_validator, dm_composer), log_dm, reconcile_outreach, three-pillar rubric are new capabilities not declared in seed contract. Extends IRF-APP-013. | Agent | S35 close-out vacuum (index #8) | None |
 | IRF-APP-034 | P2 | Companion indices — Protocol formalization is a new named entity (Index Nominum candidate). log_dm and reconcile_outreach are new tools (Index Rerum candidates). Register when companion indices are built. | Agent | S35 close-out vacuum (index #10) | Companion indices not yet built |
 | IRF-APP-065 | P2 | Update seed.yaml with new capabilities from S43 wiring tests. | Agent | S43 hall-monitor audit | None |
+| IRF-APP-066 | P1 | **First interview conversion SOP** — standardized as 6-phase, 26-step sequence in `pipeline/submissions/grafana-labs-full-dossier.md` §XIV. Needs extraction to standalone SOP document in `docs/` or `strategy/`. Reusable for all future positive conversions. | Agent | Session S46 (2026-04-01) | None |
+| IRF-APP-068 | P2 | **Grafana Tier 1 contributions** — 4 insertion points identified: grafana/metrics-drilldown #1146 (CLAUDE.md), grafana/mcp-grafana #680 (prompt injection), #641 (camelCase fix), #620 (docs org). Execute before Mon 2026-04-06 interview. | Human+Agent | Session S46 (contextual insertion) | None |
+| IRF-APP-069 | P2 | **Outreach-log.yaml structural fix** — pre-existing validation error: missing top-level `entries:` key. Signal validator reports 0 entries parsed. Not introduced this session but blocks `--strict` validation. | Agent | Session S46 (hall-monitor audit) | None |
+| IRF-APP-070 | P2 | **IRF-APP-064/065 duplicate collision** — two pairs of duplicate entries (064 appears twice, 065 appears twice). Pre-existing from S43. Dedup needed. Related to IRF-APP-062 (general ID collision issue). | Agent | Session S46 (hall-monitor audit) | None |
+| IRF-APP-073 | P2 | **Protocol-compliant email reply** — draft saved in Gmail (thread 19d44c671abf5c5f). Contains P-I hook (Greenhouse API), P-IV terminal question (pipeline architecture). Needs user review and send. Hanging action. | Human | Session S46 | User action |
 
 ---
 
@@ -1072,7 +1091,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-143 | Fossil archivist — intention capture with uniqueness scoring (Jaccard), SHA256 fingerprinting, YAML serialization (no PyYAML dep). Drift detector: convergence/mutation/shadow analysis classifying intention→reality divergence by archetype. | S31 (fossil) | 2026-03-22 |
 | DONE-144 | Fossil witness — git post-commit hook generation + install across workspace, real-time WITNESSED provenance recording, witness status CLI. Bridge: EPOCH_CLOSED/INTENTION_BORN/DRIFT_DETECTED testament events + fossil:// URI scheme. | S31 (fossil) | 2026-03-22 |
 | DONE-145 | domus-semper-palingenesis: clean-room shell config rewrite — 16 files, 50ms startup (was 52s cold / 450ms warm). Killed op v1 dead code (opsignin, op wrapper, session caching causing 52s timeout). Added `_cache.zsh` DRY primitive (replaces 8 copy-paste blocks). Native `zsh/datetime` timer (replaces perl subprocess). `dot_zshenv` → template (identity from chezmoi.toml). Removed outdated `ORG_LIMINAL_ALT`/`GITHUB_SECONDARY`. Added `op-refresh` for v2-native secrets. Removed dangerous `alias grep='rg'`. Dynamic Ruby gem path, BSD sed compat, PATH dedup at source. 66/66 module+integration tests. Commit `ee8894d`. Spec: `.claude/plans/2026-03-23-shell-config-rewrite-spec.md`. | S32 (shell-rewrite) | 2026-03-23 |
-| DONE-145 | IRF reconciliation audit — cross-referenced 9,376 commits against 158 active IRF items. Closed IRF-TST-002, IRF-SYS-010, IRF-SGO-007. Added 19 DONE entries (115→133). Closed GitHub issues #20 (AX-009) and #21 (AX-003) on organvm-engine. Stats: 155 active, 145 completed. | S31 (reconciliation) | 2026-03-22 |
+| DONE-145b | IRF reconciliation audit — cross-referenced 9,376 commits against 158 active IRF items. Closed IRF-TST-002, IRF-SYS-010, IRF-SGO-007. Added 19 DONE entries (115→133). Closed GitHub issues #20 (AX-009) and #21 (AX-003) on organvm-engine. Stats: 155 active, 145 completed. | S31 (reconciliation) | 2026-03-22 |
 | DONE-146 | IRF-RES-001: Governance Trilemma Declaration — ORGANVM chooses Consistent + Measurable, 10-item blind-spot registry, 11 syntactic + 10 semantic properties documented. File: `praxis-perpetua/governance/2026-03-21-governance-trilemma-declaration.md` | SGO-RP (research) | 2026-03-21 |
 | DONE-147 | IRF-RES-002: Syntactic-Semantic Boundary — 60 governance rules classified (24 syntactic, 25 boundary, 11 semantic). File: `praxis-perpetua/governance/2026-03-21-syntactic-semantic-boundary.md` | SGO-RP (research) | 2026-03-21 |
 | DONE-148 | IRF-RES-005: Naming Convention Validator — Python CLI tool (67 tests), validates 117 repos, found 4 violations. File: `tools/naming-validator/` | SGO-RP (research) | 2026-03-21 |
@@ -1261,9 +1280,7 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-S47-002 | **Second embodiment: `circulatory_route.py` (CIR-001)** — organism's second function. 255 lines, 27 tests. Computes routes, signal attractions (453 candidates), structural defects (3 found: DEAD_SIGNAL TEACHING, STARVED_CONSUMER AESTHETIC, STARVED_CONSUMER QUERY). Following SEED §II Procedure 1 Steps 1-7. Commit `290b783`. | S47 | 2026-03-31 |
 | DONE-S47-003 | **Signal types CONTRACT (SIG-002) and STATE (SIG-003) discovered** — CONTRACT: "declared behavioral agreement between organism functions." STATE: "current configuration of the organism's elements at a point in time." Added to signal-graph.yaml. Vocabulary now 5 types. | S47 | 2026-03-31 |
 | DONE-S47-004 | **First INFORMATION edge wired** — `skeletal--define →[KNOWLEDGE]→ circulatory--route` (feedfront). Also implicit TRACE edge discovered. Signal graph edges no longer empty. CHECK 7 (CONNECTED) now assessable. Commit `290b783`. | S47 | 2026-03-31 |
-
-| ID | What | Session | Date |
-|----|------|---------|------|
+| DONE-312 | **SPEC-022 Dispersio Formalis Layer 0 (theory).** 4 files in `post-flood/specs/SPEC-022-dispersio-formalis/`: grounding.md (303 lines, 7 sections, 8-phase portal lifecycle + Room topology), literature-matrix.md (13 sources, 12% GROUNDED / 48% ADAPTED / 40% NOVEL), risk-register.md (15 claims, 5 LOW / 6 MEDIUM / 4 HIGH), inventory.md (27 terms, integration map across 13 modules). Plan at `.claude/plans/2026-04-01-dispersio-formalis.md`. IRF-OSS-038 subsumed. | S-dispersio-formalis | 2026-04-01 |
 | ~~DONE-126~~ | *(Superseded by DONE-134→140 — DWV-S1 logged Avditor Mvndi work in granular detail)* | — | — |
 
 ---
@@ -1296,14 +1313,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-03-31 via `organvm irf stats`. Includes S-energy-emission close-out propagation: +5 DONE entries (307-311), IRF-AOR-006 closed, and partial-status text for IRF-OSS-032 updated to reflect the emission layer landing while downstream wiring remains open.
+Refreshed 2026-04-01 via manual recovery. S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/068/069/070/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b.
 
-- **Total IRF items:** 777
-- **Open:** 440
-- **Completed:** 337
+- **Total IRF items:** 792
+- **Open:** 454
+- **Completed:** 338
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 43.4%
+- **Completion rate:** 42.7%
 
 ### Open By Priority
 
