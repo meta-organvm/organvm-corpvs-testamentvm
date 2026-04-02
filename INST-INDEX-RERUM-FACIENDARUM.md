@@ -470,9 +470,9 @@ Verified on disk 2026-03-20:
 | IRF-OSS-033 | **P1** | **Action Ledger + Dispatch Ledger convergence.** The action ledger (orchestration-start-here) and dispatch ledger (tool-interaction-design/conductor/) are the same system at different scales, built independently on consecutive days. Dispatch receipt → action type, timecard → sequence, energy → param axes, scorecard → cycle detection. Must converge. See `project_temporal_convergence.md`. | Agent | S-action-ledger session (2026-03-31) | IRF-OSS-032, IRF-CND-001 |
 | IRF-OSS-034 | P2 | **Action Ledger design spec** — write formal spec to `docs/superpowers/specs/2026-03-31-action-ledger-design.md`. Plan exists (`.claude/plans/scalable-baking-conway.md`) but formal spec not yet written. | Agent | S-action-ledger session (2026-03-31) | None |
 | IRF-OSS-035 | P2 | **TypeScript dead code archive** — 572 lines in `src/agents/` and `src/dreamcatcher/` (dispatcher.ts, metasystem-manager.ts, router.ts, watchman.ts). Legacy Dreamcatcher prototype. Archive or delete. | Agent | S-fieldwork-mvp vacuum audit | None |
-| IRF-OSS-036 | **P1** | **Dispatch portal pattern formalization.** `tasks/<slug>/` convention for ephemeral agent dispatch containers with 4-file viral genome (CLAUDE.md, BRIEFING.md, REFERENCES.md, SEQUENCE.md). Counter-force archetype assembly replaces agent dispatch. First instance: `tasks/communications-correspondence-relay/`. Needs: universal container schema doc, `tasks/` CLI or domus subcommand for portal creation, evaporation automation. | Agent | S51 (2026-04-01) | None |
-| IRF-OSS-037 | **P1** | **Communications & Correspondence SOP.** 6-phase relay protocol (SWEEP→CLASSIFY→COMPOSE→RELAY→DISPATCH→VERIFY) unifying mail-triage, handoff relay, outbound compose, cross-channel dispatch. Portal seeded at `tasks/communications-correspondence-relay/`, awaiting execution. Includes intake router CORRESPONDENCE domain addition. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
-| IRF-OSS-038 | P2 | **Container envelope spec.** Utopia/dystopia orbit at every scale (function→module→organ→body). Counter-force field (homeostasis↔homeorhesis, elasticity↔plasticity, reactive↔allostasis, preservation↔kinorhesis). Extends SPEC-019 organ-systems-mapping. Proper home: meta-organvm post-flood corpus. Axiom: "ideal→form mismatch = design problem." **Subsumed by SPEC-022 (Dispersio Formalis)** — the mismatch IS the dispersive profile at each scale. See IRF-DSF-006. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
+| ~~IRF-OSS-036~~ | ~~**P1**~~ | ~~**Dispatch portal pattern formalization.**~~ — **DONE-323**: `tasks/<slug>/` with 5-file genome (CLAUDE, BRIEFING, REFERENCES, SEQUENCE, RECEIPT). First instance executed. `scripts/scaffold-portal.py` created. | Agent | S51 (2026-04-01) | Completed S52 |
+| ~~IRF-OSS-037~~ | ~~**P1**~~ | ~~**Communications & Correspondence SOP.**~~ — **DONE-323**: 6-phase relay protocol implemented as `docs/sop-communications-correspondence.md`. CORRESPONDENCE domain added to intake router. 4 ledger actions, 1 sequence, 1 chain. | Agent | S51 (2026-04-01) | Completed S52 |
+| ~~IRF-OSS-038~~ | ~~P2~~ | ~~**Container envelope spec.**~~ — **DONE-324**: Subsumed by SPEC-022 (Dispersio Formalis). Theory preserved in memory. | Agent | S51 (2026-04-01) | Completed S52 |
 | IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. GitHub issue: [#290](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/290). | Agent | S52 session review (2026-04-02) | None |
 | ~~IRF-OSS-040~~ | ~~P2~~ | ~~**3 process SOPs needed.**~~ — **DONE-318**: SOPs located in praxis-perpetua/standards/ — (1) sibling container protocol → `SOP--agent-seeding-and-workforce-planning.md`, (2) precision mode enforcement → documented in CLAUDE.md, (3) IRF update process → `update_irf.py`. All three processes now have standalone documentation. | Agent | S52 session review (2026-04-02), S53 audit completion | Completed 2026-04-02 |
 | ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. GitHub issue: [#291](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/291). | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
@@ -1343,12 +1343,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stable-unit, fleet, and operations seeding. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the current registry source after DONE-319, DONE-320, DONE-321, DONE-322, IRF-OPS-012, and IRF-OPS-013 landed; IRF-SYS-045 remains open because parser drift has occurred historically and still needs hardening in `organvm irf stats`.
 
-- **Total IRF items:** 731
-- **Open:** 396
-- **Completed:** 335
+- **Total IRF items:** 841
+- **Open:** 491
+- **Completed:** 350
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 46.1%
+- **Completion rate:** 41.6%
 
 ### Open By Priority
 
@@ -1363,42 +1363,42 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 
 | Domain | Count |
 |--------|-------|
-| DONE | 333 |
-| RES | 68 |
-| APP | 52 |
-| OSS | 34 |
-| SYS | 32 |
-| DOM | 24 |
-| PRT | 18 |
+| DONE | 350 |
+| RES | 83 |
+| APP | 55 |
+| OSS | 44 |
+| SYS | 48 |
+| DOM | 28 |
+| PRT | 20 |
 | III | 15 |
-| CCE | 12 |
+| CCE | 25 |
 | LIQ | 11 |
-| VOX | 9 |
+| VOX | 12 |
 | MON | 7 |
-| HRM | 7 |
-| INST | 7 |
-| AOR | 7 |
-| SGO | 6 |
-| CND | 6 |
+| HRM | 10 |
+| INST | 23 |
+| AOR | 16 |
+| SGO | 7 |
+| CND | 12 |
 | ARC | 6 |
 | SKL | 5 |
 | CRP | 5 |
-| OBJ | 5 |
+| OBJ | 7 |
 | LOG | 5 |
 | KOI | 5 |
 | DOC | 5 |
-| IDX | 4 |
+| IDX | 9 |
 | GRC | 4 |
 | GEN | 3 |
 | IRA | 3 |
 | VER | 3 |
 | VIG | 2 |
 | TRV | 2 |
-| PSP | 2 |
+| PSP | 3 |
 | KER | 2 |
 | BLK | 2 |
 | DWV | 2 |
-| TST | 1 |
+| TST | 2 |
 
 ### Effort Distribution (Research Programme)
 
@@ -1510,3 +1510,5 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 | DONE-320 | **Stable unit notice ownership requirement identified (IRF-SYS-051 initiation).** Researched Stable Units Protocol and identified systemic status mismatches between registry and seed contracts. Drafted system-wide audit plan (`docs/planning/06-stable-unit-notice-audit.md`) and flagged `public-record-data-scrapper` for tending. | S-2026-04-02 | 2026-04-02 |
 | DONE-321 | **External application quick-log tool built (IRF-APP-067).** Implemented `scripts/quicklog.py` for real-time registration of out-of-pipeline submissions. Integrated into `scripts/run.py` as a flag-driven dispatcher command. Updated `CLAUDE.md` and `seed.yaml`, and re-verified the live invocation path. 10-index review completed; applicable surfaces were updated, and the remaining indices were consciously skipped as inapplicable to this command addition. | S53 | 2026-04-02 |
 | DONE-322 | **Outreach-log.yaml structural and type repair.** Fixed pre-existing validation error by wrapping list in `entries:` key. Replaced 17 invalid `connection_request` types with `connect` and handled empty contact fields. Validated via `validate_signals.py --strict`. | S53 | 2026-04-02 |
+| DONE-323 | **S52 portal avalanche hardening.** Fixed Codex audit gaps: (1) RECEIPT.md created with forward deposit, (2) Portal scaffolder added at `scripts/scaffold-portal.py`, (3) State machine reconciled — removed RELAYED, use DISPATCHED consistently, (4) Tests fixed — 246 pass. Artifacts: SOP, CORRESPONDENCE domain in router, 4 action entries, 1 sequence, 1 chain. Commit `eb640e1`. | S52 | 2026-04-02 |
+| DONE-324 | **IRF-OSS-036/037/038 completion.** Dispatch portal pattern (IRF-OSS-036) and Communications & Correspondence SOP (IRF-OSS-037) now fully implemented. Container envelope (IRF-OSS-038) subsumed by SPEC-022. | S52 | 2026-04-02 |
