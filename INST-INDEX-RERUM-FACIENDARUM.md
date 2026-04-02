@@ -961,6 +961,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 | ID | What | Session | Date |
 |----|------|---------|------|
+| DONE-S54-001 | **S54: IRF-AOR-001 closed — third function built.** cultvra_logos.py embodied in S52 (commit 0f9aba3), completing skeletal->circulatory->cultvra->skeletal signal cycle. CHECK 19 closable. 33 new tests (82 total). Logged during S54 full audit (Codex archaeology + Claude 10-index audit). | S54 | 2026-04-02 |
+| DONE-S54-002 | **S54: IRF-AOR-004 closed — QUERY starvation resolved.** cultvra->skeletal feedback edge produces QUERY signals for documentation gaps. Structural defects reduced 3->2. | S54 | 2026-04-02 |
+| DONE-S54-003 | **S54: RELAY.md bridged S48->S54.** RELAY was 4+ sessions stale. Updated with full organism vitals, Codex findings, 10-index audit results, next-session directives. Commit 2baab96. | S54 | 2026-04-02 |
+| DONE-S54-004 | **S54: IRF-AOR-009 ID collision fixed.** S52 session reused IRF-AOR-009 (already assigned to memory vacuum). Renumbered to AOR-018. Instance of IRF-MON-008 pattern. | S54 | 2026-04-02 |
 | DONE-S48-001 | **S48: CLAUDE.md created for a-organvm** (IRF-AOR-008 closed). Navigation surface: commands, architecture, naming conventions, session protocol, constraints. 107 lines. Commit `50a21b5`. | S48 | 2026-04-02 |
 | DONE-S48-002 | **S48: 7 philosophical principles grounded in Claude Code memory.** Absorption purity firewall, two portals (ORGAN-REPORT + post-flood), three rendering languages (Logic/Math/Biology), gate superposition, session metabolism, predecessor lineage, autopoietic charter. All saved as persistent memory files. | S48 | 2026-04-02 |
 | DONE-S48-003 | **S48: RELAY.md updated for S48 close.** Session waste documented (3 misses). Chezmoi vacuum flagged. Next-session directives preserved. Commit `ce6b26b`. | S48 | 2026-04-02 |
@@ -1341,22 +1345,22 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stable-unit, fleet, and operations seeding. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the current registry source after DONE-319, DONE-320, DONE-321, DONE-322, IRF-OPS-012, and IRF-OPS-013 landed; IRF-SYS-045 remains open because parser drift has occurred historically and still needs hardening in `organvm irf stats`.
+Refreshed 2026-04-02 (S54 audit). S54 changes: marked IRF-AOR-001 + AOR-004 as DONE, fixed AOR-009 ID collision (renumbered to AOR-018), added AOR-019. Prior context: S52/S53 reconciliation wave plus subsequent stable-unit, fleet, and operations seeding. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the current registry source after DONE-319, DONE-320, DONE-321, DONE-322, IRF-OPS-012, and IRF-OPS-013 landed; IRF-SYS-045 remains open because parser drift has occurred historically and still needs hardening in `organvm irf stats`.
 
-- **Total IRF items:** 841
-- **Open:** 491
-- **Completed:** 350
+- **Total IRF items:** 846
+- **Open:** 490
+- **Completed:** 356
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 41.6%
+- **Completion rate:** 42.1%
 
 ### Open By Priority
 
 | Priority | Count |
 |----------|-------|
 | P0 | 8 |
-| P1 | 188 |
-| P2 | 219 |
+| P1 | 186 |
+| P2 | 220 |
 | P3 | 39 |
 
 ### By Domain
@@ -1377,7 +1381,7 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 | MON | 7 |
 | HRM | 10 |
 | INST | 23 |
-| AOR | 16 |
+| AOR | 17 |
 | SGO | 7 |
 | CND | 12 |
 | ARC | 6 |
@@ -1468,10 +1472,10 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-AOR-001 | P1 | **Third function selection + build** — closes CHECK 19 (CIRCULATION: full metabolic cycle). Must consume circulatory output and produce something that completes the cycle. Derive from need, not cycle-closure convenience. Candidates: immune--verify, nervous--propose. RELAY.md S47 has analysis. | Agent | S47 RELAY | None |
+| ~~IRF-AOR-001~~ | ~~P1~~ | ~~**Third function selection + build**~~ — **DONE-S54-001**: `cultvra_logos.py` (third function) built in S52 (commit `0f9aba3`). Closes CHECK 19 cycle. 33 tests, 16th mechanism (cultvra). Signal cycle complete. QUERY starvation resolved. | Agent | S47 RELAY | Completed S52 (logged S54) |
 | IRF-AOR-002 | P2 | **DEAD_SIGNAL: TEACHING** — produced by memory--remember + reproductive--generate, consumed by nobody. Signal type has no consumer in any of 35 gate contracts. Needs: which mechanism teaches? Is TEACHING a valid signal type or a misclassification? | Agent | S47 circulatory defect scan | None |
 | IRF-AOR-003 | P2 | **STARVED_CONSUMER: AESTHETIC** — consumed by immune--score, integumentary--present, integumentary--render, theoria--define-omega. Produced by nobody. No function or contract generates aesthetic standards. Needs: which mechanism produces AESTHETIC? Or is this a boundary signal (operator-originated)? | Agent | S47 circulatory defect scan | None |
-| IRF-AOR-004 | P1 | **STARVED_CONSUMER: QUERY** — consumed by skeletal--define, produced by nobody. QUERY is an operator-initiated signal — needs boundary signal declaration in signal-graph.yaml (type: EXTERNAL, source: operator, direction: inbound). Current signal-graph.yaml only declares pyyaml as boundary signal. | Agent | S47 circulatory defect scan | None |
+| ~~IRF-AOR-004~~ | ~~P1~~ | ~~**STARVED_CONSUMER: QUERY**~~ — **DONE-S54-002**: Resolved by `cultvra->skeletal` feedback edge (signal-graph.yaml L80-83). cultvra--logos produces QUERY signals for documentation gaps, consumed by skeletal--define. Defects 3->2 (TEACHING dead + AESTHETIC starved remain). | Agent | S47 circulatory defect scan | Completed S52 (logged S54) |
 | IRF-AOR-005 | P2 | **TRIPTYCH.md framing conflict** — line 69 still says "grows around them" (biological absorption frame). Operator has corrected this twice to alchemical (calcination) frame. SEED.md uses biological vocabulary (Procedure 5: "digest a predecessor"). Needs: operator decision on which frame the portal document carries. | Agent | S47 cross-session audit | Operator decision |
 | ~~IRF-AOR-006~~ | ~~P2~~ | ~~Concordance: CIR-001, SIG-002, SIG-003, GEN-002 not registered~~ — **DONE-311**: all four IDs are now registered in `docs/operations/concordance.md` under the A-Organism embodiment section. | Agent | S47 10-index audit | Completed 2026-03-31 |
 | IRF-AOR-007 | P2 | **GitHub issues: S47 work not tracked on project board** — a-organvm/a-organvm has a GH Projects V2 board (22 issues). Second embodiment work (circulatory_route.py, signal types, edge wiring) has no corresponding GH issues. | Agent | S47 10-index audit | None |
@@ -1485,6 +1489,7 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 | IRF-AOR-016 | P3 | **N/A VACUUM: Companion indices — post-flood/ portal unlisted.** S48 identified `meta-organvm/post-flood/` as genesis chamber portal. IRF-IDX-001 (Index Locorum) not yet built. When built: post-flood/ and 8 predecessor repos need Locorum entries with portal designation. | Agent | S48 N/A vacuum audit | IRF-IDX-001 |
 | IRF-AOR-017 | P3 | **N/A VACUUM: Inquiry Log — S48 discourse not connected to SGO.** Session produced 7 principles spanning autopoiesis, alchemy, ontology, signal theory. SGO research programme (13 papers) in praxis-perpetua covers overlapping territory. Does three-rendering-languages framework (Logic/Math/Biology) advance a paper? Does gate superposition connect to an existing commission? | Agent | S48 N/A vacuum audit | Research programme review |
 | ~~IRF-AOR-008~~ | ~~P1~~ | ~~**a-organvm has no CLAUDE.md**~~ — **DONE S48** (DONE-S48-001). CLAUDE.md created: commands, architecture, naming conventions (GEN-002), session protocol, constraints. 107 lines. Commit `50a21b5`. | Agent | S47 10-index audit | Completed 2026-04-02 |
+| IRF-AOR-019 | P2 | **CLT-001 not registered in concordance.** Third embodiment ID (CLT-001: cultvra_logos.py) has no concordance entry. Previous IDs (CIR-001, SIG-002, SIG-003, GEN-002) registered in DONE-311. CLT-001 omitted because third function built in later session. | Agent | S54 10-index audit | None |
 
 ### S35 Discovered Items
 
@@ -1500,7 +1505,7 @@ Refreshed 2026-04-02 after the S52/S53 reconciliation wave plus subsequent stabl
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-AOR-009 | **P1** | **Define Cultvra (Logos) Layer** — Establish the ontological relationship between the technical system and the "Society that Responds". Research notes at `a-organvm/cultvra--logos.md`. | Agent | S52 | None |
+| IRF-AOR-018 | **P1** | **Define Cultvra (Logos) Layer** — Establish the ontological relationship between the technical system and the "Society that Responds". Research notes at `a-organvm/cultvra--logos.md`. *(Renumbered from IRF-AOR-009 — ID collision with memory vacuum item. See IRF-MON-008.)* | Agent | S52 | None |
 | IRF-SYS-050 | **P1** | **Workspace Ontology v2 Refinement** — Refactor `registry-v2.json`, flatten directory structures ("Body > Organs > Flat"), and research max depth. Sketch at `meta-organvm/organvm-corpvs-testamentvm/ONTOLOGY-V2-SKETCH.md`. | Agent | S52 | None |
 | IRF-APP-080 | **P1** | **Productize Application Pipeline** — Devise income avenues (SOPs as products) and implement 48h job vetting. Strategy notes at `4444J99/application-pipeline/strategia--ergon.md`. | Agent | S52 | None |
 | IRF-OSS-042 | **P1** | **System-wide Action Ledger** — Create a central ledger of all scripts/actions and implement token-efficient handoff protocols. Initial ledger at `organvm-iv-taxis/orchestration-start-here/ACTION-LEDGER-V1.md`. | Agent | S52 | None |
