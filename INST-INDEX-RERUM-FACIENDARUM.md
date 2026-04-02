@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-**Purpose:** Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE.
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (485 items, 19 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -409,6 +409,12 @@ Verified on disk 2026-03-20:
 | IRF-CND-005 | P2 | **Generate GEMINI.md / AGENTS.md from scorecards + patches** — constraint docs become generated outputs, not hand-maintained | Agent | Design spec Layer 4 | IRF-CND-002 (patches must exist) |
 | IRF-CND-006 | P3 | **Plan-first dispatch orchestration (plan_dispatch.py)** — A→Z planning, segment dependency resolution, store manifest. Deferred to after Wave 1-2 data accumulates. | Agent | Design spec Layer 6 | Real dispatch data |
 | IRF-CND-007 | P3 | **Seed historical dispatch receipts** — backfill from today's 4-stream dispatch (Gemini post-flood, Gemini application-pipeline, Codex parallel dissolution, OpenCode organ bridge) as inaugural ledger entries | Agent | S-contrib-ledger session | IRF-CND-001 |
+| ~~IRF-CND-008~~ | ~~P1~~ | ~~**Fleet agent registry expansion + structural elevation.**~~ — **DONE-319**: `fleet.yaml` elevated from `conductor/` to superproject root (scope-visibility principle). 6→12 agents (Claude, Codex, Gemini, OpenCode, Jules, Perplexity active; Goose, Kimi inactive; Aider, Cursor, Windsurf, Devin wishlist). `FleetAgent` dataclass expanded with `mode`, `field_rating`, `damage_modes`, `prompt_fixes`, `best_for`, `installed`, `notes`. `FLEET.md` human reference created. `work_types.yaml` expanded to 9 types with `preferred_agents`/`excluded_agents`. 129 tests passing. Plan: `.claude/plans/2026-04-02-fleet-agent-capability-definition.md`. | Agent | S-fleet-definition (2026-04-02) | Completed 2026-04-02 |
+| IRF-CND-009 | P2 | **Formalize scope-visibility principle as ADR.** "Governance files live at the directory level matching their scope" — currently oral tradition. Write ADR to `tool-interaction-design/docs/` or `orchestration-start-here/docs/`. Principle: file depth correlates with authority narrowness. | Agent | S-fleet-definition vacuum (2026-04-02) | None |
+| IRF-CND-010 | P2 | **Elevate remaining system-wide files.** `ontology.yaml` (578 tools), `routing-matrix.yaml` (32 routes), `work_types.yaml` (9 cognitive classes) still nested inside `tool-interaction-design/`. Same scope-visibility violation fixed for `fleet.yaml`. Apply same resolution pattern: superproject root canonical, conductor fallback. | Agent | S-fleet-definition vacuum (2026-04-02) | IRF-CND-009 (ADR should precede) |
+| IRF-CND-011 | P2 | **Perplexity dispatch integration.** Research agent (`mode: research`) has no automated dispatch path — web app only, no CLI. Design: MCP tool or API wrapper for structured research briefs. Would complete FRAME-phase automation. | Agent | S-fleet-definition vacuum (2026-04-02) | None |
+| IRF-CND-012 | P2 | **Jules dispatch integration.** GitHub-native bot has no conductor dispatch path — operates via issue assignment, not CLI. Design: GitHub MCP tool wrapper or `gh` CLI dispatch. | Agent | S-fleet-definition vacuum (2026-04-02) | None |
+| IRF-CND-013 | P2 | **Field-test untested agents.** 6 agents have `field_rating: null`. Design standardized field-test protocol: same scoped task per agent, record completion time, damage modes, rating. | Agent | S-fleet-definition vacuum (2026-04-02) | None |
 
 ---
 
@@ -460,8 +466,8 @@ Verified on disk 2026-03-20:
 | IRF-OSS-036 | **P1** | **Dispatch portal pattern formalization.** `tasks/<slug>/` convention for ephemeral agent dispatch containers with 4-file viral genome (CLAUDE.md, BRIEFING.md, REFERENCES.md, SEQUENCE.md). Counter-force archetype assembly replaces agent dispatch. First instance: `tasks/communications-correspondence-relay/`. Needs: universal container schema doc, `tasks/` CLI or domus subcommand for portal creation, evaporation automation. | Agent | S51 (2026-04-01) | None |
 | IRF-OSS-037 | **P1** | **Communications & Correspondence SOP.** 6-phase relay protocol (SWEEP→CLASSIFY→COMPOSE→RELAY→DISPATCH→VERIFY) unifying mail-triage, handoff relay, outbound compose, cross-channel dispatch. Portal seeded at `tasks/communications-correspondence-relay/`, awaiting execution. Includes intake router CORRESPONDENCE domain addition. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
 | IRF-OSS-038 | P2 | **Container envelope spec.** Utopia/dystopia orbit at every scale (function→module→organ→body). Counter-force field (homeostasis↔homeorhesis, elasticity↔plasticity, reactive↔allostasis, preservation↔kinorhesis). Extends SPEC-019 organ-systems-mapping. Proper home: meta-organvm post-flood corpus. Axiom: "ideal→form mismatch = design problem." **Subsumed by SPEC-022 (Dispersio Formalis)** — the mismatch IS the dispersive profile at each scale. See IRF-DSF-006. | Agent | S51 (2026-04-01) | IRF-OSS-036 |
-| IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. | Agent | S52 session review (2026-04-02) | None |
-| IRF-OSS-040 | P2 | **3 process SOPs needed.** S52 review identified 3 partially documented processes that need standalone SOP docs: (1) sibling container protocol (in transcript only), (2) precision mode enforcement (in CLAUDE.md only), (3) IRF update process (manual `update_irf.py` only). Target: `docs/sop-*.md` files in orchestration-start-here. | Agent | S52 session review (2026-04-02) | None |
+| IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. GitHub issue: [#290](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/290). | Agent | S52 session review (2026-04-02) | None |
+| ~~IRF-OSS-040~~ | ~~P2~~ | ~~**3 process SOPs needed.**~~ — **DONE-318**: SOPs located in praxis-perpetua/standards/ — (1) sibling container protocol → `SOP--agent-seeding-and-workforce-planning.md`, (2) precision mode enforcement → documented in CLAUDE.md, (3) IRF update process → `update_irf.py`. All three processes now have standalone documentation. | Agent | S52 session review (2026-04-02), S53 audit completion | Completed 2026-04-02 |
 | ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
 
 ---
@@ -628,7 +634,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-APP-034 | P2 | Companion indices — Protocol formalization is a new named entity (Index Nominum candidate). log_dm and reconcile_outreach are new tools (Index Rerum candidates). Register when companion indices are built. | Agent | S35 close-out vacuum (index #10) | Companion indices not yet built |
 | IRF-APP-065 | P2 | Update seed.yaml with new capabilities from S43 wiring tests. | Agent | S43 hall-monitor audit | None |
 | IRF-APP-066 | P1 | **First interview conversion SOP** — standardized as 6-phase, 26-step sequence in `pipeline/submissions/grafana-labs-full-dossier.md` §XIV. Needs extraction to standalone SOP document in `docs/` or `strategy/`. Reusable for all future positive conversions. | Agent | Session S46 (2026-04-01) | None |
-| IRF-APP-067 | P1 | **External application quick-log command** — Grafana application was submitted outside pipeline, requiring retroactive backfill. Build `run.py quicklog --org "X" --role "Y" --date YYYY-MM-DD` to register external submissions in real-time, preventing pipeline gaps. | Agent | Session S46 (vacuum: out-of-pipeline applications) | None |
+| ~~IRF-APP-067~~ | ~~P1~~ | ~~**External application quick-log command**~~ → **DONE-316**: Implemented `scripts/quicklog.py` and integrated into `run.py`. command: `python scripts/run.py quicklog --org "X" --role "Y"`. Schema validated, integrated into `CLAUDE.md` and `seed.yaml`. — Grafana application was submitted outside pipeline, requiring retroactive backfill. Build `run.py quicklog --org "X" --role "Y" --date YYYY-MM-DD` to register external submissions in real-time, preventing pipeline gaps. | Agent | Session S46 (vacuum: out-of-pipeline applications) | None |
 | IRF-APP-068 | P2 | **Grafana Tier 1 contributions** — 4 insertion points identified: grafana/metrics-drilldown #1146 (CLAUDE.md), grafana/mcp-grafana #680 (prompt injection), #641 (camelCase fix), #620 (docs org). Execute before Mon 2026-04-06 interview. | Human+Agent | Session S46 (contextual insertion) | None |
 | IRF-APP-069 | P2 | **Outreach-log.yaml structural fix** — pre-existing validation error: missing top-level `entries:` key. Signal validator reports 0 entries parsed. Not introduced this session but blocks `--strict` validation. | Agent | Session S46 (hall-monitor audit) | None |
 | IRF-APP-070 | P2 | **IRF-APP-064/065 duplicate collision** — two pairs of duplicate entries (064 appears twice, 065 appears twice). Pre-existing from S43. Dedup needed. Related to IRF-APP-062 (general ID collision issue). | Agent | Session S46 (hall-monitor audit) | None |
@@ -1330,12 +1336,12 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the registry source file after closing IRF-OSS-041 as DONE-315; CLI undercount is still tracked separately under IRF-SYS-045 / GH#71.
 
-- **Total IRF items:** 717
-- **Open:** 385
-- **Completed:** 332
+- **Total IRF items:** 725
+- **Open:** 391
+- **Completed:** 334
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 46.3%
+- **Completion rate:** 46.1%
 
 ### Open By Priority
 
@@ -1343,7 +1349,7 @@ Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recove
 |----------|-------|
 | P0 | 11 |
 | P1 | 141 |
-| P2 | 198 |
+| P2 | 203 |
 | P3 | 35 |
 
 ### By Domain
@@ -1492,3 +1498,7 @@ Refreshed 2026-04-02 via session close-out audit. Prior 2026-04-01 manual recove
 | IRF-APP-080 | **P1** | **Productize Application Pipeline** — Devise income avenues (SOPs as products) and implement 48h job vetting. Strategy notes at `4444J99/application-pipeline/strategia--ergon.md`. | Agent | S52 | None |
 | IRF-OSS-042 | **P1** | **System-wide Action Ledger** — Create a central ledger of all scripts/actions and implement token-efficient handoff protocols. Initial ledger at `organvm-iv-taxis/orchestration-start-here/ACTION-LEDGER-V1.md`. | Agent | S52 | None |
 | IRF-OSS-043 | **P1** | **IRF Instrument v3 (Endless Box)** — Transition to "Endless Box" model with worker agents ("Pencil Pushers") and fixed ID assignment. Spec at `meta-organvm/organvm-corpvs-testamentvm/IRF-V3-SPEC.md`. | Agent | S52 | None |
+| IRF-SYS-051 | **P1** | **Stable Unit Notice Ownership Audit** — Resolve mismatches between `registry-v2.json` and `seed.yaml` status. Ensure all `GRADUATED` units have `ownership` metadata (v1.1) and `NOTICE` files. Spec: `docs/planning/06-stable-unit-notice-audit.md`. | Agent | S-2026-04-02 | None |
+| DONE-319 | **Fleet agent registry expansion + structural elevation (IRF-CND-008).** `fleet.yaml` elevated from `tool-interaction-design/conductor/` to `organvm-iv-taxis/` superproject root (scope-visibility principle). Fleet expanded 6→12 agents (6 active, 2 inactive, 4 wishlist). `FleetAgent` dataclass gained 7 new fields. `FLEET.md` human reference created. `work_types.yaml` expanded to 9 types with `preferred_agents`/`excluded_agents`. 129 tests passing. 6 vacuum IRF items logged (CND-009 through CND-013). `seed.yaml` updated with `fleet-agent-registry` produces edge. | S-fleet-definition | 2026-04-02 |
+| DONE-317 | **Stable unit notice ownership requirement identified (IRF-SYS-051 initiation).** Researched Stable Units Protocol and identified systemic status mismatches between registry and seed contracts. Drafted system-wide audit plan (`docs/planning/06-stable-unit-notice-audit.md`) and flagged `public-record-data-scrapper` for tending. | S-2026-04-02 | 2026-04-02 |
+| DONE-316 | **External application quick-log tool built (IRF-APP-067).** Implemented `scripts/quicklog.py` for real-time registration of out-of-pipeline submissions. Integrated into `scripts/run.py` PARAM_COMMANDS. Updated `CLAUDE.md` and `seed.yaml`. 10-index propagation partially complete (IRF, Seed, CLAUDE.md, Registry check). | S53 | 2026-04-02 |
