@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-03T07:03:38.851102+00:00",
+  "generated_at": "2026-04-03T09:26:41.193299+00:00",
   "system": {
     "total_repos": 128,
     "active_repos": 72,
@@ -766,6 +766,15 @@
       ]
     },
     {
+      "key": "ORGAN-PSG",
+      "name": "Process Sequence Governance",
+      "repo_count": 0,
+      "flagship_count": 0,
+      "standard_count": 0,
+      "infrastructure_count": 0,
+      "repositories": []
+    },
+    {
       "key": "ORGAN-V",
       "name": "Public Process",
       "repo_count": 2,
@@ -872,8 +881,8 @@
     "total_repos": "128",
     "active_repos": "72",
     "archived_repos": "54",
-    "total_organs": "8",
-    "operational_organs": "8",
+    "total_organs": "9",
+    "operational_organs": "9",
     "total_words_numeric": "0",
     "total_words_formatted": "0",
     "total_words_short": "0K+",
@@ -898,6 +907,8 @@
     "organ_name.ORGAN-VI": "Community",
     "organ_repos.ORGAN-VII": "4",
     "organ_name.ORGAN-VII": "Marketing",
+    "organ_repos.ORGAN-PSG": "0",
+    "organ_name.ORGAN-PSG": "Process Sequence Governance",
     "organ_repos.META-ORGANVM": "13",
     "organ_name.META-ORGANVM": "Meta"
   },
