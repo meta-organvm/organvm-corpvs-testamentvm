@@ -970,6 +970,23 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | IRF-VAC-006d | P2 | Build INST-INDEX-RERUM.md v1 (IRF-IDX-003) — ontological inventory of artifact types, states, relationships, provenance. Draws from ontologia UID system. Estimated 500+ lines | Agent | Vacuum analysis | IRF-VAC-006a (schema design) |
 | IRF-VAC-006e | P2 | Build `organvm index generate` CLI (IRF-IDX-004) — automate index regeneration from registry, seeds, AST, ontologia. Different pipeline from existing indexer/ module | Agent | Vacuum analysis | IRF-VAC-006b/c/d (define target format) |
 
+### Documentation Handoff Architecture Vacuums (Vacuum 9 — 2026-04-03)
+
+**Source:** Documentation handoff architecture audit across 5 layers.
+**Full analysis:** `praxis-perpetua/studies/audits/2026-04-03-documentation-handoff-architecture.md`
+**GitHub issues:** [#72](https://github.com/meta-organvm/organvm-engine/issues/72), [#73](https://github.com/meta-organvm/organvm-engine/issues/73), [#74](https://github.com/meta-organvm/organvm-engine/issues/74), [#75](https://github.com/meta-organvm/organvm-engine/issues/75), [#76](https://github.com/meta-organvm/organvm-engine/issues/76)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-VAC-009a | P1 | Fix duplicate Active Handoff Protocol block injection in context sync — `templates.py` injects handoff block at end of `REPO_SECTION`, and `_inject_section` may double-append. [#72](https://github.com/meta-organvm/organvm-engine/issues/72) | Agent | Handoff audit | None |
+| IRF-VAC-009b | P2 | Add context sync diff/changelog — no record of what changed between syncs, no rollback mechanism. [#73](https://github.com/meta-organvm/organvm-engine/issues/73) | Agent | Handoff audit | None |
+| IRF-VAC-009c | P2 | Add handoff staleness detection + `organvm handoff list` — stale `.conductor/active-handoff.md` files mislead agents, no workspace-wide listing. [#74](https://github.com/meta-organvm/organvm-engine/issues/74) | Agent | Handoff audit | None |
+| IRF-VAC-009d | P2 | Extend exit interview testimony for documentation-only repos — AST analysis thin for praxis-perpetua, corpvs. Add word count, section structure, cross-reference density. [#75](https://github.com/meta-organvm/organvm-engine/issues/75) | Agent | Handoff audit | None |
+| IRF-VAC-009e | P2 | SOP staleness detection + fix `unknown` scope duplicates — SOPs appear twice with `system` and `unknown` scope. [#76](https://github.com/meta-organvm/organvm-engine/issues/76) | Agent | Handoff audit | None |
+| IRF-VAC-009f | P2 | Logos VACUUM for praxis-perpetua — process governance corpus lacks `docs/logos/` counterpart. Symmetry score 0.0 | Agent | Handoff audit | None |
+| IRF-VAC-009g | P2 | Logos VACUUM for organvm-corpvs-testamentvm — planning corpus lacks `docs/logos/` counterpart. Symmetry score 0.0 | Agent | Handoff audit | None |
+| IRF-VAC-009h | P3 | Meta-handoff protocol — no exit interview for when the documentation format itself evolves (template changes, section additions/removals) | Agent | Handoff audit | Design decision |
+
 ---
 
 ## Completed (from 22-session cataloguing, 2026-03-20)
@@ -1363,8 +1380,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-04-02 (S54 audit). S54 changes: marked IRF-AOR-001 + AOR-004 as DONE, fixed AOR-009 ID collision (renumbered to AOR-018), added AOR-019. Prior context: S52/S53 reconciliation wave plus subsequent stable-unit, fleet, and operations seeding. Prior 2026-04-01 manual recovery context retained: S49 "absolute IRF repair" (ba62231) deleted 15 valid entries from S-dispersio-formalis, S51, S46/S48. Recovered: IRF-DSF-001–006 (SPEC-022), IRF-OSS-036–038 (S51), IRF-APP-066/067/068/069/070/071/073 (S46/S48), DONE-312. Fixed corrupted "How to Use" section. Renumbered duplicate DONE-145→DONE-145b. Counts below reflect the current registry source after DONE-319, DONE-320, DONE-321, DONE-322, IRF-OPS-012, and IRF-OPS-013 landed; IRF-SYS-045 remains open because parser drift has occurred historically and still needs hardening in `organvm irf stats`.
 
-- **Total IRF items:** 846
-- **Open:** 490
+- **Total IRF items:** 854
+- **Open:** 498
 - **Completed:** 356
 - **Blocked:** 0
 - **Archived:** 0
