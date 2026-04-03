@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (844 items, 20 domains)
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (845 items, 20 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -126,8 +126,8 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-OPS-012 | P1 | **Emergency Repair SOP implementation** — ensure absolute parity and project integrity during restricted access. Reference `docs/operations/emergency-procedures.md` (§ Procedure 2). | Agent | S53 Audit | None |
-| IRF-OPS-013 | P1 | **Handover Audit SOP implementation** — ensure canonical manifestation of drafted SOPs in ecosystem. Reference `praxis-perpetua/standards/operational-handoff-guide.md`. | Agent | S53 Audit | None |
+| IRF-OPS-012 | P1 | **Emergency Repair SOP implementation** — ensure absolute parity and project integrity during restricted access. Reference `docs/operations/emergency-procedures.md` (§ Procedure 2). | 4jp | S53 Audit | None |
+| IRF-OPS-013 | P1 | **Handover Audit SOP implementation** — ensure canonical manifestation of drafted SOPs in ecosystem. Reference `praxis-perpetua/standards/operational-handoff-guide.md`. | 4jp | S53 Audit | None |
 
 ---
 
@@ -339,7 +339,7 @@ Verified on disk 2026-03-20:
 |----|----------|--------|-------|--------|---------|
 | ~~IRF-GRC-001~~ | ~~P1~~ | ~~Layer 0: Write SPEC-021 grounding paper~~ — **DONE-306**: 4 files (grounding.md, literature-matrix.md, risk-register.md, inventory.md), 392 lines, 10 claims assessed. Commit fcbfdf2 in meta-organvm superproject. | Agent | Brainstorm session 2026-03-31 | Completed |
 | IRF-GRC-002 | P1 | **Layer 1: JSON Schema** — `schema-definitions/schemas/gravitas-culturalis-v1.json`. Orbit object, artifact tier enum, emergence metrics, contextualization record. Must integrate with seed-v1 produces/consumes and dispatch-payload. GitHub issue: [#292](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/292). | Agent | SPEC-021 inventory.md integration map | None |
-| IRF-GRC-003 | P2 | **Layer 2: Engine module** — `organvm-engine/src/organvm_engine/gravitas/`. orbit.py, classifier.py, metrics.py. CLI: `organvm gravitas classify/orbits/metrics/detect`. Must wire into atoms pipeline (recognition circuit) and Atomic Clock (beat registration). Dispatch events: orbit.formed, orbit.eclipse, orbit.feedback_loop. Fossil witness hooks for archaeological record. | Agent | SPEC-021 plan (.claude/plans/2026-03-31-gravitas-culturalis.md) | IRF-GRC-002 (schema) |
+| IRF-GRC-003 | P1 | **Layer 2: Engine module** — `organvm-engine/src/organvm_engine/gravitas/`. orbit.py, classifier.py, metrics.py. CLI: `organvm gravitas classify/orbits/metrics/detect`. Must wire into atoms pipeline (recognition circuit) and Atomic Clock (beat registration). Dispatch events: orbit.formed, orbit.eclipse, orbit.feedback_loop. Fossil witness hooks for archaeological record. | Agent | SPEC-021 plan (.claude/plans/2026-03-31-gravitas-culturalis.md) | IRF-GRC-002 (schema) |
 | IRF-GRC-004 | P2 | **Layer 3: Alchemia extension** — orbit-aware classification in ABSORB stage. New `orbit_classifier.py`. Tags material with orbit_tier, center_of_gravity_id, contextualization. Imports from organvm_engine.gravitas.classifier. | Agent | SPEC-021 plan | IRF-GRC-003 (engine) |
 | IRF-GRC-005 | P2 | **Layer 4: Essay** — Cultural criticism for ORGAN-V. Real Housewives case study, meme lifecycle, ORGANVM reflexive turn (system as its own case study — post-flood corpus eclipsed by engine orbit). Can start after Layer 0. | Agent | SPEC-021 grounding.md §4.3 | IRF-GRC-001 (theory, done) |
 

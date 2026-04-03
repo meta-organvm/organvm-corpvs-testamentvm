@@ -2446,6 +2446,25 @@
       ],
       "completion_note": "PROCLAMATIO + IGNIS PERPETUUS sprints complete (2026-02-18). Ghost first-class adapter, cross-organ nervous system (notify-kerygma workflow_call), autonomous dispatch loop (RSS cron), Mastodon+Ghost metrics pull-back, Ghost theme scaffold, weekly analytics report workflow, status badge."
     },
+    "ORGAN-PSG": {
+      "name": "Process Sequence Governance",
+      "description": "System-wide foundational specification (SPEC-023) for sequence-governed work, requiring genesis SOPs and evidence-based evolution.",
+      "launch_status": "OPERATIONAL",
+      "completion": "100% — Foundational spec, Genesis SOP template, and pilot implementation (application-pipeline) deployed 2026-04-02.",
+      "public_visibility": "PUBLIC",
+      "portfolio_angle": "Demonstrates orchestration capacity, architectural reasoning, and systemic sustainability.",
+      "repository_count": 0,
+      "repositories": []
+    },
+    "META-ORGANVM": {
+      "description": "System-wide foundational specification (SPEC-023) for sequence-governed work, requiring genesis SOPs and evidence-based evolution.",
+      "launch_status": "OPERATIONAL",
+      "completion": "100% — Foundational spec, Genesis SOP template, and pilot implementation (application-pipeline) deployed 2026-04-02.",
+      "public_visibility": "PUBLIC",
+      "portfolio_angle": "Demonstrates orchestration capacity, architectural reasoning, and systemic sustainability.",
+      "repository_count": 0,
+      "repositories": []
+    },
     "META-ORGANVM": {
       "name": "Meta",
       "description": "Umbrella organization coordinating all 7 organ orgs. System-wide governance, cross-organ visibility, and institutional identity.",
