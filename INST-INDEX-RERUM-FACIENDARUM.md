@@ -125,6 +125,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-SYS-053 | **P1** | **VACUUM: 108 repos fail Logos Documentation Layer symmetry check.** | Agent | S-2026-04-02 | None |
 | IRF-SYS-054 | **P1** | **VACUUM: ORGAN-III/styx-behavioral-commerce missing seed.yaml despite active status.** | Agent | S-2026-04-02 | None |
 | IRF-SYS-055 | **P1** | **VACUUM: 29 repositories missing READMEs at GRADUATED status.** | Agent | S-2026-04-02 | None |
+| IRF-SYS-056 | **P1** | **Build prompt accountability layer** — every prompt submitted to any AI tool must survive outside sessions as trackable ORDER→RECEIPT pairs. Prototype: `orchestration-start-here/.history-analysis/` (1,086 prompts extracted, 108 sessions mapped, voiceprint analyzed). Sources: Claude `history.jsonl` (rich), Warp SQLite (shell+AI), Gemini (metadata only), Codex (binary/inaccessible). Gaps: Codex needs LevelDB reader, Gemini needs content logging, web chats need export, zsh needs per-directory hooks. The gap between command quality and delivery quality is measurable system debt. | Agent | S-2026-04-03 prompt archaeology | None |
 
 ### Operations
 
