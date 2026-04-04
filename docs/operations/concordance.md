@@ -50,6 +50,9 @@ python3 scripts/invoke.py --list               # list all namespaces and counts
 | `S-\w+` | Named session IDs (non-numeric) | S-CC-review |
 | `DONE-NNN` | IRF completion entries | DONE-284 |
 | `GH#NNN` | GitHub issue references (per-repo) | GH#5 (aerarium) |
+| `ATM-X-NNN` | Formal atoms (system-system--system) | ATM-M-018 |
+| `DOC-X-NN` | Document envelopes (system-system--system) | DOC-M-01 |
+| `SOP-SS-XXX-NNN` | Standard operating procedures (system-system--system) | SOP-SS-ATM-001 |
 
 ---
 
