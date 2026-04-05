@@ -31,6 +31,7 @@
 | SPEC-020 | Zettelkasten Protocol | L3B | Atomic note capture, knowledge linking, recovery protocol for dispersed material |
 | SPEC-021 | Gravitas Culturalis | L1 | Orbital emergence theory: cultural gravity, three-tier orbit model, eclipse point, contextualization axes |
 | SPEC-022 | Dispersio Formalis | L1 | Seven-state material taxonomy of interaction (INVOKED/IMPLEMENTED/THINNED/MISREPRESENTED/MISHEARD/NOT-ENACTED/LOST), planning as wound/scar, portal-as-prism, Room topology, collision map, portal correction |
+| SPEC-024 | Cyclic Dispatch Protocol | L5 | Four-phase outer loop (RELEASE→CATCH→HANDOFF→FORTIFY), agent dispatch to Copilot/Jules/Actions/Claude/LaunchAgents, satellite entry point, heartbeat daemon, composition layer over dispatch+coordination+atoms+irf |
 
 ## Governance Instruments (not numbered, receive full RFIV treatment)
 
@@ -50,4 +51,4 @@
 | L3B | Governance Instruments | SPEC-012, 020, Formation Protocol, Functional Taxonomy, Era Model |
 | L4A | Sensing & Observation | Event Spine, Temporal Metrics, Variable Resolution, Heartbeat |
 | L4B | Diagnosis & Meta-Evolution | SPEC-009, 010, 011, AMMOI Reconciliation, Graph Indices |
-| L5 | Swarm Governance | SPEC-013, 014, 015, 016, 017 |
+| L5 | Swarm Governance | SPEC-013, 014, 015, 016, 017, 024 |
