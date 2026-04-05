@@ -1,15 +1,15 @@
 # 30-Day Soak Test Report
 
-**Period:** 2026-02-28 to 2026-03-29
+**Period:** 2026-03-07 to 2026-04-05
 **Snapshots:** 30
-**Generated:** 2026-03-29 08:31 UTC
+**Generated:** 2026-04-05 08:34 UTC
 
 ---
 
 ## Validation Integrity
 
-- Days with clean validation: **20/30**
-- Registry integrity issues: 46 total across period
+- Days with clean validation: **13/30**
+- Registry integrity issues: 67 total across period
 - Dependency violations: 0 total across period
 
 ### Registry Issues Observed
@@ -27,34 +27,32 @@
 
 ## CI Stability
 
-- Average passing: **16.3** per day
-- Average failing: **3.9** per day
-- Average billing-locked: **12.1** per day
+- Average passing: **13.3** per day
+- Average failing: **2.4** per day
+- Average billing-locked: **11.1** per day
 - Days with CI data: 30
 
 ### Chronic Failures (3+ days)
 
+- organvm-v-logos/public-process: failure (10 days)
 - organvm-vii-kerygma/.github: failure (10 days)
-- organvm-vi-koinonia/salon-archive: failure (9 days)
-- meta-organvm/organvm-engine: failure (8 days)
-- organvm-v-logos/public-process: failure (8 days)
-- meta-organvm/system-dashboard: failure (7 days)
-- meta-organvm/organvm-mcp-server: failure (6 days)
+- organvm-ii-poiesis/styx-behavioral-art: failure (7 days)
+- meta-organvm/organvm-ontologia: failure (7 days)
+- organvm-iv-taxis/a-i--skills: failure (5 days)
+- organvm-vii-kerygma/social-automation: failure (5 days)
+- organvm-vi-koinonia/salon-archive: failure (4 days)
+- meta-organvm/organvm-engine: failure (4 days)
 - meta-organvm/praxis-perpetua: failure (4 days)
 - organvm-iv-taxis/universal-node-network: failure (4 days)
-- organvm-iii-ergon/public-record-data-scrapper: failure (3 days)
-- organvm-iii-ergon/life-my--midst--in: failure (3 days)
-- organvm-vi-koinonia/koinonia-db: failure (3 days)
-- organvm-vi-koinonia/community-hub: failure (3 days)
-- organvm-vi-koinonia/reading-group-curriculum: failure (3 days)
-- organvm-vii-kerygma/social-automation: failure (3 days)
+- meta-organvm/system-dashboard: failure (3 days)
+- meta-organvm/organvm-mcp-server: failure (3 days)
 
 ## Engagement Trends
 
 | Metric | Start | End | Delta |
 |--------|-------|-----|-------|
-| Stars | 6 | 0 | -6 |
-| Forks | 3 | 0 | -3 |
+| Stars | 0 | 0 | +0 |
+| Forks | 0 | 0 | +0 |
 
 ### Top Repo Engagement (Latest)
 
