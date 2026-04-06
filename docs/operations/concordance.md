@@ -53,6 +53,9 @@ python3 scripts/invoke.py --list               # list all namespaces and counts
 | `ATM-X-NNN` | Formal atoms (system-system--system) | ATM-M-018 |
 | `DOC-X-NN` | Document envelopes (system-system--system) | DOC-M-01 |
 | `SOP-SS-XXX-NNN` | Standard operating procedures (system-system--system) | SOP-SS-ATM-001 |
+| `ent_[A-F0-9]{5}` | Registry entities (system-system--system) | ent_534B8 |
+| `rel_[A-F0-9]{5}` | Registry relationships (system-system--system) | rel_195AD |
+| `evt_[A-F0-9]{5}` | Registry events (system-system--system) | evt_05C78 |
 
 ---
 
