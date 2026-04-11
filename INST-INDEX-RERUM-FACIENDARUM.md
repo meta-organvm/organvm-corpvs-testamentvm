@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (888 items, 20 domains)
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (876 items, 20 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -149,6 +149,8 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-MON-006 | P1 | **Inter-organ edges placeholder** — CLAUDE.md shows `*Edges computed from system-wide seed graph*` (hardcoded string at `contextmd/generator.py:271`). The `SeedGraph` in `seed/graph.py` already computes cross-organ edges (used by density module) but the context generator never queries it. Fix: wire SeedGraph edge data into organ-map template as markdown table. Plan: §V2 | Agent | S35 N/A deep audit | None |
 | IRF-MON-007 | P2 | **Sprint metric mismatch** — `sprints_completed: 0` propagated to every CLAUDE.md via metrics system. The system works in sessions (S1–S35+), not sprints. The metric accurately reflects reality but creates a permanent vacuum. Options: (a) map sessions to sprint-like cycles, (b) rename to `work_cycles_completed`, (c) show "sessions-based" when 0, (d) drop metric. Recommend (c) for now. Plan: §V5 | Agent | S35 N/A deep audit | None |
 | IRF-MON-008 | P1 | **DONE-ID collision** — concurrent sessions independently increment the DONE counter, causing duplicate IDs. Known collisions: DONE-151, 152, 153, 157, 158, 159, 184 (each has 2 entries with different content). Root cause: no atomic counter — each session reads the last DONE-N, increments locally, and writes. Fix: (a) add `DONE_COUNTER` line to IRF header that sessions must read-increment-write atomically, or (b) move to `organvm irf complete` CLI that handles locking, or (c) switch to session-scoped IDs (`DONE-S33-001`) to avoid cross-session collision. Recommend (b) as it also enforces the 10-index checklist. Affects data integrity of the universal work registry | Agent | Hall-monitor audit (this session) | None |
+| IRF-MON-009 | P3 | **Fossil record Zeno tail — structural 1-entry trailing witness.** Each superproject pointer commit generates a fossil entry in the corpus, which creates a new corpus state, which means the superproject pointer drifts again. Converges to exactly 1 uncommitted fossil entry (the system observing its own last heartbeat). Architecturally irreducible without decoupling the fossil witness from the commit cycle. Not a bug — document as known steady-state behavior in CLAUDE.md or fossil module docstring. Discovered S-Audit 2026-04-08. | Agent | S-Audit 2026-04-08 | None |
+| IRF-MON-010 | P2 | **Soak-test dual-source collision.** Two automated processes created competing `daily-2026-04-09.json` snapshots (08:59 UTC, 90 lines vs 10:26 UTC, 98 lines), then a rebase attempt to reconcile them stalled mid-conflict. Discovered S-Audit-2 2026-04-11. Root cause: dual soak collection processes. Resolved by aborting rebase and accepting remote (which had the earlier snapshot). Could recur. Needs: single-source soak-test execution or idempotent-by-date guard in the snapshot script. | Agent | S-Audit-2 2026-04-11 | None |
 | ~~IRF-SYS-052~~ | ~~P1~~ | ~~Implement Logos Documentation Layer — Constitutional Amendment K, LEX-XI, engine automation, and META-ORGANVM scaffolding.~~ — **DONE-328**: Full implementation across meta-engine and constitution. | Agent | S-2026-04-02 | Completed |
 | IRF-SYS-053 | **P1** | **VACUUM: 108 repos fail Logos Documentation Layer symmetry check.** | Agent | S-2026-04-02 | None |
 | IRF-SYS-054 | **P1** | **VACUUM: ORGAN-III/styx-behavioral-commerce missing seed.yaml despite active status.** | Agent | S-2026-04-02 | None |
@@ -1488,10 +1490,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-08 (S-corpus-graph close-out + S58 governance repair). IRF-SYS-104 retained for the corpus knowledge graph plan; IRF-SYS-105 added for Transmutatio Cognitionis. No completions this session (research/planning only). Prior: 2026-04-07 (S57 close-out).
+Refreshed 2026-04-11 (S-Audit-2 close-out). +3 items: IRF-DOM-030 (system-wide memory parity, P0), IRF-MON-009 (Zeno tail, P3), IRF-MON-010 (soak dual-source, P2). No completions (audit + maintenance only). Prior: 2026-04-08 (S-corpus-graph close-out).
 
-- **Total IRF items:** 873 *(+2: IRF-SYS-104, IRF-SYS-105)*
-- **Open:** 507 *(+2: IRF-SYS-104, IRF-SYS-105)*
+- **Total IRF items:** 876 *(+3: IRF-DOM-030, IRF-MON-009, IRF-MON-010)*
+- **Open:** 510 *(+3)*
 - **Completed:** 363
 - **Blocked:** 0
 - **Archived:** 0
@@ -1501,10 +1503,10 @@ Refreshed 2026-04-08 (S-corpus-graph close-out + S58 governance repair). IRF-SYS
 
 | Priority | Count |
 |----------|-------|
-| P0 | 8 |
+| P0 | 9 |
 | P1 | 186 |
-| P2 | 220 |
-| P3 | 39 |
+| P2 | 221 |
+| P3 | 40 |
 
 ### By Domain
 
@@ -1515,13 +1517,13 @@ Refreshed 2026-04-08 (S-corpus-graph close-out + S58 governance repair). IRF-SYS
 | APP | 55 |
 | OSS | 44 |
 | SYS | 48 |
-| DOM | 28 |
+| DOM | 29 |
 | PRT | 20 |
 | III | 15 |
 | CCE | 25 |
 | LIQ | 11 |
 | VOX | 12 |
-| MON | 7 |
+| MON | 9 |
 | HRM | 10 |
 | INST | 23 |
 | AOR | 17 |
@@ -1574,6 +1576,7 @@ Refreshed 2026-04-08 (S-corpus-graph close-out + S58 governance repair). IRF-SYS
 | IRF-DOM-027 | P1 | **Broward College Workday new device signon** — Mac OS X, Mar 22. Verify authorized. *(Renumbered from IRF-DOM-020 — S44 collision fix)* | Human | S36 email | None |
 | IRF-DOM-028 | P2 | **GitHub OAuth: CLA assistant** app authorized on 4444J99 (Mar 22). Verify via `gh api /user/installations`. *(Renumbered from IRF-DOM-021 — S44 collision fix)* | Human | S36 email | None |
 | IRF-DOM-029 | **P1** | **Persist Claude session transcripts remotely** — `~/.claude/projects/` contains 146MB of JSONL session transcripts across all projects (22 for portfolio alone). Currently local-only — if machine dies, all institutional memory of decisions, reasoning chains, and tool usage is lost. Needs: (a) private remote destination (private git repo with LFS, or Backblaze B2, or dedicated archive), (b) automated sync (launchd agent or session-close hook), (c) cross-project coverage (not just portfolio — all `~/.claude/projects/*/` dirs). User rule: "nothing is allowed to be local only." Related: IRF-APP-012 (memory persistence SOP), specstory-organize skill *(Renumbered from IRF-DOM-022 — S44 collision fix)* | Agent | S35 session close | Architecture decision needed |
+| IRF-DOM-030 | **P0** | **VACUUM: System-wide Claude memory parity gap — 57 files across 6 projects not tracked by chezmoi.** meta-organvm was fixed (S-Audit, 2026-04-08, commit `4728e34` in domus). But `system-system--system` (21 files, 0% coverage), `sovereign-systems--elevate-align` (15, 0%), `aerarium--res-publica` (8, 0%), `Workspace` root (6/52 missing), home dir (4/10 missing), and a worktree (3, 0%) remain unprotected. Machine death = 57 memory files lost. Resolution: `chezmoi add` for each project's memory dir. Supersedes the scope of IRF-AOR-009 (which tracked only a-organvm). Diagnostic: `for proj in $(ls -d ~/.claude/projects/*/memory/); do ...` loop from S-Audit-2 | Agent | S-Audit-2 2026-04-11 | None |
 | IRF-PRT-010 | P2 | **6 job rejections Mar 22-23**: Notion, Perplexity (FDE-Applied AI), Railway, Datadog (Sr AI Eng APM), LiveKit (FDE), Anduril. Log to tracker. LinkedIn leads: Netflix FSE5, Mercor ($80-110/hr), Anthropic Applied AI (Startups), GitHub SE III. | Human | S36 email | Need tracker |
 | IRF-PRT-011 | P2 | **Code review backlog** — growth-auditor: security issue in env.ts (PR#2) + 6 issues (PR#3). public-record-data-scrapper: PR#227 name concern, PR#221 codex reviewed. victoroff-group: PR#1 triple-reviewed. | Agent | S36 email | Protected branches |
 | IRF-OSS-026 | P2 | **agentic-titan Issue #20: m13v engagement** — 3 substantive comments (fission-fusion, hysteresis, stigmergy). Genuine community engagement. Draft response. | Agent | S36 email | None |
