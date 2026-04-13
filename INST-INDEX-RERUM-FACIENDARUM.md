@@ -1496,10 +1496,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-11 (S-Audit-2 close-out). +3 items: IRF-DOM-030 (system-wide memory parity, P0), IRF-MON-009 (Zeno tail, P3), IRF-MON-010 (soak dual-source, P2). No completions (audit + maintenance only). Prior: 2026-04-08 (S-corpus-graph close-out).
+Refreshed 2026-04-13 (S-Zettelkasten close-out). +6 items: IRF-SYS-107 (CLAUDE.md tree error, P1), IRF-SYS-108 (TRX- prefix, P2), IRF-SYS-109 (omega vacuum, P2), IRF-SYS-110 (testament vacuum, P2), IRF-SYS-111 (triad methodology, P3), IRF-SYS-112 (proto-Locorum, P3). No completions (plan + audit only). Prior: 2026-04-11 (S-Audit-2 close-out).
 
-- **Total IRF items:** 876 *(+3: IRF-DOM-030, IRF-MON-009, IRF-MON-010)*
-- **Open:** 510 *(+3)*
+- **Total IRF items:** 882 *(+6: IRF-SYS-107..112)*
+- **Open:** 516 *(+6)*
 - **Completed:** 363
 - **Blocked:** 0
 - **Archived:** 0
@@ -1713,3 +1713,14 @@ Refreshed 2026-04-11 (S-Audit-2 close-out). +3 items: IRF-DOM-030 (system-wide m
 | IRF-SYS-100 | **P2** | **Ceremony-as-specification 3-way classification. GH#317.** CODE/SPECIFICATION/TRUE CEREMONY. Unique = specification, duplicated = ceremony. | Agent | S-empirical | None |
 | IRF-SYS-101 | **P2** | **Multiverse INSTANCE.toml at 4 strata.** Approved plan, NOT executed. Identity files for formal/grammar/organism/material locations. | Agent | S-empirical | None |
 | IRF-SYS-104 | **P2** | **Corpus Knowledge Graph — `organvm corpus` module. GH#81.** Bridge post-flood (225 files) + praxis-perpetua (2,728 files). 4-phase pipeline, concept-seed.yaml, JSON graph, 6 indices. | Agent | S-corpus-graph | None |
+
+### S-Zettelkasten Discovered Items (2026-04-13)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-SYS-107 | **P1** | **CLAUDE.md tree diagram structurally wrong for TDR subtree.** `post-flood/CLAUDE.md` lines 174-197 show depth-2 TDR branches as children of unnamed first branch. Proven wrong by line-count analysis: `phase-shift-relays` (1,149 lines) too short to be parent of files with branch points at line 2,438+. `workflow-philosophy-structural-interrogation` (3,361 lines) is the actual parent. Also: CAS forensics parent is github-registry (conversation ID `69b26bc2`), not topology. Plan corrects this at Phase 3. Plan: `post-flood/.claude/plans/2026-04-13-zettelkasten-conversion.md`. | Agent | S-Zettelkasten 2026-04-13 | None |
+| IRF-SYS-108 | **P2** | **TRX- ID prefix — register in concordance when implemented.** New zettelkasten ID namespace designed: `TRX-{trunk}.{branch}` for 18 transcripts, `TRX-C.{nn}` for 10 compiled specs. 5 trunk codes (CAS, TDR, VSA, HIS, NSC). Prefix designed but not yet active — reserve to prevent collision. Concordance registration at implementation time. | Agent | S-Zettelkasten 2026-04-13 | IRF-SYS-107 (plan implementation) |
+| IRF-SYS-109 | **P2** | **VACUUM: Omega evidence map — zettelkasten conversion advances #6 (Documentation System) and #13 (living self-consistency).** When implemented, archive_original gains formal IDs + machine-readable metadata (.zettel-index.yaml sidecar). Tree correction fixes governance doc error — evidence that system maintains self-consistency. Neither logged in omega evidence map. | Agent | S-Zettelkasten N/A vacuum audit | IRF-SYS-107 |
+| IRF-SYS-110 | **P2** | **VACUUM: Testament unwitnessed — governance document structural error discovered.** CLAUDE.md tree diagram was wrong for 10 of 18 transcripts (TDR subtree + CAS forensics). This is a governance architecture event not witnessed in fossil-record.jsonl or testament artifacts. `organvm testament emit` when tree correction is committed. | Agent | S-Zettelkasten N/A vacuum audit | IRF-SYS-107 |
+| IRF-SYS-111 | **P3** | **VACUUM: Inquiry Log — triad hardening methodology (Q/C/E round-robin) is a novel analytical instrument.** Questioner/Critic/Expander dispatched in parallel, each proving/disproving different claims. Questioner empirically proved tree error via line-count analysis + conversation-ID matching. Methodology contribution to INQ-2026-006 (Formalization Programme) Phase II. Not logged in inquiry-log.yaml. | Agent | S-Zettelkasten N/A vacuum audit | None |
+| IRF-SYS-112 | **P3** | **VACUUM: .zettel-index.yaml is a proto-Locorum for archive_original.** Plan produces exactly what IRF-IDX-001 (Index Locorum) needs for the archive — stable identifiers for 28 source locations with tree structure, QA counts, branch offsets. When IDX-001 is built, this sidecar should be its input for the post-flood corpus section, not a separate data source. | Agent | S-Zettelkasten N/A vacuum audit | IRF-IDX-001 |
