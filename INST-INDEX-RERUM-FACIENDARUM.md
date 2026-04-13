@@ -101,6 +101,7 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 | IRF-SYS-104 | **P2** | **Corpus Knowledge Graph — computational bridge between post-flood (225 files) and praxis-perpetua (2,728 files).** Cross-reference analysis (S-corpus-graph, 2026-04-07) revealed: strong connections (AMMOI, Alpha-Omega, Formation Protocol, SPEC notation), integrated connections ("standard", "research", methodology patterns), and gaps (SVSE under-referenced, Faculty/Commission/Defense governance minimally cross-linked, no computational cross-corpus index). Plan: new `organvm_engine/corpus/` module with 4-phase extraction pipeline, concept-seed.yaml bootstrap (~30 concepts), JSON graph store (~500 nodes, ~3,000 edges), 6 navigable markdown indices. Extends `RelationType` (+5) and `EntityType` (+3). CLI: `organvm corpus build\|render\|query\|gaps\|stats`. Plan at `post-flood/.claude/plans/2026-04-07-corpus-knowledge-graph.md`. **GH#81 (organvm-engine).** | Agent | S-corpus-graph 2026-04-08 | None |
 | IRF-SYS-105 | **P2** | **Transmutatio Cognitionis — formal theory of knowledge transmutation. GH#9 (`system-system--system`).** S58 synthesized seven operational repos into a single σ_E derivation at `system-system--system/derivations/transmutatio--cognitionis.md`. Artifacts: constellation entity `ent_16736`, 7 component organ entities, 12 atoms, 6 theorems, 5 residual gaps. Introduced locally as `IRF-SYS-104` and renumbered during 2026-04-08 closeout repair to avoid collision with the existing corpus-graph item above. | Agent | S58 / 2026-04-08 closeout repair | None |
 | IRF-SYS-106 | **P2** | **Compilatio Cognitionis — formal theory of knowledge compilation. GH#11 (`system-system--system`).** ses_F3BE4 (2026-04-13) formalized the anabolic complement to TC: Prover-Verifier architecture for composing atoms into verified knowledge structures. Derivation at `derivations/compilatio--cognitionis.md`. Entity `ent_6576E` (constellation, child of ent_16736). 12 CC atoms, 3-tier verification spec (structural/semantic/governance), 5 residual gaps (CC-G1–G5). Scope boundary stated: Verifier guarantees form not substance. Key design decisions: false Layer-4-ceiling claim corrected, oracle framing rejected, motivated-reasoning theorems rejected in favor of honest Prover-Verifier decomposition. **Remaining:** CC-G3 (Generator viability threshold empirical measurement), CC-G5 (structure-level federation), μ Tier 1 CLI implementation, integration with existing repos (alchemia-ingestvm, my-knowledge-base). | Agent | ses_F3BE4 / 2026-04-13 | IRF-SYS-105 |
+| IRF-SYS-113 | **P1** | **mesh — Universal Reference Mesh. `organvm-i-theoria/mesh` (private).** ses_F3BE4 + ses_6E91D (2026-04-13). 5-primitive patch bay (Seed|Crawl|Atomize|Link|Query). First patch: Wikipedia dead zone detection. Steps 0-2 complete (43 tests). **Remaining:** Steps 3-9. Spec: `system-system--system/docs/superpowers/specs/2026-04-13-mesh-universal-reference-mesh-design.md`. | Agent | ses_F3BE4 + ses_6E91D / 2026-04-13 | IRF-SYS-106, IRF-SYS-040 |
 | IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
 | IRF-SYS-009 | **P0** | Gmail notification hygiene — filter designed in S36: `from:notifications@github.com ("dependabot[bot]" OR "github-actions[bot]")` → Skip Inbox, Apply label `github/bots`, Mark as Read. **HUMAN ACTION NEEDED:** (1) Create Gmail filter, (2) GitHub Settings > Notifications > uncheck "Automatically watch repositories", (3) Set org routing to web-only. All GitHub notification threads marked read via API in S36. | Human | S26, S36 | Human action: 2 min at github.com/settings/notifications + Gmail |
 | ~~IRF-SYS-010~~ | ~~P1~~ | ~~Full seed.yaml refresh for organvm-engine~~ — **DONE** (5 contracts → 36, CANDIDATE → GRADUATED, signal_inputs/signal_outputs added. Commit `82d043d`.) | Agent | S28 gap audit | Completed S29 |
@@ -528,7 +529,7 @@ Verified on disk 2026-03-20:
 | IRF-OSS-001 | P1 | AdenHQ/Hive Phase 2 — wire event bus auto-snapshot hooks, `version-diff`/`version-restore`/`version-star` CLI, runner integration | Agent | PR #6707 review feedback | Waiting on #6613 assignment + Phase 1 merge |
 | IRF-OSS-002 | P2 | AdenHQ/Hive ORGAN-I theory — expand lifecycle algebra into full paper (assembly dynamics, fission-fusion operational semantics) | Agent | S30 (Hive) | None |
 | ~~IRF-OSS-003~~ | ~~P2~~ | ~~Generalize cross-organ contribution machine~~ → **DONE-153** (7 PRs, 8 workspaces, operator prompt) | Agent | 2026-03-23 | Completed |
-| IRF-OSS-004 | P1 | Monitor AdenHQ/Hive PR #6707 — respond to review comments, address CI, maintain relationship with team | Agent | S30 (Hive) | 24h assignment window |
+| ~~IRF-OSS-004~~ | ~~P1~~ | ~~Monitor AdenHQ/Hive PR #6707~~ — **ABANDONED**: bot auto-closed 2026-03-24 (author not assigned to issue #6613). No human ever reviewed. 20 days stale. Recovery cost exceeds value. | Agent | S30 (Hive) | Closed 2026-04-13 |
 | ~~IRF-OSS-005~~ | ~~P0~~ | ~~Temporal CLA~~ → **DONE-157** (signed, PR #1385 unblocked) | Human | 2026-03-23 | Completed |
 | IRF-OSS-006 | P1 | LangGraph community — join LangChain Discord/Slack for relationship building beyond PR #7237 | Human | S32 (campaign) | Manual |
 | IRF-OSS-007 | P2 | Campaign remaining actions — 7/15 still pending: hive-await-assign, hive-discord-active, hive-link-pr, langgraph-community, temporal-cla, ipqwery-patience (Apr 4 bump) | Agent | S32 (campaign) | Various |
@@ -563,6 +564,21 @@ Verified on disk 2026-03-20:
 | IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. GitHub issue: [#290](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/290). | Agent | S52 session review (2026-04-02) | None |
 | ~~IRF-OSS-040~~ | ~~P2~~ | ~~**3 process SOPs needed.**~~ — **DONE-318**: SOPs located in praxis-perpetua/standards/ — (1) sibling container protocol → `SOP--agent-seeding-and-workforce-planning.md`, (2) precision mode enforcement → documented in CLAUDE.md, (3) IRF update process → `update_irf.py`. All three processes now have standalone documentation. | Agent | S52 session review (2026-04-02), S53 audit completion | Completed 2026-04-02 |
 | ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. GitHub issue: [#291](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/291). | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
+| IRF-OSS-042 | **P1** | **grafana/k6 PR #5770 — sign CLA + integrate ForEach into call sites.** Maintainer `mstoykov` requested 2026-04-08: refactor `MarshalEasyJSON` to use `ForEach`, convert `.Map()` iteration in csv/influxdb/dashboard/httpext/report/execution output files. CLA unsigned (hard merge blocker). Competing PR #5767 was closed in our favor — bar is higher. 47/49 CI pass (2 pre-existing browser flakes). No local `contrib--` directory exists. Fork: `4444J99/k6`. | Agent | S-contrib-reassessment (2026-04-13) | CLA signing (human action) |
+| IRF-OSS-043 | **P1** | **openai/openai-agents-python PR #2802 — fix typecheck or close gracefully.** Maintainer `seratch` (MEMBER) said fix insufficient 2026-03-29, broader solution in #2573 (itself CLOSED/WIP). Stale-botted 2026-04-10 — **auto-close ~2026-04-17**. Typecheck CI fails. Issue #618 has had 5 failed PR attempts — ours is last standing. Options: fix typecheck + nuanced comment, or close pointing to #2573. Fork: `4444J99/openai-agents-python`. | Agent | S-contrib-reassessment (2026-04-13) | Typecheck fix or close decision |
+| IRF-OSS-044 | **P1** | **coinbase/agentkit PR #1054 — acknowledge duplicate PR #1023.** `mvanhorn` opened #1023 eight days before ours with same function name, same algorithm. Ours is more thorough (12 vs 7 tests, MCP integration, changeset). Must acknowledge before pinging — blind ping risks bad optics. CI hasn't run (needs maintainer approval for forks). Fork: `contrib--coinbase-agentkit`. | Agent | S-contrib-reassessment (2026-04-13) | Comment draft |
+| IRF-OSS-045 | **P2** | **dapr/dapr PR #9719 — ping + offer rebase.** Clean 5-line fix, DCO passes, behind main. Only active PR for issue #8737. 14 days, zero engagement. Safe to ping. Fork: `contrib--dapr-dapr`. | Agent | S-contrib-reassessment (2026-04-13) | None |
+| IRF-OSS-046 | **P2** | **makenotion/notion-mcp-server PR #242 — ping.** All CI green, fix objectively correct, 3 new tests. Only PR for issue #82. 16 days, zero engagement. Safe to ping. Fork: `contrib--notion-mcp-server`. | Agent | S-contrib-reassessment (2026-04-13) | None |
+| IRF-OSS-047 | **P2** | **VACUUM: no local contrib directories for grafana/k6 and openai/openai-agents-python.** Both have active upstream PRs from `4444J99` forks but no `contrib--` directory in ORGAN-IV. Convention break: every upstream contribution should have a local tracking directory with seed.yaml and context files. Create directories or formally document the exception. | Agent | S-contrib-reassessment (2026-04-13) | Convention decision |
+| IRF-OSS-048 | **P2** | **VACUUM: 4 stub contrib repos with no plan.** `contrib--clyra-gait`, `contrib--indeedeng-iwf`, `contrib--jairus-dagster-sdlc`, `contrib--m13v-summarize-recent-commit` — initialized but empty. Each represents an intention not executed. Decide: commit to contribution plan or remove to reduce noise. | Agent | S-contrib-reassessment (2026-04-13) | Triage decision |
+| IRF-OSS-049 | **P2** | **VACUUM: CLAUDE.md drift — 7 contribs listed, 14 on disk.** Root CLAUDE.md repo map is stale. Missing: coinbase-agentkit, dapr-dapr, notion-mcp-server (all with active PRs), plus clyra-gait, indeedeng-iwf, jairus-dagster-sdlc, m13v-summarize-recent-commit. Update repo map and statistics. | Agent | S-contrib-reassessment (2026-04-13) | None |
+
+### S-contrib-reassessment Completions (2026-04-13)
+
+| ID | What | Session | Date |
+|----|------|---------|------|
+| DONE-364 | **temporalio/sdk-python PR #1385 MERGED — first successful external contribution.** Docs for OpenTelemetryConfig/PrometheusConfig. Reviewed by `tconley1428`, approved 2026-03-30. CLA signed (DONE-157). Full review cycle completed: submit → CLA → review → update per feedback → approval → merge. | S-contrib-reassessment | 2026-04-13 |
+| DONE-365 | **Full contrib reassessment — 7 upstream PRs mapped (not 4).** Gmail scan (500 emails) + GitHub API cross-reference uncovered 3 PRs not tracked: grafana/k6 #5770, openai/openai-agents-python #2802, temporalio/sdk-python #1385 (merged). Deep code audit of all 5 active PRs against upstream contribution guidelines revealed: unsigned CLA (grafana), duplicate PR (coinbase), typecheck failure (openai). 14 contrib repos on disk, 7 in CLAUDE.md. | S-contrib-reassessment | 2026-04-13 |
 
 ---
 
@@ -1496,11 +1512,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-13 (S-Zettelkasten close-out). +6 items: IRF-SYS-107 (CLAUDE.md tree error, P1), IRF-SYS-108 (TRX- prefix, P2), IRF-SYS-109 (omega vacuum, P2), IRF-SYS-110 (testament vacuum, P2), IRF-SYS-111 (triad methodology, P3), IRF-SYS-112 (proto-Locorum, P3). No completions (plan + audit only). Prior: 2026-04-11 (S-Audit-2 close-out).
+Refreshed 2026-04-13 (S-contrib-reassessment close-out). +8 items: IRF-OSS-042 (grafana/k6 CLA+code, P1), IRF-OSS-043 (openai typecheck/close, P1), IRF-OSS-044 (coinbase duplicate ack, P1), IRF-OSS-045 (dapr ping, P2), IRF-OSS-046 (notion ping, P2), IRF-OSS-047 (VACUUM: missing contrib dirs, P2), IRF-OSS-048 (VACUUM: stub repos, P2), IRF-OSS-049 (VACUUM: CLAUDE.md drift, P2). +2 completions: DONE-364 (temporalio merge), DONE-365 (full reassessment). +1 closure: IRF-OSS-004 (Hive abandoned). Prior: 2026-04-13 (S-Zettelkasten close-out).
 
-- **Total IRF items:** 882 *(+6: IRF-SYS-107..112)*
-- **Open:** 516 *(+6)*
-- **Completed:** 363
+- **Total IRF items:** 890 *(+8: IRF-OSS-042..049)*
+- **Open:** 522 *(+8 new, -1 closed IRF-OSS-004)*
+- **Completed:** 365 *(+2: DONE-364, DONE-365)*
 - **Blocked:** 0
 - **Archived:** 0
 - **Completion rate:** 41.6%
@@ -1510,8 +1526,8 @@ Refreshed 2026-04-13 (S-Zettelkasten close-out). +6 items: IRF-SYS-107 (CLAUDE.m
 | Priority | Count |
 |----------|-------|
 | P0 | 9 |
-| P1 | 186 |
-| P2 | 221 |
+| P1 | 188 *(+3: OSS-042,043,044)* |
+| P2 | 225 *(+5: OSS-045,046,047,048,049, -1: OSS-004 closed)* |
 | P3 | 40 |
 
 ### By Domain
@@ -1521,7 +1537,7 @@ Refreshed 2026-04-13 (S-Zettelkasten close-out). +6 items: IRF-SYS-107 (CLAUDE.m
 | DONE | 350 |
 | RES | 83 |
 | APP | 55 |
-| OSS | 44 |
+| OSS | 52 *(+8: IRF-OSS-042..049)* |
 | SYS | 48 |
 | DOM | 29 |
 | PRT | 20 |
