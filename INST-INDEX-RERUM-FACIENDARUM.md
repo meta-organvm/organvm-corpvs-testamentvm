@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (877 items, 20 domains)
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (882 items, 20 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -454,7 +454,7 @@ Verified on disk 2026-03-20:
 | IRF-VOX-003 | P2 | Add per-organ voice profiles (organ-i.yaml through organ-vii.yaml, meta.yaml) — create only when real scoring failures demand organ-specific register shifts. | Agent | Design spec Section 8 | Evidence of need |
 | ~~IRF-VOX-004~~ | ~~P2~~ | ~~Add baseline and audit CLI~~ → **DONE** (S-vox-build, 2026-03-25). `voice-scorer baseline` + `voice-scorer audit` with stylesheet SHA tracking. | — | — | — |
 | IRF-VOX-005 | P2 | Add `--organ` flag to CLI + wire ProfileResolver into scorer — enable organ-specific threshold adjustment. | Agent | QA review issue #7 | None |
-| IRF-VOX-006 | P3 | Register MCP server via `claude mcp add voice-scorer` — make voice tools callable by any agent. | Agent | Design spec Section 12 | Manual registration |
+| IRF-VOX-006 | P3 | Register MCP server via `claude mcp add voice-scorer` — make voice tools callable by any agent. **PARTIALLY ADVANCED (S-mcp-remediation, 2026-04-13):** Server config now injected via chezmoi modify script (not manual `claude mcp add`). Path fixed from `-m vox.mcp_server` to direct script. **BUT server is non-functional** — see IRF-DOM-029 (missing `textstat` dep + PYTHONPATH). | Agent | Design spec Section 12 | IRF-DOM-029 |
 | IRF-VOX-007 | P3 | Git hooks for commit message scoring — `prepare-commit-msg` hook running heuristic score in <100ms. Deploy via chezmoi. | Agent | Expansion Visionary idea #7 | ~~IRF-VOX-002~~ (resolved) |
 | IRF-VOX-008 | P3 | Knowledge base auto-corpus — auto-classify 14,992 atomized documents in my-knowledge-base for voice tier assignment. | Agent | Expansion Visionary idea #6 | ~~IRF-VOX-001~~ (resolved) |
 | IRF-VOX-009 | P3 | Conductor-voice integration — inject voice constraints at BUILD phase, verify at PROVE phase. | Agent | Expansion Visionary idea #8 | Conductor maturity |
@@ -795,6 +795,11 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-DOM-023 | P1 | lefthook global ghost fix. Blocks git push system-wide. | Agent | S43 vacuum audit | GH#51 |
 | IRF-DOM-024 | P2 | OpenClaw cloud model auth (Google OAuth failed). | Agent | S43 vacuum audit | GH#52 |
 | IRF-DOM-025 | P2 | OpenClaw chat channels connection (Discord/Telegram). | Agent | S43 vacuum audit | GH#52 |
+| ~~IRF-DOM-026~~ | ~~P1~~ | ~~**Harden MCP server secrets in .claude.json**~~ — **DONE** (S-mcp-remediation, 2026-04-13). GitHub PAT moved from plaintext to `gh auth token` via env var. Neon API key moved from plaintext to 1Password (`op://Personal/Neon API Key/credential`) via secrets cache → env var → chezmoi modify script. `modify_dot_claude.json.tmpl` now manages github + Neon configs alongside conductor + voice-scorer. Neon key rotated. Commit `2c208af`. | Agent | S-mcp-remediation 2026-04-13 | Completed |
+| ~~IRF-DOM-027~~ | ~~P1~~ | ~~**Remove dead serena custom fork MCP server**~~ — **DONE** (S-mcp-remediation, 2026-04-13). `4444J99/serena` repo deleted (404). Entry removed via `claude mcp remove serena`. Official `plugin:serena:serena` (oraios/serena) remains connected. | Agent | S-mcp-remediation 2026-04-13 | Completed |
+| ~~IRF-DOM-028~~ | ~~P2~~ | ~~**Clean stale plugin temp directory**~~ — **DONE** (S-mcp-remediation, 2026-04-13). `~/.claude/plugins/cache/temp_subdir_1776118948424_yi6h5o.clone` (failed Stripe AI clone) removed. | Agent | S-mcp-remediation 2026-04-13 | Completed |
+| IRF-DOM-029 | **P1** | **Voice-scorer MCP server non-functional — 2 blockers.** (1) `textstat` not installed in vox venv (`ModuleNotFoundError: No module named 'textstat'`). (2) `PYTHONPATH` not set in MCP config — `src/` layout means `from vox.scorer import HeuristicScorer` fails without `PYTHONPATH=src` or `pip install -e .`. Fix: `cd vox--architectura-gubernatio && .venv/bin/pip install -e .` OR add `"env": {"PYTHONPATH": "src"}` to modify script. Related: IRF-VOX-006. | Agent | S-mcp-remediation 2026-04-13 | None |
+| IRF-DOM-030 | **P1** | **Conductor MCP server injected but untested.** `modify_dot_claude.json.tmpl` injects conductor config, `chezmoi apply` deployed it, but `claude mcp list` was not re-run to verify connectivity. May fail if venv deps are stale or `mcp_server.py` has import issues. Needs: restart Claude Code session + verify `conductor: ✓ Connected`. | Agent | S-mcp-remediation 2026-04-13 | None |
 
 ---
 
