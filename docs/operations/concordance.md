@@ -58,6 +58,8 @@ python3 scripts/invoke.py --list               # list all namespaces and counts
 | `evt_[A-F0-9]{5}` | Registry events (system-system--system) | evt_05C78 |
 | `TRX-{trunk}[.{N}]` | Zettelkasten transcript IDs (post-flood) | TRX-CAS.2.1 |
 | `TRX-C.NN` | Compiled specification IDs (post-flood) | TRX-C.07 |
+| `T(X,Y)` X={S,C,P,I} Y={O,C,M,A} | Threshold topology cells (governance membrane) | T(S,O) |
+| `classified_\w+` | Classified governance rules (threshold topology) | classified_logic_first_governance |
 
 ---
 
@@ -855,3 +857,53 @@ Created: S-Zettelkasten (2026-04-13)
 | VSA | Virtual System Architecture | 2 | VSA.1 |
 | HIS | Hierarchical Index Structures | 3 | — |
 | NSC | Name and Structure Changes | 4 | — |
+
+---
+
+## Threshold Topology IDs
+
+Source: [`governance-thresholds.json`](../../../../organvm-iv-taxis/orchestration-start-here/governance-thresholds.json)
+Documentation: [`threshold-topology.md`](../../../../organvm-iv-taxis/orchestration-start-here/docs/threshold-topology.md)
+Created: S-threshold (2026-04-06)
+IRF: IRF-SYS-092, GH#152
+
+Two-axis governance membrane: Scope (SUBSTRATE/CONTROL/PRODUCTION/INTERFACE) x Depth (ORGANISM/COMPOUND/MOLECULE/ATOM) = 16 threshold cells. Each cell carries radius and permeability.
+
+### Threshold Cells (16)
+
+| ID | Scope | Depth | Local Rules | Permeability (D/U/L) |
+|----|-------|-------|-------------|---------------------|
+| T(S,O) | SUBSTRATE | ORGANISM | art_I, art_III, amend_H | 1.0/0.0/1.0 |
+| T(S,C) | SUBSTRATE | COMPOUND | art_VI, amend_A | 1.0/0.3/1.0 |
+| T(S,M) | SUBSTRATE | MOLECULE | amend_C | 0.8/0.3/0.8 |
+| T(S,A) | SUBSTRATE | ATOM | classified_seed_schema_conformance | 0.0/0.2/0.5 |
+| T(C,O) | CONTROL | ORGANISM | amend_B, amend_D, classified_logic_first_governance | 0.9/0.1/0.8 |
+| T(C,C) | CONTROL | COMPOUND | art_II, art_IV, rule_promote_to_art, rule_promote_to_commerce, wip_limits | 0.8/0.2/0.7 |
+| T(C,M) | CONTROL | MOLECULE | amend_E, amend_F, amend_G | 0.7/0.2/0.5 |
+| T(C,A) | CONTROL | ATOM | classified_action_ledger_emission, classified_ci_workflow_enforcement, classified_non_interactive_agent_safety | 0.0/0.2/0.3 |
+| T(P,O) | PRODUCTION | ORGANISM | *(empty — governed by CONTROL Art. II)* | 0.8/0.1/0.3 |
+| T(P,C) | PRODUCTION | COMPOUND | art_V | 0.7/0.2/0.3 |
+| T(P,M) | PRODUCTION | MOLECULE | classified_production_repo_conventions | 0.6/0.2/0.2 |
+| T(P,A) | PRODUCTION | ATOM | *(empty — no file-level production governance yet)* | 0.0/0.2/0.1 |
+| T(I,O) | INTERFACE | ORGANISM | classified_interface_read_many_write_one | 0.8/0.1/0.3 |
+| T(I,C) | INTERFACE | COMPOUND | classified_editorial_governance, classified_organ_aesthetic_identity | 0.7/0.2/0.3 |
+| T(I,M) | INTERFACE | MOLECULE | classified_frontmatter_schema_validation | 0.6/0.2/0.2 |
+| T(I,A) | INTERFACE | ATOM | classified_essay_file_constraints | 0.0/0.2/0.1 |
+
+### Classified Governance Rules (11)
+
+Informal operational conventions made visible during threshold classification (Waves 2-3).
+
+| ID | Cell | Description |
+|----|------|-------------|
+| classified_seed_schema_conformance | T(S,A) | seed.yaml must conform to schema |
+| classified_logic_first_governance | T(C,O) | Logic precedes ceremony in orchestration |
+| classified_action_ledger_emission | T(C,A) | Every action emits a ledger entry |
+| classified_ci_workflow_enforcement | T(C,A) | CI workflows enforced at atomic granularity |
+| classified_non_interactive_agent_safety | T(C,A) | Non-interactive agents operate with safety constraints |
+| classified_production_repo_conventions | T(P,M) | Production repos follow naming/structure conventions |
+| classified_interface_read_many_write_one | T(I,O) | Interface organs read from many, write to one |
+| classified_editorial_governance | T(I,C) | Editorial standards at organ compound level |
+| classified_organ_aesthetic_identity | T(I,C) | Each organ maintains aesthetic identity |
+| classified_frontmatter_schema_validation | T(I,M) | Frontmatter validated against schema per-repo |
+| classified_essay_file_constraints | T(I,A) | Essay files follow format constraints |
