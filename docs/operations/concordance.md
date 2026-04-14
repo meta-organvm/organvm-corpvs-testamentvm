@@ -56,6 +56,8 @@ python3 scripts/invoke.py --list               # list all namespaces and counts
 | `ent_[A-F0-9]{5}` | Registry entities (system-system--system) | ent_534B8 |
 | `rel_[A-F0-9]{5}` | Registry relationships (system-system--system) | rel_195AD |
 | `evt_[A-F0-9]{5}` | Registry events (system-system--system) | evt_05C78 |
+| `TRX-{trunk}[.{N}]` | Zettelkasten transcript IDs (post-flood) | TRX-CAS.2.1 |
+| `TRX-C.NN` | Compiled specification IDs (post-flood) | TRX-C.07 |
 
 ---
 
@@ -829,3 +831,27 @@ System-wide cognitive service dispatch — routes tasks to AI agents by work typ
 | ID | Title |
 |----|-------|
 | `INQ-2026-010` | The Fleet Protocol — task-to-agent routing with guardrailed handoff |
+
+---
+
+## TRX — Zettelkasten Transcript IDs
+
+Source: [`post-flood/archive_original/.zettel-index.yaml`](../../../post-flood/archive_original/.zettel-index.yaml)
+Validator: [`post-flood/archive_original/validate-zettelkasten.py`](../../../post-flood/archive_original/validate-zettelkasten.py)
+Created: S-Zettelkasten (2026-04-13)
+
+| Pattern | Scope | Count |
+|---------|-------|-------|
+| `TRX-{CAS\|TDR\|VSA\|HIS\|NSC}` | 5 trunk transcripts | 5 |
+| `TRX-{trunk}.{N}[.{N}]` | Branch transcripts (up to depth 3) | 13 |
+| `TRX-C.{01-10}` | Compiled specifications | 10 |
+
+### Trunk Codes
+
+| Code | Full Name | QA Own | Children |
+|------|-----------|--------|----------|
+| CAS | Commit Assessment Summary | 18 | CAS.1, CAS.2 |
+| TDR | Top-Down Refinement Pipeline | 5 | TDR.1, TDR.2 |
+| VSA | Virtual System Architecture | 2 | VSA.1 |
+| HIS | Hierarchical Index Structures | 3 | — |
+| NSC | Name and Structure Changes | 4 | — |
