@@ -1,0 +1,3413 @@
+{
+  "generated": "2026-04-15T01:49:43.603550+00:00",
+  "statistics": {
+    "total_nodes": 118,
+    "total_edges": 172,
+    "node_types": {
+      "transcript": 18,
+      "spec": 10,
+      "concept": 12,
+      "document": 72,
+      "repo": 6
+    },
+    "edge_types": {
+      "BRANCHES_TO": 13,
+      "COMPILES": 11,
+      "DEFINES": 12,
+      "REFERENCES": 47,
+      "EXTRACTED_FROM": 70,
+      "IMPLEMENTS": 19
+    }
+  },
+  "nodes": {
+    "TRX-CAS": {
+      "uid": "TRX-CAS",
+      "node_type": "transcript",
+      "title": "Commit Assessment Summary",
+      "metadata": {
+        "file": "Commit-Assessment-Summary.md",
+        "depth": 0,
+        "qa_own": 18,
+        "line_count": 4724,
+        "layer2_extractions": 0
+      }
+    },
+    "TRX-CAS.1": {
+      "uid": "TRX-CAS.1",
+      "node_type": "transcript",
+      "title": "Commit Assessment Summary — Topology",
+      "metadata": {
+        "file": "Branch-·-Commit-Assessment-Summary--topology.md",
+        "depth": 1,
+        "qa_own": 3,
+        "line_count": 2855,
+        "layer2_extractions": 3
+      }
+    },
+    "TRX-CAS.2": {
+      "uid": "TRX-CAS.2",
+      "node_type": "transcript",
+      "title": "Commit Assessment Summary — GitHub Registry",
+      "metadata": {
+        "file": "Branch-·-Commit-Assessment-Summary--github-registry.md",
+        "depth": 1,
+        "qa_own": 3,
+        "line_count": 5113,
+        "layer2_extractions": 15
+      }
+    },
+    "TRX-CAS.2.1": {
+      "uid": "TRX-CAS.2.1",
+      "node_type": "transcript",
+      "title": "Commit Assessment Summary — Forensics",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Commit-Assessment-Summary--forensics.md",
+        "depth": 2,
+        "qa_own": 11,
+        "line_count": 5248,
+        "layer2_extractions": 19
+      }
+    },
+    "TRX-TDR": {
+      "uid": "TRX-TDR",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline",
+      "metadata": {
+        "file": "Top-Down-Refinement-Pipeline.md",
+        "depth": 0,
+        "qa_own": 5,
+        "line_count": 1527,
+        "layer2_extractions": 0
+      }
+    },
+    "TRX-TDR.1": {
+      "uid": "TRX-TDR.1",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Phase Shift Relays",
+      "metadata": {
+        "file": "Branch-·-Top-Down-Refinement-Pipeline--phase-shift-relays.md",
+        "depth": 1,
+        "qa_own": 1,
+        "line_count": 1149,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2": {
+      "uid": "TRX-TDR.2",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Workflow Philosophy and Structural Interrogation",
+      "metadata": {
+        "file": "Branch-·-Top-Down-Refinement-Pipeline--workflow-philosophy-structural-interrogation.md",
+        "depth": 1,
+        "qa_own": 10,
+        "line_count": 3361,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2.1": {
+      "uid": "TRX-TDR.2.1",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Handoff",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Top-Down-Refinement-Pipeline--handoff.md",
+        "depth": 2,
+        "qa_own": 1,
+        "line_count": 464,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2.2": {
+      "uid": "TRX-TDR.2.2",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Theory to Study",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Top-Down-Refinement-Pipeline--theory-to-study.md",
+        "depth": 2,
+        "qa_own": 1,
+        "line_count": 1127,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2.3": {
+      "uid": "TRX-TDR.2.3",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Fusion",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Top-Down-Refinement-Pipeline--fusion.md",
+        "depth": 2,
+        "qa_own": 1,
+        "line_count": 2716,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2.4": {
+      "uid": "TRX-TDR.2.4",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Elevation",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Top-Down-Refinement-Pipeline--elevation.md",
+        "depth": 2,
+        "qa_own": 1,
+        "line_count": 2707,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-TDR.2.5": {
+      "uid": "TRX-TDR.2.5",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — Diagnostics and Alpha-Omega",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Top-Down-Refinement-Pipeline--diagnostics-alpha-omega.md",
+        "depth": 2,
+        "qa_own": 2,
+        "line_count": 4081,
+        "layer2_extractions": 2
+      }
+    },
+    "TRX-TDR.2.5.1": {
+      "uid": "TRX-TDR.2.5.1",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — State-Driven Orchestration",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Branch-·-Top-Down-Refinement-Pipeline--state-driven-orchestration.md",
+        "depth": 3,
+        "qa_own": 3,
+        "line_count": 4430,
+        "layer2_extractions": 3
+      }
+    },
+    "TRX-TDR.2.5.2": {
+      "uid": "TRX-TDR.2.5.2",
+      "node_type": "transcript",
+      "title": "Top-Down Refinement Pipeline — SPEC-013 through SPEC-017",
+      "metadata": {
+        "file": "Branch-·-Branch-·-Branch-·-Top-Down-Refinement-Pipeline--spec-013-017.md",
+        "depth": 3,
+        "qa_own": 1,
+        "line_count": 4255,
+        "layer2_extractions": 15
+      }
+    },
+    "TRX-VSA": {
+      "uid": "TRX-VSA",
+      "node_type": "transcript",
+      "title": "Virtual System Architecture",
+      "metadata": {
+        "file": "Virtual-System-Architecture.md",
+        "depth": 0,
+        "qa_own": 2,
+        "line_count": 816,
+        "layer2_extractions": 0
+      }
+    },
+    "TRX-VSA.1": {
+      "uid": "TRX-VSA.1",
+      "node_type": "transcript",
+      "title": "Virtual System Architecture — Autopoiesis and Meta-Evolution",
+      "metadata": {
+        "file": "Branch-·-Virtual-System-Architecture--autopoiesis-meta-evolution.md",
+        "depth": 1,
+        "qa_own": 2,
+        "line_count": 1475,
+        "layer2_extractions": 4
+      }
+    },
+    "TRX-HIS": {
+      "uid": "TRX-HIS",
+      "node_type": "transcript",
+      "title": "Hierarchical Index Structures",
+      "metadata": {
+        "file": "Hierarchical-Index-Structures.md",
+        "depth": 0,
+        "qa_own": 3,
+        "line_count": 1616,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-NSC": {
+      "uid": "TRX-NSC",
+      "node_type": "transcript",
+      "title": "Name and Structure Changes",
+      "metadata": {
+        "file": "Name-and-Structure-Changes.md",
+        "depth": 0,
+        "qa_own": 4,
+        "line_count": 1722,
+        "layer2_extractions": 1
+      }
+    },
+    "TRX-C.01": {
+      "uid": "TRX-C.01",
+      "node_type": "spec",
+      "title": "AMMOI Specification",
+      "metadata": {
+        "file": "extracted_modules_compiled/AMMOI-Specification.md",
+        "line_count": 707,
+        "compilation_quality": "clean"
+      }
+    },
+    "TRX-C.02": {
+      "uid": "TRX-C.02",
+      "node_type": "spec",
+      "title": "Adaptive System Variable and Structural Evolution Framework",
+      "metadata": {
+        "file": "extracted_modules_compiled/Adaptive-System-Variable-Structural-Evolution-Framework.md",
+        "line_count": 635,
+        "compilation_quality": "partial"
+      }
+    },
+    "TRX-C.03": {
+      "uid": "TRX-C.03",
+      "node_type": "spec",
+      "title": "Alpha-Omega Phase Map",
+      "metadata": {
+        "file": "extracted_modules_compiled/Alpha-Omega-Phase-Map.md",
+        "line_count": 453,
+        "compilation_quality": "clean"
+      }
+    },
+    "TRX-C.04": {
+      "uid": "TRX-C.04",
+      "node_type": "spec",
+      "title": "Architecture Migration Strategy",
+      "metadata": {
+        "file": "extracted_modules_compiled/Architecture-Migration-Strategy.md",
+        "line_count": 638,
+        "compilation_quality": "partial"
+      }
+    },
+    "TRX-C.05": {
+      "uid": "TRX-C.05",
+      "node_type": "spec",
+      "title": "Foundational Specification Set",
+      "metadata": {
+        "file": "extracted_modules_compiled/Foundational-Specification-Set.md",
+        "line_count": 618,
+        "compilation_quality": "clean"
+      }
+    },
+    "TRX-C.06": {
+      "uid": "TRX-C.06",
+      "node_type": "spec",
+      "title": "Meta-Evolution Architecture",
+      "metadata": {
+        "file": "extracted_modules_compiled/Meta-Evolution-Architecture.md",
+        "line_count": 429,
+        "compilation_quality": "clean"
+      }
+    },
+    "TRX-C.07": {
+      "uid": "TRX-C.07",
+      "node_type": "spec",
+      "title": "Metric and Temporal Statistics Specification",
+      "metadata": {
+        "file": "extracted_modules_compiled/Metric-and-Temporal-Statistics-Specification.md",
+        "line_count": 390,
+        "compilation_quality": "partial"
+      }
+    },
+    "TRX-C.08": {
+      "uid": "TRX-C.08",
+      "node_type": "spec",
+      "title": "Stage-II Formal Ontology",
+      "metadata": {
+        "file": "extracted_modules_compiled/Stage-II-Formal-Ontology.md",
+        "line_count": 402,
+        "compilation_quality": "clean"
+      }
+    },
+    "TRX-C.09": {
+      "uid": "TRX-C.09",
+      "node_type": "spec",
+      "title": "Structural Interrogation",
+      "metadata": {
+        "file": "extracted_modules_compiled/Structural-Interrogation.md",
+        "line_count": 780,
+        "compilation_quality": "partial"
+      }
+    },
+    "TRX-C.10": {
+      "uid": "TRX-C.10",
+      "node_type": "spec",
+      "title": "Universal Macro-Micro Indexing Object",
+      "metadata": {
+        "file": "extracted_modules_compiled/Universal-Macro-Micro-Indexing-Object.md",
+        "line_count": 715,
+        "compilation_quality": "partial"
+      }
+    },
+    "concept:AMMOI": {
+      "uid": "concept:AMMOI",
+      "node_type": "concept",
+      "title": "AMMOI",
+      "metadata": {
+        "description": "Adaptive Macro-Micro Ontological Index — self-revising hierarchical ontology graph",
+        "trunks": [
+          "HIS",
+          "VSA"
+        ],
+        "primary_source": "TRX-HIS"
+      }
+    },
+    "concept:SVSE": {
+      "uid": "concept:SVSE",
+      "node_type": "concept",
+      "title": "SVSE",
+      "metadata": {
+        "description": "System Variable and Structural Evolution Framework — identity/expression/relationship separation",
+        "trunks": [
+          "NSC"
+        ],
+        "primary_source": "TRX-NSC"
+      }
+    },
+    "concept:alpha_omega_phase_map": {
+      "uid": "concept:alpha_omega_phase_map",
+      "node_type": "concept",
+      "title": "alpha_omega_phase_map",
+      "metadata": {
+        "description": "10-phase lifecycle across 5 regimes (Alpha through Omega)",
+        "trunks": [
+          "TDR"
+        ],
+        "primary_source": "TRX-TDR.2.5"
+      }
+    },
+    "concept:autopoiesis": {
+      "uid": "concept:autopoiesis",
+      "node_type": "concept",
+      "title": "autopoiesis",
+      "metadata": {
+        "description": "Self-producing systems — system maintains its own organization",
+        "trunks": [
+          "CAS",
+          "VSA"
+        ],
+        "primary_source": "TRX-VSA.1"
+      }
+    },
+    "concept:constitutional_topology": {
+      "uid": "concept:constitutional_topology",
+      "node_type": "concept",
+      "title": "constitutional_topology",
+      "metadata": {
+        "description": "Three-layer architecture: Production Core, Control Plane, Interface Layer",
+        "trunks": [
+          "CAS",
+          "TDR",
+          "VSA"
+        ],
+        "primary_source": "TRX-CAS.2.1"
+      }
+    },
+    "concept:formation_protocol": {
+      "uid": "concept:formation_protocol",
+      "node_type": "concept",
+      "title": "formation_protocol",
+      "metadata": {
+        "description": "7 formation types (GENERATOR through SYNTHESIZER), signal classes, formation.yaml",
+        "trunks": [
+          "CAS",
+          "TDR"
+        ],
+        "primary_source": "TRX-CAS.2.1"
+      }
+    },
+    "concept:meta_evolution": {
+      "uid": "concept:meta_evolution",
+      "node_type": "concept",
+      "title": "meta_evolution",
+      "metadata": {
+        "description": "4 evolutionary strata: State, Structure, Ontology, Meta-Evolution",
+        "trunks": [
+          "VSA"
+        ],
+        "primary_source": "TRX-VSA.1"
+      }
+    },
+    "concept:multiplex_graph": {
+      "uid": "concept:multiplex_graph",
+      "node_type": "concept",
+      "title": "multiplex_graph",
+      "metadata": {
+        "description": "ORGANVM as multiplex directed graph with 4 edge families on shared vertex set",
+        "trunks": [
+          "CAS"
+        ],
+        "primary_source": "TRX-CAS.2.1"
+      }
+    },
+    "concept:structural_interrogation": {
+      "uid": "concept:structural_interrogation",
+      "node_type": "concept",
+      "title": "structural_interrogation",
+      "metadata": {
+        "description": "7-dimension diagnostic: Existence, Identity, Structure, Law, Process, Relation, Teleology",
+        "trunks": [
+          "CAS",
+          "TDR"
+        ],
+        "primary_source": "TRX-TDR.2"
+      }
+    },
+    "concept:swarm_governance": {
+      "uid": "concept:swarm_governance",
+      "node_type": "concept",
+      "title": "swarm_governance",
+      "metadata": {
+        "description": "SPEC-013 through SPEC-017: Agent topology, resource constraints, escalation, epistemic routing",
+        "trunks": [
+          "CAS",
+          "TDR"
+        ],
+        "primary_source": "TRX-TDR.2.5.2"
+      }
+    },
+    "concept:temporal_metric_fabric": {
+      "uid": "concept:temporal_metric_fabric",
+      "node_type": "concept",
+      "title": "temporal_metric_fabric",
+      "metadata": {
+        "description": "Gauges, counters, deltas, rolling statistics — metric observation system",
+        "trunks": [
+          "NSC",
+          "VSA"
+        ],
+        "primary_source": "TRX-NSC"
+      }
+    },
+    "concept:repo_fusion": {
+      "uid": "concept:repo_fusion",
+      "node_type": "concept",
+      "title": "repo_fusion",
+      "metadata": {
+        "description": "Third-location synthesis protocol for merging repos of equal value",
+        "trunks": [
+          "TDR",
+          "CAS"
+        ],
+        "primary_source": "TRX-TDR.2.3"
+      }
+    },
+    "doc:virtual-system-architecture/unifying-verdict.md": {
+      "uid": "doc:virtual-system-architecture/unifying-verdict.md",
+      "node_type": "document",
+      "title": "Unifying verdict",
+      "metadata": {
+        "file": "virtual-system-architecture/unifying-verdict.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "metrics",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 2
+      }
+    },
+    "doc:virtual-system-architecture/autopoietic-architecture-potential.md": {
+      "uid": "doc:virtual-system-architecture/autopoietic-architecture-potential.md",
+      "node_type": "document",
+      "title": "Why autopoietic architecture expands potential",
+      "metadata": {
+        "file": "virtual-system-architecture/autopoietic-architecture-potential.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "memory",
+          "metrics",
+          "naming",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 3
+      }
+    },
+    "doc:virtual-system-architecture/meta-evolution-architecture.md": {
+      "uid": "doc:virtual-system-architecture/meta-evolution-architecture.md",
+      "node_type": "document",
+      "title": "Meta-Evolution Architecture",
+      "metadata": {
+        "file": "virtual-system-architecture/meta-evolution-architecture.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "metrics",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 4
+      }
+    },
+    "doc:virtual-system-architecture/two-simultaneous-problems.md": {
+      "uid": "doc:virtual-system-architecture/two-simultaneous-problems.md",
+      "node_type": "document",
+      "title": "Two simultaneous problems",
+      "metadata": {
+        "file": "virtual-system-architecture/two-simultaneous-problems.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "inference",
+          "memory",
+          "metrics",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 1
+      }
+    },
+    "doc:hierarchical-index-structures/ammoi-index.md": {
+      "uid": "doc:hierarchical-index-structures/ammoi-index.md",
+      "node_type": "document",
+      "title": "Adaptive Macro–Micro Ontological Index (AMMOI)",
+      "metadata": {
+        "file": "hierarchical-index-structures/ammoi-index.md",
+        "status": "merged",
+        "tags": [
+          "ammoi",
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "memory",
+          "ontology",
+          "registry",
+          "relationships",
+          "sensing",
+          "specification"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": null
+      }
+    },
+    "doc:name-and-structure-changes/svse-framework.md": {
+      "uid": "doc:name-and-structure-changes/svse-framework.md",
+      "node_type": "document",
+      "title": "Adaptive System Variable & Structural Evolution Framework",
+      "metadata": {
+        "file": "name-and-structure-changes/svse-framework.md",
+        "status": "merged",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": null
+      }
+    },
+    "doc:name-and-structure-changes/short-answer-system-terms.md": {
+      "uid": "doc:name-and-structure-changes/short-answer-system-terms.md",
+      "node_type": "document",
+      "title": "Short answer in system terms",
+      "metadata": {
+        "file": "name-and-structure-changes/short-answer-system-terms.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "inference",
+          "memory",
+          "metrics",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 4
+      }
+    },
+    "doc:top-down-refinement-pipeline/phase-maps-and-transitions/phase-shift-relay.md": {
+      "uid": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/phase-shift-relay.md",
+      "node_type": "document",
+      "title": "Phase-Shift Relay",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/phase-maps-and-transitions/phase-shift-relay.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "naming",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 3
+      }
+    },
+    "doc:top-down-refinement-pipeline/phase-maps-and-transitions/state-opacity-false-equation.md": {
+      "uid": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/state-opacity-false-equation.md",
+      "node_type": "document",
+      "title": "State opacity and the false equation: why perfect research does not produce perfect implementation",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/phase-maps-and-transitions/state-opacity-false-equation.md",
+        "status": "extracted",
+        "tags": [
+          "phase-architecture",
+          "state-opacity",
+          "lifecycle",
+          "alpha-to-omega",
+          "false-equation",
+          "coding-agents",
+          "structural-interrogation"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 15
+      }
+    },
+    "doc:top-down-refinement-pipeline/phase-maps-and-transitions/alpha-omega-phase-map.md": {
+      "uid": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/alpha-omega-phase-map.md",
+      "node_type": "document",
+      "title": "Alpha → Omega Phase Map",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/phase-maps-and-transitions/alpha-omega-phase-map.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 16
+      }
+    },
+    "doc:top-down-refinement-pipeline/phase-maps-and-transitions/visible-project-state-model.md": {
+      "uid": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/visible-project-state-model.md",
+      "node_type": "document",
+      "title": "1. Establish a visible project state model",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/phase-maps-and-transitions/visible-project-state-model.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "identity",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 18
+      }
+    },
+    "doc:top-down-refinement-pipeline/workflow-philosophy/correction-effort-recreation.md": {
+      "uid": "doc:top-down-refinement-pipeline/workflow-philosophy/correction-effort-recreation.md",
+      "node_type": "document",
+      "title": "Yes. In most cases, **that correction effort could have been recreated — and oft",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/workflow-philosophy/correction-effort-recreation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "identity",
+          "inference",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 9
+      }
+    },
+    "doc:top-down-refinement-pipeline/workflow-philosophy/short-answer.md": {
+      "uid": "doc:top-down-refinement-pipeline/workflow-philosophy/short-answer.md",
+      "node_type": "document",
+      "title": "Short answer",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/workflow-philosophy/short-answer.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "lifecycle",
+          "metrics",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 6
+      }
+    },
+    "doc:top-down-refinement-pipeline/workflow-philosophy/chat-is-not-the-work.md": {
+      "uid": "doc:top-down-refinement-pipeline/workflow-philosophy/chat-is-not-the-work.md",
+      "node_type": "document",
+      "title": "Chat is not the work. Chat is a catalyst.",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/workflow-philosophy/chat-is-not-the-work.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 7
+      }
+    },
+    "doc:top-down-refinement-pipeline/workflow-philosophy/initial-thread-output.md": {
+      "uid": "doc:top-down-refinement-pipeline/workflow-philosophy/initial-thread-output.md",
+      "node_type": "document",
+      "title": "1. What the beginning of this thread actually produced",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/workflow-philosophy/initial-thread-output.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 8
+      }
+    },
+    "doc:top-down-refinement-pipeline/workflow-philosophy/instinct-vs-interpretation.md": {
+      "uid": "doc:top-down-refinement-pipeline/workflow-philosophy/instinct-vs-interpretation.md",
+      "node_type": "document",
+      "title": "Your instinct is pointing toward something real, but the interpretation needs ad",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/workflow-philosophy/instinct-vs-interpretation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "lifecycle",
+          "propagation",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 17
+      }
+    },
+    "doc:top-down-refinement-pipeline/fusion-and-evolution/perfecting-through-completion.md": {
+      "uid": "doc:top-down-refinement-pipeline/fusion-and-evolution/perfecting-through-completion.md",
+      "node_type": "document",
+      "title": "What you’re describing is essentially **“perfecting through the road to completi",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/fusion-and-evolution/perfecting-through-completion.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "lifecycle"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 11
+      }
+    },
+    "doc:top-down-refinement-pipeline/fusion-and-evolution/identity-function-governance-elevation.md": {
+      "uid": "doc:top-down-refinement-pipeline/fusion-and-evolution/identity-function-governance-elevation.md",
+      "node_type": "document",
+      "title": "Preserve identity first, then fuse function, then elevate governance",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/fusion-and-evolution/identity-function-governance-elevation.md",
+        "status": "extracted",
+        "tags": [
+          "diagnostics",
+          "events",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 11
+      }
+    },
+    "doc:top-down-refinement-pipeline/fusion-and-evolution/fusion-chamber-merge-protocol.md": {
+      "uid": "doc:top-down-refinement-pipeline/fusion-and-evolution/fusion-chamber-merge-protocol.md",
+      "node_type": "document",
+      "title": "Do not begin with a blind merge. Begin with a fusion chamber.",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/fusion-and-evolution/fusion-chamber-merge-protocol.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "governance",
+          "identity",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "registry",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 11
+      }
+    },
+    "doc:top-down-refinement-pipeline/fusion-and-evolution/two-evolutionary-approaches.md": {
+      "uid": "doc:top-down-refinement-pipeline/fusion-and-evolution/two-evolutionary-approaches.md",
+      "node_type": "document",
+      "title": "The two approaches you’re describing correspond to two fundamentally different e",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/fusion-and-evolution/two-evolutionary-approaches.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "lifecycle",
+          "ontology",
+          "propagation",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 10
+      }
+    },
+    "doc:top-down-refinement-pipeline/pipeline-specification/spec-013.md": {
+      "uid": "doc:top-down-refinement-pipeline/pipeline-specification/spec-013.md",
+      "node_type": "document",
+      "title": "SPEC-013",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/pipeline-specification/spec-013.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "inference",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 5
+      }
+    },
+    "doc:top-down-refinement-pipeline/pipeline-specification/next-full-arc-of-work.md": {
+      "uid": "doc:top-down-refinement-pipeline/pipeline-specification/next-full-arc-of-work.md",
+      "node_type": "document",
+      "title": "Next Full Arc of Work",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/pipeline-specification/next-full-arc-of-work.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 5
+      }
+    },
+    "doc:top-down-refinement-pipeline/pipeline-specification/foundational-spec-set.md": {
+      "uid": "doc:top-down-refinement-pipeline/pipeline-specification/foundational-spec-set.md",
+      "node_type": "document",
+      "title": "Foundational Specification Set",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/pipeline-specification/foundational-spec-set.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 2
+      }
+    },
+    "doc:top-down-refinement-pipeline/pipeline-specification/pipeline-specification.md": {
+      "uid": "doc:top-down-refinement-pipeline/pipeline-specification/pipeline-specification.md",
+      "node_type": "document",
+      "title": "Top-Down Refinement Pipeline Specification",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/pipeline-specification/pipeline-specification.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "inference",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 1
+      }
+    },
+    "doc:top-down-refinement-pipeline/handoff-and-relay/packaging-failure-debug.md": {
+      "uid": "doc:top-down-refinement-pipeline/handoff-and-relay/packaging-failure-debug.md",
+      "node_type": "document",
+      "title": "I hit a packaging failure while extending the scaffold with the second-pass gene",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/handoff-and-relay/packaging-failure-debug.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "governance",
+          "indexing",
+          "lifecycle",
+          "ontology",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 4
+      }
+    },
+    "doc:top-down-refinement-pipeline/handoff-and-relay/workspace-handoff-prompt.md": {
+      "uid": "doc:top-down-refinement-pipeline/handoff-and-relay/workspace-handoff-prompt.md",
+      "node_type": "document",
+      "title": "Workspace Handoff Prompt",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/handoff-and-relay/workspace-handoff-prompt.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "memory",
+          "ontology",
+          "registry",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 2
+      }
+    },
+    "doc:top-down-refinement-pipeline/handoff-and-relay/prompt-relay.md": {
+      "uid": "doc:top-down-refinement-pipeline/handoff-and-relay/prompt-relay.md",
+      "node_type": "document",
+      "title": "Prompt Relay",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/handoff-and-relay/prompt-relay.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "indexing",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 3
+      }
+    },
+    "doc:top-down-refinement-pipeline/handoff-and-relay/one-command-generation.md": {
+      "uid": "doc:top-down-refinement-pipeline/handoff-and-relay/one-command-generation.md",
+      "node_type": "document",
+      "title": "One-command generation",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/handoff-and-relay/one-command-generation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "indexing",
+          "naming",
+          "ontology",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 3
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/clarify-problem-nature.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/clarify-problem-nature.md",
+      "node_type": "document",
+      "title": "1. Clarify the nature of the problem",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/clarify-problem-nature.md",
+        "status": "extracted",
+        "tags": [
+          "events",
+          "lifecycle",
+          "ontology",
+          "propagation",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 12
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/structural-interrogation.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/structural-interrogation.md",
+      "node_type": "document",
+      "title": "Structural Interrogation",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/structural-interrogation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "evolution",
+          "governance",
+          "lifecycle"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 14
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/ontological-framework.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/ontological-framework.md",
+      "node_type": "document",
+      "title": "1. Ontological Framework",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/ontological-framework.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "hierarchy",
+          "identity",
+          "inference",
+          "lifecycle",
+          "metrics",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 17
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/detecting-unseen-problems.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/detecting-unseen-problems.md",
+      "node_type": "document",
+      "title": "How do you detect the problems that exist but have not yet been seen?",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/detecting-unseen-problems.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "inference",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 13
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/depth-of-reality-frameworks.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/depth-of-reality-frameworks.md",
+      "node_type": "document",
+      "title": "I. Depth-of-Reality Frameworks",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/depth-of-reality-frameworks.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "memory",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 16
+      }
+    },
+    "doc:top-down-refinement-pipeline/diagnostic-frameworks/diagnostic-frameworks-catalog.md": {
+      "uid": "doc:top-down-refinement-pipeline/diagnostic-frameworks/diagnostic-frameworks-catalog.md",
+      "node_type": "document",
+      "title": "Comprehensive diagnostic frameworks catalog: 29 frameworks across 9 categories",
+      "metadata": {
+        "file": "top-down-refinement-pipeline/diagnostic-frameworks/diagnostic-frameworks-catalog.md",
+        "status": "extracted",
+        "tags": [
+          "diagnostic-frameworks",
+          "causal-layered-analysis",
+          "systems-thinking",
+          "ontological-analysis",
+          "meta-framework",
+          "structural-interrogation"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 16
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/the-core-mistake.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/the-core-mistake.md",
+      "node_type": "document",
+      "title": "The core mistake",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/the-core-mistake.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "lifecycle",
+          "naming",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 7
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/research-spinout-danger-zone.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/research-spinout-danger-zone.md",
+      "node_type": "document",
+      "title": "The danger zone of research spinout",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/research-spinout-danger-zone.md",
+        "status": "extracted",
+        "tags": [
+          "research-atlas",
+          "spinout",
+          "uniqueness",
+          "research-formations",
+          "frontier-budget",
+          "membrane",
+          "constitutional-rules"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 7
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/core-github-constraint.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/core-github-constraint.md",
+      "node_type": "document",
+      "title": "1. The core GitHub constraint",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/core-github-constraint.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "hierarchy",
+          "indexing",
+          "naming",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 20
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/github.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/github.md",
+      "node_type": "document",
+      "title": "`.github`",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/github.md",
+        "status": "extracted",
+        "tags": [
+          "diagnostics",
+          "governance",
+          "identity",
+          "inference",
+          "memory",
+          "metrics",
+          "naming",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 10
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/distinctiveness-through-formations.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/distinctiveness-through-formations.md",
+      "node_type": "document",
+      "title": "Distinctiveness through interoperable formations",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/distinctiveness-through-formations.md",
+        "status": "extracted",
+        "tags": [
+          "modular-synthesis",
+          "formations",
+          "signal-exchange",
+          "feedback",
+          "feedfront",
+          "formation-protocol",
+          "physiological-role"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 8
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/implicit-structural-model.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/implicit-structural-model.md",
+      "node_type": "document",
+      "title": "1. The structural model you are implicitly building",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/implicit-structural-model.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "governance",
+          "identity",
+          "ontology",
+          "propagation",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 7
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/institutional-production-pipeline.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/institutional-production-pipeline.md",
+      "node_type": "document",
+      "title": "1. The current model: **Institutional production pipeline**",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/institutional-production-pipeline.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "indexing",
+          "lifecycle",
+          "propagation",
+          "registry",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 14
+      }
+    },
+    "doc:commit-assessment-summary/structural-positioning/flat-vs-hierarchical-structure.md": {
+      "uid": "doc:commit-assessment-summary/structural-positioning/flat-vs-hierarchical-structure.md",
+      "node_type": "document",
+      "title": "1. Flat structure vs hierarchical structure",
+      "metadata": {
+        "file": "commit-assessment-summary/structural-positioning/flat-vs-hierarchical-structure.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "hierarchy",
+          "indexing",
+          "lifecycle",
+          "naming",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 19
+      }
+    },
+    "doc:commit-assessment-summary/graph-theoretic-models/formal-topology-diagram.md": {
+      "uid": "doc:commit-assessment-summary/graph-theoretic-models/formal-topology-diagram.md",
+      "node_type": "document",
+      "title": "Here is the formal topology diagram:",
+      "metadata": {
+        "file": "commit-assessment-summary/graph-theoretic-models/formal-topology-diagram.md",
+        "status": "extracted",
+        "tags": [
+          "memory",
+          "propagation"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 15
+      }
+    },
+    "doc:commit-assessment-summary/graph-theoretic-models/multiplex-directed-graph-model.md": {
+      "uid": "doc:commit-assessment-summary/graph-theoretic-models/multiplex-directed-graph-model.md",
+      "node_type": "document",
+      "title": "ORGANVM should be modeled as a multiplex directed graph, not a single graph.",
+      "metadata": {
+        "file": "commit-assessment-summary/graph-theoretic-models/multiplex-directed-graph-model.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "indexing",
+          "lifecycle",
+          "memory",
+          "metrics",
+          "naming",
+          "ontology",
+          "propagation",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 7
+      }
+    },
+    "doc:commit-assessment-summary/graph-theoretic-models/knowledge-feedback-architecture.md": {
+      "uid": "doc:commit-assessment-summary/graph-theoretic-models/knowledge-feedback-architecture.md",
+      "node_type": "document",
+      "title": "ORGANVM Knowledge Feedback Architecture",
+      "metadata": {
+        "file": "commit-assessment-summary/graph-theoretic-models/knowledge-feedback-architecture.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "metrics",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 8
+      }
+    },
+    "doc:commit-assessment-summary/graph-theoretic-models/graph-theoretic-model.md": {
+      "uid": "doc:commit-assessment-summary/graph-theoretic-models/graph-theoretic-model.md",
+      "node_type": "document",
+      "title": "Graph-Theoretic Model of ORGANVM",
+      "metadata": {
+        "file": "commit-assessment-summary/graph-theoretic-models/graph-theoretic-model.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "memory",
+          "metrics",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 9
+      }
+    },
+    "doc:commit-assessment-summary/constitutional-governance/linear-civic-sequence.md": {
+      "uid": "doc:commit-assessment-summary/constitutional-governance/linear-civic-sequence.md",
+      "node_type": "document",
+      "title": "Model A — Linear Civic Sequence",
+      "metadata": {
+        "file": "commit-assessment-summary/constitutional-governance/linear-civic-sequence.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "governance",
+          "lifecycle",
+          "metrics",
+          "registry",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 16
+      }
+    },
+    "doc:commit-assessment-summary/constitutional-governance/constitutional-map.md": {
+      "uid": "doc:commit-assessment-summary/constitutional-governance/constitutional-map.md",
+      "node_type": "document",
+      "title": "Constitutional Map of the ORGANVM System",
+      "metadata": {
+        "file": "commit-assessment-summary/constitutional-governance/constitutional-map.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "evolution",
+          "governance",
+          "hierarchy",
+          "identity",
+          "lifecycle",
+          "memory",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 17
+      }
+    },
+    "doc:commit-assessment-summary/constitutional-governance/constitutional-numerical-order.md": {
+      "uid": "doc:commit-assessment-summary/constitutional-governance/constitutional-numerical-order.md",
+      "node_type": "document",
+      "title": "Constitutional doctrine of numerical order",
+      "metadata": {
+        "file": "commit-assessment-summary/constitutional-governance/constitutional-numerical-order.md",
+        "status": "extracted",
+        "tags": [
+          "constitutional-doctrine",
+          "organ-numbering",
+          "structural-progression",
+          "numerical-order"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 13
+      }
+    },
+    "doc:commit-assessment-summary/constitutional-governance/constitutional-registry-schema.md": {
+      "uid": "doc:commit-assessment-summary/constitutional-governance/constitutional-registry-schema.md",
+      "node_type": "document",
+      "title": "Operational Constitutional Registry Schema",
+      "metadata": {
+        "file": "commit-assessment-summary/constitutional-governance/constitutional-registry-schema.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 18
+      }
+    },
+    "doc:commit-assessment-summary/constitutional-governance/formation-protocol.md": {
+      "uid": "doc:commit-assessment-summary/constitutional-governance/formation-protocol.md",
+      "node_type": "document",
+      "title": "FORMATION_PROTOCOL.md",
+      "metadata": {
+        "file": "commit-assessment-summary/constitutional-governance/formation-protocol.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 9
+      }
+    },
+    "doc:commit-assessment-summary/initial-assessment/discovery-result.md": {
+      "uid": "doc:commit-assessment-summary/initial-assessment/discovery-result.md",
+      "node_type": "document",
+      "title": "Discovery result",
+      "metadata": {
+        "file": "commit-assessment-summary/initial-assessment/discovery-result.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "lifecycle",
+          "metrics",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 9
+      }
+    },
+    "doc:commit-assessment-summary/initial-assessment/assessment.md": {
+      "uid": "doc:commit-assessment-summary/initial-assessment/assessment.md",
+      "node_type": "document",
+      "title": "Assessment",
+      "metadata": {
+        "file": "commit-assessment-summary/initial-assessment/assessment.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "metrics",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 1
+      }
+    },
+    "doc:commit-assessment-summary/implementation-methodology/new-era-implementation-methodology.md": {
+      "uid": "doc:commit-assessment-summary/implementation-methodology/new-era-implementation-methodology.md",
+      "node_type": "document",
+      "title": "Methodology for injecting and implementing a new era in `meta-organvm`",
+      "metadata": {
+        "file": "commit-assessment-summary/implementation-methodology/new-era-implementation-methodology.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "memory",
+          "naming",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 10
+      }
+    },
+    "doc:commit-assessment-summary/implementation-methodology/implementation-is-not-documentation.md": {
+      "uid": "doc:commit-assessment-summary/implementation-methodology/implementation-is-not-documentation.md",
+      "node_type": "document",
+      "title": "Yes — and the right way to implement it is **not** as a documentation exercise",
+      "metadata": {
+        "file": "commit-assessment-summary/implementation-methodology/implementation-is-not-documentation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "registry",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 2
+      }
+    },
+    "doc:commit-assessment-summary/implementation-methodology/domain-prefix-method.md": {
+      "uid": "doc:commit-assessment-summary/implementation-methodology/domain-prefix-method.md",
+      "node_type": "document",
+      "title": "1. Domain Prefix Method (most practical)",
+      "metadata": {
+        "file": "commit-assessment-summary/implementation-methodology/domain-prefix-method.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "naming",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 18
+      }
+    },
+    "doc:commit-assessment-summary/implementation-methodology/never-overwrite-the-past.md": {
+      "uid": "doc:commit-assessment-summary/implementation-methodology/never-overwrite-the-past.md",
+      "node_type": "document",
+      "title": "1. First principle: you never overwrite the past",
+      "metadata": {
+        "file": "commit-assessment-summary/implementation-methodology/never-overwrite-the-past.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "indexing",
+          "lifecycle",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 4
+      }
+    },
+    "doc:commit-assessment-summary/implementation-methodology/pilot-at-single-repo.md": {
+      "uid": "doc:commit-assessment-summary/implementation-methodology/pilot-at-single-repo.md",
+      "node_type": "document",
+      "title": "Start at the **organization level**, then immediately pilot at **one repo**",
+      "metadata": {
+        "file": "commit-assessment-summary/implementation-methodology/pilot-at-single-repo.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "evolution",
+          "governance",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 3
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-i-theoria-function-vs-name.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-i-theoria-function-vs-name.md",
+      "node_type": "document",
+      "title": "ORGAN-I Theoria — Current Function vs Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-i-theoria-function-vs-name.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 12
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-audit-i-vii.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-audit-i-vii.md",
+      "node_type": "document",
+      "title": "ORGANVM Organ Audit (I–VII): Current Function vs. Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-audit-i-vii.md",
+        "status": "merged",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "governance",
+          "identity",
+          "lifecycle",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": null
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-iv-taxis-function-vs-name.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-iv-taxis-function-vs-name.md",
+      "node_type": "document",
+      "title": "ORGAN-IV Taxis — Current Function vs Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-iv-taxis-function-vs-name.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 11
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-v-vii-function-vs-name.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-v-vii-function-vs-name.md",
+      "node_type": "document",
+      "title": "ORGAN-V Logos, ORGAN-VI Koinonia, ORGAN-VII Kerygma — Current Function vs Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-v-vii-function-vs-name.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 15
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-iii-ergon-function-vs-name.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-iii-ergon-function-vs-name.md",
+      "node_type": "document",
+      "title": "ORGAN-III Ergon — Current Function vs Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-iii-ergon-function-vs-name.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 13
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/organ-ii-poiesis-function-vs-name.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/organ-ii-poiesis-function-vs-name.md",
+      "node_type": "document",
+      "title": "ORGAN-II Poiesis — Current Function vs Intended-by-Name",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/organ-ii-poiesis-function-vs-name.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "identity",
+          "naming",
+          "ontology",
+          "registry"
+        ],
+        "date_extracted": "2026-03-17",
+        "source_qa_index": 14
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/correction-to-forensics.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/correction-to-forensics.md",
+      "node_type": "document",
+      "title": "Yes, but with one correction",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/correction-to-forensics.md",
+        "status": "extracted",
+        "tags": [
+          "governance",
+          "hierarchy",
+          "lifecycle",
+          "ontology",
+          "registry",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 12
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/structural-condition-assessment.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/structural-condition-assessment.md",
+      "node_type": "document",
+      "title": "You are probably sensing a real structural condition, not just anxiety",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/structural-condition-assessment.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "governance",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 8
+      }
+    },
+    "doc:commit-assessment-summary/organ-audit/meta-as-zero-order.md": {
+      "uid": "doc:commit-assessment-summary/organ-audit/meta-as-zero-order.md",
+      "node_type": "document",
+      "title": "Meta should become **zero-order**, not merely “another org”",
+      "metadata": {
+        "file": "commit-assessment-summary/organ-audit/meta-as-zero-order.md",
+        "status": "extracted",
+        "tags": [
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 11
+      }
+    },
+    "doc:commit-assessment-summary/ontology-and-formalization/cleanest-formulation.md": {
+      "uid": "doc:commit-assessment-summary/ontology-and-formalization/cleanest-formulation.md",
+      "node_type": "document",
+      "title": "The cleanest formulation",
+      "metadata": {
+        "file": "commit-assessment-summary/ontology-and-formalization/cleanest-formulation.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "governance",
+          "identity",
+          "indexing",
+          "inference",
+          "lifecycle",
+          "memory",
+          "naming",
+          "ontology",
+          "propagation",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 8
+      }
+    },
+    "doc:commit-assessment-summary/ontology-and-formalization/core-principle.md": {
+      "uid": "doc:commit-assessment-summary/ontology-and-formalization/core-principle.md",
+      "node_type": "document",
+      "title": "Core principle",
+      "metadata": {
+        "file": "commit-assessment-summary/ontology-and-formalization/core-principle.md",
+        "status": "extracted",
+        "tags": [
+          "events",
+          "governance",
+          "hierarchy",
+          "identity",
+          "indexing",
+          "inference",
+          "memory",
+          "metrics",
+          "ontology",
+          "registry",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 16
+      }
+    },
+    "doc:commit-assessment-summary/ontology-and-formalization/stage-ii-formal-ontology.md": {
+      "uid": "doc:commit-assessment-summary/ontology-and-formalization/stage-ii-formal-ontology.md",
+      "node_type": "document",
+      "title": "ORGANVM Stage-II Formal Ontology",
+      "metadata": {
+        "file": "commit-assessment-summary/ontology-and-formalization/stage-ii-formal-ontology.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "lifecycle",
+          "ontology",
+          "propagation",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 6
+      }
+    },
+    "doc:commit-assessment-summary/ontology-and-formalization/academic-rigor-placement.md": {
+      "uid": "doc:commit-assessment-summary/ontology-and-formalization/academic-rigor-placement.md",
+      "node_type": "document",
+      "title": "1. Where academic rigor actually belongs",
+      "metadata": {
+        "file": "commit-assessment-summary/ontology-and-formalization/academic-rigor-placement.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "memory",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 6
+      }
+    },
+    "doc:commit-assessment-summary/ontology-and-formalization/identity-and-teleology.md": {
+      "uid": "doc:commit-assessment-summary/ontology-and-formalization/identity-and-teleology.md",
+      "node_type": "document",
+      "title": "1. Identity and Teleology",
+      "metadata": {
+        "file": "commit-assessment-summary/ontology-and-formalization/identity-and-teleology.md",
+        "status": "extracted",
+        "tags": [
+          "architecture",
+          "diagnostics",
+          "events",
+          "evolution",
+          "governance",
+          "identity",
+          "indexing",
+          "lifecycle",
+          "metrics",
+          "ontology",
+          "relationships",
+          "variables"
+        ],
+        "date_extracted": "2026-03-15",
+        "source_qa_index": 5
+      }
+    },
+    "repo:meta-organvm/organvm-engine": {
+      "uid": "repo:meta-organvm/organvm-engine",
+      "node_type": "repo",
+      "title": "organvm-engine",
+      "metadata": {
+        "org": "meta-organvm",
+        "organ": "Meta",
+        "promotion_status": "GRADUATED"
+      }
+    },
+    "repo:organvm-i-theoria/metaphysical-systems": {
+      "uid": "repo:organvm-i-theoria/metaphysical-systems",
+      "node_type": "repo",
+      "title": "metaphysical-systems",
+      "metadata": {
+        "org": "organvm-i-theoria",
+        "organ": "I",
+        "promotion_status": "LOCAL"
+      }
+    },
+    "repo:organvm-i-theoria/my-knowledge-base": {
+      "uid": "repo:organvm-i-theoria/my-knowledge-base",
+      "node_type": "repo",
+      "title": "my-knowledge-base",
+      "metadata": {
+        "org": "organvm-i-theoria",
+        "organ": "I",
+        "promotion_status": "CANDIDATE"
+      }
+    },
+    "repo:organvm-i-theoria/linguistic-atomization-framework": {
+      "uid": "repo:organvm-i-theoria/linguistic-atomization-framework",
+      "node_type": "repo",
+      "title": "linguistic-atomization-framework",
+      "metadata": {
+        "org": "organvm-i-theoria",
+        "organ": "I",
+        "promotion_status": "CANDIDATE"
+      }
+    },
+    "repo:organvm-i-theoria/conversation-corpus-engine": {
+      "uid": "repo:organvm-i-theoria/conversation-corpus-engine",
+      "node_type": "repo",
+      "title": "conversation-corpus-engine",
+      "metadata": {
+        "org": "organvm-i-theoria",
+        "organ": "ORGAN-I",
+        "promotion_status": "GRADUATED"
+      }
+    },
+    "repo:organvm-i-theoria/nexus--babel-alexandria-": {
+      "uid": "repo:organvm-i-theoria/nexus--babel-alexandria-",
+      "node_type": "repo",
+      "title": "nexus--babel-alexandria-",
+      "metadata": {
+        "org": "organvm-i-theoria",
+        "organ": "I",
+        "promotion_status": "ARCHIVED"
+      }
+    }
+  },
+  "edges": [
+    {
+      "source": "TRX-CAS",
+      "target": "TRX-CAS.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "TRX-CAS.2",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR",
+      "target": "TRX-TDR.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR",
+      "target": "TRX-TDR.2",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-TDR.2.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-TDR.2.2",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-TDR.2.3",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-TDR.2.4",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-TDR.2.5",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5",
+      "target": "TRX-TDR.2.5.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA",
+      "target": "TRX-VSA.1",
+      "edge_type": "BRANCHES_TO",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-HIS",
+      "target": "TRX-C.01",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-NSC",
+      "target": "TRX-C.02",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5",
+      "target": "TRX-C.03",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5.1",
+      "target": "TRX-C.03",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-C.04",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-C.05",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "TRX-C.06",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-NSC",
+      "target": "TRX-C.07",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "TRX-C.08",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "TRX-C.09",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-HIS",
+      "target": "TRX-C.10",
+      "edge_type": "COMPILES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-HIS",
+      "target": "concept:AMMOI",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA",
+      "target": "concept:AMMOI",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "concept:AMMOI",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.01",
+      "target": "concept:AMMOI",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.10",
+      "target": "concept:AMMOI",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-NSC",
+      "target": "concept:SVSE",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.02",
+      "target": "concept:SVSE",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5",
+      "target": "concept:alpha_omega_phase_map",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5.1",
+      "target": "concept:alpha_omega_phase_map",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.03",
+      "target": "concept:alpha_omega_phase_map",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "concept:autopoiesis",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.1",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.04",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.08",
+      "target": "concept:autopoiesis",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:constitutional_topology",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:constitutional_topology",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:constitutional_topology",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR",
+      "target": "concept:constitutional_topology",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "concept:constitutional_topology",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.06",
+      "target": "concept:constitutional_topology",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:formation_protocol",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:formation_protocol",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.1",
+      "target": "concept:formation_protocol",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:formation_protocol",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR",
+      "target": "concept:formation_protocol",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "concept:formation_protocol",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "concept:meta_evolution",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.06",
+      "target": "concept:meta_evolution",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:multiplex_graph",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:multiplex_graph",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.1",
+      "target": "concept:multiplex_graph",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:multiplex_graph",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.08",
+      "target": "concept:multiplex_graph",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2",
+      "target": "concept:structural_interrogation",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.1",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5.1",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5.2",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.04",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.09",
+      "target": "concept:structural_interrogation",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.5.2",
+      "target": "concept:swarm_governance",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:swarm_governance",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:swarm_governance",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:swarm_governance",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR",
+      "target": "concept:swarm_governance",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-NSC",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-VSA.1",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-C.07",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-TDR.2.3",
+      "target": "concept:repo_fusion",
+      "edge_type": "DEFINES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS",
+      "target": "concept:repo_fusion",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2",
+      "target": "concept:repo_fusion",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "TRX-CAS.2.1",
+      "target": "concept:repo_fusion",
+      "edge_type": "REFERENCES",
+      "metadata": {}
+    },
+    {
+      "source": "doc:virtual-system-architecture/unifying-verdict.md",
+      "target": "TRX-VSA.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 2
+      }
+    },
+    {
+      "source": "doc:virtual-system-architecture/autopoietic-architecture-potential.md",
+      "target": "TRX-VSA.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 3
+      }
+    },
+    {
+      "source": "doc:virtual-system-architecture/meta-evolution-architecture.md",
+      "target": "TRX-VSA.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 4
+      }
+    },
+    {
+      "source": "doc:virtual-system-architecture/two-simultaneous-problems.md",
+      "target": "TRX-VSA.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 1
+      }
+    },
+    {
+      "source": "doc:hierarchical-index-structures/ammoi-index.md",
+      "target": "TRX-HIS",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": null
+      }
+    },
+    {
+      "source": "doc:name-and-structure-changes/short-answer-system-terms.md",
+      "target": "TRX-NSC",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 4
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/phase-shift-relay.md",
+      "target": "TRX-TDR.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 3
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/state-opacity-false-equation.md",
+      "target": "TRX-TDR.2.5",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 15
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/alpha-omega-phase-map.md",
+      "target": "TRX-TDR.2.5.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 16
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/phase-maps-and-transitions/visible-project-state-model.md",
+      "target": "TRX-TDR.2.5.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 18
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/workflow-philosophy/correction-effort-recreation.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 9
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/workflow-philosophy/short-answer.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 6
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/workflow-philosophy/chat-is-not-the-work.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 7
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/workflow-philosophy/initial-thread-output.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 8
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/workflow-philosophy/instinct-vs-interpretation.md",
+      "target": "TRX-TDR.2.5.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 17
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/fusion-and-evolution/perfecting-through-completion.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 11
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/fusion-and-evolution/identity-function-governance-elevation.md",
+      "target": "TRX-TDR.2.4",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 11
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/fusion-and-evolution/fusion-chamber-merge-protocol.md",
+      "target": "TRX-TDR.2.3",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 11
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/fusion-and-evolution/two-evolutionary-approaches.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 10
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/pipeline-specification/spec-013.md",
+      "target": "TRX-TDR.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 5
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/pipeline-specification/next-full-arc-of-work.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 5
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/pipeline-specification/foundational-spec-set.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 2
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/pipeline-specification/pipeline-specification.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 1
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/handoff-and-relay/packaging-failure-debug.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 4
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/handoff-and-relay/workspace-handoff-prompt.md",
+      "target": "TRX-TDR.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 2
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/handoff-and-relay/prompt-relay.md",
+      "target": "TRX-TDR.2.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 3
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/handoff-and-relay/one-command-generation.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 3
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/clarify-problem-nature.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 12
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/structural-interrogation.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 14
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/ontological-framework.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 17
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/detecting-unseen-problems.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 13
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/depth-of-reality-frameworks.md",
+      "target": "TRX-TDR.2.5.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 16
+      }
+    },
+    {
+      "source": "doc:top-down-refinement-pipeline/diagnostic-frameworks/diagnostic-frameworks-catalog.md",
+      "target": "TRX-TDR.2.5",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 16
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/the-core-mistake.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 7
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/research-spinout-danger-zone.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 7
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/core-github-constraint.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 20
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/github.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 10
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/distinctiveness-through-formations.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 8
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/implicit-structural-model.md",
+      "target": "TRX-CAS.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 7
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/institutional-production-pipeline.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 14
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/structural-positioning/flat-vs-hierarchical-structure.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 19
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/graph-theoretic-models/formal-topology-diagram.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 15
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/graph-theoretic-models/multiplex-directed-graph-model.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 7
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/graph-theoretic-models/knowledge-feedback-architecture.md",
+      "target": "TRX-CAS.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 8
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/graph-theoretic-models/graph-theoretic-model.md",
+      "target": "TRX-CAS.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 9
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/constitutional-governance/linear-civic-sequence.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 16
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/constitutional-governance/constitutional-map.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 17
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/constitutional-governance/constitutional-numerical-order.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 13
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/constitutional-governance/constitutional-registry-schema.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 18
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/constitutional-governance/formation-protocol.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 9
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/initial-assessment/discovery-result.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 9
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/initial-assessment/assessment.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 1
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/implementation-methodology/new-era-implementation-methodology.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 10
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/implementation-methodology/implementation-is-not-documentation.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 2
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/implementation-methodology/domain-prefix-method.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 18
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/implementation-methodology/never-overwrite-the-past.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 4
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/implementation-methodology/pilot-at-single-repo.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 3
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/organ-i-theoria-function-vs-name.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 12
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/organ-iv-taxis-function-vs-name.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 11
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/organ-v-vii-function-vs-name.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 15
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/organ-iii-ergon-function-vs-name.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 13
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/organ-ii-poiesis-function-vs-name.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 14
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/correction-to-forensics.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 12
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/structural-condition-assessment.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 8
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/organ-audit/meta-as-zero-order.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 11
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/ontology-and-formalization/cleanest-formulation.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 8
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/ontology-and-formalization/core-principle.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 16
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/ontology-and-formalization/stage-ii-formal-ontology.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 6
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/ontology-and-formalization/academic-rigor-placement.md",
+      "target": "TRX-CAS.2",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 6
+      }
+    },
+    {
+      "source": "doc:commit-assessment-summary/ontology-and-formalization/identity-and-teleology.md",
+      "target": "TRX-CAS.2.1",
+      "edge_type": "EXTRACTED_FROM",
+      "metadata": {
+        "source_qa_index": 5
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:alpha_omega_phase_map",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "omega/scorecard.py — 20-criterion binary maturity scorecard implementing the Alpha-Omega lifecycle"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:constitutional_topology",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "organ_config.py — 8 organs + META as zero-order constitutional substrate"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:meta_evolution",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "metrics/organism.py — 3 update modes (passive/structural/ontological)"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:swarm_governance",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "coordination/ (claims, tool locks) + fabrica/ (dispatch backends, router)"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:multiplex_graph",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "governance/dependency_graph.py — G^dep edge family (1 of 4 families implemented)"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "metrics/timeseries.py + metrics/variables.py — observation-based temporal metric recording"
+      }
+    },
+    {
+      "source": "repo:meta-organvm/organvm-engine",
+      "target": "concept:AMMOI",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "metrics/organism.py (SystemOrganism) + corpus/ (knowledge graph) — living structural index"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/metaphysical-systems",
+      "target": "concept:AMMOI",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Macro-to-micro atomization primitive — hierarchical decomposition of knowledge structures"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/metaphysical-systems",
+      "target": "concept:temporal_metric_fabric",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "State snapshots and observation-based metric recording per knowledge atom"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/my-knowledge-base",
+      "target": "concept:AMMOI",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "End-to-end epistemological pipeline — export, atomize, search, intelligence"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/my-knowledge-base",
+      "target": "concept:SVSE",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Identity-stable knowledge objects with mutable expression and versioned relationships"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/my-knowledge-base",
+      "target": "concept:structural_interrogation",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "7-dimension diagnostic applied to knowledge intake — Existence through Teleology"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/linguistic-atomization-framework",
+      "target": "concept:AMMOI",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Rhetorical decomposition — linguistic structures as hierarchical atoms with lateral relations"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/linguistic-atomization-framework",
+      "target": "concept:formation_protocol",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "LABORATORY formation — experiments with linguistic structure decomposition at the sentence/paragraph/document scale"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/conversation-corpus-engine",
+      "target": "concept:formation_protocol",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "GENERATOR formation — produces ANNOTATED_CORPUS, ARCHIVE_PACKET, VALIDATION_RECORD signals"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/conversation-corpus-engine",
+      "target": "concept:autopoiesis",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Self-maintaining corpus — federation imports, evaluates, and governs its own completeness"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/conversation-corpus-engine",
+      "target": "concept:AMMOI",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Hierarchical indexing of conversation knowledge across providers and organs"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/nexus--babel-alexandria-",
+      "target": "concept:formation_protocol",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "GENERATOR formation — produces ONT_FRAGMENT, RULE_PROPOSAL, THEORY_MEMO from literary canon"
+      }
+    },
+    {
+      "source": "repo:organvm-i-theoria/nexus--babel-alexandria-",
+      "target": "concept:repo_fusion",
+      "edge_type": "IMPLEMENTS",
+      "metadata": {
+        "aspect": "Third-location synthesis — recombines canonical literary material into new knowledge structures"
+      }
+    }
+  ]
+}
