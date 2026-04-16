@@ -202,6 +202,14 @@ The counter file is the single source of truth for the DONE-ID ceiling. The stat
 | IRF-OPS-012 | P1 | **Emergency Repair SOP implementation** — ensure absolute parity and project integrity during restricted access. Reference `docs/operations/emergency-procedures.md` (§ Procedure 2). | 4jp | S53 Audit | None |
 | IRF-OPS-013 | P1 | **Handover Audit SOP implementation** — ensure canonical manifestation of drafted SOPs in ecosystem. Reference `praxis-perpetua/standards/operational-handoff-guide.md`. | 4jp | S53 Audit | None |
 
+### Security
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-SEC-001 | **P1** | **GitHub webhook secret exposure — partially mitigated.** Hook 558013866 (`radix-recursiva-solve-coagula-redi`) rotated 2026-04-15. Receiving endpoint (`github-bot-production.appspot.com`) needs new secret to verify signatures — store in 1Password as "GitHub Webhook - radix-recursiva", update App Engine config. Hook 578404008 (ivviiviivvi--Semgrep-Code--011226) **cannot be rotated via user API** — requires GitHub App settings or Semgrep contact. | Human | S-inbox-2026-04-15 carry-forward | 1Password + App Engine access |
+| IRF-SEC-002 | **P0** | **OpenAI API key exposed in public Docker image.** Key found in `cetaceang/openai-king` (92MB, 507 pulls, live since Aug 2025). Responsible disclosure received via polem4rch@gmail.com 2026-04-10. **Action:** Rotate at platform.openai.com, audit usage logs, report image to Docker Hub. | Human | S-inbox-2026-04-15 carry-forward | Browser login |
+| IRF-SEC-003 | **P1** | **GCP billing overdue — deactivation risk.** Account `016B52-CC5865-3BDA82` has unpaid balance (notified 2026-04-15). May be deactivated. **Action:** Pay at console.cloud.google.com/billing. Likely shared payment method failure with GoDaddy (IRF-SYS-011) and Vercel (IRF-SYS-012). | Human | S-inbox-2026-04-15 carry-forward | Browser login |
+
 ---
 
 ## META — Corpus (organvm-corpvs-testamentvm)
@@ -579,7 +587,7 @@ Verified on disk 2026-03-20:
 | IRF-OSS-039 | **P1** | **YAML duplicate key repair — application-pipeline.** S52 audit found 21 duplicate key errors across 10 active pipeline files (airtable, anthropic, coinbase, lacma, mongodb, ramp, scale-ai, stripe, toast, zkm). Duplicate `date:`, `type:`, `deferral:`, `artist_statement:`, and HTML `style=` attributes in YAML. Needs strict YAML parser in `scripts/validate.py` — current validator returns false positive green. GitHub issue: [#290](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/290). | Agent | S52 session review (2026-04-02) | None |
 | ~~IRF-OSS-040~~ | ~~P2~~ | ~~**3 process SOPs needed.**~~ — **DONE-318**: SOPs located in praxis-perpetua/standards/ — (1) sibling container protocol → `SOP--agent-seeding-and-workforce-planning.md`, (2) precision mode enforcement → documented in CLAUDE.md, (3) IRF update process → `update_irf.py`. All three processes now have standalone documentation. | Agent | S52 session review (2026-04-02), S53 audit completion | Completed 2026-04-02 |
 | ~~IRF-OSS-041~~ | ~~P2~~ | ~~Reconciliation STEERING category.~~ — **DONE-315**: rebuilt `scripts/reconcile-72h.py` around exact prompt timestamps for the 2026-03-29→31 window, pooled commit matching across all tracked workspaces, prompt-hash deduplication, steering/noise separation, absorbed-vs-unresolved triage, credential redaction, and regression coverage. Regenerated `docs/reconciliation-72h.md`, recorded the run in `action_ledger`, and logged the instrument lesson in `contrib_engine/data/fieldwork.yaml`. Commit `71dabd7`. GitHub issue: [#291](https://github.com/meta-organvm/organvm-corpvs-testamentvm/issues/291). | Agent | S52 session review (2026-04-02), 72h reconciliation refinement | Completed 2026-04-02 |
-| IRF-OSS-042 | **P1** | **grafana/k6 PR #5770 — merge-ready, awaiting review.** 4 commits: (1) Len/ForEach API + benchmarks, (2) Map() → ForEach in 3 call sites, (3) atlas.Node → ForEach/Len in 3 more, (4) resolved TODO referencing #2764. PR description updated with full 9-file audit. Review-closing comment tagging mstoykov posted 2026-04-14. CI: 46/46 all pass. CLA signed. **Next:** await mstoykov review. If no response by 2026-04-21, polite ping. | Agent | S-contrib-reassessment (2026-04-13), S-contrib-execution-2 (2026-04-14/15) | Maintainer review |
+| IRF-OSS-042 | **P1** | **grafana/k6 PR #5770 — APPROVED by mstoykov, pending merge.** 4 commits: (1) Len/ForEach API + benchmarks, (2) Map() → ForEach in 3 call sites, (3) atlas.Node → ForEach/Len in 3 more, (4) resolved TODO referencing #2764. PR description updated with full 9-file audit. CI: 46/46 all pass. CLA signed. **Approved 2026-04-15.** TODO #2764 cleanup dispatched to Jules. **Next:** await merge after cleanup completes. | Agent | S-contrib-reassessment (2026-04-13), S-contrib-execution-2 (2026-04-14/15), S-inbox-2026-04-15 | Jules cleanup |
 | IRF-OSS-043 | **P1** | **openai/openai-agents-python PR #2802 — root cause traced, strategic comment posted, thread cleaned.** Root cause: `modelcontextprotocol/python-sdk#1960` (stdio_client race). Upstream fix: `python-sdk#2268` (open, no review). Two-path proposal to seratch. Cross-referenced on upstream PR. Boilerplate ping deleted (tone correction). Typecheck fixed, rebased, CI green. **Next:** await seratch direction. Do NOT ping again — 4 comments already. Let stale bot or upstream #2268 progress drive next action. | Agent | S-contrib-reassessment (2026-04-13), S-contrib-execution (2026-04-14), S-contrib-execution-2 (2026-04-14/15) | Maintainer response |
 | IRF-OSS-050 | **P2** | **Re-engage m13v on agentic-titan #20 — sliding window / event wiring work split.** 30-comment technical exchange (Mar 18-30) on fission-fusion dynamics went cold. Comment posted 2026-04-15 proposing: m13v takes sliding window conflict detection PR, we wire EpisodicLearner → EventBus → TopologyEngine. Tracking: a-organvm#46. Reciprocal contrib: contrib--m13v-summarize-recent-commit. **Next:** await m13v response. | Agent | S-contrib-execution-2 (2026-04-15) | Awaiting response |
 | IRF-OSS-051 | **P2** | **Re-engage voidborne-d on agentic-titan #72 — Lambda Lang prerequisite.** voidborne-d filed 4 issues (#61,66,72,73) on convergence experiments, emergence thresholds, perceptual gating. Comment on #72 unanswered for 18 days. Reply posted 2026-04-15 acknowledging 139-atom vocabulary as experiment prerequisite (not optional), posing two questions on vocabulary stability and topological invariance. **Next:** await voidborne-d response. | Agent | S-contrib-execution-2 (2026-04-15) | Awaiting response |
@@ -1548,9 +1556,9 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-374 (APP-068 Grafana contributions MOOT), DONE-375 (APP-071 Grafana post-screen RESOLVED), DONE-376 (APP-079 ZKM LAPSED). +6 new items: APP-081..086 (networking signals — Aden/Hive, Datadog, Together AI, Elastic, profile viewers, Jackie Wallace). DONE-ID collision fix: original DONE-372/373/374 renumbered to 374/375/376 — prior session (S-domus-2026-04-15) held DONE-372 (OSS-053) and DONE-373 (DOM-029). Prior: S-domus-2026-04-15 (DONE-372..373, +2 completions from S-contrib-execution-2).
 
-- **Total IRF items:** 896 *(prior 890, +6 new: APP-081..086)*
-- **Open:** 518 *(prior 515 after domus session, -3 completed + 6 new)*
-- **Completed:** 376 *(prior 373 after domus session, +3: DONE-374..376)*
+- **Total IRF items:** 899 *(prior 896, +3 new: SEC-001..003)*
+- **Open:** 521 *(prior 518, +3 new SEC items)*
+- **Completed:** 376 *(unchanged)*
 - **Blocked:** 0
 - **Archived:** 0
 - **Completion rate:** 41.9%
@@ -1559,8 +1567,8 @@ Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-3
 
 | Priority | Count |
 |----------|-------|
-| P0 | 9 |
-| P1 | 186 *(prior 186 after domus session, -2 completed APP-071/068 + 2 new APP-081/082)* |
+| P0 | 10 *(prior 9, +1 SEC-002)* |
+| P1 | 188 *(prior 186, +2: SEC-001, SEC-003)* |
 | P2 | 223 *(prior 220, -1 completed APP-079 + 4 new APP-083/084/085/086)* |
 | P3 | 40 |
 
@@ -1604,6 +1612,7 @@ Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-3
 | BLK | 2 |
 | DWV | 2 |
 | TST | 2 |
+| SEC | 3 *(new domain — S-inbox-2026-04-15 carry-forward)* |
 
 ### Effort Distribution (Research Programme)
 
@@ -1616,14 +1625,14 @@ Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-3
 
 ---
 
-*Last updated: 2026-04-02 — 72-hour reconciliation refinement closeout. DONE-315 added, IRF-OSS-041 closed against `orchestration-start-here` commit `71dabd7`, and the manual stats block was advanced accordingly while the CLI undercount bug remains tracked under IRF-SYS-045 / GH#71.*
+*Last updated: 2026-04-16 — Carry-forward reconciliation. SEC domain created (3 items: webhook exposure, OpenAI key, GCP billing). IRF-SYS-011 escalated (expired → cancellation notice). IRF-OSS-042 updated (k6 PR approved by mstoykov). S52 OSS-042 duplicate annotated as superseded.*
 *Next update: After any session that produces or discovers work items*
 
 ### S36 Email Triage Discovered Items (2026-03-24)
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
-| IRF-SYS-011 | **P0** | **GoDaddy domains PARKED** — billing issue detected Mar 21. Live sites serving parking pages. **EXTERNAL BLOCKER:** Requires GoDaddy account login + payment resolution. No custom domains currently configured in registry (hermeneus.organvm.io is P2/planned). Likely shared payment method failure with Vercel (SYS-012). | Human | S36 email | Billing access |
+| IRF-SYS-011 | **P0** | **GoDaddy domain `met4vers.io` EXPIRED — cancellation notice received.** Domain expired Mar 29 (originally flagged as "parked" Mar 21). Grace period active — renewal or explicit let-expire decision required. Cancellation notice received 2026-04-15. Live sites serving parking pages. **EXTERNAL BLOCKER:** Requires GoDaddy account login. Likely shared payment method failure with Vercel (SYS-012) and GCP (SEC-003). **Decision needed:** renew or let expire. | Human | S36 email, S-inbox-2026-04-15 carry-forward | GoDaddy access |
 | IRF-SYS-012 | P1 | **Vercel deployment cascade — PARTIALLY ADVANCED** (Reconciliation Sprint, 2026-04-14). **Code fixes applied:** (1) `stakeholder-portal/vercel.json` created (was missing entirely), (2) `growth-auditor/next.config.ts` fixed — added `better-sqlite3` to `serverExternalPackages` (13 prior SSR crash fix attempts missed this). **EXTERNAL BLOCKER:** Vercel team billing status unknown (coincides with GoDaddy billing failure Mar 21). Dashboard verification required to confirm builds succeed. Downgraded from P0 to P1 — code-level root causes addressed. | Agent | Reconciliation Sprint 2026-04-14 | Vercel billing check |
 | IRF-OSS-023 | P1 | **dbt-labs/dbt-mcp PR #669** — reviewer Jairus Martinez requested changes + local verification. Blocking merge. | Agent | S36 email | Need local clone |
 | IRF-OSS-024 | P1 | **langchain-ai/langgraph PR #7237** — auto-closed by bot, **maintainer Mason Daugherty manually reopened**. High-signal authority override. Check feedback, rebase if needed. | Agent | S36 email | None |
@@ -1716,7 +1725,7 @@ Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-3
 | IRF-APP-084 | **P2** | **Elastic dual signal** — JD Armada (Developer Advocate) messaged on LinkedIn 2026-04-01, no response. Carly Richmond (Developer Advocate Lead) viewed profile. Two signals from same company = warm org. Follow-up draft for JD not yet composed. Consider outreach to Carly (1st connection). | Human | S-networking-2026-04-15 | None |
 | IRF-APP-085 | **P2** | **Messageable LinkedIn profile viewers (1st connections, no thread)** — Paul Pham (dbt Labs, Sr. Quality Engineer — contrib--dbt-mcp overlap), Luvo Dlulisa (Wikimedia Foundation — user is Wikipedia:Apadavano), Charlie Gleek (UVA — academic/SGO overlap). All viewed profile, all 1st connections, none contacted. Drafts not yet composed. | Human | S-networking-2026-04-15 | None |
 | IRF-APP-086 | **P2** | **LinkedIn follow-up batch — Jackie Wallace** — Senior Talent Partner, applied for Lead Technical Writer. Messaged 2026-04-10, no response. Active 15h ago (as of 2026-04-15), "reachable" status. Follow-up draft composed 2026-04-15. **Human action: send.** | Human | S-networking-2026-04-15 | Human action |
-| IRF-OSS-042 | **P1** | **System-wide Action Ledger** — Create a central ledger of all scripts/actions and implement token-efficient handoff protocols. Initial ledger at `organvm-iv-taxis/orchestration-start-here/ACTION-LEDGER-V1.md`. | Agent | S52 | None |
+| ~~IRF-OSS-042~~ | ~~P1~~ | ~~**System-wide Action Ledger**~~ — *(ID reassigned: Action Ledger work tracked under IRF-OSS-032; OSS-042 now tracks grafana/k6 PR #5770 in main section)* | Agent | S52 | Superseded |
 | IRF-OSS-043 | **P1** | **IRF Instrument v3 (Endless Box)** — Transition to "Endless Box" model with worker agents ("Pencil Pushers") and fixed ID assignment. Spec at `meta-organvm/organvm-corpvs-testamentvm/IRF-V3-SPEC.md`. | Agent | S52 | None |
 | IRF-SYS-051 | **P1** | **Stable Unit Notice Ownership Audit** — Resolve mismatches between `registry-v2.json` and `seed.yaml` status. Ensure all `GRADUATED` units have `ownership` metadata (v1.1) and `NOTICE` files. Spec: `docs/planning/06-stable-unit-notice-audit.md`. | Agent | S-2026-04-02 | None |
 | DONE-319 | **Fleet agent registry expansion + structural elevation (IRF-CND-008).** `fleet.yaml` elevated from `tool-interaction-design/conductor/` to `organvm-iv-taxis/` superproject root (scope-visibility principle). Fleet expanded 6→12 agents (6 active, 2 inactive, 4 wishlist). `FleetAgent` dataclass gained 7 new fields. `FLEET.md` human reference created. `work_types.yaml` expanded to 9 types with `preferred_agents`/`excluded_agents`. 129 tests passing. 6 vacuum IRF items logged (CND-009 through CND-013). `seed.yaml` updated with `fleet-agent-registry` produces edge. | S-fleet-definition | 2026-04-02 |
