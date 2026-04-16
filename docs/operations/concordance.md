@@ -106,6 +106,9 @@ Universal work registry. 26 domain prefixes:
 | IRF-CND | Conductor OS | ORGAN-IV |
 | IRF-PSG | Process Sequence Governance (SPEC-023) | META (post-flood) |
 | IRF-AOR | A-Organism | META (a-organvm) |
+| IRF-SEC | Security (credentials, incidents, billing) | META (custodia-securitatis) |
+| IRF-OPS | Operations | Cross-organ |
+| IRF-III | ORGAN-III (Ergon/Commerce) | ORGAN-III |
 
 #### IRF-APP Items (Pipeline S33, 2026-03-23)
 
