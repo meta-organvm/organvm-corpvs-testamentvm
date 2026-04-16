@@ -1,0 +1,7 @@
+{
+  "next_id": 377,
+  "last_claimed_by": "S-networking-2026-04-15",
+  "last_claimed_at": "2026-04-16",
+  "claimed_range": [374, 376],
+  "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
+}

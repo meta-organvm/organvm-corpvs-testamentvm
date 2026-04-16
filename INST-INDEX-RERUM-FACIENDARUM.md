@@ -57,6 +57,18 @@ Not every completion triggers every index. A P2 doc fix may only need #1 and #9.
 - **P2 — GROWTH**: Extends existing capability. No deadline pressure.
 - **P3 — HORIZON**: Future work. Requires design or prerequisites.
 
+### DONE-ID Allocation Protocol
+
+**DONE-NNN IDs are globally unique.** Concurrent sessions have caused 3 collision incidents (DONE-298, DONE-302, DONE-372/373). To prevent future collisions:
+
+1. **Before assigning any DONE-NNN**, read `data/done-id-counter.json` to get `next_id`.
+2. **Claim your range**: increment `next_id` by the number of completions you need.
+3. **Commit and push the counter file FIRST**, before using the IDs anywhere in the IRF.
+4. **If the push fails** (non-fast-forward), `git pull --rebase`, re-read the counter, reclaim from the new ceiling, try again.
+5. **Then** use your claimed range in the IRF statistics and item rows.
+
+The counter file is the single source of truth for the DONE-ID ceiling. The statistics section is a human-readable summary — it is NOT the authority for the next available ID.
+
 ---
 
 ## System-Wide
@@ -772,7 +784,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-APP-059 | P1 | Create GitHub Actions CI/CD workflow (completes seed.yaml vacuum). | Agent | S39 | None |
 | ~~IRF-APP-060~~ | ~~P1~~ | ~~Production environment configuration~~ — **DONE** (Deployed to Cloudflare Workers + Neon + CF Pages instead of Vercel/Railway. API: `cronus-api.ivixivi.workers.dev`, Dashboard: `cronus-dashboard.pages.dev`. S40.) | Agent | S39→S40 | Completed 2026-03-27 |
 | IRF-APP-061 | P3 | **CLAUDE.md size monitoring CI gate** — no automated check prevents CLAUDE.md from exceeding 40k chars. Claude Code's runtime warning is the only signal. Add `wc -c CLAUDE.md` assertion to `verify_all.py` or quality.yml CI. Prevents regression after S-compression session brought it from 43.7k→27.6k. Vacuum discovered S-compression. | Agent | S-compression 10-index audit | None |
-| IRF-APP-062 | P3 | **Duplicate DONE-298 and DONE-302 in IRF** — two entries share DONE-298 (S-wiring + S-fieldwork-mvp) and two share DONE-302 (S41 CCE + S-fieldwork-mvp). ID collision from concurrent sessions. Needs dedup pass: renumber collisions, add collision guard to IRF append protocol. Vacuum discovered S-compression. | Agent | S-compression 10-index audit | None |
+| IRF-APP-062 | P3 | **Duplicate DONE-298 and DONE-302 in IRF** — two entries share DONE-298 (S-wiring + S-fieldwork-mvp) and two share DONE-302 (S41 CCE + S-fieldwork-mvp). ID collision from concurrent sessions. **PREVENTION IMPLEMENTED (S-networking-2026-04-15):** `data/done-id-counter.json` atomic counter + DONE-ID Allocation Protocol added to IRF header. Prior collisions (298, 302, 372/373) remain as historical artifacts — renumbering old entries risks breaking external references. Future collisions prevented by claim-before-use protocol. | Agent | S-compression 10-index audit → S-networking-2026-04-15 | Prevention complete, dedup deferred |
 | IRF-APP-063 | P2 | **Pre-existing test failure: test_validate_scoring_rubric_valid** — rubric validation test asserts all dimensions present but `weights_consulting` and `weights_grant` dimensions are missing from test fixture. 134/135 pass. Not caused by CLAUDE.md changes. Vacuum discovered S-compression. | Agent | S-compression smoke test | GH#45-49 (related test issues) |
 
 | ~~IRF-APP-036~~ | ~~P2~~ | ~~sovereign-systems: Netlify site rename~~ — **DONE** (DONE-251/253. Migrated entirely to Cloudflare Pages: `sovereign-systems-spiral.pages.dev`.) | Agent | S-elevate (deploy) | Completed 2026-03-27 |
@@ -1534,21 +1546,21 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-372 (APP-068 Grafana contributions MOOT), DONE-373 (APP-071 Grafana post-screen RESOLVED), DONE-374 (APP-079 ZKM LAPSED). +6 new items: APP-081..086 (networking signals — Aden/Hive, Datadog, Together AI, Elastic, profile viewers, Jackie Wallace). Prior: 2026-04-14 (S-contrib-execution).
+Refreshed 2026-04-16 (S-networking-2026-04-15 close-out). +3 completions: DONE-374 (APP-068 Grafana contributions MOOT), DONE-375 (APP-071 Grafana post-screen RESOLVED), DONE-376 (APP-079 ZKM LAPSED). +6 new items: APP-081..086 (networking signals — Aden/Hive, Datadog, Together AI, Elastic, profile viewers, Jackie Wallace). DONE-ID collision fix: original DONE-372/373/374 renumbered to 374/375/376 — prior session (S-domus-2026-04-15) held DONE-372 (OSS-053) and DONE-373 (DOM-029). Prior: S-domus-2026-04-15 (DONE-372..373, +2 completions from S-contrib-execution-2).
 
 - **Total IRF items:** 896 *(prior 890, +6 new: APP-081..086)*
-- **Open:** 519 *(prior 516, -3 completed + 6 new)*
-- **Completed:** 374 *(prior 371, +3: DONE-372..374)*
+- **Open:** 518 *(prior 515 after domus session, -3 completed + 6 new)*
+- **Completed:** 376 *(prior 373 after domus session, +3: DONE-374..376)*
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 41.7%
+- **Completion rate:** 41.9%
 
 ### Open By Priority
 
 | Priority | Count |
 |----------|-------|
 | P0 | 9 |
-| P1 | 187 *(prior 187, -2 completed APP-071/068 + 2 new APP-081/082)*  |
+| P1 | 186 *(prior 186 after domus session, -2 completed APP-071/068 + 2 new APP-081/082)* |
 | P2 | 223 *(prior 220, -1 completed APP-079 + 4 new APP-083/084/085/086)* |
 | P3 | 40 |
 
