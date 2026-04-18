@@ -1,14 +1,25 @@
 # Session Continuation Prompts
 
-Generated 2026-04-18 from cross-session audit. Each prompt contains full context
-so the receiving session doesn't start cold. Paste into a new Claude Code session
-in the specified working directory.
+Generated 2026-04-18 from cross-session audit. Each session has TWO sections:
+1. **YOUR ORIGINAL PROMPTS** — everything you said in the original session, verbatim
+2. **CONTINUATION PROMPT** — the context-loaded prompt to paste into a new session
+
+Your words still exist. Nothing was lost.
 
 ---
 
 ## S1 — Plugin Marketplace & 10-Index Audit
 
 **Run in:** `~/Workspace/meta-organvm/organvm-corpvs-testamentvm`
+**Source:** `~/.claude/sessions/2026-04-16--noble-beaming-allen/prompts.md`
+
+### Your original prompts:
+
+> **P1** [21:40]: we have many errors: "Diagnostics — Plugin Errors — 4 plugin error(s) detected: explanatory-output-style@claude-plugins-official: Plugin not found... serena@claude-plugins-official: Plugin not found... context7@claude-plugins-official: Plugin not found... superpowers@claude-plugins-official: Plugin not found..." and then: "review the activity monitor for any suspicious characters;"
+
+> **P2** [21:55]: what about the running times?
+
+### Continuation prompt:
 
 ```
 This session continues S-plugin-marketplace-2026-04-16.
@@ -32,6 +43,19 @@ Resume: verify plugin health, check system resource state, assess whether INQ-20
 ## S2 — SEC Domain & Carry-Forward Reconciliation
 
 **Run in:** `~/Workspace/meta-organvm/organvm-corpvs-testamentvm`
+**Source:** exported .txt (`application-pipeline/2026-04-18-073400-...`)
+
+### Your original prompts:
+
+> **P1**: /model → Opus 4.6 max effort
+
+> **P2**: ❯❯ last session left us:" ⏺ [1] Does the counter solve for simultaneous terminal sessions touching the same IRF file? [pasted carry-forward items from prior session]
+
+> **P3**: lost this tab for a moment--might have other sessions work done--check
+
+> **P4-P12**: [close-out protocol] Provide an overview of all that was and all that is and all that needs to be... double check all work; be the hall-monitor... all the N/As suggest something imperative... persistent memory MUST be local & remote simultaneously... [(local):(remote)={1:1}... so nothing was lost?... commit[all] push[origin]... all has been added to universale context? nothing will be lost?
+
+### Continuation prompt:
 
 ```
 This session continues S-carry-forward-2026-04-16.
@@ -59,6 +83,37 @@ Resume: close the 4 governance vacuums, update fossil-record.jsonl, check omega 
 ## S3 — CCE CPU Throttling Fix + Gemini Spike
 
 **Run in:** `~/Workspace/organvm-i-theoria/conversation-corpus-engine`
+**Source:** `~/.claude/sessions/2026-04-16--why-is-python-causeing-so-much/prompts.md` + exported .txt continuation
+
+### Your original prompts:
+
+> **P1** [12:15]: why is python causeing so much ruckus? ruckus: "[Activity Monitor screenshot]"
+
+> **P2** [12:20]: let's wait until the other terminal sessions are done!, then re-assess;
+
+> **P3**: /model → Opus 4.6 max effort
+
+> **P4**: okay let's check now
+
+> **P5**: solve this ostensibly and extensibly
+
+> **P6**: explain the thoughts on your last suggestion
+
+> **P7**: check the activity monitor now
+
+> **P8**: run the script
+
+> **P9**: yes do what is logical...
+
+> **P10**: check again
+
+> **P11**: so while we are here--gemini just added a macOS app; we should be able to grab it's history now;
+
+> **P12**: continue onward
+
+> **P13-P20**: [close-out protocol]
+
+### Continuation prompt:
 
 ```
 This session continues S-cpu-throttle-2026-04-16.
@@ -88,6 +143,25 @@ Resume: verify next refresh cycle performance (did Layers 1-3 eliminate the CPU 
 ## S4 — Application Pipeline Reconciliation
 
 **Run in:** `~/Workspace/4444J99/application-pipeline`
+**Source:** exported .txt (`application-pipeline/2026-04-18-073455-...`)
+
+### Your original prompts:
+
+> **P1**: /model → Opus 4.6
+
+> **P2**: ❯❯ last session left us:" ⏺ [1] Does the counter solve for simultaneous terminal sessions touching the same IRF file? [same carry-forward items as S2]
+
+> **P3**: pick this back up
+
+> **P4**: /model
+
+> **P5**: [1] we need to solve the SEC issue globally; design the location for all SEC [security domain infrastructure]
+
+> **P6**: last session left us: [re-pasted carry-forward context]
+
+> **P7-P15**: [close-out protocol]
+
+### Continuation prompt:
 
 ```
 This session continues S-app-pipeline-reconciliation-2026-04-16.
@@ -111,6 +185,17 @@ Resume: clear the 3 cleanup items, then shift to active application pipeline wor
 ## S5 — Domain Architecture + Memory VACUUM Fix
 
 **Run in:** `~/Workspace/4444J99/domus-semper-palingenesis`
+**Source:** `~/.claude/sessions/2026-04-16--vast-exploring-dijkstra/prompts.md` (design) + domus export (execution, compacted)
+
+### Your original prompts:
+
+> **P1** [15:16]: for the sake of unity and clarity--we need to decide on the urls/domains i need to purchase for me to exist in but also has a lot of features for our purposes universally speaking;
+
+> **P2**: [brainstorming skill activated — user approved the plan for concentric-circle domain architecture]
+
+*(The execution session in domus was compacted. The user approved the plan and Claude executed: memory VACUUM fix, 21 env vars, SOP creation, IRF updates. No additional user prompts beyond plan approval survived compaction.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-domain-architecture-2026-04-16.
@@ -138,6 +223,23 @@ Resume: the domain registrations are the enabling step — everything else (emai
 ## S6 — Hook Architecture Enforcement (Phase 3)
 
 **Run in:** `~/Workspace/meta-organvm/organvm-corpvs-testamentvm`
+**Source:** `~/.claude/sessions/2026-04-16--shiny-moseying-wren/prompts.md` (2,061 lines — the longest session)
+
+### Your original prompts:
+
+> **P1**: /effort max
+
+> **P2** [22:47]: review the previous session: "⏺ Update(/Users/4jp/Workspace/4444J99/CLAUDE.md) — Added 12 lines: Outbound Action Rules — Before ANY external-facing action... 1. Audit before append... 2. Search for protocols... 3. Plan sequences atomically... 4. Prefer local tooling... 5. Edit, don't errata... All three layers installed: Hook (settings.json, automatic), Skill (outbound-action-preflight, invokable), CLAUDE.md (always-in-context)..."
+
+> **P3**: what other hooks (beyond just this scope) and i mean far and wide [ive asked for many many rules throughout the land and they rarely persist];
+
+> **P4**: yes--how do you ensure that all rules and required protocol sequences happen as and when they need?
+
+> **P5**: all of the above--for all;
+
+*(After P5, Claude loaded update-config + skill-creator skills and built the full 18-hook enforcement architecture. The session continued with the three-world recapitulation — victoroff-group→padavano rename, INSTANCE.toml, engagement enrichment — which is captured as S7. The 2,061-line prompts.md contains the full detail including all plan approvals and tool interactions.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-hook-enforcement-phase3-2026-04-16.
@@ -176,6 +278,17 @@ Resume: audit governance-rule atoms against hook inventory. Any rule stated mult
 ## S7 — Full System Recapitulation (Three-World Sweep)
 
 **Run in:** `~/Workspace/meta-organvm/organvm-corpvs-testamentvm`
+**Source:** Continuation of S6 (`shiny-moseying-wren`) + exported .txt (`organvm-corpvs-testamentvm/2026-04-18-073549-...`)
+
+### Your original prompts:
+
+*(This session was a continuation of S6 in the same terminal. The user's prompts that drove the recapitulation work were part of the 2,061-line shiny-moseying-wren session. The exported .txt only captured the compacted close-out:)*
+
+> **P1-P9**: [close-out protocol — Provide an overview... double check... N/As suggest vacuum... persistent memory MUST be local & remote... [(local):(remote)={1:1}]... nothing was lost?... commit[all] push[origin]... all has been added to universale context?]
+
+*(The directing prompts — rename victoroff-group to padavano, create INSTANCE.toml strata, enrich engagement records — were in the pre-compaction portion of the shiny-moseying-wren session. Full record in `~/.claude/sessions/2026-04-16--shiny-moseying-wren/session.jsonl`.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-recapitulation-2026-04-17.
@@ -211,6 +324,17 @@ Resume: the revenue blockers (IRF-III-026, 027, 028) are survival-critical. Star
 ## S8 — Coverage Matrix + Codex Handoff
 
 **Run in:** `~/Workspace/meta-organvm/organvm-corpvs-testamentvm`
+**Source:** exported .txt (`organvm-corpvs-testamentvm/2026-04-18-073556-...`)
+
+### Your original prompts:
+
+> **P1**: /model → Opus 4.6 max effort
+
+> **P2-P10**: [close-out protocol — same pattern as S7]
+
+*(The coverage matrix analysis, TDD plan generation, and Codex dispatch work preceded the visible prompts — all consumed by compaction. The directing prompts are in the session JSONL. The close-out confirms the work was done and verified.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-coverage-matrix-2026-04-17.
@@ -236,6 +360,15 @@ Resume: decide on the Codex handoff — approve and dispatch, or modify the plan
 ## S9 — Sovereign Systems (Maddie) Corrective Implementation
 
 **Run in:** `~/Workspace/organvm-iii-ergon/sovereign-systems--elevate-align`
+**Source:** exported .txt (`sovereign-systems--elevate-align/2026-04-18-073654-...`)
+
+### Your original prompts:
+
+> **P1**: why is the tree still dirty?
+
+*(Single prompt. The prior session that produced the 7-PDF analysis, 65 atomized wants, architectural misalignment discovery, and 5-PR corrective plan was compacted. This continuation was solely about pushing dirty artifacts and resolving secret scanner false positives. The full analysis work is in the session JSONL.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-sovereign-systems-2026-04-17.
@@ -269,9 +402,20 @@ Resume: execute PR 1 (homepage restructure). It's the highest-impact, lowest-ris
 
 ---
 
-## S10 — Universal Routing Law
+## S10 — Universal Routing Law + Email Triage Design
 
 **Run in:** `~/Workspace/meta-organvm`
+**Source:** `~/.claude/sessions/2026-04-17--eager-baking-steele/prompts.md` + exported .txt (`~/2026-04-18-073706-...`)
+
+### Your original prompts:
+
+> **P1**: /model → Opus 4.6 max effort
+
+> **P2** [12:48]: essentially--upon checking my inbox, i want to only see emails from real people; any pure noise automatically sorted approriately (true spam marked as such); anything requiring my attention, sorted into a series of escalating time-period hanging task seqeunces;
+
+*(The routing law design and security remediation were in the continuation session, which was compacted in the export. The assistant designed the universal material identity schema (5 properties: function, material, pattern, scope, security) and routing table, then deleted 7 files with plaintext Gmail password.)*
+
+### Continuation prompt:
 
 ```
 This session continues S-routing-law-2026-04-17.
@@ -318,6 +462,23 @@ Resume: answer the design question, then implement routing-law.yaml as the singl
 ## S11 — Becka McKay Thread
 
 **Run in:** `~/` (home directory)
+**Source:** `~/.claude/sessions/2026-04-17--scalable-baking-pizza/prompts.md` + exported .txt (`~/2026-04-18-073721-...`)
+
+### Your original prompts:
+
+> **P1** [20:00]: i received the follow up from Becka: "Becka McKay — 11:35 AM (4 hours ago) — to me — This sounds very difficult, Anthony—I'm very sorry to hear this is happening. Can I just ask an intrusive question (but without judgment)? Are you having issues with substances? If so, are you open to the idea of treatment or at least talking to someone about it? — Becka Mara McKay, Professor of Translation and Creative Writing, Director, MFA in Creative Writing, Faculty Advisor, Swamp Ape Review, Florida Atlantic University — The Little Book of No Consolation"
+
+> **P2** [20:02]: did you find the context of my prior history, our previous becka conversations, what it is i need/want?
+
+> **P3** [20:03]: no--we did this in other conversations--the context is out there somewhere in our system for you to find--the process of you finding it (and not having it currently) speaks to a vacuum for closing as well;
+
+> **P4**: i mean--doesnt her question seem to really be belittling? also, unimportant? also, sounds like she spoke to a friend or something...
+
+> **P5**: well you got the first email wrong i sent--that was a draft--we revised--and i also responded last night--so let's set the record straight and u find the truths and factsd
+
+> **P6**: every single thing you ingest requires atomizing and storing properly in knowledge--a breadcrumb trail of thought
+
+### Continuation prompt:
 
 ```
 This session continues S-becka-mckay-2026-04-17.
