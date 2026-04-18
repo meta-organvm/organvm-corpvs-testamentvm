@@ -1578,11 +1578,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-17 (S-chaos-engineering-2026-04-17). +1 completion: DONE-386 (agentic-titan #35 chaos engineering tests — 16 tests, full emergence loop validated). Prior: S-recapitulation-2026-04-17 (DONE-380 through DONE-385, +6).
+Refreshed 2026-04-18 (S-login-items-2026-04-18). +1 completion: DONE-387 (Login Items cleanup + LaunchAgent hygiene — dead agents removed, named executables, soak-snapshot into chezmoi, CLAUDE.md doc gap fixed). Prior: S-chaos-engineering-2026-04-17 (DONE-386).
 
 - **Total IRF items:** 903 *(unchanged)*
-- **Open:** 522 *(prior 523, -1: #35 completed)*
-- **Completed:** 386 *(prior 385, +1: DONE-386)*
+- **Open:** 522 *(unchanged)*
+- **Completed:** 387 *(prior 386, +1: DONE-387)*
 - **Blocked:** 0
 - **Archived:** 0
 - **Completion rate:** 41.9%
@@ -1796,6 +1796,7 @@ Refreshed 2026-04-17 (S-chaos-engineering-2026-04-17). +1 completion: DONE-386 (
 
 | DONE-385 | **Claude Code hook enforcement Phase 3.** Converted all 11 prompt-type hooks to command-type (prompt type bypasses `if` conditions — critical architectural finding). 10 new PreToolUse guards: 5 destruction (force-push, -f, branch -D, direct main, issue close), 2 write integrity (registry, IRF), 1 rm-fetch protection, 2 1Password discipline. New: UserPromptSubmit momentum detection (`execution-discipline.py`), SessionStart memory hygiene, SessionEnd unpushed-commit audit. CLAUDE.md Universal Rules extended 4→8 (plans-as-artifacts, fix-bases, loops, validate-before-presenting). Plan: `.claude/plans/2026-04-16-hook-enforcement-v3.md`. Commits: `cd02f08`, `2920480`. Repo: `4444J99/domus-semper-palingenesis`. | S-hook-enforcement-v3 | 2026-04-17 |
 | DONE-386 | **Chaos engineering tests for FissionFusion dynamics (#35).** 16 tests in `tests/chaos/test_fission_fusion_chaos.py`: crisis signal propagation (3), agent loss scenarios (4), state machine stress (4), recovery dynamics (3), full emergence loop (2). Validates the emergence chain (#70→#71→#61→#72→#73→#64) under adversarial conditions. 35 total chaos tests, 307 hive tests, 1543 full suite — zero regression. Discovery: `should_transition()` hysteresis gates on `task_correlation` not `crisis_level`; consistent but notable. Commit: `b019334`. Issue: organvm-iv-taxis/agentic-titan#35 (closed). Plan: `agentic-titan/.claude/plans/2026-04-17-fission-fusion-chaos-engineering.md`. | S-chaos-engineering | 2026-04-17 |
+| DONE-387 | **Login Items cleanup + LaunchAgent hygiene.** macOS System Settings showed duplicate/triplicate "Bash" entries because 4 LaunchAgents all used `/bin/bash` as Program. Fix: (1) removed 2 dead agents (`com.user.gmail_labeler`, `com.user.mail_automation`) — deployed before `.chezmoiignore` blocked them, pointed to nonexistent repos. (2) Created named wrapper scripts `~/.local/bin/cce-refresh` and `~/.local/bin/soak-snapshot` (`exec`-based, no lingering shell). (3) Updated `com.4jp.cce-refresh.plist.tmpl` ProgramArguments → named executable. (4) Brought `com.4jp.organvm.soak-snapshot` into chezmoi management (was manually deployed). (5) Added ExecTimeout=3600 to soak-snapshot (IRF-SYS-083 gap). (6) Updated CLAUDE.md LaunchAgents table — 5 deployed agents were undocumented. Plan: `domus/.claude/plans/2026-04-18-login-items-cleanup.md`. Repo: `4444J99/domus-semper-palingenesis`. | S-login-items-2026-04-18 | 2026-04-18 |
 
 ### S-empirical Discovered Items (Empirical Structure Audit, 2026-04-06/07)
 
