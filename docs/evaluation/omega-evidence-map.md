@@ -68,6 +68,8 @@ Scorecard code fix: [`organvm-engine#1`](https://github.com/meta-organvm/organvm
 
 **Domus evidence (2026-04-14):** Domus Semper Palingenesis (registered PERSONAL 2026-04-13) provides the operator environment sustaining soak infrastructure. 50ms shell startup and zero-error boot (S32 rewrite) is foundational to the autonomous collection pipeline.
 
+**Incident (2026-04-17→2026-04-18, S-cleanup-2026-04-18):** 1Password 8 Squirrel auto-updater failure at 2026-04-17 03:41 AM left `op-ssh-sign` binary missing. Git commit signing broken for >24 hours. chezmoi autoCommit+autoPush silently failed during window (commits blocked by missing signing binary). Discovered and fixed 2026-04-18 via `brew install --cask 1password`. Root cause: Electron auto-update on macOS 26 beta stripped binary without writing replacement. **Impact:** Autonomous propagation (#17 evidence) was false during failure window. Incident count: 0→1 (still within <=3 threshold). IRF-DOM-035.
+
 **Previous status:** Data collection running since 2026-02-16. First real (non-dry-run) snapshot collected 2026-02-17. Daily cron at 08:00 UTC auto-collects and commits snapshots.
 
 **Evidence:**
@@ -453,6 +455,8 @@ All seed.yaml files updated with deployment_url. Registry-v2.json updated.
 **Date met:** 2026-03-18 (27 days unrecognized — declared in Reconciliation Sprint 2026-04-14).
 
 **Domus evidence (2026-04-14):** Domus self-heal daemon monitors and restores the operator environment without human intervention. The S32 rewrite eliminated all error-path boot failures. chezmoi autoCommit+autoPush ensures environment changes propagate to remote without manual git operations.
+
+**Incident (2026-04-17→2026-04-18, S-cleanup-2026-04-18):** 1Password 8 auto-update failure broke git commit signing for >24 hours. chezmoi autoCommit was silently failing — environment changes were NOT propagating to remote during this window. The "without human intervention" claim was technically violated (manual `brew install --cask 1password` required to restore). Self-heal daemon did NOT detect or recover from this failure. Pattern matches IRF-DOM-017 (silent failure, no alerting). Does not reset 30-day clock (criterion already MET at 58+ days), but documents a resilience gap in the autonomous pipeline. IRF-DOM-035.
 
 **Previous status:** Autonomous systems activated (AUTOMATA sprint, 2026-02-17). 11+ workflows configured with daily/weekly/monthly schedules. First real autonomous data collected 2026-02-17.
 
