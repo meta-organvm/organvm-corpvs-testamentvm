@@ -3309,3 +3309,8 @@
 - [2026-04-14] claude --chrome --dangerously-skip-permissions
 - [2026-04-14] claude --chrome --dangerously-skip-permissions
 - ... and 28 more
+
+### 2026-04-20--twinkling-coalescing-popcorn
+**Captured:** 2026-04-20T11:24:15 | **Prompts:** 6
+**Archive:** `data/prompt-registry/sessions/2026-04-20--twinkling-coalescing-popcorn-prompts.md`
+
