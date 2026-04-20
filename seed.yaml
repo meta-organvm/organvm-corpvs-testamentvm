@@ -32,6 +32,12 @@ produces:
   - type: work-registry
     description: Universal work registry (IRF) consumed by all organs for gap tracking
     consumers: [ALL]
+  - type: prompt-registry
+    description: Atomized prompt corpus (8,218 prompts → 31,649 atoms) with implementation scorecard
+    consumers: [ALL]
+  - type: session-continuation-prompts
+    description: Context-loaded continuation prompts for resuming paused sessions
+    consumers: [ALL]
 
 consumes:
   - type: orchestration-artifact
