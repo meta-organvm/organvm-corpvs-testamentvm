@@ -688,7 +688,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | IRF-III-015 | P3 | **sign-signal--voice-synth: Three-view architecture (post-MVP)** — $PATTERN_VIEW (tracker), $SESSION_VIEW (Ableton session), $ARRANGEMENT_VIEW (timeline). Designed in ChatGPT transcripts but deferred until MVP listening-and-revision loop is proven. | Agent | S-context-ingestion 2026-03-31 | IRF-III-010 |
 | ~~IRF-III-016~~ | ~~**P1**~~ | ~~**sovereign-systems: Hydration Node scope expansion — phased implementation plan needed.**~~ Maddie delivered 6-step funnel blueprint (2026-04-03) that expands GH#6 from static content pages to a dynamic data-driven application (ZIP lookup, EWG integration, email-gated filter recs, cost calculator, spring locator, contractor demo mode). Recommended phasing: A (static UI this week) → B (dynamic data, week 2) → C (automation, week 3+). Blocks on GH#17 (domain routing) and GH#9 (quiz vs health survey). Spec: `sovereign-systems--elevate-align/docs/superpowers/intakes/2026-04-03-maddie-hydration-node-funnel-spec.md`. **GH#23.** Maddie confirmed flow 2026-04-04. | Agent+Human | S-2026-04-03 sovereign-systems | GH#17, ~~GH#13~~ (CLOSED) |
 | ~~IRF-III-017~~ | ~~**P1**~~ | ~~**sovereign-systems: Content genome merge pass — reduce 1,821 fine-grained atoms to ~1,000 build-ready merge groups.** Three-way verification (Claude/Gemini/Claude-blind) confirmed same ideas but our decomposition over-splits prompt/response pairs. Need `merge_group` field added to adjacent atoms sharing a topic. Strike plans should reference merge groups. Routing map at `docs/archive/atom-routing-map.md`. **GH#24.** | Agent | S-2026-04-03 atomic excavation | None |
-| IRF-III-018 | **P1** | **sovereign-systems: Editorial triage of 104 FLAGGED atoms.** Atoms with `editorial: FLAGGED` need human review: verify/reframe/remove. Priority claims: water memory, 94% disease stat, cell-talking, biophotonics, spoon bending. Strike 1B in `docs/archive/strikes/phase-1.md`. Unblocked — no GH# gate. **GH#25.** | Human+Agent | S-2026-04-03 atomic excavation | None |
+| ~~IRF-III-018~~ | ~~**P1**~~ | ~~**sovereign-systems: Editorial triage of 104 FLAGGED atoms.**~~ All 104 classified: RECLASSIFY (47), KEEP (18), REFRAME (17), CAVEAT (14), REMOVE (8). Gate satisfied — zero FLAGGED remaining. Commit 767730e, docs/archive/editorial-dispositions.md. **GH#25 CLOSED 2026-04-20.** | Human+Agent | S-2026-04-03 atomic excavation | None |
 | ~~IRF-III-019~~ | ~~**P2**~~ | ~~**sovereign-systems: Inject ~200 SCRIPT atoms into social content calendar.**~~ These are ready-to-use IG reels, captions, carousels, FB posts, DM scripts. They don't go on the website — they go to Maddie's social media. Unblocked. Landing zone: `docs/social-content-calendar/`. **GH#26.** | Agent | S-2026-04-03 routing map | None |
 | ~~IRF-III-020~~ | ~~**P2**~~ | ~~**sovereign-systems: Branch + pillar page enrichment from PARTIAL atoms.**~~ ~120 atoms for 6 branches + ~80 atoms for 4 pillars where related content exists but lacks source depth. Unblocked — no GH# gate. **GH#27.** | Agent | S-2026-04-03 routing map | None |
 | ~~IRF-III-021~~ | ~~**P2**~~ | ~~**sovereign-systems: Resolve 63 cross-cutting atoms with N/A build destination.**~~ Phase 1 noise sweep (9ebb806) revealed 63 atoms (35 SIGNAL, 28 CONTEXT) in `pillar: Cross-cutting` that span all 13 nodes and have no single build target. Need routing to hub page, distributed placement, or new FOUNDATION layer. GH#21. | Agent | S-2026-04-04 noise sweep | None |
@@ -703,6 +703,7 @@ Repos: `community-hub`, `reading-groups`, `salon-events`, `learning-commons`. Ze
 | ~~IRF-III-029~~ | ~~**P0**~~ | ~~**sovereign-systems: Architectural misalignment — site is water-first, Maddie wants spiral-first.** Full 7-PDF review (Mar 25–Apr 17) reveals the homepage is a thin pass-through to the water page. Spiral is decorative, not the hero. Water page is 147 lines / 10 sections when Maddie described it as "essentially just a mini version." 5-PR corrective plan written. **GH#43.** Plan: `.claude/plans/2026-04-17-corrective-implementation.md`. | Agent | S-2026-04-17 shimmering-wobbling-orbit | None |
 | ~~IRF-III-030~~ | ~~**P1**~~ | ~~**sovereign-systems: 65-want atomization — cartographical fossil record of entire client decision surface.** All 7 Maddie PDFs (Mar 25–Apr 17) decomposed into 65 discrete wants (W-001–W-065) across 16 categories. 48 in-scope, 17 out-of-scope (separate projects: nonprofit, WWOOF, coaching, cartographical fossil record, coffee shop). Single source of truth for the client relationship. Doc: `docs/client-decisions/2026-04-17-atomized-wants.md`. | Agent | S-2026-04-17 shimmering-wobbling-orbit | None |
 | ~~IRF-III-031~~ | ~~**P1**~~ | ~~**sovereign-systems: Execute 5-PR corrective implementation — spiral-first architecture.** PR 1: homepage restructure (spiral as hero). PR 2: water page scoping (mini version). PR 3: quiz architecture (routing shell). PR 4: 13-node spiral + node pages. PR 5: polish + walkthrough. 18 of 48 in-scope wants addressed. Plan: `.claude/plans/2026-04-17-corrective-implementation.md`. | Agent | S-2026-04-17 shimmering-wobbling-orbit | None — ready to build |
+| IRF-III-032 | **P1** | **sovereign-systems: Client architectural feedback — spiral-first vs pillar-first resolution.** Maddie's voice-to-text feedback (2026-04-20) reveals persistent misalignment: she wants spiral as PRIMARY navigation (not pillars), water as single-page educational warm-up (not multi-page funnel), quiz as spiral placement tool (not pillar picker). 8-question structured questionnaire sent to pin down decisions. Blocks: water consolidation, quiz redesign, homepage finalization. Plan: `.claude/plans/2026-04-20-maddie-spiral-first-realignment.md`. | Human+Agent | S-2026-04-20 maddie-questionnaire | Maddie response |
 
 ---
 
@@ -1599,14 +1600,14 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-19 (S-cross-audit-atomization-2026-04-18). +2 completions: DONE-388 (prompt atomization engine — 8,218 prompts, 31,649 atoms, 6-source extraction, implementation scorecard, SessionEnd hook, backlog injection, status dashboard), DONE-389 (email triage system — 900-line classifier, 190+ sender patterns, Mail.app/osascript, LaunchAgent). Prior: S-login-items-2026-04-18 (DONE-387).
+Refreshed 2026-04-20 (S-sovereign-systems-maddie-questionnaire). +1 completion: DONE-390 (IRF-III-018 editorial triage — 104 atoms dispositioned, GH#25 closed). +1 new item: IRF-III-032 (client architectural feedback questionnaire — spiral-first vs pillar-first). Prior: S-cross-audit-atomization-2026-04-18 (DONE-388, DONE-389).
 
-- **Total IRF items:** 912 *(prior 908, +4: SYS-119 omega evidence, SYS-120 inquiry log, SYS-121 CLAUDE.md doc, SYS-122 companion indices)*
-- **Open:** 529 *(prior 527, -2 completed + 4 new vacuums)*
-- **Completed:** 389 *(prior 387, +2: DONE-388, DONE-389)*
+- **Total IRF items:** 913 *(prior 912, +1: III-032 client architectural questionnaire)*
+- **Open:** 529 *(prior 529, -1 completed + 1 new)*
+- **Completed:** 390 *(prior 389, +1: DONE-390 IRF-III-018)*
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 41.9%
+- **Completion rate:** 42.0%
 
 ### Open By Priority
 
