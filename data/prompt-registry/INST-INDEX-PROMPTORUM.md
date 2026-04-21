@@ -3314,3 +3314,13 @@
 **Captured:** 2026-04-20T11:24:15 | **Prompts:** 6
 **Archive:** `data/prompt-registry/sessions/2026-04-20--twinkling-coalescing-popcorn-prompts.md`
 
+
+### 2026-04-20--twinkling-coalescing-popcorn
+**Captured:** 2026-04-20T11:34:54 | **Prompts:** 6
+**Archive:** `data/prompt-registry/sessions/2026-04-20--twinkling-coalescing-popcorn-prompts.md`
+
+
+### 2026-04-20--swift-munching-gadget
+**Captured:** 2026-04-21T05:50:23 | **Prompts:** 4
+**Archive:** `data/prompt-registry/sessions/2026-04-20--swift-munching-gadget-prompts.md`
+
