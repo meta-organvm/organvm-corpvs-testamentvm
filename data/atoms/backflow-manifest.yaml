@@ -172,7 +172,7 @@ organs:
       semaphore warnings during MCPServerStdio cleanup'
     confidence: 1.0
     metadata:
-      pr_state: open
+      pr_state: closed
   - source: contrib--prefecthq-fastmcp
     type: community
     content: 'Contribution to PrefectHQ/fastmcp: fix: serialize object query params
