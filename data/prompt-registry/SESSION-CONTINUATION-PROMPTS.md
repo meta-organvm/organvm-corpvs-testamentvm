@@ -82,7 +82,7 @@ Resume: close the 4 governance vacuums, update fossil-record.jsonl, check omega 
 
 ## S3 — CCE CPU Throttling Fix + Gemini Spike
 
-**Run in:** `~/Workspace/organvm-i-theoria/conversation-corpus-engine`
+**Run in:** `~/Workspace/organvm/conversation-corpus-engine`
 **Source:** `~/.claude/sessions/2026-04-16--why-is-python-causeing-so-much/prompts.md` + exported .txt continuation
 
 ### Your original prompts:
@@ -122,7 +122,7 @@ COMPLETED:
 - Diagnosed 2 Python processes at 100% CPU: corpus refresh pipeline with O(n²) SequenceMatcher near-duplicate detection (205,761 calls for 642 threads), plus a stuck pytest convergence test.
 - Implemented 3 of 4 CPU throttling layers:
   - Layer 1 (shell): `taskpolicy -b` wrapping in `scripts/refresh_local_sessions.sh` — confines to efficiency cores.
-  - Layer 2 (CLI): `--throttle` parameter (float, seconds) threaded through 8 files: cli.py → provider_refresh.py → provider_import.py → both ChatGPT and Claude adapters. Default 0.0 (no behavior change).
+  - Layer 2 (CLI): `--throttle` parameter (float, seconds) added to cli.py. Default 0.0 (no behavior change). [AUDIT 2026-04-21: parameter exists in cli.py only — not yet threaded through provider_refresh.py, provider_import.py, or adapters as originally claimed. Threading to remaining files is PENDING.]
   - Layer 3 (algorithmic): Trigram Jaccard pre-filter in both `import_chatgpt_export_corpus.py` and `import_claude_export_corpus.py`. Helper function `_trigram_fingerprint()` + refactored `detect_near_duplicates()`. ~95% pair rejection, 10-20x speedup projected.
 - Commit 4658d22: 11 files, 593 insertions, 277/277 tests pass.
 - ChatGPT refresh completed successfully for the first time without timeout.
@@ -130,7 +130,8 @@ COMPLETED:
 
 PENDING:
 1. Layer 4 (orchestration tuning): LaunchAgent interval 6h→12h, nice priority 10→19, timeout 2700s→1200s. DEFERRED — verify Layers 1-3 sufficiency over next refresh cycle first.
-2. GitHub issues: create 2 issues on organvm-i-theoria/conversation-corpus-engine — one for CPU throttling fix (tracking completed work), one for Gemini local-session adapter.
+2. GitHub issues: create 2 issues on conversation-corpus-engine [AUDIT 2026-04-21: repo is at ~/Workspace/organvm/conversation-corpus-engine, verify GitHub org before creating issues] — one for CPU throttling fix (tracking completed work), one for Gemini local-session adapter.
+3a. [ADDED 2026-04-21]: Thread `--throttle` parameter from cli.py through provider_refresh.py, provider_import.py, and both ChatGPT/Claude adapters (originally claimed complete, verified incomplete).
 3. CLAUDE.md documentation: add `--throttle` flag to CLI Command Tree section.
 4. IRF items: log Gemini full content path (web API or gRPC endpoint mapping) and LaunchAgent tuning as new IRF entries.
 5. Gemini full content acquisition: blocked on Chrome DevTools or chrome-in-browser MCP to capture batchexecute RPC IDs from gemini.google.com. Option 1: reverse-engineer protobuf and replay with OAuth token. Option 2: use Chrome MCP to intercept network requests during a Gemini session.
@@ -250,7 +251,7 @@ COMPLETED — Phase 3 is DONE:
 - Deployed execution-discipline.py (UserPromptSubmit momentum detection) at ~/.claude/hooks/.
 - Added SessionStart memory hygiene hook + SessionEnd audit hook.
 - Extended CLAUDE.md with Universal Rules 5-8: plans as artifacts, fix bases not outputs, everything is a loop, validate before presenting.
-- 18 hooks total across 7 enforcement groups:
+- 18 hooks total across 7 enforcement groups [AUDIT 2026-04-21: hook count has grown to 23+ since this session. Re-audit inventory before resuming hook work]:
   A. Destruction Guards (6): force-push, hard branch delete, direct main push, issue close, fetch-rm
   B. Write Integrity (2): additive-only guards on registry.json and IRF.md
   C. 1Password Discipline (2): cache reminders on op read / op item get
@@ -294,7 +295,7 @@ Resume: audit governance-rule atoms against hook inventory. Any rule stated mult
 This session continues S-recapitulation-2026-04-17.
 
 COMPLETED:
-- Renamed victoroff-group → padavano: directory, GitHub repo (`gh repo rename`), git remote URL, package.json (name=padavano), CLAUDE.md, README.md, src/index.html (title, h1, hero copy, nav, footer), 4 Playwright test spec files. All 40/40 tests pass. Rebased onto origin/main (which had consilivm-simplex intermediate commit). Pushed to da3e475.
+- Renamed victoroff-group → padavano: directory, GitHub repo (`gh repo rename`), git remote URL, package.json (name=padavano), CLAUDE.md, README.md, src/index.html (title, h1, hero copy, nav, footer), 4 Playwright test spec files. All 40/40 tests pass. Rebased onto origin/main (which had consilivm-simplex intermediate commit). Pushed to da3e475. [AUDIT 2026-04-21: repo exists on GitHub at 4444J99/padavano (public, created 2026-04-16) AND cloned locally at ~/Workspace/4444J99/padavano/ (not under organvm/ as S7 originally implied). Verified 2026-04-21.]
 - Created 3 INSTANCE.toml material strata added to chezmoi:
   - ~/i--me--mine/INSTANCE.toml (World i — ousia/being)
   - ~/chaos--incarnate/INSTANCE.toml (World iii — dynamis/becoming)
@@ -304,7 +305,7 @@ COMPLETED:
   - ENG-002 (public-record-data-scrapper): Padavano sole author, revenue blocker = no pricing page
   - ENG-003 (Jessica/Styx): zero client commits, conceptual only
   - ENG-005 (Scott/Cronus): 4-day sprint, Padavano + Cloudflare Workers + Neon, Scott conceptual only
-  All 4 YAML files committed and pushed to organvm-iii-ergon/commerce--meta.
+  All 4 YAML files committed and pushed to commerce--meta. [AUDIT 2026-04-21: files verified at ~/Workspace/organvm/commerce--meta/engagements/active/ — named by project (sovereign-systems.yaml, public-record-data-scrapper.yaml, etc.) with ENG-xxx IDs inside YAML frontmatter. Path was organvm/, not organvm-iii-ergon/.]
 - 5 DONE entries (380-384). 4 new IRF items: IRF-SYS-117 (formal strata INSTANCE.toml, 3 locations unexecuted), IRF-III-026 (P0 public-record-data-scrapper Stripe), IRF-III-027 (P0 content-engine Stripe), IRF-III-028 (P1 padavano booking).
 - All covenant violations remediated. Memory persisted via chezmoi.
 
@@ -359,7 +360,7 @@ Resume: decide on the Codex handoff — approve and dispatch, or modify the plan
 
 ## S9 — Sovereign Systems (Maddie) Corrective Implementation
 
-**Run in:** `~/Workspace/organvm-iii-ergon/sovereign-systems--elevate-align`
+**Run in:** `~/Workspace/organvm/sovereign-systems--elevate-align`
 **Source:** exported .txt (`sovereign-systems--elevate-align/2026-04-18-073654-...`)
 
 ### Your original prompts:
@@ -376,7 +377,7 @@ This session continues S-sovereign-systems-2026-04-17.
 COMPLETED:
 - 7-PDF analysis of Maddie's intake documents: extracted 65 atomized wants from her original materials. Discovered architectural misalignment: site was built spiral-first (practitioner methodology) but Maddie's wants are water-first (the primary offering she sells).
 - Commit 868d6c4: 11 files, 1,321 insertions documenting atomized wants, PDF extraction findings, and corrective plan. Session artifacts committed separately (62f45b9).
-- GitHub labels applied: #37 and #38 tagged "roadmap."
+- GitHub labels applied: #37 and #38 tagged "roadmap." [AUDIT 2026-04-21: UNVERIFIED — repo not found in labores-profani-crux org on GitHub. Issues may exist under a different org or may have been lost in org migration.]
 - 3 new IRF entries:
   - IRF-III-029 (P0): Architectural misalignment — water-first vs spiral-first
   - IRF-III-030 (P1): 65-want atomization (the "cartographical fossil record" of her actual desires)
