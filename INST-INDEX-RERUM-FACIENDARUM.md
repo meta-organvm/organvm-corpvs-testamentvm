@@ -124,6 +124,7 @@ The counter file is the single source of truth for the DONE-ID ceiling. The stat
 | IRF-SYS-122 | **P3** | **VACUUM: Companion Indices — prompt registry is proto-Index Rerum, continuation prompts are proto-Index Locorum.** prompt-atoms.json (31,649 entries with IDs, types, universes, statuses) is structurally identical to what IRF-IDX-003 (Index Rerum) should be. SESSION-CONTINUATION-PROMPTS.md (11 sessions with directory paths, pending items) is structurally identical to what IRF-IDX-001 (Index Locorum) should be. Acknowledge as partial implementations, not separate systems. | Agent | S-cross-audit N/A vacuum audit | IRF-IDX-001, IRF-IDX-003 |
 | IRF-SYS-123 | **P2** | **VACUUM: a-organvm dissolution has no SGO inquiry commission.** The most significant active research in the system — 3 functions (skeletal, circulatory, cultvra), 91 tests, 4 proven laws, 15 biological mechanisms, cocoon-map (16K lines), signal graph with feedback loop — has no INQ-ID tracking its advancement through the research apparatus. Formal methodology exists (gate contracts, signal types, axiom derivation). Should be INQ-2026-013 or similar. Evidence: signal-propagation-proof (2026-04-19), NATURAL-LAW-DECISION files (5), RELAY.md at S58. | Agent | S-phase-transition-2026-04-19 N/A vacuum audit | INQ-2026-006 (formalization) |
 | IRF-SYS-124 | **P3** | **VACUUM: orchestration-start-here CI description incomplete.** ORGAN-IV superproject CLAUDE.md CI section lists "CI + dependency validation + monthly audit + promotion recommender + registry health audit" for orchestration-start-here but omits governance-enforcement.yml (added 2026-04-19). Auto-generated sections need regeneration, or hand-written section needs update. | Agent | S-phase-transition-2026-04-19 N/A vacuum audit | None |
+| IRF-SYS-126 | **P1** | **VACUUM: No automated uncommitted-file detection across workspace repos.** `organvm git status` exists for manual drift detection, but no LaunchAgent, cron, or soak pipeline runs it automatically. 32 files (5K lines of production code) sat uncommitted in organvm-engine for hours undetected — discovered only by manual session survey. The Nothing Local Only covenant has no enforcement mechanism. Fix: add periodic `git status --porcelain` sweep across workspace repos to soak pipeline or LaunchAgent, alerting when untracked/modified files exceed a threshold. The tool exists; the automation doesn't. | Agent | S-covenant-hygiene-sprint-2026-04-21 N/A vacuum audit | IRF-DOM-040 (infra maintenance gap) |
 | IRF-SYS-125 | **P1** | **DONE-394 collision — 4th DONE-ID collision incident.** DONE-394 assigned to both sovereign-systems (5-PR corrective sequence, 2026-04-19) AND Institutional Substrate Phase 0 (6 primitives, 2026-04-21). Counter file was stale at `next_id: 392` when actual max was DONE-396. Neither session followed the claim-before-use protocol. Counter has been corrected to `next_id: 400`. **Remediation:** either reassign one entry to a new DONE-ID, or accept as historical duplicate with disambiguation note. Consider: automated counter validation hook (pre-commit check that counter `next_id` > max DONE-NNN in IRF). | Agent | S-covenant-hygiene-sprint-2026-04-21 | None |
 | IRF-SYS-116 | **P2** | **Soak pipeline zeros global metrics variables — code_files=0, test_files=0, etc.** **ADVANCED (Session F, 2026-04-16).** Root cause found: `organvm metrics calculate` in the soak auto-run lacks workspace context, producing zeros. Manual run with workspace: 31,199 code files, 6,229 test files, 61 repos with tests, 795K words. **Remaining:** fix soak pipeline to pass `ORGANVM_WORKSPACE_DIR` or `--workspace` flag so auto-run doesn't overwrite good data. Timing collision confirmed (soak at `2026-04-16T07:26Z` overwrote correct values). | Agent | S-2026-04-14 audit, Session-F 2026-04-16 | None |
 | IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
@@ -1636,8 +1637,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 Refreshed 2026-04-21 (S-covenant-hygiene-sprint-2026-04-21). +3 completions: DONE-397 (PR #80 CI fix), DONE-398 (domus XDG gemini dedup), DONE-399 (corpvs hygiene). +4 new items: IRF-ATN-010 (PR #80 merge decision), IRF-DOM-045 (domus task queue stale), IRF-SYS-125 (DONE-394 collision), IRF-INST-029 (graph.py duplicate method). Prior: S-institutional-substrate-phase-0 (DONE-394).
 
-- **Total IRF items:** 922 *(prior 918, +4: ATN-010, DOM-045, SYS-125, INST-029)*
-- **Open:** 534 *(prior 533, +4 new, -3 completed)*
+- **Total IRF items:** 923 *(prior 918, +5: ATN-010, DOM-045, SYS-125, SYS-126, INST-029)*
+- **Open:** 535 *(prior 533, +5 new, -3 completed)*
 - **Completed:** 394 *(prior 391, +3: DONE-397..399)*
 - **Blocked:** 0
 - **Archived:** 0
@@ -1648,7 +1649,7 @@ Refreshed 2026-04-21 (S-covenant-hygiene-sprint-2026-04-21). +3 completions: DON
 | Priority | Count |
 |----------|-------|
 | P0 | 10 |
-| P1 | 192 *(prior 190, +2: ATN-010, SYS-125)* |
+| P1 | 193 *(prior 190, +3: ATN-010, SYS-125, SYS-126)* |
 | P2 | 229 *(prior 227, +2: DOM-045, INST-029)* |
 | P3 | 41 |
 
