@@ -72,9 +72,8 @@ def classify_atom(text: str) -> str:
     if text.startswith("/"):
         return COMMAND
 
-    # Questions
-    if text.rstrip().endswith("?"):
-        # Check if it's actually a rhetorical question = governance rule
+    # Questions — check for ? anywhere, not just at end
+    if "?" in text:
         rhetorical_markers = [
             "how many times", "how many fucking", "what am i doing wrong",
             "is that not true", "right?", "correct?",
@@ -83,12 +82,23 @@ def classify_atom(text: str) -> str:
             return GOVERNANCE
         return QUESTION
 
-    # Governance rules
+    # Questions — interrogative starts
+    if re.match(r"^(how do|what is|where is|why is|can we|should we|does |is there|are there|what'?s|how)", lower):
+        return QUESTION
+
+    # Governance rules — expanded
     gov_patterns = [
         r"\bmust\b", r"\bnever\b", r"\balways\b", r"\brule\b",
         r"\bnon-negotiable\b", r"\brequire[ds]?\b", r"\bmandat",
         r"\bevery single\b", r"\bno exception", r"\bfail",
         r"vacuum", r"persist", r"enforce",
+        # Temporal governance markers
+        r"\bfrom now on\b", r"\bgoing forward\b", r"\bhenceforth\b",
+        r"\bevery time\b", r"\beach time\b", r"\bwhenever\b",
+        # Rule declarations
+        r"\bthe rule is\b", r"\bthe law is\b", r"\bthe principle is\b",
+        # Arrow rules (user uses → and => for rules)
+        r"→", r"=>", r"->",
     ]
     for pat in gov_patterns:
         if re.search(pat, lower):
@@ -102,11 +112,20 @@ def classify_atom(text: str) -> str:
     if any(w in lower for w in ["fuck", "shit", "sick of", "frustrated", "idiot", "moron"]):
         return EMOTIONAL
 
-    # Constraints
-    if any(w in lower for w in ["without", "don't", "stop", "never", "not"]):
-        return CONSTRAINT
+    # Constraints — expanded
+    constraint_words = [
+        "without", "don't", "stop", "not",
+        r"\bonly\b", r"\bjust\b", r"\bno more than\b", r"\bat most\b", r"\bat least\b",
+        r"\bexcept\b", r"\bunless\b", r"\bbut not\b", r"\bother than\b",
+    ]
+    for w in constraint_words:
+        if w.startswith(r"\b"):
+            if re.search(w, lower):
+                return CONSTRAINT
+        elif w in lower:
+            return CONSTRAINT
 
-    # Directives
+    # Directives — expanded with modal verbs and imperative detection
     directive_words = [
         r"\bsolve\b", r"\bbuild\b", r"\bcreate\b", r"\bimplement\b",
         r"\bfix\b", r"\bwrite\b", r"\bdesign\b", r"\bwe need\b",
@@ -115,16 +134,43 @@ def classify_atom(text: str) -> str:
         r"\bstart\b", r"\bdo\b", r"\brun\b", r"\badd\b",
         r"\bremove\b", r"\bdelete\b", r"\bclean\b",
         r"\bi want\b", r"\bi need\b",
+        # Modal verbs
+        r"\bshould\b", r"\bought to\b", r"\bneed to\b", r"\bhave to\b",
+        # Additional imperatives
+        r"\bproceed\b", r"\bcontinue\b", r"\bdeploy\b", r"\bpush\b",
+        r"\bcommit\b", r"\binstall\b", r"\bset up\b", r"\bconfigure\b",
+        r"\bupdate\b", r"\bupgrade\b", r"\bmigrate\b", r"\bscaffold\b",
+        r"\brefactor\b", r"\btest\b", r"\baudit\b", r"\bverify\b",
     ]
     for pat in directive_words:
         if re.search(pat, lower):
             return DIRECTIVE
 
+    # Imperative mood — segment starts with a common verb
+    imperative_verbs = [
+        "check", "fix", "build", "find", "make", "ensure", "wire", "run",
+        "go", "start", "stop", "remove", "add", "update", "create", "review",
+        "proceed", "continue", "solve", "design", "implement", "deploy",
+        "set", "get", "put", "move", "copy", "read", "write", "show",
+        "list", "search", "open", "close", "merge", "push", "pull",
+    ]
+    first_word = lower.split()[0] if lower.split() else ""
+    if first_word in imperative_verbs:
+        return DIRECTIVE
+
     # Data/pasted content
     if len(text) > 500 and text.count("\n") > 5:
         return DATA
 
-    # Implicit signals (catch-all for meaningful content)
+    # Rescue: long segments with verbs are likely directives, not implicit
+    if len(text) > 50:
+        common_verbs = ["is", "are", "was", "were", "have", "has", "do", "does",
+                        "make", "take", "get", "give", "go", "come", "see", "know",
+                        "want", "need", "use", "find", "tell", "work", "call", "try"]
+        if any(f" {v} " in f" {lower} " for v in common_verbs):
+            return DIRECTIVE
+
+    # Implicit signals (catch-all for what's left)
     if len(text) > 20:
         return IMPLICIT
 
@@ -241,7 +287,7 @@ def atomize_prompt(prompt: dict) -> list[dict]:
 
     atoms = []
     for i, segment in enumerate(segments):
-        if len(segment.strip()) < 5:
+        if len(segment.strip()) < 3:
             continue
 
         atom_type = classify_atom(segment)
