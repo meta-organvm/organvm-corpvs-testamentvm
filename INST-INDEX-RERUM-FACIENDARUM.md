@@ -545,6 +545,22 @@ Verified on disk 2026-03-20:
 
 ---
 
+## ORGAN-IV — Agentic Titan (agentic-titan)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| ~~IRF-ATN-001~~ | ~~P2~~ | ~~Fix pydantic-core version mismatch blocking 57+ test files from collecting~~ → **DONE** (2026-04-21). Created project .venv, installed matched pydantic 2.13.3 / pydantic-core 2.46.3. PR #80. | Agent | Session audit | Completed |
+| ~~IRF-ATN-002~~ | ~~P2~~ | ~~Fix `train()` path matching bug — `"test" in str(filepath)` matches pytest temp dirs~~ → **DONE** (2026-04-21). Changed to `"test" in filepath.name`. PR #80. | Agent | Session audit | Completed |
+| ~~IRF-ATN-003~~ | ~~P2~~ | ~~Wire type_annotations detection into PatternExtractor~~ → **DONE** (2026-04-21). PatternType.TYPING and StyleProfile.type_annotations existed but extraction was never connected. PR #80. | Agent | Session audit | Completed |
+| ~~IRF-ATN-004~~ | ~~P2~~ | ~~Delete stale remote branch `feat/local-inference-f22-f23-f24`~~ → **DONE** (2026-04-21). PR #39 merged 2026-03-08, branch lingered 6 weeks. | Agent | Session audit | Completed |
+| IRF-ATN-005 | **P1** | **`get_style_context()` calls nonexistent `StyleAdapter.get_prompt_context()`** — line 267 of `titan/learning/local_trainer.py`. Will raise `AttributeError` at runtime. Dead code path or missing method implementation. | Agent | Session audit (2026-04-21) | None |
+| IRF-ATN-006 | P2 | **`_extract_naming_patterns` is a stub** — records naming stats in `_naming_stats` Counter but returns `[]`, so naming patterns are counted but never surfaced as `CodingPattern` objects. Lines 164-172 of `local_trainer.py`. | Agent | Session audit (2026-04-21) | None |
+| IRF-ATN-007 | P3 | **Unused imports** — `hashlib` and `json` imported but never used in `local_trainer.py` (lines 16-17). Dead code. | Agent | Session audit (2026-04-21) | None |
+| IRF-ATN-008 | P3 | **Pyright type error on `max(cases, key=cases.get)`** — line 210 of `local_trainer.py`. Dict `.get` method signature doesn't satisfy `max` key param type. Functional but type-unsafe. | Agent | Session audit (2026-04-21) | None |
+| IRF-ATN-009 | P3 | **`min_file_size` and `max_file_size` config fields unused** — declared in `TrainingConfig` (lines 120-121) but never checked in `analyze_file()` or `train()`. Specified but unwired. | Agent | Session audit (2026-04-21) | None |
+
+---
+
 ## ORGAN-IV — Skills (a-i--skills)
 
 | ID | Priority | Action | Owner | Source | Blocker |
