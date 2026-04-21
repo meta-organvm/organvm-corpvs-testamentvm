@@ -1,0 +1,342 @@
+generated_at: '2026-04-21T11:13:48.013665+00:00'
+total_signals: 50
+organs:
+  ORGAN-III:
+  - source: contrib--dbt-mcp
+    type: shipped_code
+    content: 'Merged: fix: clarify OAuth page wording for non-configuring developers
+      (Python)'
+    confidence: 1.0
+  - source: contrib--prefecthq-fastmcp
+    type: shipped_code
+    content: 'Merged: fix: serialize object query params per OpenAPI style/explode
+      rules (Python)'
+    confidence: 1.0
+  ORGAN-IV:
+  - source: contrib--adenhq-hive
+    type: orchestration
+    content: 'Orchestration pattern: feat: add design versioning system for agent
+      reproducibility'
+    confidence: 0.6
+  - source: contrib--clyra-gait
+    type: orchestration
+    content: 'Orchestration pattern: feat: add CI/CD pipeline policy template with
+      intent fixtures'
+    confidence: 0.6
+  - source: contrib--primeinc-github-stars
+    type: orchestration
+    content: 'Orchestration pattern: feat: add CodeQL security analysis workflow'
+    confidence: 0.6
+  ORGAN-V:
+  - source: contrib--dbt-mcp
+    type: narrative
+    content: 'Case study: contribution to dbt-labs/dbt-mcp'
+    confidence: 1.0
+    metadata:
+      essay_candidate: 'true'
+  - source: contrib--prefecthq-fastmcp
+    type: narrative
+    content: 'Case study: contribution to PrefectHQ/fastmcp'
+    confidence: 1.0
+    metadata:
+      essay_candidate: 'true'
+  ORGAN-VI:
+  - source: contrib--a2aproject-a2a-python
+    type: community
+    content: 'Contribution to a2aproject/a2a-python: fix(client): export TenantTransportDecorator
+      and fix docstring'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--adenhq-hive
+    type: community
+    content: 'Contribution to aden-hive/hive: feat: add design versioning system for
+      agent reproducibility'
+    confidence: 1.0
+    metadata:
+      pr_state: closed
+  - source: contrib--anthropic-skills
+    type: community
+    content: 'Contribution to anthropics/skills: feat: add testing-patterns skill'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--anthropics-anthropic-sdk-python
+    type: community
+    content: 'Contribution to anthropics/anthropic-sdk-python: fix(bedrock,vertex):
+      add missing 413 and 529 status error handling'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--camel-ai-camel
+    type: community
+    content: 'Contribution to camel-ai/camel: fix: generalize rate-limit retry to
+      all model providers'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--clyra-gait
+    type: community
+    content: 'Contribution to Clyra-AI/gait: feat: add CI/CD pipeline policy template
+      with intent fixtures'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--coinbase-agentkit
+    type: community
+    content: 'Contribution to coinbase/agentkit: fix: resolve $ref pointers from recursive
+      Zod schemas'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--dapr-dapr
+    type: community
+    content: 'Contribution to dapr/dapr: fix: make DeliverBulk fallthru consistent
+      with Deliver for empty status'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--databricks-dbt-databricks
+    type: community
+    content: 'Contribution to databricks/dbt-databricks: feat: include job_id, run_id,
+      and task_key in adapter_response'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--datadog-guarddog
+    type: community
+    content: 'Contribution to DataDog/guarddog: fix: normalize git URLs in npm_metadata_mismatch
+      to avoid false positives'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--dbt-mcp
+    type: community
+    content: 'Contribution to dbt-labs/dbt-mcp: fix: clarify OAuth page wording for
+      non-configuring developers'
+    confidence: 1.0
+    metadata:
+      pr_state: merged
+  - source: contrib--grafana-k6
+    type: community
+    content: 'Contribution to grafana/k6: metrics: add Len and ForEach methods to
+      TagSet'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--indeedeng-iwf
+    type: community
+    content: 'Contribution to indeedeng/iwf: Add unit tests for timeparser and urlautofix
+      packages'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--ipqwery-ipapi-py
+    type: community
+    content: 'Contribution to ipqwery/ipapi-py: feat: add Codecov integration for
+      test coverage reporting'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--langchain-langgraph
+    type: community
+    content: 'Contribution to langchain-ai/langgraph: feat: add restart-safety coverage
+      for put_writes idempotency'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--m13v-summarize-recent-commit
+    type: community
+    content: 'Contribution to m13v/summarize_recent_commit: feat: add daily auto-trigger
+      with --schedule and --watch modes'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--modelcontextprotocol-python-sdk
+    type: community
+    content: 'Contribution to modelcontextprotocol/python-sdk: fix: accept single
+      supported content type in SSE mode Accept header'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--notion-mcp-server
+    type: community
+    content: 'Contribution to makenotion/notion-mcp-server: fix: correct children
+      items schema in POST /v1/pages to use blockObjectRequest ref'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--openai-agents-python
+    type: community
+    content: 'Contribution to openai/openai-agents-python: fix(mcp): prevent leaked
+      semaphore warnings during MCPServerStdio cleanup'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--prefecthq-fastmcp
+    type: community
+    content: 'Contribution to PrefectHQ/fastmcp: fix: serialize object query params
+      per OpenAPI style/explode rules'
+    confidence: 1.0
+    metadata:
+      pr_state: merged
+  - source: contrib--primeinc-github-stars
+    type: community
+    content: 'Contribution to primeinc/github-stars: feat: add CodeQL security analysis
+      workflow'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  - source: contrib--tadata-org-fastapi-mcp
+    type: community
+    content: 'Contribution to tadata-org/fastapi_mcp: fix: preserve typed array `items`
+      in nullable anyOf schemas'
+    confidence: 1.0
+    metadata:
+      pr_state: open
+  ORGAN-VII:
+  - source: contrib--a2aproject-a2a-python
+    type: distribution
+    content: 'PR #915 on a2aproject/a2a-python: fix(client): export TenantTransportDecorator
+      and fix docstring'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/a2aproject/a2a-python/pull/915
+  - source: contrib--anthropic-skills
+    type: distribution
+    content: 'PR #723 on anthropics/skills: feat: add testing-patterns skill'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/anthropics/skills/pull/723
+  - source: contrib--anthropics-anthropic-sdk-python
+    type: distribution
+    content: 'PR #1306 on anthropics/anthropic-sdk-python: fix(bedrock,vertex): add
+      missing 413 and 529 status error handling'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/anthropics/anthropic-sdk-python/pull/1306
+  - source: contrib--camel-ai-camel
+    type: distribution
+    content: 'PR #3974 on camel-ai/camel: fix: generalize rate-limit retry to all
+      model providers'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/camel-ai/camel/pull/3974
+  - source: contrib--clyra-gait
+    type: distribution
+    content: 'PR #110 on Clyra-AI/gait: feat: add CI/CD pipeline policy template with
+      intent fixtures'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/Clyra-AI/gait/pull/110
+  - source: contrib--coinbase-agentkit
+    type: distribution
+    content: 'PR #1054 on coinbase/agentkit: fix: resolve $ref pointers from recursive
+      Zod schemas'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/coinbase/agentkit/pull/1054
+  - source: contrib--dapr-dapr
+    type: distribution
+    content: 'PR #9719 on dapr/dapr: fix: make DeliverBulk fallthru consistent with
+      Deliver for empty status'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/dapr/dapr/pull/9719
+  - source: contrib--databricks-dbt-databricks
+    type: distribution
+    content: 'PR #1376 on databricks/dbt-databricks: feat: include job_id, run_id,
+      and task_key in adapter_response'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/databricks/dbt-databricks/pull/1376
+  - source: contrib--datadog-guarddog
+    type: distribution
+    content: 'PR #703 on DataDog/guarddog: fix: normalize git URLs in npm_metadata_mismatch
+      to avoid false positives'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/DataDog/guarddog/pull/703
+  - source: contrib--dbt-mcp
+    type: distribution
+    content: 'PR #669 on dbt-labs/dbt-mcp: fix: clarify OAuth page wording for non-configuring
+      developers'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/dbt-labs/dbt-mcp/pull/669
+  - source: contrib--grafana-k6
+    type: distribution
+    content: 'PR #5770 on grafana/k6: metrics: add Len and ForEach methods to TagSet'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/grafana/k6/pull/5770
+  - source: contrib--indeedeng-iwf
+    type: distribution
+    content: 'PR #601 on indeedeng/iwf: Add unit tests for timeparser and urlautofix
+      packages'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/indeedeng/iwf/pull/601
+  - source: contrib--ipqwery-ipapi-py
+    type: distribution
+    content: 'PR #8 on ipqwery/ipapi-py: feat: add Codecov integration for test coverage
+      reporting'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/ipqwery/ipapi-py/pull/8
+  - source: contrib--langchain-langgraph
+    type: distribution
+    content: 'PR #7237 on langchain-ai/langgraph: feat: add restart-safety coverage
+      for put_writes idempotency'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/langchain-ai/langgraph/pull/7237
+  - source: contrib--m13v-summarize-recent-commit
+    type: distribution
+    content: 'PR #2 on m13v/summarize_recent_commit: feat: add daily auto-trigger
+      with --schedule and --watch modes'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/m13v/summarize_recent_commit/pull/2
+  - source: contrib--modelcontextprotocol-python-sdk
+    type: distribution
+    content: 'PR #2361 on modelcontextprotocol/python-sdk: fix: accept single supported
+      content type in SSE mode Accept header'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/modelcontextprotocol/python-sdk/pull/2361
+  - source: contrib--notion-mcp-server
+    type: distribution
+    content: 'PR #242 on makenotion/notion-mcp-server: fix: correct children items
+      schema in POST /v1/pages to use blockObjectRequest ref'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/makenotion/notion-mcp-server/pull/242
+  - source: contrib--openai-agents-python
+    type: distribution
+    content: 'PR #2802 on openai/openai-agents-python: fix(mcp): prevent leaked semaphore
+      warnings during MCPServerStdio cleanup'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/openai/openai-agents-python/pull/2802
+  - source: contrib--prefecthq-fastmcp
+    type: distribution
+    content: 'PR #3662 on PrefectHQ/fastmcp: fix: serialize object query params per
+      OpenAPI style/explode rules'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/PrefectHQ/fastmcp/pull/3662
+  - source: contrib--primeinc-github-stars
+    type: distribution
+    content: 'PR #39 on primeinc/github-stars: feat: add CodeQL security analysis
+      workflow'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/primeinc/github-stars/pull/39
+  - source: contrib--tadata-org-fastapi-mcp
+    type: distribution
+    content: 'PR #274 on tadata-org/fastapi_mcp: fix: preserve typed array `items`
+      in nullable anyOf schemas'
+    confidence: 1.0
+    metadata:
+      pr_url: https://github.com/tadata-org/fastapi_mcp/pull/274
