@@ -1,0 +1,9 @@
+title = "Gitleaks config for organvm-corpvs-testamentvm"
+
+[allowlist]
+description = "Bulk planning/governance registry files contain pattern descriptions, not real secrets"
+paths = [
+  '''data/prompt-registry/prompt-atoms\.json''',
+  '''data/prompt-registry/prompt-registry\.json''',
+  '''.*\.jsonl''',
+]
