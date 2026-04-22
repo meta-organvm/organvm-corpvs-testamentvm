@@ -1,35 +1,61 @@
 # Dispatch Queue
 
-**Generated:** 2026-04-22 18:20
-**Total OPEN atoms:** 250
+**Generated:** 2026-04-22 18:39
+**Total OPEN atoms:** 977
 
 ## Summary
 
 | Target | Count |
 |--------|-------|
-| Requires Human Hands | 9 |
-| Claude (Strategic) | 235 |
-| Codex (Mechanical) | 3 |
-| Gemini/Perplexity (Research) | 3 |
+| Requires Human Hands | 32 |
+| Claude (Strategic) | 916 |
+| Codex (Mechanical) | 8 |
+| Gemini/Perplexity (Research) | 21 |
 
-## Requires Human Hands (9)
+## Requires Human Hands (32)
 
 - `ATM-024202` (2026-04-21, security, UNIVERSAL) — **Docker is uninstalled** (2026-04-18), so the Docker MCP Gmail server that used this password is gone.  ### What Remains Unresolved (Requires Human Action)  **The app password `dxmz yydz pbmo shjk...
 - `ATM-024206` (2026-04-21, personal, security) — Optionally: generate a new app password and store it in 1Password under `Personal/Gmail App Password` if IMAP access is ever needed again  ### Risk Assessment  - The password grants IMAP/SMTP acces...
 - `ATM-024264` (2026-04-21, meta, security) — IRF-SEC-005 — Revoke Gmail app password at myaccount.google.com/apppasswords
-- `ATM-016949` (2026-04-02, employment, health) — YAML Data Health Regressions (application-pipeline): The previous "repairs" injected duplicate YAML keys (deferral:, time:, timezone:) into several active and closed entries       (e.g., prix-ars-e...
-- `ATM-017354` (2026-04-02, employment, health) — YAML Data Health Regressions (application-pipeline): The previous "repairs" injected duplicate YAML keys (deferral:, time:, timezone:) into several active and closed entries       (e.g., prix-ars-e...
+- `ATM-011519` (2026-03-31, organ-iv, meta) — Steps 2–7 still       251 .       252 ---       253       254 ## Proof of Repeatability       255       256 | Run | Target | Repos | Orgs | Gap |           Steps producing ∅ ||       257 |-----|---...
+- `ATM-011528` (2026-03-31, organ-iv, meta) — Steps 2–7 still                   251 .                                                      252 ---                                                    253                                          ...
+- `ATM-011540` (2026-03-31, organ-iv, meta) — Steps 2–7 still                   251 .                                                      252 ---                                                    253                                          ...
+- `ATM-011597` (2026-03-31, organ-iv, meta) — Steps 2–7 still       251 .       252 ---       253       254 ## Proof of Repeatability       255       256 | Run | Target | Repos | Orgs | Gap |           Steps producing ∅ ||       257 |-----|---...
+- `ATM-011606` (2026-03-31, organ-iv, meta) — Steps 2–7 still       251 .       252 ---       253       254 ## Proof of Repeatability       255       256 | Run | Target | Repos | Orgs | Gap |           Steps producing ∅ ||       257 |-----|---...
+- `ATM-012069` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-012084` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-012112` (2026-03-31, meta, health) — Check system health and resources   ✦ Following the Superproject Topology Audit SOP, I have     conducted a complete analysis of the meta-organvm     repository.      Superproject Topology Audit: M...
+- `ATM-012667` (2026-03-31, meta, health) — review health from assist: "export NPM_CONFIG_REGISTRY="https://registry.npmjs.org/" export OPENCLAW_PKG="openclaw@latest" export MCP_PKG="@modelcontextprotocol/sdk"  node -v npm -v npm config get ...
+- `ATM-012746` (2026-03-31, meta, health) — The substance they reference — code,   plan, IRF — is all remote.
+- `ATM-013208` (2026-03-31, organ-iii, financial) — devise Devise how we get all avenues for full quadrant audiences to know of this thing's        existence and want to pay me for it.                                                     ────────────...
+- `ATM-013234` (2026-03-31, organ-iii, employment) — so we did a similiar process of developing paths for income here  /Users/4jp/Workspace/4444J99/application-pipeline  different results, which is good for a modular system of parameters, interaction...
+- `ATM-014107` (2026-03-31, organ-iv, meta) — Steps 2–7 still       251 .       252 ---       253       254 ## Proof of Repeatability       255       256 | Run | Target | Repos | Orgs | Gap |           Steps producing ∅ ||       257 |-----|---...
+- `ATM-014118` (2026-03-31, organ-iv, meta) — Steps 2–7 still       251 .       252 ---       253       254 ## Proof of Repeatability       255       256 | Run | Target | Repos | Orgs | Gap |           Steps producing ∅ ||       257 |-----|---...
+- `ATM-014247` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-014279` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-014316` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-014336` (2026-03-31, meta, health) — Check system health and resources ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGA...
+- `ATM-014657` (2026-03-31, meta, housing) — The hall monitor found something. .meta/memory/ backup has 26 files but live memory has
+- `ATM-014659` (2026-03-31, meta, housing) — The hall monitor found something. .meta/memory/ backup has 26 files but live memory has
+- `ATM-015212` (2026-03-31, meta, health) — Check system health and resources                                                     ✦ Following the Superproject Topology Audit SOP, I have                                      conducted a comple...
 - `ATM-011346` (2026-03-31, financial, meta) — Patch Signal Architecture — Design → Implementation Plan    Approved design (2026-03-30), spec at   .claude/plans/2026-03-30-patch-signal-architecture.md.   Needs an implementation plan. This is th...
 - `ATM-011475` (2026-03-31, financial, UNIVERSAL) — Patch Signal Architecture — Design → Implementation Plan    Approved design (2026-03-30), spec at   .claude/plans/2026-03-30-patch-signal-architecture.md.   Needs an implementation plan. This is th...
 - `ATM-010903` (2026-03-31, meta, financial) — Mechanism Implementation    * excretory--filter: Implement the three-pass      filtration CLI (glomerular/tubular/secretion) to      identify and remove dead signals and governance debt      (Ref: ...
 - `ATM-012987` (2026-03-31, housing, meta) — Plausible account unregistered — Script loads (Layout.astro:67), events fire silently into void. Omega   #3 claims "live" but data may be lost.
+- `ATM-009381` (2026-03-30, personal, security) — scope access (including `read:project` for GitHub Projects   V2).    ## Current Problem    `GITHUB_TOKEN` is set as an environment variable (via   1Password in `dot_config/private_op/secrets.zsh` i...
+- `ATM-009204` (2026-03-28, organ-iv, health) — React 18 frontend, Express API, Redis caching, Nginx, Docker Compose." | | CI/CD Infrastructure bullet | "...pipelines,." | "...pipelines, automated dependency validation across 8 GitHub organizati...
+- `ATM-006907` (2026-03-25, organ-iii, financial) — we need to explore all of these paths and harden and fortify; none of them are going to bring me income tomorrow, BUT they have potential
+- `ATM-007189` (2026-03-25, personal, health) — Monitoring — domus health check integration with threshold alerts
 
-## Claude (Strategic) (235)
+## Claude (Strategic) (916)
 
 - `ATM-024368` (2026-04-22, unscoped) — Collect 3+ months v2 outcome data (pipeline is running autonomously   now)
 - `ATM-024373` (2026-04-22, organ-iv) — Second instantiation: deploy authority against ORGAN-IV (Taxis)
 - `ATM-024378` (2026-04-22, unscoped) — Submit IRA methodology to arXiv:cs.SE as Paper (Tier I) — this is Doc   A, already drafted
+- `ATM-024518` (2026-04-22, UNIVERSAL) — Check all 22 open PRs for review responses — the autopsy protocol starts      here
 - `ATM-024523` (2026-04-22, UNIVERSAL) — Review all plan files (.gemini/plans/, .codex/plans/,    .claude/plans/) and check implementation status
+- `ATM-024534` (2026-04-22, meta) — Run `organvm irf list --priority P0` to check for urgent items
+- `ATM-024535` (2026-04-22, meta) — Run `organvm irf list --domain XXX` for your domain's open items
 - `ATM-024372` (2026-04-22, unscoped) — Submit core MCDA contribution to arXiv:cs.AI as Paper (Tier I)    SGO-2026-D-002:
 - `ATM-024374` (2026-04-22, unscoped) — Human baseline: 3 expert engineers rate the pipeline; compare ICC
 - `ATM-024375` (2026-04-22, unscoped) — Expand panel to 7 raters across 3 providers
@@ -45,14 +71,10 @@
 - `ATM-022665` (2026-04-16, employment, education) — LinkedIn DM: Tammer Galal (Datadog)       - Who: Senior Technical Curriculum Developer at Datadog      - When: April 1, 2026 — 15 days unanswered      - Platform: LinkedIn DM      - Why it matters:...
 - `ATM-022670` (2026-04-16, unscoped) — Mr. Victoroff — ACD Deliverable Submission       - What: You submitted ACD_DELIVERABLE_v1_Legal.pdf on Dec 11, 2025      - Status: In "Awaiting Reply" label — 4+ months, no visible response      - ...
 - `ATM-022181` (2026-04-15, unscoped) — Dead lazy-load wrapper — checks   $HOME/google-cloud-sdk which doesn't exist; real SDK   is at /opt/homebrew/share/google-cloud-sdk
-- `ATM-022125` (2026-04-14, meta) — **Created ARCHITECTURE.md** at `/Users/4jp/Workspace/meta-organvm/organvm-engine/src/organvm_engine/prompts/ARCHITECTURE.md` documenting the two-stage model decision, JSONL interface contract, and ...
-- `ATM-022005` (2026-04-14, personal, security) — Added `&lt;key&gt;ExecTimeout&lt;/key&gt;&lt;integer&gt;300&lt;/integer&gt;` to `/Users/4jp/Workspace/4444J99/domus-semper-palingenesis/private_Library/LaunchAgents/com.domus.sort.plist.tmpl`, matc...
-- `ATM-022119` (2026-04-14, meta) — routing table module with `RoutingRule` dataclass, `DEFAULT_ROUTING_TABLE` (6 rules), and `route_task()` function - `/Users/4jp/Workspace/meta-organvm/organvm-engine/tests/test_fabrica_router.py`
+- `ATM-021746` (2026-04-13, organ-iii, UNIVERSAL) — Sovereign Systems Development (organvm-iii-ergon/sovereign-systems--elevate-align):       Significant progress (33 items) on content genome extraction (1,821 atoms), node       architecture locking...
+- `ATM-021758` (2026-04-13, organ-iii, UNIVERSAL) — **Sovereign Systems Development (`organvm-iii-ergon/sovereign-systems--elevate-align`):** Significant progress (33 items) on content genome extraction (1,821 atoms), node architecture locking, and ...
 - `ATM-021482` (2026-04-09, persistence, automation) — work order review:"⏺ The fossil daemon will generate one more trailing   witness entry from this commit. That's the   steady-state tail — the system always has exactly 1     uncommitted fossil entr...
 - `ATM-021151` (2026-04-07, meta, UNIVERSAL) — Two work clusters exist: infrastructure and output       The co-activity data shows two genuine workflows: building the      engine/governance system, and building personal/commercial products. The...
-- `ATM-021260` (2026-04-07, organ-iv, meta) — GitHub Issue Alignment    * Prompt Injection Finding (IRF-SYS-062): Issued as GH#156      (https://github.com/organvm-iv-taxis/orchestration-start-here/issues/15
-- `ATM-021261` (2026-04-07, organ-iv) — in orchestration-start-here.    * Empirical Structure Audit Findings: Summarized as GH#157      (https://github.com/organvm-iv-taxis/orchestration-start-here/issues/15
-- `ATM-021288` (2026-04-07, meta, personal) — … │ │                                                    │ │ ... 221 hidden (Ctrl+O) ...                        │ │ 5. Run all three functions:                        │ │    - `python3 skeletal_def...
 - `ATM-020789` (2026-04-07, organ-vii) — ORGAN-VII (Kerygma): The Breath        * Purpose: POSSE syndication, outward distribution,          social automation.
 - `ATM-021156` (2026-04-07, meta) — Core engine cluster: IV + META + PERSONAL + III (Jaccard 0.56–0.73)
 - `ATM-020643` (2026-04-06, organ-iv, meta) — im of the belief that origin brainstorm documents, internal research, external research, any and all meta or taxis planes beings existing deepply nested within or outside that org in total
@@ -61,94 +83,414 @@
 - `ATM-020100` (2026-04-05, organ-iv, meta) — Either formalize as a SPEC       document or reclassify as a governance      instrument. | Agent | S-fabrica vacuum audit |      None |      organvm-corpvs-testamentvm/INST-INDEX-RERUM-FACIE      N...
 - `ATM-020101` (2026-04-05, organ-iv, meta) — No automated issue assignment,       no agent-created PRs, no dispatch-to-agent      pipeline.
 - `ATM-020103` (2026-04-05, meta) — Bidirectional sync (IRF ↔ Issues) was      designed in SPEC-024 as part of the HANDOFF phase       dispatch-to-actions backend.
-- `ATM-020113` (2026-04-05, organ-iv, meta) — Then `copilot.py` and `jules.py` (s          imilar to human + agent assignment)       46 4.
 - `ATM-019360` (2026-04-04, organ-iv, UNIVERSAL) — Tracked submodules (9): org-dotgithub, a-i--skills,       agent--claude-smith, agentic-titan,      orchestration-start-here, petasum-super-petasum,      universal-node-network, tool-interaction-des...
-- `ATM-019792` (2026-04-04, unscoped) — Formalize the "Hard Gaps": Update       derivations/materon--formalization.md       to include sections on the Bootstrap       Problem (Gap 1), Reliability Threshold       (Gap 2), and the Multiver...
 - `ATM-019828` (2026-04-04, UNIVERSAL) — **GitHub Issues**: Verify all P0/P1 items have corresponding GitHub issues
 - `ATM-019861` (2026-04-04, UNIVERSAL) — **GitHub Issues**: Verify all P0/P1 items have corresponding GitHub issues
 - `ATM-019363` (2026-04-04, meta, UNIVERSAL) — agentkit = contrib--coinbase-agentkit —      byte-identical directories, neither tracked as      submodule. One must go.
 - `ATM-019365` (2026-04-04, meta, UNIVERSAL) — 3 repos marked DISSOLVE — petasum-super-petasum,      system-governance-framework,      collective-persona-operations are "documentation      artifacts claiming to be governance systems" (per      ...
-- `ATM-019372` (2026-04-04, meta, UNIVERSAL) — README-superproject.md lists 7 submodules,      .gitmodules has 9 — tool-interaction-design and      contrib--adenhq-hive were added to .gitmodules but the       README was never updated.
-- `ATM-019809` (2026-04-04, UNIVERSAL) — Verification of "Haunted" Gaps   I'll check sys.toml for the archive/escrow reference and   verify its absence, then create it to satisfy the   protocol's expected state.  ╭────────────────────────...
 - `ATM-019373` (2026-04-04, organ-iv, UNIVERSAL) — node_modules committed —      agent--claude-smith/node_modules/ and      contrib--notion-mcp-server/node_modules/ appear to be      checked in or locally present.
 - `ATM-019371` (2026-04-04, meta) — Multi-tool plan sprawl — Plans exist in .claude/,      .gemini/, .codex/, docs/superpowers/, _local/, and      bare plans/ directories. No single index. Archive      pattern inconsistent.
 - `ATM-019431` (2026-04-04, meta) — MEASUREMENT — metrics + omega (4,707 lines)
 - `ATM-019494` (2026-04-04, meta) — MEASUREMENT — metrics + omega (4,707 lines)
 - `ATM-019785` (2026-04-04, UNIVERSAL) — Advanced Materon Dynamics (Uncaptured       Logic)        * Issue: High-level insights from          session 2026-04-04-110830 regarding          Programmable Matter (PM) remain in          the tra...
-- `ATM-019806` (2026-04-04, UNIVERSAL) — Advanced Materon Dynamics (Uncaptured Logic)                   * Issue: High-level insights from session              2026-04-04-110830 regarding Programmable Matter (PM)          remain in the    ...
+- `ATM-018669` (2026-04-03, UNIVERSAL) — each system must maintain proofs of its logic, math, and functions
 - `ATM-018340` (2026-04-03, meta) — The session memory — absorption purity, gate   superposition, three rendering languages, predecessor   lineage, the operator's own preferences — dies with the    disk.
 - `ATM-018357` (2026-04-03, meta) — The session memory — absorption purity, gate          superposition, three rendering languages, predecessor          lineage, the operator's own preferences — dies with the         disk.
 - `ATM-017100` (2026-04-02, meta) — Email reply — Draft created in Gmail   thread, ready to send. Short and   professional: confirms the Monday slot,   expresses interest, no   over-communication. Review it at your   drafts.
 - `ATM-017134` (2026-04-02, employment, UNIVERSAL) — SOP Standardized    Section XIV of the dossier now contains   the full SOP: First Interview Conversion   — 6 phases, 26 steps, reusable for every   future positive conversion. This is now   the pla...
 - `ATM-017332` (2026-04-02, enforcement, organ-iv) — Fix lefthook V-02 — ghost hook in global git config
-- `ATM-017888` (2026-04-02, organ-iv, meta) — IRF Registry Updates (INST-INDEX-RERUM-FACIENDARUM.md)    - IRF-OSS-040: Moved to Completed (DONE-318). Validated SOPs exist in      praxis-perpetua/standards/.    - IRF-GRC-002: Updated priority t...
-- `ATM-017977` (2026-04-02, organ-iv, meta) — IRF Registry Updates (INST-INDEX-RERUM-FACIENDARUM.md)    - IRF-OSS-040: Moved to Completed (DONE-318). Validated SOPs exist in      praxis-perpetua/standards/.    - IRF-GRC-002: Updated priority t...
-- `ATM-017216` (2026-04-02, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...
-- `ATM-017223` (2026-04-02, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...
-- `ATM-017718` (2026-04-02, organ-iv, meta) — GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard implementation.    B. Update IRF Registry (INST-INDEX-RERUM-FACIENDARUM.md):    * Move IRF-OSS-040 to ## Completed (marked as DONE-...
-- `ATM-017817` (2026-04-02, organ-iv, meta) — GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard                    implementation.                                                                                                 ...
-- `ATM-017906` (2026-04-02, organ-iv, meta) — GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard                    implementation.                                                                                                 ...
+- `ATM-017720` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):    - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries    - OSS-041: feat(irf): Introduce 'STEE...
+- `ATM-017735` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):    - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries    - OSS-041: feat(irf): Introduce 'STEE...
+- `ATM-017750` (2026-04-02, meta) — **IRF-GRC-002** (P2) - Gravitas Layer 1 - Priority shows P2, audit says needs to be P1
+- `ATM-017764` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463, Priority P1. It's about YAML duplicate key repair in application-pipeline. The GitHub issue doesn't exist yet but should be created.
+- `ATM-017819` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):             - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries                 - OSS-041: feat...
+- `ATM-017834` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):             - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries                 - OSS-041: feat...
+- `ATM-017849` (2026-04-02, meta) — **IRF-GRC-002** (P2) - Gravitas Layer 1 - Priority shows P2, audit says needs to be     P1
+- `ATM-017863` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463, Priority P1. It's about        YAML duplicate key repair in application-pipeline. The GitHub issue doesn't exist yet      but should be crea...
+- `ATM-017887` (2026-04-02, meta, employment) — GitHub Issues Created (meta-organvm/organvm-corpvs-testamentvm)    - Issue #290: fix(registry): Repair duplicate key issues in application-pipeline YAML      files (IRF-OSS-039)    - Issue #291: fe...
+- `ATM-017908` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):             - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries                 - OSS-041: feat...
+- `ATM-017923` (2026-04-02, organ-i, meta) — **Create Missing GitHub Issues** (in meta-organvm/organvm-corpvs-testamentvm):             - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries                 - OSS-041: feat...
+- `ATM-017938` (2026-04-02, meta) — **IRF-GRC-002** (P2) - Gravitas Layer 1 - Priority shows P2, audit says needs to be     P1
+- `ATM-017952` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463, Priority P1. It's about        YAML duplicate key repair in application-pipeline. The GitHub issue doesn't exist yet      but should be crea...
+- `ATM-017976` (2026-04-02, meta, employment) — GitHub Issues Created (meta-organvm/organvm-corpvs-testamentvm)    - Issue #290: fix(registry): Repair duplicate key issues in application-pipeline YAML      files (IRF-OSS-039)    - Issue #291: fe...
+- `ATM-017979` (2026-04-02, meta, employment) — **GitHub Issues Created:**    - Issue #290: fix(registry): Repair duplicate key issues in application-pipeline YAML files (IRF-OSS-039)    - Issue #291: feat(irf): Introduce 'STEERING' category for...
+- `ATM-018009` (2026-04-02, organ-i, meta) — Create Missing GitHub Issues (in meta-organvm/organvm-corpvs-testamentvm):    - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries    - OSS-041: feat(irf): Introduce 'STEERING...
+- `ATM-018024` (2026-04-02, organ-i, meta) — Create Missing GitHub Issues (in meta-organvm/organvm-corpvs-testamentvm):    - OSS-039: fix(registry): Repair duplicate key 'source' in ORGAN-I entries    - OSS-041: feat(irf): Introduce 'STEERING...
+- `ATM-018039` (2026-04-02, meta) — IRF-GRC-002 (P2) - Gravitas Layer 1 - Priority shows P2, audit says needs to be P1
+- `ATM-018053` (2026-04-02, meta, employment) — IRF-OSS-039 - Already exists in the IRF at line 463, Priority P1. It's about YAML duplicate key repair in application-pipeline. The GitHub issue doesn't exist yet but should be created.
+- `ATM-018082` (2026-04-02, meta, employment) — GitHub Issues Created:    - Issue #290: fix(registry): Repair duplicate key issues in application-pipeline YAML files (IRF-OSS-039)    - Issue #291: feat(irf): Introduce 'STEERING' category for hig...
+- `ATM-017731` (2026-04-02, meta, UNIVERSAL) — **Data Integrity Note:** IRF-SYS-045 (GH#71) confirmed: organvm irf stats is undercounting tail items due to a parsing sentinel bug  The required actions are:  **A. Create Missing GitHub Issues (in...
+- `ATM-017753` (2026-04-02, organ-i, organ-iv) — **Required Actions:**    - **A. Create Missing GitHub Issues** (in organvm-corpvs-testamentvm):      - OSS-039: "fix(registry): Repair duplicate key 'source' in ORGAN-I entries"      - OSS-041: "fe...
+- `ATM-017830` (2026-04-02, meta, UNIVERSAL) — **Data Integrity Note:** IRF-SYS-045 (GH#71) confirmed: organvm irf stats is            undercounting tail items due to a parsing sentinel bug                                                       ...
+- `ATM-017852` (2026-04-02, organ-i, organ-iv) — **Required Actions:**                                                                      - **A. Create Missing GitHub Issues** (in organvm-corpvs-testamentvm):                       - OSS-039: "f...
+- `ATM-017919` (2026-04-02, meta, UNIVERSAL) — **Data Integrity Note:** IRF-SYS-045 (GH#71) confirmed: organvm irf stats is            undercounting tail items due to a parsing sentinel bug                                                       ...
+- `ATM-017941` (2026-04-02, organ-i, organ-iv) — **Required Actions:**                                                                      - **A. Create Missing GitHub Issues** (in organvm-corpvs-testamentvm):                       - OSS-039: "f...
+- `ATM-018020` (2026-04-02, meta, UNIVERSAL) — Data Integrity Note: IRF-SYS-045 (GH#71) confirmed: organvm irf stats is undercounting tail items due to a parsing sentinel bug The required actions are: A. Create Missing GitHub Issues (in meta-or...
+- `ATM-018042` (2026-04-02, organ-i, organ-iv) — Required Actions:    - A. Create Missing GitHub Issues (in organvm-corpvs-testamentvm):      - OSS-039: "fix(registry): Repair duplicate key 'source' in ORGAN-I entries"      - OSS-041: "feat(irf):...
 - `ATM-018120` (2026-04-02, meta, enforcement) — Guard: IRF append must include ID dedup check — grep "^| IRF-XXX-NNN" before inserting. This is the same fix needed for the Gemini S48 collision.
 - `ATM-017138` (2026-04-02, meta) — The consulting pipeline is the actual   play. Tony + Scott + the venture network   have higher expected value per hour   invested. Jobs are runway. Consulting is   the bridge to the studio. Don't l...
 - `ATM-017339` (2026-04-02, enforcement, organ-iv) — Fix lefthook V-02 (ghost hook in global git config) --- However — this appears to be a new session (we're in plan mode now), and I don't see any work done in this current session yet.  Could you cl...
+- `ATM-017726` (2026-04-02, meta) — **Data Integrity Note:**    - IRF-SYS-045 (GH#71): organvm irf stats undercounting tail items due to parsing sentinel bug
+- `ATM-017758` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463 with Priority **P1**, not P2 as mentioned in the audit. It addresses YAML duplicate key repair in application-pipeline. This appears to be pr...
+- `ATM-017825` (2026-04-02, meta) — **Data Integrity Note:**                                                                   - IRF-SYS-045 (GH#71): organvm irf stats undercounting tail items due to parsing        sentinel bug
+- `ATM-017857` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463 with Priority **P1**, not       P2 as mentioned in the audit. It addresses YAML duplicate key repair in                    application-pipeli...
+- `ATM-017914` (2026-04-02, meta) — **Data Integrity Note:**                                                                   - IRF-SYS-045 (GH#71): organvm irf stats undercounting tail items due to parsing        sentinel bug
+- `ATM-017946` (2026-04-02, meta, employment) — **IRF-OSS-039** - Already exists in the IRF at line 463 with Priority **P1**, not       P2 as mentioned in the audit. It addresses YAML duplicate key repair in                    application-pipeli...
+- `ATM-018015` (2026-04-02, meta) — Data Integrity Note:    - IRF-SYS-045 (GH#71): organvm irf stats undercounting tail items due to parsing sentinel bug
+- `ATM-018047` (2026-04-02, meta, employment) — IRF-OSS-039 - Already exists in the IRF at line 463 with Priority P1, not P2 as mentioned in the audit. It addresses YAML duplicate key repair in application-pipeline. This appears to be properly r...
 - `ATM-018072` (2026-04-02, meta, security) — Verify/Clean Registry - The duplicate "source" key issue appears to be resolved or misidentified - The single source field at line 9 is metadata about the registry itself - No actionable fix needed...
 - `ATM-017164` (2026-04-02, meta) — **Send protocol-compliant email** (draft ready, Gmail ID: r2689591423182279605)
 - `ATM-017331` (2026-04-02, organ-iv) — Resolve OpenClaw V-01 — 3B model security issue
 - `ATM-017338` (2026-04-02, organ-iv) — Resolve OpenClaw V-01 (3B model security issue)
 - `ATM-018127` (2026-04-02, personal) — Omega Scorecard: Composite score improved from 3.0 to 4.7.
+- `ATM-016425` (2026-04-01, UNIVERSAL) — every macro system down to it's micro agents are programmable matter for potential modulation by other sources
 - `ATM-016538` (2026-04-01, organ-iv) — Email reply — Draft created in Gmail   thread, ready to send. Short and   professional: confirms the Monday slot,   expresses interest, no   over-communication. Review it at your   drafts.
 - `ATM-016572` (2026-04-01, employment, UNIVERSAL) — SOP Standardized    Section XIV of the dossier now contains   the full SOP: First Interview Conversion   — 6 phases, 26 steps, reusable for every   future positive conversion. This is now   the pla...
-- `ATM-016353` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...
-- `ATM-016591` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...
-- `ATM-016811` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...
-- `ATM-016818` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...
-- `ATM-016821` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)      * Precision Mode Restored: Performed   a        massive cleanup of the active/        pipeline. Moved 78 surplus entries        back to research_pool/.          * C...
-- `ATM-016856` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...
-- `ATM-016863` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...
-- `ATM-016866` (2026-04-01, organ-iii, meta) — Accomplished (All That Was)      * Precision Mode Restored: Performed   a        massive cleanup of the active/        pipeline. Moved 78 surplus entries        back to research_pool/.          * C...
 - `ATM-016576` (2026-04-01, organ-iv) — The consulting pipeline is the actual   play. Tony + Scott + the venture network   have higher expected value per hour   invested. Jobs are runway. Consulting is   the bridge to the studio. Don't l...
-- `ATM-015783` (2026-04-01, unscoped) — intake_router/__main__.py — standalone entry: python -m intake_router
-- `ATM-015796` (2026-04-01, unscoped) — intake_router/__main__.py — standalone entry: python -m intake_router
+- `ATM-010824` (2026-03-31, meta) — Replace with canonical source or a typed bridge - I should create a single source of truth for organ definitions that can be imported throughout the app
+- `ATM-010865` (2026-03-31, UNIVERSAL, organ-iv) — making knowledge reproducible helps us refine it ourselves; every tenured professor is handing a syllabus with the reading list for their next publication to non consent the room into being his wri...
+- `ATM-010911` (2026-03-31, UNIVERSAL, meta) — skeletal--consolidate: Create the formation gate for       the universal constitution.
+- `ATM-010914` (2026-03-31, meta) — reproductive--instantiate: Create the reproduction       organ.
+- `ATM-010919` (2026-03-31, UNIVERSAL, meta) — Nervous System (Process Integrity): Fixing the       DONE-ID collision and implementing the Pipeline       Audit Trail.
+- `ATM-010956` (2026-03-31, meta) — Replace with canonical source or a typed bridge - I   should create a single source of truth for organ   definitions that can be imported throughout the app
+- `ATM-010984` (2026-03-31, meta) — Build the capture tool — a zk command that creates   issues with minimal friction
+- `ATM-011021` (2026-03-31, meta) — SOP module = the instrument — publishable,   open-sourceable via Network Testament. "Here's how we do    completeness verification."
+- `ATM-011039` (2026-03-31, organ-iv, UNIVERSAL) — Advance the Pawn Storm: Signal the       OpenCode agent to implement the       Onboarding Panel. This forces the       opponent (visitor bounce rate) to react       to the system rather than ignore...
+- `ATM-011055` (2026-03-31, meta) — The IRF has SYS-040 through    SYS-043 for the patch architecture.
+- `ATM-011080` (2026-03-31, meta) — Each function is standalone, imports via `importlib` at runtime
+- `ATM-011090` (2026-03-31, meta) — #1:  Run skeletal--define test suite, mark gates PASS    After those three: the first cocoon EMERGES.  ❯   NEXT SESSION — 3 items, in order:
+- `ATM-011094` (2026-03-31, meta) — Each cocoon gate is a TASK with declared boundary (which repos, which       files)
+- `ATM-011124` (2026-03-31, meta) — Read the active gate contracts — they declare what   each cocoon needs to emerge
+- `ATM-011126` (2026-03-31, personal, UNIVERSAL) — 263 memory files are on GitHub via chezmoi — if the   machine dies, chezmoi init --apply restores everything
+- `ATM-011140` (2026-03-31, personal) — Move the node test into packages/shibui-      rhetoric/test/rhetoric.test.mjs and turn      the plugin file into a pure package re-      export shim.
+- `ATM-011144` (2026-03-31, personal) — The test file at `plugins/__tests__/shibui-rhetoric.test.mjs`
 - `ATM-011220` (2026-03-31, UNIVERSAL, personal) — gemini, codex, opencode need parallel non competing workstreams and prompts
+- `ATM-011225` (2026-03-31, personal) — one sentence containing respective prompts location and action to read and proceed
+- `ATM-011226` (2026-03-31, unscoped) — today we started passing off work loads to other agents, we need to record their contributions, and via that data, refine how we prompt them, what theyre feeded, and how to get preciser results
+- `ATM-011248` (2026-03-31, meta, employment) — two examples of directories agents were handed off work outside claude: /Users/4jp/Workspace/4444J99/application-pipeline /Users/4jp/Workspace/meta-organvm/post-flood
+- `ATM-011266` (2026-03-31, UNIVERSAL) — we want a systematic record of their energy contrib and take
+- `ATM-011270` (2026-03-31, unscoped) — expansion: there assignment is a container impassable, it gives them skils to use, directories to check, potential issues
+- `ATM-011284` (2026-03-31, UNIVERSAL, meta) — Run the monitor. python -m       contrib_engine monitor — check   all 22 PRs for new reviews,         comments, CI status changes. This    is 5 minutes of work that could   unlock a merge. The     ...
+- `ATM-011313` (2026-03-31, meta) — provide your take on how the sequence would be done flawlessly
+- `ATM-011316` (2026-03-31, organ-iv) — create your recs on how this would be remedied or acheived flawlessly
+- `ATM-011329` (2026-03-31, UNIVERSAL) — ❯ now, review the ACTIONS contained in this repo, all scripts, all efforts of force, dead alive retired missing   etc
+- `ATM-011331` (2026-03-31, UNIVERSAL) — either sidebar this or roll in as important:❯ now, review the ACTIONS contained in this repo, all scripts, all efforts of force, dead alive retired missing   etc
+- `ATM-011333` (2026-03-31, UNIVERSAL, organ-iv) — ❯ now, review the ACTIONS contained in this repo, all scripts, all efforts of force, dead alive retired missing   etc
+- `ATM-011336` (2026-03-31, UNIVERSAL, personal) — reset and revving new, all engines , parallel efforts work along this sequence
+- `ATM-011338` (2026-03-31, UNIVERSAL, meta) — ❯ either sidebar this or roll in as important:❯ now, review   the ACTIONS contained in this repo, all scripts, all          efforts of force, dead alive retired missing                  etc
+- `ATM-011340` (2026-03-31, UNIVERSAL, personal) — ❯ either sidebar this or roll in as important:❯ now, review   the ACTIONS contained in this repo, all scripts, all          efforts of force, dead alive retired missing                  etc
+- `ATM-011347` (2026-03-31, meta) — Project Board Hygiene — 72 Open Issues    35 gate contracts + 18 cocoon expansions + 19 pre-existing.    The board IS the work index now (V1 IRF superseded). No   triage pass has been run since the...
+- `ATM-011435` (2026-03-31, unscoped) — Customize or delete the example files in scripts/, references/, and       assets/
+- `ATM-011441` (2026-03-31, organ-iv, employment) — OpenAI openai-agents-python#618 — MCP semaphore leak.   Your exact domain. Contributing an MCP fix to OpenAI's   agent framework while your application is active is the   highest-signal move on thi...
+- `ATM-011451` (2026-03-31, unscoped) — OpenAI #2802 — Maintainer seratch says the fix is   insufficient, broader scope needed. Let me read the full   response before deciding how to handle it.
+- `ATM-011453` (2026-03-31, UNIVERSAL) — Check all 22 open PRs for review responses — the autopsy    protocol starts here
+- `ATM-011458` (2026-03-31, UNIVERSAL) — Run the monitor. python -m contrib_engine monitor —   check all 22 PRs for new reviews, comments, CI status   changes. This is 5 minutes of work that could unlock a   merge. The temporal-sdk-python...
+- `ATM-011476` (2026-03-31, meta) — Project Board Hygiene — 72 Open Issues    35 gate contracts + 18 cocoon expansions + 19 pre-existing.    The board IS the work index now (V1 IRF superseded). No   triage pass has been run since the...
+- `ATM-011493` (2026-03-31, UNIVERSAL) — and as a organ's piping receives a pulse of air through all it's lining nearly instant, yes the signal is a pulse from source
+- `ATM-011494` (2026-03-31, unscoped) — it's life existing through time at almsot instant   a gravitational forces will attempt to make improvements
+- `ATM-011548` (2026-03-31, unscoped) — I’m reconciling those identifiers now       so                                                           the cross-org count reflects actual topology instead     of                                 ...
+- `ATM-011551` (2026-03-31, meta) — I’m writing a short dated      plan                                                         record now, then I’ll deliver the audited hierarchy      with                                            ...
+- `ATM-011552` (2026-03-31, organ-iv) — Read the governing agent instructions and       works                                                              pace-specific guidance.                                 8 +2.
+- `ATM-011560` (2026-03-31, unscoped) — Turn your SOP into a clean, corrected Markdown      document.
+- `ATM-011561` (2026-03-31, unscoped) — Implement it as a repeatable script under tools/ so      future audits are one command.
+- `ATM-011613` (2026-03-31, meta, personal) — 3.28 npm config get registry # https://registry.npmjs.org/  npm view @modelcontextprotocol/sdk version # 1.28.0 https://registry.npmjs.org/
+- `ATM-011630` (2026-03-31, meta) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-011650` (2026-03-31, UNIVERSAL, personal) — [https://www.mchip.net](https://www.mchip.net/browse/u2EE3C/243867/Digital%20Systems%20Testing%20And%20Testable%20  Design%20Solution.pdf)
+- `ATM-011663` (2026-03-31, personal) — They have existing tests in tests/ directory (100+ test files)
 - `ATM-011729` (2026-03-31, organ-iv) — NLnet — submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.
+- `ATM-011837` (2026-03-31, UNIVERSAL, organ-iv) — Produces verifiable output — every workstream has a check that confirms correctness
+- `ATM-011841` (2026-03-31, organ-iv) — After changes, run: source .venv/bin/activate && python -m pytest tests/[relevant_test].py      -q
+- `ATM-011863` (2026-03-31, organ-iv) — Publish the 2 READY Testament posts (CONT-001, CONT-004). PUBLISH is 2% — make it 3%.
+- `ATM-011878` (2026-03-31, UNIVERSAL, organ-iv) — Creative Capital — 3 days to deadline, ~80% ready, needs 6 short portal answers + Medicaid call
+- `ATM-011879` (2026-03-31, organ-iv) — Morning digest is broken — ruamel.yaml missing from venv, blocking standup/campaign/followup
+- `ATM-011884` (2026-03-31, UNIVERSAL, organ-iv) — 5 overlapping phrases — all generic filler, need to revise cover letter
+- `ATM-011886` (2026-03-31, UNIVERSAL, organ-iv) — They have a pipeline system with scripts, LaunchAgents, standards validation
+- `ATM-011909` (2026-03-31, organ-iv) — The dry-run passes: Standards L1 PASS (quorum 2/3), cover letter 0 overlap
+- `ATM-011940` (2026-03-31, organ-iv) — Proof of eligibility (U.S. citizenship, permanent resident, Tribal ID, or O-1 visa verification)  ## ROUND III: Panel Review  Applicants selected by our external reviewers to advance to Round III w...
+- `ATM-011960` (2026-03-31, UNIVERSAL, organ-iv) — Add specific example of artistic output the system has produced (the methodology in action)
+- `ATM-011961` (2026-03-31, organ-iv) — Clarify timeline for "33 named development sprints" (start date, duration)
+- `ATM-011964` (2026-03-31, organ-iv) — "Promotion state machine" and "dependency validation" are opaque terms
+- `ATM-011969` (2026-03-31, organ-iv) — Add one prior grant/fellowship mention in bio or cover letter
+- `ATM-011972` (2026-03-31, personal, employment) — Resume has 0 experience entries (minimum 4 needed)  **P1 - High Priority:**
+- `ATM-012014` (2026-03-31, meta) — Gap Analysis      - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-   publica)      - GAP_RATIO: 14.3%      - Diagnostic: Tight Governance. The superproject is        nearly synchronous with its decla...
+- `ATM-012037` (2026-03-31, meta) — ✦ Following the Superproject Topology Audit SOP, I have   conducted a complete analysis of the meta-organvm   repository.    Superproject Topology Audit: META-ORGANVM   Date: 2026-03-31     Status:...
+- `ATM-012039` (2026-03-31, meta, UNIVERSAL) — Actual Inventory    - ACTUAL_REPO_COUNT: 14    - ACTUAL_REPOS: All declared repos + cvrsvs-honorvm,      aerarium--res-publica.    - ACTUAL_DIRS (Non-Git): .atoms, data, docs, intake, ╰────────────...
+- `ATM-012042` (2026-03-31, meta) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-012060` (2026-03-31, meta) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-012075` (2026-03-31, meta) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-012103` (2026-03-31, meta) — Gap Analysis      - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-   publica)      - GAP_RATIO: 14.3%      - Diagnostic: Tight Governance. The superproject is        nearly synchronous with its decla...
+- `ATM-012125` (2026-03-31, UNIVERSAL, personal) — [https://www.mchip.net](https://www.mchip.net/browse/u2EE3C/243867/Digital%20Systems%20Testing%20And%20Testable%20  Design%20Solution.pdf)
+- `ATM-012138` (2026-03-31, personal) — They have existing tests in tests/ directory (100+ test files)
 - `ATM-012203` (2026-03-31, personal) — NLnet — submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.
+- `ATM-012311` (2026-03-31, UNIVERSAL, personal) — Produces verifiable output — every workstream has a check that confirms correctness
+- `ATM-012315` (2026-03-31, personal) — After changes, run: source .venv/bin/activate && python -m pytest tests/[relevant_test].py      -q
+- `ATM-012337` (2026-03-31, personal) — Publish the 2 READY Testament posts (CONT-001, CONT-004). PUBLISH is 2% — make it 3%.
+- `ATM-012352` (2026-03-31, UNIVERSAL, personal) — Creative Capital — 3 days to deadline, ~80% ready, needs 6 short portal answers + Medicaid call
+- `ATM-012353` (2026-03-31, personal) — Morning digest is broken — ruamel.yaml missing from venv, blocking standup/campaign/followup
+- `ATM-012358` (2026-03-31, UNIVERSAL, personal) — 5 overlapping phrases — all generic filler, need to revise cover letter
+- `ATM-012360` (2026-03-31, UNIVERSAL, personal) — They have a pipeline system with scripts, LaunchAgents, standards validation
+- `ATM-012383` (2026-03-31, personal) — The dry-run passes: Standards L1 PASS (quorum 2/3), cover letter 0 overlap
+- `ATM-012414` (2026-03-31, personal) — Proof of eligibility (U.S. citizenship, permanent resident, Tribal ID, or O-1 visa verification)  ## ROUND III: Panel Review  Applicants selected by our external reviewers to advance to Round III w...
+- `ATM-012434` (2026-03-31, UNIVERSAL, personal) — Add specific example of artistic output the system has produced (the methodology in action)
+- `ATM-012435` (2026-03-31, personal) — Clarify timeline for "33 named development sprints" (start date, duration)
+- `ATM-012438` (2026-03-31, personal) — "Promotion state machine" and "dependency validation" are opaque terms
+- `ATM-012443` (2026-03-31, personal) — Add one prior grant/fellowship mention in bio or cover letter
+- `ATM-012446` (2026-03-31, personal, employment) — Resume has 0 experience entries (minimum 4 needed)  **P1 - High Priority:**
+- `ATM-012480` (2026-03-31, personal) — CI checks for contract drift, parsing trust, version integrity, render lifecycle  Given this is in plan mode, I should:
+- `ATM-012516` (2026-03-31, personal) — When I searched, I didn't find any existing speech-score-engine repo in this workspace
+- `ATM-012547` (2026-03-31, personal) — Create new repo `sign-signal--voice-synth` in this workspace
+- `ATM-012548` (2026-03-31, personal) — Highest ideal functionality - meaning we should design for the best possible implementation
+- `ATM-012550` (2026-03-31, personal) — "Best idea win" - meaning we should pick the best approach from alternatives
+- `ATM-012566` (2026-03-31, personal) — Mix of free/test/paid options  Operational mode is now BUILD. I need to:
+- `ATM-012618` (2026-03-31, UNIVERSAL, personal) — Each "layer" (now understood as "island") should be specified theoretically as a complete, exciting system
+- `ATM-012619` (2026-03-31, personal) — The specification should focus on the unique potential of each island
+- `ATM-012632` (2026-03-31, personal) — Design spec for Island 2 features that are in scope for first release
+- `ATM-012645` (2026-03-31, personal) — Full specifications for each island  Since I can't write files (plan mode), I'll output the complete plan as a comprehensive markdown document that the user can review.  Let me structure this as:
+- `ATM-012659` (2026-03-31, meta, personal) — 3.28 npm config get registry # https://registry.npmjs.org/  npm view @modelcontextprotocol/sdk version # 1.28.0 https://registry.npmjs.org/
+- `ATM-012666` (2026-03-31, UNIVERSAL) — Step 7 — Stratum Classification    * Exhaustive: All 6 major root directories classified as Stratum III (Infrastructure).    * Sub-Classification:        * Operational Tools: contrib_engine/, scrip...
+- `ATM-012670` (2026-03-31, meta, personal) — 3.28 npm config get registry # https://registry.npmjs.org/  npm view @modelcontextprotocol/sdk version # 1.28.0 https://registry.npmjs.org/
+- `ATM-012682` (2026-03-31, UNIVERSAL, personal) — [https://www.mchip.net](https://www.mchip.net/browse/u2EE3C/243867/Digital%20Systems%20Testing%20And%20Testable%20  Design%20Solution.pdf)
+- `ATM-012695` (2026-03-31, personal) — They have existing tests in tests/ directory (100+ test files)
+- `ATM-012748` (2026-03-31, meta, personal) — If this machine dies:   - Code: GitHub has it (a950ee0)   - Plan: GitHub has it (in .claude/plans/)   - IRF completions: GitHub has them (2aca32f in meta-organvm)   - Issue comments: GitHub has the...
+- `ATM-012754` (2026-03-31, meta, UNIVERSAL) — The S37 Codex session's work was intact — all 11 review-assist        functions present, all CLI subcommands wired, 4 original GH issues      still tracked, runtime archive safe in meta repo.
+- `ATM-012765` (2026-03-31, unscoped) — ,       1455         _make_receipt("D-003", "gemini", "c            ontent_generation", "repo-a", "full_revert"            , 2, fix_commits=14),       1456         _make_receipt("D-004", "gemini", ...
+- `ATM-012771` (2026-03-31, unscoped) — ,       2431         _receipt("D-003", "opencode", "clea            n", 7),       2432     ]       2433     bulletin = generate_bulletin(receipts)       2434     assert "gemini" in bulletin.markdow...
+- `ATM-012773` (2026-03-31, unscoped) — Subagent-Driven (recommended) — I dispatch a fresh   subagent per task, review between tasks, fast iteration
+- `ATM-012776` (2026-03-31, unscoped) — Beat numbering — dispatches are numbered on the plan's   clock
+- `ATM-012787` (2026-03-31, unscoped) — When new work is discovered, add to the appropriate organ section with priority      and source.
+- `ATM-012793` (2026-03-31, unscoped) — No existing test broken, no existing file corrupted       Commits (5 total)
+- `ATM-012820` (2026-03-31, meta) — No existing test broken, no existing file corrupted       Commits (5 total)
+- `ATM-012836` (2026-03-31, organ-iv, meta) — cd /Users/4jp/Workspace/organvm-iv-taxis/orchestration-start-here
+- `ATM-012846` (2026-03-31, UNIVERSAL, meta) — Produces verifiable output — every workstream has a check that confirms correctness
+- `ATM-012850` (2026-03-31, meta) — After changes, run: source .venv/bin/activate && python -m pytest tests/[relevant_test].py        -q
+- `ATM-012872` (2026-03-31, meta) — Publish the 2 READY Testament posts (CONT-001, CONT-004). PUBLISH is 2% — make it 3%.
+- `ATM-012887` (2026-03-31, UNIVERSAL, meta) — Creative Capital — 3 days to deadline, ~80% ready, needs 6 short portal answers + Medicaid call
+- `ATM-012888` (2026-03-31, meta) — Morning digest is broken — ruamel.yaml missing from venv, blocking standup/campaign/followup
+- `ATM-012893` (2026-03-31, UNIVERSAL, meta) — 5 overlapping phrases — all generic filler, need to revise cover letter
+- `ATM-012924` (2026-03-31, meta, UNIVERSAL) — Updated both governance tests atomically (quality-governance.test.ts + quality-governance-v2.test.ts)
+- `ATM-012947` (2026-03-31, organ-iv, UNIVERSAL) — Advance the Pawn Storm: Signal the                                                                            OpenCode agent to implement the                                                        ...
+- `ATM-012966` (2026-03-31, meta) — Create organized knowledge                                                                                 base
+- `ATM-013053` (2026-03-31, UNIVERSAL, meta) — Produces verifiable output — every workstream has a check that confirms correctness
+- `ATM-013057` (2026-03-31, meta) — After changes, run: source .venv/bin/activate && python -m pytest tests/[relevant_test].py        -q
+- `ATM-013079` (2026-03-31, meta) — Publish the 2 READY Testament posts (CONT-001, CONT-004). PUBLISH is 2% — make it 3%.
+- `ATM-013094` (2026-03-31, UNIVERSAL, meta) — Creative Capital — 3 days to deadline, ~80% ready, needs 6 short portal answers + Medicaid call
+- `ATM-013095` (2026-03-31, meta) — Morning digest is broken — ruamel.yaml missing from venv, blocking standup/campaign/followup
+- `ATM-013100` (2026-03-31, UNIVERSAL, meta) — 5 overlapping phrases — all generic filler, need to revise cover letter
+- `ATM-013113` (2026-03-31, meta) — When new work is discovered, add to the appropriate organ section with priority      and source.
+- `ATM-013120` (2026-03-31, meta) — Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 - `ATM-013130` (2026-03-31, UNIVERSAL, meta) — **Install lefthook:** `brew install lefthook` — then hooks work properly
+- `ATM-013157` (2026-03-31, meta) — Check source-drop/chatgpt/inbox/ for the official data export
+- `ATM-013158` (2026-03-31, meta) — Re-launch ChatGPT desktop app, sign in fresh, verify   conversation_count ≥ 600
 - `ATM-013162` (2026-03-31, meta) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-013168` (2026-03-31, meta) — Run cce migration review-ids --dry-run --json against production      site      (CCE_PROJECT_ROOT=../conversation-corpus-site/)
+- `ATM-013178` (2026-03-31, meta) — Run cce provider discover to verify conversation count recovers
+- `ATM-013185` (2026-03-31, meta) — Update fetch_chatgpt_project() if project detail endpoint also      differs
+- `ATM-013187` (2026-03-31, organ-iv, meta) — Each document can be read in isolation by a cold-start agent
+- `ATM-013202` (2026-03-31, unscoped) — our next life is begin to take corporeal state and So we return to the source to recycle and become pure.
+- `ATM-013209` (2026-03-31, unscoped) — It's the attempt of helping your future self have a smoother transition.
+- `ATM-013216` (2026-03-31, meta) — It starts at the top directory, assesses, creates a bunch of children that go into each directory below, and so on and so forth until they can't go down any further or they lose a function.
+- `ATM-013222` (2026-03-31, organ-iv, meta) — Review the following as these are the points of contact from this universe as we evolve into the next. :/Users/4jp/Workspace/meta-organvm /Users/4jp/Workspace/organvm-iv-taxis /Users/4jp/Workspace/...
+- `ATM-013223` (2026-03-31, meta) — We need to open a portal between the triptych locations that are the beginning of the end.
+- `ATM-013242` (2026-03-31, organ-iv, meta) — Verify cross-references: where taxis obituary says "isotope of engine X", meta      obituary should identify X
+- `ATM-013253` (2026-03-31, meta) — Merge Commands + Quick Commands — two redundant sections become one compact table   (saves ~7.7k)
+- `ATM-013260` (2026-03-31, meta) — Merge Commands + Quick Commands (biggest win, cleanest edit)
+- `ATM-013265` (2026-03-31, meta) — Read compressed file end-to-end to verify no behavioral rules lost
+- `ATM-013267` (2026-03-31, meta) — make test-fast — smoke test (pipeline_lib, validate, run, cli tests)
+- `ATM-013279` (2026-03-31, meta) — Merge Commands + Quick Commands — two redundant sections become one compact table   (saves ~7.7k)
+- `ATM-013286` (2026-03-31, meta) — Merge Commands + Quick Commands (biggest win, cleanest edit)
+- `ATM-013291` (2026-03-31, meta) — Read compressed file end-to-end to verify no behavioral rules lost
+- `ATM-013293` (2026-03-31, meta) — make test-fast — smoke test (pipeline_lib, validate, run, cli tests)
+- `ATM-013328` (2026-03-31, meta) — and what sequences via my prompting are patterns for formalizing
+- `ATM-013329` (2026-03-31, meta) — That's your translation of my prompt sequences from our history, or the data is coming from elsewhere.
+- `ATM-013334` (2026-03-31, meta) — This session is being continued from a previous conversation that ran out of context. The summary below covers the earlier portion of the conversation.  Summary:
+- `ATM-013365` (2026-03-31, UNIVERSAL, meta) — Direct users install CCE themselves (individuals, researchers)
+- `ATM-013366` (2026-03-31, meta) — Platform integrators embed CCE into their products (their end users are the   "applicants")
+- `ATM-013371` (2026-03-31, meta) — Compliance audit trail                5. They charge their users
+- `ATM-013376` (2026-03-31, UNIVERSAL, meta) — Package the MCP server as a standalone install (pipx install cce[mcp])
+- `ATM-013381` (2026-03-31, meta) — Write the SDK wrapper in conversation-corpus--surfaces (thin Python client over CLI)
+- `ATM-013398` (2026-03-31, meta) — v1 — Write the spec in CCE's present vocabulary (the body that exists now)
+- `ATM-013402` (2026-03-31, organ-iii, meta) — Add a one-page product brief (Stranger). Split the audience. Engineers get the   architecture spec. Humans get the brief. One command, one outcome, one price.
+- `ATM-013403` (2026-03-31, meta) — Add a cash flow bridge section (Accountant). Model the survival period. Make the   benefits cliff explicit. Include LLC structure guidance.
+- `ATM-013414` (2026-03-31, meta) — Merge Commands + Quick Commands — two redundant sections become one compact table   (saves ~7.7k)
+- `ATM-013421` (2026-03-31, meta) — Merge Commands + Quick Commands (biggest win, cleanest edit)
+- `ATM-013426` (2026-03-31, meta) — Read compressed file end-to-end to verify no behavioral rules lost
+- `ATM-013428` (2026-03-31, meta) — make test-fast — smoke test (pipeline_lib, validate, run, cli tests)
+- `ATM-013453` (2026-03-31, UNIVERSAL, meta) — Select ONE Coinbase role (recommend:                                                    coinbase-senior-software-engineer-consumer-engineering-test-infrastru — test               infrastructure ali...
+- `ATM-013471` (2026-03-31, personal, UNIVERSAL) — Pull prompts from all Gemini, Codex, and Claude    sessions for the portfolio project
 - `ATM-013473` (2026-03-31, UNIVERSAL, meta) — Review all plan files (.gemini/plans/, .codex/plans/,    .claude/plans/) and check implementation status
+- `ATM-013475` (2026-03-31, UNIVERSAL, meta) — Check all 22 open PRs for review responses — the autopsy protocol starts      here
 - `ATM-013477` (2026-03-31, UNIVERSAL, meta) — Record your first fieldwork observations retroactively — you already have     24 repos of accumulated process intelligence in your head. Dump the most vivid    observations from each contribution i...
+- `ATM-013481` (2026-03-31, meta) — Logic check Ensure internal consistency and sound reasoning Eliminate contradictions and reinforce logical coherence
+- `ATM-013484` (2026-03-31, meta) — Ethos review Examine credibility, authority, and trustworthiness Enhance the speaker’s or writer’s reliability and authority
+- `ATM-013491` (2026-03-31, meta) — Public sharing — ready when you are (Mastodon, HN, personal site)
+- `ATM-013493` (2026-03-31, UNIVERSAL, meta) — Guiding Principle All artists create within recurring lanes of thought and expression. By acknowledging these lanes, we can design a system that both reflects and directs our creative evolution.  ---
+- `ATM-013495` (2026-03-31, meta) — The Framework in Practice Ingest: Collect and acknowledge the full range of creative work. Digest: Identify which polarity each project belongs to. Suggest: Use this awareness to guide future proje...
+- `ATM-013501` (2026-03-31, meta) — Skills — 24 to delete, 14 to keep, 8 to add, top 5 pin order
+- `ATM-013508` (2026-03-31, meta) — Run `organvm irf list --priority P0` to check for urgent items
+- `ATM-013509` (2026-03-31, meta) — Run `organvm irf list --domain XXX` for your domain's open items
+- `ATM-013528` (2026-03-31, meta) — process: at the start Immediately knowing the domains within the realm of the project being started, knowing the phases it would need to pass through to become reality.
+- `ATM-013550` (2026-03-31, unscoped) — It's kind of like socializing or keeping a hand below your head above you trying to get some sympathy or get some jealousy, regardless of the position.
+- `ATM-013553` (2026-03-31, unscoped) — There is a Talisman or object that attunes you to the sources.
+- `ATM-013563` (2026-03-31, UNIVERSAL) — each action taken No matter the density and weight, emotionally or literally. non unique actions do get logged
+- `ATM-013567` (2026-03-31, personal) — Merge Commands + Quick Commands — two redundant sections become one compact table   (saves ~7.7k)
+- `ATM-013574` (2026-03-31, personal) — Merge Commands + Quick Commands (biggest win, cleanest edit)
+- `ATM-013579` (2026-03-31, personal) — Read compressed file end-to-end to verify no behavioral rules lost
+- `ATM-013581` (2026-03-31, personal) — make test-fast — smoke test (pipeline_lib, validate, run, cli tests)
+- `ATM-013606` (2026-03-31, UNIVERSAL, personal) — Select ONE Coinbase role (recommend:                                                    coinbase-senior-software-engineer-consumer-engineering-test-infrastru — test               infrastructure ali...
+- `ATM-013623` (2026-03-31, unscoped) — Check source-drop/chatgpt/inbox/ for the official data export
+- `ATM-013624` (2026-03-31, unscoped) — Re-launch ChatGPT desktop app, sign in fresh, verify   conversation_count ≥ 600
 - `ATM-013628` (2026-03-31, unscoped) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-013646` (2026-03-31, personal) — Check source-drop/chatgpt/inbox/ for the official data export
+- `ATM-013647` (2026-03-31, personal) — Re-launch ChatGPT desktop app, sign in fresh, verify   conversation_count ≥ 600
 - `ATM-013651` (2026-03-31, personal) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-013700` (2026-03-31, personal) — Turn your SOP into a clean, corrected Markdown             document.
+- `ATM-013701` (2026-03-31, personal) — Implement it as a repeatable script under tools/      so                                                              future audits are one command.                                                 ...
+- `ATM-013718` (2026-03-31, organ-iv, personal) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-013719` (2026-03-31, organ-iv, personal) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
 - `ATM-013767` (2026-03-31, organ-i) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-013834` (2026-03-31, organ-iv, organ-i) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-013835` (2026-03-31, organ-iv, organ-i) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-013878` (2026-03-31, unscoped) — Check source-drop/chatgpt/inbox/ for the official data export
+- `ATM-013879` (2026-03-31, unscoped) — Re-launch ChatGPT desktop app, sign in fresh, verify   conversation_count ≥ 600
 - `ATM-013883` (2026-03-31, unscoped) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-013932` (2026-03-31, unscoped) — Turn your SOP into a clean, corrected Markdown             document.
+- `ATM-013933` (2026-03-31, unscoped) — Implement it as a repeatable script under tools/      so                                                              future audits are one command.                                                 ...
+- `ATM-013950` (2026-03-31, organ-iv) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-013951` (2026-03-31, organ-iv) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-013996` (2026-03-31, meta) — Check source-drop/chatgpt/inbox/ for the official data export
+- `ATM-013997` (2026-03-31, meta) — Re-launch ChatGPT desktop app, sign in fresh, verify   conversation_count ≥ 600
 - `ATM-014001` (2026-03-31, meta) — Use the official ChatGPT data export (requested in S38,       undelivered)
+- `ATM-014050` (2026-03-31, meta) — Turn your SOP into a clean, corrected Markdown             document.
+- `ATM-014051` (2026-03-31, meta) — Implement it as a repeatable script under tools/      so                                                              future audits are one command.                                                 ...
+- `ATM-014068` (2026-03-31, organ-iv, meta) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-014069` (2026-03-31, organ-iv, meta) — ⎿  Read 310 lines                                                                                                   ⏺ Read(/Users/4jp/Workspace/organvm-iv-taxis/tool-         interaction-design/.cl...
+- `ATM-014121` (2026-03-31, organ-iv) — 44519d9 — chore(superproject): add cvrsvs-honorvm and aerarium--res-publica to superproject boundary
+- `ATM-014125` (2026-03-31, organ-iv) — 44519d9 — chore(superproject): add cvrsvs-honorvm and aerarium--res-publica to superproject boundary
+- `ATM-014129` (2026-03-31, organ-iv) — 44519d9 — chore(superproject): add cvrsvs-honorvm and aerarium--res-publica to superproject boundary
+- `ATM-014230` (2026-03-31, organ-iv) — OOM crashes are valuable data about which agents can run the SOP
+- `ATM-014238` (2026-03-31, meta, organ-iv) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-014250` (2026-03-31, organ-iv) — orchestration-start-here - classified as a "Hub" rather than superproject (0 submodules)
+- `ATM-014261` (2026-03-31, organ-iv) — First command: `.gitmodules` check + submodule status + loop through `*/` directories
+- `ATM-014270` (2026-03-31, meta, organ-iv) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-014287` (2026-03-31, organ-iv) — First understand what the user might want to do with this audit
+- `ATM-014289` (2026-03-31, organ-iv) — Present a well-formed plan for addressing any issues identified  Let me think about what potential actions could be taken based on this audit:  **Issues identified:**
+- `ATM-014299` (2026-03-31, organ-iv) — OOM crashes are valuable data about which agents can run the SOP
+- `ATM-014307` (2026-03-31, meta, organ-iv) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-014319` (2026-03-31, organ-iv) — orchestration-start-here - classified as a "Hub" rather than superproject (0 submodules)
+- `ATM-014327` (2026-03-31, meta, organ-iv) — Gap Analysis    - GAP_COUNT: 2 (cvrsvs-honorvm, aerarium--res-publica)    - GAP_RATIO: 14.3%    - Diagnostic: Tight Governance. The superproject is      nearly synchronous with its declared boundar...
+- `ATM-014349` (2026-03-31, UNIVERSAL, organ-iv) — Direct users install CCE themselves (individuals, researchers)
+- `ATM-014350` (2026-03-31, organ-iv) — Platform integrators embed CCE into their products (their end users are the   "applicants")
+- `ATM-014355` (2026-03-31, organ-iv) — Compliance audit trail                5. They charge their users
+- `ATM-014360` (2026-03-31, UNIVERSAL, organ-iv) — Package the MCP server as a standalone install (pipx install cce[mcp])
+- `ATM-014365` (2026-03-31, organ-iv) — Write the SDK wrapper in conversation-corpus--surfaces (thin Python client over CLI)
+- `ATM-014382` (2026-03-31, organ-iv) — v1 — Write the spec in CCE's present vocabulary (the body that exists now)
+- `ATM-014386` (2026-03-31, organ-iii, organ-iv) — Add a one-page product brief (Stranger). Split the audience. Engineers get the   architecture spec. Humans get the brief. One command, one outcome, one price.
+- `ATM-014387` (2026-03-31, organ-iv) — Add a cash flow bridge section (Accountant). Model the survival period. Make the   benefits cliff explicit. Include LLC structure guidance.
+- `ATM-014404` (2026-03-31, organ-iv) — This is a resumed session (S41) for the conversation-corpus-engine (CCE)
+- `ATM-014423` (2026-03-31, personal) — memory should immediately trigger reconcilliation checks with reality rendered
+- `ATM-014424` (2026-03-31, UNIVERSAL, organ-iv) — i need to pause everything--freeze tempo until the record button tracks what the actions are and how the actions add up to sequences how sequences snowball into prompts  and chains and a project wh...
+- `ATM-014425` (2026-03-31, UNIVERSAL, organ-iv) — everything else precedes once the actions have atemporal power;
+- `ATM-014447` (2026-03-31, organ-iv) — when i am prompting you, each idea is densely tied to an abstraction that might need no excavating or centuries worth
+- `ATM-014448` (2026-03-31, organ-iv) — they are moving through spectrums of ever changing paramteres defining a dynamic state
+- `ATM-014466` (2026-03-31, UNIVERSAL, meta) — The Secondary Artifacts: Fan-made memes, "receipt" threads on Twitter, or recap podcasts. These take a 3-second clip of a housewife yelling and turn it into a universal symbol for "being overwhelmed."
+- `ATM-014479` (2026-03-31, UNIVERSAL, organ-iv) — > find the system's time manifestations, ledger, logging, etc
+- `ATM-014483` (2026-03-31, organ-iv) — Casing Drift: cvrsvs-honorvm has functional_class infrastructure (should be         INFRASTRUCTURE).
+- `ATM-014495` (2026-03-31, organ-iv) — When new work is discovered, add to the appropriate organ section with priority      and source.
+- `ATM-014500` (2026-03-31, meta, organ-iv) — Copy memory files into the repo (e.g., .meta/memory/ or docs/memory/)
+- `ATM-014518` (2026-03-31, UNIVERSAL, organ-iv) — Cross-session intent matching: Same intent re-entering the system.      "The intent 'build recording infrastructure' appeared in 4 sessions."
+- `ATM-014537` (2026-03-31, UNIVERSAL, personal) — well the system contains masks and multiple fronts should advance simultaneously
+- `ATM-014540` (2026-03-31, UNIVERSAL, personal) — makes sense to route the contextual calories to their proper fuel economoist; so review the work from yesterday and return with a plan advancing troops on all fronts;
+- `ATM-014548` (2026-03-31, UNIVERSAL, organ-iv) — Cross-session intent matching: Same intent re-entering the system.      "The intent 'build recording infrastructure' appeared in 4 sessions."
+- `ATM-014555` (2026-03-31, organ-iv) — Casing Drift: cvrsvs-honorvm has functional_class infrastructure (should be                INFRASTRUCTURE).
+- `ATM-014565` (2026-03-31, meta, organ-iv) — Update .meta/memory/ — snapshot the 3 new memory files (project_action_ledger,          project_temporal_convergence, feedback_dense_abstraction_prompting)
+- `ATM-014578` (2026-03-31, organ-iv) — > time represents mathetmatical micro to macro cycles, we dont need timezones
+- `ATM-014581` (2026-03-31, meta) — > time represents mathetmatical micro to macro cycles, we dont need timezones
+- `ATM-014586` (2026-03-31, UNIVERSAL, organ-iv) — The risk register reveals the framework's load-bearing joints. Of 10 claims, the   single CONTESTED one — "the precursor is structurally irrelevant" — is both the most       provocative and the mos...
+- `ATM-014587` (2026-03-31, organ-iii, organ-v) — The NOVEL claim (Marx applied to fandom labor) is the essay's center of gravity.        Everything else in the grounding paper has precedent. The original contribution is the     Marxist structural...
+- `ATM-014593` (2026-03-31, organ-iv) — we need                                                                                                time manifestation born and living within
+- `ATM-014621` (2026-03-31, meta, persistence) — GIT meta-organvm         Local:  724f903 chore: propagate GH#17-24 cross-references to IRF +      concordance         Remote: 724f903 chore: propagate GH#17-24 cross-references to IRF +      concor...
+- `ATM-014645` (2026-03-31, UNIVERSAL, meta) — ⎿  ========================================      FINAL CLOSURE AUDIT — ALL 10 INDICES      ========================================
+- `ATM-014647` (2026-03-31, meta, persistence) — GIT meta-organvm         Local:  724f903 chore: propagate GH#17-24 cross-references to IRF +      concordance         Remote: 724f903 chore: propagate GH#17-24 cross-references to IRF +      concor...
+- `ATM-014676` (2026-03-31, meta) — Post-002 is READY to publish — 664 words, status READY, the most immediate distribution win
+- `ATM-014691` (2026-03-31, organ-iv, meta) — post-004 (AI Conductor): 1,041 words, full Testament audit already done. Review for any stale metrics (127 repos claim — verify against canonical), stage as READY
+- `ATM-014694` (2026-03-31, meta) — Close headlands-center (below threshold, deadline tomorrow, score 6.5)
+- `ATM-014695` (2026-03-31, meta) — ZKM: Reactivate to drafting — update last_touched, review materials, check if prior submission content is reusable. 12 days to deadline.
+- `ATM-014726` (2026-03-31, organ-iv) — Post-002 is READY to publish — 664 words, status READY, the most immediate distribution win
+- `ATM-014741` (2026-03-31, organ-iv) — post-004 (AI Conductor): 1,041 words, full Testament audit already done. Review for any stale metrics (127 repos claim — verify against canonical), stage as READY
+- `ATM-014744` (2026-03-31, organ-iv) — Close headlands-center (below threshold, deadline tomorrow, score 6.5)
+- `ATM-014745` (2026-03-31, organ-iv) — ZKM: Reactivate to drafting — update last_touched, review materials, check if prior submission content is reusable. 12 days to deadline.
 - `ATM-014765` (2026-03-31, persistence, UNIVERSAL) — Lefthook installed (was missing, blocking push)
 - `ATM-014771` (2026-03-31, persistence, UNIVERSAL) — Lefthook installed (was missing, blocking push)
-- `ATM-014866` (2026-03-31, organ-iv) — Build circulatory_route.py — the second function.   3,900 lines of source. Creates the first inter-function   signal edge (INFORMATION). The organism begins to route   work to itself.
+- `ATM-014778` (2026-03-31, personal) — we Need to eliminate the possibility that I'm applying to jobs that are anything older than a day or two old.
+- `ATM-014783` (2026-03-31, meta) — After function 2: CHECK 7 (CONNECTED) becomes  assessable. Signal graph gets its first edges.
+- `ATM-014787` (2026-03-31, meta) — A4 — Adaptation: It modifies its own structure in  response to change. Rigidity is death.
+- `ATM-014789` (2026-03-31, meta) — A6 — Organizational Closure: The rules that constrain   growth are subject to the same constraints. Governance  governs itself.
+- `ATM-014796` (2026-03-31, organ-iv) — After function 2: CHECK 7 (CONNECTED) becomes  assessable. Signal graph gets its first edges.
+- `ATM-014800` (2026-03-31, organ-iv) — A4 — Adaptation: It modifies its own structure in  response to change. Rigidity is death.
+- `ATM-014802` (2026-03-31, meta, organ-iv) — A6 — Organizational Closure: The rules that constrain   growth are subject to the same constraints. Governance  governs itself.
+- `ATM-014806` (2026-03-31, meta) — this is more alchemy, phase destruction via sacrifice assembling in a new instance evolved;
+- `ATM-014808` (2026-03-31, organ-iv) — this is more alchemy, phase      destruction via sacrifice assembling in a new instance     evolved;
+- `ATM-014814` (2026-03-31, unscoped) — After function 2: CHECK 7 (CONNECTED) becomes  assessable. Signal graph gets its first edges.
+- `ATM-014818` (2026-03-31, unscoped) — A4 — Adaptation: It modifies its own structure in  response to change. Rigidity is death.
+- `ATM-014820` (2026-03-31, meta) — A6 — Organizational Closure: The rules that constrain   growth are subject to the same constraints. Governance  governs itself.
+- `ATM-014824` (2026-03-31, unscoped) — hmm im trying to see my next cockpit for continuing the alchemy
+- `ATM-014834` (2026-03-31, meta) — our new shape has       taken corporeal form; our sacrifice = autonomous           cannibalism
+- `ATM-014835` (2026-03-31, meta, employment) — a self valued recycling of destruction        then re creation and destruction and recreation; our       goal is to help them do better than us;   ; Sort of like when someone's leaving a job, they ...
+- `ATM-014852` (2026-03-31, UNIVERSAL, organ-iv) — Verification — check testimony against axioms        (constitutional law that transcends administrations) AND    against actuality (what's really in the code/git)
+- `ATM-014871` (2026-03-31, organ-iv) — After function 2: CHECK 7 (CONNECTED) becomes      assessable. Signal graph gets its first edges.
+- `ATM-014875` (2026-03-31, organ-iv) — A4 — Adaptation: It modifies its own structure in      response to change. Rigidity is death.
+- `ATM-014877` (2026-03-31, meta, organ-iv) — A6 — Organizational Closure: The rules that      constrain growth are subject to the same constraints.       Governance governs itself.
 - `ATM-014883` (2026-03-31, organ-iv) — STARVED_CONSUMER: AESTHETIC — 4 functions need it,      nobody produces it. A gap in the organism's metabolism.
-- `ATM-014982` (2026-03-31, meta) — Build circulatory_route.py — the   second function. 3,900 lines of source.   Creates the first inter-function signal   edge (INFORMATION). The organism begins   to route work to itself.
+- `ATM-014892` (2026-03-31, employment, organ-iv) — Missing: human review layer      The testimony generator automates too much. The exit      interview should have a human-review step where the      operator reads each testimony and validates/corre...
+- `ATM-014897` (2026-03-31, meta) — this is eve from which begets you adam: /Users/4jp/Workspace/meta-organvm/post-flood
+- `ATM-014927` (2026-03-31, organ-iv) — When new work is discovered, add to the appropriate organ section with priority      and source.
+- `ATM-014932` (2026-03-31, meta, organ-iv) — Copy memory files into the repo (e.g., .meta/memory/ or docs/memory/)
+- `ATM-014954` (2026-03-31, unscoped) — Discovery — parse 35 gate contracts,   build demand/supply maps, identify   orphans
+- `ATM-014987` (2026-03-31, meta) — After function 2: CHECK 7     (CONNECTED) becomes assessable. Signal      graph gets its first edges.
+- `ATM-014991` (2026-03-31, meta) — A4 — Adaptation: It modifies its     own structure in response to change.     Rigidity is death.
 - `ATM-014997` (2026-03-31, meta) — STARVED_CONSUMER: AESTHETIC — 4   functions need it, nobody produces it. A   gap in the organism's metabolism.
-- `ATM-015092` (2026-03-31, organ-iv) — Build circulatory_route.py — the second function. 3,900 lines of source. Creates the   first inter-function signal edge (INFORMATION). The organism begins to route work to   itself.
+- `ATM-015013` (2026-03-31, meta) — Discovery — parse 35 gate       contracts, build demand/supply maps
+- `ATM-015020` (2026-03-31, UNIVERSAL, organ-iv) — sort & let's attempt one main purpose system wrought heavy-tension run now;
+- `ATM-015023` (2026-03-31, organ-iv) — When new work is discovered, add to the appropriate organ section with priority      and source.
+- `ATM-015028` (2026-03-31, meta, organ-iv) — Copy memory files into the repo (e.g., .meta/memory/ or docs/memory/)
+- `ATM-015061` (2026-03-31, organ-iv) — Discovery — parse 35 gate contracts, build   demand/supply maps, identify orphans
+- `ATM-015097` (2026-03-31, organ-iv) — After function 2: CHECK 7 (CONNECTED) becomes assessable. Signal graph gets its      first edges.
+- `ATM-015103` (2026-03-31, meta, organ-iv) — A6 — Organizational Closure: The rules that constrain growth are subject to the      same constraints. Governance governs itself.
 - `ATM-015107` (2026-03-31, organ-iv) — STARVED_CONSUMER: AESTHETIC — 4 functions need it, nobody produces it. A gap in the   organism's metabolism.
+- `ATM-015121` (2026-03-31, organ-iv) — Discovery — parse 35 gate contracts, build demand/supply maps
+- `ATM-015152` (2026-03-31, UNIVERSAL, organ-iv) — Select ONE Coinbase role (recommend:   coinbase-senior-software-engineer-consumer-engineering-test-infrastru — test   infrastructure aligns with 23,470 tests narrative) OR one Grafana Labs role (kn...
+- `ATM-015157` (2026-03-31, UNIVERSAL, organ-iv) — Select ONE Coinbase role (recommend:                                                                                                                                               coinbase-senior-so...
+- `ATM-015242` (2026-03-31, organ-iv) — When new work is discovered, add to the appropriate organ section with priority and source.
+- `ATM-015315` (2026-03-31, meta, employment) — Metabolic Consolidation: Use the exit-interview to ingest legacy governance. As each       gate is "lit" in V2, the corresponding legacy org artifact is archived.
+- `ATM-015353` (2026-03-31, UNIVERSAL, organ-iv) — i will pass you information--sort & let's attempt one main purpose system wrought heavy-tension run now
+- `ATM-015358` (2026-03-31, organ-iv) — The goal is to be reproducing superior results one source handing to you and making descending pipeline.
+- `ATM-015370` (2026-03-31, organ-iv) — design-declined: prompt-citation = unecessary human interaction
+- `ATM-015384` (2026-03-31, employment, organ-iv) — Missing: human review layer                                                                                                                                                              The testimon...
+- `ATM-015393` (2026-03-31, organ-iv) — Discovery — parse 35 gate contracts, build                                                                                                                                            demand/supply m...
+- `ATM-015417` (2026-03-31, meta, employment) — Metabolic Consolidation: Use the exit-interview to ingest legacy governance. As each                                                                                                     gate is "lit...
+- `ATM-015454` (2026-03-31, UNIVERSAL, organ-iv) — SpecStory — you have the skills installed (specstory-session-summary, specstory-organize). It records .specstory/history/ automatically if configured.
+- `ATM-015475` (2026-03-31, UNIVERSAL, organ-iv) — sort & let's attempt one main purpose system wrought heavy-tension run now;
+- `ATM-015488` (2026-03-31, employment, organ-iv) — Missing: human review layer                                                                                                                                                              The testimon...
+- `ATM-015497` (2026-03-31, organ-iv) — Discovery — parse 35 gate contracts, build                                                                                                                                            demand/supply m...
+- `ATM-015521` (2026-03-31, meta, employment) — Metabolic Consolidation: Use the exit-interview to ingest legacy governance. As each                                                                                                     gate is "lit...
+- `ATM-015558` (2026-03-31, UNIVERSAL, organ-iv) — SpecStory — you have the skills installed (specstory-session-summary, specstory-organize). It records .specstory/history/ automatically if configured.
+- `ATM-015570` (2026-03-31, UNIVERSAL, organ-iv) — review enterprise commits from the past 48 hours, review the universal index of hanging tasks, so forth
+- `ATM-015588` (2026-03-31, employment) — Missing: human review layer                                                                                                                                                              The testimon...
+- `ATM-015597` (2026-03-31, unscoped) — Discovery — parse 35 gate contracts, build                                                                                                                                            demand/supply m...
+- `ATM-015621` (2026-03-31, meta, employment) — Metabolic Consolidation: Use the exit-interview to ingest legacy governance. As each                                                                                                     gate is "lit...
+- `ATM-015681` (2026-03-31, employment) — Missing: human review layer                                                                                                                                                              The testimon...
 - `ATM-011344` (2026-03-31, persistence, meta) — a-organvm: Second Function (V2 Palingenesis)    The throttle lifted after S45 (first embodiment landed,   commit ddc6174). The handoff is explicit:    - Write the second function — must connect to ...
 - `ATM-011473` (2026-03-31, persistence, UNIVERSAL) — a-organvm: Second Function (V2 Palingenesis)    The throttle lifted after S45 (first embodiment landed,   commit ddc6174). The handoff is explicit:    - Write the second function — must connect to ...
 - `ATM-012903` (2026-03-31, security, meta) — For the OAuth failure, you have three options:                                            - Try a different model provider during onboard (OpenAI or Anthropic instead of          Google) — this is ...
 - `ATM-013110` (2026-03-31, security, meta) — For the OAuth failure, you have three options:     - Try a different model provider during onboard (OpenAI or Anthropic instead of   Google) — this is the fastest path     - Re-auth Gemini CLI firs...
 - `ATM-011088` (2026-03-31, meta) — #23: Decide Python packaging (design, not code — 30 min)
 - `ATM-011091` (2026-03-31, meta) — #23: Decide Python packaging (design, not code — 30 min)
-- `ATM-014842` (2026-03-31, unscoped) — Update TRIPTYCH.md language — transmutation, not absorption (the portal should carry the corrected frame)
 - `ATM-012990` (2026-03-31, meta, personal) — Testament blind spot — IRF-PRT-004: portfolio registered under wrong name ("showcase-portfolio") and   wrong status (ARCHIVED).
-- `ATM-011079` (2026-03-31, meta) — Monorepo `pyproject.toml` with each function as a module
 - `ATM-011095` (2026-03-31, organ-iv, meta) — FleetRouter assigns agent (Claude/Gemini/Codex/OpenCode) based on work       type
 - `ATM-011127` (2026-03-31, UNIVERSAL, meta) — 54 issues on the project board — the universal index
-- `ATM-011668` (2026-03-31, personal) — **Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`
-- `ATM-011688` (2026-03-31, personal) — **Signal Files** — contacts.yaml ↔ network.yaml ↔ outreach-log.yaml ↔ conversion-log.yaml ↔ hypotheses.yaml wiring
 - `ATM-011871` (2026-03-31, organ-iii, organ-iv) — Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)
-- `ATM-012143` (2026-03-31, personal) — **Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`
-- `ATM-012163` (2026-03-31, personal) — **Signal Files** — contacts.yaml ↔ network.yaml ↔ outreach-log.yaml ↔ conversion-log.yaml ↔ hypotheses.yaml wiring
 - `ATM-012345` (2026-03-31, organ-iii, personal) — Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)
 - `ATM-012462` (2026-03-31, personal) — Typed contracts and schema validation
-- `ATM-012700` (2026-03-31, personal) — **Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`
-- `ATM-012720` (2026-03-31, personal) — **Signal Files** — contacts.yaml ↔ network.yaml ↔ outreach-log.yaml ↔ conversion-log.yaml ↔ hypotheses.yaml wiring
 - `ATM-012794` (2026-03-31, unscoped) — feat: dispatch receipt data model + YAML store (Wave 1)
 - `ATM-012795` (2026-03-31, unscoped) — feat: timecard — punch-in/out + signature attribution (Wave 1)
 - `ATM-012821` (2026-03-31, meta) — feat: dispatch receipt data model + YAML store (Wave 1)
@@ -171,39 +513,393 @@
 - `ATM-014700` (2026-03-31, organ-iii, meta) — For the 5 due-today entries (Doppler, Harvey AI, LangChain, OpenAI FDE, Stripe): compose final follow-up DMs
 - `ATM-014750` (2026-03-31, organ-iii, organ-iv) — For the 5 due-today entries (Doppler, Harvey AI, LangChain, OpenAI FDE, Stripe): compose final follow-up DMs
 - `ATM-014882` (2026-03-31, UNIVERSAL, organ-iv) — DEAD_SIGNAL: TEACHING — produced by memory and        reproductive systems but nobody consumes it. Energy        lost.
-- `ATM-014916` (2026-03-31, unscoped) — intake_router/__main__.py — standalone entry: python -m intake_router
 - `ATM-014996` (2026-03-31, UNIVERSAL, meta) — DEAD_SIGNAL: TEACHING — produced by   memory and reproductive systems but   nobody consumes it. Energy lost.
-- `ATM-015055` (2026-03-31, organ-iv) — seed.yaml description stale — says       "164 tests passing" (actual: 233), "12      Python scripts" (stale), no mention of      action_ledger
 - `ATM-015106` (2026-03-31, UNIVERSAL, organ-iv) — DEAD_SIGNAL: TEACHING — produced by memory and reproductive systems but nobody   consumes it. Energy lost.
+- `ATM-009295` (2026-03-30, organ-iii) — Well, you also have to explore the other parts of the messages she sent.
+- `ATM-009299` (2026-03-30, organ-iii) — And then we also have to build out the questionnaire for her that she needs to answer.
+- `ATM-009301` (2026-03-30, organ-iii) — Build the scaffolding or the infrastructure or the client-facing documents that we could reuse in the future for my consulting work
+- `ATM-009325` (2026-03-30, UNIVERSAL) — new task: what else is continually finding it's way into my inbox
+- `ATM-009326` (2026-03-30, unscoped) — check from 3-27-26 to this morning 3-30-26, and route the junk into proper folders please; and create a agenda list sorted into categories;
+- `ATM-009355` (2026-03-30, unscoped) — Catastrophic thinking loop — the transcript shows it      cycling through "wait, trigger, go" thousands of times         before context truncation, burning tokens on indecision
+- `ATM-009401` (2026-03-30, personal) — hostname string         The GitHub host to use for authentication
+- `ATM-009403` (2026-03-30, personal) — remove-scopes strings   Authentication scopes to remove from gh
+- `ATM-009420` (2026-03-30, unscoped) — the goal is to be able to maximize token usage, hand off important but blue collar tasks to worker bees, while we mastermind and keep claude and mine's onslaught onward
+- `ATM-009430` (2026-03-30, organ-iii) — we need to scope out scott's tasks and give him a nice clear view
+- `ATM-009440` (2026-03-30, UNIVERSAL) — The Tooling (Sovereign Systems Spiral): You are using a 28-question intake document       as a "synchronous meeting replacement." From a context efficiency standpoint, this       is high-signal, bu...
+- `ATM-009458` (2026-03-30, UNIVERSAL, organ-i) — we keep getting cutoff: "❯ everything is a seed or a missing flower on a       grown plant
+- `ATM-009485` (2026-03-30, personal) — The security vulnerability issue in happy-dom is real but the plan addresses it by moving security to weekly advisory
+- `ATM-009489` (2026-03-30, personal) — Keeps lint, typecheck, build, test, validate - the core essentials
+- `ATM-009492` (2026-03-30, meta, personal) — The plan deletes quality.yml and deploy.yml but doesn't address what happens to the existing governance tests - wait, it does address this in "Governance tests to update"
+- `ATM-009493` (2026-03-30, personal) — A11y is removed - this is a trade-off but probably acceptable for a personal portfolio
+- `ATM-009521` (2026-03-30, personal) — It reads `.github/workflows/quality.yml` - need to change to ci.yml
+- `ATM-009522` (2026-03-30, personal) — It reads `.github/workflows/security-drift.yml` - need to remove this reference
+- `ATM-009523` (2026-03-30, meta, personal) — It checks for various quality gates - need to simplify  Looking at quality-governance-v2.test.ts:
+- `ATM-009524` (2026-03-30, personal) — It reads `.github/workflows/quality.yml` - need to change to ci.yml
+- `ATM-009547` (2026-03-30, UNIVERSAL, organ-iv) — GH Issues, Project Boards, and wherever else applicable should be in unison with universal index/agenda records
+- `ATM-009556` (2026-03-30, personal) — since at its core is a idyllized form of some interectional functionalities at work
+- `ATM-009564` (2026-03-30, unscoped) — since at its core is a idyllized form of some interectional functionalities at   work
+- `ATM-009578` (2026-03-30, unscoped) — idyllized social constructs to review the formed object in phase trying to reach its perfection
+- `ATM-009594` (2026-03-30, personal) — Read scripts/check_metrics.py to understand metric       validation.
+- `ATM-009706` (2026-03-30, personal) — Integrated with Workflow: Added make compose-linkedin       to the Makefile for easy generation of "daily       artifacts."
+- `ATM-009734` (2026-03-30, personal) — Integrated with Workflow: Added make       compose-linkedin to the Makefile for easy       generation of "daily artifacts."
+- `ATM-009762` (2026-03-30, personal) — Integrated with Workflow: Added make       compose-linkedin to the Makefile for       easy generation of "daily artifacts."
+- `ATM-009788` (2026-03-30, UNIVERSAL) — i am comfortable with knowing beyond feeling what logically adds up; i like for a system of unforgiving objective constraints control and dictate every facet of the thing it watches; so all laws in...
+- `ATM-009793` (2026-03-30, unscoped) — so let's tease this out: pre-historic us is the un-recorded us
+- `ATM-009795` (2026-03-30, UNIVERSAL) — this is essentially at the high level what im trying to make rendered within
+- `ATM-009798` (2026-03-30, meta, UNIVERSAL) — review as genetic material incorporation: /Users/4jp/Workspace/meta-organvm/organvm-corpvs-testamentvm/docs/genesis/ChatGPT-Society\ Structure\ Documents.md /Users/4jp/Workspace/meta-organvm/organv...
+- `ATM-009800` (2026-03-30, UNIVERSAL) — Now that we've been splashing around in this water, I think you understand essentially what we're trying to create.
+- `ATM-009814` (2026-03-30, meta) — so IRF is running into an issue of id assignment (duplicates), and  a general misunderstanding on how to ammend or add when multiple agents are interacting with it
+- `ATM-009824` (2026-03-30, UNIVERSAL) — literally all of the above; chemistry is how the wires between modules finally have a form that is of force and rhyme and reason it exists for a reason
+- `ATM-009825` (2026-03-30, unscoped) — so if this modular universe has one wire moved from a traditional input to some other output or throuput
+- `ATM-009826` (2026-03-30, unscoped) — we have a baseline of expectations of cause effect and so forth
+- `ATM-009874` (2026-03-30, unscoped) — i think these containers are the structure needed to make organvm-v2 what it was intended to be
+- `ATM-009886` (2026-03-30, UNIVERSAL) — yes--how any one thing done by one = how every thing is done by one
+- `ATM-009897` (2026-03-30, unscoped) — summon 3 critical lenses and review as  outsider's with a bone to pick
+- `ATM-009898` (2026-03-30, unscoped) — did you pickup the idea that if you dont take the time and rush through any part of any process, downstream your flaw or lack of energy reveals itself at its most powerful collapsing reductive form
+- `ATM-009901` (2026-03-30, unscoped) — worth of knowledge, distill into reality, and build as if nature engineered the universe in terminal
+- `ATM-009911` (2026-03-30, organ-iv) — i believe we are attempting to solve that here: /Users/4jp/Workspace/organvm-iv-taxis/vox
+- `ATM-009917` (2026-03-30, unscoped) — Yes, the saying goes, "We plan and God laughs." But we could see that in the peer audited directory, the Stix project has like 500 GitHub issues, and a bunch of them are ruined, stale, or broken.
+- `ATM-009921` (2026-03-30, unscoped) — We know the ideal form of the outcome, but to define it so clearly ruins potential.
+- `ATM-009937` (2026-03-30, unscoped) — For each organ with active repos, check the entailment matrix
+- `ATM-009942` (2026-03-30, unscoped) — The produces edge detection - need to properly parse organvm-v-* style orgs
+- `ATM-009947` (2026-03-30, unscoped) — Need to check what CI workflow runs the test check5. Ensure it passes on the branch
+- `ATM-009951` (2026-03-30, meta) — IRF should be an endless box receiving slips of paper with tasks status updates, then collected records keeper of trusted data preserationists assemble for temporal posterity
+- `ATM-009953` (2026-03-30, meta, UNIVERSAL) — IRF should be an endless box receiving slips of paper with tasks status updates, then collected records keeper of trusted data preserationists assemble for temporal posterity; GH issues are the pub...
+- `ATM-009983` (2026-03-30, meta, UNIVERSAL) — Run excretory system (IRF-LIQ-003) — filter the 127 formations, identify which are       alive
 - `ATM-009984` (2026-03-30, UNIVERSAL, meta) — Build the periodic table (chemistry spec Phase 2) — map all 127 formations by      properties, identify Mendeleev gaps, isotopes, noble gases
+- `ATM-009986` (2026-03-30, meta) — Distill standard formations in batches — 5-10 at a time, review between batches
+- `ATM-009990` (2026-03-30, organ-iii, meta) — OD-III (Ergon Factory Gate): ORGAN-III repos are commercial products. commerce--meta   is already the governance exception — "Private governance: contracts, IP, customer   agreements, financial gov...
+- `ATM-009993` (2026-03-30, organ-iii, meta) — RR-2 (Single Responsibility): commerce--meta's declared responsibility IS "private   governance for ORGAN-III commerce operations." The client pillar is exactly that.
+- `ATM-010036` (2026-03-30, meta) — Create      organvm GitHub       org      (IRF-LIQ-001 —       P0, human      action)
+- `ATM-010037` (2026-03-30, meta, UNIVERSAL) — Run      excretory      system      (IRF-LIQ-003)      — filter the      127      formations,      identify which       are alive
 - `ATM-010038` (2026-03-30, UNIVERSAL, meta) — Build the      periodic table       (chemistry      spec Phase 2)      — map all 127      formations by      properties,      identify      Mendeleev      gaps,      isotopes,      noble gases
+- `ATM-010040` (2026-03-30, meta) — Distill      standard      formations in      batches — 5-10       at a time,      review between       batches
+- `ATM-010044` (2026-03-30, meta, UNIVERSAL) — 629d2fc      feat:      codify      AX-8 Cons      tructed      Polis      (Lex Civi      tatis)      500bdbe      feat:      extend      AX-7 to      tetrad —      add      RECEPTIO      (Lex Rece...
+- `ATM-010109` (2026-03-30, meta) — But it's the thing it will do in V2 as a byproduct of its existence.
+- `ATM-010112` (2026-03-30, UNIVERSAL, meta) — The vibe essentially is Latin, metaphysics, ontology, and computer science language.
+- `ATM-010122` (2026-03-30, meta, naming) — yes--my gut tells me governance solidification as forces of gravity need a firm place as filters-prime, attracting the governance in sub directories adrift in layers of vague name and inconsidered ...
+- `ATM-010123` (2026-03-30, meta) — many sub directories will find they are in need of a merge (no deletions, but a mass merge of resource energy deposits
+- `ATM-010124` (2026-03-30, meta) — yes let's make our current location pure so its proof of life is evidence for change and superior state phase
+- `ATM-010125` (2026-03-30, UNIVERSAL, meta) — higher efficiency and effectiveness is the hope of all in motion within a complex system that is
+- `ATM-010139` (2026-03-30, meta) — the reason i am prodding here is bc my goal is minimalism, and communication and contextual spirit and soul
+- `ATM-010155` (2026-03-30, meta) — i dont want old patterns of bad ideas repeating; look the naming has already broken from the law we arrived at a few turns ago
+- `ATM-010157` (2026-03-30, UNIVERSAL, meta) — new instance of existience swallows workspace and contains others ~/Workspace/a-organvum/  old system contained in cold freeze container new system assembled in regulating living container third co...
+- `ATM-010163` (2026-03-30, UNIVERSAL, meta) — wait so what is the new model as you see it show me the whole layout of all folders
+- `ATM-010164` (2026-03-30, meta) — lets use out current directory we are in now as an experiment
+- `ATM-010166` (2026-03-30, meta) — i dont want to decide with language, i want to decide with logic proved with physics proofs that opposite paths break reality
+- `ATM-010176` (2026-03-30, UNIVERSAL, meta) — The goal is, of course, really to get everything into its most fundamental function and allow it to communicate with everything in its container. That's the goal.
+- `ATM-010187` (2026-03-30, UNIVERSAL, meta) — Naming convention: {system}--{function}      - system = which biological system (11 canonical systems)      - function = one verb (what it does)      - Files (.py, .yaml, .md) = pure function, no a...
+- `ATM-010193` (2026-03-30, UNIVERSAL) — Run the isotope dissolution pattern across   remaining repos mechanically.
+- `ATM-010196` (2026-03-30, UNIVERSAL, meta) — i need all formed from this work in current directory to be provided as context-removed, a non-remembering entitiy taking the shape directed by the rules of it's existence
+- `ATM-010201` (2026-03-30, organ-iv) — let's check on the status of what's open And what needs follow-up
+- `ATM-010212` (2026-03-30, unscoped) — now you proceed elsewhere while your pal does what u started
+- `ATM-010229` (2026-03-30, unscoped) — Replace with canonical source or a typed bridge - I should create a single source of truth for organ definitions that can be imported throughout the app
+- `ATM-010256` (2026-03-30, unscoped) — GEN-002 + SKL-001 — The packaging decision determines   how the bones assemble, and the bones can't prove they   hold until they know how to connect.
+- `ATM-010257` (2026-03-30, meta, personal) — so review this directory first: /Users/4jp/Workspace/meta-organvm/aerarium
+- `ATM-010263` (2026-03-30, personal) — Creative capital has been deferred because it's out of alignment.
+- `ATM-010266` (2026-03-30, UNIVERSAL, personal) — And I think we need to build a three-pillar or triptych between the errarium, this system, and consulting/freelancing.
+- `ATM-010268` (2026-03-30, UNIVERSAL) — make a proposal-order: rules and laws and so forth submit to a inbox that will swallow hole the new-suggestion and it's context, and spit out the pieces that might apply elsewhere or what context i...
+- `ATM-010273` (2026-03-30, organ-iv, meta) — NRV-001 + NRV-004 — The governance engine swallowing the    conductor's duplicate IS the old board folding into the    new index: same act, two surfaces.
+- `ATM-010276` (2026-03-30, organ-iv, UNIVERSAL) — ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  > NRV-005 +...
+- `ATM-010310` (2026-03-30, meta) — fix the rest of the gaps found from the time travel and critques
+- `ATM-010320` (2026-03-30, UNIVERSAL, meta) — now review the session in total, your plan is the master and there's the slave, there is many theories for absorption, please review all 100%
+- `ATM-010326` (2026-03-30, meta) — ───────────────────────────────────────────────────────────────────────────────────────── ❯ the reason i am prodding here is bc my goal is minimalism, and communication and   contextual spirit and ...
+- `ATM-010354` (2026-03-30, meta) — clarify: meta has many repos nested deeply within others and many locations can merge
+- `ATM-010367` (2026-03-30, UNIVERSAL, organ-iv) — devise methods for your system wide use and contextual summoning
+- `ATM-010380` (2026-03-30, organ-iii, employment) — application pipeline should be a product and should be an organ tho
+- `ATM-010386` (2026-03-30, organ-iv) — discovery expedition for continued missionary work and expanding influence
+- `ATM-010396` (2026-03-30, meta) — yes and as you mentioned, each module intakes energy and expels energy, its existence is motion and life
+- `ATM-010401` (2026-03-30, UNIVERSAL, meta) — we need to incorporate this logic since so much is invisible, knowing a circuit is dead isnt a visible signal but a trust from a system that is flawed: In digital systems, "wiring" refers to the lo...
+- `ATM-010427` (2026-03-30, UNIVERSAL, meta) — define is canonical, no other cocoon can resolve its isotopes. Everything   depends on the bones.    Gate G1 (CANONICAL_REGISTRY) and G2 (CANONICAL_ORGAN_MAP) are the two that unblock the   most do...
+- `ATM-010467` (2026-03-30, meta) — And I'm thinking also as something bolts it should emit a signal that attracts anything that is like it, or should be near it, or should be in the same orbit or energy source.
+- `ATM-010472` (2026-03-30, meta) — Since this is a modular synthesis, as it starts to grow, inputs and outputs of the elements within for modulation need registering, and the spectrum of their deviation where they could and what the...
+- `ATM-010478` (2026-03-30, meta) — i want to have signals tracking in real time and displayng their output creating a ledger and text outputs on a webpage like autoglyphs, then interperted internal by seers for recs and considerations
+- `ATM-010484` (2026-03-30, meta) — review the previous index for their ID and phase state for insp
+- `ATM-010488` (2026-03-30, organ-iv) — ❯ discovery expedition for continued missionary work and expanding influence      ⏺ Agent(Scout new contribution targets)   ⎿  Done (24 tool uses · 55.9k tokens · 2m 47s)   (ctrl+o to expand)  ⏺ 10...
+- `ATM-010512` (2026-03-30, organ-iv, personal) — New territory entered this round:   - A2A protocol — first presence in Google's agent interop ecosystem   - pydantic-ai — Pydantic team's agent framework, high-standards contribution   - dapr — fir...
+- `ATM-010517` (2026-03-30, organ-iv) — You need to run the auth refresh interactively — type    this directly in the prompt:                                                                                                                ...
+- `ATM-010522` (2026-03-30, meta) — #1:  Run skeletal--define test suite, mark gates PASS                                                                                                                                                ...
+- `ATM-010524` (2026-03-30, UNIVERSAL, personal) — Quick fix — unset the env var so gh falls through to keyring:                                                                                                  ! unset GITHUB_TOKEN && gh project vie...
+- `ATM-010527` (2026-03-30, personal) — we should be a critic of the workforce and prop up those who are sincere and reasonable
+- `ATM-010528` (2026-03-30, personal) — there is a ton here for picking meat off a big boned carcass
+- `ATM-010534` (2026-03-30, personal) — hostname string         The GitHub host to use for authentication
+- `ATM-010536` (2026-03-30, personal) — remove-scopes strings   Authentication scopes to remove from gh
+- `ATM-010538` (2026-03-30, personal) — scopes strings          Additional authentication scopes for gh to have  ⏺ Can't refresh auth non-interactively. You'll need to run this yourself to grant project scopes:    ! gh auth refresh -s re...
+- `ATM-010560` (2026-03-30, meta) — But the V1 IRF is being superseded by the a-organvm project board.
+- `ATM-010562` (2026-03-30, meta) — The V1 IRF can be updated next session when   the corpus cocoon (MEM-001) is addressed.
+- `ATM-010581` (2026-03-30, UNIVERSAL) — [https://www.mchip.net](https://www.mchip.net/browse/u2EE3C/243867/Digital%20Systems%20Testing%20And%20Testable%20  Design%20Solution.pdf)
 - `ATM-010598` (2026-03-30, unscoped) — NLnet — submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.
+- `ATM-010706` (2026-03-30, UNIVERSAL) — Produces verifiable output — every workstream has a check that confirms correctness
+- `ATM-010710` (2026-03-30, unscoped) — After changes, run: source .venv/bin/activate && python -m pytest tests/[relevant_test].py      -q
+- `ATM-010732` (2026-03-30, unscoped) — Publish the 2 READY Testament posts (CONT-001, CONT-004). PUBLISH is 2% — make it 3%.
+- `ATM-010747` (2026-03-30, UNIVERSAL) — Creative Capital — 3 days to deadline, ~80% ready, needs 6 short portal answers + Medicaid call
+- `ATM-010748` (2026-03-30, unscoped) — Morning digest is broken — ruamel.yaml missing from venv, blocking standup/campaign/followup
+- `ATM-010753` (2026-03-30, UNIVERSAL) — 5 overlapping phrases — all generic filler, need to revise cover letter
+- `ATM-010765` (2026-03-30, organ-iv) — exactly, you record as you go, post mortem autopsy as they send them
+- `ATM-010770` (2026-03-30, organ-iv) — c is great, maybe it is also then how we find their shatterpoints or missing shield for an assist into their graces or as effective competiion either way
+- `ATM-010781` (2026-03-30, personal) — this means an SOP(or series of) need find home within the functions of each spell cast
+- `ATM-010784` (2026-03-30, meta) — this means an SOP(or       series of) need find home within the functions of each spell cast
+- `ATM-010787` (2026-03-30, meta) — plans need comitting and storing in each pertaining functions planning documents like any other building or project in public
+- `ATM-010789` (2026-03-30, UNIVERSAL, personal) — now, review the ACTIONS contained in this repo, all scripts, all efforts of force, dead alive retired missing etc
+- `ATM-010794` (2026-03-30, UNIVERSAL, meta) — So at the end of every pipe output where there's an artifact, there's a process on how we do it for replication and reproduction.
+- `ATM-010799` (2026-03-30, UNIVERSAL, meta) — yes, what physics, bio, chem, met rules shape and govern the artifact, but the output sends the signal and the sops are living in their home, receive said signal and so on goes the nature of all se...
 - `ATM-009807` (2026-03-30, meta, UNIVERSAL) — Allocative Institution — resource distribution is the only one of the 10   institutional classes with no ORGANVM expression. No token economy, no compute   governance, no attention allocation law.
+- `ATM-010271` (2026-03-30, organ-iv) — NRV-003 + MSC-004 — The conductor can't dispatch agents   into rooms that don't exist yet, and the rooms can't be   built without knowing who the conductor sends.
 - `ATM-010520` (2026-03-30, meta) — #23: Decide Python packaging (design, not code — 30 min)
 - `ATM-009536` (2026-03-30, UNIVERSAL, organ-iii) — the project board, gh issues and so forth are all aligned with the universal agenda/index?
 - `ATM-009537` (2026-03-30, UNIVERSAL, organ-iii) — ────────────────────────────────────────────────────────────── ❯ the project board, gh issues and so forth are all aligned     with the universal agenda/index?                             ─────────...
 - `ATM-010047` (2026-03-30, meta) — Submit NLnet   (April 1 —   TOMORROW) — human    action, web form    at   nlnet.nl/propose/
 - `ATM-010052` (2026-03-30, meta) — Formation   chemistry   implementation —   plan at   2026-03-30-format   ion-chemistry.md
 - `ATM-010138` (2026-03-30, meta) — so depth is body>organs>then flat or ?
-- `ATM-010282` (2026-03-30, meta) — IRF-SYS-035 (P1): Resolve Python packaging for flat namespace
-- `ATM-010289` (2026-03-30, meta) — IRF-SYS-035 (P1): Resolve Python packaging for flat namespace
 - `ATM-010321` (2026-03-30, meta) — research the maximum depth of any directory (what needs to be nested within to function
-- `ATM-010501` (2026-03-30, organ-ii, organ-iv) — Creative territory (ORGAN-II, untouched until now):   - p5.js (23.5K stars) — canonical generative art. 12 good-first-issues.   - nannou (6.6K stars) — Rust creative coding.
 - `ATM-010548` (2026-03-30, UNIVERSAL) — Fieldwork system observes process intelligence during contribution
 - `ATM-010555` (2026-03-30, UNIVERSAL, personal) — could gemini, codex, and opencode tackle these in parallel?
 - `ATM-010740` (2026-03-30, organ-iii) — Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)
+- `ATM-009068` (2026-03-28, meta) — i want to codify the following into law: ❯ based on the physics of the universe in which we exist and rules and laws we drafted in meta-organvm
+- `ATM-009074` (2026-03-28, UNIVERSAL, organ-iii) — and speaking of providers none of all the providers we listed and configured (long list) is appearing
+- `ATM-009086` (2026-03-28, UNIVERSAL, organ-iii) — and speaking of providers none of all the providers we listed and configured (long list) is appearing
+- `ATM-009096` (2026-03-28, UNIVERSAL, organ-iii) — and speaking of providers none of all the providers we listed and configured (long list) is appearing
+- `ATM-009113` (2026-03-28, organ-iii, UNIVERSAL) — all of these directories have either partners im working with or will be partnered, essentially, at some point: /Users/4jp/Workspace/organvm-iii-ergon/content-engine
+- `ATM-009120` (2026-03-28, organ-iii, UNIVERSAL) — all of these directories have either partners im working with or will be partnered, essentially, at some point:   /Users/4jp/Workspace/organvm-iii-ergon/content-engine
+- `ATM-009134` (2026-03-28, personal) — before we proceed, i need to know what's been done in totality
+- `ATM-009205` (2026-03-28, personal) — Automated reporting workflows and CMS migration." | | Multimedia bullet | "...in fundraising." | "...in fundraising support generated through multimedia campaigns and event coverage." |  **Build re...
+- `ATM-009210` (2026-03-28, UNIVERSAL) — new task: what else is continually finding it's way into my inbox
+- `ATM-009211` (2026-03-28, unscoped) — check the past 48 hours, and route the junk into proper folders please;
+- `ATM-009239` (2026-03-28, personal) — yes but i build my first website in 2011, that had animations--etc
+- `ATM-009240` (2026-03-28, personal) — this is my first shared repository: https://github.com/unnamedplay-r/etceter4
+- `ATM-009244` (2026-03-28, personal) — yes but i build my first website in collaboration with https://github.com/unnamedplay-r/etceter4
+- `ATM-009248` (2026-03-28, personal) — yes, but the outreach networking links for contacting three linkedin profiles for each role are broken too
+- `ATM-009277` (2026-03-28, UNIVERSAL, personal) — -  ## 3 Current Wikimedia Foundation Fundraising Tech Team Members  All three are confirmed via the [MediaWiki Fundraising Tech team page](https://www.mediawiki.org/wiki/Fundraising_tech), which li...
+- `ATM-008240` (2026-03-27, organ-iii) — Interactive Tooltips: Superscript numbers in the text (like       <sup>B-31</sup>) are styled as buttons that show the source       details on hover.
+- `ATM-008263` (2026-03-27, UNIVERSAL, organ-iii) — Discoverability   I installed and configured @astrojs/sitemap. The system now   automatically generates a comprehensive sitemap-index.xml upon   every build, ensuring Google and other search engine...
+- `ATM-008578` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008580` (2026-03-27, organ-iii) — Use the established table format and the following ID ranges:       - Inner: S-36 to S-85, B-79 to B-128       - Identity: S-86 to S-135, B-129 to B-178       - Financial: S-136 to S-185, B-179 to ...
+- `ATM-008581` (2026-03-27, organ-iii) — I will provide the list of authors/sources for each to ensure       quality. (See below).
+- `ATM-008592` (2026-03-27, organ-iii) — Update src/pages/business/index.astro to include a       ResearchAccordion at the bottom with the relevant Financial       sources.
+- `ATM-008594` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008601` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008608` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008615` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008622` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008629` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008636` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008643` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008650` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008657` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008664` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008671` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008678` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008685` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008692` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008699` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008706` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008713` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008720` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008727` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008734` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008741` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008748` (2026-03-27, organ-iii) — Create docs/corpus-inner.md, docs/corpus-identity.md, and       docs/corpus-financial.md.
+- `ATM-008777` (2026-03-27, organ-iii) — okay, so let's devise how to get on track with the original plan, preserve intention, and preserve the gemini work that works, but purify and re-align
+- `ATM-008779` (2026-03-27, organ-iii) — ❯ okay, so let's devise how to get on track with the original      plan, preserve intention, and preserve the gemini work that          works, but purify and re-align
+- `ATM-008789` (2026-03-27, personal) — okay now i need the batch-2-of-2 from the previous day document corrected and updated, do this while apply to the roles, so i can then follow up with outreach
+- `ATM-008797` (2026-03-27, UNIVERSAL, personal) — i need you to use the system rules we developed to arrive at the answer, im tired of repeating myself
+- `ATM-008801` (2026-03-27, organ-iii) — we should issue the PR, let's github bots provide feedback, and figure out next exhaustive sweep
+- `ATM-008837` (2026-03-27, UNIVERSAL, personal) — all of the old rules need to return, new rules ammend; then proceed with all your suggestions
+- `ATM-008842` (2026-03-27, organ-iv) — so i was thinking the rewrite should happen via the UI on the website, so Let me talk this out for a second.
+- `ATM-008843` (2026-03-27, UNIVERSAL, organ-iv) — My thought being that we could post different texts, everyone who interacts with the website can make their edits, and we could track drift or track the most likely edits or the ones that are the b...
+- `ATM-008844` (2026-03-27, organ-iv) — Now, each person could have their own edits conceptualized into algorithms and functions and math for their own projects.
+- `ATM-008846` (2026-03-27, organ-iv) — Once again, this is multiversal, there should be multiple iterations and possibilities.
+- `ATM-008871` (2026-03-27, organ-iii) — okay, now last version, the tooltips (when hovering over the citations in text) were non-reactive/broken
+- `ATM-008877` (2026-03-27, organ-iii) — review what is there and what it's intentions are, then implement
+- `ATM-008878` (2026-03-27, UNIVERSAL) — new task: what else is continually finding it's way into my inbox
+- `ATM-008879` (2026-03-27, unscoped) — check the past 48 hours, and route the junk into proper folders please;
+- `ATM-008891` (2026-03-27, organ-iv) — Tool schemas are generated from Pydantic models via `model_json_schema()`, which produces `anyOf` for `Optional` types, OR
+- `ATM-008904` (2026-03-27, personal) — we need to first turn the rules into logic statements, then mathematic proofs, and finalize as algorithmic functions;
+- `ATM-008983` (2026-03-27, personal) — was this tended to >>> okay now i need the batch-2-of-2 from the previous day document corrected and updated, do this while apply to the roles, so i can then follow up with outreach
+- `ATM-008988` (2026-03-27, organ-iii) — [Image #9][Image #10][Image #11] their is phantom echoes happening in the spiral animation
+- `ATM-009005` (2026-03-27, organ-iii) — review this video, you didnt fix what i asked: '/Users/4jp/Desktop/Screen Recording 2026-03-27 at 6.01.10 PM.mov'
 - `ATM-008763` (2026-03-27, UNIVERSAL, personal) — Doesn't mention the Protocol system, log-dm, or the                                     three-pillar rubric
+- `ATM-007856` (2026-03-26, organ-iv) — Acknowledges the sliding window insight — it   addresses a real gap in the current design
+- `ATM-007858` (2026-03-26, UNIVERSAL, organ-iv) — Optionally: invite m13v toward a concrete   collaboration touchpoint (e.g., a shared      spec, a contrib PR, or a co-authored design doc on   conflict resolution patterns)
+- `ATM-007864` (2026-03-26, UNIVERSAL, organ-iv) — Express genuine interest in The Convergence — this    is architecturally aligned work
+- `ATM-007886` (2026-03-26, organ-iv) — I've already submitted PR #6707 (design versioning for reproducibility) and joined the Discord. >  > Where I think I can add the most value next: #2805 (expanding integrations).
+- `ATM-007887` (2026-03-26, UNIVERSAL, organ-iv) — I maintain MCP tool server infrastructure — filesystem, memory, sequential thinking — and have patterns for wrapping tool servers that would map cleanly onto Hive's integration architecture.
+- `ATM-007908` (2026-03-26, organ-iii, UNIVERSAL) — everything in content-multiplex project needs to make its way into /Users/4jp/Workspace/organvm-iii-ergon/content-engine
+- `ATM-007912` (2026-03-26, unscoped) — Read the bot review comments for actionable           feedback
+- `ATM-007971` (2026-03-26, UNIVERSAL, personal) — i dont want to remember any commands, i want the commands to happen automatically, all of them in order;
+- `ATM-007973` (2026-03-26, organ-iii, UNIVERSAL) — are you importing everything first then moving content-multiplex to /Users/4jp/Workspace/organvm-iii-ergon/content-engine
 - `ATM-007990` (2026-03-26, organ-iv) — Read the full issue #61 thread (3 comments: voidborne-d's original, 4444J99's detailed response, and voidborne-d's follow-up).
+- `ATM-008009` (2026-03-26, personal) — im tired and will apply to these as well as 5 more new ones we find tomorrow; before i close this out
+- `ATM-008011` (2026-03-26, personal) — im tired and will apply to these as well as 5 more new ones we find tomorrow; before i close this out
+- `ATM-008012` (2026-03-26, personal) — we need to ensure the outreach protocols ALSO the entire run through
+- `ATM-008015` (2026-03-26, organ-iv) — we need to be honest, i was sent a discord email in february (find it and cite it), thought it was spam
+- `ATM-008016` (2026-03-26, organ-iv) — a few weeks later, multiple folks from AdenHive followed me on Github, find them and cite them
+- `ATM-008023` (2026-03-26, UNIVERSAL, organ-iv) — check up on all contributions for updates and to move the rock further up the hill, sisyphus
+- `ATM-008030` (2026-03-26, personal) — 5 apps first, to start;; then full-wire-protocol {review&&implement
+- `ATM-008031` (2026-03-26, UNIVERSAL, personal) — system-wide (""/Users/4jp/Downloads/Wiring\ and\ Testing\ Connections\ -\ Google\ Search\ \(3_26_2026\ 7：47：02\ AM\).html"";} // continuity-testing&&standards-audit;; prepare-next-set
+- `ATM-008040` (2026-03-26, organ-iv) — yes but what is going on here: https://github.com/dbt-labs/dbt-mcp/pull/669
+- `ATM-008044` (2026-03-26, unscoped) — Neither contains review requirements (one is status checks, one is copilot code review).
+- `ATM-008049` (2026-03-26, unscoped) — The approval gate is pure friction -- self-approval is blocked by GitHub.
+- `ATM-008059` (2026-03-26, unscoped) — okay we need to now switch gears: USPS email needs filtering too, it clogs up my email
+- `ATM-008067` (2026-03-26, organ-iv) — i need you to put it back in there the draft bc gmail is being dumb or im being dumb
+- `ATM-008075` (2026-03-26, unscoped) — check the past two weeks, and route the junk into proper folders please
+- `ATM-008086` (2026-03-26, organ-iv) — nah bro, you review macos maill and you tell me, bc what i see was one sent at 1059pm
+- `ATM-008091` (2026-03-26, organ-iv) — find out biggest repos w external attention attracting open source contrib on other folk's repos, and devise a plan of attack
+- `ATM-008094` (2026-03-26, organ-iii) — were injected into the project ((""/Users/4jp/Workspace/organvm-iii-ergon/content-engine
+- `ATM-008152` (2026-03-26, UNIVERSAL, personal) — Then proceed with three different review agents:  <ol>  <li>One absorbing and expanding</li>  <li>One critiquing and expanding</li>  <li>One who is against it all and wants to figure it out in a be...
+- `ATM-008156` (2026-03-26, UNIVERSAL, personal) — no one (and these are all smart people) understand the complex version of the website; the absorber and critic both need full factoring in;
+- `ATM-008159` (2026-03-26, organ-iv) — yes, now we need to find actual external projects we can contribute to that make sense in multiple domains: what can we improve, what can we learn, what can bring us glory, what can bring us attention
+- `ATM-008163` (2026-03-26, organ-iii) — the mvp is the project in totality, how we build is in layers with artifacts and sell-able elements revealed upon each layer of our multi-layered wedding cake; agree or disagree but do so with solu...
+- `ATM-008168` (2026-03-26, meta) — `ThrottleInterval: 30` debounces rapid registry edits (prevents firing 10 times during a batch update).
+- `ATM-008169` (2026-03-26, meta, personal) — The wrapper script (`domus-context-sync`) uses a lockfile to prevent concurrent runs, validates that the registry file and `organvm` CLI exist, then runs `organvm context sync --write`.
+- `ATM-008171` (2026-03-26, organ-iv, personal) — Logs go to `~/.local/state/domus/context-sync.log` (application log) and `~/.local/state/domus/context-sync-{stdout,stderr}.log` (launchd capture).  ## How to verify  The agent is gated behind `dom...
+- `ATM-008182` (2026-03-26, personal) — the mvp is the project in   totality, how we build is in layers with artifacts and   sell-able elements revealed upon each layer of our        multi-layered wedding cake; agree or disagree but do s...
+- `ATM-008198` (2026-03-26, personal) — i was working through them got to number 4 and thought it was going swimmingly
+- `ATM-006777` (2026-03-25, UNIVERSAL) — well this system at large is mainly open-source; it is academic, it builds knowledge
+- `ATM-006781` (2026-03-25, personal) — these were the messages sent to strativ as a whole: Matt Fleming 1st degree connection · 1st Building Global Testing, Inspection & Certification (TIC) Teams In the Environmental Field.
+- `ATM-006784` (2026-03-25, personal) — Open to senior AI/platform/data infra roles, remote or hybrid, NY-based.
+- `ATM-006796` (2026-03-25, UNIVERSAL, organ-i) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006808` (2026-03-25, UNIVERSAL, personal) — But I wonder if there's you know I after speaking to Scott, my dream is to own us to build this system up into a studio a Pixar an ILM that's my goal that's what I'm building.
+- `ATM-006816` (2026-03-25, UNIVERSAL) — Figure out how to basically become the institutional wing of what we need to achieve funding and non-profit status and all of the above.
+- `ATM-006825` (2026-03-25, UNIVERSAL, personal) — We found that connecting and networking is really multiplying potential.
+- `ATM-006826` (2026-03-25, personal) — So let's first reassess what damage you know in terms of good damage.
+- `ATM-006828` (2026-03-25, UNIVERSAL, personal) — We have all the data from two years ago where 2000 jobs were applied to and no interviews or 3 interviews were given, and then 5 other scams.
+- `ATM-006831` (2026-03-25, personal) — And now we have 30 maybe something applications plus networking and outreach.
+- `ATM-006832` (2026-03-25, personal) — So let's assess that and then we'll assess the other pillars and then we'll build from there.
+- `ATM-006847` (2026-03-25, personal) — yes of course we need to account for this: 2000 applications from summer 2024 - spring 2025
+- `ATM-006848` (2026-03-25, personal) — that's important bc 0 from that and 0 from now is different weights
+- `ATM-006884` (2026-03-25, UNIVERSAL, personal) — I have a dumb sort of "bang my head against the wall until I bleed" sort of mentality sometimes.
+- `ATM-006886` (2026-03-25, personal) — And so maybe on that day, we take a week's worth of what jobs came down the pipeline.
+- `ATM-006895` (2026-03-25, personal) — the closest alignment with the universe at large is creation
+- `ATM-006897` (2026-03-25, personal) — i yearn to create; artifact posting daily, the other pillars prop those up, or whatever physics reality mechanics apply;
+- `ATM-006905` (2026-03-25, unscoped) — they have been broken for awhile so i took them off the computer
+- `ATM-006906` (2026-03-25, unscoped) — but i want them to work and i want to correct them so they work well and efficiently forever lol
+- `ATM-006915` (2026-03-25, organ-iv) — Check if there's any       feedback or                                                requested changes.
+- `ATM-006920` (2026-03-25, organ-iii) — Read the review comments, address PR #227 feedback   first, then batch                                          the Dependabot PRs.
+- `ATM-006922` (2026-03-25, personal) — Check what was removed and whether any new                 vulnerabilities appeared                                   that need attention.
+- `ATM-007023` (2026-03-25, organ-iii) — A bank account or fiscal host to receive payouts (Stripe Connect is used)
 - `ATM-007035` (2026-03-25, unscoped) — Set up GitHub Sponsors under your personal account (faster than org)  **Day 2-3:**
 - `ATM-007036` (2026-03-25, unscoped) — Open business bank account online (Mercury, Relay, or Novo)
-- `ATM-007382` (2026-03-25, UNIVERSAL, meta) — Read aerarium--res-publica/applications/nlnet-ngi0-commons-2026/draft.md — fill      every [DRAFT] field
+- `ATM-007037` (2026-03-25, unscoped) — Set up GitHub Sponsors for your organization (once bank account is ready)
+- `ATM-007038` (2026-03-25, organ-iii) — Configure Stripe Connect with LLC's EIN and bank account  **Week 2-3:**
+- `ATM-007069` (2026-03-25, UNIVERSAL) — Clear alignment with **NGI vision** and the specific sub-grant call
+- `ATM-007150` (2026-03-25, unscoped) — i have LOTS of cloud storage (icloud, dropbox, drive) so there's those options
+- `ATM-007164` (2026-03-25, unscoped) — Docker VM — 500% CPU, 8.2GB RAM (PID 60514)   This is the single biggest offender. Docker's Virtualization framework VM is consuming half your RAM and pinning 5 cores.
+- `ATM-007165` (2026-03-25, UNIVERSAL) — Spotlight indexing — ~10 mdworker_shared processes   Spotlight is frantically indexing all the new files that Dropbox/Google Drive synced down. Collectively eating ~150%+ CPU.
+- `ATM-007175` (2026-03-25, unscoped) — Docker VM — 500% CPU, 8.2GB RAM (PID 60514)   This is the single biggest offender. Docker's Virtualization framework VM is consuming half your RAM and pinning 5 cores.
+- `ATM-007176` (2026-03-25, UNIVERSAL) — Spotlight indexing — ~10 mdworker_shared processes   Spotlight is frantically indexing all the new files that Dropbox/Google Drive synced down. Collectively eating ~150%+ CPU.
+- `ATM-007183` (2026-03-25, UNIVERSAL) — we need to implement this: "  Saved to memory as a full-system storage strategy covering:
+- `ATM-007234` (2026-03-25, personal, UNIVERSAL) — we have a lot of this garbage: "'/Users/4jp/Library/CloudStorage/GoogleDrive-padavano.anthony@gmail.com/Other computers/My Mac/Development/stage/Wires/GitRepos/SystemSnapshot/Roaming/Code/User/glob...
+- `ATM-007246` (2026-03-25, unscoped) — so find the old creative writing folder, find my screenplays, etc
+- `ATM-007252` (2026-03-25, unscoped) — they were killed bc they produced no output; they were broken; yes i already knew the existence of narratological blah blah
+- `ATM-007255` (2026-03-25, UNIVERSAL) — yes but within that is all hierarchy and folders, there is no real content it seems
+- `ATM-007257` (2026-03-25, UNIVERSAL) — put everything in one flat directory, no more folders, it's annoying and useless
+- `ATM-007301` (2026-03-25, personal) — yes, if that is logical and doesnt break anything; why does claude code have a standalone github situation
+- `ATM-007310` (2026-03-25, unscoped) — yes i was already logged out of icloud ffs, and logged back in
+- `ATM-007327` (2026-03-25, unscoped) — okay but that is impossible because it is 70, 000 files plus, there is no way to load it in browser and empty
+- `ATM-007354` (2026-03-25, UNIVERSAL, personal) — and frankly, we havent applied for jobs in days, so we need a full sweep of all previous days missed to find the best of the whole bunch
+- `ATM-007355` (2026-03-25, personal) — we also need to refactor the rubrics out into separarte rubrics
+- `ATM-007363` (2026-03-25, organ-iv) — also, we need to pull my prompt history for pure unadulterated non filtered language
+- `ATM-007368` (2026-03-25, personal) — this week, we do our best, tighten the screws, secure the boards from previous lessons and steady the boat
+- `ATM-007375` (2026-03-25, unscoped) — we need to begin formalizing and planting the seeds in their lots
+- `ATM-007422` (2026-03-25, unscoped) — the support assitant in the apple support app said "i dont have that information"...
+- `ATM-007488` (2026-03-25, organ-iv) — Consider resetting `DeltaExtractor._rule_counter` between test classes via a `@pytest.fixture(autouse=True)` that sets it to 0.
+- `ATM-007495` (2026-03-25, personal) — run it elegantly, subagents w different personas assigned, simply
+- `ATM-007505` (2026-03-25, UNIVERSAL, personal) — every sampled module has a module-level docstring explaining purpose and usage
+- `ATM-007520` (2026-03-25, organ-iii) — build this pitch-deck: "'/Users/4jp/Workspace/organvm-iii-ergon/content-engine
+- `ATM-007554` (2026-03-25, organ-iii) — make glassmorphic, animated, 3d (the person im pitching it with works in 3d animation)
+- `ATM-007581` (2026-03-25, unscoped) — i need godaddy to shop appearing in my gmail, it is a plague, divert emails into one of the folders that make sense elsewhere
+- `ATM-007586` (2026-03-25, UNIVERSAL) — Bro, before you ever suggest I need to do something, I need you to find all of the tools possible that could interact with the thing we're trying to interact with.
+- `ATM-007625` (2026-03-25, UNIVERSAL, personal) — Visual spiral layout (more real / designed)  Let’s lock both in 👇  ⸻  🧠 1. GHL BACKEND SYSTEM (CLEAN + ORGANIZED)  The goal: 👉 No mess 👉 Everything trackable 👉 Easy to duplicate for your downline l...
+- `ATM-007637` (2026-03-25, personal) — Why these will convert  They:     •    Don’t overpromise     •    Don’t overwhelm     •    Don’t feel salesy  They create: 👉 “This feels like it’s for me”  ⸻
+- `ATM-007640` (2026-03-25, personal) — that is offensive; so part of what we need is to respond, i think to tamper the madness down
+- `ATM-007649` (2026-03-25, UNIVERSAL, personal) — I have it all pretty mapped already and I think from what I sent you it’s all very what I want it to be and then after get the bones/structure right then we can add in more info/can film the videos...
+- `ATM-007650` (2026-03-25, personal) — Is this what you were talking about or am I on a different page ahahah "
+- `ATM-007652` (2026-03-25, personal) — this is for bringing into a new directory and implementing, and for sharing with maddie
+- `ATM-007669` (2026-03-25, organ-iii) — Why these will convert                                                                                                   They:                                                             •    Don’t...
+- `ATM-007778` (2026-03-25, personal) — okay, i need the jobs to apply for today, the materials, we need to find the connections to make, and the messages to send
+- `ATM-007780` (2026-03-25, organ-iii, UNIVERSAL) — sidebar before we begin: we need to get this project ((""https://chatgpt.com/g/g-p-69c3250247688191b6cd2ad8a54f68d9-content-multiplex/project"";;)) and all it's files and chats into ""/Users/4jp/Wo...
+- `ATM-007782` (2026-03-25, UNIVERSAL, organ-i) — The very reason I'm asking you to do it is because that's what this system is.
 - `ATM-007387` (2026-03-25, meta) — Register ORCID (5 minutes, browser task)
 - `ATM-006358` (2026-03-24, unscoped) — -   Chunk 14 — Candid Organization Link    Dir: ~/ (browser task)   Candid (candid.org) sent an email saying "Action needed:    Link your   organization to your Candid account." Open Candid in the ...
+- `ATM-006367` (2026-03-24, UNIVERSAL, organ-iv) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006369` (2026-03-24, UNIVERSAL, organ-iii) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006371` (2026-03-24, UNIVERSAL, personal) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006373` (2026-03-24, UNIVERSAL, meta) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006480` (2026-03-24, personal) — DUDE-the STRATIVE messages need to be less than 300 characters but right at the mark
+- `ATM-006483` (2026-03-24, personal) — YOOOOOOOOOOOOOOOOOOOOOOOO they need to be less than 300 characters
+- `ATM-006511` (2026-03-24, personal) — ensure that we cant simply find out what evals look like at Openai
+- `ATM-006515` (2026-03-24, UNIVERSAL, personal) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006548` (2026-03-24, UNIVERSAL, organ-iv) — what we are building is a self-reliant system that s i m p l y - k n o w s ;;;;
+- `ATM-006558` (2026-03-24, UNIVERSAL, organ-iv) — biology merging with fiction; let's think this out, where there are gaps in our system, add gh issues and memory about this;
+- `ATM-006559` (2026-03-24, meta) — yes but youre perhaps missing that my intention as modus operandi "we are accidents waiting to happen"
+- `ATM-006575` (2026-03-24, personal) — I had to think on this for a bit to make sure I remembered correctly
+- `ATM-006576` (2026-03-24, personal) — the training you provided is the first time rhetoric information was delivered to me, either wholesale or in part (imagine a BA in literature from a CUNY, & no rhetoric learning until 4 years later...
+- `ATM-006581` (2026-03-24, UNIVERSAL, organ-iv) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006583` (2026-03-24, UNIVERSAL) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006595` (2026-03-24, UNIVERSAL, meta) — let's formalize this by placing it in the academics, by making it a system wide, human creator, covenant, and let's publicize
+- `ATM-006611` (2026-03-24, unscoped) — These genuinely need human eyes            or an LLM-assisted review pass. |        52 | action-merge | 74 | Token overlap on canonical_action text.
+- `ATM-006613` (2026-03-24, unscoped) — The remainder            is human review.        55        56 ### M3.
 - `ATM-006621` (2026-03-24, unscoped) — Schema coverage for new artifacts        71        72 Two new artifact types have no schema:        73 - `import-audit.json` — per-thread audit records        74 - `near-duplicates.json` — sequence...
+- `ATM-006634` (2026-03-24, unscoped) — This would make the CCE engine i           ngest its own creation story.       113       114 ### S2.
+- `ATM-006644` (2026-03-24, meta, UNIVERSAL) — Audit #9 and #16 evidence.       145       146 ---       147       148 ## Dependency Graph       149       150 ```       151 M1 (tests) ─────────────────────┐       152 M2 (triage policies) ───────...
+- `ATM-006653` (2026-03-24, unscoped) — The deployment s          ite data is stable (non-git by design).
+- `ATM-006654` (2026-03-24, unscoped) — No work will be lost.       70       71 The boulder is at the top.
+- `ATM-006668` (2026-03-24, unscoped) — The deployment site data is stable      (non-git by design).
+- `ATM-006684` (2026-03-24, unscoped) — yes proceed, and then devise your forward propulsion towards juggernautic forceful expansive exhaution and glorious gloriosity
+- `ATM-006692` (2026-03-24, UNIVERSAL) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006706` (2026-03-24, personal, UNIVERSAL) — please also find logs of critiques of my portfolio directly from this system itself
+- `ATM-006717` (2026-03-24, UNIVERSAL, personal) — the messages i used are from all the different outreach documents
+- `ATM-006728` (2026-03-24, organ-iv) — we need expanding into fiction and actula science documentation/studies
+- `ATM-006736` (2026-03-24, UNIVERSAL, personal) — proceed exhaustively, no need for questions at every turn; at the end you assume masks of three povs:  all comes in three
+- `ATM-006741` (2026-03-24, UNIVERSAL, personal) — proceed exhaustively, no need for   questions at every turn; at the end you assume masks of three povs:  all comes in   three
+- `ATM-006744` (2026-03-24, personal) — then build;                                                                  ───────────────────────
+- `ATM-006757` (2026-03-24, UNIVERSAL, personal) — proceed exhaustively, no need for   questions at every turn; at the end you assume masks of three povs:  all comes in   three
+- `ATM-006760` (2026-03-24, personal) — then build;                                                                  ───────────────────────
+- `ATM-006761` (2026-03-24, UNIVERSAL, meta) — yes, and then we need to assemble what exactly makes up a life: "/Users/4jp/Downloads/Organ Systems That Make Us Alive - Google Search (3_24_2026 7：38：29 PM).html"
+- `ATM-006765` (2026-03-24, UNIVERSAL, organ-iv) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-006773` (2026-03-24, UNIVERSAL, meta) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
 - `ATM-006571` (2026-03-24, meta, UNIVERSAL) — Create a Gmail filter:                      from:notifications@github.com ("dependabot[bot]" OR     "github-actions[bot]")                                      → Skip Inbox, Apply label "github/bot...
 - `ATM-006365` (2026-03-24, employment, personal) — Anduril Industries — rejected Mar 22    Also note these LinkedIn leads worth reviewing:   - Netflix Full Stack SE 5 (Studio Talent Engineering)   - Mercor AI Developer ($80-110/hr, fully remote)   ...
+- `ATM-005696` (2026-03-23, UNIVERSAL, organ-iv) — okay we need to find brew modules for visual design, and/or prompt gemini or a better multimodal ai, combination of all of the above to handle visuals
+- `ATM-005897` (2026-03-23, UNIVERSAL, personal) — find the email for his follow up before our call for more information
+- `ATM-005899` (2026-03-23, personal) — my take was to solve the problem with front loading work, then maintenance
+- `ATM-005902` (2026-03-23, UNIVERSAL) — ❯ ❯ Provide an overview of all that was and all that is and all that needs to be based on this entire session's context
+- `ATM-005907` (2026-03-23, organ-iii, personal) — here is the repo he was thrilled about: "https://github.com/organvm-iii-ergon/public-record-data-scrapper"
+- `ATM-005910` (2026-03-23, personal) — This is something that would benefit our personal projects but also a project for packaging and selling
+- `ATM-005939` (2026-03-23, UNIVERSAL, personal) — they are different people with mostly different paths; UCC stuff is all Tony
+- `ATM-005944` (2026-03-23, UNIVERSAL, personal) — it was literally from today: https://meet.google.com/iib-qtyr-csk
+- `ATM-005960` (2026-03-23, unscoped) — final task: log the need for absorption of these projects, bc dwv needs to be retired and these become ours
+- `ATM-005973` (2026-03-23, personal) — this is the result of my conversation with chris: "/Users/4jp/Downloads/ChatGPT-Chris conversation analysis.md"
+- `ATM-005975` (2026-03-23, meta, personal) — explain how to do this, if you cant CLI, API it or whatever: "IRF-OBJ-001"
+- `ATM-005987` (2026-03-23, UNIVERSAL, personal) — Focus on translating complex AI/robotics tech into visual storytelling. | | **Marian** | Battery systems / components manufacturing | 3D design, animation, rendering | Visualized hidden protective ...
+- `ATM-005988` (2026-03-23, UNIVERSAL, personal) — All 3D work handled solo by Scott Lefler. | | **MIT45** | Herbal shot / beverage | Brand identity refresh, packaging design, design system | MIT45 is described as "a leader in the herbal shot indus...
+- `ATM-005992` (2026-03-23, personal) — Video reveals tiered rewards (gold, silver, bronze) to build anticipation.
+- `ATM-005993` (2026-03-23, personal) — From the peak NFT era. | | **Timex** | Watches / Web3 / NFTs | Design and motion | Collaboration with Bored Ape Yacht Club.
+- `ATM-005994` (2026-03-23, personal) — Fully customizable NFT watch experience -- holders design their own Timex watch featuring their Bored Ape, receiving both digital and physical versions.
+- `ATM-005995` (2026-03-23, personal) — Blended Web3 with classic watchmaking. | | **Astra SDK** | Developer tools / software (digital characters & avatars) | Branding (logo), landing page design, web design | Led complete branding for a...
+- `ATM-006004` (2026-03-23, personal) — if there is a will (and there is a will of the creator to do as        little none-dreamworks/ideadworks as ABSOLUTE law);
+- `ATM-006019` (2026-03-23, organ-iv) — Chris sent you "Object Lessons has material, get after it" — project reactivation nudge
+- `ATM-006021` (2026-03-23, organ-iv) — You told him you want to build an automated clip mining pipeline — the machine watches films instead of you
+- `ATM-006044` (2026-03-23, personal) — yes, message to scott, build out prompt for injenction elsewhere instead of in this directory
+- `ATM-006045` (2026-03-23, personal) — then we need to do the same for tony c bc i want to write to him today too
+- `ATM-006072` (2026-03-23, organ-iii) — `this.assertConfigured(operation)` -- throws if credentials are missing
+- `ATM-006088` (2026-03-23, organ-iii) — Leaves the door open for BOTH tracks (Deepgram + side projects)    ---   Do you want me to:
+- `ATM-006090` (2026-03-23, organ-iii) — Draft the actual follow-up message once you tell me what specific thing from the conversation stuck with you
+- `ATM-006098` (2026-03-23, organ-iii) — Bank statement scraping -- public records data extraction    This is a Founder/Operator play -- he doesn't want a single-role hire, he wants a technical partner who solves problems permanently (whi...
 - `ATM-006130` (2026-03-23, UNIVERSAL, organ-iii) — well i sent the text to tony, so let's get everything i promised implemented
+- `ATM-006186` (2026-03-23, organ-iii) — Starter at $199/month, Professional at $499/month, and Enterprise at $999/month. The $499 tier is the sweet spot: MCA brokers currently spend $1,500-$20,000/month on lead acquisition, and at 5,000 ...
 - `ATM-006231` (2026-03-23, UNIVERSAL) — dbt-labs/dbt-mcp PR #669 — Jairus Martinez requested changes AND asked you to verify locally. Blocking merge.
+- `ATM-006249` (2026-03-23, organ-iii, organ-iv) — **jairus-m/dagster-sdlc** — 20 stars, 1 open issue, Python. Contributing here builds reciprocity with the person who reviewed (and can champion) our dbt-mcp PR. Data pipeline expertise is ORGAN-III...
+- `ATM-006259` (2026-03-23, UNIVERSAL) — chunk these all out, provide me with the directory i should work in for each chunk and then provide me with the prompt for salving
+- `ATM-006264` (2026-03-23, meta) — Also check the                                                                                                                    2 misconfigured domains reported on the ivviiviivvi team.
+- `ATM-006280` (2026-03-23, meta) — no i said that project was killed and the projects are absorbed into my corpus
+- `ATM-006303` (2026-03-23, unscoped) — I want this to be simple, minimal, easy peasy lemon squeezy.
+- `ATM-006304` (2026-03-23, personal) — Okay, we did a ton of work today on Domus Semper Palingenesis.
+- `ATM-006322` (2026-03-23, unscoped) — Go into a terminal, do this, clear the cache, do this, do that.
+- `ATM-006326` (2026-03-23, organ-iv) — a Strava activity data pipeline using: - **dlt** (EL layer): REST API ingestion from Strava with incremental loading and a custom `StravaAPIResource` - **dbt** (transform layer): staging, source, a...
+- `ATM-006327` (2026-03-23, organ-iv) — Operator precedence error in `check_cycling_data_size` at `/dagster_proj/assets/ml_analytics/energy_prediction.py:80`. The expression `num_rows > 1500 & num_cols == 8` uses bitwise `&` which binds ...
+- `ATM-006332` (2026-03-23, organ-iv) — when we go to someone's house, we follow the goddamn rules (see:
 - `ATM-005697` (2026-03-23, meta, enforcement) — so the meta-rule: each section requires visual, each visual requires data analysis/context explaining the data
 - `ATM-005631` (2026-03-23, meta) — **`backward_compatibility`** section added noting legacy organ keys remain active during migration, with pointer to `organ-definitions.json v2.0 legacy_organ_map`.
 - `ATM-005755` (2026-03-23, UNIVERSAL, organ-iv) — its in the original email they sent me, can you tend to all of that?
@@ -213,7 +909,6 @@
 - `ATM-004429` (2026-03-21, organ-iv) — Second instantiation: deploy authority against ORGAN-IV (Taxis)
 - `ATM-004434` (2026-03-21, unscoped) — Submit IRA methodology to arXiv:cs.SE as Paper (Tier I) — this is Doc   A, already drafted
 - `ATM-004461` (2026-03-21, unscoped) — Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.
-- `ATM-004597` (2026-03-21, meta) — **Software Governance as Measurement Instrument** (~1,900 words) -- analyzes promotion state machines as Guttman scales (with scalogram analysis), seed.yaml as operational definition (with content ...
 - `ATM-004505` (2026-03-21, meta, UNIVERSAL) — five failure modes mapped across domains: reference failure, namespace collisions, semantic drift, abstraction mismatch, governance breakdown - **Conceptual Map**
 - `ATM-004579` (2026-03-21, UNIVERSAL) — **Implications for System Design** (~700 words) -- seven design principles, the double-hyphen convention analyzed as applied naming ontology, when conventions fail
 - `ATM-004649` (2026-03-21, unscoped) — **Design Principles** -- five principles for flat-ontology assessment: measure relations not entities, track network configuration alongside scores, build consequential validity into feedback loops...
@@ -227,10 +922,19 @@
 - `ATM-004677` (2026-03-21, meta) — Implications for ORGANVM (4 subsections) -- schema contracts as syntactic categories, registry operations as functorial transformations, governance rules as Hoare triples
 - `ATM-004712` (2026-03-21, unscoped) — Pushes hard on five empirical inadequacies: the Chomsky hierarchy's poor fit for natural language, cherry-picked linguistic examples, missing cross-linguistic evidence (polysynthetic, tonal, sign, ...
 - `ATM-004737` (2026-03-21, UNIVERSAL) — **A7 -- Small-N psychometric guidance (Minor).** Added a substantial paragraph block in Section 4.4 covering Bayesian estimation with informative priors, classical reliability analysis, expert pane...
+- `ATM-003687` (2026-03-20, organ-iii, meta) — Vigiles Aeternae Genesis — the franchise   The spec is approved. Phase 0 (GENESIS) says: create founding repos, register in   registry, route topological-mythos through alchemia. This is the creati...
 - `ATM-004068` (2026-03-20, UNIVERSAL) — Use gh issue create via Bash for all 8 issues (can batch with a script)
 - `ATM-004086` (2026-03-20, unscoped) — Update omega evidence — refresh criteria #1, #3, #15, #17 with current data (49 essays, 0   vulns, 459 tests, deploy rollback)
+- `ATM-004194` (2026-03-20, UNIVERSAL) — #18 — Elevate semiotic affordance (cross-paper structural decision — affects how all   chapters are written)
 - `ATM-004226` (2026-03-20, UNIVERSAL) — Use gh issue create via Bash for all 8 issues (can batch with a script)
+- `ATM-004260` (2026-03-20, UNIVERSAL) — #18 — Elevate semiotic affordance (cross-paper structural decision — affects how all   chapters are written)
+- `ATM-004271` (2026-03-20, UNIVERSAL) — #18 — Elevate semiotic affordance (cross-paper structural decision — affects how all   chapters are written)
 - `ATM-004303` (2026-03-20, UNIVERSAL) — Use gh issue create via Bash for all 8 issues (can batch with a script)
+- `ATM-004337` (2026-03-20, UNIVERSAL) — #18 — Elevate semiotic affordance (cross-paper structural decision — affects how all   chapters are written)
+- `ATM-004216` (2026-03-20, UNIVERSAL) — The evidence asymmetry between Papers I and II. Paper I has 444+ films across 10   objects. Paper II requires "minimum 3 close readings per non-cinematic medium" = 18   total. This is a ratio of ~2...
+- `ATM-004238` (2026-03-20, organ-i, naming) — Reference V1 objects in Paper II where relevant        ## Why       Published video essays are citable scholarly artifacts. The V1→V2 evolution story       strengthens the methodology chapter: theo...
+- `ATM-004293` (2026-03-20, UNIVERSAL) — The evidence asymmetry between Papers I and II. Paper I has 444+ films across 10   objects. Paper II requires "minimum 3 close readings per non-cinematic medium" = 18   total. This is a ratio of ~2...
+- `ATM-004315` (2026-03-20, organ-i, naming) — Reference V1 objects in Paper II where relevant        ## Why       Published video essays are citable scholarly artifacts. The V1→V2 evolution story       strengthens the methodology chapter: theo...
 - `ATM-003325` (2026-03-20, unscoped) — LinkedIn outreach — 2-3 connection requests per company, prioritized: Anthropic > Cursor    > Railway > Datadog > Render > Deepgram
 - `ATM-003349` (2026-03-20, unscoped) — LinkedIn outreach — 2-3 connection requests per company, prioritized: Anthropic > Cursor    > Railway > Datadog > Render > Deepgram
 - `ATM-003291` (2026-03-15, unscoped) — Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.
@@ -262,16 +966,39 @@
 - `ATM-000065` (2025-12-09, unscoped) — Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.
 - `ATM-000055` (2025-11-25, unscoped) — Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.
 
-## Codex (Mechanical) (3)
+## Codex (Mechanical) (8)
 
 - `ATM-024265` (2026-04-21, meta, security) — IRF-SEC-006 — Generate new PAT, run gh secret set METRICS_TOKEN --repo              4444J99/4444J99
+- `ATM-011064` (2026-03-31, meta) — Orchestration-start-here — dissolving 6 standalone script isotopes   (validate-deps, calculate-metrics, organ-audit, validate-seeds, generate-seed,   hardcoded paths). Unblocks circulatory--contrib...
 - `ATM-011083` (2026-03-31, meta) — Update context generator template to emit mechanism names instead of       organ numbers
+- `ATM-013383` (2026-03-31, organ-iii, meta) — Create conversation-corpus--product repo in ORGAN-III (scaffold + Stripe test   integration)    In 30 days:
+- `ATM-014367` (2026-03-31, organ-iii, organ-iv) — Create conversation-corpus--product repo in ORGAN-III (scaffold + Stripe test   integration)    In 30 days:
+- `ATM-014688` (2026-03-31, meta) — post-002 (Bridge Audit): Status is READY, 664 words, Testament-audited. Prepare for publish — verify image path exists, generate the audit visualization if missing, format for      LinkedIn charact...
+- `ATM-014738` (2026-03-31, organ-iv) — post-002 (Bridge Audit): Status is READY, 664 words, Testament-audited. Prepare for publish — verify image path exists, generate the audit visualization if missing, format for      LinkedIn charact...
 - `ATM-010479` (2026-03-30, UNIVERSAL, meta) — universal index as gh issues represented on a template for you to create and keep updated while we respawn our offspring: https://github.com/orgs/a-organvm/projects/1/views/1
 
-## Gemini/Perplexity (Research) (3)
+## Gemini/Perplexity (Research) (21)
 
+- `ATM-011236` (2026-03-31, personal) — Then research funders (foundations, government programs, accelerators) that have funded open-source developer tools or workforce technology products in 2024-2026
+- `ATM-011851` (2026-03-31, organ-iv) — After OpenCode: Claude reviews research output for fabrication (verify LinkedIn URLs)
+- `ATM-012325` (2026-03-31, personal) — After OpenCode: Claude reviews research output for fabrication (verify LinkedIn URLs)
+- `ATM-012860` (2026-03-31, meta) — After OpenCode: Claude reviews research output for fabrication (verify LinkedIn URLs)
+- `ATM-013067` (2026-03-31, meta) — After OpenCode: Claude reviews research output for fabrication (verify LinkedIn URLs)
 - `ATM-013183` (2026-03-31, meta) — Investigate the correct Projects API endpoint:        - Likely candidates: backend-api/projects, backend-api/me/projects        - Use browser DevTools Network tab while navigating ChatGPT Projects ...
-- `ATM-007383` (2026-03-25, employment, meta) — Read aerarium--res-publica/research/2026-03-24-nlnet-application-research.md —       internalize scoring criteria
+- `ATM-013483` (2026-03-31, meta) — Pathos review Evaluate the emotional resonance and appeal to the audience Create a strong emotional connection with the audience
+- `ATM-014684` (2026-03-31, UNIVERSAL, meta) — Run hygiene.py --prune-research to move auto-sourced qualified entries that haven't been manually reviewed back to research_pool/
+- `ATM-014734` (2026-03-31, UNIVERSAL, organ-iv) — Run hygiene.py --prune-research to move auto-sourced qualified entries that haven't been manually reviewed back to research_pool/
+- `ATM-015307` (2026-03-31, organ-iv) — After a-organvm function 3 (CHECK 19 closes): Evaluate whether the 8-org              structure                                                                                    still serves the o...
+- `ATM-015412` (2026-03-31, organ-iv) — After a-organvm function 3 (CHECK 19 closes): Evaluate whether the 8-org structure still serves the organism, or whether the V2 single-repo model makes the Enterprise shell   unnecessary.
+- `ATM-015516` (2026-03-31, organ-iv) — After a-organvm function 3 (CHECK 19 closes): Evaluate whether the 8-org structure still serves the organism, or whether the V2 single-repo model makes the Enterprise shell   unnecessary.
+- `ATM-015616` (2026-03-31, unscoped) — After a-organvm function 3 (CHECK 19 closes): Evaluate whether the 8-org structure still serves the organism, or whether the V2 single-repo model makes the Enterprise shell   unnecessary.
+- `ATM-009486` (2026-03-30, personal) — The current pipeline is over-engineered for a personal portfolio  Let me evaluate the proposed plan:  **Strengths:**
+- `ATM-010487` (2026-03-30, personal) — each app should be research and fodder for the public external content
+- `ATM-010720` (2026-03-30, unscoped) — After OpenCode: Claude reviews research output for fabrication (verify LinkedIn URLs)
+- `ATM-007462` (2026-03-25, UNIVERSAL, personal) — 1,509 entry validation errors — stale/incomplete pipeline entries    The research pool has 1,402 entries, many auto-sourced with minimal metadata. Missing   fields, stale URLs, incomplete scores. T...
+- `ATM-006526` (2026-03-24, UNIVERSAL, meta) — research secondary peer-reviewed sources, find primary sources via projects akin to us (repos/directories/systems-at-large), let's find out past, present, and future
+- `ATM-006762` (2026-03-24, UNIVERSAL, organ-iv) — we  need to work the threads from this into research for the agentic titan as well: "/Users/4jp/Downloads/Organ Systems That Make Us Alive - Google Search (3_24_2026 7：38：29 PM).html"
+- `ATM-006262` (2026-03-23, meta) — Investigate: check recent commits, build logs, and Vercel deployment status                                                                                                              for both pro...
 - `ATM-002966` (2026-03-09, unscoped) — We need to develop research on the market and how other competitors are doing their marketing, building the audience, getting the audience in, and so forth.
 
-*Engine: route_atoms.py | Run: 2026-04-22T18:20:06.255275*
+*Engine: route_atoms.py | Run: 2026-04-22T18:39:21.727613*

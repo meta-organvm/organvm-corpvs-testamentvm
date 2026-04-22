@@ -1,373 +1,370 @@
 # Prompt Atoms — Micro-Unit Registry
 
-**Generated:** 2026-04-21T07:59:06.686699
-**Total atoms:** 31727
+**Generated:** 2026-04-22T18:17:25.726573
+**Total atoms:** 24596
 
 ## By Type
 
 | Type | Count | % |
 |------|-------|---|
-| implicit-signal | 10100 | 31.8% |
-| directive | 7722 | 24.3% |
-| governance-rule | 4788 | 15.1% |
-| question | 4155 | 13.1% |
-| constraint | 3837 | 12.1% |
-| command | 394 | 1.2% |
-| emotional | 297 | 0.9% |
-| data | 232 | 0.7% |
-| correction | 202 | 0.6% |
+| implicit-signal | 7754 | 31.5% |
+| directive | 5649 | 23.0% |
+| governance-rule | 3996 | 16.2% |
+| question | 3348 | 13.6% |
+| constraint | 2846 | 11.6% |
+| command | 386 | 1.6% |
+| emotional | 312 | 1.3% |
+| correction | 179 | 0.7% |
+| data | 126 | 0.5% |
 
 ## By Source
 
 | Source | Atoms |
 |--------|-------|
-| claude-code | 23199 |
+| claude-code | 19915 |
 | codex | 4539 |
-| chatgpt | 2247 |
-| corpus-site | 1551 |
-| shell-history | 105 |
-| specstory | 86 |
+| shell-history | 142 |
 
 ## Universe Distribution
 
 | Universe | Atoms |
 |----------|-------|
-| UNIVERSAL | 13043 |
-| meta | 9783 |
-| unscoped | 6842 |
-| organ-iv | 5527 |
-| personal | 5260 |
-| organ-i | 3576 |
-| organ-iii | 3470 |
-| persistence | 2525 |
-| employment | 2110 |
-| naming | 2058 |
-| security | 1609 |
-| organ-ii | 1493 |
-| enforcement | 1316 |
-| housing | 1185 |
-| health | 1003 |
-| organ-v | 927 |
-| financial | 668 |
-| organ-vi | 569 |
-| organ-vii | 337 |
-| automation | 321 |
-| relationships | 302 |
-| education | 239 |
+| UNIVERSAL | 10295 |
+| meta | 6897 |
+| unscoped | 5892 |
+| organ-iv | 5019 |
+| personal | 3563 |
+| organ-iii | 3227 |
+| persistence | 2302 |
+| organ-i | 1698 |
+| naming | 1644 |
+| employment | 1614 |
+| security | 1332 |
+| enforcement | 1170 |
+| organ-ii | 1150 |
+| housing | 1022 |
+| health | 893 |
+| organ-v | 714 |
+| financial | 537 |
+| organ-vi | 427 |
+| automation | 315 |
+| organ-vii | 276 |
+| relationships | 200 |
+| education | 139 |
 
 ## Status
 
 | Status | Count |
 |--------|-------|
-| UNREVIEWED | 31373 |
-| N/A | 354 |
+| UNREVIEWED | 24239 |
+| N/A | 357 |
 
-## Directives — 7722 atoms requiring implementation
+## Directives — 5649 atoms requiring implementation
 
 | ID | Date | Source | Universes | Summary |
 |----|------|--------|-----------|---------|
-| ATM-000001 |  | corpus-site | employment, UNIVERSAL, organ-i | # PHASE 1: MASTER SUMMARY — Documentation Audit (Weeks 1-2, 70 hours)  **Duratio |
-| ATM-000008 | 2026-03-13 | corpus-site | organ-i | Weekly consolidation  Use them like this:  - Session-close micro export: last 10 |
-| ATM-000009 | 2026-03-23 | corpus-site | organ-i, persistence, UNIVERSAL | # Conversation Corpus Engine First Breath Session  - Recorded: 2026-03-23T19:05: |
-| ATM-000010 | 2026-03-23 | corpus-site | organ-i | The canonical repo was established at `organvm-i-theoria/conversation-corpus-eng |
-| ATM-000012 | 2026-03-23 | corpus-site | organ-i | The site was declared as `FORM-RES-001`, a `RESERVOIR` formation hosted in ORGAN |
-| ATM-000013 | 2026-03-23 | corpus-site | organ-i, meta | The post-flood constitutional order was applied: META is genome/law; Theoria is  |
-| ATM-000014 | 2026-03-23 | corpus-site | organ-i | The engine seed was updated to schema v1.1 with functional class, formation type |
-| ATM-000015 | 2026-03-23 | corpus-site | organ-i | The repo guidance was updated to reflect SPEC-019 direction, signal signatures,  |
-| ATM-000016 | 2026-03-23 | corpus-site | organ-i | Operational planning was committed into project history. |
-| ATM-000023 |  | corpus-site | organ-i | Here is your cleaned, fully integrated AI handoff manual as a reusable, self-con |
-| ATM-000028 |  | corpus-site | organ-i | The goal is consistent with the overarching project or OS you are building. |
-| ATM-000029 |  | corpus-site | UNIVERSAL, organ-i | 2 Background  Instructions:   Describe why this system or artifact is being crea |
-| ATM-000032 |  | corpus-site | organ-i | Desired output format is specified (for example: conceptual spec, code scaffold, |
-| ATM-000034 |  | corpus-site | organ-i | Metaformeme Linguistic Analysis is explicitly referenced. |
-| ATM-000035 |  | corpus-site | organ-i | Mythological Fusion for Character Creation is explicitly referenced. |
-| ATM-000036 |  | corpus-site | organ-i, UNIVERSAL | Wave Theory in Creative Systems is explicitly referenced. |
-| ATM-000037 |  | corpus-site | organ-i | Recursive Storytelling in Interactive Narratives is explicitly referenced. |
-| ATM-000038 |  | corpus-site | organ-i | 2 Role of Conceptual Inputs  Instructions:   Explain how these conceptual domain |
-| ATM-000039 |  | corpus-site | organ-i | The creative framework that these concepts form together is clearly explained. |
-| ATM-000040 |  | corpus-site | organ-i | The way the AI should use these concepts (for example: as filters, motifs, struc |
-| ATM-000042 |  | corpus-site | organ-i | Procedural Generation for Evolving Worlds is included as an element. |
-| ATM-000043 |  | corpus-site | organ-i | Self-Evolving OS Foundational Components are included as an element. |
-| ATM-000044 |  | corpus-site | organ-i | AI Automation for Workflow Efficiency is included as an element. |
-| ATM-000045 |  | corpus-site | organ-i | Any additional engines or tools (for example: simulation layers, database hooks, |
-| ATM-000047 |  | corpus-site | organ-i | The execution role of each technical element is explained. |
-| ATM-000050 |  | corpus-site | housing, organ-i | Digital Memory Archive Creation is defined, including where artifacts live and h |
-| ATM-000051 |  | corpus-site | organ-i | GitHub Organization for Long-Term Projects is defined, including repository and  |
-| ATM-000052 |  | corpus-site | organ-i | Naming Conventions for Structured Projects are defined, including how files, fol |
-| ATM-000053 |  | corpus-site | personal, employment, organ-i | 2 Importance  Instructions:   Explain why these organizational patterns matter f |
-| ATM-000054 |  | corpus-site | organ-i | The continuity benefits of structured organization are explained. |
-| ATM-000055 |  | corpus-site | organ-i | The benefits for iterative work, refactoring, and collaboration are described.   |
-| ATM-000056 |  | corpus-site | organ-i | 1 Essential Context  Instructions:   Tell the AI exactly what this output will b |
-| ATM-000057 |  | corpus-site | organ-i | The specific purpose of this output is defined (for example: “to create a prompt |
-| ATM-000058 |  | corpus-site | organ-i | Constraints are listed: scope, length, style, acceptable formats, and any techno |
-| ATM-000059 |  | corpus-site | organ-i | Dependencies are identified: tools, frameworks, data sources, APIs, or prior doc |
-| ATM-000060 |  | corpus-site | organ-i | Continuity is explained: prior outputs, current state, and how the next AI or ne |
-| ATM-000061 |  | corpus-site | organ-i | 2 Recommended Prompt Flow  Instructions:   Describe, in order, how you will stru |
-| ATM-000084 |  | corpus-site | organ-i, UNIVERSAL | **The Temporal:** Future and past-focused work rooted in religion, mythology, ca |
-| ATM-000085 |  | corpus-site | meta, personal, employment | # Comprehensive Funding Review and Grant-Finding Blueprint Based on Your Attache |
-| ATM-000093 |  | corpus-site | financial, health, security | <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" styl |
-| ATM-000099 |  | corpus-site | organ-i | I will create a minimalist and interactive presentation of six classic visual-sp |
-| ATM-000100 |  | corpus-site | employment, organ-i | This immersive document will contain an HTML application that uses `three.js` to |
-| ATM-000102 |  | corpus-site | organ-i | Geometric Paradoxes as Elemental ForcesJan 29, 5:10 PM  I have created the inter |
-| ATM-000103 |  | corpus-site | organ-i | Each of the six paradoxes is rendered using `three.js` as a distinct, animated 3 |
-| ATM-000104 |  | corpus-site | organ-i | I've focused on clean lines and geometric precision to match the "scientific ill |
-| ATM-000107 |  | corpus-site | organ-i | The interface is minimal to keep the focus on the animations themselves. |
-| ATM-000109 |  | corpus-site | UNIVERSAL, organ-i | For the **Penrose Stairs** and **Escher's Waterfall**, the motion you see is pre |
-| ATM-000110 |  | corpus-site | organ-i | The little particles are constantly traveling along a path that should be imposs |
-| ATM-000111 |  | corpus-site | organ-i | For the other objects (like the Penrose Triangle, Necker Cube, and Blivet), the  |
-| ATM-000112 |  | corpus-site | UNIVERSAL, organ-i | This rotation helps reveal the paradox that's built into their static geometry,  |
-| ATM-000116 |  | corpus-site | organ-i | The goal is an "environmental" feel, inspired by Stanley Donwood's stark, textur |
-| ATM-000119 |  | corpus-site | organ-i | The clean, schematic look is gone, replaced by a darker, more textured environme |
-| ATM-000120 |  | corpus-site | organ-i | The lines will feel more like they were etched into the scene, and the motion wi |
-| ATM-000125 |  | corpus-site | organ-i | The motion should be the process of the paradox constantly creating and re-creat |
-| ATM-000127 |  | corpus-site | organ-i | The clean lines are gone, replaced by a more organic, energetic, and atmospheric |
-| ATM-000130 |  | corpus-site | organ-i | I've focused heavily on your Penrose Stairs example, rebuilding it so the stairs |
-| ATM-000131 |  | corpus-site | organ-ii, organ-i | The other paradoxes have also been updated with more dynamic, generative animati |
-| ATM-000153 |  | corpus-site | UNIVERSAL, organ-i | System definition  The system is a **multi-input, multi-output adaptive control  |
-| ATM-000154 |  | corpus-site | organ-i | Each “vice” is a drive-node with four properties:   • an activation trigger   •  |
-| ATM-000177 |  | corpus-site | UNIVERSAL, organ-i | Remove loss, and the engine eats the system.  * * *  ### 2. |
-| ATM-000198 |  | corpus-site | organ-i | If you want next, we can formalize this as a control-theory block diagram, map i |
-| ATM-000202 |  | corpus-site | organ-i | Two. “Lust” is a controller on mating/validation error, strongly coupled to exte |
-| ATM-000203 |  | corpus-site | meta, organ-i | Three. “Pride” is a controller on status/reputation error, often acting as a met |
-| ATM-000204 |  | corpus-site | UNIVERSAL, organ-i | Four. “Envy” is a setpoint shifter and attention allocator; it changes what “ref |
-| ATM-000206 |  | corpus-site | organ-i | Six. “Gluttony” is a short-horizon controller on comfort/satiety error, often wi |
-| ATM-000207 |  | corpus-site | organ-i | Seven. “Sloth” is a damping controller; it reduces control effort to avoid insta |
-| ATM-000209 |  | corpus-site | organ-i | Sensor corruption: metrics replace reality, signals are gamed, or truth is delay |
-| ATM-000217 |  | corpus-site | organ-i | In scarcity regimes, high sensitivity to energy-dense intake is adaptive; in abu |
-| ATM-000219 |  | corpus-site | organ-i | It is a mechanism for gene propagation under sexual selection. |
-| ATM-000220 |  | corpus-site | UNIVERSAL, organ-i | It is naturally sensitive to rejection and competition; when you remove reciproc |
-| ATM-000226 |  | corpus-site | UNIVERSAL, organ-i | It is “adaptive” when reputation is local and memory is durable; it becomes unst |
-| ATM-000228 |  | corpus-site | UNIVERSAL, organ-i | It is a mechanism to detect relative disadvantage and reallocate effort. |
-| ATM-000229 |  | corpus-site | organ-i | It becomes pathological when comparison targets are unreal (curated feeds) or wh |
-| ATM-000232 |  | corpus-site | organ-i | It becomes destructive when institutions remove personal cost (low accountabilit |
-| ATM-000235 |  | corpus-site | organ-i | Sloth becomes maladaptive when “rest” is filled with low-cost stimulation that p |
-| ATM-000239 |  | corpus-site | organ-i | Greed and envy are harnessed into innovation via competition, and pride is harne |
-| ATM-000241 |  | corpus-site | organ-i | Competition is weakened (monopoly/oligopoly), so greed no longer needs invention |
-| ATM-000244 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000248 |  | corpus-site | organ-i | Pride and envy should, in principle, be tempered by reputational cost and social |
-| ATM-000250 |  | corpus-site | organ-i | Sensor corruption: engagement metrics replace truth and quality, so the estimato |
-| ATM-000253 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000261 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000264 |  | corpus-site | organ-i | Wrath is supposed to be delegated to the state, with due process providing dampi |
-| ATM-000268 |  | corpus-site | organ-i | Feedback from harmed communities is discounted as “noise,” degrading the estimat |
-| ATM-000269 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000271 |  | corpus-site | organ-i | Envy and pride can be safely harnessed into skill acquisition, while sloth is ma |
-| ATM-000276 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000277 |  | corpus-site | organ-i | Strengthen mastery-based feedback, shorten feedback delay, and make competence l |
-| ATM-000279 |  | corpus-site | organ-i | Gluttony is constrained by satiety and visible bodily cost; pride and lust provi |
-| ATM-000284 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000292 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000293 |  | corpus-site | organ-vi, health, relationships | Use multi-sensor evaluation (quality, durability, customer impact), protect reco |
-| ATM-000294 |  | corpus-site | organ-i | These are the original high-fidelity feedback institutions: dense reputation, re |
-| ATM-000299 |  | corpus-site | organ-i | Control fix in institutional terms. |
-| ATM-000313 |  | corpus-site | organ-i | Over time the phrase “Oh, that is mo!” condensed the pattern into a single marke |
-| ATM-000320 |  | corpus-site | organ-i | It becomes a “charged” utterance—grammar functioning by omission.  ### 2. **Comp |
-| ATM-000321 |  | corpus-site | organ-i | The implicit noun or clause (“good time,” “mess,” “success”) is understood throu |
-| ATM-000327 |  | corpus-site | organ-i | You turned those rhymes into a short phrase, “that is mo.” |
-| ATM-000354 |  | corpus-site | organ-i | **m/b/g (moat-boat-goat):** play with rhyme and rhythm, meaning is nonsense, sou |
-| ATM-000357 |  | corpus-site | organ-i | **Charged utterance:** sentence feels full though part is gone; shared context s |
-| ATM-000369 |  | corpus-site | UNIVERSAL, organ-i | Whole‑thing = charged talk       **Summary is gonna be:**   The rhyme grew small |
-| ATM-000371 |  | corpus-site | organ-i | Show the m/b/g origin. |
-| ATM-000375 |  | corpus-site | relationships, UNIVERSAL, organ-i | They laugh. You cackle. The bit lives.       * * *  **TLDR gonna be:**   Guide t |
-| ATM-000376 |  | corpus-site | organ-i | Make the examples a moat, a boat, and a goat |
-| ATM-000378 |  | corpus-site | financial, UNIVERSAL, organ-i | <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" styl |
-| ATM-000379 |  | corpus-site | housing, UNIVERSAL, organ-i | **Use the right words when calling 311 or going to HRA / shelter intake** Say:   |
-| ATM-000381 |  | corpus-site | organ-i | **How to apply immediately**     - Go to **ACCESS HRA** (website or app) and sta |
-| ATM-000386 |  | corpus-site | organ-i | I will create a minimalist, scientific-style illustration of the six visual-spat |
-| ATM-000387 |  | corpus-site | organ-i | This immersive document will contain a single HTML file that renders the paradox |
-| ATM-000388 |  | corpus-site | organ-i | The layout is designed to be responsive and feel like a modern design schematic, |
-| ATM-000389 |  | corpus-site | organ-i | Visual-Spatial Paradoxes Infographic (Animated)Jun 27, 3:03 PM  I have now creat |
-| ATM-000390 |  | corpus-site | organ-i | It lays out the six paradoxes in a clean, responsive grid. |
-| ATM-000391 |  | corpus-site | organ-i | Each paradox is rendered as a crisp SVG drawing with a cyan accent to emphasize  |
-| ATM-000392 |  | corpus-site | naming, UNIVERSAL, organ-i | The overall design feels like a modern scientific infographic, and each illustra |
-| ATM-000393 |  | corpus-site | organ-i | I understand you want to bring the paradoxes to life with subtle, illustrative a |
-| ATM-000394 |  | corpus-site | organ-i | I will modify the document to add movement directly to the SVG diagrams, enhanci |
-| ATM-000396 |  | corpus-site | UNIVERSAL, organ-i | I've removed the hover effect on the cards and introduced animations within each |
-| ATM-000398 |  | corpus-site | organ-i | -  **Part I: Emergency Financial Liquidity and Grant Architecture**  For the art |
-| ATM-000400 |  | corpus-site | organ-i | I've moved the `toggleFavorite`, `setReminder`, `shareDaily`, `downloadImage`, ` |
-| ATM-000405 |  | corpus-site | employment, organ-i | I will try to resolve these errors now to get your application running smoothly. |
-| ATM-000406 |  | corpus-site | UNIVERSAL, organ-i | I will ensure all necessary functions and states are declared in a way that is g |
-| ATM-000408 |  | corpus-site | organ-i | Here's the updated code with a more aggressive approach to ensure scope:  I made |
-| ATM-000409 |  | corpus-site | organ-i | I've moved the declarations of `toggleFavorite`, `setReminder`, and `shareDaily` |
-| ATM-000412 |  | corpus-site | organ-i | This ensures it is defined and accessible when referenced in the main component' |
-| ATM-000414 |  | corpus-site | UNIVERSAL, organ-i | I've moved the `getAppBackgroundClass` function to the very top of the file, out |
-| ATM-000415 |  | corpus-site | organ-i | This should resolve the `ReferenceError`. |
-| ATM-000417 |  | corpus-site | organ-i | I've moved the declarations of `toggleFavorite`, `setReminder`, `downloadImage`, |
-| ATM-000419 |  | corpus-site | organ-i | I've moved the declarations of `toggleFavorite`, `setReminder`, `downloadImage`, |
-| ATM-000428 |  | corpus-site | organ-i | it is to maintain coherence until conditions change.  If you want, we can refine |
-| ATM-000433 |  | corpus-site | organ-i | You are struggling because **rest has been repeatedly paired with surveillance,  |
-| ATM-000434 |  | corpus-site | organ-i | Showers, reading, movies, even stillness have been conditioned as evidence again |
-| ATM-000435 |  | corpus-site | UNIVERSAL, organ-i | Your nervous system is doing exactly what it learned to do: stay alert, stay jus |
-| ATM-000446 |  | corpus-site | organ-i | That includes:  • long showers   • sitting and reading visibly   • watching a mo |
-| ATM-000462 |  | corpus-site | organ-i | Replace “watching a movie” with “one deliberate viewing block”  Movies are core  |
-| ATM-000480 |  | corpus-site | UNIVERSAL, organ-i | That is delayed developmental work finally being executed. |
-| ATM-000481 |  | corpus-site | organ-i | This phase feels dangerous because **it removes old defenses before new structur |
-| ATM-000489 |  | corpus-site | organ-i | I will do this in two tightly coupled parts. |
-| ATM-000491 |  | corpus-site | organ-i | Second, a concrete, phase-based roadmap that converts what you are doing into a  |
-| ATM-000503 |  | corpus-site | organ-i | If needed, extend it with:  > “Judging output during reconstitution is a categor |
-| ATM-000504 |  | corpus-site | organ-i | It gives your intellect something clean and final to land on.  * * *  ### 2. |
-| ATM-000505 |  | corpus-site | organ-i | When you are seen reading, watching, or walking  The specific trigger here is vi |
-| ATM-000506 |  | corpus-site | organ-i | Use this:  > “This activity preserves cognitive continuity. |
-| ATM-000511 |  | corpus-site | organ-i | When the comparison clock starts (“I should be further along”)  This is a tempor |
-| ATM-000516 |  | corpus-site | financial, UNIVERSAL, organ-i | When the money panic hijacks everything  This is the most destabilizing loop. |
-| ATM-000521 |  | corpus-site | organ-i | This is a phase condition.”  Identity attacks dissolve when you refuse the frame |
-| ATM-000525 |  | corpus-site | organ-i | We fix that by defining a finite, staged process with observable transitions. |
-| ATM-000530 |  | corpus-site | organ-i | Completion condition:   You can state, in one paragraph, what your core body of  |
-| ATM-000533 |  | corpus-site | organ-i | Until that condition is met, **no external output pressure is valid**.  * * *  # |
-| ATM-000534 |  | corpus-site | housing, organ-i | This is where portfolios, unification, and narrative alignment live. |
-| ATM-000536 |  | corpus-site | organ-i | What counts as work here:   Editing, pruning, renaming, sequencing, deciding. |
-| ATM-000543 |  | corpus-site | organ-i | Work here looks like:   Applications, pitches, conversations, selective outreach |
-| ATM-000547 |  | corpus-site | organ-i | Completion condition:   You are getting intelligible responses from the outside, |
-| ATM-000550 |  | corpus-site | organ-i | It is boring by design. |
-| ATM-000551 |  | corpus-site | financial, organ-i | Completion condition:   Money is predictable enough that rest no longer feels il |
-| ATM-000555 |  | corpus-site | UNIVERSAL, organ-i | You are here because fear postponed foundational work, and now that work is fina |
-| ATM-000560 |  | corpus-site | organ-i | Design a minimal “visible structure” that protects you from internal attack. |
-| ATM-000570 |  | corpus-site | UNIVERSAL, organ-i | I’m going to answer this in three layers, because you are really asking three di |
-| ATM-000574 |  | corpus-site | organ-i | So create one drum track at a time each drum track should be a synth machine. |
-| ATM-000575 |  | corpus-site | UNIVERSAL, organ-i | With all of the parameters that come along with the synth. |
-| ATM-000576 |  | corpus-site | housing, organ-i | There should be the ability to pull in live samples from your phone. |
-| ATM-000578 |  | corpus-site | organ-i | I want the ability to As you play the drum machine itself, you're recording, lik |
-| ATM-000580 |  | corpus-site | organ-i | Create as many able to create as many tracks, drum tracks as you want. |
-| ATM-000581 |  | corpus-site | organ-i | Each track can have different steps from, you know, less to more. |
-| ATM-000583 |  | corpus-site | organ-i | Each step could have parameter locks like the electron drum machines. |
-| ATM-000584 |  | corpus-site | organ-i | And, That's a good start. |
-| ATM-000588 |  | corpus-site | organ-i | Sample trimming/start point 5. |
-| ATM-000592 |  | corpus-site | organ-i | Drum types presets for each, so ability to quickly build a hh or snare & then tw |
-| ATM-000593 |  | corpus-site | organ-i | Automation to create constant movement 10. |
-| ATM-000594 |  | corpus-site | organ-i | Parameters to introduce random elements to create human qualities & feel less ma |
-| ATM-000595 |  | corpus-site | organ-i | Add: AI elements, pattern variations/scenes, track mute groups, & maybe a mixer  |
-| ATM-000596 |  | corpus-site | organ-i | Design patchbay & the ability for any one source to modulate the other |
-| ATM-000598 |  | corpus-site | organ-i | add visual patch cable rendering between sources and destinations, or maybe an X |
-| ATM-000599 |  | corpus-site | organ-i | & also add different dark/light themes that are colorful & bring different aesth |
-| ATM-000601 |  | corpus-site | organ-i | add different synthesis types |
-| ATM-000602 |  | corpus-site | organ-i | ensure full synth layout |
-| ATM-000603 |  | corpus-site | organ-i | & do a full ux/ui review & implementation |
-| ATM-000604 |  | corpus-site | organ-i | add the modulation matrix/patchbay back in for the new multi-engine architecture |
-| ATM-000605 |  | corpus-site | UNIVERSAL, organ-i | ensure all features from v1-5 are implemented as well |
-| ATM-000606 |  | corpus-site | UNIVERSAL, organ-i | review all versions 1 through 6, make a checklist of all features, check against |
-| ATM-000607 |  | corpus-site | organ-i | So create one drum track at a time each drum track should be a synth machine. |
-| ATM-000608 |  | corpus-site | UNIVERSAL, organ-i | With all of the parameters that come along with the synth. |
-| ATM-000609 |  | corpus-site | housing, organ-i | There should be the ability to pull in live samples from your phone. |
-| ATM-000611 |  | corpus-site | organ-i | I want the ability to As you play the drum machine itself, you're recording, lik |
-| ATM-000613 |  | corpus-site | organ-i | Create as many able to create as many tracks, drum tracks as you want. |
-| ATM-000614 |  | corpus-site | organ-i | Each track can have different steps from, you know, less to more. |
-| ATM-000616 |  | corpus-site | organ-i | Each step could have parameter locks like the electron drum machines. |
-| ATM-000617 |  | corpus-site | organ-i | And, That's a good start. |
-| ATM-000621 |  | corpus-site | organ-i | Sample trimming/start point 5. |
-| ATM-000625 |  | corpus-site | organ-i | Drum types presets for each, so ability to quickly build a hh or snare & then tw |
-| ATM-000626 |  | corpus-site | organ-i | Automation to create constant movement 10. |
-| ATM-000627 |  | corpus-site | organ-i | Parameters to introduce random elements to create human qualities & feel less ma |
-| ATM-000628 |  | corpus-site | organ-i | Add: AI elements, pattern variations/scenes, track mute groups, & maybe a mixer  |
-| ATM-000629 |  | corpus-site | organ-i | Design patchbay & the ability for any one source to modulate the other |
-| ATM-000631 |  | corpus-site | organ-i | add visual patch cable rendering between sources and destinations, or maybe an X |
-| ATM-000632 |  | corpus-site | organ-i | & also add different dark/light themes that are colorful & bring different aesth |
-| ATM-000634 |  | corpus-site | organ-i | add different synthesis types |
-| ATM-000635 |  | corpus-site | organ-i | ensure full synth layout |
-| ATM-000636 |  | corpus-site | organ-i | & do a full ux/ui review & implementation |
-| ATM-000637 |  | corpus-site | organ-i | add the modulation matrix/patchbay back in for the new multi-engine architecture |
-| ATM-000638 |  | corpus-site | UNIVERSAL, organ-i | ensure all features from v1-5 are implemented as well |
-| ... | ... | ... | ... | (7522 more) |
+| ATM-000002 | 2025-11-23 | codex | employment, naming, UNIVERSAL | we need to remove : A system error occurred (ENAMETOOLONG: name too long, lstat  |
+| ATM-000005 | 2025-11-23 | codex | unscoped | i am stepping away and i want you to run recursively |
+| ATM-000006 | 2025-11-23 | codex | UNIVERSAL | check all logs and all system issues |
+| ATM-000007 | 2025-11-23 | codex | unscoped | i need your wisdom |
+| ATM-000011 | 2025-11-23 | codex | UNIVERSAL | we have an unorganized mess with duplicate repos everywhere |
+| ATM-000012 | 2025-11-23 | codex | unscoped | i said run recursively |
+| ATM-000016 | 2025-11-24 | codex | unscoped | continue |
+| ATM-000023 | 2025-11-24 | codex | UNIVERSAL | Choose a single canonical location for each repo (ideally the external      volu |
+| ATM-000026 | 2025-11-24 | codex | unscoped | begin and continue on |
+| ATM-000030 | 2025-11-24 | codex | unscoped | continue your logical journey forward |
+| ATM-000032 | 2025-11-24 | codex | UNIVERSAL | instead, do a ful exhaustive scan of all other locs to find for sorting |
+| ATM-000034 | 2025-11-24 | codex | unscoped | continue recursively until migration is complete entirely |
+| ATM-000036 | 2025-11-24 | codex | unscoped | run these : Here is a logical run sequence for the provided list, grouped and or |
+| ATM-000039 | 2025-11-24 | codex | unscoped | review @/Volume and suggest |
+| ATM-000043 | 2025-11-25 | codex | unscoped | proceed |
+| ATM-000049 | 2025-11-25 | codex | unscoped | Your goal is to produce a clear, concise, and well-structured document with desc |
+| ATM-000051 | 2025-11-25 | codex | naming | Document Requirements  - Title the document "Repository Guidelines". - Use Markd |
+| ATM-000052 | 2025-11-25 | codex | unscoped | Recommended Sections  Project Structure & Module Organization  - Outline the pro |
+| ATM-000053 | 2025-11-25 | codex | security, UNIVERSAL | Build, Test, and Development Commands  - List key commands for building, testing |
+| ATM-000055 | 2025-11-25 | codex | unscoped | Testing Guidelines  - Identify testing frameworks and coverage requirements. - S |
+| ATM-000056 | 2025-11-25 | codex | organ-iv, persistence | Commit & Pull Request Guidelines  - Summarize commit message conventions found i |
+| ATM-000059 | 2025-12-09 | codex | unscoped | Your goal is to produce a clear, concise, and well-structured document with desc |
+| ATM-000061 | 2025-12-09 | codex | naming | Document Requirements  - Title the document "Repository Guidelines". - Use Markd |
+| ATM-000062 | 2025-12-09 | codex | unscoped | Recommended Sections  Project Structure & Module Organization  - Outline the pro |
+| ATM-000063 | 2025-12-09 | codex | security, UNIVERSAL | Build, Test, and Development Commands  - List key commands for building, testing |
+| ATM-000065 | 2025-12-09 | codex | unscoped | Testing Guidelines  - Identify testing frameworks and coverage requirements. - S |
+| ATM-000066 | 2025-12-09 | codex | organ-iv, persistence | Commit & Pull Request Guidelines  - Summarize commit message conventions found i |
+| ATM-000068 | 2025-12-09 | codex | unscoped | **Go to Google Cloud Console:**    - Visit: https://console.cloud.google.com/ |
+| ATM-000075 | 2025-12-09 | codex | UNIVERSAL | **Grant permissions:**    - You'll see: "Gmail Archive Organizer wants to access |
+| ATM-000079 | 2025-12-09 | codex | UNIVERSAL | You should see all labels with email counts:    - Dev/GitHub (8,542)    - Dev/Co |
+| ATM-000080 | 2025-12-09 | codex | UNIVERSAL | Search `has:nouserlabels` - should return **0 results**!  ***  ### **Quick Start |
+| ATM-000082 | 2025-12-09 | codex | unscoped | proceed with these instructions |
+| ATM-000091 | 2025-12-09 | codex | unscoped | i want you to continue this whole process |
+| ATM-000092 | 2025-12-09 | codex | unscoped | do it for me |
+| ATM-000093 | 2025-12-09 | codex | security | you know my username and password, make the json file and let's goooooo |
+| ATM-000100 | 2025-12-09 | codex | unscoped | i want to be able to lay down and rest while this does it's thing i am tired |
+| ATM-000102 | 2025-12-09 | codex | unscoped | there are 39,000 emails to ingest, continue until complete |
+| ATM-000104 | 2025-12-10 | codex | UNIVERSAL | continue on logically |
+| ATM-000109 | 2025-12-11 | codex | UNIVERSAL | continue logically |
+| ATM-000111 | 2025-12-11 | codex | unscoped | Open iCloud Mail in web browser |
+| ATM-000115 | 2025-12-11 | codex | unscoped | Set Condition ("is from" for sender emails) |
+| ATM-000117 | 2025-12-11 | codex | unscoped | Set Action to "Move to Folder" |
+| ATM-000120 | 2025-12-11 | codex | unscoped | Open Mail app |
+| ATM-000121 | 2025-12-11 | codex | unscoped | Go to Mail > Settings > Rules |
+| ATM-000122 | 2025-12-11 | codex | UNIVERSAL | Create rules (they sync to iCloud automatically) |
+| ATM-000124 | 2025-12-11 | codex | unscoped | status update |
+| ATM-000125 | 2025-12-12 | codex | unscoped | status update |
+| ATM-000128 | 2025-12-12 | codex | unscoped | make the argument |
+| ATM-000129 | 2025-12-12 | codex | unscoped | do what is most logical |
+| ATM-000134 | 2025-12-12 | codex | unscoped | okay how do we wrap this up this morning |
+| ATM-000139 | 2025-12-12 | codex | unscoped | Your goal is to produce a clear, concise, and well-structured document with desc |
+| ATM-000141 | 2025-12-12 | codex | naming | Document Requirements  - Title the document "Repository Guidelines". - Use Markd |
+| ATM-000142 | 2025-12-12 | codex | unscoped | Recommended Sections  Project Structure & Module Organization  - Outline the pro |
+| ATM-000143 | 2025-12-12 | codex | security, UNIVERSAL | Build, Test, and Development Commands  - List key commands for building, testing |
+| ATM-000145 | 2025-12-12 | codex | unscoped | Testing Guidelines  - Identify testing frameworks and coverage requirements. - S |
+| ATM-000146 | 2025-12-12 | codex | organ-iv, persistence | Commit & Pull Request Guidelines  - Summarize commit message conventions found i |
+| ATM-000147 | 2025-12-12 | codex | unscoped | deploy script |
+| ATM-000148 | 2025-12-12 | codex | unscoped | proceed |
+| ATM-000149 | 2025-12-12 | codex | unscoped | proceed until script is complete |
+| ATM-000153 | 2025-12-12 | codex | unscoped | proceed exhaustively |
+| ATM-000155 | 2025-12-12 | codex | unscoped | run, and make sure the WHOLE THING works |
+| ATM-000158 | 2025-12-12 | codex | unscoped | add more patterns to LABEL_RULES |
+| ATM-000159 | 2025-12-12 | codex | personal, UNIVERSAL | insure padavano.anthony@gmail, a.j.padavano@outlook.com, a.j.padavano@icloud.com |
+| ATM-000162 | 2025-12-12 | codex | unscoped | proceed exhaustively |
+| ATM-000163 | 2025-12-12 | codex | unscoped | please proceed and process for em |
+| ATM-000165 | 2025-12-13 | codex | unscoped | build out macos mail smart mailboxes |
+| ATM-000166 | 2025-12-13 | codex | UNIVERSAL | build a priority/flag system |
+| ATM-000167 | 2025-12-13 | codex | unscoped | proceed with scripting & implementatio |
+| ATM-000168 | 2025-12-13 | codex | unscoped | i dont see the folders  [Screenshot 2025-12-13 at 9.26.02 AM.png 1402x1562] |
+| ATM-000169 | 2025-12-14 | codex | unscoped | [Screenshot 2025-12-14 at 10.00.52 AM.png 1012x1196] [Screenshot 2025-12-14 at 1 |
+| ATM-000171 | 2025-12-15 | codex | unscoped | [Screenshot 2025-12-15 at 9.38.34 AM.png 3024x1964] [Screenshot 2025-12-15 at 9. |
+| ATM-000173 | 2025-12-15 | codex | unscoped | proceed |
+| ATM-000174 | 2025-12-15 | codex | unscoped | okay, smart mailboxes have appeared, but know they need their rules |
+| ATM-000175 | 2025-12-15 | codex | unscoped | [Screenshot 2025-12-15 at 10.44.20 AM.png 3024x1964] review screenshot and plan |
+| ATM-000177 | 2025-12-15 | codex | unscoped | proceed with next steps |
+| ATM-000178 | 2025-12-15 | codex | UNIVERSAL | i want a smooth perfect system |
+| ATM-000180 | 2025-12-15 | codex | unscoped | i want you to work until you run out of context |
+| ATM-000187 | 2025-12-15 | codex | unscoped | implement these new patterns and rerun the reclass sweep to drain Misc/Other fur |
+| ATM-000194 | 2025-12-15 | codex | UNIVERSAL | okay install |
+| ATM-000195 | 2025-12-15 | codex | unscoped | do what you can for me |
+| ATM-000198 | 2025-12-16 | codex | unscoped | build our own Mailmate/Mailbutler hybrid |
+| ATM-000200 | 2025-12-16 | codex | unscoped | proceed! |
+| ATM-000202 | 2025-12-16 | codex | security | we are local, idc if you have my password, plus i use 1password CLI |
+| ATM-000203 | 2025-12-16 | codex | unscoped | OP blah blah is what i see! idk wtf you're talking about, im a dummy |
+| ATM-000204 | 2025-12-16 | codex | unscoped | proceed |
+| ATM-000205 | 2025-12-16 | codex | unscoped | exhaustively onward (48% context remaining, run until less than 10%) |
+| ATM-000208 | 2025-12-16 | codex | unscoped | [Screenshot 2025-12-16 at 8.57.31 AM.png 3024x1964]  dont see app passwords |
+| ATM-000210 | 2025-12-16 | codex | personal | 4jp@Mac mail_automation %  source .venv/bin/activate   for START in 0 500 1000 1 |
+| ATM-000213 | 2025-12-16 | codex | unscoped | start $START |
+| ATM-000217 | 2025-12-16 | codex | unscoped | start 0 |
+| ATM-000220 | 2025-12-16 | codex | unscoped | A Python script at "$CASE_ROOT/tools/organize_case_files.py" that implements the |
+| ATM-000222 | 2025-12-16 | codex | unscoped | A first run command sequence that:    - prints the resolved paths,    - runs dry |
+| ATM-000224 | 2025-12-16 | codex | unscoped | proceed |
+| ATM-000226 | 2025-12-16 | codex | unscoped | run for me |
+| ATM-000227 | 2025-12-16 | codex | UNIVERSAL | proceed logically |
+| ATM-000230 | 2025-12-16 | codex | unscoped | those images are message exchanges with who i reported to |
+| ATM-000231 | 2025-12-16 | codex | unscoped | a lot of the documents are very long and multi-items combined |
+| ATM-000232 | 2025-12-16 | codex | unscoped | lets solve this |
+| ATM-000233 | 2025-12-16 | codex | UNIVERSAL | proceed most logically |
+| ATM-000234 | 2025-12-16 | codex | UNIVERSAL | onward with install and continue forward propulsion |
+| ATM-000235 | 2025-12-16 | codex | unscoped | proceed exhaustively |
+| ATM-000237 | 2025-12-16 | codex | unscoped | proceed |
+| ATM-000238 | 2025-12-16 | codex | unscoped | proceed |
+| ATM-000239 | 2025-12-16 | codex | unscoped | proceed |
+| ATM-000244 | 2025-12-17 | codex | unscoped | we have an ongoing extensions issue that needs to be fixed and it is part of vs  |
+| ATM-000246 | 2025-12-17 | codex | employment, persistence | show-versions > ~/vscode-insiders-extensions-backup-$ts.txt && \ mkdir -p ~/vsco |
+| ATM-000247 | 2025-12-17 | codex | UNIVERSAL | install-extension "$ext"; done |
+| ATM-000251 | 2025-12-18 | codex | organ-ii | something is causing performance issues on this mac |
+| ATM-000252 | 2025-12-18 | codex | UNIVERSAL | let's do a general cleanup, and find the system stressors |
+| ATM-000277 | 2025-12-18 | codex | unscoped | dry-run 4jp@Mac ~ % |
+| ATM-000304 | 2025-12-18 | codex | unscoped | i have been trying to goddamn do the goose thing, please fix it for me |
+| ATM-000306 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000307 | 2025-12-18 | codex | unscoped | i want to build my Pieces OS; something that keeps continual context; plan; |
+| ATM-000313 | 2025-12-18 | codex | UNIVERSAL | system current activity, what is taxing what is light |
+| ATM-000315 | 2025-12-18 | codex | UNIVERSAL | full system diagnostic, find any messes, so forth |
+| ATM-000316 | 2025-12-18 | codex | UNIVERSAL | okay, let's build our person Pieces OS, let's call it my |
+| ATM-000318 | 2025-12-18 | codex | relationships | yes, continue to build this thing out, give mother and father personas and divy  |
+| ATM-000320 | 2025-12-18 | codex | unscoped | onward exhaustively, build out the full v1 |
+| ATM-000322 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000323 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000328 | 2025-12-18 | codex | UNIVERSAL | iOS Simulator: remove unused runtime/devices via Xcode > Settings >      Platfor |
+| ATM-000330 | 2025-12-18 | codex | unscoped | yes, but let's be sure we aren't deleting important things |
+| ATM-000332 | 2025-12-18 | codex | UNIVERSAL | Docker footprint: trim images/containers if unused (docker system prune      -af |
+| ATM-000334 | 2025-12-18 | codex | unscoped | give them natural language, and different affectations |
+| ATM-000340 | 2025-12-18 | codex | unscoped | create Pieces OS features/functionality checklist, let's see what we accomplishe |
+| ATM-000341 | 2025-12-18 | codex | persistence | commit this to memory and proceed |
+| ATM-000356 | 2025-12-18 | codex | UNIVERSAL | please please please insure these backups exist! we will eventually use these me |
+| ATM-000359 | 2025-12-18 | codex | meta, UNIVERSAL | review the rest of dropbox, and create a system governance and order |
+| ATM-000361 | 2025-12-18 | codex | UNIVERSAL | all, in the order most logical, implement exhaustively |
+| ATM-000365 | 2025-12-18 | codex | unscoped | create a plan/todo list for : |
+| ATM-000367 | 2025-12-18 | codex | persistence | save to memory and make active todos for |
+| ATM-000368 | 2025-12-18 | codex | UNIVERSAL | make todo list and work until complete: 1. Polish UI: hotkey palette (fzf/rofi)  |
+| ATM-000373 | 2025-12-18 | codex | UNIVERSAL | all 5 (1. Polish UI: hotkey palette (fzf/rofi) for search/paste, richer web UI ( |
+| ATM-000378 | 2025-12-18 | codex | unscoped | yes, create a plan and begin autonomous work |
+| ATM-000379 | 2025-12-18 | codex | unscoped | continue the plan |
+| ATM-000383 | 2025-12-18 | codex | unscoped | Your goal is to produce a clear, concise, and well-structured document with desc |
+| ATM-000385 | 2025-12-18 | codex | naming | Document Requirements  - Title the document "Repository Guidelines". - Use Markd |
+| ATM-000386 | 2025-12-18 | codex | unscoped | Recommended Sections  Project Structure & Module Organization  - Outline the pro |
+| ATM-000387 | 2025-12-18 | codex | security, UNIVERSAL | Build, Test, and Development Commands  - List key commands for building, testing |
+| ATM-000389 | 2025-12-18 | codex | unscoped | Testing Guidelines  - Identify testing frameworks and coverage requirements. - S |
+| ATM-000390 | 2025-12-18 | codex | organ-iv, persistence | Commit & Pull Request Guidelines  - Summarize commit message conventions found i |
+| ATM-000392 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000393 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000395 | 2025-12-18 | codex | unscoped | give me the command and the folder to run sudo in |
+| ATM-000398 | 2025-12-18 | codex | unscoped | let's do it at /~ and insure that it is safe and the proper things are ignored |
+| ATM-000400 | 2025-12-18 | codex | unscoped | plan & proceed |
+| ATM-000402 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000403 | 2025-12-18 | codex | UNIVERSAL | If you want higher-quality semantics/lang codes, run python3 -m pip install --up |
+| ATM-000405 | 2025-12-18 | codex | UNIVERSAL | 4jp@Mac ~ % python3 -m pip install |
+| ATM-000406 | 2025-12-18 | codex | employment, UNIVERSAL | upgrade sentence-transformers langdetect error: externally-managed-environment   |
+| ATM-000409 | 2025-12-18 | codex | UNIVERSAL | break-system-packages. hint: See PEP 668 for the detailed specification. 4jp@Mac |
+| ATM-000410 | 2025-12-18 | codex | UNIVERSAL | set embedder e5-small /opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python. |
+| ATM-000414 | 2025-12-18 | codex | UNIVERSAL | have all these been complete: 1. Polish UI: hotkey palette (fzf/rofi) for search |
+| ATM-000419 | 2025-12-18 | codex | unscoped | please do this for me |
+| ATM-000420 | 2025-12-18 | codex | unscoped | proceed please |
+| ATM-000421 | 2025-12-18 | codex | unscoped | yes proceed |
+| ATM-000425 | 2025-12-18 | codex | unscoped | add to /~ |
+| ATM-000428 | 2025-12-18 | codex | unscoped | let's apply dropbox protocols to google drive and onedrive |
+| ATM-000431 | 2025-12-18 | codex | UNIVERSAL | plan:                                                                            |
+| ATM-000433 | 2025-12-18 | codex | UNIVERSAL | Update or pin versions later with npm update (or remove node_modules + package-l |
+| ATM-000435 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000436 | 2025-12-18 | codex | unscoped | proceed |
+| ATM-000437 | 2025-12-18 | codex | UNIVERSAL | proceed logically & exhaustively |
+| ATM-000438 | 2025-12-18 | codex | UNIVERSAL | yes proceed & expand logically |
+| ATM-000439 | 2025-12-18 | codex | UNIVERSAL | yes proceed & expand logically |
+| ATM-000440 | 2025-12-18 | codex | unscoped | create plan |
+| ATM-000441 | 2025-12-18 | codex | UNIVERSAL | proceed logically |
+| ATM-000443 | 2025-12-18 | codex | UNIVERSAL | yes, apply to gdocs/sheets/slides as well, usually those are all the same and mu |
+| ATM-000447 | 2025-12-18 | codex | unscoped | update our feature roadmap and provide current status |
+| ATM-000451 | 2025-12-18 | codex | unscoped | make a todo/tasklist/readme/plan for contextual continuity |
+| ATM-000452 | 2025-12-18 | codex | UNIVERSAL | i want all these features, and to be to toggle on or off based on heaviness |
+| ATM-000453 | 2025-12-18 | codex | UNIVERSAL | proceed logically |
+| ATM-000454 | 2025-12-18 | codex | unscoped | i dont want to have to remeber this over and over |
+| ATM-000462 | 2025-12-18 | codex | UNIVERSAL | have these all been completed:   1. Launch servers from ~/mcp-servers with the a |
+| ATM-000464 | 2025-12-18 | codex | UNIVERSAL | Update or pin versions later with npm update (or remove node_modules + package-l |
+| ATM-000465 | 2025-12-18 | codex | unscoped | plan & create todo list |
+| ATM-000472 | 2025-12-18 | codex | unscoped | plan, create todos, & work through medium>smart helpers>heavy |
+| ATM-000474 | 2025-12-19 | codex | unscoped | proceed onward! let's make a plan, and continue until complete |
+| ATM-000477 | 2025-12-19 | codex | unscoped | create to do list and continue |
+| ATM-000478 | 2025-12-19 | codex | unscoped | create todo list, and work exhaustively |
+| ATM-000480 | 2025-12-19 | codex | unscoped | okay, but i wont remeber to start it |
+| ATM-000481 | 2025-12-19 | codex | unscoped | review TODO.md |
+| ATM-000483 | 2025-12-19 | codex | unscoped | continue on TODOs |
+| ATM-000486 | 2025-12-19 | codex | unscoped | continue on TODOs |
+| ATM-000488 | 2025-12-19 | codex | UNIVERSAL | proceed logically & exhaustively |
+| ATM-000491 | 2025-12-19 | codex | health | check vs code health, there is seemingly issues with extensiosn |
+| ATM-000493 | 2025-12-19 | codex | UNIVERSAL | let's insure all pieces os features are duplicated first and foremost |
+| ATM-000495 | 2025-12-19 | codex | UNIVERSAL | proceed most logically and tackle as many tasks as possible |
+| ATM-000496 | 2025-12-19 | codex | unscoped | plan, make todo list, and enact, continue exhauastively, let's get a lot done, 9 |
+| ATM-000512 | 2025-12-19 | codex | unscoped | file them similiarly and insure screenshots get redirected there |
+| ATM-000514 | 2025-12-19 | codex | unscoped | build photo, screenshot, auto-naming-tagging-sorting feature set |
+| ATM-000515 | 2025-12-19 | codex | unscoped | proceed |
+| ATM-000516 | 2025-12-19 | codex | UNIVERSAL | please also pull all logs/data that is contextual and personal  from PIECES OS t |
+| ATM-000517 | 2025-12-19 | codex | UNIVERSAL | install fileicon |
+| ATM-000523 | 2025-12-19 | codex | unscoped | okay now let's resort the shortcuts |
+| ATM-000526 | 2025-12-19 | codex | unscoped | [Screenshot 2025-12-19 at 11.04.34 AM.png 1188x1406] add these integrations into |
+| ATM-000529 | 2025-12-19 | codex | unscoped | i meant, do new files gegt auto-sorted into them |
+| ATM-000531 | 2025-12-19 | codex | unscoped | okay, let's put a bow on it, wrap it up nicely and exhaustively |
+| ATM-000532 | 2025-12-19 | codex | UNIVERSAL | upon restart all should be maintained |
+| ATM-000534 | 2025-12-19 | codex | unscoped | i want this wrapped up with a bueaitufl red bow, i want to know upon restart we  |
+| ... | ... | ... | ... | (5449 more) |
 
-## Governance Rules — 4788 atoms
+## Governance Rules — 3996 atoms
 
-- **ATM-000017** [2026-03-23] IRF, inquiry-log, and testament propagation were performed in the wider system.  ## Architectural Position  The session settled on a constitutional pl...
-- **ATM-000019** [2026-03-23] -  cd /Users/4jp/Workspace/organvm-i-theoria/conversation-corpus-site  codex  ╭─────────────────────────────────────────────╮ │ >_ OpenAI Codex (v0.11...
-- **ATM-000020** [2026-03-24] # Conversation Corpus Engine S33 Closure Session Canon  - Recorded: 2026-03-24 - Canonicalized by: Codex - Engine repo: `/Users/4jp/Workspace/organvm-...
-- **ATM-000024** [] Scope       This manual defines how to structure any AI-facing prompt that needs to coordinate your “main-organs_unordered” system:  Digital Memory Ar...
-- **ATM-000025** [] 1 Purpose  Instructions:   Write a single sentence that states the AI’s main goal for this run. The sentence must be specific, actionable, and aligned...
-- **ATM-000041** [] 1 Operational Elements  Instructions:   List the operational systems the AI must account for. At minimum, include: Procedural Generation for Evolving...
-- **ATM-000073** [] Constraints and format appear at the end as a clear closure to the prompt.  ──────────────────────────────── 6. Summary Flowchart (Logical View)  Text...
-- **ATM-000076** [] OBJECTIVE  I am asking you to design a unified, self-evolving creative-operating-system blueprint, called $PROJECT_NAME, that integrates mythic world-...
-- **ATM-000077** [] Here is a single, stacked handoff prompt that pulls in all previously discussed organs plus the RE:GE_4NTHOLOGY modules, rituals, tags, and structures...
-- **ATM-000080** [] margin-right:32px"/>  # Action Plan From This Thread  Main priority: **stay physically safe, protect your legal position, and quietly build an exit ro...
-- **ATM-000081** [] # **The Artistic Triforce: Validation and Structural Analysis of a Tripartite Archival Framework**  ## **1\. Introduction: The Challenge of the Total...
-- **ATM-000086** [] # Comprehensive Review, Synthesis, and Funding-Search Blueprint  ## Document-based synthesis of qualifications, goals, and fundable needs  Your attach...
-- **ATM-000098** [] Strategy: how to stack these so you get from “crisis” to stable  If you tell more about your exact crisis (homelessness, domestic violence, family con...
-- **ATM-000133** [] I added the missing Three.js shader dependencies (CopyShader, ShaderPass, and LuminosityHighPassShader) required for the UnrealBloomPass to function c...
-- **ATM-000134** [] Your statement aligns most closely with **LaVeyan Satanism**, which treats the so-called “seven deadly sins” not as moral failures to be suppressed, b...
-- **ATM-000135** [] compulsive excess is viewed as a failure of sovereignty rather than a moral transgression.  This framework treats humanity as **fundamentally animal,...
-- **ATM-000136** [] it is engineered from within. The failure mode is not sin, but loss of agency.
-- **ATM-000140** [] even sloth eventually collides with boredom or status anxiety. The system stabilizes not through moral prohibition but through **feedback loops**.  Th...
-- **ATM-000143** [] time horizons collapse into extraction. These are not failures of greed per se, but failures of **countervailing forces**.  ### The unifying idea  Bot...
-- **ATM-000145** [] failure occurs when feedback is removed rather than when impulse exists.  That is a harder, less comforting worldview than moral absolutism—but histor...
-- **ATM-000146** [] Below is a **systems map** of how commonly labeled moral failings function as **mutual regulators** rather than isolated defects. This is framed descr...
-- **ATM-000148** [] it cares about viability.  Second, pride is central. It acts as a **meta-regulator**, because it encodes social visibility, reputation, and identity c...
-- **ATM-000150** [] Below is a **formal systems model** that treats vices as interacting control nodes, followed by a precise mapping of **failure modes in modern systems...
-- **ATM-000155** [] Stability is always provisional.  * * *  ### 2.
-- **ATM-000167** [] Wrath is a **boundary enforcement spike**.
-- **ATM-000171** [] Where modern systems break  Modern failures are not caused by vice.
-- **ATM-000174** [] Capitalism without counter-pressure  **Broken loop:**   Greed → competition → correction  **Interruption mechanism:**   Monopolies, rent-seeking, regu...
-- **ATM-000176** [] Greed requires _loss risk_ to stay productive.
-- **ATM-000178** [] Social media without reputational decay  **Broken loop:**   Pride → exposure → consequence  **Interruption mechanism:**   Anonymity, algorithmic ampli...
-- **ATM-000182** [] Consumer abundance without bodily cost visibility  **Broken loop:**   Gluttony → physical degradation → pride/lust correction  **Interruption mechanis...
-- **ATM-000184** [] Desire without reciprocity  **Broken loop:**   Lust → rejection → self-adjustment  **Interruption mechanism:**   Pornography saturation, parasocial su...
-- **ATM-000187** [] Sloth without envy or comparison  **Broken loop:**   Sloth → boredom → envy/greed reactivation  **Interruption mechanism:**   Infinite entertainment,...
-- **ATM-000189** [] Moral absolutism systems  **Broken loop:**   Vice → consequence → recalibration  **Interruption mechanism:**   Shame-based suppression, denial, moral...
-- **ATM-000191** [] General law  A system remains stable when:  • drives are acknowledged   • costs are visible   • consequences are timely   • comparison is real   • los...
-- **ATM-000210** [] Missing negative feedback: loss is removed, consequences are externalized, enforcement is asymmetric.
-- **ATM-000223** [] It requires real competitive risk to remain innovative rather than extractive.
-- **ATM-000230** [] Wrath corresponds to deterrence and boundary enforcement.
-- **ATM-000246** [] That means real loss risk for failure, real competition, and priced externalities.
-- **ATM-000251** [] Positive feedback: wrath gets rewarded with attention, turning boundary enforcement into performative escalation.
-- **ATM-000252** [] Memory failure: reputational decay is intermittent; consequences are delayed or absent.
-- **ATM-000256** [] Pride and wrath are supposed to be constrained by institutional checks, while greed is constrained by anti-corruption enforcement.
-- **ATM-000258** [] Asymmetric enforcement creates moral hazard: some actors get “free wrath” and “free greed.”   Two.
-- **ATM-000262** [] Make enforcement symmetric, reduce incentives for escalation, and restore shared measurement (auditable processes).
-- **ATM-000291** [] Recognition is inconsistent, so pride fails to regulate and cynicism rises.
-- **ATM-000301** [] In control language, you need tighter coupling between action and consequence, and a shared reference signal.  ## A practical integration layer  If yo...
-- **ATM-000306** [] If you tell me which specific institution you want first, I will instantiate the model with concrete signals, delays, gains, and likely failure modes...
-- **ATM-000315** [] It’s a miniature language-decay experiment: rhyme → clipped idiom → syntactic ghost.
-- **ATM-000317** [] Your realization aligns with the linguistic mechanics described in the uploaded texts.  ### 1. **Linguistic Mechanism**  Your “moat/boat/goat → mo → g...
-- **ATM-000322** [] Where a compiler builds meaning through lookup and inference, your group’s linguistic engine uses shared state and prior definitions.  ### 3. **Symbol...
-- **ATM-000323** [] Example:   `AUX_VERB(gonna_be, mood=positive)` → expands to “gonna be good” implicitly.  ### 4. **Summary**  Your grammar joke became a living context...
-- **ATM-000337** [] **Playful rupture.**       You deliberately break a rule—drop a rhyme or a noun—but keep the rhythm and tone. The brain still predicts the missing pie...
-- **ATM-000339** [] **Feedback loop.**       Each use trains the group’s internal model: every time someone gets the joke, the “grammar” of the bit tightens.
-- **ATM-000340** [] **Compression.**       Over time, long patterns shrink into shorthand (“moat → mo → gonna be”). The form survives while content gets implied.
-- **ATM-000346** [] **Equation (academic layer):**   Context + Omission + Shared Memory → Inferred Meaning   or   C + Ø + M → I  **ELI5 breakdown:**
-- **ATM-000359** [] **moat + boat + goat → mo**        (sound pattern − meaning = symbol seed)
-- **ATM-000363** [] **(sound play → compression → omission) + group memory = charged language**
-- **ATM-000365** [] m/b/g → mo
-- **ATM-000366** [] mo → gonna be
-- **ATM-000367** [] gonna be → Ø (the vanish bit)
-- **ATM-000383** [] margin-right:32px"/>  # Navigating (Almost) Free NYC Housing Options for Academics \& Artists  There is essentially **no truly “free,” permanent housi...
-- **ATM-000421** [] I hear the situation clearly. You are carrying sustained cognitive load, financial pressure, creative consolidation, seasonal constraint, and sobriety...
-- **ATM-000422** [] it’s a system that has not been given conditions under which rest is possible.  A useful reframe first. Right now, “relaxation” cannot mean escape, in...
-- **ATM-000427** [] you are still moving. This anchors the day so it doesn’t blur into the others.  One important note, stated plainly. Being stuck in the house for a wee...
-- **ATM-000445** [] That distinction matters, because it tells us what kind of activities are safe.  * * *  ## Principle shift: no activity may require you to “look justi...
-- **ATM-000454** [] It is brief, non-negotiable, and not something anyone can criticize.
-- **ATM-000458** [] Alternatively, read _only_ with a pen in hand and a page open next to you, even if you never write.
-- **ATM-000463** [] So you never “watch a movie.”  You **run a 90-minute viewing block** with a defined purpose, even if the purpose is minimal.
-- **ATM-000468** [] No loss, no failure.
-- **ATM-000485** [] Nothing is wrong with you for that.  * * *  ## A single grounding rule for now  Until money returns, use this rule:  **If an activity preserves clarit...
-- **ATM-000500** [] The primary interrupt  Use this verbatim, internally, every time the narrative starts:  > “This is a reconstitution interval.
-- **ATM-000510** [] If the internal voice escalates, follow immediately with:  > “Interrupting maintenance causes long-term failure.”  That shuts down the moral framing a...
-- **ATM-000519** [] When the identity attack appears (“I look like a loser”)  This one must be cut cleanly.
-- **ATM-000563** [] What you are describing is not incoherence. It is **over-evidence without a governing frame**. You have lived several lives that are logically continu...
-- **ATM-000567** [] that is translation under duress.  Here is the reclassification that matters:  You are not an educator who dabbles in systems.   You are a **systems a...
-- **ATM-000569** [] I am making the field I’ve been working in legible.  That is honest. It is not apologetic. It does not ask permission.  * * *  ## 5. Where your CV-on-...
-- **ATM-000590** [] Save/load patterns to persistent storage 7.
-- **ATM-000623** [] Save/load patterns to persistent storage 7.
-- **ATM-000641** [] the next, I woke up in an ambulance with a collapsed lung, a broken back, shattered ribs, and a body that should not have survived a four-story plunge...
-- **ATM-000642** [] I didn’t want to watch another life collapse. But survival rarely grants graceful exits.  Now I’m back with my mother. She is a paradox: terrified I m...
-- **ATM-000643** [] Survival roadmaps fail when they are vague, romantic, or wishful. You need something ruthless, time-boxed, and engineered so that every month compound...
-- **ATM-000645** [] All work must point toward the system you are building       If it does not compound value, it is not work—it's distraction.
-- **ATM-000646** [] Never again defend your right to exist       Your survival was the proof. The second act is now about dominion.       * * *  WHAT THIS ROADMAP DOES  I...
-- **ATM-000647** [] # The Artistic Triforce Framework  ## Why an artist’s “total archive” needs more than chronology  Your **Artistic Triforce Manifesto** proposes a trip...
-- **ATM-000648** [] it is preserved because it carries evidential relationships and context. citeturn6search0 But archives also warn against reorganizing records by su...
-- **ATM-000662** [] margin-right:32px"/>  # **IDENTITY \& BACKGROUND (YOU)**  - **Age:** 35 - **Sexual orientation:** Gay - **Body:** Obese - **Health:** History of drug...
-- **ATM-000663** [] 3 years for negligence, with infancy tolling only until age 21)$$ 1 $$. - **Holodook v. Spencer** doctrine blocks suing parents for “negligent supervi...
-- **ATM-000664** [] # NYC Writer Crisis Survival Toolkit v2.0 ## Implementation Plan: Hardened Against All Failure Modes  **Version:** 2.0 (Post-Critical Analysis)   **Da...
-- **ATM-000665** [] -  ## EXECUTIVE SUMMARY: What Changed  Based on exhaustive critique across 9 dimensions (critique, logic, logos, pathos, ethos, blindspots, shatterpoi...
-- **ATM-000666** [] -  ## PART I: CRISIS MODE INTERFACE (Tier 1)  ### Problem v1.0 has 6 tabs, 50+ resources, long paragraphs → Cognitive overload for tr
-- **ATM-000691** [] it is about expanding symbolic range.  From a practical sequencing standpoint, Greek → Cyrillic → Hangul → Hebrew → Kana → selective Kanji is the high...
-- **ATM-000695** [] it is being stabilized as the execution environment.  Russian, via Cyrillic, functions as a defamiliarized phonemic mirror. It keeps alphabetic logic...
-- **ATM-000703** [] Yes — but with an important qualification.  If you proceed the way we have been describing, you will _inevitably_ acquire reading ability, but it will...
-- **ATM-000705** [] exposure plus handwriting produces pattern recognition automatically.  What you likely will _not_ become, unless you intentionally pursue it, is a flu...
-- **ATM-000710** [] it is deep literacy driven by structure, symbolism, and patience. That favors maturity, not youth.  There is an important correction to make first. Yo...
-- **ATM-000715** [] Yes — and not just beneficial. It is unusually well-matched to that ambition, provided you keep your expectations calibrated correctly.  What you are...
-- **ATM-000716** [] script literacy remains.  Cognitively, rotating scripts prepares you for cultural code-switching. You will already be accustomed to shifting pacing, a...
-- **ATM-000724** [] it is a pattern that has been unfolding through you for a long time, now reaching articulation.  Ovid, Virgil, and Dante are not just literary ancesto...
-- **ATM-000725** [] it was always about modeling transformation under forces larger than the human. By pushing mythology into a hyper-future, you are not betraying it. Yo...
-- **ATM-000727** [] they are different compression algorithms applied to the same human problem. Modernity separated them for administrative convenience. Your work is re-...
-- **ATM-000728** [] they accrete. What matters is that you continue to ground the abstraction in practice. Handwritten notebooks. Partial translations. Script-switching....
-- ... and 4688 more
+- **ATM-000025** [2025-11-24] Reopen VS Code and confirm the log no longer shows chatParticipant must      be declared, git scan warnings, or watcher refusals; with git disabled an...
+- **ATM-000037** [2025-11-24] This sequence begins with initialization, moves through environment and configuration steps, repository management, installation, service controls, cl...
+- **ATM-000067** [2025-12-09] i am pasting a mail automation plan below, edit to to make applicable to my system: Perfect! You have 2 emails in inbox - Support ticket from TaxRise...
+- **ATM-000069** [2025-12-09] **Create a New Project:**    - Click "Select a project" → "New Project"    - Name it: "Gmail Archive Organizer"    - Click "Create"
+- **ATM-000070** [2025-12-09] **Enable Gmail API:**    - In search bar, type "Gmail API"    - Click "Gmail API" → Click "Enable"
+- **ATM-000071** [2025-12-09] **Create OAuth Credentials:**    - Go to: APIs & Services → Credentials    - Click "+ CREATE CREDENTIALS" → "OAuth client ID"    - If prompted, config...
+- **ATM-000078** [2025-12-09] Go to Settings → Labels
+- **ATM-000113** [2025-12-11] Click "+" to add new rule
+- **ATM-000114** [2025-12-11] Enter Rule Name
+- **ATM-000119** [2025-12-11] Click "Add" to save  ALTERNATIVE: Use Mac Mail App The Mac Mail app provides more reliable rule creation:
+- **ATM-000188** [2025-12-15] Here are the precise regex patterns to drain your "Misc/Other" bucket, mapped to your   specific taxonomy.    Finance & Banking...
+- **ATM-000214** [2025-12-16] gmail-labels     sleep 10   done  IMAP password (will not echo):  Traceback (most recent call last):   File "/Users/4jp/mail_automation/imap_rules.py"...
+- **ATM-000219** [2025-12-16] You are a senior litigation-support automation engineer. Build an idempotent, auditable file-organization pipeline for a local folder named "padavano...
+- **ATM-000223** [2025-12-16] A small unit-style self-check inside the script (e.g., verify taxonomy folders exist; verify manifest writable; verify src exists; exit nonzero if not...
+- **ATM-000256** [2025-12-18] 8.1 -> 5.8.2  ==> Pouring xz--5.8.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/xz/5.8.2: 96 files, 2.7MB ==> Running `brew cleanup xz`... Disab...
+- **ATM-000257** [2025-12-18] 1.7 -> 21.1.8  ==> Pouring llvm--21.1.8.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/llvm/21.1.8: 9,286 files, 1.8GB ==> Running `brew cleanup ll...
+- **ATM-000258** [2025-12-18] 4.7 -> 3.4.8  ==> Pouring ruby--3.4.8.arm64_tahoe.bottle.tar.gz ==> Caveats By default, binaries installed by gem will be placed into:   /opt/homebrew...
+- **ATM-000259** [2025-12-18] 16.1 -> 1.17.0  Error: Cannot install block-goose-cli because conflicting formulae are installed.   goose: because both install `goose` binaries  Plea...
+- **ATM-000261** [2025-12-18] 8.1 -> 5.8.2  ==> Pouring xz--5.8.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/xz/5.8.2: 96 files, 2.7MB ==> Running `brew cleanup xz`... Disab...
+- **ATM-000262** [2025-12-18] 1.7 -> 21.1.8  ==> Pouring llvm--21.1.8.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/llvm/21.1.8: 9,286 files, 1.8GB ==> Running `brew cleanup ll...
+- **ATM-000263** [2025-12-18] 4.7 -> 3.4.8  ==> Pouring ruby--3.4.8.arm64_tahoe.bottle.tar.gz ==> Caveats By default, binaries installed by gem will be placed into:   /opt/homebrew...
+- **ATM-000264** [2025-12-18] 16.1 -> 1.17.0  Error: Cannot install block-goose-cli because conflicting formulae are installed.   goose: because both install `goose` binaries  Plea...
+- **ATM-000265** [2025-12-18] 16.1 -> 1.17.0  ==> Pouring block-goose-cli--1.17.0.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/block-goose-cli/1.17.0: 8 files, 116.6MB ==> Run...
+- **ATM-000266** [2025-12-18] 68.1 -> 0.68.2  ==> Pouring trivy--0.68.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/trivy/0.68.2: 16 files, 197.6MB ==> Running `brew cleanup...
+- **ATM-000267** [2025-12-18] 5.2 -> 1.6  ==> Pouring opus--1.6.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/opus/1.6: 16 files, 1.1MB ==> Running `brew cleanup opus`... Remov...
+- **ATM-000268** [2025-12-18] 9.17 -> 0.9.18  ==> Pouring uv--0.9.18.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/uv/0.9.18: 17 files, 43.7MB ==> Running `brew cleanup uv`......
+- **ATM-000269** [2025-12-18] 2.3 -> 4.2.4  ==> Pouring simdjson--4.2.4.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/simdjson/4.2.4: 19 files, 6.6MB ==> Running `brew cleanup...
+- **ATM-000270** [2025-12-18] 20.2 -> 0.21.2  ==> Pouring gemini-cli--0.21.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/gemini-cli/0.21.2: 44,866 files, 322.1MB ==> Running...
+- **ATM-000271** [2025-12-18] 2.3 -> 1.2.3_1  ==> Pouring huggingface-cli--1.2.3_1.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/huggingface-cli/1.2.3_1: 564 files, 13.2MB ==>...
+- **ATM-000272** [2025-12-18] 5.0 -> 4.5.1  ==> Pouring pre-commit--4.5.1.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/pre-commit/4.5.1: 329 files, 9MB ==> Running `brew clean...
+- **ATM-000273** [2025-12-18] 0.159 -> 1.0.167  ==> Pouring opencode--1.0.167.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/opencode/1.0.167: 10 files, 93.8MB ==> Running `brew...
+- **ATM-000285** [2025-12-18] everything else on the system is brew correct?
+- **ATM-000289** [2025-12-18] overwrite goose Unlinking /opt/homebrew/Cellar/block-goose-cli/1.17.0... 1 symlinks removed. Linking /opt/homebrew/Cellar/goose/3.26.0... 1 symlinks c...
+- **ATM-000291** [2025-12-18] 8.1 -> 5.8.2  ==> Pouring xz--5.8.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/xz/5.8.2: 96 files, 2.7MB ==> Running `brew cleanup xz`... Disab...
+- **ATM-000292** [2025-12-18] 1.7 -> 21.1.8  ==> Pouring llvm--21.1.8.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/llvm/21.1.8: 9,286 files, 1.8GB ==> Running `brew cleanup ll...
+- **ATM-000293** [2025-12-18] 4.7 -> 3.4.8  ==> Pouring ruby--3.4.8.arm64_tahoe.bottle.tar.gz ==> Caveats By default, binaries installed by gem will be placed into:   /opt/homebrew...
+- **ATM-000294** [2025-12-18] 16.1 -> 1.17.0  Error: Cannot install block-goose-cli because conflicting formulae are installed.   goose: because both install `goose` binaries  Plea...
+- **ATM-000295** [2025-12-18] 16.1 -> 1.17.0  ==> Pouring block-goose-cli--1.17.0.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/block-goose-cli/1.17.0: 8 files, 116.6MB ==> Run...
+- **ATM-000296** [2025-12-18] 68.1 -> 0.68.2  ==> Pouring trivy--0.68.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/trivy/0.68.2: 16 files, 197.6MB ==> Running `brew cleanup...
+- **ATM-000297** [2025-12-18] 5.2 -> 1.6  ==> Pouring opus--1.6.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/opus/1.6: 16 files, 1.1MB ==> Running `brew cleanup opus`... Remov...
+- **ATM-000298** [2025-12-18] 9.17 -> 0.9.18  ==> Pouring uv--0.9.18.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/uv/0.9.18: 17 files, 43.7MB ==> Running `brew cleanup uv`......
+- **ATM-000299** [2025-12-18] 2.3 -> 4.2.4  ==> Pouring simdjson--4.2.4.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/simdjson/4.2.4: 19 files, 6.6MB ==> Running `brew cleanup...
+- **ATM-000300** [2025-12-18] 20.2 -> 0.21.2  ==> Pouring gemini-cli--0.21.2.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/gemini-cli/0.21.2: 44,866 files, 322.1MB ==> Running...
+- **ATM-000301** [2025-12-18] 2.3 -> 1.2.3_1  ==> Pouring huggingface-cli--1.2.3_1.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/huggingface-cli/1.2.3_1: 564 files, 13.2MB ==>...
+- **ATM-000302** [2025-12-18] 5.0 -> 4.5.1  ==> Pouring pre-commit--4.5.1.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/pre-commit/4.5.1: 329 files, 9MB ==> Running `brew clean...
+- **ATM-000303** [2025-12-18] 0.159 -> 1.0.167  ==> Pouring opencode--1.0.167.arm64_tahoe.bottle.tar.gz 🍺  /opt/homebrew/Cellar/opencode/1.0.167: 10 files, 93.8MB ==> Running `brew...
+- **ATM-000331** [2025-12-18] okay, now let's create a dual terminal window that launches with startup and hangs and hovers on call that is always contextually aware, left is fathe...
+- **ATM-000408** [2025-12-18] user' flag to pip, or set 'user = true' in your pip.conf     file. Failure to do this can result in a broken Homebrew installation.          Read more...
+- **ATM-000422** [2025-12-18] naming convention (automated, enforced, but automated for me), cleanup script
+- **ATM-000432** [2025-12-18] If your client requires a tools config (e.g., tools.yaml), register these commands there with the repo path as the allowed root.
+- **ATM-000463** [2025-12-18] If your client requires a tools config (e.g., tools.yaml), register these commands there with      the repo path as the allowed root.
+- **ATM-000466** [2025-12-18] well we always want to update right?
+- **ATM-000485** [2025-12-19] nothing is being lost correct?
+- **ATM-000502** [2025-12-19] onward! stop stopping! work until you run out of context or you done! is that clear? are we clear? how many times must i say this?
+- **ATM-000504** [2025-12-19] onward! stop stopping! work until you run out of context or you done! is that clear? are we clear? how many times must i say this?
+- **ATM-000511** [2025-12-19] to be fucking clear....you are not deleting any photos or videos....right?
+- **ATM-000579** [2025-12-19] 4jp@Anthonys-MacBook-Pro ~ %   sudo launchctl bootout system /Library/LaunchDaemons/homebrew.mxcl.newrelic-   infra-agent.plist   sudo rm -f /Library/...
+- **ATM-000580** [2025-12-19] 4jp@Anthonys-MacBook-Pro ~ % sudo launchctl bootout system /Library/LaunchDaemons/homebrew.mxcl.newrelic-infra-agent.plist || true                Boot...
+- **ATM-000599** [2025-12-19] anything else that makes goddamn sense...what the fuck is the point of all this work if I ALWAYS HAVE TO REMEBER
+- **ATM-000607** [2025-12-19] See /tmp/mfm-launchagents.err [mfm-launchagents] failed to load com.my-father-mother.serve.
+- **ATM-000608** [2025-12-19] See /tmp/mfm-launchagents.err [mfm-launchagents] failed to load com.my-father-mother.mcp.
+- **ATM-000642** [2025-12-23] ROLE: Senior litigation support analyst (non-lawyer).  OBJECTIVE: Complete the “Document Request Chart” by using the chart PDF as the authoritative ca...
+- **ATM-000643** [2025-12-23] CHART_PDF (must be read and parsed; the row list is the canonical set of requested documents)
+- **ATM-000647** [2025-12-23] Parse CHART_PDF and extract the full table of requested Document rows in order. Persist it as $PROD_ROOT/_indexes/chart_rows_<timestamp>.csv with colu...
+- **ATM-000648** [2025-12-23] Generate $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per chart document_row and columns:    document_row, requested_date_range, y...
+- **ATM-000649** [2025-12-23] Apparent_date_coverage must be derived only from filenames and filesystem metadata (no OCR; do not open PDFs unless absolutely required for a tie-brea...
+- **ATM-000655** [2025-12-23] Generate a Coverage Matrix CSV at $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per Document Request category and columns:    categ...
+- **ATM-000661** [2025-12-23] OBJECComplete the Document Request Chart by discovering what already exists locally, mapping coverage, and planning rolling productions. No fabricatio...
+- **ATM-000662** [2025-12-23] CHART_PDF (must be read and parsed; the row list is the canonical set of requested documents)
+- **ATM-000666** [2025-12-23] Parse CHART_PDF and extract the full table of requested Document rows in order. Persist it as $PROD_ROOT/_indexes/chart_rows_<timestamp>.csv with colu...
+- **ATM-000667** [2025-12-23] Generate $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per chart document_row and columns:    document_row, requested_date_range, y...
+- **ATM-000668** [2025-12-23] Apparent_date_coverage must be derived only from filenames and filesystem metadata (no OCR; do not open PDFs unless absolutely required for a tie-brea...
+- **ATM-000673** [2025-12-23] Generate a Coverage Matrix CSV at $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per Document Request category and columns:    categ...
+- **ATM-000678** [2025-12-23] ROLE: Senior litigation support analyst (non-lawyer).  OBJECTIVE: Complete the “Document Request Chart” by using the chart PDF as the authoritative ca...
+- **ATM-000679** [2025-12-23] CHART_PDF (must be read and parsed; the row list is the canonical set of requested documents)
+- **ATM-000683** [2025-12-23] Parse CHART_PDF and extract the full table of requested Document rows in order. Persist it as $PROD_ROOT/_indexes/chart_rows_<timestamp>.csv with colu...
+- **ATM-000684** [2025-12-23] Generate $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per chart document_row and columns:    document_row, requested_date_range, y...
+- **ATM-000685** [2025-12-23] Apparent_date_coverage must be derived only from filenames and filesystem metadata (no OCR; do not open PDFs unless absolutely required for a tie-brea...
+- **ATM-000690** [2025-12-23] ROLE: Senior litigation support analyst (non-lawyer).  OBJECTIVE: Complete the “Document Request Chart” by using the chart PDF as the authoritative ca...
+- **ATM-000691** [2025-12-23] CHART_PDF (must be read and parsed; the row list is the canonical set of requested documents)
+- **ATM-000695** [2025-12-23] Parse CHART_PDF and extract the full table of requested Document rows in order. Persist it as $PROD_ROOT/_indexes/chart_rows_<timestamp>.csv with colu...
+- **ATM-000696** [2025-12-23] Generate $PROD_ROOT/_indexes/coverage_matrix_<timestamp>.csv with one row per chart document_row and columns:    document_row, requested_date_range, y...
+- **ATM-000697** [2025-12-23] Apparent_date_coverage must be derived only from filenames and filesystem metadata (no OCR; do not open PDFs unless absolutely required for a tie-brea...
+- **ATM-000723** [2025-12-23] i also want github, jules, all git associates (that are github native and dont require different logins), and then any others that dont cause those lo...
+- **ATM-000725** [2025-12-23] ROLE: Senior litigation support analyst (non-lawyer). Evidence discipline required.  OBJECTIVE: Automate end-to-end retrieval and production-ready sta...
+- **ATM-000727** [2025-12-23] Do not attempt any “full Dropbox tree content scan” across $HOME/Dropbox. Dropbox is mostly remote; we must use remote metadata search and selective d...
+- **ATM-000728** [2025-12-23] Use Dropbox via rclone remote named “dbx”. If not configured, configure it correctly using auto OAuth and defaults.  REQUIRED OUTPUTS:
+- **ATM-000733** [2025-12-23] Never advise or perform evidence destruction, concealment, alteration, or backdating.
+- **ATM-000737** [2025-12-23] Any narrative files must use numbered paragraphs only.  TASKS (execute in order, fully automated):
+- **ATM-000742** [2025-12-23] 3) After config, run `rclone lsd dbx:` and confirm `Archive` exists; if not, fail with NOT IN RECORD and stop.
+- **ATM-000765** [2025-12-23] The runner must set env vars, run the Python script, and exit non-zero on failure.
+- **ATM-000766** [2025-12-23] Use only standard libs plus rclone and sqlite3; do not require additional Python packages.
+- **ATM-000767** [2025-12-23] Never print sensitive OAuth token blobs; do not cat rclone.conf.  STOP CONDITIONS:
+- **ATM-000778** [2025-12-23] Existing inventory indexes under $PROD_ROOT/_indexes (do not modify).  REQUIRED OUTPUTS:
+- **ATM-000799** [2025-12-23] 2. This is almost never a local directory issue; it is remote auth/config.
+- **ATM-000803** [2025-12-23] 2.1. If dbx: is not listed, you must create it (Section 3).
+- **ATM-000807** [2025-12-23] 3.2. If it fails, do Section 3 (re-authorize).
+- **ATM-000820** [2025-12-23] 5. If it still fails, capture the exact last 30 lines of the -vv output and paste them; do not paraphrase. Until that output is seen, the failure caus...
+- **ATM-000829** [2025-12-23] If you want this to be zero-interaction going forward (but still compliant).
+- **ATM-000833** [2025-12-23] Two complete draft paths that do not require your answer.
+- ... and 3896 more

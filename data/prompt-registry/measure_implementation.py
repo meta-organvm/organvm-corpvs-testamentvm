@@ -5,9 +5,11 @@ Reads prompt-atoms.json (29,671 atoms) and auto-triages implementation status
 by cross-referencing against actual system state:
   1. Git history — commit messages across all workspace repos
   2. IRF entries — DONE and open items in INST-INDEX-RERUM-FACIENDARUM.md
-  3. File/directory existence — check if referenced files/repos exist
+  3. GitHub issues/PRs — closed issues, merged PRs, and open items via gh CLI
   4. Hook existence — hooks in ~/.claude/settings.json
   5. Memory existence — topics in ~/.claude/projects/-Users-4jp/memory/MEMORY.md
+  6. File/directory existence — check if referenced files/repos exist
+  7. Git file-path evidence — changed filenames in recent commits
 
 Usage:
     python3 measure_implementation.py
@@ -18,8 +20,10 @@ from __future__ import annotations
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
+import time
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -38,6 +42,11 @@ IRF_PATH = WORKSPACE / "meta-organvm" / "organvm-corpvs-testamentvm" / "INST-IND
 HOOKS_PATH = Path.home() / ".claude" / "settings.json"
 MEMORY_PATH = Path.home() / ".claude" / "projects" / "-Users-4jp" / "memory" / "MEMORY.md"
 SCORECARD_PATH = SCRIPT_DIR / "IMPLEMENTATION-SCORECARD.md"
+GITHUB_CACHE_PATH = SCRIPT_DIR / "github-evidence-cache.json"
+GITHUB_CACHE_TTL = 3600  # 1 hour in seconds
+
+# Regex to detect file-path-like strings in atom content
+FILE_PATH_PATTERN = re.compile(r"[\w-]+\.(py|yaml|json|md|sh|ts|js|toml|zsh)")
 
 # Minimum keyword length for meaningful matching
 MIN_KEYWORD_LEN = 4
@@ -133,10 +142,11 @@ class GitCorpus:
     raw_lines: list[str] = field(default_factory=list)
     line_keywords: list[set[str]] = field(default_factory=list)
     keyword_index: dict[str, set[int]] = field(default_factory=lambda: defaultdict(set))
+    file_index: set[str] = field(default_factory=set)
 
     def build(self) -> None:
         """Walk ~/Workspace/*/* and collect git log --oneline -100 from each."""
-        print("[1/5] Building git history corpus...", flush=True)
+        print("[1/6] Building git history corpus...", flush=True)
         repo_count = 0
         line_count = 0
 
@@ -179,10 +189,22 @@ class GitCorpus:
                                 self.keyword_index[kw].add(idx)
                             line_count += 1
                         repo_count += 1
+                    # Also collect changed file paths for git-file evidence
+                    file_result = subprocess.run(
+                        ["git", "-C", str(repo_path), "log", "--all",
+                         "--name-only", "--format=", "-100"],
+                        capture_output=True, text=True, timeout=10,
+                    )
+                    if file_result.returncode == 0 and file_result.stdout.strip():
+                        for fline in file_result.stdout.strip().splitlines():
+                            fline = fline.strip()
+                            if fline:
+                                self.file_index.add(os.path.basename(fline).lower())
                 except (subprocess.TimeoutExpired, OSError):
                     continue
 
-        print(f"  -> {repo_count} repos, {line_count} commit messages indexed", flush=True)
+        print(f"  -> {repo_count} repos, {line_count} commit messages, "
+              f"{len(self.file_index)} unique file paths indexed", flush=True)
 
     def match(self, atom_keywords: set[str]) -> bool:
         """Return True if a commit message is sufficiently similar to the atom.
@@ -216,6 +238,24 @@ class GitCorpus:
 
         return False
 
+    def match_files(self, content: str) -> bool:
+        """Return True if file-path-like strings in content appear in the file-change index.
+
+        Extracts filenames matching common source extensions from atom content
+        and checks whether any of those filenames were changed in recent commits.
+        """
+        if not self.file_index:
+            return False
+        matches = FILE_PATH_PATTERN.findall(content)
+        if not matches:
+            return False
+        # FILE_PATH_PATTERN captures the extension group; re-extract full filenames
+        for m in FILE_PATH_PATTERN.finditer(content):
+            filename = m.group(0).lower()
+            if filename in self.file_index:
+                return True
+        return False
+
 
 # ---------------------------------------------------------------------------
 # Evidence Source 2: IRF Entries
@@ -238,7 +278,7 @@ class IRFIndex:
 
     def build(self) -> None:
         """Parse the IRF markdown for DONE and open items."""
-        print("[2/5] Parsing IRF entries...", flush=True)
+        print("[2/6] Parsing IRF entries...", flush=True)
 
         if not IRF_PATH.exists():
             print("  -> IRF file not found, skipping", flush=True)
@@ -376,7 +416,7 @@ class HookInventory:
 
     def build(self) -> None:
         """Parse settings.json for hook definitions and extract concepts."""
-        print("[3/5] Building hook inventory...", flush=True)
+        print("[4/6] Building hook inventory...", flush=True)
 
         if not HOOKS_PATH.exists():
             print("  -> settings.json not found, skipping", flush=True)
@@ -468,7 +508,7 @@ class MemoryInventory:
 
     def build(self) -> None:
         """Parse MEMORY.md for topic entries."""
-        print("[4/5] Building memory inventory...", flush=True)
+        print("[5/6] Building memory inventory...", flush=True)
 
         if not MEMORY_PATH.exists():
             print("  -> MEMORY.md not found, skipping", flush=True)
@@ -510,6 +550,195 @@ class MemoryInventory:
 
 
 # ---------------------------------------------------------------------------
+# Evidence Source 6: GitHub Issues/PRs
+# ---------------------------------------------------------------------------
+
+def _parse_github_remote(repo_path: Path) -> str | None:
+    """Extract org/repo from a git remote URL. Returns None on failure."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repo_path), "remote", "get-url", "origin"],
+            capture_output=True, text=True, timeout=5,
+        )
+        if result.returncode != 0 or not result.stdout.strip():
+            return None
+        url = result.stdout.strip()
+        # SSH: git@github.com:org/repo.git
+        m = re.match(r"git@github\.com:(.+?)(?:\.git)?$", url)
+        if m:
+            return m.group(1)
+        # HTTPS: https://github.com/org/repo.git
+        m = re.match(r"https?://github\.com/(.+?)(?:\.git)?$", url)
+        if m:
+            return m.group(1)
+        return None
+    except (subprocess.TimeoutExpired, OSError):
+        return None
+
+
+@dataclass
+class GitHubEvidence:
+    """Issues and PRs from GitHub as implementation evidence."""
+    done_keywords: list[set[str]] = field(default_factory=list)
+    open_keywords: list[set[str]] = field(default_factory=list)
+
+    def build(self) -> None:
+        """Fetch GitHub issues/PRs, using a cache to avoid repeated API calls."""
+        print("[3/6] Building GitHub evidence index...", flush=True)
+
+        # Check if gh CLI is available
+        if shutil.which("gh") is None:
+            print("  -> gh CLI not found, skipping GitHub evidence", flush=True)
+            return
+
+        # Check cache freshness
+        cache_data = self._load_cache()
+        if cache_data is not None:
+            self._index_from_cache(cache_data)
+            return
+
+        # Walk repos and fetch issues/PRs
+        cache_data = {"timestamp": time.time(), "repos": {}}
+        repo_count = 0
+        issue_count = 0
+        pr_count = 0
+
+        for org_dir in sorted(WORKSPACE.iterdir()):
+            if not org_dir.is_dir():
+                continue
+            if org_dir.name in {"intake", "export", "alchemia-ingestvm"}:
+                continue
+
+            candidates: list[Path] = []
+            if (org_dir / ".git").exists():
+                candidates.append(org_dir)
+            try:
+                for sub in sorted(org_dir.iterdir()):
+                    if sub.is_dir() and (sub / ".git").exists():
+                        candidates.append(sub)
+            except PermissionError:
+                continue
+
+            for repo_path in candidates:
+                slug = _parse_github_remote(repo_path)
+                if not slug:
+                    continue
+
+                repo_entry: dict[str, list[dict[str, str]]] = {"issues": [], "prs": []}
+
+                # Fetch issues
+                try:
+                    result = subprocess.run(
+                        ["gh", "issue", "list", "--repo", slug, "--state", "all",
+                         "--limit", "100", "--json", "title,state"],
+                        capture_output=True, text=True, timeout=30,
+                    )
+                    if result.returncode == 0 and result.stdout.strip():
+                        items = json.loads(result.stdout)
+                        repo_entry["issues"] = items
+                        issue_count += len(items)
+                except (subprocess.TimeoutExpired, OSError, json.JSONDecodeError):
+                    pass
+
+                # Fetch PRs
+                try:
+                    result = subprocess.run(
+                        ["gh", "pr", "list", "--repo", slug, "--state", "all",
+                         "--limit", "100", "--json", "title,state"],
+                        capture_output=True, text=True, timeout=30,
+                    )
+                    if result.returncode == 0 and result.stdout.strip():
+                        items = json.loads(result.stdout)
+                        repo_entry["prs"] = items
+                        pr_count += len(items)
+                except (subprocess.TimeoutExpired, OSError, json.JSONDecodeError):
+                    pass
+
+                if repo_entry["issues"] or repo_entry["prs"]:
+                    cache_data["repos"][slug] = repo_entry
+                    repo_count += 1
+
+        # Write cache
+        try:
+            GITHUB_CACHE_PATH.write_text(
+                json.dumps(cache_data, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+        except OSError:
+            pass
+
+        self._index_from_cache(cache_data)
+        print(f"  -> {repo_count} repos, {issue_count} issues, {pr_count} PRs indexed",
+              flush=True)
+
+    def _load_cache(self) -> dict[str, Any] | None:
+        """Load cache if it exists and is fresher than GITHUB_CACHE_TTL."""
+        if not GITHUB_CACHE_PATH.exists():
+            return None
+        try:
+            data = json.loads(GITHUB_CACHE_PATH.read_text(encoding="utf-8"))
+            ts = data.get("timestamp", 0)
+            if time.time() - ts < GITHUB_CACHE_TTL:
+                print(f"  -> Using cached GitHub evidence "
+                      f"({int(time.time() - ts)}s old)", flush=True)
+                return data
+        except (json.JSONDecodeError, OSError, KeyError):
+            pass
+        return None
+
+    def _index_from_cache(self, cache_data: dict[str, Any]) -> None:
+        """Build keyword indices from cached issue/PR data."""
+        for slug, repo_entry in cache_data.get("repos", {}).items():
+            for issue in repo_entry.get("issues", []):
+                title = issue.get("title", "")
+                state = issue.get("state", "").upper()
+                kw = extract_keywords(title, include_domain=False)
+                if not kw:
+                    continue
+                if state == "CLOSED":
+                    self.done_keywords.append(kw)
+                else:
+                    self.open_keywords.append(kw)
+
+            for pr in repo_entry.get("prs", []):
+                title = pr.get("title", "")
+                state = pr.get("state", "").upper()
+                kw = extract_keywords(title, include_domain=False)
+                if not kw:
+                    continue
+                if state in ("CLOSED", "MERGED"):
+                    self.done_keywords.append(kw)
+                else:
+                    self.open_keywords.append(kw)
+
+    @staticmethod
+    def _jaccard_match(atom_kw: set[str], entry_kw: set[str]) -> bool:
+        """Jaccard similarity check, same thresholds as IRF matching."""
+        overlap = atom_kw & entry_kw
+        overlap_count = len(overlap)
+        if overlap_count < MIN_OVERLAP_IRF:
+            return False
+        union_count = len(atom_kw | entry_kw)
+        if union_count == 0:
+            return False
+        return (overlap_count / union_count) >= MIN_JACCARD_IRF
+
+    def match_done(self, atom_keywords: set[str]) -> bool:
+        """Return True if atom keywords match a closed issue or merged PR."""
+        filtered = atom_keywords - DOMAIN_STOP_WORDS
+        if len(filtered) < MIN_OVERLAP_IRF:
+            return False
+        return any(self._jaccard_match(filtered, kw) for kw in self.done_keywords)
+
+    def match_open(self, atom_keywords: set[str]) -> bool:
+        """Return True if atom keywords match an open issue or PR."""
+        filtered = atom_keywords - DOMAIN_STOP_WORDS
+        if len(filtered) < MIN_OVERLAP_IRF:
+            return False
+        return any(self._jaccard_match(filtered, kw) for kw in self.open_keywords)
+
+
+# ---------------------------------------------------------------------------
 # Main Measurement Engine
 # ---------------------------------------------------------------------------
 
@@ -519,7 +748,7 @@ class MeasurementResult:
     atom_id: str
     old_status: str
     new_status: str
-    evidence_source: str  # "git", "irf-done", "irf-open", "file", "hook", "memory", "none"
+    evidence_source: str  # "git", "git-file", "github", "github-open", "irf-done", "irf-open", "file", "hook", "memory", "none"
 
 
 def run_measurement() -> list[MeasurementResult]:
@@ -535,6 +764,9 @@ def run_measurement() -> list[MeasurementResult]:
     irf_index = IRFIndex()
     irf_index.build()
 
+    github_ev = GitHubEvidence()
+    github_ev.build()
+
     hook_inv = HookInventory()
     hook_inv.build()
 
@@ -542,7 +774,7 @@ def run_measurement() -> list[MeasurementResult]:
     memory_inv.build()
 
     # Phase: check each atom against all sources
-    print("[5/5] Measuring implementation status...", flush=True)
+    print("[6/6] Measuring implementation status...", flush=True)
     results: list[MeasurementResult] = []
 
     status_counts: Counter[str] = Counter()
@@ -568,6 +800,13 @@ def run_measurement() -> list[MeasurementResult]:
             evidence_counts["preserved"] += 1
             continue
 
+        # Skip atoms with CLOSED-* status (distinct terminal state)
+        if old_status.startswith("CLOSED-"):
+            results.append(MeasurementResult(atom_id, old_status, old_status, "preserved"))
+            status_counts[old_status] += 1
+            evidence_counts["preserved"] += 1
+            continue
+
         # Check evidence sources in priority order
 
         # 1. IRF DONE match — strongest signal
@@ -575,27 +814,42 @@ def run_measurement() -> list[MeasurementResult]:
             new_status = "DONE"
             evidence_source = "irf-done"
 
-        # 2. Git history match
+        # 2. Git history match (commit messages)
         elif git_corpus.match(keywords):
             new_status = "DONE"
             evidence_source = "git"
 
-        # 3. Hook existence (only for governance-rule atoms)
+        # 3. Git file-path match (changed files in recent commits)
+        elif git_corpus.match_files(content):
+            new_status = "DONE"
+            evidence_source = "git-file"
+
+        # 4. GitHub closed issues / merged PRs
+        elif github_ev.match_done(keywords):
+            new_status = "DONE"
+            evidence_source = "github"
+
+        # 5. Hook existence (only for governance-rule atoms)
         elif atom_type == "governance-rule" and hook_inv.matches(content):
             new_status = "DONE"
             evidence_source = "hook"
 
-        # 4. File/directory existence
+        # 6. File/directory existence
         elif check_file_existence(content):
             new_status = "DONE"
             evidence_source = "file"
 
-        # 5. Memory coverage (for governance-rule and constraint atoms)
+        # 7. Memory coverage (for governance-rule and constraint atoms)
         elif atom_type in ("governance-rule", "constraint") and memory_inv.matches(keywords):
             new_status = "DONE"
             evidence_source = "memory"
 
-        # 6. IRF open match — mark as OPEN, not DONE
+        # 8. GitHub open issues/PRs — mark as OPEN
+        elif github_ev.match_open(keywords):
+            new_status = "OPEN"
+            evidence_source = "github-open"
+
+        # 9. IRF open match — mark as OPEN, not DONE
         elif irf_index.match_open(keywords):
             new_status = "OPEN"
             evidence_source = "irf-open"
@@ -692,12 +946,14 @@ def generate_scorecard(atoms: list[dict[str, Any]], results: list[MeasurementRes
     lines.append("")
     done_total = status_counts.get("DONE", 0)
     open_total = status_counts.get("OPEN", 0)
+    closed_total = sum(v for k, v in status_counts.items() if k.startswith("CLOSED-"))
     unrev_total = status_counts.get("UNREVIEWED", 0) + status_counts.get("N/A", 0)
     lines.append(f"| Metric | Count | Percentage |")
     lines.append(f"|--------|-------|------------|")
     lines.append(f"| Total atoms | {total:,} | 100% |")
     lines.append(f"| DONE | {done_total:,} | {pct(done_total)} |")
-    lines.append(f"| OPEN (IRF tracked) | {open_total:,} | {pct(open_total)} |")
+    lines.append(f"| OPEN (IRF/GitHub tracked) | {open_total:,} | {pct(open_total)} |")
+    lines.append(f"| CLOSED-* | {closed_total:,} | {pct(closed_total)} |")
     lines.append(f"| UNREVIEWED | {unrev_total:,} | {pct(unrev_total)} |")
     lines.append("")
 
@@ -713,52 +969,58 @@ def generate_scorecard(atoms: list[dict[str, Any]], results: list[MeasurementRes
     # By source (chatgpt, claude-code, codex)
     lines.append("## By Source")
     lines.append("")
-    lines.append("| Source | Total | DONE | OPEN | UNREVIEWED |")
-    lines.append("|--------|-------|------|------|------------|")
+    lines.append("| Source | Total | DONE | OPEN | CLOSED | UNREVIEWED |")
+    lines.append("|--------|-------|------|------|--------|------------|")
     for source in sorted(by_source.keys()):
         counts = by_source[source]
         src_total = sum(counts.values())
         done = counts.get("DONE", 0)
         open_n = counts.get("OPEN", 0)
+        closed = sum(v for k, v in counts.items() if k.startswith("CLOSED-"))
         unrev = counts.get("UNREVIEWED", 0) + counts.get("N/A", 0)
         d_pct = f"{done / src_total * 100:.1f}%" if src_total > 0 else "0%"
         o_pct = f"{open_n / src_total * 100:.1f}%" if src_total > 0 else "0%"
+        c_pct = f"{closed / src_total * 100:.1f}%" if src_total > 0 else "0%"
         u_pct = f"{unrev / src_total * 100:.1f}%" if src_total > 0 else "0%"
-        lines.append(f"| {source} | {src_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {unrev:,} ({u_pct}) |")
+        lines.append(f"| {source} | {src_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {closed:,} ({c_pct}) | {unrev:,} ({u_pct}) |")
     lines.append("")
 
     # By type
     lines.append("## By Type")
     lines.append("")
-    lines.append("| Type | Total | DONE | OPEN | UNREVIEWED |")
-    lines.append("|------|-------|------|------|------------|")
+    lines.append("| Type | Total | DONE | OPEN | CLOSED | UNREVIEWED |")
+    lines.append("|------|-------|------|------|--------|------------|")
     for atom_type in sorted(by_type.keys()):
         counts = by_type[atom_type]
         t_total = sum(counts.values())
         done = counts.get("DONE", 0)
         open_n = counts.get("OPEN", 0)
+        closed = sum(v for k, v in counts.items() if k.startswith("CLOSED-"))
         unrev = counts.get("UNREVIEWED", 0) + counts.get("N/A", 0)
         d_pct = f"{done / t_total * 100:.1f}%" if t_total > 0 else "0%"
         o_pct = f"{open_n / t_total * 100:.1f}%" if t_total > 0 else "0%"
+        c_pct = f"{closed / t_total * 100:.1f}%" if t_total > 0 else "0%"
         u_pct = f"{unrev / t_total * 100:.1f}%" if t_total > 0 else "0%"
-        lines.append(f"| {atom_type} | {t_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {unrev:,} ({u_pct}) |")
+        lines.append(f"| {atom_type} | {t_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {closed:,} ({c_pct}) | {unrev:,} ({u_pct}) |")
     lines.append("")
 
     # By universe
     lines.append("## By Universe")
     lines.append("")
-    lines.append("| Universe | Total | DONE | OPEN | UNREVIEWED |")
-    lines.append("|----------|-------|------|------|------------|")
+    lines.append("| Universe | Total | DONE | OPEN | CLOSED | UNREVIEWED |")
+    lines.append("|----------|-------|------|------|--------|------------|")
     for universe in sorted(by_universe.keys()):
         counts = by_universe[universe]
         u_total = sum(counts.values())
         done = counts.get("DONE", 0)
         open_n = counts.get("OPEN", 0)
+        closed = sum(v for k, v in counts.items() if k.startswith("CLOSED-"))
         unrev = counts.get("UNREVIEWED", 0) + counts.get("N/A", 0)
         d_pct = f"{done / u_total * 100:.1f}%" if u_total > 0 else "0%"
         o_pct = f"{open_n / u_total * 100:.1f}%" if u_total > 0 else "0%"
+        c_pct = f"{closed / u_total * 100:.1f}%" if u_total > 0 else "0%"
         u_pct = f"{unrev / u_total * 100:.1f}%" if u_total > 0 else "0%"
-        lines.append(f"| {universe} | {u_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {unrev:,} ({u_pct}) |")
+        lines.append(f"| {universe} | {u_total:,} | {done:,} ({d_pct}) | {open_n:,} ({o_pct}) | {closed:,} ({c_pct}) | {unrev:,} ({u_pct}) |")
     lines.append("")
 
     # Top 20 unimplemented directive themes
