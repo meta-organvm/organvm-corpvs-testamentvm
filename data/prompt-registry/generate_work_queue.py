@@ -18,31 +18,37 @@ CACHE_FILE = SCRIPT_DIR / "open-atoms-cache.json"
 
 
 def parse_priority(atom: dict) -> int:
-    """Extract priority level from atom content. Lower = higher priority."""
-    content = atom.get("content", "")
+    """Read computed priority from atom, falling back to type-based default.
+
+    Priority is computed by prioritize_atoms.py across the full corpus.
+    The 'priority' field (0-3) is written directly into prompt-atoms.json.
+    """
+    # Use pre-computed priority if available (set by prioritize_atoms.py)
+    if "priority" in atom:
+        return atom["priority"]
+
+    # Fallback for atoms not yet scored
     atom_id = atom.get("atom_id", "")
+    content = atom.get("content", "")
 
-    # BACKLOG items have explicit priority
     if atom_id.startswith("BACKLOG"):
-        if "[P0]" in content or "P0" in content:
+        if "[P0]" in content:
             return 0
-        if "[P1]" in content or "P1" in content:
+        if "[P1]" in content:
             return 1
-        if "[P2]" in content or "P2" in content:
+        if "[P2]" in content:
             return 2
-        if "[P3]" in content or "P3" in content:
+        if "[P3]" in content:
             return 3
-        return 1  # BACKLOG without explicit priority = P1
+        return 1
 
-    # Non-backlog: priority by type
-    atom_type = atom.get("type", "")
     type_priority = {
-        "directive": 4,
-        "governance-rule": 5,
-        "constraint": 6,
-        "correction": 7,
+        "correction": 1,
+        "governance-rule": 2,
+        "constraint": 2,
+        "directive": 3,
     }
-    return type_priority.get(atom_type, 8)
+    return type_priority.get(atom.get("type", ""), 3)
 
 
 def parse_date(atom: dict) -> str:
@@ -87,10 +93,13 @@ def generate_work_queue() -> None:
         CACHE_FILE.write_text("[]")
         return
 
-    # Sort: priority first, then recency (newest first)
-    open_atoms.sort(key=lambda a: (parse_priority(a), "" if not parse_date(a) else "0" * 10, a.get("atom_id", "")))
-    # Secondary sort by date descending within same priority
-    open_atoms.sort(key=lambda a: (parse_priority(a), -(int(parse_date(a).replace("-", "") or "0"))))
+    # Sort: priority level first, then priority_score descending within level,
+    # then date descending as tiebreaker
+    open_atoms.sort(key=lambda a: (
+        parse_priority(a),
+        -(a.get("priority_score", 0.0)),
+        -(int(parse_date(a).replace("-", "") or "0")),
+    ))
 
     # Build clusters
     clusters = cluster_by_universe(open_atoms)
@@ -111,11 +120,12 @@ def generate_work_queue() -> None:
     for i, atom in enumerate(open_atoms[:30], 1):
         aid = atom["atom_id"]
         priority = parse_priority(atom)
-        p_label = f"P{priority}" if priority <= 3 else "RECENT" if priority == 4 else "RULE"
+        p_label = f"P{priority}"
+        p_score = atom.get("priority_score", 0.0)
         date = parse_date(atom) or "unknown"
         universes = ", ".join(atom.get("universes", ["unscoped"])[:3])
         summary = truncate(atom.get("content", atom.get("summary", "")))
-        lines.append(f"{i}. **[{p_label}]** `{aid}` ({date}, {universes})")
+        lines.append(f"{i}. **[{p_label} {p_score:.2f}]** `{aid}` ({date}, {universes})")
         lines.append(f"   {summary}")
         lines.append("")
 
@@ -161,6 +171,7 @@ def generate_work_queue() -> None:
             "universes": atom.get("universes", []),
             "date": atom.get("date", ""),
             "priority": parse_priority(atom),
+            "priority_score": atom.get("priority_score", 0.0),
         })
 
     with open(CACHE_FILE, "w") as f:

@@ -106,13 +106,16 @@ def route_all() -> None:
             "summary": truncate(atom.get("summary", atom.get("content", "")), 200),
             "universes": atom.get("universes", []),
             "date": atom.get("date", ""),
+            "priority": atom.get("priority", 3),
+            "priority_score": atom.get("priority_score", 0.0),
             "target": target,
         })
 
-    # Sort within each target by priority (BACKLOG first, then by date)
+    # Sort within each target by priority level, then priority_score descending
     for target in dispatch:
         dispatch[target].sort(key=lambda a: (
-            0 if a["atom_id"].startswith("BACKLOG") else 1,
+            a.get("priority", 3),
+            -(a.get("priority_score", 0.0)),
             -(int((a.get("date") or "0").replace("-", "") or "0")),
         ))
 
@@ -157,9 +160,11 @@ def route_all() -> None:
         for atom in items:
             aid = atom["atom_id"]
             date = atom.get("date", "?")
+            p = atom.get("priority", 3)
+            ps = atom.get("priority_score", 0.0)
             universes = ", ".join(atom.get("universes", [])[:2])
             summary = atom["summary"]
-            lines.append(f"- `{aid}` ({date}, {universes}) — {summary}")
+            lines.append(f"- **[P{p} {ps:.2f}]** `{aid}` ({date}, {universes}) — {summary}")
 
         lines.append("")
 
