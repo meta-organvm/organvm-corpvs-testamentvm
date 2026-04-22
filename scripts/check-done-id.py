@@ -75,17 +75,21 @@ def main():
             f"You must increment data/done-id-counter.json BEFORE assigning IDs."
         )
 
-    # Check 2: No duplicate DONE-IDs in staged additions
+    # Check 2: No duplicate DONE-IDs in assignment rows only
+    # Cross-references (e.g. "advances DONE-408") are allowed — only flag
+    # rows starting with | DONE-NNN | (actual assignment table entries)
     if staged_only:
+        assign_re = re.compile(r"^\|\s*DONE-(\d+)\s*\|")
+        assign_ids = [int(assign_re.match(l).group(1)) for l in lines if assign_re.match(l)]
         seen = set()
         dupes = set()
-        for d in done_ids:
+        for d in assign_ids:
             if d in seen:
                 dupes.add(d)
             seen.add(d)
         if dupes:
             errors.append(
-                f"Duplicate DONE-ID(s) in {source}: {sorted(dupes)}"
+                f"Duplicate DONE-ID assignment(s) in {source}: {sorted(dupes)}"
             )
 
     if errors:
