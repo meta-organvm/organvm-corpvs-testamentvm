@@ -1,11 +1,11 @@
 {
-  "next_id": 414,
-  "last_claimed_by": "S-mega-session-2026-04-22",
+  "next_id": 418,
+  "last_claimed_by": "S-priority-stratification-2026-04-22",
   "last_claimed_at": "2026-04-22",
   "claimed_range": [
-    406,
-    413
+    414,
+    417
   ],
-  "note": "8 completions: (406) CCE LaunchAgent path fix; (407) sovereign-systems accessibility; (408) DONE-ID pre-commit hook; (409) stale a-organvm clone decommissioned; (410) INSTANCE.toml 2/3; (411) 3 enforcement hooks; (412) mail-triage disabled; (413) 72h prompt archive. COLLISION: DONE-405 already assigned, 5th incident.",
+  "note": "4 completions: (414) priority stratification engine; (415) corpus hygiene dedup+noise; (416) evidence verification root cause fix; (417) 13 essays deployed 51→64.",
   "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
 }
