@@ -1,0 +1,2653 @@
+[
+ {
+  "atom_id": "ATM-024368",
+  "type": "directive",
+  "summary": "Collect 3+ months v2 outcome data (pipeline is running autonomously   now)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-22",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024373",
+  "type": "directive",
+  "summary": "Second instantiation: deploy authority against ORGAN-IV (Taxis)",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-22",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024378",
+  "type": "directive",
+  "summary": "Submit IRA methodology to arXiv:cs.SE as Paper (Tier I) \u2014 this is Doc   A, already drafted",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-22",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024523",
+  "type": "directive",
+  "summary": "Review all plan files (.gemini/plans/, .codex/plans/,    .claude/plans/) and check implementation status",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-22",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024136",
+  "type": "directive",
+  "summary": "Fix 4444J99 profile metrics workflow (token or action version)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024145",
+  "type": "directive",
+  "summary": "Implement SLOs for security alerts (<24h for critical, <7d for medium)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024265",
+  "type": "directive",
+  "summary": "IRF-SEC-006 \u2014 Generate new PAT, run gh secret set METRICS_TOKEN --repo              4444J99/4444J99",
+  "universes": [
+   "meta",
+   "security"
+  ],
+  "date": "2026-04-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-022665",
+  "type": "directive",
+  "summary": "LinkedIn DM: Tammer Galal (Datadog)       - Who: Senior Technical Curriculum Developer at Datadog      - When: April 1, 2026 \u2014 15 days unanswered      - Platform: LinkedIn DM      - Why it matters:...",
+  "universes": [
+   "employment",
+   "education",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-16",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-022670",
+  "type": "directive",
+  "summary": "Mr. Victoroff \u2014 ACD Deliverable Submission       - What: You submitted ACD_DELIVERABLE_v1_Legal.pdf on Dec 11, 2025      - Status: In \"Awaiting Reply\" label \u2014 4+ months, no visible response      - ...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-16",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-022181",
+  "type": "directive",
+  "summary": "Dead lazy-load wrapper \u2014 checks   $HOME/google-cloud-sdk which doesn't exist; real SDK   is at /opt/homebrew/share/google-cloud-sdk",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-15",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-021151",
+  "type": "directive",
+  "summary": "Two work clusters exist: infrastructure and output       The co-activity data shows two genuine workflows: building the      engine/governance system, and building personal/commercial products. The...",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-07",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-021260",
+  "type": "directive",
+  "summary": "GitHub Issue Alignment    * Prompt Injection Finding (IRF-SYS-062): Issued as GH#156      (https://github.com/organvm-iv-taxis/orchestration-start-here/issues/15",
+  "universes": [
+   "organ-iv",
+   "meta"
+  ],
+  "date": "2026-04-07",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-021261",
+  "type": "directive",
+  "summary": "in orchestration-start-here.    * Empirical Structure Audit Findings: Summarized as GH#157      (https://github.com/organvm-iv-taxis/orchestration-start-here/issues/15",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-07",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-021288",
+  "type": "directive",
+  "summary": "\u2026 \u2502 \u2502                                                    \u2502 \u2502 ... 221 hidden (Ctrl+O) ...                        \u2502 \u2502 5. Run all three functions:                        \u2502 \u2502    - `python3 skeletal_def...",
+  "universes": [
+   "meta",
+   "personal",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-07",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-020323",
+  "type": "directive",
+  "summary": "No testament file was created \u2014 the transcript      identifies this as a continuing pattern                (IRF-CCE-029/037).                                                                        ...",
+  "universes": [
+   "meta",
+   "personal",
+   "automation",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-05",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-020330",
+  "type": "directive",
+  "summary": "No testament file was created \u2014 the transcript      identifies this as a continuing pattern                (IRF-CCE-029/037).                                                                        ...",
+  "universes": [
+   "meta",
+   "personal",
+   "automation",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-05",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-019360",
+  "type": "directive",
+  "summary": "Tracked submodules (9): org-dotgithub, a-i--skills,       agent--claude-smith, agentic-titan,      orchestration-start-here, petasum-super-petasum,      universal-node-network, tool-interaction-des...",
+  "universes": [
+   "organ-iv",
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-04-04",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-019792",
+  "type": "directive",
+  "summary": "Formalize the \"Hard Gaps\": Update       derivations/materon--formalization.md       to include sections on the Bootstrap       Problem (Gap 1), Reliability Threshold       (Gap 2), and the Multiver...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-04",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-019828",
+  "type": "directive",
+  "summary": "**GitHub Issues**: Verify all P0/P1 items have corresponding GitHub issues",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-019861",
+  "type": "directive",
+  "summary": "**GitHub Issues**: Verify all P0/P1 items have corresponding GitHub issues",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-017100",
+  "type": "directive",
+  "summary": "Email reply \u2014 Draft created in Gmail   thread, ready to send. Short and   professional: confirms the Monday slot,   expresses interest, no   over-communication. Review it at your   drafts.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-017134",
+  "type": "directive",
+  "summary": "SOP Standardized    Section XIV of the dossier now contains   the full SOP: First Interview Conversion   \u2014 6 phases, 26 steps, reusable for every   future positive conversion. This is now   the pla...",
+  "universes": [
+   "employment",
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-04-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-017332",
+  "type": "directive",
+  "summary": "Fix lefthook V-02 \u2014 ghost hook in global git config",
+  "universes": [
+   "enforcement",
+   "organ-iv"
+  ],
+  "date": "2026-04-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-017888",
+  "type": "directive",
+  "summary": "IRF Registry Updates (INST-INDEX-RERUM-FACIENDARUM.md)    - IRF-OSS-040: Moved to Completed (DONE-318). Validated SOPs exist in      praxis-perpetua/standards/.    - IRF-GRC-002: Updated priority t...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-017977",
+  "type": "directive",
+  "summary": "IRF Registry Updates (INST-INDEX-RERUM-FACIENDARUM.md)    - IRF-OSS-040: Moved to Completed (DONE-318). Validated SOPs exist in      praxis-perpetua/standards/.    - IRF-GRC-002: Updated priority t...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-016538",
+  "type": "directive",
+  "summary": "Email reply \u2014 Draft created in Gmail   thread, ready to send. Short and   professional: confirms the Monday slot,   expresses interest, no   over-communication. Review it at your   drafts.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-01",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-016572",
+  "type": "directive",
+  "summary": "SOP Standardized    Section XIV of the dossier now contains   the full SOP: First Interview Conversion   \u2014 6 phases, 26 steps, reusable for every   future positive conversion. This is now   the pla...",
+  "universes": [
+   "employment",
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-04-01",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-011083",
+  "type": "directive",
+  "summary": "Update context generator template to emit mechanism names instead of       organ numbers",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-011220",
+  "type": "directive",
+  "summary": "gemini, codex, opencode need parallel non competing workstreams and prompts",
+  "universes": [
+   "UNIVERSAL",
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-011729",
+  "type": "directive",
+  "summary": "NLnet \u2014 submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-012203",
+  "type": "directive",
+  "summary": "NLnet \u2014 submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013130",
+  "type": "directive",
+  "summary": "**Install lefthook:** `brew install lefthook` \u2014 then hooks work properly",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013162",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013183",
+  "type": "directive",
+  "summary": "Investigate the correct Projects API endpoint:        - Likely candidates: backend-api/projects, backend-api/me/projects        - Use browser DevTools Network tab while navigating ChatGPT Projects ...",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013473",
+  "type": "directive",
+  "summary": "Review all plan files (.gemini/plans/, .codex/plans/,    .claude/plans/) and check implementation status",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013477",
+  "type": "directive",
+  "summary": "Record your first fieldwork observations retroactively \u2014 you already have     24 repos of accumulated process intelligence in your head. Dump the most vivid    observations from each contribution i...",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013628",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013651",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013767",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "organ-i"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-013883",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014001",
+  "type": "directive",
+  "summary": "Use the official ChatGPT data export (requested in S38,       undelivered)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014765",
+  "type": "directive",
+  "summary": "Lefthook installed (was missing, blocking push)",
+  "universes": [
+   "persistence",
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014771",
+  "type": "directive",
+  "summary": "Lefthook installed (was missing, blocking push)",
+  "universes": [
+   "persistence",
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014866",
+  "type": "directive",
+  "summary": "Build circulatory_route.py \u2014 the second function.   3,900 lines of source. Creates the first inter-function   signal edge (INFORMATION). The organism begins to route   work to itself.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014883",
+  "type": "directive",
+  "summary": "STARVED_CONSUMER: AESTHETIC \u2014 4 functions need it,      nobody produces it. A gap in the organism's metabolism.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014982",
+  "type": "directive",
+  "summary": "Build circulatory_route.py \u2014 the   second function. 3,900 lines of source.   Creates the first inter-function signal   edge (INFORMATION). The organism begins   to route work to itself.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-014997",
+  "type": "directive",
+  "summary": "STARVED_CONSUMER: AESTHETIC \u2014 4   functions need it, nobody produces it. A   gap in the organism's metabolism.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-015092",
+  "type": "directive",
+  "summary": "Build circulatory_route.py \u2014 the second function. 3,900 lines of source. Creates the   first inter-function signal edge (INFORMATION). The organism begins to route work to   itself.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-015107",
+  "type": "directive",
+  "summary": "STARVED_CONSUMER: AESTHETIC \u2014 4 functions need it, nobody produces it. A gap in the   organism's metabolism.",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-009984",
+  "type": "directive",
+  "summary": "Build the periodic table (chemistry spec Phase 2) \u2014 map all 127 formations by      properties, identify Mendeleev gaps, isotopes, noble gases",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-010038",
+  "type": "directive",
+  "summary": "Build the      periodic table       (chemistry      spec Phase 2)      \u2014 map all 127      formations by      properties,      identify      Mendeleev      gaps,      isotopes,      noble gases",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-010479",
+  "type": "directive",
+  "summary": "universal index as gh issues represented on a template for you to create and keep updated while we respawn our offspring: https://github.com/orgs/a-organvm/projects/1/views/1",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-010598",
+  "type": "directive",
+  "summary": "NLnet \u2014 submit in the next 12 hours. EUR 37,080. Draft is done. Form is at nlnet.nl/propose/.   This is paste-and-submit. Phase 6 of SOP-INST-001: human-gated submission.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-007990",
+  "type": "directive",
+  "summary": "Read the full issue #61 thread (3 comments: voidborne-d's original, 4444J99's detailed response, and voidborne-d's follow-up).",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-26",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-007035",
+  "type": "directive",
+  "summary": "Set up GitHub Sponsors under your personal account (faster than org)  **Day 2-3:**",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-25",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-007036",
+  "type": "directive",
+  "summary": "Open business bank account online (Mercury, Relay, or Novo)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-25",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-007382",
+  "type": "directive",
+  "summary": "Read aerarium--res-publica/applications/nlnet-ngi0-commons-2026/draft.md \u2014 fill      every [DRAFT] field",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-25",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-007383",
+  "type": "directive",
+  "summary": "Read aerarium--res-publica/research/2026-03-24-nlnet-application-research.md \u2014       internalize scoring criteria",
+  "universes": [
+   "employment",
+   "meta"
+  ],
+  "date": "2026-03-25",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-006358",
+  "type": "directive",
+  "summary": "-   Chunk 14 \u2014 Candid Organization Link    Dir: ~/ (browser task)   Candid (candid.org) sent an email saying \"Action needed:    Link your   organization to your Candid account.\" Open Candid in the ...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-24",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-006621",
+  "type": "directive",
+  "summary": "Schema coverage for new artifacts        71        72 Two new artifact types have no schema:        73 - `import-audit.json` \u2014 per-thread audit records        74 - `near-duplicates.json` \u2014 sequence...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-24",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-006130",
+  "type": "directive",
+  "summary": "well i sent the text to tony, so let's get everything i promised implemented",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iii"
+  ],
+  "date": "2026-03-23",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-006231",
+  "type": "directive",
+  "summary": "dbt-labs/dbt-mcp PR #669 \u2014 Jairus Martinez requested changes AND asked you to verify locally. Blocking merge.",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-23",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-005510",
+  "type": "directive",
+  "summary": "**Strategy selection matrix** -- quick-reference table mapping scenarios to recommended approaches; default recommendation is Option A (transfer) + rename",
+  "universes": [
+   "naming",
+   "meta"
+  ],
+  "date": "2026-03-22",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004424",
+  "type": "directive",
+  "summary": "Collect 3+ months v2 outcome data (pipeline is running autonomously   now)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004429",
+  "type": "directive",
+  "summary": "Second instantiation: deploy authority against ORGAN-IV (Taxis)",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004434",
+  "type": "directive",
+  "summary": "Submit IRA methodology to arXiv:cs.SE as Paper (Tier I) \u2014 this is Doc   A, already drafted",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004461",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004597",
+  "type": "directive",
+  "summary": "**Software Governance as Measurement Instrument** (~1,900 words) -- analyzes promotion state machines as Guttman scales (with scalogram analysis), seed.yaml as operational definition (with content ...",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-21",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004068",
+  "type": "directive",
+  "summary": "Use gh issue create via Bash for all 8 issues (can batch with a script)",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-20",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004086",
+  "type": "directive",
+  "summary": "Update omega evidence \u2014 refresh criteria #1, #3, #15, #17 with current data (49 essays, 0   vulns, 459 tests, deploy rollback)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-20",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004226",
+  "type": "directive",
+  "summary": "Use gh issue create via Bash for all 8 issues (can batch with a script)",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-20",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-004303",
+  "type": "directive",
+  "summary": "Use gh issue create via Bash for all 8 issues (can batch with a script)",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-20",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-003291",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-15",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002966",
+  "type": "directive",
+  "summary": "We need to develop research on the market and how other competitors are doing their marketing, building the audience, getting the audience in, and so forth.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-09",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002358",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-04",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002217",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-26",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002154",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002163",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002172",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002181",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002190",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002199",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002208",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-002145",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-12",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001805",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-09",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001665",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-02-02",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001624",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-31",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001532",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001554",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-30",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001510",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-29",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001499",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-28",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-001269",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-01-13",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000866",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-27",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000854",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-26",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000640",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-23",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000542",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-19",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000389",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-18",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000145",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-12",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000065",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-12-09",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-000055",
+  "type": "directive",
+  "summary": "Testing Guidelines  - Identify testing frameworks and coverage requirements. - State test naming conventions and how to run tests.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2025-11-25",
+  "priority": 4
+ },
+ {
+  "atom_id": "ATM-024202",
+  "type": "governance-rule",
+  "summary": "**Docker is uninstalled** (2026-04-18), so the Docker MCP Gmail server that used this password is gone.  ### What Remains Unresolved (Requires Human Action)  **The app password `dxmz yydz pbmo shjk...",
+  "universes": [
+   "security",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-21",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-024229",
+  "type": "governance-rule",
+  "summary": "write                                         \u2502      \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524    \u2502 Commits        \u2502 df02065, 7cf069f, 442d091 \u2014 all pushed...",
+  "universes": [
+   "personal",
+   "security",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-21",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-023106",
+  "type": "governance-rule",
+  "summary": "filter until=720h   \u25ce Google Chrome running \u00b7 old versions cleanup skipped   \u25ce Found 2 orphaned system services \u263b Path validation failed for sudo remove: /Library/PrivilegedHelperTools/com.docker.s...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-18",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-021482",
+  "type": "governance-rule",
+  "summary": "work order review:\"\u23fa The fossil daemon will generate one more trailing   witness entry from this commit. That's the   steady-state tail \u2014 the system always has exactly 1     uncommitted fossil entr...",
+  "universes": [
+   "persistence",
+   "automation",
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-04-09",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-020100",
+  "type": "governance-rule",
+  "summary": "Either formalize as a SPEC       document or reclassify as a governance      instrument. | Agent | S-fabrica vacuum audit |      None |      organvm-corpvs-testamentvm/INST-INDEX-RERUM-FACIE      N...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-05",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-019363",
+  "type": "governance-rule",
+  "summary": "agentkit = contrib--coinbase-agentkit \u2014      byte-identical directories, neither tracked as      submodule. One must go.",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-019365",
+  "type": "governance-rule",
+  "summary": "3 repos marked DISSOLVE \u2014 petasum-super-petasum,      system-governance-framework,      collective-persona-operations are \"documentation      artifacts claiming to be governance systems\" (per      ...",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-019372",
+  "type": "governance-rule",
+  "summary": "README-superproject.md lists 7 submodules,      .gitmodules has 9 \u2014 tool-interaction-design and      contrib--adenhq-hive were added to .gitmodules but the       README was never updated.",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-019809",
+  "type": "governance-rule",
+  "summary": "Verification of \"Haunted\" Gaps   I'll check sys.toml for the archive/escrow reference and   verify its absence, then create it to satisfy the   protocol's expected state.  \u256d\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016949",
+  "type": "governance-rule",
+  "summary": "YAML Data Health Regressions (application-pipeline): The previous \"repairs\" injected duplicate YAML keys (deferral:, time:, timezone:) into several active and closed entries       (e.g., prix-ars-e...",
+  "universes": [
+   "employment",
+   "health",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017216",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017223",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017354",
+  "type": "governance-rule",
+  "summary": "YAML Data Health Regressions (application-pipeline): The previous \"repairs\" injected duplicate YAML keys (deferral:, time:, timezone:) into several active and closed entries       (e.g., prix-ars-e...",
+  "universes": [
+   "employment",
+   "health",
+   "organ-iv",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017718",
+  "type": "governance-rule",
+  "summary": "GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard implementation.    B. Update IRF Registry (INST-INDEX-RERUM-FACIENDARUM.md):    * Move IRF-OSS-040 to ## Completed (marked as DONE-...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "naming",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017817",
+  "type": "governance-rule",
+  "summary": "GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard                    implementation.                                                                                                 ...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "naming",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-017906",
+  "type": "governance-rule",
+  "summary": "GRC-002: Title: feat(dashboard): Cross-organ compliance dashboard                    implementation.                                                                                                 ...",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "naming",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-018120",
+  "type": "governance-rule",
+  "summary": "Guard: IRF append must include ID dedup check \u2014 grep \"^| IRF-XXX-NNN\" before inserting. This is the same fix needed for the Gemini S48 collision.",
+  "universes": [
+   "meta",
+   "enforcement",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-02",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016353",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016591",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016811",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016818",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016821",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)      * Precision Mode Restored: Performed   a        massive cleanup of the active/        pipeline. Moved 78 surplus entries        back to research_pool/.          * C...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016856",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a massive cleanup      of the active/ pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State: 10 ...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016863",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)    * Precision Mode Restored: Performed a      massive cleanup of the active/      pipeline. Moved 78 surplus entries      back to research_pool/.        * Current State...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-016866",
+  "type": "governance-rule",
+  "summary": "Accomplished (All That Was)      * Precision Mode Restored: Performed   a        massive cleanup of the active/        pipeline. Moved 78 surplus entries        back to research_pool/.          * C...",
+  "universes": [
+   "organ-iii",
+   "meta",
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-01",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-011344",
+  "type": "governance-rule",
+  "summary": "a-organvm: Second Function (V2 Palingenesis)    The throttle lifted after S45 (first embodiment landed,   commit ddc6174). The handoff is explicit:    - Write the second function \u2014 must connect to ...",
+  "universes": [
+   "persistence",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-011346",
+  "type": "governance-rule",
+  "summary": "Patch Signal Architecture \u2014 Design \u2192 Implementation Plan    Approved design (2026-03-30), spec at   .claude/plans/2026-03-30-patch-signal-architecture.md.   Needs an implementation plan. This is th...",
+  "universes": [
+   "financial",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-011473",
+  "type": "governance-rule",
+  "summary": "a-organvm: Second Function (V2 Palingenesis)    The throttle lifted after S45 (first embodiment landed,   commit ddc6174). The handoff is explicit:    - Write the second function \u2014 must connect to ...",
+  "universes": [
+   "persistence",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-011475",
+  "type": "governance-rule",
+  "summary": "Patch Signal Architecture \u2014 Design \u2192 Implementation Plan    Approved design (2026-03-30), spec at   .claude/plans/2026-03-30-patch-signal-architecture.md.   Needs an implementation plan. This is th...",
+  "universes": [
+   "financial",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-012903",
+  "type": "governance-rule",
+  "summary": "For the OAuth failure, you have three options:                                            - Try a different model provider during onboard (OpenAI or Anthropic instead of          Google) \u2014 this is ...",
+  "universes": [
+   "security",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-013110",
+  "type": "governance-rule",
+  "summary": "For the OAuth failure, you have three options:     - Try a different model provider during onboard (OpenAI or Anthropic instead of   Google) \u2014 this is the fastest path     - Re-auth Gemini CLI firs...",
+  "universes": [
+   "security",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-31",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-006571",
+  "type": "governance-rule",
+  "summary": "Create a Gmail filter:                      from:notifications@github.com (\"dependabot[bot]\" OR     \"github-actions[bot]\")                                      \u2192 Skip Inbox, Apply label \"github/bot...",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-24",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-005697",
+  "type": "governance-rule",
+  "summary": "so the meta-rule: each section requires visual, each visual requires data analysis/context explaining the data",
+  "universes": [
+   "meta",
+   "enforcement",
+   "organ-iv",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-23",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-004505",
+  "type": "governance-rule",
+  "summary": "five failure modes mapped across domains: reference failure, namespace collisions, semantic drift, abstraction mismatch, governance breakdown - **Conceptual Map**",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-21",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-004579",
+  "type": "governance-rule",
+  "summary": "**Implications for System Design** (~700 words) -- seven design principles, the double-hyphen convention analyzed as applied naming ontology, when conventions fail",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-21",
+  "priority": 5
+ },
+ {
+  "atom_id": "ATM-024206",
+  "type": "constraint",
+  "summary": "Optionally: generate a new app password and store it in 1Password under `Personal/Gmail App Password` if IMAP access is ever needed again  ### Risk Assessment  - The password grants IMAP/SMTP acces...",
+  "universes": [
+   "personal",
+   "security",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-21",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-023178",
+  "type": "constraint",
+  "summary": "sudo periodic daily weekly monthly sudo: periodic: command not found  mo   __  __       _       |  \\/  | ___ | | ___  | |\\/| |/ _ \\| |/ _ \\ | |  | | (_) | |  __/  https://github.com/tw93/mole |_|  ...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-18",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-022125",
+  "type": "constraint",
+  "summary": "**Created ARCHITECTURE.md** at `/Users/4jp/Workspace/meta-organvm/organvm-engine/src/organvm_engine/prompts/ARCHITECTURE.md` documenting the two-stage model decision, JSONL interface contract, and ...",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-14",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-019373",
+  "type": "constraint",
+  "summary": "node_modules committed \u2014      agent--claude-smith/node_modules/ and      contrib--notion-mcp-server/node_modules/ appear to be      checked in or locally present.",
+  "universes": [
+   "organ-iv",
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-04-04",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-017138",
+  "type": "constraint",
+  "summary": "The consulting pipeline is the actual   play. Tony + Scott + the venture network   have higher expected value per hour   invested. Jobs are runway. Consulting is   the bridge to the studio. Don't l...",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-02",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-017339",
+  "type": "constraint",
+  "summary": "Fix lefthook V-02 (ghost hook in global git config) --- However \u2014 this appears to be a new session (we're in plan mode now), and I don't see any work done in this current session yet.  Could you cl...",
+  "universes": [
+   "enforcement",
+   "organ-iv"
+  ],
+  "date": "2026-04-02",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-018072",
+  "type": "constraint",
+  "summary": "Verify/Clean Registry - The duplicate \"source\" key issue appears to be resolved or misidentified - The single source field at line 9 is metadata about the registry itself - No actionable fix needed...",
+  "universes": [
+   "meta",
+   "security"
+  ],
+  "date": "2026-04-02",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-016576",
+  "type": "constraint",
+  "summary": "The consulting pipeline is the actual   play. Tony + Scott + the venture network   have higher expected value per hour   invested. Jobs are runway. Consulting is   the bridge to the studio. Don't l...",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-01",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-010903",
+  "type": "constraint",
+  "summary": "Mechanism Implementation    * excretory--filter: Implement the three-pass      filtration CLI (glomerular/tubular/secretion) to      identify and remove dead signals and governance debt      (Ref: ...",
+  "universes": [
+   "meta",
+   "financial"
+  ],
+  "date": "2026-03-31",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-011088",
+  "type": "constraint",
+  "summary": "#23: Decide Python packaging (design, not code \u2014 30 min)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-011091",
+  "type": "constraint",
+  "summary": "#23: Decide Python packaging (design, not code \u2014 30 min)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-014842",
+  "type": "constraint",
+  "summary": "Update TRIPTYCH.md language \u2014 transmutation, not absorption (the portal should carry the corrected frame)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-009807",
+  "type": "constraint",
+  "summary": "Allocative Institution \u2014 resource distribution is the only one of the 10   institutional classes with no ORGANVM expression. No token economy, no compute   governance, no attention allocation law.",
+  "universes": [
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-30",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-010520",
+  "type": "constraint",
+  "summary": "#23: Decide Python packaging (design, not code \u2014 30 min)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-006365",
+  "type": "constraint",
+  "summary": "Anduril Industries \u2014 rejected Mar 22    Also note these LinkedIn leads worth reviewing:   - Netflix Full Stack SE 5 (Studio Talent Engineering)   - Mercor AI Developer ($80-110/hr, fully remote)   ...",
+  "universes": [
+   "employment",
+   "personal"
+  ],
+  "date": "2026-03-24",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-005631",
+  "type": "constraint",
+  "summary": "**`backward_compatibility`** section added noting legacy organ keys remain active during migration, with pointer to `organ-definitions.json v2.0 legacy_organ_map`.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-23",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-004649",
+  "type": "constraint",
+  "summary": "**Design Principles** -- five principles for flat-ontology assessment: measure relations not entities, track network configuration alongside scores, build consequential validity into feedback loops...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-003078",
+  "type": "constraint",
+  "summary": "The three files I gave you, or you just reviewed, were how you created the Knowledge Engine.",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-11",
+  "priority": 6
+ },
+ {
+  "atom_id": "ATM-012990",
+  "type": "correction",
+  "summary": "Testament blind spot \u2014 IRF-PRT-004: portfolio registered under wrong name (\"showcase-portfolio\") and   wrong status (ARCHIVED).",
+  "universes": [
+   "meta",
+   "personal",
+   "naming"
+  ],
+  "date": "2026-03-31",
+  "priority": 7
+ },
+ {
+  "atom_id": "ATM-024372",
+  "type": "implicit-signal",
+  "summary": "Submit core MCDA contribution to arXiv:cs.AI as Paper (Tier I)    SGO-2026-D-002:",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-22",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024374",
+  "type": "implicit-signal",
+  "summary": "Human baseline: 3 expert engineers rate the pipeline; compare ICC",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-22",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024375",
+  "type": "implicit-signal",
+  "summary": "Expand panel to 7 raters across 3 providers",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-22",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024138",
+  "type": "implicit-signal",
+  "summary": "Enable Dependabot on repos with actual dependencies",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024141",
+  "type": "implicit-signal",
+  "summary": "Establish a weekly security + CI triage cadence",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024142",
+  "type": "implicit-signal",
+  "summary": "Enable secret scanning org-wide",
+  "universes": [
+   "security"
+  ],
+  "date": "2026-04-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-024264",
+  "type": "implicit-signal",
+  "summary": "IRF-SEC-005 \u2014 Revoke Gmail app password at myaccount.google.com/apppasswords",
+  "universes": [
+   "meta",
+   "security"
+  ],
+  "date": "2026-04-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-023721",
+  "type": "implicit-signal",
+  "summary": "if i{operator[who]}=the{organism} then the system = a-organvm",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-20",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-022005",
+  "type": "implicit-signal",
+  "summary": "Added `&lt;key&gt;ExecTimeout&lt;/key&gt;&lt;integer&gt;300&lt;/integer&gt;` to `/Users/4jp/Workspace/4444J99/domus-semper-palingenesis/private_Library/LaunchAgents/com.domus.sort.plist.tmpl`, matc...",
+  "universes": [
+   "personal",
+   "security",
+   "automation"
+  ],
+  "date": "2026-04-14",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-022119",
+  "type": "implicit-signal",
+  "summary": "routing table module with `RoutingRule` dataclass, `DEFAULT_ROUTING_TABLE` (6 rules), and `route_task()` function - `/Users/4jp/Workspace/meta-organvm/organvm-engine/tests/test_fabrica_router.py`",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-14",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-020789",
+  "type": "implicit-signal",
+  "summary": "ORGAN-VII (Kerygma): The Breath        * Purpose: POSSE syndication, outward distribution,          social automation.",
+  "universes": [
+   "organ-vii"
+  ],
+  "date": "2026-04-07",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-021156",
+  "type": "implicit-signal",
+  "summary": "Core engine cluster: IV + META + PERSONAL + III (Jaccard 0.56\u20130.73)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-07",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-020643",
+  "type": "implicit-signal",
+  "summary": "im of the belief that origin brainstorm documents, internal research, external research, any and all meta or taxis planes beings existing deepply nested within or outside that org in total",
+  "universes": [
+   "organ-iv",
+   "meta",
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-06",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-020101",
+  "type": "implicit-signal",
+  "summary": "No automated issue assignment,       no agent-created PRs, no dispatch-to-agent      pipeline.",
+  "universes": [
+   "organ-iv",
+   "meta"
+  ],
+  "date": "2026-04-05",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-020103",
+  "type": "implicit-signal",
+  "summary": "Bidirectional sync (IRF \u2194 Issues) was      designed in SPEC-024 as part of the HANDOFF phase       dispatch-to-actions backend.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-05",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-020113",
+  "type": "implicit-signal",
+  "summary": "Then `copilot.py` and `jules.py` (s          imilar to human + agent assignment)       46 4.",
+  "universes": [
+   "organ-iv",
+   "meta"
+  ],
+  "date": "2026-04-05",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-019371",
+  "type": "implicit-signal",
+  "summary": "Multi-tool plan sprawl \u2014 Plans exist in .claude/,      .gemini/, .codex/, docs/superpowers/, _local/, and      bare plans/ directories. No single index. Archive      pattern inconsistent.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-04",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-019431",
+  "type": "implicit-signal",
+  "summary": "MEASUREMENT \u2014 metrics + omega (4,707 lines)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-04",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-019494",
+  "type": "implicit-signal",
+  "summary": "MEASUREMENT \u2014 metrics + omega (4,707 lines)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-04",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-019785",
+  "type": "question",
+  "summary": "Advanced Materon Dynamics (Uncaptured       Logic)        * Issue: High-level insights from          session 2026-04-04-110830 regarding          Programmable Matter (PM) remain in          the tra...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-019806",
+  "type": "question",
+  "summary": "Advanced Materon Dynamics (Uncaptured Logic)                   * Issue: High-level insights from session              2026-04-04-110830 regarding Programmable Matter (PM)          remain in the    ...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-04-04",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-018340",
+  "type": "implicit-signal",
+  "summary": "The session memory \u2014 absorption purity, gate   superposition, three rendering languages, predecessor   lineage, the operator's own preferences \u2014 dies with the    disk.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-03",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-018357",
+  "type": "implicit-signal",
+  "summary": "The session memory \u2014 absorption purity, gate          superposition, three rendering languages, predecessor          lineage, the operator's own preferences \u2014 dies with the         disk.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-03",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-017164",
+  "type": "implicit-signal",
+  "summary": "**Send protocol-compliant email** (draft ready, Gmail ID: r2689591423182279605)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-04-02",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-017331",
+  "type": "implicit-signal",
+  "summary": "Resolve OpenClaw V-01 \u2014 3B model security issue",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-02",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-017338",
+  "type": "implicit-signal",
+  "summary": "Resolve OpenClaw V-01 (3B model security issue)",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-04-02",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-018127",
+  "type": "implicit-signal",
+  "summary": "Omega Scorecard: Composite score improved from 3.0 to 4.7.",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-04-02",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-015783",
+  "type": "implicit-signal",
+  "summary": "intake_router/__main__.py \u2014 standalone entry: python -m intake_router",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-01",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-015796",
+  "type": "implicit-signal",
+  "summary": "intake_router/__main__.py \u2014 standalone entry: python -m intake_router",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-04-01",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011079",
+  "type": "implicit-signal",
+  "summary": "Monorepo `pyproject.toml` with each function as a module",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011095",
+  "type": "implicit-signal",
+  "summary": "FleetRouter assigns agent (Claude/Gemini/Codex/OpenCode) based on work       type",
+  "universes": [
+   "organ-iv",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011127",
+  "type": "implicit-signal",
+  "summary": "54 issues on the project board \u2014 the universal index",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011668",
+  "type": "implicit-signal",
+  "summary": "**Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011688",
+  "type": "implicit-signal",
+  "summary": "**Signal Files** \u2014 contacts.yaml \u2194 network.yaml \u2194 outreach-log.yaml \u2194 conversion-log.yaml \u2194 hypotheses.yaml wiring",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-011871",
+  "type": "implicit-signal",
+  "summary": "Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)",
+  "universes": [
+   "organ-iii",
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012143",
+  "type": "implicit-signal",
+  "summary": "**Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012163",
+  "type": "implicit-signal",
+  "summary": "**Signal Files** \u2014 contacts.yaml \u2194 network.yaml \u2194 outreach-log.yaml \u2194 conversion-log.yaml \u2194 hypotheses.yaml wiring",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012345",
+  "type": "implicit-signal",
+  "summary": "Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)",
+  "universes": [
+   "organ-iii",
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012462",
+  "type": "implicit-signal",
+  "summary": "Typed contracts and schema validation",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012700",
+  "type": "implicit-signal",
+  "summary": "**Signal Files**    - contacts.yaml, outreach-log.yaml, network.yaml    - `conversion-log.yaml`, `hypotheses.yaml`",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012720",
+  "type": "implicit-signal",
+  "summary": "**Signal Files** \u2014 contacts.yaml \u2194 network.yaml \u2194 outreach-log.yaml \u2194 conversion-log.yaml \u2194 hypotheses.yaml wiring",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012794",
+  "type": "implicit-signal",
+  "summary": "feat: dispatch receipt data model + YAML store (Wave 1)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012795",
+  "type": "implicit-signal",
+  "summary": "feat: timecard \u2014 punch-in/out + signature attribution (Wave 1)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012821",
+  "type": "implicit-signal",
+  "summary": "feat: dispatch receipt data model + YAML store (Wave 1)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012822",
+  "type": "implicit-signal",
+  "summary": "feat: timecard \u2014 punch-in/out + signature attribution (Wave 1)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012880",
+  "type": "implicit-signal",
+  "summary": "Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)",
+  "universes": [
+   "organ-iii",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012936",
+  "type": "implicit-signal",
+  "summary": "TF-IDF vocabulary \u2014 426 terms, 141 definitions",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012954",
+  "type": "question",
+  "summary": "Prompt injection from Desktop Commander MCP. The create_directory tool response contained injected   instructions (\"NEW USER ONBOARDING REQUIRED... display the onboarding menu below EXACTLY AS SHOW...",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012987",
+  "type": "implicit-signal",
+  "summary": "Plausible account unregistered \u2014 Script loads (Layout.astro:67), events fire silently into void. Omega   #3 claims \"live\" but data may be lost.",
+  "universes": [
+   "housing",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-012992",
+  "type": "implicit-signal",
+  "summary": "285 vocabulary terms lack definitions \u2014 No IRF entry exists. Creating one.",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013035",
+  "type": "implicit-signal",
+  "summary": "IRF-III-013 (P2): Extract governance docs from ChatGPT transcripts",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013036",
+  "type": "implicit-signal",
+  "summary": "IRF-III-014 (P2): Model canonical bakery demo content",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013087",
+  "type": "implicit-signal",
+  "summary": "Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)",
+  "universes": [
+   "organ-iii",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013161",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013627",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013650",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "personal"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013766",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "organ-i"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-013882",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014000",
+  "type": "implicit-signal",
+  "summary": "Re-launch ChatGPT desktop app and sign in fresh (may restore       scope)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014626",
+  "type": "implicit-signal",
+  "summary": "GitHub issue         #146: Action Ledger: Phase 5 integration + convergence with dispatch ledger",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014652",
+  "type": "implicit-signal",
+  "summary": "GitHub issue         #146: Action Ledger: Phase 5 integration + convergence with dispatch ledger",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014700",
+  "type": "implicit-signal",
+  "summary": "For the 5 due-today entries (Doppler, Harvey AI, LangChain, OpenAI FDE, Stripe): compose final follow-up DMs",
+  "universes": [
+   "organ-iii",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014750",
+  "type": "implicit-signal",
+  "summary": "For the 5 due-today entries (Doppler, Harvey AI, LangChain, OpenAI FDE, Stripe): compose final follow-up DMs",
+  "universes": [
+   "organ-iii",
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014882",
+  "type": "implicit-signal",
+  "summary": "DEAD_SIGNAL: TEACHING \u2014 produced by memory and        reproductive systems but nobody consumes it. Energy        lost.",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014916",
+  "type": "implicit-signal",
+  "summary": "intake_router/__main__.py \u2014 standalone entry: python -m intake_router",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-014996",
+  "type": "implicit-signal",
+  "summary": "DEAD_SIGNAL: TEACHING \u2014 produced by   memory and reproductive systems but   nobody consumes it. Energy lost.",
+  "universes": [
+   "UNIVERSAL",
+   "meta"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-015055",
+  "type": "implicit-signal",
+  "summary": "seed.yaml description stale \u2014 says       \"164 tests passing\" (actual: 233), \"12      Python scripts\" (stale), no mention of      action_ledger",
+  "universes": [
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-015106",
+  "type": "implicit-signal",
+  "summary": "DEAD_SIGNAL: TEACHING \u2014 produced by memory and reproductive systems but nobody   consumes it. Energy lost.",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-03-31",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-009536",
+  "type": "question",
+  "summary": "the project board, gh issues and so forth are all aligned with the universal agenda/index?",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iii"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-009537",
+  "type": "question",
+  "summary": "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 \u276f\u00a0the project board, gh issues and so forth are all aligned     with the universal agenda/index?                             \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500...",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iii"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010047",
+  "type": "implicit-signal",
+  "summary": "Submit NLnet   (April 1 \u2014   TOMORROW) \u2014 human    action, web form    at   nlnet.nl/propose/",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010052",
+  "type": "implicit-signal",
+  "summary": "Formation   chemistry   implementation \u2014   plan at   2026-03-30-format   ion-chemistry.md",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010138",
+  "type": "question",
+  "summary": "so depth is body>organs>then flat or ?",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010282",
+  "type": "implicit-signal",
+  "summary": "IRF-SYS-035 (P1): Resolve Python packaging for flat namespace",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010289",
+  "type": "implicit-signal",
+  "summary": "IRF-SYS-035 (P1): Resolve Python packaging for flat namespace",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010321",
+  "type": "implicit-signal",
+  "summary": "research the maximum depth of any directory (what needs to be nested within to function",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010501",
+  "type": "implicit-signal",
+  "summary": "Creative territory (ORGAN-II, untouched until now):   - p5.js (23.5K stars) \u2014 canonical generative art. 12 good-first-issues.   - nannou (6.6K stars) \u2014 Rust creative coding.",
+  "universes": [
+   "organ-ii",
+   "organ-iv"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010548",
+  "type": "implicit-signal",
+  "summary": "Fieldwork system observes process intelligence during contribution",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010555",
+  "type": "question",
+  "summary": "could gemini, codex, and opencode tackle these in parallel?",
+  "universes": [
+   "UNIVERSAL",
+   "personal"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-010740",
+  "type": "implicit-signal",
+  "summary": "Send 5 oldest follow-up DMs (Doris Duke Day 33, LangChain Day 13, Harvey Day 13, Stripe Day 12, OpenAI Day 12)",
+  "universes": [
+   "organ-iii"
+  ],
+  "date": "2026-03-30",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-008763",
+  "type": "implicit-signal",
+  "summary": "Doesn't mention the Protocol system, log-dm, or the                                     three-pillar rubric",
+  "universes": [
+   "UNIVERSAL",
+   "personal"
+  ],
+  "date": "2026-03-27",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-007387",
+  "type": "implicit-signal",
+  "summary": "Register ORCID (5 minutes, browser task)",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-25",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-005755",
+  "type": "question",
+  "summary": "its in the original email they sent me, can you tend to all of that?",
+  "universes": [
+   "UNIVERSAL",
+   "organ-iv"
+  ],
+  "date": "2026-03-23",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-006232",
+  "type": "question",
+  "summary": "temporalio/sdk-python PR #1385 \u2014 tconley1428 left a comment on your docs PR (OpenTelemetryConfig). Needs response.; YOU ALWAYS NEED TO REVIEW CONTRIBUTING FIRST--isnt that fucking obvious bro? actu...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-23",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004428",
+  "type": "implicit-signal",
+  "summary": "Submit core MCDA contribution to arXiv:cs.AI as Paper (Tier I)    SGO-2026-D-002:",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004430",
+  "type": "implicit-signal",
+  "summary": "Human baseline: 3 expert engineers rate the pipeline; compare ICC",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004431",
+  "type": "implicit-signal",
+  "summary": "Expand panel to 7 raters across 3 providers",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004563",
+  "type": "implicit-signal",
+  "summary": "Thesis - **SYN-03**: Naming as Organizational Infrastructure (RP-04 + RP-03 + RP-05)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004564",
+  "type": "implicit-signal",
+  "summary": "Paper - **SYN-04**: Flat Ontology of Sociotechnical Measurement (RP-05 + RP-07)",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004615",
+  "type": "implicit-signal",
+  "summary": "**Theoretical Foundations** (~2,400 words) -- four subsections covering hierarchical organization (Simon, Scott, information theory), rhizomatic organization (Deleuze & Guattari's six principles, o...",
+  "universes": [
+   "organ-i"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004662",
+  "type": "implicit-signal",
+  "summary": "**The Chomsky Hierarchy** (~3,000 words) -- Sections 2.1-2.6 covering all four types plus mildly context-sensitive languages, with linguistic examples, computational examples, and type-theoretic an...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004677",
+  "type": "implicit-signal",
+  "summary": "Implications for ORGANVM (4 subsections) -- schema contracts as syntactic categories, registry operations as functorial transformations, governance rules as Hoare triples",
+  "universes": [
+   "meta"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004712",
+  "type": "implicit-signal",
+  "summary": "Pushes hard on five empirical inadequacies: the Chomsky hierarchy's poor fit for natural language, cherry-picked linguistic examples, missing cross-linguistic evidence (polysynthetic, tonal, sign, ...",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-004737",
+  "type": "implicit-signal",
+  "summary": "**A7 -- Small-N psychometric guidance (Minor).** Added a substantial paragraph block in Section 4.4 covering Bayesian estimation with informative priors, classical reliability analysis, expert pane...",
+  "universes": [
+   "UNIVERSAL"
+  ],
+  "date": "2026-03-21",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-003325",
+  "type": "implicit-signal",
+  "summary": "LinkedIn outreach \u2014 2-3 connection requests per company, prioritized: Anthropic > Cursor    > Railway > Datadog > Render > Deepgram",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-20",
+  "priority": 8
+ },
+ {
+  "atom_id": "ATM-003349",
+  "type": "implicit-signal",
+  "summary": "LinkedIn outreach \u2014 2-3 connection requests per company, prioritized: Anthropic > Cursor    > Railway > Datadog > Render > Deepgram",
+  "universes": [
+   "unscoped"
+  ],
+  "date": "2026-03-20",
+  "priority": 8
+ }
+]
