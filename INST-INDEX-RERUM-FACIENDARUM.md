@@ -1766,7 +1766,7 @@ Refreshed 2026-04-23 (S-knowledge-base-ingest-2026-04-23). +6 completions: DONE-
 
 ---
 
-*Last updated: 2026-04-16 — Carry-forward reconciliation. SEC domain created (3 items: webhook exposure, OpenAI key, GCP billing). IRF-SYS-011 escalated (expired → cancellation notice). IRF-OSS-042 updated (k6 PR approved by mstoykov). S52 OSS-042 duplicate annotated as superseded.*
+*Last updated: 2026-04-23 — S-knowledge-base-ingest-2026-04-23 massive session update. +6 DONE (423..428): prompt atomization pipeline, UAKS v1, engine tests, Copilot ingestion, domain reclassification, 190 repo standards. +11 new IRF-SYS items (133..143): atom review queue, ideal forms, unclassified facets, remoteless repos, Gemini Takeout, webhook secret, domain classifier, review server persistence, dispatch envelopes, Becka McKay, application pipeline stall. 3 items advanced: SYS-056, SYS-070, SYS-076.*
 *Next update: After any session that produces or discovers work items*
 
 ### S36 Email Triage Discovered Items (2026-03-24)
