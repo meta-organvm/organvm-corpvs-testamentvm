@@ -1,11 +1,11 @@
 {
-  "next_id": 423,
-  "last_claimed_by": "S-domus-hygiene-2026-04-23",
+  "next_id": 429,
+  "last_claimed_by": "S-knowledge-base-ingest-2026-04-23",
   "last_claimed_at": "2026-04-23",
   "claimed_range": [
-    422,
-    422
+    423,
+    428
   ],
-  "note": "1 completion: (422) Domus cleanup sprint — dead symlinks, Docker/Codex cruft, plist test fix, ShellCheck, batch +x permissions, justfile __pycache__ exclusion, CLAUDE.md task queue + LaunchAgents table updated.",
+  "note": "6 completions: (423) Prompt atomization pipeline built, (424) UAKS v1 architecture spec, (425) organvm-engine tests fixed 46/46, (426) Copilot conversations ingested, (427) Domain reclassification, (428) 190 repo standards files deployed.",
   "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
 }
