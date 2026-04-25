@@ -1,11 +1,11 @@
 {
-  "next_id": 441,
+  "next_id": 442,
   "last_claimed_by": "S-maddie-spiral-chakra-stars-2026-04-25",
   "last_claimed_at": "2026-04-25",
   "claimed_range": [
-    440,
-    440
+    441,
+    441
   ],
-  "note": "1 completion: (440) sovereign-systems spiral chakra stars + round 2 lightening (Maddie 2026-04-25 feedback) — closes GH#53.",
+  "note": "1 completion: (441) sovereign-systems spiral V3 — bg matches page, helix compressed, camera and canvas height retuned so full chakra spectrum fits in fold. Same-day follow-up to DONE-440 (V2).",
   "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
 }
