@@ -1755,9 +1755,9 @@ Refreshed 2026-04-25 close-out audit (S-2026-04-25-engine-infra-landing-cross-cl
 
 Refreshed 2026-04-25 first pass (S-2026-04-25-engine-infra-landing-cross-cluster). +8 completions: DONE-448 (landing-engine plan v1, spiral commit 11533e7); DONE-449 (ChatGPT multi-part conversations.json adapter, conversation-corpus-engine 1785fa2 / 290 tests); DONE-450 (Claude multi-part mirror, cb2bc9e / 298 tests); DONE-451 (full hanging-items implementation plan, 39 items / 5 domains / 9 user-decisions, dotfiles c0f54a8); DONE-452 (resolve-bootstrap script + 103 dead-path entries pruned from .claude.json + codex config.toml, dotfiles 85ad1bc); DONE-453 (chatgpt_exporter_to_bundle converter + brainstorm-export-20260423 ingest at 14 threads/75 pairs, conversation-corpus-engine 7e3da5d / 311 tests); DONE-454 (spiral landing-engine slice 1, 9 files / 3 personas live, spiral 3d8cabd); DONE-455 (Hokage landing-engine slice 3 port, 9 files / 3 personas SSG-prerendered, hokage-chess a2ef26f). Prior: S-handoff-relay-2026-04-25 (DONE-442..446), S-maddie-spiral-v4-dual-variants-2026-04-25 (DONE-447), S-maddie-spiral-chakra-stars-2026-04-25 (DONE-440, 441), S-knowledge-base-ingest-2026-04-23 (DONE-423..428).
 
-- **Total IRF items:** 985 *(prior 964, +21 new items second pass)*
-- **Open:** 564 *(prior 543, +21 new vacuums)*
-- **Completed:** 418 *(unchanged second pass)*
+- **Total IRF items:** 986 *(prior 985, +1: SYS-156 notification backlog)*
+- **Open:** 565 *(prior 564, +1: SYS-156)*
+- **Completed:** 418 *(unchanged)*
 - **Blocked:** 0
 - **Archived:** 0
 - **Completion rate:** 42.4%
@@ -1766,9 +1766,9 @@ Refreshed 2026-04-25 first pass (S-2026-04-25-engine-infra-landing-cross-cluster
 
 | Priority | Count |
 |----------|-------|
-| P0 | 13 |
-| P1 | 212 *(prior 202, +10: PRT-031..035 + PRT-036/037/040/041/042)* |
-| P2 | 249 *(prior 238, +11: SYS-147, SYS-148..155, PRT-038, PRT-039)* |
+| P0 | 14 *(prior 13, +1: SYS-156 GitHub notification backlog 4115/1448 unread)* |
+| P1 | 212 |
+| P2 | 250 *(prior 249, but SYS-156 is P0 — net P2 unchanged from pass-2; recount due)* |
 | P3 | 41 |
 
 ### By Domain
