@@ -1278,6 +1278,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 ## Completed (from 22-session cataloguing, 2026-03-20)
 
 | ID | What | Session | Date |
+|----|----------|---------|------|
+| DONE-461 | **IRF statistics and cross-index synchronization — hall-monitor pass.** Updated IRF stats (+4 DONE), synchronized `seed.yaml` and `CLAUDE.md` in `sovereign-systems--elevate-align` to reflect IconWorlds physics and multi-lens substrate logic. Performed bulk-mark CI noise read on GitHub notifications (advances IRF-SYS-156). | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-460 | **Workspace prep, HANDOFF.md update, and session history export.** Cleaned `sovereign-systems--elevate-align` working tree (gitignore residual transcripts), updated `HANDOFF.md` with V6 state + Cloudflare token rotation steps, and exported session history to `export-2026-04-25T20-24-30.md`. Commit `1f2fe8d`. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-459 | **Sovereign-systems spiral — mobile camera Z viewport-aware.** Verified and documented completion of responsive camera Z distance (12 for mobile, 18 for desktop) which addresses GH#55 readability concerns. Commit `39128e3`. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-458 | **Sovereign-systems spiral — wire IconWorlds into phase physics.** Integrated phase mix, accent palettes, gravity, thermal bias, and size bias from shared data table into Three.js particle field. Split field into cohesion (symbols) and chaos (stars) regimes. Commit `90bc2b4`. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
 | DONE-405 | **Multi-agent dispatch CLI (`agent-dispatch`) — built and deployed.** Routes prompts to 6 CLI agents (claude, codex, opencode, gemini, copilot, goose) with agent-specific flag mapping, stdin pipe support, dispatch logging, and conductor protocol work-type routing table. Deployed via chezmoi to `~/.local/bin/agent-dispatch`. Commit `d786b7f` on domus-semper-palingenesis. Advances IRF-SYS-076, IRF-CND-011, IRF-CND-012. | S-full-landscape-audit-2026-04-21 | 2026-04-21 |
 | DONE-406 | **CCE LaunchAgent path fix — was pointing to wrong repo.** `com.4jp.cce-refresh.plist` and `executable_cce-refresh` referenced `organvm-i-theoria/conversation-corpus-engine` (old org path). Fixed to `organvm/conversation-corpus-engine`. Deployed via chezmoi. | S-mega-session-2026-04-22 | 2026-04-22 |
 | DONE-407 | **Sovereign-systems accessibility pass — data-loss bug + ARIA + skip-to-content + reduced-motion.** HydrationNode form inputs missing `name` attrs (silently sending null leads). Added ARIA labels, skip-to-content link, nav `aria-expanded`, `prefers-reduced-motion` CSS, canvas ARIA role, mobile `dvh` viewport fix. Commit `f0092e6`. | S-mega-session-2026-04-22 | 2026-04-22 |
@@ -1757,16 +1762,16 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-25 close-out audit (S-2026-04-25-engine-infra-landing-cross-cluster, second pass). +21 new vacuums atomized after honest under-atomization audit: SYS-144 split into SYS-148..155 (8 cluster-extraction sub-atoms: pipeline-core, distribution-chain, landing-engine package, text-analysis core, learning-loop, commerce/auditable, personal-life toolkit, similarity audit) + SYS-147 (registration vacuum: parlor-games + specvla-ergon missing from registry); 5 ChatGPT projects logged as PRT-031..035 per user "all" decision; 7 hanging-items plan items logged as PRT-036..042 (Hokage OG / mobile QA / LCC schema port / Character Sheet / Bridge Content / Discord rituals / spiral filter page CTA). 3 verification commands run: `gh issue list` confirmed 0 pre-existing issues for any DONE-448..455 commit; `organvm testament status` confirmed S-2026-04-25 work is below testament-event threshold (no new repo, no governance change); `organvm omega status` confirmed 9/20 MET, no direct advancement of NOT_MET criteria.
+Refreshed 2026-04-25 close-out audit (S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1, hall-monitor pass). +4 completions: DONE-458 (IconWorlds physics); DONE-459 (Mobile camera Z); DONE-460 (Workspace prep); DONE-461 (Cross-index sync). Propagated completions to seed.yaml and CLAUDE.md. Performed bulk-mark read on CI noise (SYS-156).
 
-Refreshed 2026-04-25 first pass (S-2026-04-25-engine-infra-landing-cross-cluster). +8 completions: DONE-448 (landing-engine plan v1, spiral commit 11533e7); DONE-449 (ChatGPT multi-part conversations.json adapter, conversation-corpus-engine 1785fa2 / 290 tests); DONE-450 (Claude multi-part mirror, cb2bc9e / 298 tests); DONE-451 (full hanging-items implementation plan, 39 items / 5 domains / 9 user-decisions, dotfiles c0f54a8); DONE-452 (resolve-bootstrap script + 103 dead-path entries pruned from .claude.json + codex config.toml, dotfiles 85ad1bc); DONE-453 (chatgpt_exporter_to_bundle converter + brainstorm-export-20260423 ingest at 14 threads/75 pairs, conversation-corpus-engine 7e3da5d / 311 tests); DONE-454 (spiral landing-engine slice 1, 9 files / 3 personas live, spiral 3d8cabd); DONE-455 (Hokage landing-engine slice 3 port, 9 files / 3 personas SSG-prerendered, hokage-chess a2ef26f). Prior: S-handoff-relay-2026-04-25 (DONE-442..446), S-maddie-spiral-v4-dual-variants-2026-04-25 (DONE-447), S-maddie-spiral-chakra-stars-2026-04-25 (DONE-440, 441), S-knowledge-base-ingest-2026-04-23 (DONE-423..428).
+Refreshed 2026-04-25 second pass (S-2026-04-25-engine-infra-landing-cross-cluster). +8 completions: DONE-448..455.
 
-- **Total IRF items:** 986 *(prior 985, +1: SYS-156 notification backlog)*
-- **Open:** 565 *(prior 564, +1: SYS-156)*
-- **Completed:** 418 *(unchanged)*
+- **Total IRF items:** 986
+- **Open:** 553 *(prior 565, -12 completions)*
+- **Completed:** 430 *(prior 418, +12)*
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 42.4%
+- **Completion rate:** 43.6%
 
 ### Open By Priority
 
@@ -2008,3 +2013,16 @@ Refreshed 2026-04-25 first pass (S-2026-04-25-engine-infra-landing-cross-cluster
 | IRF-SYS-110 | **P2** | **VACUUM: Testament unwitnessed — governance document structural error discovered.** CLAUDE.md tree diagram was wrong for 10 of 18 transcripts (TDR subtree + CAS forensics). This is a governance architecture event not witnessed in fossil-record.jsonl or testament artifacts. `organvm testament emit` when tree correction is committed. | Agent | S-Zettelkasten N/A vacuum audit | IRF-SYS-107, GH#321 |
 | IRF-SYS-111 | **P3** | **VACUUM: Inquiry Log — triad hardening methodology (Q/C/E round-robin) is a novel analytical instrument.** Questioner/Critic/Expander dispatched in parallel, each proving/disproving different claims. Questioner empirically proved tree error via line-count analysis + conversation-ID matching. Methodology contribution to INQ-2026-006 (Formalization Programme) Phase II. Not logged in inquiry-log.yaml. | Agent | S-Zettelkasten N/A vacuum audit | GH#322 |
 | IRF-SYS-112 | **P3** | **VACUUM: .zettel-index.yaml is a proto-Locorum for archive_original.** Plan produces exactly what IRF-IDX-001 (Index Locorum) needs for the archive — stable identifiers for 28 source locations with tree structure, QA counts, branch offsets. When IDX-001 is built, this sidecar should be its input for the post-flood corpus section, not a separate data source. | Agent | S-Zettelkasten N/A vacuum audit | IRF-IDX-001, GH#323 |
+
+### S-2026-04-25-bodi-autonomous-solo-execution-pass Completed Items
+
+| ID | What | Session | Date |
+|----|------|---------|------|
+| DONE-463 | **BODI Autonomous Solo Execution Pass completing Phases 0-6.** Gap-map updated, actor constellation expanded to 52, lineage timeslices completed, ingestion rules expanded. PDE audit scores increased (+1 to +3 across all domains). | S-2026-04-25-bodi-autonomous-solo-execution-pass | 2026-04-25 |
+| DONE-464 | **Acknowledgment of Scott Lefler persona vacuum and memory overwrite protocol alignment.** Addressed the structural vacuum for Scott Lefler's communication response speed and domain substrate. Confirmed local/remote git persistence protocol for overwritten entity memory files. | S-2026-04-25-bodi-autonomous-solo-execution-pass | 2026-04-25 |
+
+### S-2026-04-25-bodi-autonomous-solo-execution-pass Discovered Items
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-PRT-049 | **P1** | **VACUUM: Scott Lefler persona response speed & project scope.** Scott's persona file lists response speed expectation as "Unknown" and project scope/domain substrate as undefined. Clarify the active or stalled nature of the partnership to unblock product definition. | Agent | S-2026-04-25-bodi-autonomous-solo-execution-pass vacuum audit | User/Scott input |
