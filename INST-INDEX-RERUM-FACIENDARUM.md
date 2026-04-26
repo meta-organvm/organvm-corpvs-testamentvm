@@ -1297,6 +1297,11 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 | ID | What | Session | Date |
 |----|----------|---------|------|
+| DONE-482 | **Phase System Architecture — 10 SOPs created.** SOPs: 001 (seeding), 002 (audit), 003 (governance), 004 (validation), 005 (classification), 006 (phase transition), 007 (CLAUDE.md), 008 (dependency mapping), 009 (IRF), 010 (orchestration). +5,894 lines. Fixed SOP-010 header corruption. | a-i--skills/phases | 2026-04-26 |
+| DONE-483 | **Phase System Research — 6 research docs created.** RD-001 (phase architecture), RD-002 (organ distribution), RD-003 (governance), RD-004 (scale), RD-005 (IRF registry), RD-006 (decision tree). +1,328 lines. | a-i--skills/phases | 2026-04-26 |
+| DONE-484 | **Phase READMEs — 10 phase variants documented.** 1A-1C (content), 2A-2B (architecture), 3A-3B (execution), 4A-4B (depth). All 10 paths documented. | a-i--skills/phases | 2026-04-26 |
+| DONE-485 | **Workspace Audit — Python script + comprehensive docs.** audit_workspace.py extracts metadata from seed.yaml. WORKSPACE_AUDIT_COMPREHENSIVE.md + AUDIT--VERIFIED.md document findings. | a-i--skills/phases | 2026-04-26 |
+| DONE-486 | **Hall-Monitor Pass — 5 issues found.** SOP-010 header corruption, cross-refs missing, no master index, SOP-001 missing version, phase READMEs unlinked. All fixed. | a-i--skills/phases | 2026-04-26 |
 | DONE-475 | **BODI substrate full implementation.** Phases 0-6 complete (substrate rules, lens generation, audit hooks, observatory wiring, doc index, gate enforcement). Residual 5 human-blockers logged for follow-up. | S-hokage-chess-session | 2026-04-25 |
 | DONE-476 | **Rob detection study + BODI reformation spec.** Independent-investigator model: detection criteria for BODI applicability, reformation spec for partial-fit cases, decision tree for skip/adapt/full. | S-hokage-chess-session | 2026-04-25 |
 | DONE-477 | **Achilles Session A: AG-03 CI ledger + AG-02 humans-waiting + AG-06 ID authority + AG-01 PRT-048 verified.** Sourced CI snapshot (8 failures), merged Dependabot PR 119, created authority-resolution artifact, verified PRT-048 already built (e93f890). Renumbered from DONE-475 (collision with hokage-chess prior claim). | S-Achilles-SessionA | 2026-04-26 |

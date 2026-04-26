@@ -1,11 +1,8 @@
 {
-  "next_id": 483,
-  "last_claimed_by": "S-scrutator-closeout-2026-04-26",
+  "next_id": 487,
+  "last_claimed_by": "a-i--skills/phases session",
   "last_claimed_at": "2026-04-26",
-  "claimed_range": [
-    482,
-    482
-  ],
-  "note": "IRF-SYS-157 added: organvm-scrutator self-auditing governance system completed and pushed to meta-organvm. Session closeout: all files committed, pushed, IRF updated.",
+  "claimed_range": [483, 486],
+  "note": "Phase system work: 10 SOPs + 6 research docs + 10 phase READMEs + audit docs. DONE-482 through DONE-486.",
   "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
 }
