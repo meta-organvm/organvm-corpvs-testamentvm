@@ -1281,6 +1281,10 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 | ID | What | Session | Date |
 |----|----------|---------|------|
+| DONE-468 | **Hall-monitor audit and cross-index synchronization.** Finalized session by claiming globally unique IDs (DONE-465..468), updating IRF stats, and synchronizing `seed.yaml` and `CLAUDE.md` in `sovereign-systems--elevate-align`. Verified persistence of all session artifacts. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-467 | **Workspace prep and session history export.** Cleaned `sovereign-systems--elevate-align` working tree by updating `.gitignore` to silence residual transcripts and screenshots. Updated `HANDOFF.md` with V6 state and Cloudflare token rotation steps. Exported session history. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-466 | **Sovereign-systems spiral — mobile camera Z viewport-aware.** Implemented responsive camera Z distance (12 for mobile, 18 for desktop) and wired resize listener to ensure node readability on small viewports. **Closes GH#55.** | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
+| DONE-465 | **Sovereign-systems spiral — wire IconWorlds into phase physics.** Integrated phase mix, palettes, gravity, and thermal/size bias from the shared `icon-worlds.ts` table into the Three.js particle renderer. Split field into cohesion (symbols) and chaos (stars) regimes. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
 | DONE-470 | **PRT-048 substrate skill built and indexed.** Formalized foundational domain substrate (8 strata + 4 operators) as a conductor skill in `a-i--skills`. Shipped `SKILL.md`, 8 asset templates, and `audit.sh`. Integrated into `seed.yaml` and `CLAUDE.md`. | S-Achilles-A | 2026-04-25 |
 | DONE-469 | **Dotfiles CI fix — missing organvm_dir/skills_dir root cause.** Diagnosed and fixed `macOS Integration` failure in `domus-semper-palingenesis` caused by missing configuration keys in CI chezmoi data block. Updated `.github/workflows/lint.yml`. | S-Achilles-A | 2026-04-25 |
 | DONE-461 | **IRF statistics and cross-index synchronization — hall-monitor pass.** Updated IRF stats (+4 DONE), synchronized `seed.yaml` and `CLAUDE.md` in `sovereign-systems--elevate-align` to reflect IconWorlds physics and multi-lens substrate logic. Performed bulk-mark CI noise read on GitHub notifications (advances IRF-SYS-156). | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
@@ -1766,16 +1770,16 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 
 ## Statistics
 
-Refreshed 2026-04-25 close-out audit (S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1, hall-monitor pass). +4 completions: DONE-458 (IconWorlds physics); DONE-459 (Mobile camera Z); DONE-460 (Workspace prep); DONE-461 (Cross-index sync). Propagated completions to seed.yaml and CLAUDE.md. Performed bulk-mark read on CI noise (SYS-156).
+Refreshed 2026-04-25 close-out audit (S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1, final pass). +4 completions: DONE-465 (IconWorlds physics); DONE-466 (Mobile camera Z); DONE-467 (Workspace prep); DONE-468 (Hall-monitor pass). Synchronized seed.yaml and CLAUDE.md. Performed bulk-mark read on CI noise (SYS-156).
 
-Refreshed 2026-04-25 second pass (S-2026-04-25-engine-infra-landing-cross-cluster). +8 completions: DONE-448..455.
+Refreshed 2026-04-25 close-out audit (S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1, hall-monitor pass). +4 completions: DONE-458..461.
 
 - **Total IRF items:** 986
-- **Open:** 553 *(prior 565, -12 completions)*
-- **Completed:** 430 *(prior 418, +12)*
+- **Open:** 549 *(prior 553, -4 completions)*
+- **Completed:** 434 *(prior 430, +4)*
 - **Blocked:** 0
 - **Archived:** 0
-- **Completion rate:** 43.6%
+- **Completion rate:** 44.0%
 
 ### Open By Priority
 
