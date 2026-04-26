@@ -51,8 +51,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: "22"
-          cache: npm
-          cache-dependency-path: portfolio-site/package-lock.json
 
       - name: Setup Python
         uses: actions/setup-python@v6
