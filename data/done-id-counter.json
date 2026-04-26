@@ -1,11 +1,11 @@
 {
-  "next_id": 490,
-  "last_claimed_by": "S-prompt-chain-2026-04-26",
+  "next_id": 491,
+  "last_claimed_by": "S-three-filters-2026-04-26",
   "last_claimed_at": "2026-04-26",
   "claimed_range": [
-    489,
-    489
+    490,
+    490
   ],
-  "note": "RAW→CLEANED→ELEVATED prompt chain protocol documented in organvm-scrutator. Complete stages from witness to multiversal exploration.",
+  "note": "Three Filters Conversational Prompt Chain documented. Filter 1: Raw abstraction. Filter 2: Domain formalization. Filter 3: Pure idea/generalizable.",
   "protocol": "CLAIM-BEFORE-USE: git pull, read next_id, increment by count needed, commit+push THIS FILE, then assign IDs. If push fails (non-fast-forward), pull, re-read, retry. Never assign DONE-NNN without claiming here first."
 }
