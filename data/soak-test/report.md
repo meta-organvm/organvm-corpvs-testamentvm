@@ -1,15 +1,15 @@
 # 30-Day Soak Test Report
 
-**Period:** 2026-03-21 to 2026-04-19
+**Period:** 2026-03-28 to 2026-04-26
 **Snapshots:** 30
-**Generated:** 2026-04-19 08:43 UTC
+**Generated:** 2026-04-26 08:50 UTC
 
 ---
 
 ## Validation Integrity
 
-- Days with clean validation: **5/30**
-- Registry integrity issues: 91 total across period
+- Days with clean validation: **12/30**
+- Registry integrity issues: 54 total across period
 - Dependency violations: 0 total across period
 
 ### Registry Issues Observed
@@ -17,31 +17,24 @@
 - meta-organvm/vigiles-aeternae--agon-cosmogonicum: missing field 'documentation_status'
 - organvm-i-theoria/vigiles-aeternae--corpus-mythicum: missing field 'documentation_status'
 - organvm-ii-poiesis/vigiles-aeternae--theatrum-mundi: missing field 'documentation_status'
-- organvm-iv-taxis/contrib--adenhq-hive: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--anthropic-skills: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--dbt-mcp: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--ipqwery-ipapi-py: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--langchain-langgraph: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--primeinc-github-stars: missing field 'implementation_status'
-- organvm-iv-taxis/contrib--temporal-sdk-python: missing field 'implementation_status'
 
 ## CI Stability
 
-- Average passing: **17.9** per day
-- Average failing: **3.1** per day
-- Average billing-locked: **10.9** per day
+- Average passing: **20.6** per day
+- Average failing: **3.5** per day
+- Average billing-locked: **11.0** per day
 - Days with CI data: 30
 
 ### Chronic Failures (3+ days)
 
-- organvm-ii-poiesis/styx-behavioral-art: failure (14 days)
-- organvm-v-logos/public-process: failure (14 days)
-- organvm-vii-kerygma/.github: failure (14 days)
-- meta-organvm/organvm-ontologia: failure (14 days)
+- organvm-ii-poiesis/styx-behavioral-art: failure (16 days)
+- organvm-vii-kerygma/.github: failure (16 days)
+- meta-organvm/organvm-ontologia: failure (16 days)
+- organvm-v-logos/public-process: failure (15 days)
 - organvm-iv-taxis/a-i--skills: failure (13 days)
 - organvm-vii-kerygma/social-automation: failure (11 days)
+- meta-organvm/materia-collider: failure (6 days)
 - meta-organvm/alchemia-ingestvm: failure (6 days)
-- meta-organvm/materia-collider: failure (3 days)
 
 ## Engagement Trends
 
