@@ -3,7 +3,7 @@
 **Status:** ACTIVE
 **Created:** 2026-03-20
 **Authority:** META — System-wide governance instrument
-Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (951 items, 21 domains)
+Purpose: Universal hanging index of things to be done — the canonical gap between what the system IS and what it NEEDS TO BE. (957 items, 21 domains)
 
 > *Index Rerum Faciendarum* — after the classical scholarly apparatus: *Index Locorum* (places), *Index Nominum* (names), *Index Rerum* (things). The gerundive *faciendarum* transforms reference into obligation: not things that exist, but things that must be made to exist.
 
@@ -74,6 +74,10 @@ The counter file is the single source of truth for the DONE-ID ceiling. The stat
 ## System-Wide
 
 ### Governance & Standards
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-MET-VAC-006 | **P1** | **Cross-domain pattern detection prototype.** Audit two active Hokage lanes and surface operational overlap. | Agent | S-2026-04-26 | None |
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
@@ -162,6 +166,7 @@ The counter file is the single source of truth for the DONE-ID ceiling. The stat
 | IRF-SYS-008 | P2 | ESLint 9→10 migration — blocked on eslint-plugin-react support. Monitor `eslint-plugin-react` releases for v8+ with ESLint 10 compatibility | Agent | S26 | eslint-plugin-react@7.37.5 incompatible |
 | IRF-SYS-009 | **P0** | Gmail notification hygiene — filter designed in S36: `from:notifications@github.com ("dependabot[bot]" OR "github-actions[bot]")` → Skip Inbox, Apply label `github/bots`, Mark as Read. **HUMAN ACTION NEEDED:** (1) Create Gmail filter, (2) GitHub Settings > Notifications > uncheck "Automatically watch repositories", (3) Set org routing to web-only. All GitHub notification threads marked read via API in S36. | Human | S26, S36 | Human action: 2 min at github.com/settings/notifications + Gmail |
 | ~~IRF-SYS-010~~ | ~~P1~~ | ~~Full seed.yaml refresh for organvm-engine~~ — **DONE** (5 contracts → 36, CANDIDATE → GRADUATED, signal_inputs/signal_outputs added. Commit `82d043d`.) | Agent | S28 gap audit | Completed S29 |
+| **IRF-SYS-157** | **P2** | **organvm-scrutator — self-auditing governance system.** Full repository built (25 files, 3.4K lines): scanner modules (plan, question, atom), governance ledgers (suggestion, energy), research pipeline (gap identifier, inquiry dispatcher), CLI (10 commands), 3 SOPs, core research document, daily CI workflow, pre-commit hook. Repository pushed to `meta-organvm/organvm-scrutator`. Law of the Land: every unknown is a research opportunity. Implements metabolic model (input Q+S vs output A+C), evidence hierarchy (PROVEN→STUDIED→HYPOTHESIZED→UNKNOWN), gap radiation detection. | Agent | This session (S-scrutator-build-2026-04-26) | None |
 
 ### Skills & Automation
 
@@ -390,6 +395,11 @@ Verified on disk 2026-03-20:
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
+| IRF-THE-VAC-004 | **P0** | **Implement corpus persona-extract in conversation-corpus-engine.** Highest compounding move: extract vocabulary/yearnings from session JSONLs. | Agent | S-2026-04-26 | None |
+| IRF-THE-VAC-005 | **P1** | **Investigate 4 "missing" repos (mirror-mirror, a-i-council, gamified-coach-interface, specvla-ergon).** Formal initialization or exclusion required. | Agent | S-2026-04-26 | None |
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
 | ~~IRF-CCE-001~~ | ~~P1~~ | ~~Migrate intake/ai-exports~~ → **DONE-114a**: Moved to `organvm-i-theoria/conversation-corpus-site/` per PROOF-reservoir-placement v2. Formal proof derived ORGAN-I as constitutionally correct host. | Agent | S29 | COMPLETED |
 | ~~IRF-CCE-002~~ | ~~P2~~ | ~~Reconcile ChatGPT adapter~~ → **DONE-169**: Cherry-picked 3 genesis capabilities: enhanced message normalization (code/execution/multimodal), per-thread audit trail, sequence-similarity dedup. Commit `2287e91`. | Agent | S33 | COMPLETED |
 | ~~IRF-CCE-003~~ | ~~P2~~ | ~~Add provider adapters~~ → **DONE-170**: DeepSeek and Mistral added as document-export providers. 8 total providers. ChatGPT local-session deferred (no local conversation storage in macOS app). Commit `8f04e34`. | Agent | S33 | COMPLETED |
@@ -508,6 +518,12 @@ Verified on disk 2026-03-20:
 ---
 
 ## ORGAN-IV — Petasum Super Petasum (Governance Orchestration)
+
+| ID | Priority | Action | Owner | Source | Blocker |
+|----|----------|--------|-------|--------|---------|
+| IRF-TAX-VAC-001 | **P0** | **Execute cold-reading Stranger Test on personalized-storefront-render SKILL.md.** Verification gate to graduate substrate from "self-attested" to "verified." | Agent | S-2026-04-26 | None |
+| IRF-TAX-VAC-002 | **P1** | **Build MCP tool wrappers for Stream Τ.** Ensure 5 organvm CLIs are natively discoverable and composable by agent swarm. | Agent | S-2026-04-26 | None |
+| IRF-TAX-VAC-003 | **P1** | **Formalize N-way portfolio combination rule for Synthesis Layer.** Define selection criteria for recombinator before execution. | Agent | S-2026-04-26 | None |
 
 | ID | Priority | Action | Owner | Source | Blocker |
 |----|----------|--------|-------|--------|---------|
@@ -1286,6 +1302,8 @@ These are not discrete tasks but organizing principles that cross-cut the entire
 | DONE-477 | **Achilles Session A: AG-03 CI ledger + AG-02 humans-waiting + AG-06 ID authority + AG-01 PRT-048 verified.** Sourced CI snapshot (8 failures), merged Dependabot PR 119, created authority-resolution artifact, verified PRT-048 already built (e93f890). Renumbered from DONE-475 (collision with hokage-chess prior claim). | S-Achilles-SessionA | 2026-04-26 |
 | DONE-478 | **Achilles Session B: AG-04 corpvs CI fix + AG-05 validation fixes.** Fixed corpvs-testamentvm CI (Node22 + npm install), fixed a-i--skills validation (8 errors corrected), routed elevate-align to Maddie lane (CF token). Renumbered from DONE-476 (collision with hokage-chess prior claim). | S-Achilles-SessionB | 2026-04-26 |
 | DONE-479 | **Portfolio CI honesty repair (completes DONE-478).** Generated `portfolio-site/package-lock.json`, restored `npm ci` in `ci.yml`, wrote `docs/adr/018-portfolio-lockfile-and-ci-honesty.md`. Closes the dishonest-green gap that hid 4 consecutive `pages-deploy.yml` failures (since 2026-04-26 00:23 UTC) while validation CI stayed green via `npm install`. Pages deploys resume on next push. | S-catch-all-relay-2026-04-25 | 2026-04-26 |
+| DONE-481 | **Research Atlas Phase 3 — Causal Inference pillar built (103h reading ladder).** Completed: LAW.md constitutional basis, 3-pillar structure (Causal Inference 103h, Unit Economics 73h, Algorithmic Interface 60h), 5 SOPs (001-003, 007, 010), experiment templates, vacuum detector algorithm. GitHub repo created and pushed to organvm-iii-ergon. | S-sovereign-research-atlas-2026-04-26 | 2026-04-26 |
+| DONE-480 | **Sovereign Research Atlas Phase 3 scaffold.** Research infrastructure scaffold for sovereign-systems -- layer above Hokage governance. Phase 3 directory with pillars/, templates/, source-list/, analysis/, vacuum-detector/ with Python algorithm. | S-sovereign-research-atlas-2026-04-26 | 2026-04-26 |
 | DONE-468 | **Hall-monitor audit and cross-index synchronization.** Finalized session by claiming globally unique IDs (DONE-465..468), updating IRF stats, and synchronizing `seed.yaml` and `CLAUDE.md` in `sovereign-systems--elevate-align`. Verified persistence of all session artifacts. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
 | DONE-467 | **Workspace prep and session history export.** Cleaned `sovereign-systems--elevate-align` working tree by updating `.gitignore` to silence residual transcripts and screenshots. Updated `HANDOFF.md` with V6 state and Cloudflare token rotation steps. Exported session history. | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
 | DONE-466 | **Sovereign-systems spiral — mobile camera Z viewport-aware.** Implemented responsive camera Z distance (12 for mobile, 18 for desktop) and wired resize listener to ensure node readability on small viewports. **Closes GH#55.** | S-f4d8ffa9-4f87-4f02-be25-c534f889f4a1 | 2026-04-25 |
